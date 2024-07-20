@@ -1,7 +1,9 @@
 {
   "battle_traits": [
     {
-      "phases": [],
+      "phases": [
+        "Start of Battle Round"
+      ],
       "name": "An Excess Of Depravity",
       "description": "Wherever the Hedonites of Slaanesh roam, reality is unmade. Those who stand against them are assailed by titillating phantasms and mind-bending illusions until they become slaves to their own base urges.",
       "declare": "Pick up to 3 friendly Hedonites of Slaanesh units to be the targets.",
@@ -9,7 +11,6 @@
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Euphoric Killers",
       "description": "The followers of Slaanesh revel in slaughter, the thrill of battle sending them into an electrified frenzy as they mutilate their foe.",
       "effect": "While a friendly unit has the Euphoric keyword: \n* That unit's weapons have Crit (2 Hits). \n* That unit can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
@@ -18,28 +19,24 @@
   "battle_formations": {
     "Depraved Carnival": {
       "activation": "Passive",
-      "phases": [],
       "name": "The Ecstatic Throngs",
       "description": "To the massed supplicants of Slaanesh, any form of sensation - even the most agonising - is to be embraced as a sacrament to their loathsome god.",
       "effect": "Add 1 to hit rolls for friendly Sybarite Infantry units while they are damaged or if they had any models slain in the same turn."
     },
     "Epicurean Revellers": {
       "activation": "Passive",
-      "phases": [],
       "name": "Exquisite Palate",
       "description": "The Mortal Realms are vistas of depraved fascination to Slaanesh's daemons, who will resist banishment with all their might.",
       "effect": "Each time a friendly non-Hero Hedonites of Slaanesh Daemon uses the 'Rally' command, you can make 3 additional rally rolls of D6."
     },
     "Seeker Cavalcade": {
       "activation": "Passive",
-      "phases": [],
       "name": "Reckless Haste",
       "description": "Whether seeking their lost god or simply chasing new heights of speed, the mounted hosts of Slaanesh make war at a breakneck pace.",
       "effect": "Friendly Hedonites of Slaanesh Cavalry units can use a Retreat ability and still use Charge abilities later in the turn. In addition, no mortal damage is inflicted on Hedonites of Slaanesh Cavalry units by Retreat abilities."
     },
     "Supreme Sybarites": {
       "activation": "Passive",
-      "phases": [],
       "name": "Godly Ambitions",
       "description": "There are many who would now seek to supplant imprisoned Slaanesh, and their force of personality fills their worshippers with reverent mania.",
       "effect": "Add 3 to the control scores of friendly non-Hero Hedonites of Slaanesh units while they are within the combat ranges of any friendly Hedonites of Slaanesh Heroes."
@@ -48,21 +45,18 @@
   "heroic_traits": [
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Glory Hog",
       "description": "This hero wants nothing more than to revel in the defeat of their enemies.",
       "effect": "If an enemy Hero is destroyed by this unit, this unit has the Euphoric keyword for the rest of the battle."
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Strongest Alone",
       "description": "This hero fights most fiercely on their own, lest their followers sully their greatness with their lesser presence.",
       "effect": "Add 1 to hit rolls and wound rolls for this unit's attacks while it is more than 6\" from all other friendly units."
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Into The Fray",
       "description": "The first blow struck is the sweetest, and this warlord makes sure they slake their desire for violence with force and skill.",
       "effect": "If this unit charged this turn and the unmodified charge roll was 8+, this unit has Strike-first for the rest of the turn."
@@ -70,22 +64,28 @@
   ],
   "artefacts_of_power": [
     {
-      "phases": [],
       "activation": "Once Per Battle",
+      "phases": [
+        "Combat Phase"
+      ],
       "name": "ICON OF INFINITE EXCESS:",
       "description": "Slaanesh's most opulent standard drives both followers and enemies of the Dark Prince into orgiastic fits of violence.",
       "declare": "Pick a non-Hero Hedonites of Slaanesh unit wholly within 12\" of this unit to be the target.",
       "effect": "Add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
     },
     {
-      "phases": [],
       "activation": "Once Per Battle",
+      "phases": [
+        "Combat Phase"
+      ],
       "name": "Threnody Voicebox",
       "description": "When swallowed and held in the gullet, this tiny music box allows the bearer to let fly a mournful melody that can lull enemies into a stupor.",
       "effect": "For the rest of the turn, subtract 1 from the Attacks characteristic of melee weapons used by enemy units while they are in combat with this unit."
     },
     {
-      "phases": [],
+      "phases": [
+        "End of Turn"
+      ],
       "name": "Pendant Of Slaanesh",
       "description": "This pendant burrows deep into the owner's chest and nestles next to their heart, invigorating them whenever they feel pain.",
       "effect": "If any damage points were allocated to this unit this turn, Heal (3) this unit."
@@ -94,7 +94,9 @@
   "spell_lore": {
     "Lore Of Extravagance": [
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Sadistic Spite",
         "description": "The caster bombards their allies with visions of their most visceral and bloody desires until they can no longer tell what is real and what is fantasy.",
@@ -122,7 +124,9 @@
         ]
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Phantasmagoria",
         "description": "The sorcerer summons illusory creatures that flit across the battlefield, bewildering the enemy and enabling their allies to retreat.",
@@ -138,7 +142,9 @@
   "manifestation_lore": {
     "Manifestations Of Depravity": [
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Mirror",
         "description": "Smashing a small glass mirror to the ground, the wizard uses magical energy to cause it to reform and grow in size.",
@@ -151,7 +157,9 @@
         "casting_value": 6
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "SUMMON DREADFUL VISAGE:",
         "description": "Inhaling draughts of hallucinogenic incense, the caster externalises their most unnatural desires in the form of a screaming daemonic visage.",
@@ -164,7 +172,9 @@
         "casting_value": 7
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Excruciation",
         "description": "Throwing a small multi-bladed knife into the air and channelling magical energy into it, the caster summons forth a storm of swiftly moving razor-sharp blades.",
@@ -211,19 +221,19 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Soulpiercer is 4."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Supernatural Grace",
             "description": "Whether they turn blows aside or simply dodge out of harm's way, it is extremely difficult to pin down a Keeper of Secrets.",
             "effect": "Subtract 1 from hit rolls for combat attacks that target this unit. 4"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Refine Senses",
             "description": "The sorcerer channels magical power into their senses so that nothing can be hidden from them and none can escape their wrath.",
@@ -235,7 +245,6 @@
             "casting_value": 4
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "reaction_condition": "   Opponent declared a Charge ability for a  Hero within 9\" of this unit",
@@ -250,8 +259,10 @@
             ]
           },
           {
-            "phases": [],
             "activation": "Once Per Battle",
+            "phases": [
+              "Combat Phase"
+            ],
             "your_turn_only": true,
             "name": "Excess Of Violence",
             "description": "With the subtlest of gestures, Shalaxi Helbane can rouse their followers to attack with redoubled aggression.",
@@ -304,19 +315,19 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Elegant Greatblade is 4."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Supernatural Grace",
             "description": "Whether they turn blows aside or simply dodge out of harm's way, it is extremely difficult to pin down a Keeper of Secrets.",
             "effect": "Subtract 1 from hit rolls for combat attacks that target this unit."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Locus Of Slaanesh",
             "description": "With violence and excess, the walls of reality can be made thin enough to draw forth reinforcements of Slaaneshi daemons.",
@@ -324,9 +335,11 @@
             "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of this unit and more than 9\" from all enemy units."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Dark Temptations",
             "description": "Few can resist the wiles of a Keeper of Secrets.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -337,7 +350,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Cacophonic Choir",
             "description": "The wizard unleashes a sanity-shattering chorus of magical sound.",
@@ -394,9 +409,11 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Enthralling Splendour",
             "description": "A mere glance at Synessa's magnificence leaves those nearby captivated.",
             "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
@@ -406,7 +423,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Voice Of Slaanesh",
             "description": "Possessing all the Dark Prince's skill in intoxicating oratory, Synessa can reduce an enemy warrior to a paranoid wreck or lift an ally to a state of rapturous obedience.",
             "declare": "Pick a visible unit within 18\" of this unit to be the target.",
@@ -414,13 +433,14 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Progeny Of Slaanesh",
             "description": "Despite their mutual enmity, Synessa and Dexcessa are inextricably connected, giving them an advantage over their foes.",
             "effect": "While a friendly Dexcessa is on the battlefield, add 1 to this unit's power level. 7"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Whispers Of Doubt",
             "description": "Synessa whispers words that reveal the enemy's darkest desires, breaking their concentration and leaving them vulnerable to attack.",
@@ -468,29 +488,31 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Joyous Battle Fury",
             "description": "Once Dexcessa begins to fight, they become invigorated by the glorious thrill of combat.",
             "effect": "If any enemy models were slain by this unit's combat attacks this turn, Heal (D3) this unit, then place a battle fury token next to it.  Add 1 to the Attacks characteristic of this unit's Impaling Talons for each battle fury token it has until the end of the next turn."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "FLEETING DANCE OF DEATH:",
             "description": "Dexcessa rarely stays locked in combat in one place for long, flitting swiftly all over the battlefield and bringing death wherever they alight.",
             "effect": "This unit can use Charge abilities even if it used a Retreat ability in the same turn. In addition, no mortal damage is inflicted on this unit by Retreat abilities."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Scion Of Slaanesh",
             "description": "Despite their mutual enmity, Dexcessa and Synessa are inextricably connected, giving them an advantage over their foes.",
             "effect": "While a friendly Synessa is on the battlefield, subtract 1 from hit rolls for attacks that target this unit."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Redolence Of Violence",
             "description": "The beautiful scent of Dexcessa's savagery permeates through the Hedonite ranks.",
             "declare": "If this unit charged this turn, pick up to D3 other friendly non-Hero Hedonites of Slaanesh Daemon units wholly within 12\" of this unit to be the targets.",
@@ -544,7 +566,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Deadly Symbiosis",
             "description": "In battle, the hosts of Syll'Esske seek to emulate the symbiosis of their master, compelling one another to escalating acts of depraved violence.",
             "declare": "Pick a friendly non-Hero Sybarite unit and a friendly non-Hero Hedonites of Slaanesh Daemon unit to be the targets. Both units must be wholly within 12\" of this unit.",
@@ -552,13 +576,14 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "THE VENGEFUL ALLEGIANCE:",
             "description": "Should one aspect of the Vengeful Allegiance deflect a blow, their other half will swiftly capitalise on the situation.",
             "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved. 7"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Subvert",
             "description": "Syll torments the foe with whispers and visions, distracting them from their duties.",
@@ -605,7 +630,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a command   or Retreat ability for a unit in combat  with this unit",
             "name": "Horrible Fascination",
@@ -614,7 +638,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Swallow Energy",
             "description": "A Contorted Epitome steals the most intense and excessive energies, channelling them back to Slaanesh's Temple of Twisted Mirrors.",
             "effect": "If you make a successful ward roll for this unit, add 1 to this unit's power level until the end of your next turn."
@@ -665,7 +688,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "reaction_condition": "  Opponent declared a Spell ability for a  Wizard within 18\" of this unit",
@@ -706,13 +728,17 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "The Endless Dance",
             "description": "The Masque dances eternally across the Mortal Realms, endlessly seeking an audience to confound and swiftly slay.",
             "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "name": "Staff Of Masks",
             "description": "The masks on this staff constantly flicker and change, enhancing the Masque's attacks or protecting them from harm.",
             "effect": "Pick 1 of the following effects: \n* Add 3 to the Attacks characteristic of this unit's Razor-edged Claws for the rest of the turn. \n* Heal (3) this unit."
@@ -760,7 +786,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Mutilating Blades",
             "description": "A Slaaneshi chariot inflicts carnage when it ploughs into the foe.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -816,7 +844,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "name": "Soulscent",
             "description": "The whirling blades of this fearsome chariot mow down the enemy, transmuting their souls into an exhilarating incense that drives its riders into an ecstatic frenzy.",
             "declare": "Pick up to 3 enemy units that this unit passed across this phase to be the targets.",
@@ -824,7 +854,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Threshing Doom",
             "description": "The wail of an approaching Hellflayer sees enemy infantry diving for cover.",
             "effect": "When this unit moves, it can pass through models in enemy Infantry units and can pass through the combat ranges of enemy Infantry units, but it cannot end a move in combat unless specified in the ability used."
@@ -870,14 +899,15 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Mutilating Blades",
             "description": "A Slaaneshi chariot inflicts carnage when it ploughs into the foe.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
             "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Soulgorgers",
@@ -920,7 +950,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Lithe And Swift",
             "description": "Charging Daemonettes can riddle an enemy with a quicksilver flurry of claw-strikes.",
             "effect": "Add 1 to the Attacks characteristic of this unit's Piercing Claws for the rest of the turn if this unit charged in the same turn."
@@ -960,7 +989,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Soporific Musk",
@@ -970,14 +998,12 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Disruptive Song",
             "description": "Fiends of Slaanesh let out a keening song that disturbs the concentration of spellcasters who hear it.",
             "effect": "Subtract 1 from casting rolls and unbinding rolls for enemy Wizards while they are within 12\" of this unit."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           }
@@ -1024,7 +1050,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Quicksilver Speed",
             "description": "Seekers of Slaanesh are daemonic hunters and swift beyond belief.",
             "effect": "When making run rolls for this unit, if you roll a 1-3, you can use a value of 4 instead."
@@ -1086,19 +1111,22 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Greatblade and Claws is 6."
           },
           {
-            "phases": [],
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Gorge On Excess",
             "description": "Glutos's followers grow strong on acts of excess.",
             "declare": "Pick a friendly Sybarite unit wholly within 12\" of this unit to be the target.",
             "effect": "Heal (6) the target. 7"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Crippling Famishment",
             "description": "With a snap of his fingers, Glutos paralyses his prey with immeasurable hunger.",
@@ -1111,7 +1139,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "The Grand Gour Mand",
             "description": "To Glutos, battle is a sumptuous banquet.",
             "effect": "A different effect applies to friendly Sybarite units each battle round while they are wholly within 12\" of this unit, as shown below. The effects of all previous battle rounds also apply to those units while they are wholly within 12\" of this unit. Battle Round 1: Starter: Add 1 to run rolls and charge rolls for those units. Battle Round 2: Main: Add 3 to those units' control scores. Battle Round 3: Dessert: Add 1 to hit rolls for those unit's attacks. Battle Round 4+: Digestif: Add 1 to the Rend characteristic of those units' melee weapons."
@@ -1152,14 +1179,18 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "'You First, I Insist\u2026'",
             "description": "So confident is this champion of excess that they allow their foe a futile swipe for free.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Your opponent must decide whether the target will accept or decline this unit's challenge. Accept: The target has Strike-first for the rest of the turn. If this unit is in combat with the target when the target is picked to use a Fight ability, all of the target's attacks must target this unit. Decline: The target has Strike-last for the rest of the turn."
           },
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "ONLY THE BEST WILL SUFFICE:",
             "description": "Lords of Hubris refuse to fight alongside any but the finest warriors of the Sybarite hordes. In doing so, they inspire a level of pride worthy of their title.",
             "declare": "Pick a friendly Myrmidesh Painbringers or Symbaresh Twinsouls unit that is in combat and is wholly within 12\" of this unit to be the target.",
@@ -1199,14 +1230,12 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Share The Pain",
             "description": "Lords of Pain have mastered every kind of torment and are adept at gifting the most terrible of agonies to their foes.",
             "effect": "Each time you make a successful ward roll for this unit for a damage point inflicted by a combat attack, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Disciples In Tor Ment",
             "description": "Slaanesh's Sybarites flock around a battling Lord of Pain, eager to be rewarded with the choicest expressions of agony.",
             "effect": "While this unit is contesting an objective, add 1 to wound rolls for combat attacks made by friendly Sybarite units wholly within 12\" of this unit."
@@ -1245,21 +1274,18 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Powered By Vainglory",
             "description": "Sigvald is the epitome of vainglory, one of Slaanesh's favourite sins. So great is his sense of superiority that few can stand before his prideful assaults.",
             "effect": "If this unit charged this turn and the unmodified charge roll was 6+, the Attacks characteristic of this unit's Shardslash is equal to the unmodified charge roll."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "The Glorious Reborn",
             "description": "None can best Sigvald in hand-to-hand combat, or so he believes, and the Geld-Prince is determined to prove it.",
             "effect": "This unit has Strike-first if it charged in the same turn."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Shardslash",
             "description": "This majestic blade slices through sigmarite and arcane wards alike as if they were merely the thinnest silk.",
             "effect": "Ward rolls cannot be made for damage points inflicted by this unit's combat attacks."
@@ -1299,7 +1325,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Shooting Phase"
+            ],
             "enemy_turn_only": true,
             "name": "SLAUGHTER AT ANY COST:",
             "description": "When stirred by the excesses of battle, Fiendbloods waste no time in hunting down their victims.",
@@ -1346,7 +1374,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Twisted Mirror",
@@ -1356,7 +1383,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Mist Lurkers",
             "description": "The mist-daemons that billow and slink around a Shardspeaker are empowered by arcane energies.",
             "effect": "If this unit successfully casts a spell, until the start of your next turn, it can attack with its Shadow- cloaked Claws."
@@ -1396,7 +1422,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Paragons Of Battle",
             "description": "Myrmidesh Painbringers seek to prove their martial prowess in the manic heart of battle.",
             "effect": "Add 1 to the Rend characteristic of this unit's melee weapons while it is contesting an objective you do not control."
@@ -1446,7 +1471,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Blissbrew Homonculus",
             "description": "Blissbrew Homonculi bear censers from which clouds of sickly-sweet incense emanate.",
             "effect": "This unit's Blissbrew Homonculus is a token. There is 1 Blissbrew Homonculus for every 10 models in this unit.  Subtract 1 from hit rolls for shooting attacks that target this unit while it has a Blissbrew Homonculus. If you make an unmodified save roll of 1 for this unit, remove the Blissbrew Homonculus from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
@@ -1484,14 +1508,12 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Ego-Driven Excess",
             "description": "These warriors refuse to be outdone by their comrades and use unorthodox techniques to best their foes.",
             "effect": "If this unit did not charge this turn, subtract 1 from the Attacks characteristic of melee weapons used by enemy units while they are in combat with this unit."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Fiendish Reflexes",
             "description": "As the daemons possessing these mortals take control, their speed increases tenfold, making them almost impossible to hit.",
             "effect": "If this unit did not charge this turn, it has Ward (5+) while it is in combat."
@@ -1538,7 +1560,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Maiming Charge",
             "description": "The gruesome carnage caused by Hellstriders on the charge can unnerve the staunchest foe.",
             "effect": "If this unit charged this turn, subtract 3 from the control scores of enemy Infantry units while they are in combat with this unit."
@@ -1587,7 +1608,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Unrivalled Velocity",
             "description": "Slickblade Seekers are obsessed with high-speed kills, tearing towards the foe with relentless haste.",
             "effect": "You can re-roll charge rolls for this unit."
@@ -1646,7 +1666,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Glory Shots",
             "description": "Nothing pleases the Blissbarb Seekers more than shooting down enemies encamped on a vital point, all without breaking stride.",
             "effect": "Add 1 to the Rend characteristic of this unit's ranged weapons for attacks that target units contesting an objective you do not control."
@@ -1683,7 +1702,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Flensing Tongues",
             "description": "Opening its soul-sucking maw, the Dreadful Visage lets fly a plethora of hooked tongues that lash and flense the flesh of those nearby.",
             "declare": "Pick an enemy unit in combat with this Manifestation to be the target.",
@@ -1710,7 +1731,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a Move  ability for a unit wholly within 12\" of  this\u00a0Manifestation",
             "name": "Irresistible Lure",
@@ -1718,7 +1738,9 @@
             "effect": "If that enemy unit does not end the move closer to this Manifestation than it was at the start of the move, inflict D3 mortal damage on it after the Move ability has been resolved."
           },
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "name": "GAZE NOT INTO ITS DEPTHS:",
             "description": "A Mesmerising Mirror can enthral a warrior's soul, offering tempting gifts of power while slowly sapping their very essence.",
             "declare": "Pick an enemy unit within 6\" of this Manifestation to be the target.",
@@ -1756,7 +1778,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Exquisite Agony",
             "description": "The Wheels of Excruciation deliver death by a thousand exquisite cuts to those who get in their way.",
@@ -1784,7 +1808,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Damned Conduit",
             "description": "Slaanesh's minions can make sacrifices at a Fane of Slaanesh to gain martial prowess.",

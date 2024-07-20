@@ -1,24 +1,27 @@
 {
   "battle_traits": [
     {
-      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": [
+        "End of Turn"
+      ],
       "name": "BLESSED BY THE PLAGUEFATHER:",
       "description": "Each of the Maggotkin is a walking vector of disease, a willing incubator for maladies that ravage the body and spirit with horrific virulence.",
       "effect": "Pick 1 of the following effects: Infect: Pick an enemy unit that is in combat with a friendly Maggotkin of Nurgle unit to be the target. The target has the Diseased keyword. Spread: Pick a Diseased enemy unit to be the target. Each other enemy unit within the target's combat range has the Diseased keyword. Mutate: If all enemy units on the battlefield have the Diseased keyword, inflict 1 mortal damage on each of them."
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Desperate Remedies",
       "description": "When fighters are afflicted with the plagues of Nurgle, all efforts to recuperate must be focused entirely on stemming the spread of the disease.",
       "effect": "If a Diseased enemy unit uses an ability that would heal or return slain models to it, instead of healing or returning slain models to it, that unit no longer has the Diseased keyword."
     },
     {
-      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": [
+        "End of Turn"
+      ],
       "name": "WRACKED WITH DISEASE:",
       "description": "The Maggotkin wage war with weeping wounds and pustulant boils as well as with rusted weapons.",
       "effect": "Roll a D3 for each Diseased enemy unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
@@ -27,27 +30,23 @@
   "battle_formations": {
     "Tallyband Of Nurgle": {
       "activation": "Passive",
-      "phases": [],
       "name": "Personified",
       "description": "The Tallyband is a trudging, lumbering, squirming mass of rancid daemonflesh that rolls across the battlefield like the inexorable approach of death itself.",
       "effect": "From the second battle round onwards, add 1 to the amount of mortal damage inflicted, if any, by the 'Wracked with Disease' ability."
     },
     "Plague Cyst": {
       "activation": "Passive",
-      "phases": [],
       "name": "Vectors Of Contagion",
       "description": "The bloated forms of these Nurglites are ever at bursting point, ready to shower attackers with contagious fluid.",
       "effect": "Each time a model in a friendly Rotbringers unit is slain by a combat attack and that model was in combat with the attacking unit, roll a number of dice equal to the slain model's Health characteristic, to a maximum of 4. For each 5+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
     },
     "Nurgle'S Menagerie": {
       "activation": "Passive",
-      "phases": [],
       "name": "Grotesque",
       "description": "The children of Grandfather Nurgle seek any opportunity to rot the veil and let the festering delights of his Garden spill into the realms.",
       "effect": "During army composition, you can include 2 Feculent Gnarlmaws in your army instead of 1."
     },
     "Affliction Cyst": {
-      "phases": [],
       "activation": "Once Per Battle",
       "once_per_army": true,
       "name": "From Noxious Skies",
@@ -59,19 +58,19 @@
   "heroic_traits": [
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Gift Of Febrile Frenzy",
       "description": "This general can invigorate their usually sluggish minions by releasing a fever upon them that drives them into a wild delirium.",
       "effect": "Add 1\" to the Move characteristic of friendly Maggotkin of Nurgle units that do not have Fly if they are wholly within 12\" of this unit at the start of the move."
     },
     {
-      "phases": [],
+      "phases": [
+        "End of Turn"
+      ],
       "name": "Grandfather'S Blessing",
       "description": "This mighty Nurglite is so diseased that they are rejuvenated by decay and plague.",
       "effect": "If this unit is in combat with a Diseased enemy unit, Heal (D6) this unit."
     },
     {
-      "phases": [],
       "activation": "Reaction",
       "reaction_condition": " Opponent declared a command   for a unit in combat with this unit ",
       "name": "Overpowering Stench",
@@ -81,25 +80,29 @@
   ],
   "artefacts_of_power": [
     {
-      "phases": [],
+      "phases": [
+        "Combat Phase"
+      ],
       "name": "The Witherstave",
       "description": "Carved from the heartwood of a tormented Treelord, the Witherstave thrums with a soured mockery of the Sylvaneth spirit song. Those that hear it feel a terrible weakness shiver their limbs as a jarring dirge of despair clouds their minds.",
       "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
       "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn."
     },
     {
+      "activation": "Once Per Battle",
       "phases": [
         "Combat Phase"
       ],
-      "activation": "Once Per Battle",
       "name": "Rustfang",
       "description": "Rustfang is a cursed battle- axe whose blade crawls with a thick layer of sentient corrosion. The slightest touch of this blade spreads its ferric blight, chewing away the foe's armour in moments.",
       "declare": "Pick an enemy Hero in combat with this unit to be the target.",
       "effect": "Subtract 1 from save rolls for the target for the rest of the battle."
     },
     {
-      "phases": [],
       "activation": "Once Per Battle",
+      "phases": [
+        "Hero Phase"
+      ],
       "name": "The Carrion Dirge",
       "description": "When blown, this filth-encrusted horn shrieks with the tongue of a thousand carrion crows. Those outside Nurgle's favour who hear it are struck with a deep despondency. Why stand defiant? Why seek victory? Why do anything at all?",
       "declare": "Pick up to 3 enemy units within 12\" of this unit to be the targets.",
@@ -109,7 +112,9 @@
   "spell_lore": {
     "Lore Of Malignance": [
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Fleshy Abundance",
         "description": "The sorcerer generously bestows a growth spurt of the most repulsive kind upon their allies, causing their bodies to bloat with great wobbling mounds of grey-green fat.",
@@ -122,7 +127,9 @@
         ]
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Cloying Quagmire",
         "description": "The sorcerer thrusts their hands into the soil, causing the ground beneath their enemies to putrefy into a sucking, grasping quagmire.",
@@ -136,7 +143,9 @@
         "casting_value": 7
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Magnificent Buboes",
         "description": "With a gracious sweep of their hand, the sorcerer bestows upon their victim one of Nurgle's prettiest afflictions - a clutch of debilitating pustules and boils.",
@@ -191,12 +200,13 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Gnarlrod is 3. 8"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Deluge Of Nurgle",
             "description": "Rotigus has an affinity with the plagued downpours that spill from Nurgle's cauldron, and he is able to influence where the blighted rains fall.",
@@ -208,7 +218,6 @@
             "casting_value": 8
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "MOUNTAIN OF LOATHSOME FLESH:",
@@ -221,7 +230,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Bringer Of Plenty",
             "description": "Rotigus is a masterful sorcerer, able to bind the energies of decay with a wave of his gnarled wand. His spells inspire grotesque fecundity and flesh-growth, stimulated through the arcane deluge.",
             "effect": "Add 1 to casting rolls for this unit."
@@ -265,12 +273,10 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Colossal Blight Weapons is 3."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Locus Of Nurgle",
@@ -279,9 +285,11 @@
             "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of this unit and more than 9\" from all enemy units."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "End of Turn"
+            ],
             "name": "BLOATED WITH CORRUPTION:",
             "description": "Should a Great Unclean One be wounded, the noxious effluvia within its swollen body bursts forth in a flesh-melting spray.",
             "declare": "If this unit is damaged, pick up to 3 enemy units in combat with this unit to be the targets.",
@@ -292,7 +300,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Plague Wind",
             "description": "With a satisfied belch, the greater daemon unleashes a gust of putrid air that smothers the battlefield.",
@@ -337,7 +347,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "CAPTAIN OF THE PLAGUE LEGIONS:",
@@ -387,14 +396,15 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Of Nurgle",
             "description": "Wherever Horticulous slimes around in the Mortal Realms, daemonic foliage pokes through the cracks in reality and swiftly takes root.",
             "effect": "If there are fewer than 3 friendly Feculent Gnarlmaws on the battlefield, you can set up a Feculent Gnarlmaw wholly within 12\" of this unit, more than 3\" from all enemy units, objectives and other terrain features."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Beast Handler",
@@ -448,9 +458,11 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "I'M Watching You",
             "description": "Spoilpox Scriveners are responsible for making sure that the Plaguebearers of the tallybands do not shirk their duties.",
@@ -490,7 +502,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Jolly Gutpipes",
@@ -531,7 +542,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Endless Swar M",
             "description": "The presence of Nurglings in the realms continuously draws more of their number from the Grandfather's Garden, making their swarms extremely hard to eradicate.",
             "effect": "Heal (3) this unit."
@@ -568,7 +581,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Attention Seekers",
             "description": "Beasts of Nurgle seek out playmates with an enthusiasm that is rarely reciprocated by the horrified source of their fascination.",
             "declare": "If this unit is not in combat, pick the closest enemy unit to it to be the target. If 2 or more enemy units are tied to be the closest, you can pick which is the target. Then, make a charge roll of 2D6.",
@@ -581,7 +596,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           }
@@ -627,7 +641,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Ripe Pastures",
             "description": "Rot Flies buzz across the battlefield, consuming their enemies before moving on to fresh targets, their retreat covered by a repulsive cloud of decaying flesh.",
             "effect": "This unit can use Charge abilities even if it used a Retreat ability in the same turn. In addition, no mortal damage is inflicted on this unit by Retreat abilities."
@@ -669,7 +682,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Cloud Of Flies",
             "description": "Plaguebearers are surrounded by a cloud of swarming flies that feast on their rotting bodies.",
             "effect": "Subtract 1 from hit rolls for shooting attacks that target this unit."
@@ -728,12 +740,10 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points,the Attacks characteristic of Ghurk's Tentacle is 2."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "reaction_condition": " You  declared the \u2018Counter-charge\u2019 command for  this unit",
@@ -746,13 +756,14 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Horrific Opponent",
             "description": "So terrifying are the Brothers Glott that enemy lines are sent into disarray at the very sight of them.",
             "effect": "Subtract 3 from the control scores of enemy units while they are in combat with this unit. 6"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Overgrowth Of Flesh",
             "description": "For all his endless grumbling, Ethrac Glott is not miserly in doling out Nurgle's bountiful gifts.",
@@ -821,27 +832,29 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Tripletongue's Claws and Maw is 3."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Lord Of Nurglings",
             "description": "Morbidex Twiceborn is the chosen mortal champion of the Nurglings, who follow him into battle with boundless enthusiasm.",
             "effect": "While any friendly Nurglings units are wholly within 12\" of this unit: \n* Ignore the first damage point that would be allocated to each of those units each phase. \n* Add 3 to those units' control scores."
           },
           {
-            "phases": [],
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Gigantic Nurgling-Kin",
             "description": "Twisted by the cruel attentions of manifold Nurglings, Morbidex has come to resemble them physically and has gained much of their unnatural resilience.",
             "effect": "Heal (X) this unit, where X is half the number of damage points this unit has (rounding up)."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Tide Of Nurglings",
             "description": "Morbidex's Pox Maggoth bellows out a gurgling roar that drives nearby swarms of Nurglings into a frenzy, drowning enemies in a filthy, living tide.",
             "declare": "Pick a friendly Nurglings unit within this unit's combat range to be the target.",
@@ -906,12 +919,13 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Bilespurter's Claws and Maw is 3. 6"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Miasma Of Pestilence",
             "description": "Bloab Rotspawned completes a complicated gesture in the air and a vile mist rises from the ground around his target. While it lasts, even the lightest graze seems to turn gangrenous.",
@@ -923,9 +937,11 @@
             "casting_value": 6
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Daemon Flies",
             "description": "The whirling fly-storm that surrounds Bloab blinds and chokes his victims.",
             "declare": "Pick each enemy unit within 7\" of this unit to be the targets.",
@@ -969,7 +985,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "MASTER OF THE SLIME FLEET:",
             "description": "Gutrot's Slime Fleet haunts the oceans of the Mortal Realms, fighting alongside and transporting warriors that the Lord of Tentacles judges to share his aims.",
             "declare": "Pick a regiment led by this unit to be the target if it has not been deployed.",
@@ -979,14 +997,18 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Flailing Tentacles",
             "description": "Gutrot grabs his opponents with his melange of slimy tentacles, rendering them helpless as he swings his rusted axe.",
             "declare": "Pick an enemy Infantry Hero in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, the target has Strike-last for the rest of the turn."
           },
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Pestilential Beachhead",
             "description": "To the creak of rotting timbers and the waft of rancid brine, the Slime Fleet makes land.",
@@ -1036,14 +1058,18 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "VECTORS OF FOULEST CONTAGION:",
             "description": "Through the use of rancid corpse-totems and other such gifts from the Grandfather, a Lord of Afflictions spreads death wherever they travel.",
             "declare": "Pick up to 3 enemy units in combat with this unit to be the targets.",
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
           },
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Master Of Rot Flies",
             "description": "A Lord of Afflictions leads a swarm of Rot Flies that act as brutal linebreakers, using their sheer bulk to smash enemy formations asunder.",
             "declare": "If this unit charged this turn, pick this unit and up to 2 friendly Pusgoyle Blightlords units wholly within 12\" of this unit to be the targets.",
@@ -1105,14 +1131,15 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Whippermaw's Claws and Maws is 3."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Grasping Tongue",
             "description": "The massive Pox Maggoth Whippermaw lashes its tongue around a hapless victim, preparing to devour it.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -1123,7 +1150,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Acid Ichor",
             "description": "Whenever Orghotts's flesh is cut open, a gout of daemonic ichor spews out with shocking force. Its vitriolic potency is enough to burn through steel and dissolve the flesh beneath.",
             "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
@@ -1162,7 +1188,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "THRICE-RIPENED DEATH'S HEADS:",
             "description": "These blessed death's heads are projectiles ripe with disease and hurled at incoming foes to spread the plagues festering within.",
             "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
@@ -1170,7 +1198,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Festering Bulwark",
             "description": "Heavy shield planted in the mud, a Lord of Blights orders their warriors brace for the enemy charge.",
             "effect": "The Blighted Weapons used by friendly Putrid Blightkings units have Anti-charge (+1 Rend) while those units are wholly within 12\" of this unit."
@@ -1217,7 +1244,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Battle",
             "once_per_army": true,
             "name": "Knell Of Doom",
@@ -1226,7 +1252,9 @@
             "effect": "Until the start of your next turn, subtract 1\" from the Move characteristic of each target and subtract 1 from run rolls and charge rolls for each target. 4"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Omens Of Decay",
             "description": "Harbingers of Decay are diseased prophets, able to divine omens through grisly rites and observing the spread of sickness.",
@@ -1271,7 +1299,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Tainted Sorceries",
             "description": "Rotbringer Sorcerers hold that there is nothing they cannot corrupt.",
@@ -1313,13 +1343,14 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Lord Of The Blightkings",
             "description": "A Lord of Plagues leads their chosen warriors to battle with a febrile energy.",
             "effect": "Add 1 to charge rolls for friendly Putrid Blightkings units while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Sevenfold Slaughter",
             "description": "A Lord of Plagues drives their warriors to keep hacking at the foe until they are reduced to nothing more than twitching, filth- streaked offal.",
             "declare": "Pick a friendly Putrid Blightkings unit that charged this turn and is wholly within 12\" of this unit to be the target.",
@@ -1368,7 +1399,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Relentless Attackers",
             "description": "Blightlords descend from fume-choked skies to smash Nurgle's most stubborn enemies to ruin.",
             "effect": "Add 1 to the Rend characteristic of this unit's Flyrider's Arsenal for attacks that target units contesting an objective you do not control."
@@ -1407,7 +1437,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Bloated Bulk",
             "description": "The plague-swollen heft of the Blightkings grants them a presence far beyond their limited numbers.",
             "effect": "Add 3 to this unit's control score while each model in this unit is contesting an objective you control."
@@ -1460,7 +1489,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Virulent Concoctions",
             "description": "The hideous diseases formulated by the Rotmire Creed rapidly transmit from one uninfected body to another.",
             "effect": "When using the 'Blessed by the Plaguefather' ability, if you choose to infect an enemy unit, you can pick an enemy unit that had any damage points allocated to it by this unit's shooting attacks this turn to be the target even if that unit is not in combat with a friendly Maggotkin of Nurgle unit."
@@ -1498,11 +1526,11 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
             "phases": [
               "End of Turn"
             ],
-            "activation": "Once Per Turn",
-            "once_per_army": true,
             "name": "Riddled With Disease",
             "description": "The vapours emanating from a Feculent Gnarlmaw are laden with plagues and disease.",
             "declare": "Pick an enemy unit within 6\" of this terrain feature to be the target.",

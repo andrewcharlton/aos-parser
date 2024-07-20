@@ -1,10 +1,10 @@
 {
   "battle_traits": [
     {
+      "activation": "Once Per Turn",
       "phases": [
         "End of Turn"
       ],
-      "activation": "Once Per Turn",
       "name": "Eye Of The Gods",
       "description": "The Slaves to Darkness seek to attract the notice of the gods by performing great deeds in battle. To court the gaze of these beings is perilous, yet those who prove worthy are made mighty indeed.",
       "declare": "Each friendly Slaves to Darkness unit that destroyed an enemy unit this turn is a target. Friendly Beasts and non-Hero Monsters cannot be targeted by this ability.",
@@ -12,7 +12,6 @@
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "Marks Of Chaos",
       "description": "In return for power, a mortal may forsake their soul by pledging it to one or all of the Dark Gods.",
       "effect": "Friendly Slaves to Darkness units have 1 of the following effects based on the Mark of Chaos keyword they have. \n* Undivided: Add 1 to wound rolls for the unit's combat attacks that target a Hero or Monster. \n* Khorne: Add 1 to the Attacks  characteristic of the unit's melee weapons for the rest of the turn if the unit charged in the same turn. \n* Tzeentch: The unit has Ward (4+) against mortal damage inflicted by Spell abilities and abilities used by Manifestations. \n* Nurgle: Subtract 1 from wound rolls for combat attacks that target the unit. \n* Slaanesh: Add 1 to run rolls and  charge rolls for the unit. If a unit with a Mark of Chaos keyword is replaced, the replacement unit has the same Mark of Chaos keyword."
@@ -21,13 +20,11 @@
   "battle_formations": {
     "Legion Of Chaos": {
       "activation": "Passive",
-      "phases": [],
       "name": "United In Darkness",
       "description": "The myriad forces of Chaos march to war under a common cause, led by warlords who have put aside their rivalries in the name of laying waste to the lands of a shared foe.",
       "effect": "While there is at least 1 friendly Warriors of Chaos Hero and 1 other friendly Daemon Hero or Darkoath Hero on the battlefield, add 2 to the control scores of friendly Slaves to Darkness units while they are contesting an objective that is wholly outside friendly territory."
     },
     "Despoilers": {
-      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
       "reaction_condition": " You   declared a Fight ability for a friendly  Daemon Prince unit",
@@ -36,9 +33,11 @@
       "effect": "Pick a friendly non-Hero Slaves to Darkness Monster or Beast unit that has not used a Fight ability this turn and is wholly within 12\" of this unit to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
     },
     "Godswrath Warband": {
-      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": [
+        "End of Turn"
+      ],
       "your_turn_only": true,
       "name": "Ironclad Onslaught",
       "description": "When a Chaos horde is on the march, the realms tremble. Hundreds of heavily armoured warriors desecrate all in their path as they roar oaths to the Dark Pantheon.",
@@ -46,7 +45,6 @@
       "effect": "Place a defiled token next to the target objective. Then, roll a D3 for each enemy unit contesting an objective that has a defiled token. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     "Darkoath Horde": {
-      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
       "name": "Rally The Tribes",
@@ -57,22 +55,26 @@
   },
   "heroic_traits": [
     {
-      "phases": [],
+      "phases": [
+        "Deployment Phase"
+      ],
       "name": "FAVOURED OF THE PANTHEON:",
       "description": "The gods watch this warlord's deeds particularly closely.",
       "effect": "This unit can use the 'Eye of the Gods' ability as if it were the end of the turn and it had destroyed an enemy unit this turn."
     },
     {
+      "activation": "Once Per Battle",
       "phases": [
         "Combat Phase"
       ],
-      "activation": "Once Per Battle",
       "name": "Deathmonger",
       "description": "Feared across the realms, this hero leaves naught in their wake but a trail of sun-bleached bones.",
       "effect": "This unit can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the turn."
     },
     {
-      "phases": [],
+      "phases": [
+        "Hero Phase"
+      ],
       "name": "Radiance Of Dark Glory",
       "description": "In the presence of this champion, the mutative energies of Chaos can seal shut even the most grievous of wounds.",
       "declare": "Pick each damaged friendly unit wholly within 12\" of this unit to be the targets.",
@@ -81,10 +83,10 @@
   ],
   "artefacts_of_power": [
     {
+      "activation": "Once Per Battle",
       "phases": [
         "Start of Turn"
       ],
-      "activation": "Once Per Battle",
       "name": "Infernal Puppet",
       "description": "As it dances upon the aetheric winds, this eldritch marionette violently disrupts the spellcraft of enemy mages.",
       "declare": "Pick a visible enemy Wizard within 24\" of this unit to be the target.",
@@ -92,14 +94,15 @@
     },
     {
       "activation": "Passive",
-      "phases": [],
       "name": "The Conqueror'S Crown",
       "description": "This blasphemous diadem grants the bearer dominion over the minds of lesser mortals.",
       "effect": "Subtract 5 from the control scores of enemy Infantry units while they are in combat with this unit."
     },
     {
-      "phases": [],
       "activation": "Once Per Battle",
+      "phases": [
+        "Hero Phase"
+      ],
       "your_turn_only": true,
       "name": "REALMWARPER'S TWIST-RUNE:",
       "description": "One who bears this cursed rune can bind warped landscapes to their will. Ruptured chasms open as thick palls of dark energy obscure the favoured and their servants from view.",
@@ -110,7 +113,9 @@
   "spell_lore": {
     "Lore Of The Damned": [
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Spite-Tongue Curse",
         "description": "Uttering the foul syllables of the Dark Tongue until blood pours from their mouth, the caster beseeches the Chaos Gods to destroy their enemies - though such pacts carry with them a terrible cost\u2026",
@@ -123,7 +128,9 @@
         ]
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Binding Damnation",
         "description": "At the caster's urging, tendrils of raw Chaos burst from the tortured ground, entwining the limbs of their enemies and rendering them easy prey.",
@@ -137,7 +144,9 @@
         "casting_value": 7
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Daemonic Speed",
         "description": "Infernal winds blow at the back of these hordes, speeding them into battle against the enemies of the gods.",
@@ -153,7 +162,9 @@
   "manifestation_lore": {
     "Manifestations Of Malevolence": [
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Daemonrift",
         "description": "Darkfire Daemonrifts are eldritch portals torn ajar by dark incantations. Once the veil has been sundered, raw magic seeping from the Realm of Chaos forms an opening for the horrors beyond to vent their spite, widened and empowered by spellcraft that draws upon the essence of Chaos.",
@@ -166,7 +177,9 @@
         "casting_value": 7
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Rupture",
         "description": "Realmscourge Ruptures are not subtle weapons. When the necessary magical power has been channelled and released by a tribal shaman, the land itself writhes in the grip of Chaos, sharpened spikes surging forth like an accursed tidal wave to overwhelm anything in their path.",
@@ -179,7 +192,9 @@
         "casting_value": 7
       },
       {
-        "phases": [],
+        "phases": [
+          "Hero Phase"
+        ],
         "your_turn_only": true,
         "name": "Doom-Sigil",
         "description": "Eightfold Doom-Sigils are icons of Chaos in all its glory, blazing symbols of pure ruin. To fall in the presence of such a sorcerous construct is to be damned, for these lingering spells hungrily suck souls into the Realm of Chaos for the gods to feast upon.",
@@ -235,13 +250,14 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Dorghar's Claws and Tails is 4."
           },
           {
-            "phases": [],
             "activation": "Once Per Battle",
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "The Eye Of Sheerian",
             "description": "Torn from the corpse of a mighty dragon, this artefact grants Archaon visions of future events.",
@@ -249,21 +265,24 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "The Slayer Of Kings",
             "description": "This ancient daemonblade thirsts for the souls of champions and warlords.",
             "effect": "Each time this unit uses a Fight ability, if the unmodified wound roll for 2 or more attacks made with The Slayer of Kings that target the same Hero is 6, that Hero is automatically destroyed."
           },
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "The Favoured Warlord",
             "description": "Archaon ruthlessly exploits the Dark Gods' competition for his service.",
             "effect": "Pick 1 of the following keywords: Khorne, Tzeentch, Nurgle or Slaanesh. This unit has that keyword in addition to Undivided."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "THREE-HEADED TITAN",
             "effect": "Pick 1 of the following effects: Filth-spewer: Pick an enemy unit within 6\" of this unit and roll a number of dice equal to the number of models in that unit, to a maximum of 7. For each 3+, inflict 1 mortal damage on that unit. Skull-gorger: Pick an enemy unit in combat with this unit and roll a dice. If the roll exceeds that unit's Health characteristic, 1 model in that unit is slain and you can Heal (X) this unit, where X is that unit's Health characteristic. Spell-eater: Pick a Manifestation within 12\" of this unit and roll a dice. On a 2+, it is banished and inflict D3 mortal damage on the unit that summoned it.",
             "keywords": [
@@ -310,20 +329,20 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Airborne Horror",
             "description": "Carried aloft by ragged leathery wings, this favoured champion of the Chaos Gods will bring ruin wherever they descend.",
             "effect": "If this unit has Wings, it has a Move characteristic of 10\" and has Fly."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Fallen",
             "description": "Some Daemon Princes revel in glory with each worthy foe slain by their hands.",
             "effect": "If this unit has a Trophy Rack, its Hellforged Weapons also have Anti-Hero (+1 Rend)."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Ruinous Favour",
             "description": "A Daemon Prince is an unholy conduit for the power and influence of their patron, and those who fight in their monstrous shadow may find themselves marked by the divine.",
@@ -372,8 +391,10 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Battle",
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Relentless Killers",
             "description": "The Varanguard have slaughtered foes beyond counting, butchering their way across the battlefields of the Mortal Realms without mercy.",
             "effect": "This unit can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the turn."
@@ -419,19 +440,16 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Blade of Shadows is 6."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Shadow For M",
             "description": "Be'lakor can shift his physical form to be as insubstantial as the mists of Ulgu - and just as hard to land a telling blow upon.",
             "effect": "Ignore modifiers to save rolls for this unit (positive and negative)."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Deadly Trap",
@@ -443,10 +461,10 @@
             ]
           },
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Hero Phase"
             ],
-            "activation": "Once Per Battle",
             "enemy_turn_only": true,
             "name": "The Dark Master",
             "description": "Many puppets dance on Be'lakor's infernal strings. Few realise as much until their fate is sealed.",
@@ -454,7 +472,9 @@
             "effect": "Until the start of your next turn, each time the target is picked to use an ability, roll a dice as a reaction. On a 3+, that ability has no effect. 6"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Enfeeble Foe",
             "description": "With a series of hissed incantations, Be'lakor instils visions of loss and despair in the minds of his enemies to drain them of their fighting spirit.",
@@ -512,7 +532,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "name": "VEINS OF BLACK LIGHTNING:",
             "description": "Reborn in the Cursed Skies above the realms, Eternus's soul is tethered to the Mortal Realms through the dark magics of his master; whenever he is struck down, a flash of black lightning sees him stand defiant once more.",
             "declare": "This unit can use this ability if it has been destroyed.",
@@ -522,7 +544,6 @@
             ]
           },
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a command   for a unit within 12\" of this unit",
             "name": "Network Of Spies",
@@ -571,7 +592,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "The Knights Of Chaos",
@@ -631,7 +651,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "MINIONS OF THE SILVER TOWER:",
             "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
             "declare": "Pick a friendly unit that has not been deployed to be the target.",
@@ -641,7 +663,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Book Of Profane Secrets",
             "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
@@ -649,7 +673,9 @@
             "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "ARCANE IMPRISONMENT:",
             "description": "Gaunt Summoners delight in banishing foes to their Silver Towers.",
@@ -708,7 +734,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "MINIONS OF THE SILVER TOWER:",
             "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
             "declare": "Pick a friendly unit that has not been deployed to be the target.",
@@ -718,7 +746,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Book Of Profane Secrets",
             "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
@@ -726,7 +756,9 @@
             "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Divert Realmgate",
             "description": "Whispering fell incantations, a Gaunt Summoner can temporarily divert the path of a realmgate, allowing malefic Chaos entities to storm the battlefield.",
@@ -772,10 +804,10 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Combat Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Unleashed Savagery",
             "description": "Suppressing their savage spirit no more, these ferocious warriors hack at the foe in a bestial frenzy.",
             "effect": "Add 1 to the Damage characteristic of this unit's melee weapons for the rest of the turn."
@@ -822,9 +854,11 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Oracular Visions",
             "description": "A sorcerer can temporarily bestow the gift of foresight upon their allies, helping them ward against enemy blows.",
@@ -832,11 +866,11 @@
             "effect": "On a 3+, the target has Ward (5+) until the start of your next turn."
           },
           {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
             "phases": [
               "Combat Phase"
             ],
-            "activation": "Once Per Turn",
-            "once_per_army": true,
             "name": "Venomous Tail Strike",
             "description": "The barbed tail of a Manticore secretes a paralysing toxin that can stun an enemy long enough for the Manticore to tear into them with impunity.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -889,15 +923,16 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "IRON-WILLED OVERLORD:",
             "description": "Manticores are berserk killers, and any Chaos Lord who rides one to battle displays such obvious dominance that none would dare deny their orders.",
             "effect": "Add 2 to the control scores of friendly Warriors of Chaos units while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Apex Predator",
             "description": "It is a point of pride to a Manticore rider that they and their steed are the apex predators of the battlefield. They seek out the strongest foes and do not rest until they have proven their supremacy with a vicious kill.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -939,7 +974,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Glory In Battle",
@@ -987,14 +1021,15 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Brutish Rampage",
             "description": "A charging Karkadrak is an almost unstoppable force, capable of smashing straight through even the most determined shieldwall.",
             "declare": "If this unit charged this phase, pick up to 3 enemy units within 1\" of it to be the targets.",
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
           },
           {
-            "phases": [],
             "activation": "Once Per Battle",
             "once_per_army": true,
             "name": "DRIVE THE LEGIONS FORWARD:",
@@ -1034,9 +1069,11 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Oracular Visions",
             "description": "A sorcerer can temporarily bestow the gift of foresight upon their allies, helping them ward against enemy blows.",
@@ -1077,7 +1114,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Glory-Seeker",
             "description": "To earn the favour of their patron, these formidable warriors ruthlessly hunt down enemy monsters and champions.",
             "effect": "Add 1 to the Damage characteristic of this unit's melee weapons for attacks that target Heroes or Monsters."
@@ -1126,7 +1162,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Pit Master",
@@ -1135,7 +1170,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Myr Midon Rage",
             "description": "Every wound inflicted on a Myrmidon only serves to stoke its rage further.",
             "effect": "While this unit is damaged, add 2 to the Attacks characteristic of its melee weapons."
@@ -1181,19 +1215,19 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Flailing Fists is 4."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "PROTECTION OF THE DARK GODS:",
             "description": "Worshippers of the Ruinous Powers gather around these shrines in the hope of receiving divine protection.",
             "effect": "Friendly Warriors of Chaos units have Ward (6+) while they are wholly within 12\" of this unit. 4"
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Favour Of Chaos",
             "description": "The Shrinemaster invokes the Dark Pantheon to bless nearby followers with their favour.",
@@ -1269,21 +1303,21 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Piston-driven Legs and Daemonic Blade or Claw is 6."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Implacable Advance",
             "description": "This daemonic engine is utterly relentless in its desire to pay off the soul-tithe owed to its masters.",
             "effect": "This unit can use Charge abilities even if it used a Run ability in the same turn."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Piston-Driven Carnage",
             "description": "The mechanical lower limbs of a Soul Grinder crush, stamp and impale without mercy.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
@@ -1351,7 +1385,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Swift Death",
             "description": "Chaos Chariots are at their most deadly on the charge, where their considerable bulk and bladed wheels can cause untold devastation.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -1416,7 +1452,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Brutal Momentum",
             "description": "The ferocity of Gorebeasts is terrible to behold as they carve a path of bloody destruction through the enemy ranks.",
             "effect": "When this unit uses the 'Power Through' command, inflict an additional D3 mortal damage on the target and add 3\" to the distance this unit can move as part of that ability."
@@ -1452,7 +1487,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Tribal Warleader",
@@ -1460,8 +1494,10 @@
             "effect": "Pick a friendly non-Hero Darkoath Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
           },
           {
-            "phases": [],
             "activation": "Once Per Battle",
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Oath Of Murder",
             "description": "Darkoath Chieftains offer up the souls of enemy lords and champions in exchange for divine power.",
             "effect": "If this unit destroyed an enemy Hero or Monster this turn, this unit has Strike-first for the rest of the battle."
@@ -1499,9 +1535,11 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "RUIN-BLESSED CONQUEROR: A",
             "description": "Warqueen heeds the whispers of the gods, ravaging lands in their name and drawing their gaze onto her warrior hordes.",
@@ -1509,10 +1547,10 @@
             "effect": "Roll a dice. On a 3+, for the rest of the turn, other friendly Darkoath units have Ward (5+) while they are contesting that objective."
           },
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Charge Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Oath Of Supremacy",
             "description": "By the will of the gods, this warrior leads her barbarous horde into the lands of the enemy, allowing none to oppose them.",
             "effect": "If this unit is wholly within enemy territory and charged this phase, for the rest of the battle, add 1 to hit rolls for combat attacks made by friendly Darkoath units while they are wholly within 12\" of this unit."
@@ -1551,10 +1589,10 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Combat Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Heralds Of Ruination",
             "description": "Paragons of the Dark Gods, Chaos Chosen cut a swathe through the enemy lines, leaving nothing but blood and ruin in their wake.",
             "effect": "This unit can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the turn."
@@ -1594,7 +1632,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Bringers Of Desolation",
             "description": "Chaos Warriors fight with relentless ferocity in those places consecrated to the Dark Gods.",
             "effect": "Add 1 to the Attacks characteristic of this unit's Rune-etched Weapons while it is contesting an objective you control."
@@ -1634,13 +1671,11 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Drawn To Power",
             "description": "Even cursed with their hideous and twisted form, Chaos Spawn still covet the boons of the Dark Gods and are drawn to those most favoured by their patron.",
             "effect": "While this unit is wholly within 12\" of a friendly Daemon Prince that shares a Mark of Chaos keyword with it, you can re-roll the random characteristic rolls for this unit's Move and Attacks characteristics."
@@ -1685,7 +1720,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Impaling Charge",
             "description": "A charging Chaos Knight is capable of spitting several enemies at once with the point of their ensorcelled polearm.",
             "effect": "If this unit charged this turn, for the rest of the turn, add 1 to the Rend characteristic of its Cursed Lances."
@@ -1734,18 +1768,18 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Betentacled Maw is 8."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "name": "Mutant Regeneration",
             "description": "This unnatural abomination is invigorated by the raw power of Chaos.",
             "effect": "Heal (D3) this unit."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Aura Of Mutation",
@@ -1798,14 +1832,15 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Razor-tipped Claws is 5."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "Rampaging Charge",
             "description": "The Slaughterbrute crashes into the enemy's ranks in a frenzy of destruction.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -1815,7 +1850,9 @@
             ]
           },
           {
-            "phases": [],
+            "phases": [
+              "Deployment Phase"
+            ],
             "name": "Sigils Of Domination",
             "description": "By carving runes of domination into a Slaughterbrute's back and driving cursed blades of binding into its flesh, the monster's will can be bound to a champion of Chaos.",
             "declare": "Pick a friendly Slaves to Darkness Hero within this unit's combat range to be this unit's master.",
@@ -1853,7 +1890,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Marshal Of The Legions",
@@ -1892,12 +1928,13 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phases": [],
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Sow Confusion",
             "description": "To the disciples of Be'lakor, subterfuge and lies are as keen as any blade.",
@@ -1937,14 +1974,12 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Crazed Flock",
             "description": "A flock of snapping, screeching Raptoryx is capable of swiftly bringing down any prey should they catch them unawares.",
             "effect": "If this unit charged this turn, for the rest of the turn, add 1 to the Attacks characteristic of its melee weapons."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           }
@@ -1979,7 +2014,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Sneaky Little Devils",
             "description": "Chaos Furies are spiteful creatures that utterly loathe the idea of engaging in a fair fight, much preferring - where possible - to stab distracted enemies in the back.",
             "effect": "If this unit is in combat, roll a dice. On a 3+, this unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
@@ -2018,7 +2055,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Dominate Mind",
@@ -2072,7 +2108,6 @@
       "abilities": [
         [
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Cursed Destroyers",
@@ -2114,7 +2149,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Charge Phase"
+            ],
             "name": "DEBILITATING SHOCKWAVE:",
             "description": "The vicious spikes that erupt from an onrushing Realmscourge Rupture impale those unfortunate enough to be struck by them even as the tremors that accompany them send those nearby staggering.",
             "declare": "If this Manifestation charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -2142,7 +2179,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Empowered By Atrocity",
             "description": "The souls of those slain in the presence of an Eightfold Doom-Sigil are absorbed by the magical manifestation, feeding the Dark Gods' eternal hunger and inspiring their servants to battle all the harder, even as their own lives are offered in tribute.",
             "effect": "If 2 or more units (friendly or enemy) were destroyed this turn, for the rest of the turn, add 1 to the Attacks characteristic of melee weapons used by friendly Slaves to Darkness units while they are wholly within 12\" of this Manifestation."
@@ -2192,7 +2228,6 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Fuelled By Sorcery",
             "description": "A Darkfire Daemonrift absorbs magical power, widening and expelling ever more gouts of ruinous sorcery as it hungrily devours arcane energies.",
             "effect": "Each time a spell is successfully cast by a unit within 12\" of this Manifestation, give this Manifestation 1 ruinous energy point, to a maximum of 6. Each time this Manifestation uses a Shoot ability, add 1 to the Attacks characteristic of its Darkfire Torrent for each ruinous energy point it has.  If this Manifestation is removed from play, all of its ruinous energy points are lost."
@@ -2218,14 +2253,18 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Draw Power",
             "description": "Constructed at confluences where magical ley lines converge, a Nexus Chaotica can draw power from the realms and into a floating crucible.",
             "effect": "Roll a dice. Give a number of power points to this terrain feature equal to the roll. This terrain feature can have a maximum of 12 power points at once."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Infernal Sorcery",
             "description": "A sorcerer of Chaos can draw upon the bound daemons of the Nexus Chaotica to empower their spellcasting.",
@@ -2233,7 +2272,9 @@
             "effect": "Remove 3 power points from this terrain feature, then add 1 to casting rolls for the target for the rest of the turn."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Corrupt The Realms",
             "description": "These diabolical constructs use harnessed daemonic power to corrupt the geomantic energy of the Mortal Realms.",
@@ -2280,19 +2321,19 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Feed On Flesh",
             "description": "Having been appeased with sacrificial blood, this creature may bestow dark blessings upon its kin.",
             "effect": "Each time a model (friendly or enemy) is slain within 12\" of this unit, give this unit a sacrifice point, to a maximum of 6. If there are more than 1 friendly Darkoath Wilderfiend units within 12\" of the slain model, only 1 of them can be given a sacrifice point for that slain model."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           },
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Primal Sorcery",
             "description": "Though bestial, Darkoath Wilderfiends possess innate powers of sorcery.",
@@ -2341,14 +2382,15 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Cavalry Warleader",
             "description": "The Darkoath Chieftain leads the cavalry swiftly into the enemy ranks.",
             "effect": "You can re-roll charge rolls for friendly Darkoath Cavalry units while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [],
             "activation": "Once Per Battle",
+            "phases": [
+              "End of Turn"
+            ],
             "name": "Oath Of Murder",
             "description": "Darkoath Chieftains offer up the souls of enemy lords and champions in exchange for divine power.",
             "effect": "If this unit destroyed an enemy Hero or Monster this turn, this unit has Strike-first for the rest of the battle."
@@ -2386,17 +2428,16 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Charge Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Oath Of The Marauder",
             "description": "These bloodthirsty tribal warriors loudly declare vows of violence and slaughter as they race after their foes.",
             "effect": "If this unit charged this phase and the unmodified charge roll was 8+, add 1 to the Rend characteristic of this unit's weapons for the rest of the battle."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Glorious Death",
             "description": "Ever keen to earn the favour of their tribe, when the eyes of the fiercest fighters are upon them, these warriors will not go down without a fight.",
             "effect": "While this unit is wholly within 12\" of any friendly Darkoath Heroes, each time a model in this unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. On a 5+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
@@ -2436,10 +2477,10 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Hero Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Oath Of Conquest",
             "description": "Heeding their Godspeaker's proclamations, these warriors seek to earn glory by driving back the enemy.",
             "effect": "If this unit is contesting an objective you control that is wholly within enemy territory, this unit has Ward (5+) for the rest of the battle."
@@ -2507,17 +2548,16 @@
       "abilities": [
         [
           {
+            "activation": "Once Per Battle",
             "phases": [
               "Charge Phase"
             ],
-            "activation": "Once Per Battle",
             "name": "Oath Of The Raider",
             "description": "Before battle, Fellriders swear oaths to harry the enemy without mercy, showing no mercy to those stragglers who fall beneath their axes.",
             "effect": "If this unit charged this phase and is only in combat with 1 enemy unit, and that enemy unit is only in combat with this unit, add 1 to the Rend characteristic of this unit's weapons for the rest of the battle."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Swift Attackers",
             "description": "As they close in on the enemy at frightening speed, these skilled horsemen are nigh impossible to hit with missile fire.",
             "effect": "Subtract 1 from hit rolls for shooting attacks that target this unit."
@@ -2548,19 +2588,16 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Gorbolga is 3."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "WARLORD OF THE FIRST CIRCLE:",
             "description": "Abraxia commands the Swords of Chaos with relentless brutality.",
             "effect": "If a friendly Varanguard unit uses the 'Relentless Killers' ability while it is wholly within 12\" of this unit, that unit does not have Strike-last as a result of that ability."
           },
           {
-            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Roar Of Domination",
@@ -2573,13 +2610,14 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "BLOOD OF MOLTEN VARANITE:",
             "description": "Any who wound the Thanatorg risk being splashed by its highly mutative blood.",
             "effect": "Roll a dice each time a damage point inflicted by a combat attack is allocated to this unit. On a 4+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
           },
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "GORBOLGA THE ACCURS'D:",
             "description": "A 'gift' from the Everchosen, Gorbolga is a varanite spear that carries a potent mutative curse - but should its wielder's will slip, they too will learn of its hunger\u2026",
             "effect": "If this unit is in combat, roll a dice and apply the corresponding effect: 1 Uncontrollable Power: Allocate 1  damage point to this unit. 2 The Spear Slumbers: No effect. 3-5  White-hot Varanite: Add 1 to the Damage characteristic of this unit's Gorbolga for the rest of the turn. Rampant Mutation: The effect of 'White-hot Varanite' applies and this unit's Gorbolga has Crit (Mortal) for the rest of the turn. 6"
@@ -2619,17 +2657,19 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Combat Phase"
+            ],
             "name": "Carve A Path To Glory",
             "description": "Ruthless in battle, Gunnar Brand closes in on the enemy's champions, claiming skulls and earning glory with each swing of his axes.",
             "declare": "This unit can only use this ability if it is in combat with an enemy Hero.",
             "effect": "This unit can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the turn. This unit can only use the second Fight ability if it is in combat with an enemy Hero, and if it does so, it must pick an enemy Hero to be the target of all of its attacks."
           },
           {
+            "activation": "Once Per Battle",
             "phases": [
               "End of Turn"
             ],
-            "activation": "Once Per Battle",
             "name": "Oath Of Bloodshed",
             "description": "Though he is contemptuous of the gods, Gunnar is still Darkoath; he is not so foolish as to reject their boons should they seek to reward his murder-making.",
             "declare": "This unit can only use this ability if any enemy Heroes were slain by this unit's combat attacks this turn.",
@@ -2692,14 +2732,12 @@
         [
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Swift As The Wind",
             "description": "Singri's horsemanship is unrivalled by any of the Darkoath. She weaves deftly across the battlefield, avoiding enemy fire and loosing deadly accurate shots with her bow in return.",
             "effect": "Only critical hits score successful hits for shooting attacks that target this unit."
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Uncanny Shot",
             "description": "Gunnar Brand has been saved on more than one occasion by a well-placed arrow from Singri.",
             "effect": "Add 1 to the Rend characteristic of this unit's Singri's Warbow for attacks that target enemy units that are within 6\" of a friendly Gunnar Brand."
@@ -2748,7 +2786,9 @@
       "abilities": [
         [
           {
-            "phases": [],
+            "phases": [
+              "Hero Phase"
+            ],
             "your_turn_only": true,
             "name": "Withering Death",
             "description": "Nadja spits a vile curse in the Dark Tongue, drawing unnatural shadows to coil around an enemy champion and sap their life force.",
@@ -2761,7 +2801,6 @@
           },
           {
             "activation": "Passive",
-            "phases": [],
             "name": "Broken Nadja",
             "description": "Broken Nadja wields the energies of ruin itself through dark incantations.",
             "effect": "While this unit's Broken Nadja is on the battlefield, it has Wizard (1)."

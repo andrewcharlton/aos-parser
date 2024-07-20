@@ -452,8 +452,8 @@ def parse_ability(text):
                         ability["once_per_army"] = True
                     break
 
-                if keyword == "Passive":
-                    ability["phases"] = []
+                    if keyword == "Passive":
+                        ability["phases"] = []
     
             # Check the phase of the ability
             for keyword in Phase_Keywords:
@@ -549,6 +549,7 @@ def tidy_string(s):
 
 if __name__ == "__main__":
     input_files = os.listdir("input")
+    input_files.sort()
     for input_file in input_files:
         print("Processing", input_file)
         output_file = "output/" + input_file.removesuffix(".pdf") + ".json"
