@@ -1,17 +1,21 @@
 {
   "battle_traits": [
     {
+      "phases": [
+        "Hero Phase"
+      ],
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phase": "Hero Phase",
       "name": "Mighty Destroyers",
       "description": "The Ironjawz won't let anything get between them and a good scrap.",
       "declare": "Pick a friendly Ironjawz unit that was not set up this turn to be the target.",
       "effect": "The target can move up to 3\". It can move into combat. If it was in combat at the start of the move, it must end that move in combat."
     },
     {
+      "phases": [
+        "Charge Phase"
+      ],
       "activation": "Once Per Battle",
-      "phase": "Charge Phase",
       "your_turn_only": true,
       "name": "Ironjawz Waaagh!",
       "description": "With a roar that shakes the battlefield, the Ironjawz charge as one, eager to crack skulls.",
@@ -23,24 +27,28 @@
   "battle_formations": {
     "Ironjawz Brawl": {
       "activation": "Passive",
+      "phases": [],
       "name": "Natural Disaster",
       "description": "A mass of heavily armoured orruks and their bulky beasts of war, an Ironjawz Brawl hits the enemy line like a landslide if it gains enough momentum, leaving a trail of carnage and blazing ruin in its wake.",
       "effect": "If you make an unmodified charge roll of 8+ for a friendly non- Hero Ironjawz unit, add 1 to the Attacks characteristic of that unit's melee weapons for the rest of the turn."
     },
     "Ironfist": {
       "activation": "Passive",
+      "phases": [],
       "name": "Smashin' And Bashin'",
       "description": "The orruks of an Ironfist won't be outdone by each other - when one mob duffs up the enemy, it inspires others to show them how to do it properly!",
       "effect": "The first time each turn that an enemy unit is destroyed by a Fight ability used by a friendly Ironjawz unit, add 1 to hit rolls for combat attacks made by the next friendly Ironjawz unit that is picked to use a Fight ability for the rest of the turn."
     },
     "Grunta Stampede": {
       "activation": "Passive",
+      "phases": [],
       "name": "'Ere We Come!",
       "description": "Once a grunta stampede gets going and the hogs are all riled up, there are few forces in the realms with the power to halt its momentum.",
       "effect": "Add the number of enemy units that have been destroyed this battle to the Move characteristic of friendly Gore- gruntas and Maw-grunta units, to a maximum of +4."
     },
     "Weirdfist": {
       "activation": "Passive",
+      "phases": [],
       "name": "Spirit Of Gork",
       "description": "The roiling Waaagh! energy that emanates from the Weirdfist shamans fills nearby Ironjawz with the fighting spirit and hardiness of Gork.",
       "effect": "Friendly Ironjawz Infantry units have Ward (6+) while they are wholly within 12\" of any friendly Ironjawz Wizards or Priests."
@@ -48,13 +56,14 @@
   },
   "heroic_traits": [
     {
-      "phase": "Charge Phase",
+      "phases": [],
       "name": "Hulking Brute",
       "description": "Even by orruk standards, this boss is huge, and he is ever eager to throw his immense weight around in battle.",
       "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If this unit's unmodified charge roll this turn was 8+, roll a D6 instead of a D3."
     },
     {
+      "phases": [],
       "activation": "Reaction",
       "reaction_condition": " You declared the \u2018Redeploy\u2019  command for a friendly Ironjawz unit  wholly within 12\" of this unit",
       "name": "An' Eye For Da Fight",
@@ -63,6 +72,7 @@
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Mega Bossy",
       "description": "This boss's booming voice constantly rings out across the battlefield, 'encouraging' their lads to get krumpin'.",
       "effect": "If this unit charged this turn, for the rest of the turn, add 1 to charge rolls for friendly Ironjawz units while they are wholly within 18\" of this unit."
@@ -71,18 +81,20 @@
   "artefacts_of_power": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Trophy Skulls",
       "description": "Festooned with the skulls of those who crossed them, be they ferocious beast or mighty warrior, there's no doubt that this orruk means business.",
       "effect": "Add 10 to this unit's control score."
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Ar Mour Of Gork",
       "description": "This bashed- together armour is thick, heavy and possessed of its own fierce fighting spirit.",
       "effect": "This unit has Ward (6+)."
     },
     {
-      "phase": "Deployment Phase",
+      "phases": [],
       "name": "Amberbone Whetstone",
       "description": "This prized sharpening stone, laced with veins of realmstone, is found deep in the crags of Ghur. It is loved by the Ironjawz for its ability to make a weapon 'ded sharp'.",
       "effect": "Pick 1 of this unit's weapons. Add 1 to the Rend characteristic of that weapon for the rest of the battle."
@@ -91,7 +103,7 @@
   "spell_lore": {
     "Ironjawz Spell Lore\nLore Of The Weird": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Bash 'Em, Ladz!",
         "description": "Pulsing waves of Waaagh! energy radiate from the shaman, boosting the fighting prowess of nearby Ironjawz.",
@@ -104,7 +116,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Mighty 'Eadbutt",
         "description": "The shaman headbutts the air, projecting a wave of green energy that seeks out enemies to nut. Wizards are particularly vulnerable to this brutal front of Waaagh! magic.",
@@ -118,7 +130,7 @@
         "casting_value": 6
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Gork",
         "description": "A ghostly green hand picks up a mob of Ironjawz and plonks them back down where they are most needed.",
@@ -134,7 +146,7 @@
   "prayer_lore": {
     "": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Get 'Em Beat",
         "description": "A pounding rhythm is played by the Warchanter, inspiring nearby Ironjawz to wreak destruction and ruin upon their enemies.",
@@ -147,7 +159,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Fixin' Beat",
         "description": "The Warchanter hammers out an invigorating rhythm that gives the ladz a second wind.",
@@ -161,7 +173,7 @@
         "chanting_value": 4
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Killa Beat",
         "description": "The Warchanter drums  The Warchanter drums a thumping beat with a furious tempo that causes raw Waaagh! energy to course through the weapons of the orruks.",
@@ -216,10 +228,12 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of The Dread Mace is 4 and this unit has a Control characteristic of 10."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a   Spell\u00a0ability",
             "name": "The Shield Inviolate",
@@ -228,14 +242,17 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Avatar Of Destruction",
             "description": "Kragnos is the embodiment of Ghur's relentless ferocity. No single strike can lay him low.",
             "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
           },
           {
+            "phases": [
+              "Charge Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Rampaging Destruction",
             "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
             "effect": "If this unit charged this phase, pick 1 of the following effects: \n* Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. \n* Pick an enemy Monster in combat  with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
@@ -245,6 +262,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "The End Of Empires",
             "description": "Where Kragnos goes, the hordes of Destruction follow.",
             "effect": "Add 1 to the number of dice rolled when making charge rolls for friendly Destruction units while they are wholly within 12\" of this unit, to a maximum of 3."
@@ -306,13 +324,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Bigteef's Fists and Tail is 6."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Monster Grapple",
             "description": "Gordrakk's Maw-krusha, Bigteef, is strong and mean enough to wrestle even the most gigantic rivals into the dirt.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -322,6 +341,7 @@
             ]
           },
           {
+            "phases": [],
             "activation": "Once Per Battle",
             "reaction_condition": " You declared a   Waaagh! ability",
             "name": "Voice Of Gork",
@@ -329,7 +349,7 @@
             "effect": "Until the start of your next turn, add 1 to hit rolls for combat attacks made by friendly Ironjawz units while they are wholly within 18\" of this unit."
           },
           {
-            "phase": "End of Turn",
+            "phases": [],
             "name": "Strength From Victory",
             "description": "The more fights a Megaboss wins, the stronger they become.",
             "effect": "If any damage points were allocated to an enemy unit by this unit's combat attacks this turn and that enemy unit has been destroyed, give this unit a Waaagh! token, to a maximum of 3. Until the end of the next turn, add 1 to the Attacks characteristic of this unit's weapons for each Waaagh! token it has."
@@ -392,13 +412,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Maw-krusha's Fists and Tail is 5."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Destructive Bulk",
             "description": "A Maw-krusha is an unstoppable avalanche of ill- tempered muscle that turns all in its path into pulverised meat.",
             "declare": "If this unit charged this phase, pick a visible enemy unit within 1\" of it to be the target.",
@@ -409,12 +430,13 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Smash Through",
             "description": "The impact of a charging Maw-krusha often leaves the enemy's first line of defence trampled into the dirt.",
             "effect": "When this unit makes a pile-in move, if it charged in the same turn, it can move 2D6\" instead of 3\"."
           },
           {
-            "phase": "End of Turn",
+            "phases": [],
             "name": "Strength From Victory",
             "description": "The more fights a Megaboss wins, the stronger they become.",
             "effect": "If any damage points were allocated to an enemy unit by this unit's combat attacks this turn and that enemy unit has been destroyed, give this unit a Waaagh! token, to a maximum of 3. Until the end of the next turn, add 1 to the Attacks characteristic of this unit's weapons for each Waaagh! token it has."
@@ -453,7 +475,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Get Stuck In, Ladz!",
             "description": "The roared commands issued by a Megaboss encourage the Brutes under their command to fight all the harder.",
@@ -461,6 +483,7 @@
             "effect": "Roll a dice. On a 2+, add 1 to the Attacks characteristic of the target's melee weapons until the start of your next turn."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit",
             "name": "Lead Da Brutes",
@@ -468,7 +491,7 @@
             "effect": "Roll a dice. On a 3+, for the rest of the turn, add 1 to the Attacks characteristic of melee weapons used by friendly Brute units while they are within this unit's combat range."
           },
           {
-            "phase": "End of Turn",
+            "phases": [],
             "name": "Strength From Victory",
             "description": "The more fights a Megaboss wins, the stronger they become.",
             "effect": "If any damage points were allocated to an enemy unit by this unit's combat attacks this turn and that enemy unit has been destroyed, give this unit a Waaagh! token, to a maximum of 3. Until the end of the next turn, add 1 to the Attacks characteristic of this unit's weapons for each Waaagh! token it has."
@@ -505,7 +528,7 @@
       "abilities": [
         [
           {
-            "phase": "End of Turn",
+            "phases": [],
             "name": "RHYTHM OF DESTRUCTION:",
             "description": "With each enemy skull caved in by the Warchanter's Gorkstikk and Morkstikk, the febrile energy of the Waaagh! begins to build.",
             "effect": "If any enemy models were slain this turn by this unit's combat attacks, give this unit D3 ritual points."
@@ -556,6 +579,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Brutal Power",
             "description": "A Weirdnob Shaman channels the Waaagh! energy emitted by nearby orruk mobs.",
             "effect": "Add 1 to this unit's power level while there are any friendly Ironjawz units that have 10 or more models wholly within 12\" of it."
@@ -603,6 +627,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "You Messin'?",
             "description": "Most beings with half an ounce of common sense swiftly wither under the furious gaze of an orruk Brute who has marked their territory.",
             "effect": "Enemy models with a Health characteristic of 1 or 2 cannot contest objectives while they are in combat with this unit."
@@ -640,7 +665,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Shield Bash",
             "description": "The shields carried by Ardboyz are great slabs of iron festooned with spikes and metal teeth, making them deadly weapons in their own right.",
             "declare": "Pick an enemy unit in combat with this unit and that charged this turn to be the target.",
@@ -688,7 +713,7 @@
       "abilities": [
         [
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Gore-Grunta Charge",
             "description": "Even by the destructive standards of the Ironjawz, the carnage caused by a Gore-grunta charge is horrific to behold.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -745,18 +770,20 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Klonk",
             "description": "This rockbrow squig's headache is only relieved by a bash on the head, making it the perfect portable anvil.",
             "effect": "Klonk is a token. You can re-roll forgin' rolls for this unit while this unit's Klonk is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove this unit's Klonk from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Ward-Smashing Choppa",
             "description": "A strike from this choppa shatters not only skulls but also arcane wards and other mystical forms of protection.",
             "effect": "If an attack made with this unit's Ward-smashing Choppa scores a hit, the target has the Ward-smashed keyword for the rest of the battle. Ward rolls cannot be made for a Ward-smashed unit."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "POWER OF DA GREAT GREEN GOD:",
             "description": "Channelling the raw energies of the Waaagh! with his 'bashin' tools', Zoggrok can empower the weapons of orruks gathered around him.",
@@ -797,12 +824,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Iron-Fisted Commander",
             "description": "No Ardboy would dare quit the fight with the boss around.",
             "effect": "If a friendly Ardboyz unit wholly within 12\" of this unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Get Bashin'!",
             "description": "Shields are made for krumping in the eyes of a Big Boss, who makes sure their boys are using them the 'propa way'.",
             "effect": "Add 1 to shield bash rolls for friendly Ardboyz units while they are wholly within 12\" of this unit."
@@ -840,6 +869,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Berserkers",
             "description": "These Brutes forego heavy armour, which means they can get stuck in to the fighting as quickly as possible.",
             "effect": "This unit can use a Run ability and still use Charge abilities later in the turn."
@@ -905,19 +935,21 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Maw-grunta's Tusks is 3."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Unstoppable Momentum",
             "description": "Once a Maw-grunta begins its charge, it can only stop by crashing into something, and it becomes ever more deadly as its speed increases.",
             "effect": "Each time this unit uses a Charge ability, it gains 1 momentum point. Each time it uses a Run ability, it gains 2 momentum points. It can have a maximum of 3 momentum points at once. Add the number of momentum points this unit has to the Damage characteristic of its Maw-grunta's Tusks. At the end of each battle round, subtract 1 from its momentum points, to a minimum of 0."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Head Of The Stampede",
             "description": "At the forefront of a grunta stampede rides the Tuskboss, racing to be the first to the fray.",
             "declare": "If this unit charged this phase, pick up to 3 friendly Maw-grunta units wholly within 12\" of this unit that charged this turn to be the targets.",
@@ -960,12 +992,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Berserkers",
             "description": "These Brutes forego heavy armour, which means they can get stuck in to the fighting as quickly as possible.",
             "effect": "This unit can use a Run ability and still use Charge abilities later in the turn."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Unleashed Rage",
             "description": "Brute Ragerz waste no time in venting their pent-up rage when they get within striking distance of the foe.",
             "effect": "This unit has Strike-first if it charged in the same turn."
@@ -1030,16 +1064,20 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Unstoppable Momentum",
             "description": "Once a Maw-grunta begins its charge, it can only stop by crashing into something, and it becomes ever more deadly as its speed increases.",
             "effect": "Each time this unit uses a Charge ability, it gains 1 momentum point. Each time it uses a Run ability, it gains 2 momentum points. It can have a maximum of 3 momentum points at once. Add the number of momentum points this unit has to the Damage characteristic of its Maw-grunta's Tusks. At the end of each battle round, subtract 1 from its momentum points, to a minimum of 0."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phase": "Movement Phase",
+            "phases": [
+              "Movement Phase"
+            ],
             "your_turn_only": true,
             "name": "Carve A Path",
             "description": "The job of the hakkin' krew is to clear a path through packed enemies to ensure the Maw-grunta maintains its momentum.",
@@ -1101,11 +1139,13 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Unstoppable Momentum",
             "description": "Once a Maw-grunta begins its charge, it can only stop by crashing into something, and it becomes ever more deadly as its speed increases.",
             "effect": "Each time this unit uses a Charge ability, it gains 1 momentum point. Each time it uses a Run ability, it gains 2 momentum points. It can have a maximum of 3 momentum points at once. Add the number of momentum points this unit has to the Damage characteristic of its Maw-grunta's Tusks. At the end of each battle round, subtract 1 from its momentum points, to a minimum of 0."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Flattened Into The Mud",

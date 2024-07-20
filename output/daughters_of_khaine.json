@@ -1,7 +1,7 @@
 {
   "battle_traits": [
     {
-      "phase": "Combat Phase",
+      "phases": [],
       "activation": "Once Per Battle",
       "name": "All-Out Slaughter",
       "description": "The leaders of the Daughters of Khaine can exhort their warriors to commit acts of terrible slaughter.",
@@ -10,6 +10,7 @@
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Blood Rites",
       "description": "Before battle, the Daughters take part in holy rites of bloodletting. With each sacrifice, the faithful are imbued with a fraction of their god's furious power.",
       "effect": "A different effect applies to friendly Daughters of Khaine units each battle round, as shown below. The effects of all previous battle rounds also apply to those units. Battle Round 1: Quickening Bloodlust: Add 1 to run rolls for this unit. Battle Round 2: Headlong Fury: Add 1 to charge rolls for this unit. Battle Round 3: Zealot's Rage: Add 1 to hit rolls for this unit's combat attacks. Battle Round 4: Slaughterer's Wound: Add 1 to wound rolls for this unit's combat attacks. Battle Round 5: Frenzied Worshippers: Add 1 to the Attacks characteristic of this unit's melee weapons."
@@ -18,21 +19,24 @@
   "battle_formations": {
     "Sc\u00e1thcoven": {
       "activation": "Passive",
+      "phases": [],
       "name": "Speed Of The Sc\u00e1thborn",
       "description": "The Melusai and Khinerai that make up the Vyperic Guard strike at the heart of their enemies with lethal speed and accuracy.",
       "effect": "If the unmodified charge roll for a friendly Melusai or Khinerai unit is 8+, that unit has Strike-first for the rest of the turn."
     },
     "Cauldron Guard": {
+      "phases": [
+        "End of Turn"
+      ],
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phase": "End of Turn",
       "name": "Frenzied Devotees",
       "description": "The Cauldron Guard seek to carve a path for their worshipped engines through enemy defences at the earliest opportunity.",
       "declare": "Pick up to 3 friendly Daughters of Khaine Infantry or War Machine units that are in combat to be the targets.",
       "effect": "For each target: \n* Make a pile-in move. \n* Then, pick an enemy unit in combat  with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     "Shadow Patrol": {
-      "phase": "Movement Phase",
+      "phases": [],
       "your_turn_only": true,
       "name": "Shadowpaths",
       "description": "Well versed in the secrets of the shadowpaths, these warriors strike where least expected.",
@@ -43,6 +47,7 @@
       ]
     },
     "Slaughter Troupe": {
+      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
       "reaction_condition": " You  declared a Charge ability for a friendly  Daughters of Khaine Aelf unit",
@@ -53,20 +58,21 @@
   },
   "heroic_traits": [
     {
-      "phase": "End of Turn",
+      "phases": [],
       "name": "Master Of Poisons",
       "description": "This hero has intimate knowledge of all poisons and coats her blades in an elixir that leaves the most hardened warriors weak, debilitated and primed for the killing stroke.",
       "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this unit's combat attacks to be the target.",
       "effect": "For the rest of the battle: \n* The target cannot be healed. \n* Slain models cannot be returned to the  target unit."
     },
     {
-      "phase": "End of Turn",
+      "phases": [],
       "name": "Bathed In Blood",
       "description": "This hero bathes in gore during battle, granting her healing powers.",
       "effect": "Heal (3) this unit if it is in combat."
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Zealous Orator",
       "description": "Your general is a wild demagogue who inspires her followers to fight on in the face of impossible odds.",
       "effect": "If a friendly unit wholly within 12\" of this unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
@@ -74,8 +80,10 @@
   ],
   "artefacts_of_power": [
     {
+      "phases": [
+        "Hero Phase"
+      ],
       "activation": "Once Per Battle",
-      "phase": "Hero Phase",
       "your_turn_only": true,
       "name": "Khainite Pendant",
       "description": "The wearer can call for Khaine's blessing as easily as drawing breath.",
@@ -84,13 +92,14 @@
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Crown Of Woe",
       "description": "Forged from the cult of Khaine's first sacrificial altar, an aura of dread surrounds the wearer of this baleful crown.",
       "effect": "Subtract 2 from the control scores of enemy units while they are within 9\" of this unit."
     },
     {
+      "phases": [],
       "activation": "Once Per Battle",
-      "phase": "Movement Phase",
       "your_turn_only": true,
       "name": "Sevenfold Shadow",
       "description": "This hero possesses a living shadow that can, at a command, envelop them and transport them across the shadow realm.",
@@ -103,7 +112,7 @@
   "spell_lore": {
     "Lore Of Shadows": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Steed Of Shadows",
         "description": "A coal-black creature with wings of night materialises from the darkness and swoops across the battlefield, hastening the movement of the Khainites below.",
@@ -116,7 +125,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Doomfire",
         "description": "The wizard hurls bolt of blazing black flame at their foes.",
@@ -130,7 +139,7 @@
         "casting_value": 7
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Mindrazor",
         "description": "The wizard summons spectral blades into their allies' hands, weapons whose edges are honed by the wielder's faith as much as the victim's fear.",
@@ -146,7 +155,7 @@
   "prayer_lore": {
     "Prayers Of The Khainite Cult": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Sacrament Of Blood",
         "description": "The dreaded rune of Khaine spontaneously manifests on the brows of the faithful as if carved there by some ghostly knife.",
@@ -159,7 +168,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Martyr'S Sacrifice",
         "description": "The priestess beseeches Khaine to give those faithful who have been slain the strength to deliver one final blow.",
@@ -173,7 +182,7 @@
         "chanting_value": 4
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Covenant Of The Iron Heart",
         "description": "The hearts of the Murder God's followers become as cold and hard as iron, crushing their fears and doubts with a chilling contempt.",
@@ -189,7 +198,7 @@
   "manifestation_lore": {
     "Manifestations Of Khaine": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Summon Bladewind",
         "description": "The caster calls upon their mastery of blood magic to conjure a twirling quartet of giant, blood-slick blades.",
@@ -203,7 +212,7 @@
         "casting_value": 6
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Summon Heart Of Fury",
         "description": "The skies turn crimson as this bleeding icon descends upon the battle.",
@@ -217,7 +226,7 @@
         "chanting_value": 5
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "SUMMON BLOODWRACK VIPER:",
         "description": "The caster weaves their outstretched hand in an elaborate pattern that mimics the structure of a monstrous snake drenched in blood.",
@@ -254,7 +263,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Mirror Dance",
             "description": "Morathi casts a spell of shifting, revealing a shadowpath between herself and the Shadow Queen.",
@@ -267,12 +276,14 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "ONE SOUL, TWO BODIES:",
             "description": "Morathi-Khaine and the Shadow Queen are two entities that share the same life force.",
             "effect": "Each time a damage point would be allocated to this unit, it is instead allocated to a friendly The Shadow Queen (you cannot make any further ward rolls for that damage point). If this unit would be automatically destroyed by another ability, it is not automatically destroyed. Instead, allocate 3 damage points to a friendly The Shadow Queen (ward rolls cannot be made for those damage points). If a friendly The Shadow Queen is destroyed, this unit is automatically destroyed."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Sorceress Supreme",
             "description": "Few beings in existence can claim a fraction of Morathi's skill in the magical art.",
             "effect": "Add 1 to casting rolls for this unit."
@@ -344,14 +355,15 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Iron Heart Of Khaine",
             "description": "The Iron Heart of Khaine is the last remnant of the fallen god, and it pulses still with life- sustaining divine energies.",
             "effect": "You cannot allocate more than 3 damage points to this unit each turn. Once 3 points have been allocated to this unit in a turn, any further damage points that would be allocated to it are ignored. Damage points allocated to this unit cannot be healed. If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 3 damage points to it (ward rolls cannot be made for those damage points)."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "FURY OF THE SHADOW QUEEN:",
             "description": "Bloodshed raises the Shadow Queen's fury to new heights and fuels the murderlust of nearby Sc\u00e1thborn.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -394,15 +406,17 @@
       "abilities": [
         [
           {
+            "phases": [
+              "Hero Phase"
+            ],
             "activation": "Once Per Turn",
-            "phase": "Hero Phase",
             "name": "Burnt Offerings",
             "description": "Casting blood into her brazier, Krethusa manipulates the twisting coils of smoke to commune with Morai-Heg.",
             "declare": "If this unit is within the combat range of a friendly Cauldron of Blood, pick a visible friendly Daughters of Khaine Aelf non-Hero Infantry unit wholly within 18\" of this unit to be the target.",
             "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply to the target. Prophecy of Silence: Until the start of your next turn, enemy units cannot use commands while they are in combat with the target. Prophecy of Dark Wings: The target can use the 'Normal Move' ability as if it were your movement phase. That unit counts as having used a Run ability this turn. Prophecy of Reclamation: For the rest of the turn, while the target is contesting an objective, subtract 10 from the control scores of enemy units contesting that objective that do not have the Hero or Monster keyword. 4"
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Murder Of Crows",
             "description": "Several of Krethusa's feathers transform into eldritch corvids that descend upon her enemies, pecking eyes from sockets and flesh from bone.",
@@ -469,7 +483,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Aura Of Agony",
             "description": "Bloodwrack Shrines emit an aura that causes waves of agony to course through the enemy.",
@@ -477,7 +491,7 @@
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
           },
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Bladed Impact",
             "description": "The bladed carriage of a Bloodwrack Shrine can cleave its way through enemy ranks with ease.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -485,6 +499,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Bloodwr Ack Stare",
             "description": "Should a victim's eyes lock with a Bloodwrack Medusa's stare for even a second, their lifeblood will violently rebel, flooding from every pore until their body collapses into a pool of gore.",
             "effect": "Each time this unit attacks with its Bloodwrack Stare, if the attack scores a hit, roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on that unit. You cannot pick the same enemy unit to be targeted by attacks made with a Bloodwrack Stare more than once per phase."
@@ -535,6 +550,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Gory Offering",
@@ -543,6 +559,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wrath Of The Sc\u00e1thborn",
             "description": "An Ironscale leads her Melusai kin in the swift slaughter of the foe.",
             "effect": "You can re-roll charge rolls for friendly Melusai units while they are wholly within 12\" of this unit."
@@ -611,21 +628,22 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Altar Of Khaine",
             "description": "The powerful magic that fuels the Cauldron of Blood grants empowerment and protection to those nearby.",
             "effect": "Add 1 to save rolls for friendly Daughters of Khaine Infantry units while they are wholly within 9\" of this unit. In addition, add 1 to chanting rolls for friendly Daughters of Khaine Priests while they are wholly within 9\" of this unit."
           },
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Bladed Impact",
             "description": "The bladed carriage hauling a Cauldron of Blood can cleave its way through enemy ranks with ease.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
             "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Hero Phase",
             "name": "Witchbrew",
             "description": "Witchbrew drives the imbiber into such an ecstasy of destruction that they will fight on in the face of impossible odds.",
             "declare": "Pick a friendly Daughters of Khaine unit wholly within 12\" of this unit to be the target.",
@@ -678,11 +696,13 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Bloodwr Ack Stare",
             "description": "Should a victim's eyes lock with a Bloodwrack Medusa's stare for even a second, their lifeblood will violently rebel, flooding from every pore until their body collapses into a pool of gore.",
             "effect": "Each time this unit attacks with its Bloodwrack Stare, if the attack scores a hit, roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on that unit. You cannot pick the same enemy unit to be targeted by attacks made with a Bloodwrack Stare more than once per phase."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit",
             "name": "Melusai Kin",
@@ -723,9 +743,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Hero Phase",
             "name": "Witchbrew",
             "description": "Witchbrew drives the imbiber into such an ecstasy of destruction that they will fight on in the face of impossible odds.",
             "declare": "Pick a friendly Daughters of Khaine unit wholly within 12\" of this unit to be the target.",
@@ -777,9 +797,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Wrath Of Khaine",
             "description": "Khaine's subjects channel their faith through a bladed idol of the Murder God, allowing it to carry out acts of monstrous carnage.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -850,21 +870,22 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Altar Of Khaine",
             "description": "The powerful magic that fuels the Cauldron of Blood grants empowerment and protection to those nearby.",
             "effect": "Add 1 to save rolls for friendly Daughters of Khaine Infantry units while they are wholly within 9\" of this unit. In addition, add 1 to chanting rolls for friendly Daughters of Khaine Priests while they are wholly within 9\" of this unit."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Orgy Of Slaughter",
             "description": "The Slaughter Queen orders her warriors to renew their assault twice over.",
             "declare": "Pick a friendly Daughters of Khaine Aelf Infantry unit wholly within 12\" of this unit to be the target.",
             "effect": "Roll a dice. On a 3+, add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
           },
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Bladed Impact",
             "description": "The bladed carriage hauling a Cauldron of Blood can cleave its way through enemy ranks with ease.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -905,9 +926,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Orgy Of Slaughter",
             "description": "The Slaughter Queen orders her warriors to renew their assault twice over.",
             "declare": "Pick a friendly Daughters of Khaine Aelf Infantry unit wholly within 12\" of this unit to be the target.",
@@ -947,15 +968,17 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Paragon Of Slaughter",
             "description": "The spectacular acts of death-dealing performed by a High Gladiatrix inspire nearby Daughters of Khaine, setting their souls aflame with the power of the Bloody- Handed God.",
             "declare": "If this unit is in combat, pick a visible friendly Daughters of Khaine Aelf non-Hero Infantry unit wholly within 12\" of this unit to be the target.",
             "effect": "Roll a dice. On a 2+, add 1 to the Rend characteristic of melee weapons used by the target for the rest of the turn."
           },
           {
+            "phases": [
+              "Combat Phase"
+            ],
             "activation": "Once Per Battle",
-            "phase": "Combat Phase",
             "name": "Killing Stroke",
             "description": "A High Gladiatrix prides herself on slaying enemies with magnificently gory flourishes, killing them with a brutal whip motion or single precise stroke from her blade.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
@@ -1016,6 +1039,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Outmanoeuvre",
             "description": "Doomfire Warlocks are the light cavalry of the war covens, worrying the enemy's flanks and engaging unprotected targets.",
             "effect": "When this unit uses the 'Redeploy' command, if you roll a 1-3 when determining the distance this unit can move, you can use a value of 4 instead."
@@ -1054,7 +1078,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "enemy_turn_only": true,
             "name": "Dance Of Death",
             "description": "Sisters of Slaughter manoeuvre in the heat of combat to close the distance with their enemies.",
@@ -1096,12 +1120,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Dance Of Diversion",
             "description": "Sisters of Slaughter move around their enemies with ease, making them nearly impossible to strike down.",
             "effect": "Subtract 1 from hit rolls for combat attacks that target this unit."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Bladed Bucklers",
             "description": "The martial skill of these warriors allows them to turn defensive techniques into deadly strikes.",
             "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
@@ -1142,6 +1168,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Bladed Bucklers",
             "description": "The martial skill of these warriors allows them to turn defensive techniques into deadly strikes.",
             "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
@@ -1182,6 +1209,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Frenzied Fervour",
             "description": "Witch Aelves hurl themselves at the enemy with no fear of death, cutting down foes in a whirlwind of blades.",
             "effect": "Add 1 to the Rend characteristic of this unit's melee weapons for the rest of the turn if this unit charged in the same turn."
@@ -1233,7 +1261,7 @@
       "abilities": [
         [
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Heartseekers",
             "description": "The blood-blessed arrows loosed by these Melusai unerringly seek out the enemy's vital organs.",
@@ -1284,7 +1312,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Circling In The Skies Above",
             "description": "The Khinerai circle high above the battlefield, waiting for the perfect moment to strike.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -1294,7 +1322,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Death From Above",
             "description": "The Khinerai delight in using their leathery wings to descend upon the foe from unexpected vectors.",
@@ -1302,7 +1330,7 @@
             "effect": "Set up this unit anywhere on the battlefield more than 9\" from all enemy units."
           },
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "name": "Fire And Flight",
             "description": "Heartrenders are masters of the hit-and-run strike, loosing volleys of sharpened projectiles before darting away.",
             "effect": "If this unit used a Shoot ability this phase, this unit can move D6\". It cannot move into combat during any part of that move."
@@ -1341,7 +1369,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Crystal Touch",
             "description": "The sc\u00e1th touch of a Blood Sister can permanently transmute an enemy into an immobile - though still fully conscious - crystal statue.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -1380,7 +1408,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Circling In The Skies Above",
             "description": "The Khinerai circle high above the battlefield, waiting for the perfect moment to strike.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -1390,7 +1418,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Death From Above",
             "description": "The Khinerai delight in using their leathery wings to descend upon the foe from unexpected vectors.",
@@ -1398,6 +1426,7 @@
             "effect": "Set up this unit anywhere on the battlefield more than 9\" from all enemy units."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit",
             "name": "Fight And Flight",
@@ -1450,7 +1479,7 @@
       "abilities": [
         [
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Shadow Leap",
             "description": "Shadowstalkers can vanish and reappear at will as they navigate the Umbral Web.",
@@ -1492,9 +1521,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Crushing Coils",
             "description": "The coils of the Bloodwrack Viper circle around an enemy hero, pinning them in place.",
             "declare": "Pick an enemy Infantry Hero in combat with this Manifestation to be the target.",
@@ -1536,7 +1565,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Unnatural Edge",
             "description": "The falchions carve through an enemy's defences, and the swirling blades prevent them from getting their guard back up.",
             "declare": "If this Manifestation charged this turn, pick an enemy unit in combat with it to be the target.",
@@ -1564,6 +1593,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Locus Of The Murder God",
             "description": "This prayer takes the form of Khaine's undying power and bestows death-defying energies upon his faithful.",
             "effect": "Subtract 1 from wound rolls for combat attacks that target friendly Daughters of Khaine Infantry units while they are wholly within 12\" of this Manifestation."

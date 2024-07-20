@@ -451,6 +451,9 @@ def parse_ability(text):
                     if "(Army)" in text:
                         ability["once_per_army"] = True
                     break
+
+                if keyword == "Passive":
+                    ability["phases"] = []
     
             # Check the phase of the ability
             for keyword in Phase_Keywords:

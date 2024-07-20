@@ -1,7 +1,7 @@
 {
   "battle_traits": [
     {
-      "phase": "Charge Phase",
+      "phases": [],
       "name": "Trampling Charge",
       "description": "At the first opportunity, an ogor will barge into combat, using its immense girth as a weapon.",
       "declare": "Pick a friendly Ogor or Rhinox unit that charged this turn to use this ability, then pick a visible enemy unit within 1\" of it to be the target.",
@@ -9,14 +9,15 @@
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Ravenous Brutes",
       "description": "Sighting the enemy, the ogors' hunger intensifies, and they move with alarming speed to close the distance.",
       "effect": "Add 2 to run rolls for friendly Ogor units while you have not used the 'Feast on Flesh' ability this battle."
     },
     {
+      "phases": [],
       "activation": "Once Per Battle",
       "once_per_army": true,
-      "phase": "End of Turn",
       "name": "Feast On Flesh",
       "description": "As the battlelines clash and blood is spilled, the ogors' hunger must be sated, and they are compelled to gorge on the flesh of their enemies.",
       "declare": "Pick each friendly Ogor unit that is in combat or that used a Fight ability this turn to be the targets.",
@@ -26,24 +27,28 @@
   "battle_formations": {
     "Prophets Of The \nGulping God": {
       "activation": "Passive",
+      "phases": [],
       "name": "Master Butchers",
       "description": "These ogor shamans know many gruesome secrets of gastromantic magic.",
       "effect": "Add 1 to casting rolls for friendly Ogor Mawtribes Wizards."
     },
     "Heralds Of The \nEverwinter": {
       "activation": "Passive",
+      "phases": [],
       "name": "Eyes Of The Stor M",
       "description": "The members of this tribe are masked by frosty squalls and freezing mists as they follow their champions into battle.",
       "effect": "Subtract 1 from hit rolls for shooting attacks that target friendly Ogor Mawtribes Infantry units while they are wholly within 12\" of any friendly Beastclaw Raiders Heroes."
     },
     "Beast Handlers": {
       "activation": "Passive",
+      "phases": [],
       "name": "Brutal Stock",
       "description": "The beasts of this tribe are said to be the most belligerent and tenacious of all their kind.",
       "effect": "Each time a friendly Beastclaw Raiders Monster uses the 'Trampling Charge' ability, add 1 to the amount of mortal damage inflicted, if any."
     },
     "Blackpowder Fanatics": {
       "activation": "Passive",
+      "phases": [],
       "name": "Feed Yer Cannons!",
       "description": "These artillery- ogors don't need to be told twice to blast the foe into tiny bits.",
       "effect": "Ranged weapons used by friendly Leadbelchers and Ironblaster units have Shoot in Combat while they are within the combat range of a friendly Ogor Mawtribes Hero."
@@ -52,18 +57,21 @@
   "heroic_traits": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Great Gutlord",
       "description": "There are few opponents in the Mortal Realms that can withstand the ravenous power of this ogor.",
       "effect": "Ignore negative modifiers to this unit's control score and to hit rolls and wound rolls for this unit's attacks."
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Booming Roar",
       "description": "Relishing the fight, this champion roars a challenge to the enemy that makes the very earth beneath their feet tremble.",
       "effect": "Subtract 5 from the control scores of enemy Infantry units while they are in combat with this unit."
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "TOUCHED BY THE EVERWINTER:",
       "description": "This warrior strayed close to the heart of the Everwinter and emerged with the power to commune with it.",
       "effect": "If this unit is not a Priest, it has Priest (1). If this unit is already a Priest, you can re-roll chanting rolls of 1 for it instead. If this unit is a Wizard, it cannot use Spell abilities and Prayer abilities in the same phase."
@@ -72,21 +80,24 @@
   "artefacts_of_power": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Gruesome Trophies",
       "description": "This collection of skulls, entrails and hides is an inspiring sight to this ogor's kin, encouraging them to claim trophies of their own.",
       "effect": "Add 1 to hit rolls for combat attacks that target Heroes or Monsters made by friendly Ogor Mawtribes units while they are wholly within 12\" of this unit."
     },
     {
+      "phases": [
+        "Combat Phase"
+      ],
       "activation": "Once Per Battle",
-      "phase": "Combat Phase",
       "name": "The Fang Of Ghur",
       "description": "The amber magic that permeates this weapon grants it the power to bite through arcane wards.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
       "effect": "Ward rolls cannot be made for the target for the rest of the turn."
     },
     {
+      "phases": [],
       "activation": "Once Per Battle",
-      "phase": "Shooting Phase",
       "name": "ELIXIR OF THE FROSTW YR M:",
       "description": "Distilled from the blood of a giant Frostwyrm, this rare elixir temporarily gives the drinker the power of those beasts to vomit forth a torrent of frost magic.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -96,7 +107,7 @@
   "spell_lore": {
     "Lore Of Maw-Magic": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Troggoth Guts",
         "description": "The shaman gobbles down the slippery innards of a troggoth to transfer the beast's uncanny healing powers to their allies and restore their vigour.",
@@ -109,7 +120,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Greasy Deluge",
         "description": "The caster chews up a big mouthful of rancid fat and gall-slime before spitting it onto the ground. In moments, enemy warriors are caught in a deluge of foul-smelling grease, slipping and sliding as they try to bring their weapons to bear.",
@@ -123,7 +134,7 @@
         "casting_value": 6
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Blood Feast",
         "description": "The liver of a powerful beast is held high over the shaman's head. Gore drips and runs down their face before they take a great bite from it, filling nearby ogors with a frenzied blood-lust.",
@@ -139,7 +150,7 @@
   "prayer_lore": {
     "Everwinter Prayers": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Call Of The Blizzard",
         "description": "An impenetrable snow squall manifests on the battlefield,  An impenetrable snow squall manifests on the battlefield, blocking visibility and shielding nearby Beastclaw warriors.",
@@ -152,7 +163,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "PULVERISING HAILSTOR M:",
         "description": "Fist-sized chunks of ice rain from the sky to crush those below.",
@@ -166,7 +177,7 @@
         "chanting_value": 5
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Keening Gale",
         "description": "A bone-chilling wind howls across the battlefield, giving speed to the beasts of winter and driving the Everwinter's monstrous denizens before it.",
@@ -221,10 +232,12 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of The Dread Mace is 4 and this unit has a Control characteristic of 10."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a   Spell\u00a0ability",
             "name": "The Shield Inviolate",
@@ -233,14 +246,17 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Avatar Of Destruction",
             "description": "Kragnos is the embodiment of Ghur's relentless ferocity. No single strike can lay him low.",
             "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
           },
           {
+            "phases": [
+              "Charge Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Rampaging Destruction",
             "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
             "effect": "If this unit charged this phase, pick 1 of the following effects: \n* Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. \n* Pick an enemy Monster in combat  with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
@@ -250,6 +266,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "The End Of Empires",
             "description": "Where Kragnos goes, the hordes of Destruction follow.",
             "effect": "Add 1 to the number of dice rolled when making charge rolls for friendly Destruction units while they are wholly within 12\" of this unit, to a maximum of 3."
@@ -309,7 +326,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "BULLY OF THE FIRST DEGREE:",
             "description": "Tyrants use constant violence to help them maintain an iron rule, and they never let their underlings forget it.",
@@ -318,6 +335,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Brawlerguts",
             "description": "Combining brutish strength with devastating bulk, this ogor enters combat like an avalanche.",
             "effect": "Add 1 to the D3 roll made when this unit uses the 'Trampling Charge' ability."
@@ -356,12 +374,13 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Fill The Pot",
             "description": "As enemies are cut down by the ogors, the Slaughtermaster collects their remains to fill his cauldron.",
             "effect": "Each time an enemy unit is destroyed by a combat attack made by a friendly Ogor Mawtribes unit wholly within 18\" of this unit, give this unit a grisly remains point, to a maximum of 3."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "name": "Great Cauldron",
             "description": "Lashed to a Slaughtermaster is a great cauldron containing the remains of foes, which the ogor gobbles down in order to unleash gastromantic powers.",
             "effect": "You can spend 1 or more of this unit's grisly remains points. For each point spent, pick a friendly Gutbusters unit wholly within 12\" of this unit to be the target, then pick 1 of the following effects: Bloodgruel: The target has Ward (5+) for the rest of the turn. Spinemarrow: Add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
@@ -401,6 +420,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Savage Hunger",
             "description": "The Butcher stokes the hunger of a group of nearby ogors, causing even slight belly-rumbles to erupt into the nigh-uncontrollable desire to feast.",
             "effect": "While they are wholly within 12\" of this unit, friendly Gutbusters units can use Charge abilities even if they used a Run ability in the same turn."
@@ -462,16 +482,18 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Beast-Breaker",
             "description": "Bloodpelt Hunters will seek out the largest creatures in battle, slaying them and devouring their still- warm flesh.",
             "effect": "If the target is a Monster, the Damage characteristic of this unit's Skullshatter Crossbow is 3 and the Damage characteristic of its Impaling Spear is 6."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "enemy_turn_only": true,
             "name": "Unrelenting Hunter",
             "description": "With brutish cunning, Bloodpelt Hunters relentlessly track their quarry, always making sure they stay one step ahead.",
@@ -511,6 +533,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Insatiable Gluttony",
             "description": "Once Gluttons have started eating, it is nearly impossible to shift them.",
             "effect": "If you have used the 'Feast on Flesh' ability this battle, add 1 to the control score of this unit for each model in this unit."
@@ -551,13 +574,16 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Protect The Tyrant",
             "description": "Ironguts have risen through the tribe's ranks not only by amassing status and equipment but also by earning the favour of their Tyrant.",
             "effect": "While this unit is within the combat ranges of any friendly Tyrants, both this unit and those Tyrants have Ward (6+)."
           },
           {
+            "phases": [
+              "Combat Phase"
+            ],
             "activation": "Once Per Battle",
-            "phase": "Combat Phase",
             "name": "Down To The Ironguts",
             "description": "It is not often that a mawtribe's battleline falters, but if it does, the Tyrant will call upon their Ironguts to turn the battle back in their favour.",
             "effect": "This unit can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the turn."
@@ -609,6 +635,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "reaction_condition": " This unit  was picked as the target of a non-Core ability",
@@ -647,7 +674,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Troglodytic Lurkers",
             "description": "Gorgers are shunned and reviled creatures. When a mawtribe goes to war, they often lurk on the edge of the battlefield, waiting to strike.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -657,7 +684,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Frenzied Hunters",
             "description": "Overwhelmed with bloodlust, the Gorger Mawpack launch themselves from their hiding place in a futile frenzy to end their eternal hunger.",
@@ -709,7 +736,7 @@
       "abilities": [
         [
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Firing From The Belly",
             "description": "An ogor's sturdy frame easily absorbs the recoil of even cannon-sized weapons.",
@@ -717,6 +744,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Powder Gnoblars",
             "description": "When assisted by a Gnoblar minion, Leadbelchers can cause even more carnage.",
             "effect": "This unit has up to 2 Powder Gnoblar tokens. Each time this unit uses a Shoot ability, for each of this unit's Powder Gnoblars that are on the battlefield, you can re-roll 1 random characteristic roll for this unit's Attacks characteristic. If a random characteristic roll re-rolled in this manner is 1, remove 1 of this unit's Powder Gnoblars from the battlefield."
@@ -786,6 +814,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Lethal Payload",
             "description": "An Ironblaster's rifled barrel can be loaded with projectiles that fill its copious width or with several smaller cannonballs to cover a wider area.",
             "effect": "Each time this unit uses a Shoot ability, pick either the Big Shot or Hail Shot weapon characteristics for all the attacks it makes with its Ironblaster Cannon."
@@ -844,14 +873,14 @@
       "abilities": [
         [
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Load It Up!",
             "description": "Gnoblars close to a Scraplauncher will diligently scavenge any nearby scrap to pile upon the catapult. After all, looking busy is a good way to avoid getting stepped on by an angry ogor!",
             "effect": "If this unit is within the combat range of a friendly Gnoblars unit, this unit's shooting attacks score critical hits on unmodified hit rolls of 5+ until the start of your next turn."
           },
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Rain Of Scrap",
             "description": "Salvaged weapons and shards of metal rain down upon the enemy, forcing them to take cover or dodge out of the way.",
@@ -901,7 +930,7 @@
       "abilities": [
         [
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Nasty Traps And Tricks",
             "description": "These cunning creatures specialise in fighting dirty and laying all manner of lethal and cunning traps.",
             "declare": "Pick an enemy unit within 6\" of this unit and that used a Move ability this turn to be the target. You cannot pick the same unit to be the target of this ability more than once per turn.",
@@ -957,13 +986,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "EARTH-SHATTERING CHARGE:",
             "description": "Enemies are crushed and trampled beneath the unstoppable ferocity of a Frostlord upon a charging Stonehorn.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -974,12 +1004,14 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Frost Spear",
             "description": "Blessed by the Everwinter, the bite of this ogor's Frost Spear chills the enemy with crippling cold.",
             "effect": "If any damage points are allocated to an enemy Hero or Monster by attacks made with this unit's Frost Spear, subtract 1 from the Attacks characteristic of that enemy unit's melee weapons until the start of your next turn."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Stone Skeleton",
             "description": "The thick, rock- like skeletons of these beasts can take substantial punishment.",
             "effect": "Ignore the first damage point that would be allocated to this unit in each phase."
@@ -1039,15 +1071,19 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phase": "Movement Phase",
+            "phases": [
+              "Movement Phase"
+            ],
             "name": "Sweeping Tusks",
             "description": "With a deafening bellow, the Thundertusk swings its huge frost-wreathed tusks from side to side, sending enemies flying.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -1057,6 +1093,7 @@
             ]
           },
           {
+            "phases": [],
             "activation": "Once Per Battle",
             "once_per_army": true,
             "name": "Bellowing Voice",
@@ -1148,16 +1185,19 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Stone Skeleton",
             "description": "The thick, rock- like skeletons of these beasts can take substantial punishment.",
             "effect": "Ignore the first damage point that would be allocated to this unit in each phase."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Everwinter'S Goad",
@@ -1257,10 +1297,12 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "Freezing Aura",
@@ -1362,19 +1404,21 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Stone Skeleton",
             "description": "The thick, rock- like skeletons of these beasts can take substantial punishment.",
             "effect": "Ignore the first damage point that would be allocated to this unit in each phase."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Stonehorn Avalanche",
             "description": "With hearty roars, the Beastriders pick their target and send their Stonehorn crashing forward with the force of a mountain's worth of snow and rock.",
             "effect": "If this unit charged this turn, roll a dice. On a 3+, when this unit makes a pile-in move this phase, add D6\" to the distance it can move.",
@@ -1473,13 +1517,16 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
           },
           {
+            "phases": [
+              "End of Turn"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "End of Turn",
             "name": "Everwinter'S Assault",
             "description": "The enemy are left scattered and reeling before the combination of the Thundertusk's charge and the great missiles loosed by its riders, forced to give ground until they can regather their wits.",
             "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
@@ -1542,7 +1589,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Masters Of Ambush",
             "description": "Always on the move, Icebrow Hunters range ahead of the main ogor force alongside packs of trained Frost Sabres.",
             "declare": "Pick this unit and up to 2 friendly Frost Sabres units if those units have not been deployed.",
@@ -1552,7 +1599,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "The Hunt Is On",
             "description": "Sensing the time is right, the Icebrow Hunter and their Frost Sabre companions launch their ambush.",
@@ -1593,12 +1640,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "HUNTERS OF THE FROZEN WILDS:",
             "description": "The coats of Frost Sabres act as a natural camouflage in the bleak wilderness.",
             "effect": "This unit is not visible to enemy units while it is within 3\" of a terrain feature and more than 9\" from all enemy units."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           }
@@ -1655,12 +1704,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "LUMPEN WALL OF FLESH:",
             "description": "Mournfangs and their riders provide a living shield for the other ogors, soaking up and foiling incoming ranged fire with their thick, furry hides and broad profiles.",
             "effect": "Subtract 1 from wound rolls for shooting attacks that target friendly Beastclaw Raiders units while they are within this unit's combat range."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Alpha Cavalry",
             "description": "Those Mournfangs that have risen to the top of the fighting pits have done so by repeatedly charging equally massive rivals head-on and coming out on top.",
             "effect": "The Charge (+1 Damage) weapon ability has no effect on attacks that target this unit."
@@ -1713,6 +1764,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Torrent Of Flame",
             "description": "Fiery morsels are consumed by this ogor moments before they spew a torrent of flames at the enemy.",
             "effect": "Add 1 to the Damage characteristic of this unit's Fire Breath for attacks that target Infantry."
@@ -1750,7 +1802,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "enemy_turn_only": true,
             "name": "Bounding Leaps",
             "description": "Adapted to an environment of plunging chasms and sheer cliffs, Icefall Yhetees possess long limbs with corded strength that see them close the distance to their prey in a single mighty bound.",
@@ -1777,18 +1829,20 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Great Mawpot",
             "description": "All manner of ingredients are thrown into this metal cauldron and boiled up into a thick magical broth that reinvigorates any ogors who taste it.",
             "effect": "The Great Mawpot is either full or empty. It starts the battle full."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Throw 'Em In",
             "description": "The bludgeoned and hacked remains of dead foes are thrown into the bubbling cauldron to thicken the stew.",
             "effect": "If an enemy model is slain within 6\" of the Great Mawpot when it is empty, it becomes full."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "VESSEL OF THE GULPING GOD:",
             "description": "Swirling gastromantic fumes emanate from the Great Mawpot when it is full to the brim.",
@@ -1796,7 +1850,7 @@
             "effect": "Add 1 to the power level of the target for the rest of the turn."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Battlebroth",
             "description": "The contents of the Mawpot are suffused with strange magic; a single mouthful can restore an ogor's vitality and stitch up their wounds.",
@@ -1821,12 +1875,13 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "ALTAR OF THE GULPING GOD: A",
             "description": "Mawpit is a tooth-lined sinkhole in which the aggressive nature of Ghur has become manifest. They are used a places of worship by the ogors, who constantly hurl gory sacrifices into their chomping orifices.",
             "effect": "While this terrain feature has a Head Butcher: \n* The Head Butcher cannot use  Move abilities. \n* Instead of measuring range or visibility to the Head Butcher, measure to this terrain feature instead. \n* All attacks that would target the Head Butcher target this terrain feature instead. \n* If this terrain feature is destroyed,  before removing it from the battlefield, inflict D3 mortal damage on the Head Butcher. Then, set up the Head Butcher on the battlefield wholly within 3\" of this terrain feature and not in combat. That unit is no longer a Head Butcher. If it is not possible to set up the Head Butcher, it is slain."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Feed The Maw",
             "description": "The new Head Butcher ascends the platform above the Mawpit.",
@@ -1834,14 +1889,14 @@
             "effect": "Place the target on this terrain feature. The target is now a Head Butcher (see 'Altar of the Gulping God')."
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Step Away From The Maw",
             "description": "The Head Butcher descends from the platform.",
             "effect": "If this terrain feature has a Head Butcher, set up the Head Butcher on the battlefield wholly within 3\" of this terrain feature and not in combat. That unit is no longer a Head Butcher."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "name": "Throat Of Ghur",
             "description": "With a rumble, smaller Mawpits suddenly manifest beneath the feet of distant foes.",
             "declare": "Pick up to 3 enemy units within 12\" of this terrain feature, or within 18\" if it has a Head Butcher, to be the targets.",

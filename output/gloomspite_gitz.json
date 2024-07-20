@@ -2,16 +2,18 @@
   "battle_traits": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Moon",
       "description": "Grots are always vicious little monsters, but when their god's light falls upon them, they become an order of magnitude more dangerous.",
       "effect": "During the battle, an area of the battlefield will be the Bad Moon's location (see 'The Bad Moon's Orbit'). The Bad Moon's location will be either a quarter of the battlefield or the centre of the battlefield. While the Bad Moon's location is a quarter of the battlefield, all Gloomspite Gitz units (friendly and enemy) wholly within that quarter are under the light of the Bad Moon. While the Bad Moon's location is the centre of the battlefield, all Gloomspite Gitz units (friendly and enemy) on the battlefield are under the light of the Bad Moon. While a friendly Gloomspite Gitz unit is under the light of the Bad Moon, the appropriate effect below applies to it: Frothing Zealots: If the unit is a non-Squig Moonclan unit, add 3 to its control score. Lunar Squigs: If the unit is a Squig unit, you can re-roll the random characteristic roll for its Move characteristic. Moonlit Hide: If the unit is a Troggoth unit, add 1 to save rolls for it. Spiderfang Venom: If the unit is a Spiderfang unit, its combat attacks score critical hits on unmodified hit rolls of 5+. This ability also affects Companion weapons."
     },
     {
+      "phases": [],
       "activation": "Once Per Battle",
       "once_per_army": true
     },
     {
-      "phase": "Start of Battle Round",
+      "phases": [],
       "name": "The Bad Moon'S Orbit",
       "description": "The Bad Moon hurtles around the realms in madcap orbits, empowering its worshippers and troubling all others with insane visions.",
       "declare": "You must use this ability at the start of the battle round. If multiple players are commanding a Gloomspite Gitz army, then instead, at the start of the battle round, those players roll off and only the winner declares and uses this ability this battle round.",
@@ -21,14 +23,15 @@
   "battle_formations": {
     "Squigalanche": {
       "activation": "Passive",
+      "phases": [],
       "name": "Bouncing Fury",
       "description": "A veritable tide of vicious, impossibly hungry, fang- toothed monsters boing into enemy lines, biting, chewing and swallowing their victims whole.",
       "effect": "Each time a friendly Squig unit charges, add 1 to the Attacks characteristic of its Fang-filled Gobs, Massive Fang-filled Gobs or Huge Fang- filled Gobs for the rest of the turn."
     },
     "Moonclan Skrap": {
+      "phases": [],
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phase": "End of Turn",
       "your_turn_only": true,
       "name": "Spreading Loonacy",
       "description": "When Moonclan grots gather, the energies of the Gloomspite surge through them like a tide, sending them frothing mad.",
@@ -37,12 +40,14 @@
     },
     "Troggherd": {
       "activation": "Passive",
+      "phases": [],
       "name": "Herd Healing",
       "description": "When troggoths gather in larger numbers, the sheer troggness of the herd serves as a catalyst for their regenerative abilities.",
       "effect": "Each time a friendly Troggoth unit uses a Fight ability, after that ability has been resolved, Heal (D3) that unit."
     },
     "Spiderfang Stalktribe": {
       "activation": "Passive",
+      "phases": [],
       "name": "Realmweb Ambush",
       "description": "Scuttling into battle on magical, realm-spanning webs, there is no way to predict where a Spiderfang Stalktribe will launch their next ambush.",
       "effect": "Each time a friendly Skitterstrand Arachnarok uses the 'Realmweb Lurker' ability, you can pick another friendly Spiderfang unit to also use that ability. In addition, each time a friendly Skitterstrand Arachnarok uses the 'Ambush from Beyond' ability, you can pick another friendly Spiderfang unit that is skittering through tunnels in reality to also use that ability. That unit must be set up wholly within 12\" of the Skitterstrand Arachnarok using the ability."
@@ -51,18 +56,20 @@
   "heroic_traits": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "The Clammy Hand",
       "description": "This boss is obviously destined for great things and can call upon vast troglodytic hordes.",
       "effect": "Each time a friendly Gloomspite Gitz unit wholly within 12\" of this unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Loontouched",
       "description": "This warlord's magical prowess is boosted by the Bad Moon's light.",
       "effect": "If this unit is not a Wizard, it has Wizard (1). Otherwise, add 1 to casting rolls for this unit."
     },
     {
-      "phase": "Combat Phase",
+      "phases": [],
       "name": "Fight Another Day",
       "description": "This warlord has mastered the ignoble art of striking then running away before the enemy can hit back.",
       "effect": "If this unit is in combat, roll a dice. On a 3+, this unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
@@ -71,13 +78,16 @@
   "artefacts_of_power": [
     {
       "activation": "Passive",
+      "phases": [],
       "name": "The Clammy Cowl",
       "description": "This enchanted hood wreathes its wearer in damp gloom, causing enemies to swing wildly at their blurred outline and weapons to slip in suddenly moistened palms.",
       "effect": "Subtract 1 from hit rolls for attacks that target this unit."
     },
     {
+      "phases": [
+        "End of Turn"
+      ],
       "activation": "Once Per Battle",
-      "phase": "End of Turn",
       "name": "Backstabber'S Blade",
       "description": "A slitta made from pure shadow and malice, this blade always finds its victim's weak spots.",
       "declare": "Pick an enemy Hero in combat with this unit to be the target.",
@@ -85,6 +95,7 @@
     },
     {
       "activation": "Passive",
+      "phases": [],
       "name": "Leering Gitshield",
       "description": "The spiteful enchantments woven into this hideous shield ensure terrible misfortune falls on any who dare attack its bearer.",
       "effect": "Each time an unmodified hit roll for an attack that targets this unit is 1, inflict 1 mortal damage on the attacking unit after the Attack ability has been resolved."
@@ -93,7 +104,7 @@
   "spell_lore": {
     "Lore Of The Clammy Dank": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Sneaky Distr Action",
         "description": "The shaman's unnaturally shrill cries and magical light-show hypnotically draw the attention of their foes.",
@@ -106,7 +117,7 @@
         ]
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "The Hand Of Gork",
         "description": "A ghostly hand picks up a mob of gitz and plonks them back down where they are most needed.",
@@ -120,7 +131,7 @@
         "casting_value": 7
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Spore Maws",
         "description": "The caster causes the thick spores around them to coalesce into gnashing green mouths.",
@@ -136,7 +147,7 @@
   "manifestation_lore": {
     "": [
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Mushroom",
         "description": "The shaman takes a small mushroom and hurls it with all his might. When it lands, it sprouts impossibly quickly into a gigantic skullshroom, a fungus said to grow between Mork's own toes.",
@@ -150,7 +161,7 @@
         "casting_value": 6
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Summon Scuttletide",
         "description": "The shaman grasps a small jade amulet in which a skullback spider is imprisoned and uses it to call forth a seething mass of the trapped creature's kin.",
@@ -164,7 +175,7 @@
         "casting_value": 6
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "SUMMON MALEVOLENT MOON:",
         "description": "The shaman transforms a loonstone statue into a huge glowing terror and lets it loose on the battlefield.",
@@ -178,7 +189,7 @@
         "casting_value": 7
       },
       {
-        "phase": "Hero Phase",
+        "phases": [],
         "your_turn_only": true,
         "name": "Ar Achnacauldron",
         "description": "The shaman whistles loudly, calling the squealing, bubbling Scrapskuttle's Arachnacauldron to their side.",
@@ -234,10 +245,12 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of The Dread Mace is 4 and this unit has a Control characteristic of 10."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a   Spell\u00a0ability",
             "name": "The Shield Inviolate",
@@ -246,14 +259,17 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Avatar Of Destruction",
             "description": "Kragnos is the embodiment of Ghur's relentless ferocity. No single strike can lay him low.",
             "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
           },
           {
+            "phases": [
+              "Charge Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "R Ampaging Destruction",
             "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
             "effect": "If this unit charged this phase, pick 1 of the following effects: \n* Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. \n* Pick an enemy Monster in combat  with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
@@ -263,6 +279,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "The End Of Empires",
             "description": "Where Kragnos goes, the hordes of Destruction follow.",
             "effect": "Add 1 to the number of dice rolled when making charge rolls for friendly Destruction units while they are wholly within 12\" of this unit, to a maximum of 3."
@@ -301,6 +318,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Battle",
             "reaction_condition": " You declared   the \u2018The Bad Moon\u2019s Orbit\u2019 ability ",
             "name": "The Loonking'S Entreaty",
@@ -308,7 +326,7 @@
             "effect": "You can choose whether the Bad Moon moves to the next location or stays in its current location instead of rolling the dice. 7"
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Fangz Of Da Bad Moon",
             "description": "As Skragrott tells it, a single shrieked invocation from him - arms raised high into the air - can compel the Bad Moon to belch a rain of fiendishly accurate loonstone fangz over the enemy.",
@@ -320,6 +338,7 @@
             "casting_value": 7
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared the \u2018Redeploy\u2019  command for a friendly Moonclan unit  wholly within 12\" of this unit ",
             "name": "Babbling Wand",
@@ -362,6 +381,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Let'S Get Stabbin'!",
@@ -369,7 +389,7 @@
             "effect": "Pick a friendly non-Hero Moonclan Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "I'M Da Boss",
             "description": "Loonbosses are terrible bullies and braggarts with a wicked talent for coercing other grots.",
@@ -410,12 +430,13 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Brews",
             "description": "Gobbapalooza shamans drink hallucinogenic fungus brew before the battle begins, making them almost impervious to pain. However, as the battle progresses, the effects start to wear off.",
             "effect": "In the first battle round, this unit has Ward (4+). In the second battle round, this unit has Ward (5+). In the third and subsequent battle rounds, this unit has Ward (6+)."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "GOBBAPALOOZA KNOW-WOTZ:",
             "description": "From casting petty spells to scaring the other grots with bizarre performances, the Gobbapalooza is always up to something.",
@@ -465,7 +486,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Secret Tunnels",
             "description": "Rabble-Rowzas have a knack for locating hidden passages through the depths.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -475,7 +496,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Emerge From The Depths",
             "description": "The Rabble-Rowza emerges from a little- known tunnel network beneath the battlefield, ready to stir up trouble.",
@@ -483,11 +504,12 @@
             "effect": "Set up this unit anywhere on the battlefield more than 9\" from all enemy units."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Catch Me!'",
             "description": "With an infuriating taunt, the Rabble-Rowza riles up a lumbering beast, sending it into a blood-mad frenzy. A cunning trick, as long as the Rabble- Rowza isn't close enough to get caught!",
@@ -535,8 +557,10 @@
       "abilities": [
         [
           {
+            "phases": [
+              "Hero Phase"
+            ],
             "activation": "Once Per Battle",
-            "phase": "Hero Phase",
             "your_turn_only": true,
             "name": "Deffcap Mushroom",
             "description": "The Fungoid Cave-Shamans claim that eating Deffcaps allows them to commune with those who have passed on to the 'Great Green'. Though such is debatable, the mushroom's effect on the shaman's spellcasting abilities is beyond doubt.",
@@ -584,9 +608,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Hero Phase",
             "your_turn_only": true,
             "name": "Feedin' Time",
             "description": "Squigbosses possess a deep knowledge of all types of fungi and bring the most potent kinds into battle to feed to their squigs.",
@@ -645,16 +669,18 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Squig R Age",
             "description": "As Mangler Squigs are wounded in battle, they become even more irate and violent.",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Huge Fang-filled Gobs is 6."
           },
           {
+            "phases": [],
             "activation": "Once Per Battle",
             "once_per_army": true
           },
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Bite Da Moon!",
             "description": "With a manic shriek, the Loonboss drives nearby squigs into an even greater frenzy, goading them to crash through the enemy's lines with all haste so that they can continue their pursuit of the Bad Moon.",
             "declare": "Pick this unit and all friendly Squig units wholly within 12\" of this unit to be the targets.",
@@ -662,14 +688,17 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Watch Out!",
             "description": "Mangler Squigs are capable of great destruction even in their wildly bouncing death throes.",
             "effect": "If this unit is destroyed, before removing it from play, roll a dice for each enemy unit within this unit's combat range. On a 4+, inflict D3 mortal damage on that unit."
           },
           {
+            "phases": [
+              "Charge Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Ker-Splat!",
             "description": "Mangler Squigs produce an impact that is nothing short of spectacular, sending severed body parts and splashes of gore skywards.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -731,14 +760,17 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Squig R Age",
             "description": "As Mangler Squigs are wounded in battle, they become even more irate and violent.",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Huge Fang-filled Gobs is 6."
           },
           {
+            "phases": [
+              "Charge Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Giant Boing!",
             "description": "The Mangler Squigs use their momentum to spring up into the air, crashing into the enemy lines beyond.",
             "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit can move 3D6\" but must end that move in combat.",
@@ -748,6 +780,7 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Watch Out!",
             "description": "Mangler Squigs are capable of great destruction even in their wildly bouncing death throes.",
             "effect": "If this unit is destroyed, before removing it from play, roll a dice for each enemy unit within this unit's combat range. On a 4+, inflict D3 mortal damage on that unit."
@@ -794,9 +827,9 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Hero Phase",
             "your_turn_only": true,
             "name": "Looncap Mushrooms",
             "description": "Looncaps that sprout beneath the Bad Moon's glare are harvested by Sneaky Snufflers and have an intoxicating effect on any grots that ingest them. Sometimes a particularly potent fungus is found - and that's when the real carnage starts\u2026",
@@ -856,11 +889,12 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "enemy_turn_only": true,
             "name": "Can'T Catch Us!",
             "description": "Snarlfang Riders encircle the enemy, keeping their distance and filling their targets with arrows before they finally close in for the kill.",
@@ -900,7 +934,7 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Hidden Loons",
             "description": "Gibbering and bound, Loonsmasha Fanatics are dragged or carried along by the general mass of grots until the time arrives to unrestrain them and pray to the Bad Moon that they head in the right direction.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -911,12 +945,13 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Whirling Death",
             "description": "One might as well try to catch a cannonball as to get the jump on a spinning Fanatic.",
             "effect": "This unit has Strike-first."
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "name": "Release The Fanatics!",
             "description": "As the enemy approaches, the Loonsmashas are unleashed.",
             "declare": "Pick this unit if it is hidden among the mobs. Then, pick a friendly Moonclan Shootas or Moonclan Stabbas unit that has 10 or more models to be the target.",
@@ -953,13 +988,14 @@
       "abilities": [
         [
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "A PROD IN THE RIGHT DIRECTION:",
             "description": "As battle begins, grots like to give the Sporesplattas a helpful prod towards the enemy.",
             "effect": "This unit can use the 'Normal Move' ability as if it were your movement phase."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Puffshroom Frenzy",
             "description": "Puffshroom spore-clouds send the followers of the Bad Moon into a violent frenzy while choking and blinding enemies caught within them.",
             "effect": "Add 1 to the Attacks characteristic of melee weapons used by other friendly Moonclan units while they are wholly within 12\" of this unit. Subtract 1 from the Attacks characteristic of weapons used by enemy units while they are in combat with this unit."
@@ -1007,7 +1043,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Netters",
             "description": "Moonclan grots use throwing nets to capture Cave Squigs and entangle their foes.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
@@ -1047,7 +1083,7 @@
       "abilities": [
         [
           {
-            "phase": "Combat Phase",
+            "phases": [],
             "name": "Netters",
             "description": "Moonclan grots use throwing nets to capture Cave Squigs and entangle their foes.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
@@ -1097,17 +1133,19 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Squigs Gone Wild",
             "description": "Squigs don't always know when they're dead\u2026",
             "effect": "Each time a model in this unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. On a 5+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BEAST",
             "effect": "This unit has a maximum control score of 1."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Herding Squigs",
             "description": "While they have a thankless and frankly dangerous job, Squig Herders do their best to keep their frenzied squigs together as a rough pack.",
@@ -1154,6 +1192,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " You declared a Fight ability   for this unit ",
             "name": "Let'S Get Bouncin'!",
@@ -1203,7 +1242,7 @@
       "abilities": [
         [
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "name": "Boing! Boing! Boing!",
             "description": "Squig Hoppers can cause considerable damage simply by bouncing on top of their foes as they make their way across the battlefield.",
             "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
@@ -1252,7 +1291,7 @@
       "abilities": [
         [
           {
-            "phase": "Charge Phase",
+            "phases": [],
             "name": "Boing! Smash!",
             "description": "Mobs of Boingrot Bounderz smash into their enemies like toothy meteors.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -1302,13 +1341,16 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, when it uses the 'Malfunctioning Leystone' ability, roll 1 dice instead of 3."
           },
           {
+            "phases": [
+              "Combat Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Crushing Grip",
             "description": "The vice-like grasp of Trugg can squeeze the life out of all but the largest opponent.",
             "declare": "Pick an enemy unit within 1\" of this unit to be the target.",
@@ -1318,13 +1360,13 @@
             ]
           },
           {
-            "phase": "Start of Turn",
+            "phases": [],
             "name": "Greater Regener Ation",
             "description": "After centuries spent bathing in the focused healing energies of Ghyran, Trugg is almost impossible to kill, even by troggoth standards.",
             "effect": "Heal (D6) this unit."
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "MALFUNCTIONING LEYSTONE:",
             "description": "Trugg can unwittingly channel powerful magic through the contraption on his back.",
@@ -1363,6 +1405,7 @@
       "abilities": [
         [
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "name": "SHEPHERD OF DESTRUCTION:",
@@ -1373,12 +1416,13 @@
             ]
           },
           {
-            "phase": "Start of Turn",
+            "phases": [],
             "name": "Greater Regener Ation",
             "description": "As it gets to eat all the best mushrooms, a Troggboss's regenerative capacity is more pronounced than that of the average troggoth.",
             "effect": "Heal (D6) this unit."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a   Spell\u00a0ability",
             "name": "Magical Resistance",
@@ -1417,12 +1461,13 @@
       "abilities": [
         [
           {
-            "phase": "Start of Turn",
+            "phases": [],
             "name": "Regener Ation",
             "description": "Troggoths are able to regrow injured flesh almost as quickly as it is harmed.",
             "effect": "Heal (D3) this unit."
           },
           {
+            "phases": [],
             "activation": "Reaction",
             "reaction_condition": " Opponent declared a   Spell\u00a0ability",
             "name": "Magical Resistance",
@@ -1430,9 +1475,9 @@
             "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 4+, ignore the effect of that spell on this unit."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Wade And Smash",
             "description": "The Dankhold Troggoth rampages through the enemy lines, swinging its enormous club back and forth and sending enemies flying in all directions.",
             "effect": "If this unit is in combat, it can move 6\" but must end that move in combat. Then, roll a D3 for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll.",
@@ -1483,13 +1528,14 @@
       "abilities": [
         [
           {
-            "phase": "Start of Turn",
+            "phases": [],
             "name": "Regener Ation",
             "description": "Troggoths are able to regrow injured flesh almost as quickly as it is harmed.",
             "effect": "Heal (D3) this unit."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Noxious Vomit",
             "description": "The bilious digestive fluids chucked up by a Fellwater Troggoth can swiftly corrode even sigmarite plate.",
             "effect": "If any damage points are allocated to an enemy unit by attacks made with this unit's Noxious Vomit, that unit is drenched in vomit until the start of your next turn.  While a unit is drenched in vomit: \n* Subtract 1 from save rolls for that unit. \n* Ignore positive modifiers to save rolls  for that unit."
@@ -1537,7 +1583,7 @@
       "abilities": [
         [
           {
-            "phase": "Start of Turn",
+            "phases": [],
             "name": "Regener Ation",
             "description": "Troggoths are able to regrow injured flesh almost as quickly as it is harmed.",
             "effect": "Heal (D3) this unit."
@@ -1596,6 +1642,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This unit can pass across terrain features as if it had Fly."
@@ -1634,7 +1681,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "Web Slingshot",
             "description": "The Webspinner Shaman conjures a sheet of webbing that they then use to launch themselves across the battlefield.",
@@ -1642,7 +1689,7 @@
             "effect": "Roll a dice. On a 2+, remove this unit from the battlefield and set it up again wholly within 3\" of the target and more than 9\" from all enemy units. 6"
           },
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "SPEED OF THE SPIDER GOD:",
             "description": "With a shriek, the shaman calls upon the Spider God to imbue its worshippers with preternatural speed.",
@@ -1718,19 +1765,21 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This unit can pass across terrain features as if it had Fly."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Charge Phase",
             "name": "Vor Acious Predator",
             "description": "Young Arachnarok Spiders are swift hunters despite their immense size, with an unquenchable hunger for living prey.",
             "declare": "Pick up to 3 enemy units within 1\" of this unit to be the targets.",
@@ -1811,25 +1860,28 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This unit can pass across terrain features as if it had Fly."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Catchweb Spidershrine",
             "description": "This ramshackle altar to the Spider God shimmers with malevolent arcane energy.",
             "effect": "Add 1 to casting rolls for friendly Spiderfang Wizards while they are wholly within 12\" of this unit."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Ensnaring Webbing",
             "description": "The Arachnarok singles out a target, temporarily immobilising it with looping strands of sticky webbing.",
             "declare": "Pick an enemy Infantry Hero within 1\" of this unit to be the target.",
@@ -1882,11 +1934,12 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
           },
           {
-            "phase": "Deployment Phase",
+            "phases": [],
             "name": "Realmweb Lurker",
             "description": "Skitterstrand Arachnaroks stalk their prey through the arcane paths that connect the realms.",
             "declare": "Pick this unit if it has not been deployed.",
@@ -1896,7 +1949,7 @@
             ]
           },
           {
-            "phase": "Movement Phase",
+            "phases": [],
             "name": "Ambush From Beyond",
             "description": "Legs first, then bulbous body, the Skitterstrand drags itself out of a tear in reality.",
             "declare": "Pick this unit if it is skittering through tunnels in reality.",
@@ -1904,14 +1957,17 @@
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This unit can pass across terrain features as if it had Fly."
           },
           {
+            "phases": [
+              "Combat Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Scuttling Terror",
             "description": "The Arachnarok uses its terrifying speed to its advantage, scuttling over and sinking its fangs into the enemy before they have a chance to react.",
             "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit can move 2D6\". It can pass through the combat ranges of enemy units and can pass through models in enemy Infantry units, but it must end that move in combat.  Then, pick an enemy Infantry unit that this unit passed across during that move. Inflict D3 mortal damage on that enemy unit.",
@@ -1992,25 +2048,30 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "BATTLE DAMAGED",
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Flinger",
             "description": "This crude catapult hurls a heavy ball of corded spider-silk at the enemy. Any victims not crushed by the missile when it lands are engulfed by the mass of sticky webbing as it explosively unfurls.",
             "effect": "If any attacks made with this unit's Flinger score a hit, after the Shoot ability has been resolved, roll a dice. On a 2+, the target unit is entangled until the start of your next turn. Halve the Move characteristic of a unit while it is entangled."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This unit can pass across terrain features as if it had Fly."
           },
           {
+            "phases": [
+              "Combat Phase"
+            ],
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phase": "Combat Phase",
             "name": "Beast-Binding Webbing",
             "description": "As enemy beasts attempt to close the distance with an Arachnarok, they become tangled in its webbing.",
             "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
@@ -2052,12 +2113,14 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Wall Cr Awler",
             "description": "The Spiderfang's arachnid allies can skitter up and down vertical surfaces as if they were flat ground.",
             "effect": "This Manifestation can pass across terrain features as if it had Fly."
           },
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Endless Terrors",
             "description": "Bolstered by the presence of an Arachnarok, the arcanely blessed spiders of the Scuttletide will spill forth without cease, making them near impossible to get rid of.",
             "effect": "This unit has Ward (4+) while it is wholly within 12\" of any friendly Arachnarok units."
@@ -2082,7 +2145,7 @@
       "abilities": [
         [
           {
-            "phase": "Shooting Phase",
+            "phases": [],
             "name": "Mutating Spores",
             "description": "The spores ejected by Mork's Mighty Mushroom cause those they touch to burst in a profusion of gruesome fungal growths.",
             "declare": "Pick up to 3 enemy units within 6\" of this Manifestation to be the targets.",
@@ -2121,6 +2184,7 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Lurid Light",
             "description": "To the maniacal grots of the Gloomspite Gitz, one cackling lunar entity streaking through the sky is much like another.",
             "effect": "Friendly Gloomspite Gitz units are under the light of the Bad Moon while they are wholly within 12\" of this Manifestation."
@@ -2158,7 +2222,7 @@
       "abilities": [
         [
           {
-            "phase": "Hero Phase",
+            "phases": [],
             "your_turn_only": true,
             "name": "BLESSINGS OF THE CAULDRON:",
             "description": "Scrapskuttle's Arachnacauldron grants great arcane power to the one brave or mad enough to call upon its aid.",
@@ -2186,17 +2250,19 @@
         [
           {
             "activation": "Passive",
+            "phases": [],
             "name": "Effigy Of Da Bad Moon",
             "description": "Larger loonstone meteorites are hacked painstakingly into crude but surprisingly lifelike effigies of the Bad Moon, and they hold a sliver of its lunar power.",
             "effect": "Friendly Gloomspite Gitz units are under the light of the Bad Moon while they are wholly within 12\" of this terrain feature."
           },
           {
+            "phases": [],
             "activation": "Once Per Turn",
             "once_per_army": true,
             "command_point_cost": 1
           },
           {
-            "phase": "End of Turn",
+            "phases": [],
             "your_turn_only": true,
             "name": "Moonclan Lairs",
             "description": "The Gloomspite Gitz use Moonclan-dug tunnels to reach nearby Loonshrines. In battle, reinforcements emerge from these echoing subterranean passages. 1",
