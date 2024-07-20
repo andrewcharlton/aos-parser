@@ -1,0 +1,1758 @@
+{
+  "battle_traits": [
+    {
+      "phase": "Start of Battle Round",
+      "name": "An Excess Of Depravity",
+      "description": "Wherever the Hedonites of Slaanesh roam, reality is unmade. Those who stand against them are assailed by titillating phantasms and mind-bending illusions until they become slaves to their own base urges.",
+      "declare": "Pick up to 3 friendly Hedonites of Slaanesh units to be the targets.",
+      "effect": "The targets have the Euphoric keyword for the rest of the battle round. In addition, for each friendly unit you pick, give your opponent 1 temptation dice. Your opponent can use 1 temptation dice to replace 1 wound roll, 1 save roll, 1 ward roll or 1 run roll for a unit in their army with a 6, or they can use 2 temptation dice to replace 2 of the dice in a charge roll for a unit in their army with two 6s.  Each time your opponent uses a temptation dice, they must roll it. On a 1-2, inflict D3 mortal damage on the unit for which the roll was replaced immediately after the ability used by that unit has been resolved. At the end of the battle round, any temptation dice that have not been used are lost."
+    },
+    {
+      "activation": "Passive",
+      "name": "Euphoric Killers",
+      "description": "The followers of Slaanesh revel in slaughter, the thrill of battle sending them into an electrified frenzy as they mutilate their foe.",
+      "effect": "While a friendly unit has the Euphoric keyword: \n* That unit's weapons have Crit (2 Hits). \n* That unit can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
+    }
+  ],
+  "battle_formations": {
+    "Depraved Carnival": {
+      "activation": "Passive",
+      "name": "The Ecstatic Throngs",
+      "description": "To the massed supplicants of Slaanesh, any form of sensation - even the most agonising - is to be embraced as a sacrament to their loathsome god.",
+      "effect": "Add 1 to hit rolls for friendly Sybarite Infantry units while they are damaged or if they had any models slain in the same turn."
+    },
+    "Epicurean Revellers": {
+      "activation": "Passive",
+      "name": "Exquisite Palate",
+      "description": "The Mortal Realms are vistas of depraved fascination to Slaanesh's daemons, who will resist banishment with all their might.",
+      "effect": "Each time a friendly non-Hero Hedonites of Slaanesh Daemon uses the 'Rally' command, you can make 3 additional rally rolls of D6."
+    },
+    "Seeker Cavalcade": {
+      "activation": "Passive",
+      "name": "Reckless Haste",
+      "description": "Whether seeking their lost god or simply chasing new heights of speed, the mounted hosts of Slaanesh make war at a breakneck pace.",
+      "effect": "Friendly Hedonites of Slaanesh Cavalry units can use a Retreat ability and still use Charge abilities later in the turn. In addition, no mortal damage is inflicted on Hedonites of Slaanesh Cavalry units by Retreat abilities."
+    },
+    "Supreme Sybarites": {
+      "activation": "Passive",
+      "name": "Godly Ambitions",
+      "description": "There are many who would now seek to supplant imprisoned Slaanesh, and their force of personality fills their worshippers with reverent mania.",
+      "effect": "Add 3 to the control scores of friendly non-Hero Hedonites of Slaanesh units while they are within the combat ranges of any friendly Hedonites of Slaanesh Heroes."
+    }
+  },
+  "heroic_traits": [
+    {
+      "activation": "Passive",
+      "name": "Glory Hog",
+      "description": "This hero wants nothing more than to revel in the defeat of their enemies.",
+      "effect": "If an enemy Hero is destroyed by this unit, this unit has the Euphoric keyword for the rest of the battle."
+    },
+    {
+      "activation": "Passive",
+      "name": "Strongest Alone",
+      "description": "This hero fights most fiercely on their own, lest their followers sully their greatness with their lesser presence.",
+      "effect": "Add 1 to hit rolls and wound rolls for this unit's attacks while it is more than 6\" from all other friendly units."
+    },
+    {
+      "activation": "Passive",
+      "name": "Into The Fray",
+      "description": "The first blow struck is the sweetest, and this warlord makes sure they slake their desire for violence with force and skill.",
+      "effect": "If this unit charged this turn and the unmodified charge roll was 8+, this unit has Strike-first for the rest of the turn."
+    }
+  ],
+  "artefacts_of_power": [
+    {
+      "activation": "Once Per Battle",
+      "phase": "Combat Phase",
+      "name": "ICON OF INFINITE EXCESS:",
+      "description": "Slaanesh's most opulent standard drives both followers and enemies of the Dark Prince into orgiastic fits of violence.",
+      "declare": "Pick a non-Hero Hedonites of Slaanesh unit wholly within 12\" of this unit to be the target.",
+      "effect": "Add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
+    },
+    {
+      "activation": "Once Per Battle",
+      "phase": "Combat Phase",
+      "name": "Threnody Voicebox",
+      "description": "When swallowed and held in the gullet, this tiny music box allows the bearer to let fly a mournful melody that can lull enemies into a stupor.",
+      "effect": "For the rest of the turn, subtract 1 from the Attacks characteristic of melee weapons used by enemy units while they are in combat with this unit."
+    },
+    {
+      "phase": "End of Turn",
+      "name": "Pendant Of Slaanesh",
+      "description": "This pendant burrows deep into the owner's chest and nestles next to their heart, invigorating them whenever they feel pain.",
+      "effect": "If any damage points were allocated to this unit this turn, Heal (3) this unit."
+    }
+  ],
+  "spell_lore": {
+    "Lore Of Extravagance": [
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "Sadistic Spite",
+        "description": "The caster bombards their allies with visions of their most visceral and bloody desires until they can no longer tell what is real and what is fantasy.",
+        "declare": "Pick a friendly Hedonites of Slaanesh Wizard to cast this spell, pick a visible friendly Euphoric unit to be the target, then make a casting roll of 2D6.",
+        "effect": "The target's melee weapons have Crit (Mortal) instead of Crit (2 Hits) for the rest of the battle round.",
+        "keywords": [
+          "Spell",
+          "Unlimited",
+          "7"
+        ]
+      },
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "Acquiescence",
+        "description": "The wizard engulfs the foe in an arcane haze of dreams and unattainable desires.  7",
+        "declare": "Pick a friendly Hedonites of Slaanesh Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
+        "effect": "Add 1 to wound rolls for attacks that target that enemy unit until the start of your next turn.",
+        "keywords": [
+          "Spell",
+          "6",
+          "5"
+        ]
+      },
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "Phantasmagoria",
+        "description": "The sorcerer summons illusory creatures that flit across the battlefield, bewildering the enemy and enabling their allies to retreat.",
+        "declare": "Pick a friendly Hedonites of Slaanesh Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
+        "effect": "Until the start of your next turn, each time the target is picked to use a Fight ability, before reactions are used, you can pick a friendly unit in combat with the target. That friendly unit can move 2D3\". It can pass through the combat ranges of enemy units and can end that move in combat.",
+        "keywords": [
+          "Spell"
+        ],
+        "casting_value": 5
+      }
+    ]
+  },
+  "manifestation_lore": {
+    "Manifestations Of Depravity": [
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "Mirror",
+        "description": "Smashing a small glass mirror to the ground, the wizard uses magical energy to cause it to reform and grow in size.",
+        "declare": "If there is not a friendly Mesmerising Mirror on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
+        "effect": "Set up a Mesmerising Mirror wholly within 12\" of the caster and visible to them.",
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
+        "casting_value": 6
+      },
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "SUMMON DREADFUL VISAGE:",
+        "description": "Inhaling draughts of hallucinogenic incense, the caster externalises their most unnatural desires in the form of a screaming daemonic visage.",
+        "declare": "If there is not a friendly Dreadful Visage on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
+        "effect": "Set up a Dreadful Visage wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
+        "casting_value": 7
+      },
+      {
+        "phase": "Hero Phase",
+        "your_turn_only": true,
+        "name": "Excruciation",
+        "description": "Throwing a small multi-bladed knife into the air and channelling magical energy into it, the caster summons forth a storm of swiftly moving razor-sharp blades.",
+        "declare": "If there is not a friendly Wheels of Excruciation endless spell on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
+        "effect": "Set up a Wheels of Excruciation endless spell wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
+        "casting_value": 6
+      }
+    ]
+  },
+  "warscrolls": [
+    {
+      "name": "Shalaxi Helbane",
+      "move": "14",
+      "health": "16",
+      "save": "4+",
+      "control": "5",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Soulpiercer",
+            "attacks": "6",
+            "hit": "2+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "3",
+            "ability": "Anti-Hero (+1 Rend)"
+          },
+          {
+            "name": "Impaling Claws",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "4",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "BATTLE DAMAGED",
+            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Soulpiercer is 4."
+          },
+          {
+            "activation": "Passive",
+            "name": "Supernatural Grace",
+            "description": "Whether they turn blows aside or simply dodge out of harm's way, it is extremely difficult to pin down a Keeper of Secrets.",
+            "effect": "Subtract 1 from hit rolls for combat attacks that target this unit. 4"
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Refine Senses",
+            "description": "The sorcerer channels magical power into their senses so that nothing can be hidden from them and none can escape their wrath.",
+            "declare": "Make a casting roll of 2D6.",
+            "effect": "For the rest of the turn: \n* Add 1 to wound rolls for this unit's attacks that target enemy Heroes. \n* Add 1 to save rolls for attacks made by enemy Heroes that target this unit.",
+            "keywords": [
+              "Spell"
+            ],
+            "casting_value": 4
+          },
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "reaction_condition": "   Opponent declared a Charge ability for a  Hero within 9\" of this unit",
+            "name": "Paramount Hunter",
+            "description": "Shalaxi will permit none save themselves the honour of striking down their chosen quarry.",
+            "effect": "If this unit is not in combat, it can immediately move 2D6\". It can pass through the combat ranges of enemy units but it must end that move within \u00bd\" of that Hero. If it does so, this unit has charged, and that Hero's Charge ability has no effect.",
+            "keywords": [
+              "Core",
+              "Move",
+              "Charge",
+              "Rampage"
+            ]
+          },
+          {
+            "activation": "Once Per Battle",
+            "phase": "Combat Phase",
+            "your_turn_only": true,
+            "name": "Excess Of Violence",
+            "description": "With the subtlest of gestures, Shalaxi Helbane can rouse their followers to attack with redoubled aggression.",
+            "declare": "Pick a friendly non-Hero Hedonites of Slaanesh unit wholly within 12\" of this unit to be the target.",
+            "effect": "The target can use 2 Fight abilities this turn. After the first is used, however, the target has Strike-last for the rest of the turn."
+          }
+        ]
+      ],
+      "keywords": [
+        "Warmaster",
+        "Unique",
+        "Hero",
+        "Monster",
+        "Wizard (2)",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Keeper Of Secrets",
+      "move": "12",
+      "health": "16",
+      "save": "4+",
+      "control": "5",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Elegant Greatblade",
+            "attacks": "6",
+            "hit": "2+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "2",
+            "ability": "-"
+          },
+          {
+            "name": "Impaling Claws",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "4",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "BATTLE DAMAGED",
+            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Elegant Greatblade is 4."
+          },
+          {
+            "activation": "Passive",
+            "name": "Supernatural Grace",
+            "description": "Whether they turn blows aside or simply dodge out of harm's way, it is extremely difficult to pin down a Keeper of Secrets.",
+            "effect": "Subtract 1 from hit rolls for combat attacks that target this unit."
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Locus Of Slaanesh",
+            "description": "With violence and excess, the walls of reality can be made thin enough to draw forth reinforcements of Slaaneshi daemons.",
+            "declare": "Pick a friendly Hedonites of Slaanesh Daemon unit that started the battle with 3 or more models and has been destroyed to be the target.",
+            "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of this unit and more than 9\" from all enemy units."
+          },
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "phase": "Combat Phase",
+            "name": "Dark Temptations",
+            "description": "Few can resist the wiles of a Keeper of Secrets.",
+            "declare": "Pick an enemy unit in combat with this unit to be the target.",
+            "effect": "Pick 1 of the following effects: \n* Add 1 to hit rolls for the target's attacks  for the rest of the turn. \n* Add 1 to save rolls for the target for the  rest of the turn.  \n* If the target is damaged, Heal (D3)  the target. Then, add 1 to the Damage characteristic of this unit's Elegant Greatblade for attacks that target that enemy unit for the rest of the turn.",
+            "keywords": [
+              "Rampage",
+              "6"
+            ]
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Cacophonic Choir",
+            "description": "The wizard unleashes a sanity-shattering chorus of magical sound.",
+            "declare": "Pick up to 3 visible enemy units within 6\" of this unit to be the targets, then make a casting roll of 2D6.",
+            "effect": "Roll a dice for each target. If the roll exceeds the target's Control characteristic, inflict D3 mortal damage on it.",
+            "keywords": [
+              "Spell"
+            ],
+            "casting_value": 6
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Monster",
+        "Wizard (2)",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Synessa, The Voice Of Sla Anesh",
+      "move": "12",
+      "health": "10",
+      "save": "5+",
+      "control": "5",
+      "weapons": {
+        "ranged": [
+          {
+            "name": "Staff of Slaanesh",
+            "range": "18\"",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "D3",
+            "ability": "Shoot in Combat"
+          }
+        ],
+        "melee": [
+          {
+            "name": "Unraveller's Talons",
+            "attacks": "5",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "phase": "Combat Phase",
+            "name": "Enthralling Splendour",
+            "description": "A mere glance at Synessa's magnificence leaves those nearby captivated.",
+            "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
+            "effect": "Roll a dice. On a 3+, subtract 1 from wound rolls for the target's attacks for the rest of the turn.",
+            "keywords": [
+              "Rampage"
+            ]
+          },
+          {
+            "phase": "End of Turn",
+            "name": "Voice Of Slaanesh",
+            "description": "Possessing all the Dark Prince's skill in intoxicating oratory, Synessa can reduce an enemy warrior to a paranoid wreck or lift an ally to a state of rapturous obedience.",
+            "declare": "Pick a visible unit within 18\" of this unit to be the target.",
+            "effect": "If the target is a friendly unit, add 5 to the target's control score for the rest of the turn. If the target is an enemy unit, subtract 5 from the target's control score for the rest of the turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "Progeny Of Slaanesh",
+            "description": "Despite their mutual enmity, Synessa and Dexcessa are inextricably connected, giving them an advantage over their foes.",
+            "effect": "While a friendly Dexcessa is on the battlefield, add 1 to this unit's power level. 7"
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Whispers Of Doubt",
+            "description": "Synessa whispers words that reveal the enemy's darkest desires, breaking their concentration and leaving them vulnerable to attack.",
+            "declare": "Pick a visible enemy Hero within 18\" of this unit to be the target.",
+            "effect": "Add 1 to hit rolls and wound rolls for combat attacks that target that enemy unit for the rest of the turn.",
+            "keywords": [
+              "Spell"
+            ],
+            "casting_value": 7
+          }
+        ]
+      ],
+      "keywords": [
+        "Warmaster",
+        "Unique",
+        "Hero",
+        "Monster",
+        "Wizard (1)",
+        "Fly",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Dexcessa, The Talon Of Sla Anesh",
+      "move": "12",
+      "health": "10",
+      "save": "5+",
+      "control": "5",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Impaling Talons",
+            "attacks": "7",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "End of Turn",
+            "name": "Joyous Battle Fury",
+            "description": "Once Dexcessa begins to fight, they become invigorated by the glorious thrill of combat.",
+            "effect": "If any enemy models were slain by this unit's combat attacks this turn, Heal (D3) this unit, then place a battle fury token next to it.  Add 1 to the Attacks characteristic of this unit's Impaling Talons for each battle fury token it has until the end of the next turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "FLEETING DANCE OF DEATH:",
+            "description": "Dexcessa rarely stays locked in combat in one place for long, flitting swiftly all over the battlefield and bringing death wherever they alight.",
+            "effect": "This unit can use Charge abilities even if it used a Retreat ability in the same turn. In addition, no mortal damage is inflicted on this unit by Retreat abilities."
+          },
+          {
+            "activation": "Passive",
+            "name": "Scion Of Slaanesh",
+            "description": "Despite their mutual enmity, Dexcessa and Synessa are inextricably connected, giving them an advantage over their foes.",
+            "effect": "While a friendly Synessa is on the battlefield, subtract 1 from hit rolls for attacks that target this unit."
+          },
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "phase": "Combat Phase",
+            "name": "Redolence Of Violence",
+            "description": "The beautiful scent of Dexcessa's savagery permeates through the Hedonite ranks.",
+            "declare": "If this unit charged this turn, pick up to D3 other friendly non-Hero Hedonites of Slaanesh Daemon units wholly within 12\" of this unit to be the targets.",
+            "effect": "Add 1 to the Attacks characteristic of the targets' melee weapons for the rest of the turn.",
+            "keywords": [
+              "Rampage"
+            ]
+          }
+        ]
+      ],
+      "keywords": [
+        "Warmaster",
+        "Unique",
+        "Hero",
+        "Monster",
+        "Fly",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Syll'Esske, The Vengeful Allegiance",
+      "move": "8",
+      "health": "9",
+      "save": "4+",
+      "control": "4",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Axe of Dominion",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "3",
+            "ability": "-"
+          },
+          {
+            "name": "Scourging Whip",
+            "attacks": "6",
+            "hit": "2+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Combat Phase",
+            "name": "Deadly Symbiosis",
+            "description": "In battle, the hosts of Syll'Esske seek to emulate the symbiosis of their master, compelling one another to escalating acts of depraved violence.",
+            "declare": "Pick a friendly non-Hero Sybarite unit and a friendly non-Hero Hedonites of Slaanesh Daemon unit to be the targets. Both units must be wholly within 12\" of this unit.",
+            "effect": "For the rest of the turn, if either target uses the 'All-out Attack' or 'All-out Defence' command, the other target can also use the same command in the same phase and no command points are spent to use the command a second time."
+          },
+          {
+            "activation": "Passive",
+            "name": "THE VENGEFUL ALLEGIANCE:",
+            "description": "Should one aspect of the Vengeful Allegiance deflect a blow, their other half will swiftly capitalise on the situation.",
+            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved. 7"
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Subvert",
+            "description": "Syll torments the foe with whispers and visions, distracting them from their duties.",
+            "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
+            "effect": "The target cannot use commands for the rest of the turn.",
+            "keywords": [
+              "Spell"
+            ],
+            "casting_value": 7
+          }
+        ]
+      ],
+      "keywords": [
+        "Unique",
+        "Hero",
+        "Wizard (1)",
+        "Infantry",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Contorted Epitome",
+      "move": "9",
+      "health": "7",
+      "save": "5+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Piercing Claws and Coiled Tentacles",
+            "attacks": "7",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Reaction",
+            "reaction_condition": " Opponent declared a command   or Retreat ability for a unit in combat  with this unit",
+            "name": "Horrible Fascination",
+            "description": "Many of weaker will would rather die than abandon the glories shown by a Mirror of Absorption - and the daemonic entity readily obliges.",
+            "effect": "Inflict D3 mortal damage on that enemy unit."
+          },
+          {
+            "activation": "Passive",
+            "name": "Swallow Energy",
+            "description": "A Contorted Epitome steals the most intense and excessive energies, channelling them back to Slaanesh's Temple of Twisted Mirrors.",
+            "effect": "If you make a successful ward roll for this unit, add 1 to this unit's power level until the end of your next turn."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Wizard (1)",
+        "Infantry",
+        "Ward (4+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Infernal Enrapturess, Herald Of Sla Anesh",
+      "move": "6",
+      "health": "5",
+      "save": "5+",
+      "control": "2",
+      "weapons": {
+        "ranged": [
+          {
+            "name": "Heartstring Lyre",
+            "range": "12\"",
+            "attacks": "2",
+            "hit": "2+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "D3",
+            "ability": "-"
+          }
+        ],
+        "melee": [
+          {
+            "name": "Piercing Claw",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "reaction_condition": "  Opponent declared a Spell ability for a  Wizard within 18\" of this unit",
+            "name": "Discordant Disruption",
+            "description": "An Infernal Enrapturess can play music so dissonant that it causes physical harm to those attuned to magic.",
+            "effect": "The casting roll for that spell must be re-rolled. If 2 or more dice in the re-rolled casting roll have the same value or if 1 of the dice is a 6, inflict D3 mortal damage on that Wizard after the effect of that spell has been resolved."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Infantry",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "The Masque",
+      "move": "8",
+      "health": "5",
+      "save": "5+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Razor-edged Claws",
+            "attacks": "6",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Deployment Phase",
+            "name": "The Endless Dance",
+            "description": "The Masque dances eternally across the Mortal Realms, endlessly seeking an audience to confound and swiftly slay.",
+            "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units."
+          },
+          {
+            "phase": "Hero Phase",
+            "name": "Staff Of Masks",
+            "description": "The masks on this staff constantly flicker and change, enhancing the Masque's attacks or protecting them from harm.",
+            "effect": "Pick 1 of the following effects: \n* Add 3 to the Attacks characteristic of this unit's Razor-edged Claws for the rest of the turn. \n* Heal (3) this unit."
+          }
+        ]
+      ],
+      "keywords": [
+        "Unique",
+        "Hero",
+        "Infantry",
+        "Ward (4+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Seeker Chariot",
+      "move": "12",
+      "health": "6",
+      "save": "4+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Flensing Whips and Piercing Claws",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          },
+          {
+            "name": "Steeds' Poisoned Tongues",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Charge Phase",
+            "name": "Mutilating Blades",
+            "description": "A Slaaneshi chariot inflicts carnage when it ploughs into the foe.",
+            "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
+            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+          }
+        ]
+      ],
+      "keywords": [
+        "War Machine",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Hellflayer",
+      "move": "10",
+      "health": "7",
+      "save": "4+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Flensing Whips and Piercing Claws",
+            "attacks": "6",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          },
+          {
+            "name": "Steeds' Poisoned Tongues",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          },
+          {
+            "name": "Axle Blades",
+            "attacks": "4",
+            "hit": "4+",
+            "wound": "2+",
+            "rend": "2",
+            "damage": "D3",
+            "ability": "Anti-Infantry (+1 Rend), Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Movement Phase",
+            "name": "Soulscent",
+            "description": "The whirling blades of this fearsome chariot mow down the enemy, transmuting their souls into an exhilarating incense that drives its riders into an ecstatic frenzy.",
+            "declare": "Pick up to 3 enemy units that this unit passed across this phase to be the targets.",
+            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If any models are slain by this ability, this unit has Ward (5+) for the rest of the turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "Threshing Doom",
+            "description": "The wail of an approaching Hellflayer sees enemy infantry diving for cover.",
+            "effect": "When this unit moves, it can pass through models in enemy Infantry units and can pass through the combat ranges of enemy Infantry units, but it cannot end a move in combat unless specified in the ability used."
+          }
+        ]
+      ],
+      "keywords": [
+        "War Machine",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Bladebringer, Herald On Exalted Chariot",
+      "move": "12",
+      "health": "12",
+      "save": "4+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Flensing Whips and Piercing Claws",
+            "attacks": "12",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          },
+          {
+            "name": "Steeds' Poisoned Tongues",
+            "attacks": "8",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Charge Phase",
+            "name": "Mutilating Blades",
+            "description": "A Slaaneshi chariot inflicts carnage when it ploughs into the foe.",
+            "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
+            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+          },
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "name": "Soulgorgers",
+            "description": "The grandest Bladebringers excel in stoking fits of manic violence in their disciples and hangers-on.",
+            "declare": "Pick up to 3 friendly non-Unique Hedonites of Slaanesh War Machines wholly within 12\" of this unit to be the targets.",
+            "effect": "Add 1 to the Attacks characteristic of the targets' melee weapons for the rest of the turn. This ability also affects Companion weapons."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "War Machine",
+        "Wizard (1)",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Daemonettes",
+      "move": "6",
+      "health": "1",
+      "save": "6+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Piercing Claws",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Lithe And Swift",
+            "description": "Charging Daemonettes can riddle an enemy with a quicksilver flurry of claw-strikes.",
+            "effect": "Add 1 to the Attacks characteristic of this unit's Piercing Claws for the rest of the turn if this unit charged in the same turn."
+          }
+        ]
+      ],
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Musician (1/10)",
+        "Standard Bearer (1/10)",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Fiends",
+      "move": "10",
+      "health": "4",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Deadly Pincers and Barbed Stinger",
+            "attacks": "4",
+            "hit": "4+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "D3",
+            "ability": "Anti-Monster (+1 Rend), Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "name": "Soporific Musk",
+            "description": "A Fiend exudes a pervasive and oily musk that numbs a foe to all but the most extreme of stimuli.",
+            "declare": "Pick an enemy unit in combat with this unit to be the target.",
+            "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "Disruptive Song",
+            "description": "Fiends of Slaanesh let out a keening song that disturbs the concentration of spellcasters who hear it.",
+            "effect": "Subtract 1 from casting rolls and unbinding rolls for enemy Wizards while they are within 12\" of this unit."
+          },
+          {
+            "activation": "Passive",
+            "name": "BEAST",
+            "effect": "This unit has a maximum control score of 1."
+          }
+        ]
+      ],
+      "keywords": [
+        "Beast",
+        "Champion",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Seekers",
+      "move": "12",
+      "health": "3",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Agonising Claws",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "Anti-Cavalry (+1 Rend)"
+          },
+          {
+            "name": "Steed's Poisoned Tongue",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Quicksilver Speed",
+            "description": "Seekers of Slaanesh are daemonic hunters and swift beyond belief.",
+            "effect": "When making run rolls for this unit, if you roll a 1-3, you can use a value of 4 instead."
+          }
+        ]
+      ],
+      "keywords": [
+        "Cavalry",
+        "Champion",
+        "Musician (1/5)",
+        "Standard Bearer (1/5)",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Daemon"
+      ]
+    },
+    {
+      "name": "Glutos Orscollion, Lord Of Gluttony",
+      "move": "8",
+      "health": "18",
+      "save": "4+",
+      "control": "5",
+      "weapons": {
+        "ranged": [
+          {
+            "name": "Leerstave of Loth'shar",
+            "range": "12\"",
+            "attacks": "1",
+            "hit": "2+",
+            "wound": "2+",
+            "rend": "-",
+            "damage": "6",
+            "ability": "Shoot in Combat"
+          }
+        ],
+        "melee": [
+          {
+            "name": "Greatblade and Claws",
+            "attacks": "8",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "3",
+            "ability": "Companion"
+          },
+          {
+            "name": "Scourge and Dagger",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "BATTLE DAMAGED",
+            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Greatblade and Claws is 6."
+          },
+          {
+            "phase": "End of Turn",
+            "name": "Gorge On Excess",
+            "description": "Glutos's followers grow strong on acts of excess.",
+            "declare": "Pick a friendly Sybarite unit wholly within 12\" of this unit to be the target.",
+            "effect": "Heal (6) the target. 7"
+          },
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Crippling Famishment",
+            "description": "With a snap of his fingers, Glutos paralyses his prey with immeasurable hunger.",
+            "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
+            "effect": "Until the start of your next turn: \n* Halve the target's Move characteristic. \n* Halve run rolls and charge rolls for  the target.",
+            "keywords": [
+              "Spell"
+            ],
+            "casting_value": 7
+          },
+          {
+            "activation": "Passive",
+            "name": "The Grand Gour Mand",
+            "description": "To Glutos, battle is a sumptuous banquet.",
+            "effect": "A different effect applies to friendly Sybarite units each battle round while they are wholly within 12\" of this unit, as shown below. The effects of all previous battle rounds also apply to those units while they are wholly within 12\" of this unit. Battle Round 1: Starter: Add 1 to run rolls and charge rolls for those units. Battle Round 2: Main: Add 3 to those units' control scores. Battle Round 3: Dessert: Add 1 to hit rolls for those unit's attacks. Battle Round 4+: Digestif: Add 1 to the Rend characteristic of those units' melee weapons."
+          }
+        ]
+      ],
+      "keywords": [
+        "Warmaster",
+        "Unique",
+        "Hero",
+        "War Machine",
+        "Wizard (2)",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Lord Of Hubris",
+      "move": "6",
+      "health": "5",
+      "save": "5+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Exquisite Scimitar",
+            "attacks": "5",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Combat Phase",
+            "name": "'You First, I Insist\u2026'",
+            "description": "So confident is this champion of excess that they allow their foe a futile swipe for free.",
+            "declare": "Pick an enemy unit in combat with this unit to be the target.",
+            "effect": "Your opponent must decide whether the target will accept or decline this unit's challenge. Accept: The target has Strike-first for the rest of the turn. If this unit is in combat with the target when the target is picked to use a Fight ability, all of the target's attacks must target this unit. Decline: The target has Strike-last for the rest of the turn."
+          },
+          {
+            "phase": "Combat Phase",
+            "name": "ONLY THE BEST WILL SUFFICE:",
+            "description": "Lords of Hubris refuse to fight alongside any but the finest warriors of the Sybarite hordes. In doing so, they inspire a level of pride worthy of their title.",
+            "declare": "Pick a friendly Myrmidesh Painbringers or Symbaresh Twinsouls unit that is in combat and is wholly within 12\" of this unit to be the target.",
+            "effect": "Roll a dice. On a 3+, for the rest of the turn, each time a model in the target unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. For each 4+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Infantry",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Lord Of Pain",
+      "move": "6",
+      "health": "5",
+      "save": "4+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Soulpiercer Mace",
+            "attacks": "5",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Share The Pain",
+            "description": "Lords of Pain have mastered every kind of torment and are adept at gifting the most terrible of agonies to their foes.",
+            "effect": "Each time you make a successful ward roll for this unit for a damage point inflicted by a combat attack, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+          },
+          {
+            "activation": "Passive",
+            "name": "Disciples In Tor Ment",
+            "description": "Slaanesh's Sybarites flock around a battling Lord of Pain, eager to be rewarded with the choicest expressions of agony.",
+            "effect": "While this unit is contesting an objective, add 1 to wound rolls for combat attacks made by friendly Sybarite units wholly within 12\" of this unit."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Infantry",
+        "Ward (5+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Sigvald, Prince Of Sla Anesh",
+      "move": "6",
+      "health": "7",
+      "save": "3+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Shardslash",
+            "attacks": "5",
+            "hit": "2+",
+            "wound": "3+",
+            "rend": "2",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Powered By Vainglory",
+            "description": "Sigvald is the epitome of vainglory, one of Slaanesh's favourite sins. So great is his sense of superiority that few can stand before his prideful assaults.",
+            "effect": "If this unit charged this turn and the unmodified charge roll was 6+, the Attacks characteristic of this unit's Shardslash is equal to the unmodified charge roll."
+          },
+          {
+            "activation": "Passive",
+            "name": "The Glorious Reborn",
+            "description": "None can best Sigvald in hand-to-hand combat, or so he believes, and the Geld-Prince is determined to prove it.",
+            "effect": "This unit has Strike-first if it charged in the same turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "Shardslash",
+            "description": "This majestic blade slices through sigmarite and arcane wards alike as if they were merely the thinnest silk.",
+            "effect": "Ward rolls cannot be made for damage points inflicted by this unit's combat attacks."
+          }
+        ]
+      ],
+      "keywords": [
+        "Warmaster",
+        "Unique",
+        "Hero",
+        "Infantry",
+        "Ward (4+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Slaangor Fiendbloods",
+      "move": "6",
+      "health": "3",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Razor-sharp Claws and Gilded Weapons",
+            "attacks": "4",
+            "hit": "4+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "2",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Shooting Phase",
+            "enemy_turn_only": true,
+            "name": "SLAUGHTER AT ANY COST:",
+            "description": "When stirred by the excesses of battle, Fiendbloods waste no time in hunting down their victims.",
+            "effect": "If any damage points were allocated to this unit this turn, this unit can use the 'Normal Move' ability as if it were your movement phase."
+          }
+        ]
+      ],
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Shardspeaker Of Slaanesh",
+      "move": "6",
+      "health": "5",
+      "save": "5+",
+      "control": "2",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Haze Staff",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "D3",
+            "ability": "-"
+          },
+          {
+            "name": "Shadow-cloaked Claws",
+            "attacks": "4",
+            "hit": "4+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "D3",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Once Per Turn",
+            "once_per_army": true,
+            "name": "Twisted Mirror",
+            "description": "A Twisted Mirror tests the spirit of any who gaze into it, weakening those who fall victim to its illusions.",
+            "declare": "Pick an enemy unit within 8\" of this unit to be the target.",
+            "effect": "Roll a dice. On a 4+, subtract 1 from save rolls for the target until the start of your next turn."
+          },
+          {
+            "activation": "Passive",
+            "name": "Mist Lurkers",
+            "description": "The mist-daemons that billow and slink around a Shardspeaker are empowered by arcane energies.",
+            "effect": "If this unit successfully casts a spell, until the start of your next turn, it can attack with its Shadow- cloaked Claws."
+          }
+        ]
+      ],
+      "keywords": [
+        "Hero",
+        "Wizard (1)",
+        "Infantry",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Myrmidesh Painbringers",
+      "move": "6",
+      "health": "2",
+      "save": "3+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Wicked Scimitar",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "3+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Paragons Of Battle",
+            "description": "Myrmidesh Painbringers seek to prove their martial prowess in the manic heart of battle.",
+            "effect": "Add 1 to the Rend characteristic of this unit's melee weapons while it is contesting an objective you do not control."
+          }
+        ]
+      ],
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Blissbarb Archers",
+      "move": "6",
+      "health": "1",
+      "save": "6+",
+      "control": "1",
+      "weapons": {
+        "ranged": [
+          {
+            "name": "Blissbarb Bow",
+            "range": "18\"",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ],
+        "melee": [
+          {
+            "name": "Sybarite Blade",
+            "attacks": "1",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Blissbrew Homonculus",
+            "description": "Blissbrew Homonculi bear censers from which clouds of sickly-sweet incense emanate.",
+            "effect": "This unit's Blissbrew Homonculus is a token. There is 1 Blissbrew Homonculus for every 10 models in this unit.  Subtract 1 from hit rolls for shooting attacks that target this unit while it has a Blissbrew Homonculus. If you make an unmodified save roll of 1 for this unit, remove the Blissbrew Homonculus from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
+          }
+        ]
+      ],
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Symbaresh Twinsouls",
+      "move": "6",
+      "health": "2",
+      "save": "4+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Merciless Weapons",
+            "attacks": "4",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Ego-Driven Excess",
+            "description": "These warriors refuse to be outdone by their comrades and use unorthodox techniques to best their foes.",
+            "effect": "If this unit did not charge this turn, subtract 1 from the Attacks characteristic of melee weapons used by enemy units while they are in combat with this unit."
+          },
+          {
+            "activation": "Passive",
+            "name": "Fiendish Reflexes",
+            "description": "As the daemons possessing these mortals take control, their speed increases tenfold, making them almost impossible to hit.",
+            "effect": "If this unit did not charge this turn, it has Ward (5+) while it is in combat."
+          }
+        ]
+      ],
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Hellstriders",
+      "move": "12",
+      "health": "3",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Claw-spear or Hellscourge",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Anti-Infantry (+1 Rend), Charge (+1 Damage)"
+          },
+          {
+            "name": "Steed's Poisoned Tongue",
+            "attacks": "2",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Maiming Charge",
+            "description": "The gruesome carnage caused by Hellstriders on the charge can unnerve the staunchest foe.",
+            "effect": "If this unit charged this turn, subtract 3 from the control scores of enemy Infantry units while they are in combat with this unit."
+          }
+        ]
+      ],
+      "keywords": [
+        "Cavalry",
+        "Champion",
+        "Musician (1/5)",
+        "Standard Bearer (1/5)",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Slickblade Seekers",
+      "move": "12",
+      "health": "4",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Slickblade Glaive",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "Charge (+1 Damage)"
+          },
+          {
+            "name": "Poisoned Tongue Exalted Steed's",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Unrivalled Velocity",
+            "description": "Slickblade Seekers are obsessed with high-speed kills, tearing towards the foe with relentless haste.",
+            "effect": "You can re-roll charge rolls for this unit."
+          }
+        ]
+      ],
+      "keywords": [
+        "Cavalry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Blissbarb Seekers",
+      "move": "12",
+      "health": "4",
+      "save": "5+",
+      "control": "1",
+      "weapons": {
+        "ranged": [
+          {
+            "name": "Seeker Bow",
+            "range": "12\"",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ],
+        "melee": [
+          {
+            "name": "Sybarite Blade",
+            "attacks": "1",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "-"
+          },
+          {
+            "name": "Poisoned Tongue Exalted Steed's",
+            "attacks": "3",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "Companion"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "activation": "Passive",
+            "name": "Glory Shots",
+            "description": "Nothing pleases the Blissbarb Seekers more than shooting down enemies encamped on a vital point, all without breaking stride.",
+            "effect": "Add 1 to the Rend characteristic of this unit's ranged weapons for attacks that target units contesting an objective you do not control."
+          }
+        ]
+      ],
+      "keywords": [
+        "Cavalry",
+        "Champion",
+        "Chaos",
+        "Hedonites of Slaanesh",
+        "Sybarite"
+      ]
+    },
+    {
+      "name": "Dreadful Visage",
+      "move": "8",
+      "health": "6",
+      "save": "6+",
+      "banishment": "7+",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Hooked Tongues",
+            "attacks": "8",
+            "hit": "3+",
+            "wound": "4+",
+            "rend": "1",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Combat Phase",
+            "name": "Flensing Tongues",
+            "description": "Opening its soul-sucking maw, the Dreadful Visage lets fly a plethora of hooked tongues that lash and flense the flesh of those nearby.",
+            "declare": "Pick an enemy unit in combat with this Manifestation to be the target.",
+            "effect": "Roll 6 dice. For each 4+, inflict 1 mortal damage on the target. If any models are slain by this ability, the target has Strike-last for the rest of the turn."
+          }
+        ]
+      ],
+      "keywords": [
+        "Manifestation",
+        "Endless Spell",
+        "Fly",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh"
+      ]
+    },
+    {
+      "name": "Mesmerising Mirror",
+      "move": "-",
+      "health": "6",
+      "save": "5+",
+      "banishment": "7+",
+      "weapons": {},
+      "abilities": [
+        [
+          {
+            "activation": "Reaction",
+            "reaction_condition": " Opponent declared a Move  ability for a unit wholly within 12\" of  this\u00a0Manifestation",
+            "name": "Irresistible Lure",
+            "description": "The Mirror lures mortals as a candle draws moths to its light. Those strong enough to turn away feel knives of anguish and loss driven into their hearts.",
+            "effect": "If that enemy unit does not end the move closer to this Manifestation than it was at the start of the move, inflict D3 mortal damage on it after the Move ability has been resolved."
+          },
+          {
+            "phase": "Movement Phase",
+            "name": "GAZE NOT INTO ITS DEPTHS:",
+            "description": "A Mesmerising Mirror can enthral a warrior's soul, offering tempting gifts of power while slowly sapping their very essence.",
+            "declare": "Pick an enemy unit within 6\" of this Manifestation to be the target.",
+            "effect": "Inflict D3 mortal damage on the target. Then, add 1 to hit rolls for the target's attacks for the rest of the turn."
+          }
+        ]
+      ],
+      "keywords": [
+        "Manifestation",
+        "Endless Spell",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh"
+      ]
+    },
+    {
+      "name": "Wheels Of Excruciation",
+      "move": "8",
+      "health": "6",
+      "save": "5+",
+      "banishment": "7+",
+      "weapons": {
+        "melee": [
+          {
+            "name": "Rending Wheels",
+            "attacks": "2D6",
+            "hit": "4+",
+            "wound": "4+",
+            "rend": "-",
+            "damage": "1",
+            "ability": "-"
+          }
+        ]
+      },
+      "abilities": [
+        [
+          {
+            "phase": "Movement Phase",
+            "your_turn_only": true,
+            "name": "Exquisite Agony",
+            "description": "The Wheels of Excruciation deliver death by a thousand exquisite cuts to those who get in their way.",
+            "declare": "Pick up to 3 enemy units that this Manifestation passed across this turn to be the targets.",
+            "effect": "Roll 6 dice for each target. For each roll that is less than the target's Save characteristic, inflict 1 mortal damage on the target."
+          }
+        ]
+      ],
+      "keywords": [
+        "Manifestation",
+        "Endless Spell",
+        "Fly",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh"
+      ]
+    },
+    {
+      "name": "Fane Of Slaanesh",
+      "move": "-",
+      "health": "10",
+      "save": "4+",
+      "control": "-",
+      "weapons": {},
+      "abilities": [
+        [
+          {
+            "phase": "Hero Phase",
+            "your_turn_only": true,
+            "name": "Damned Conduit",
+            "description": "Slaanesh's minions can make sacrifices at a Fane of Slaanesh to gain martial prowess.",
+            "declare": "Pick a friendly Hedonites of Slaanesh unit wholly within 12\" of this terrain feature to be the target.",
+            "effect": "Allocate D3 damage points to the target (ward rolls cannot be made for those damage points). Then, pick 1 of the following effects to apply until the start of your next turn: \n* Add 1 to wound rolls for the target's  combat attacks. \n* Add 1 to run rolls and charge rolls for  the target. \n* Add 1 to casting rolls and unbinding  rolls for the target."
+          }
+        ]
+      ],
+      "keywords": [
+        "Faction Terrain",
+        "Ward (6+)",
+        "Chaos",
+        "Hedonites of Slaanesh"
+      ]
+    }
+  ]
+}
