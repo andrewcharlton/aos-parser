@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
+
 import json
+import os
+
 from pdfminer.high_level import extract_pages
-from pdfminer.layout import LTTextBox
+from pdfminer.layout import LTTextBox, LTTextLineHorizontal
 
 BATTLE_TRAITS = "battle_traits"
 BATTLE_FORMATIONS = "battle_formations"
@@ -10,12 +14,62 @@ SPELL_LORE = "spell_lore"
 PRAYER_LORE = "prayer_lore"
 MANIFESTATION_LORE = "manifestation_lore"
 WARSCROLL = "warscroll"
-SPEARHEAD_WARSCROLL = "spearhead_warscroll"
 UNKNOWN = "unknown"
+
+
+def parse_pdf(input_file, output_file):
+    pages = extract_pages(input_file)
+    output = {}
+    parsing_warscrolls = False
+
+    for page in pages:
+        pt = page_type(page)
+        if pt == WARSCROLL:
+            if "warscrolls" not in output:
+                output["warscrolls"] = []
+            output["warscrolls"].append(parse_warscroll(page))
+            parsing_warscrolls = True
+
+        elif parsing_warscrolls:
+            # If we've been parsing warscrolls (which are always last), and we hit a non-warscroll page,
+            # then we've got to the spearhead stuff and we want to bail out.
+            break
+
+        elif pt == BATTLE_TRAITS:
+            output["battle_traits"] = parse_battle_traits(page)
+
+        elif pt == BATTLE_FORMATIONS:
+            output["battle_formations"] = parse_battle_formations(page)
+
+        elif pt == HEROIC_TRAITS or pt == ARTEFACTS:
+            output.update(parse_heroic_traits(page))
+
+        elif pt == SPELL_LORE:
+            if "spell_lore" not in output:
+                output["spell_lore"] = {}
+            output["spell_lore"].update(parse_lore(page, "LORE OF"))
+
+        elif pt == PRAYER_LORE:
+            if "prayer_lore" not in output:
+                output["prayer_lore"] = {}
+            output["prayer_lore"].update(parse_lore(page, "PRAYERS"))
+
+        elif pt == MANIFESTATION_LORE:
+            if "manifestation_lore" not in output:
+                output["manifestation_lore"] = {}
+            output["manifestation_lore"].update(parse_lore(page, "MANIFESTATIONS OF"))
+
+
+    with open(output_file, "w") as f:
+        json.dump(output, f, indent=2)
+
 
 def page_type(page):
     for element in page:
         if not isinstance(element, LTTextBox):
+            continue
+
+        if element.y0 < 350:
             continue
 
         text = element.get_text()
@@ -30,11 +84,9 @@ def page_type(page):
         elif "SPELL LORE" in text:
             return SPELL_LORE
         elif "PRAYER LORE" in text:
-            return "PRAYER_LORE"
+            return PRAYER_LORE
         elif "MANIFESTATION LORE" in text:
             return MANIFESTATION_LORE
-        elif "SPEARHEAD WARSCROLL" in text:
-            return SPEARHEAD_WARSCROLL
         elif "WARSCROLL" in text:
             return WARSCROLL
 
@@ -45,6 +97,7 @@ def parse_battle_traits(page):
     elements = [element for element in page if isinstance(element, LTTextBox)]
     first_ability = find_first_ability(elements)
     return parse_abilities([e for e in elements if e.y1 <= first_ability and e.y0 > 15])
+
 
 def parse_battle_formations(page):
     elements = [element for element in page if isinstance(element, LTTextBox) and element.y0 > 15]
@@ -89,17 +142,17 @@ def parse_heroic_traits(page):
 
     if traits is not None and artefacts is None:
         # Whole page is traits
-        return {"heroic_traits": parse_abilities(page)}
+        return {"heroic_traits": parse_abilities(elements)}
 
     elif artefacts is not None and traits is None:
         # Whole page is artefacts
-        return {"artefacts_of_power": parse_abilities(page)}
+        return {"artefacts_of_power": parse_abilities(elements)}
 
     else:
         return {
-                "heroic_traits": parse_abilities([e for e in elements if e.y0 > artefacts]),
-                "artefacts_of_power": parse_abilities([e for e in elements if e.y1 < artefacts]),
-                }
+            "heroic_traits": parse_abilities([e for e in elements if e.y0 > artefacts]),
+            "artefacts_of_power": parse_abilities([e for e in elements if e.y1 < artefacts]),
+        }
 
 
 def parse_lore(page, name_str):
@@ -116,9 +169,6 @@ def parse_lore(page, name_str):
     }
 
 
-
-# Warscroll Parsing
-
 def parse_warscroll(page):
     elements = [element for element in page if isinstance(element, LTTextBox)]
 
@@ -130,27 +180,26 @@ def parse_warscroll(page):
     name = [e for e in elements if (e.x0 + e.x1) > 240 and (e.y0 + e.y1) > 760 and (e.y0 +e.y1) < 840] # mid_x > 120 && mid_y > 380 && mid_y < 420
 
     # Split the rest of the page up accordingly.
-    first_ability = find_first_ability(elements, 40)
+    first_ability = find_first_ability(elements, 40) + 3 # Add a little padding to be safe
     weapons = [e for e in elements if e.y1 < 370 and e.y1 > first_ability] 
     abilities = [e for e in elements if e.y0 < first_ability and e.y0 > 40]
     keywords = [e for e in elements if e.y1 < 40]
 
     move, health, save, control, banishment = parse_characteristics(characteristics)
-
     warscroll = {
         "name": parse_name(name),
         "move": move,
         "health": health,
         "save": save,
-        "weapons": parse_weapons(weapons),
-        "abilities": parse_abilities(abilities),
-        "keywords": parse_keywords(keywords)
     }
-
     if control is not None:
         warscroll["control"] = control
     if banishment is not None:
         warscroll["banishment"] = banishment
+
+    warscroll["weapons"] = parse_weapons(weapons)
+    warscroll["abilities"] = parse_abilities(abilities),
+    warscroll["keywords"] = parse_keywords(keywords)
 
     return warscroll
 
@@ -189,6 +238,7 @@ def text_is_start_of_ability(text):
 
     return False
 
+
 def find_first_ability(elements, start=0):
     first_ability = start
     for e in elements:
@@ -200,7 +250,7 @@ def find_first_ability(elements, start=0):
 
 
 def parse_name(elements):
-    elements.sort(key = lambda e: (e.y0 + e.y1))
+    elements.sort(key = lambda e: (e.y0 + e.y1), reverse=True)
     return tidy_string(", ".join([e.get_text() for e in elements if "WARSCROLL" not in e.get_text()]).replace("\n", "").title())
 
 
@@ -235,15 +285,102 @@ def parse_characteristics(elements):
             
     return move, health, save, control, banishment
 
+
 def parse_weapons(elements):
-    return {}
+    # pdfminer will jumble a load of stuff together if we let it, so we need to drop down to the individual line components.
+    all_elements = []
+    for e in elements:
+        all_elements.extend([obj for obj in e._objs if isinstance(obj, LTTextLineHorizontal)])
+
+    # Try and group the elements into rows. The names can span multiple rows, so we start by looking at the elements in the Hit column
+    to_hit = [e for e in all_elements if e.x0 < 140 and e.x1 > 140]
+    to_hit.sort(key=lambda e: e.y0, reverse=True)
+
+    weapons = []
+    for x in to_hit:
+        weapon = [e for e in all_elements if e.y1 > x.y0 and e.y0 < x.y1]
+        weapon.sort(key=lambda w: w.x0)
+        weapons.append(" ".join([w.get_text() for w in weapon]).replace("\n", ""))
+
+    parsed_weapons = {}
+    type = ""
+    for line in weapons:
+        if "RANGED WEAPONS" in line:
+            type = "ranged"
+            parsed_weapons["ranged"] = []
+            continue
+        elif "MELEE WEAPONS" in line:
+            type = "melee"
+            parsed_weapons["melee"] = []
+            continue
+        elif type == "":
+            # Probably some flavour text at the top of the warscroll, we just ignore
+            continue
+
+        # First put the name together
+        weapon = {}
+        name = []
+        ability = []
+        stage = "name"
+        for word in line.split(" "):
+            # Check whether we're moving on to the next step
+            if word == "":
+                continue
+
+            if stage == "name":
+                if type == "ranged" and word.endswith("\""):
+                    stage = "attacks"
+                    weapon["name"] = tidy_string(" ".join(name))
+                    weapon["range"] = word
+
+                elif type == "melee" and word.strip()[-1].isnumeric(): # Just check the last digit for the D6 case
+                    stage = "hit"
+                    weapon["name"] = tidy_string(" ".join(name))
+                    weapon["attacks"] = word
+
+                else:
+                    name.append(word)
+
+            elif word.startswith("Anti") or word.startswith("Charge") or word.startswith("Companion") or word.startswith("Crit") or word.startswith("Shoot"):
+                ability.append(word)
+                stage = "ability"
+
+            elif stage == "attacks":
+                weapon["attacks"] = word
+                stage = "hit"
+
+            elif stage == "hit":
+                weapon["hit"] = word
+                stage = "wound"
+
+            elif stage == "wound":
+                weapon["wound"] = word
+                stage = "rend"
+
+            elif stage == "rend":
+                weapon["rend"] = word
+                stage = "damage"
+
+            elif stage == "damage":
+                weapon["damage"] = word
+                stage = "ability"
+
+            elif stage == "ability":
+                ability.append(word)
+
+        weapon["ability"] = " ".join(ability)
+        parsed_weapons[type].append(weapon)
+
+    return parsed_weapons
+
 
 def parse_abilities(elements):
-    elements.sort(key=lambda e: (e.x0 > 150, -e.y0))
+    elements.sort(key=lambda e: (e.x0 > 150, -e.y1))
     elements = [e.get_text() for e in elements]
 
     abilities = []
     current_ability = None
+    previous_line = ""
 
     for text in elements:
         if text_is_start_of_ability(text):
@@ -251,15 +388,22 @@ def parse_abilities(elements):
                 abilities.append(current_ability)
 
             current_ability = [text]
+            if previous_line.strip().isnumeric():
+                # We may have missed the command point cost/casting value/chanting value if that was higher than the text.
+                current_ability.append(previous_line)
+
             continue
 
         if current_ability is not None:
             current_ability.append(text)
 
+        previous_line = text
+
     if current_ability is not None:
         abilities.append(current_ability)
 
     return [parse_ability(a) for a in abilities]
+
 
 def parse_ability(text):
     ability = {}
@@ -311,7 +455,7 @@ def parse_ability(text):
             # Check the phase of the ability
             for keyword in Phase_Keywords:
                 if keyword in line:
-                    ability["phase"] = keyword.replace(" Enemy", "").replace(" Your", "").replace(" Any", "")
+                    ability["phases"] = [keyword.replace(" Enemy", "").replace(" Your", "").replace(" Any", "")]
                     if "Your" in line:
                         ability["your_turn_only"] = True
                     elif "Enemy" in line:
@@ -351,6 +495,12 @@ def parse_ability(text):
         if stage == "Keywords":
             ability["keywords"].extend(line.split(", "))
 
+    if "keywords" in ability and len(ability["keywords"]) == 0:
+        # Sometimes the keywords can be higher than the word Keywords, so we need to extract them from the effect
+        idx = ability["effect"].rindex(".")   # We rely on the fact that all effects are sentences. Keywords don't have a . after them.
+        ability["keywords"] = [k.strip() for k in ability["effect"][idx+1:].split(",")]
+        ability["effect"] = ability["effect"][:idx+1]
+
     if cost > 0:
         if "keywords" not in ability:
             ability["command_point_cost"] = cost
@@ -365,7 +515,11 @@ def parse_ability(text):
         if key in ability:
             ability[key] = tidy_string(ability[key])
 
+    if "keywords" in ability:
+        ability["keywords"] = [k for k in ability["keywords"] if k != ""]
+
     return ability
+
 
 def parse_keywords(elements):
     keywords = []
@@ -379,6 +533,7 @@ def parse_keywords(elements):
 
     return keywords
 
+
 def tidy_string(s):
     return s.replace("  ", " "). \
        replace("\u2018", "'"). \
@@ -390,39 +545,8 @@ def tidy_string(s):
 
 
 if __name__ == "__main__":
-    pages = extract_pages("slaanesh.pdf")
-
-    output = {
-            "warscrolls": [],
-    }
-
-    for page in pages:
-        pt = page_type(page)
-        if pt == BATTLE_TRAITS:
-            output["battle_traits"] = parse_battle_traits(page)
-
-        elif pt == BATTLE_FORMATIONS:
-            output["battle_formations"] = parse_battle_formations(page)
-
-        elif pt == HEROIC_TRAITS or pt == ARTEFACTS:
-            output.update(parse_heroic_traits(page))
-
-        elif pt == SPELL_LORE:
-            if "spell_lore" not in output:
-                output["spell_lore"] = {}
-            output["spell_lore"].update(parse_lore(page, "LORE OF"))
-
-        elif pt == PRAYER_LORE:
-            if "prayer_lore" not in output:
-                output["prayer_lore"] = {}
-            output["prayer_lore"].update(parse_lore(page, "PRAYERS"))
-
-        elif pt == MANIFESTATION_LORE:
-            if "manifestation_lore" not in output:
-                output["manifestation_lore"] = {}
-            output["manifestation_lore"].update(parse_lore(page, "MANIFESTATIONS OF"))
-        
-        elif pt == WARSCROLL:
-            output["warscrolls"].append(parse_warscroll(page))
-
-    print(json.dumps(output, indent=2, sort_keys=True))
+    input_files = os.listdir("input")
+    for input_file in input_files:
+        print("Processing", input_file)
+        output_file = "output/" + input_file.removesuffix(".pdf") + ".json"
+        parse_pdf("input/" + input_file, output_file)
