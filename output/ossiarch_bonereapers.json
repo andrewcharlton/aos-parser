@@ -259,7 +259,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Carrion",
+        "name": "Summon Soulstealer Carrion",
         "description": "Soaring from its caster's spread fingertips, the Soulstealer Carrion takes wing above the battlefield.",
         "declare": "If there is not a friendly Soulstealer Carrion on the battlefield, pick a friendly Ossiarch Bonereapers Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Soulstealer Carrion wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -267,13 +267,14 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Soulstealer Carrion"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Predator",
+        "name": "Summon Nightmare Predator",
         "description": "The Nightmare Predator is a looming conjuration of Shyishan magic that takes the form of a disturbing terror.",
         "declare": "If there is not a friendly Nightmare Predator on the battlefield, pick a friendly Ossiarch Bonereapers Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Nightmare Predator wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -281,13 +282,14 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Nightmare Predator"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Shrieker",
+        "name": "Summon Bone-Tithe Shrieker",
         "description": "The caster conjures a four-headed, all-seeing monstrosity to hunt down those who would escape the Ossiarch tithe.",
         "declare": "If there is not a friendly Bone-tithe Shrieker on the battlefield, pick a friendly Ossiarch Bonereapers Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Bone-tithe Shrieker wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -295,7 +297,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Bone-Tithe Shrieker"
       }
     ]
   },
@@ -340,7 +343,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, subtract 3 from its power level."
         },
         {
@@ -376,7 +379,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "SUPREME LORD OF THE UNDEAD",
+          "name": "Supreme Lord Of The Undead",
           "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
           "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
         },
@@ -455,7 +458,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Inda-Khaat is 3."
         },
         {
@@ -469,7 +472,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "MORTARCH OF THE NECROPOLIS:",
+          "name": "Mortarch Of The Necropolis",
           "description": "Katakros is the most perfect of Nagash's constructs and the ruler of the Ossiarch Empire.",
           "effect": "If this unit uses a Relentless Discipline ability, that ability affects friendly Ossiarch Bonereapers units wholly within 18\" of this unit instead of wholly within 12\"."
         },
@@ -500,7 +503,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Bonereaper Legions",
+          "name": "Supreme Lord Of The Bonereaper Legions",
           "description": "An Ossiarch force personally led by Katakros is said to be worth ten identical forces led by his generals.",
           "declare": "Pick up to 3 friendly Ossiarch Bonereapers units wholly within 18\" of this unit to be the targets.",
           "effect": "Until the start of your next turn, add 1 to save rolls for the targets while they are wholly within 18\" of this unit.",
@@ -557,7 +560,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Razarak's Ebon Claws is 4."
         },
         {
@@ -580,7 +583,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "Mortarch Of Sacrament",
+          "name": "The Doom Of Traitors Mortarch Of Sacrament",
           "description": "Arkhan's loyalty has seen him become privy to secrets of Shyishan magic known to none outside the ranks of the gods.",
           "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
           "effect": "If a friendly Ossiarch Bonereapers unit wholly within 18\" of this unit was picked to be the target of that spell, roll a dice. On a 4+, ignore the effect of that spell on that unit. This unit can use this ability more than once per phase but only once per Spell ability. 6",
@@ -867,7 +870,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Necrotic Impetus",
+          "name": "Soulreaper Necrotic Impetus",
           "description": "The Soulreaper sends a surge of death energy through nearby Ossiarch footsoldiers, redoubling the ferocity of their attacks.",
           "effect": "Pick a friendly non-Hero Ossiarch Bonereapers Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -1070,7 +1073,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "SOULBOUND PROTECTORS:",
+          "name": "Soulbound Protectors",
           "description": "Immortis Guard will use their own bodies to shield their rulers from harm.",
           "effect": "Add 1 to ward rolls for friendly Ossiarch Bonereapers Heroes within this unit's combat range. However, each time you make a ward roll of 1 for a friendly Ossiarch Bonereapers Hero within this unit's combat range, allocate 1 damage point to this unit after the damage sequence for that Hero has been resolved (ward rolls cannot be made for those damage points)."
         }
@@ -1166,7 +1169,7 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "Master Of Cavalry",
+          "name": "Unstoppable Charge Master Of Cavalry",
           "description": "A Liege-Kavalos rides at the very tip of the cavalry spearhead, driving deep into the enemy's vitals and smashing open a breach for their Deathriders to exploit.",
           "declare": "If this unit charged this phase, pick an enemy Infantry unit that it passed across to be the target.",
           "effect": "Pick a friendly Kavalos Deathriders unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."

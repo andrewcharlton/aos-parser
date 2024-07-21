@@ -11,7 +11,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Discorporate",
+      "name": "Ethereal Discorporate",
       "description": "If given the order, the If given the order, the Nighthaunt can flicker between the realms of the living and dead. Reaction: Opponent declared an Used By: A friendly Nighthaunt unit targeted by that Attack ability.",
       "effect": "That unit has Ward (5+) for the rest of the phase."
     },
@@ -125,7 +125,7 @@
       "phases": [
         "Your Movement Phase"
       ],
-      "name": "RULER OF THE SPECTRAL HOSTS:",
+      "name": "Ruler Of The Spectral Hosts",
       "description": "The deathly power of this spirit is like a siren call, an unseen signal that beckons to others from beyond the grave.",
       "declare": "Pick a friendly Nighthaunt unit that started the battle with 3 or more models and that has been destroyed to be the target.",
       "effect": "Set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of this unit and more than 9\" from all enemy units.",
@@ -168,7 +168,7 @@
       "phases": [
         "Any Combat Phase"
       ],
-      "name": "Covetous Familiar",
+      "name": "Lightshard Of The Harvest Moon Covetous Familiar",
       "description": "This spiteful poltergeist swirls around its master's essence, lashing out at any other soul that draws too close.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
@@ -233,7 +233,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Ter Minexus",
+        "name": "Summon Mortalis Ter Minexus",
         "description": "A spectral hourglass filled with shifting grave-sand takes shape, promising temporal grace or doom to mortal and immortal alike.",
         "declare": "If there is not a friendly Mortalis Terminexus on the battlefield, pick a friendly Nighthaunt Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Mortalis Terminexus wholly within 12\" of the caster and visible to them.",
@@ -241,7 +241,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Mortalis Ter Minexus"
       },
       {
         "phases": [
@@ -255,7 +256,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Vault Of Souls"
       },
       {
         "phases": [
@@ -269,7 +271,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Shyish Reaper"
       }
     ]
   },
@@ -314,7 +317,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, subtract 3 from its power level."
         },
         {
@@ -350,7 +353,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "SUPREME LORD OF THE UNDEAD",
+          "name": "Supreme Lord Of The Undead",
           "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
           "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
         },
@@ -505,7 +508,7 @@
           "activation": "Once Per Turn",
           "is_reaction": true,
           "reaction_condition": " Opponent declared a command for a unit within 12\" of this unit ",
-          "name": "Shall Rule!",
+          "name": "If I Cannot Rule, None Shall Rule!",
           "description": "In the presence of Kurdoss Valentian's all-consuming bitterness and the cruel malice of his heralds, the commands of enemy generals turn to dust in their mouths even as they issue them.",
           "effect": "Roll a dice. On a 3+, unless your opponent spends 1 additional command point to use that command, the command has no effect, it still counts as having been used and the command points spent to use the command are still lost."
         }
@@ -545,7 +548,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "Underworlds",
+          "name": "Passage Through The Underworlds",
           "description": "A master of navigation, Awlrach can drift through the ethereal plane to new locations at will. By the time the foe has discovered his arrival, it is all too late to stop the spectral cargo that made the journey with him.",
           "declare": "If this unit is not in combat, pick a friendly non-Hero Nighthaunt unit that is not in combat and is wholly within 12\" of this unit to be the target.",
           "effect": "Remove this unit and the target from the battlefield, then set them up again on the battlefield wholly within 6\" of each other and more than 7\" from all enemy units.",
@@ -667,7 +670,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Tor Ment",
+          "name": "Sentenced To Eternal Tor Ment",
           "description": "Once the true name of a judged enemy is recorded, their unending punishment is all but inescapable.",
           "declare": "Pick a visible enemy unit within 18\" of this unit to be the target.",
           "effect": "Roll a dice. On a 3+, the target has the Sentenced keyword for the rest of the battle."
@@ -677,7 +680,7 @@
           "phases": [
             "End of Your Turn"
           ],
-          "name": "JUDGE, JURY AND EXECUTIONER:",
+          "name": "Judge, Jury And Executioner",
           "description": "With a mere flick of a quill, sentenced souls are dragged to the underworlds.",
           "effect": "Roll a dice for each Sentenced enemy unit on the battlefield. On a 4+, inflict an amount of mortal damage equal to the current battle round number on that Sentenced unit."
         }
@@ -789,7 +792,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Infantry Overseer",
+          "name": "Stolen Hours Infantry Overseer",
           "description": "Each Knight of Shrouds was a mighty general in mortal life and still retains the ability to spur their soldiery to great feats of arms.",
           "effect": "Pick a friendly non-Hero Nighthaunt Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -843,7 +846,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Cavalry Overseer",
+          "name": "Stolen Hours Cavalry Overseer",
           "description": "In life, the Knight of Shrouds commanded legions of devoted soldiers. In death, they turn their military genius to the command of shrieking spirits and vengeful phantasms.",
           "effect": "Pick a friendly non-Hero Nighthaunt Cavalry or War Machine unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -945,7 +948,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Excruciation",
+          "name": "Empowered Through Excruciation",
           "description": "Krulghast Cruciators draw power from the suffering of those around them, becoming beacons of death magic that make nearby Nighthaunt more difficult to banish.",
           "effect": "Ignore the first damage point that would be allocated to each friendly Nighthaunt unit wholly within 12\" of this unit in each phase."
         }
@@ -1047,7 +1050,7 @@
           "phases": [
             "Any Movement Phase"
           ],
-          "name": "PHANTASMAL DISCORPORATION:",
+          "name": "Phantasmal Discorporation",
           "description": "Dreadblade Harrows are able to disappear in a spectral mist.",
           "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
           "keywords": [
@@ -1286,7 +1289,7 @@
           "phases": [
             "Your Combat Phase"
           ],
-          "name": "ANOTHER LINK IN THE CHAIN:",
+          "name": "Another Link In The Chain",
           "description": "Chainghasts act as conduits for Spirit Torments, ensuring all nearby Nighthaunt are invigorated by deathly energies.",
           "effect": "Roll a dice. Add 1 to the roll if this unit is wholly within 12\" of any friendly Spirit Torments. On a 3+, for the rest of the turn, add 1 to hit rolls for combat attacks made by friendly Nighthaunt units while they are wholly within 12\" of this unit."
         }
@@ -1559,7 +1562,7 @@
           "phases": [
             "Deployment Phase"
           ],
-          "name": "Unerring Hunters",
+          "name": "The Point Of Death Unerring Hunters",
           "description": "These spectral hunters will hound their prey until the very end of existence itself.",
           "declare": "Pick an enemy unit to be the target.",
           "effect": "Add 2 to charge rolls for this unit made as part of that ability, but this unit must end the move in combat with the Stalked enemy unit."

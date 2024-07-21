@@ -33,7 +33,7 @@
       "phases": [
         "Your Hero Phase"
       ],
-      "name": "VENOM-ENCRUSTED WEAPONS:",
+      "name": "Venom-Encrusted Weapons",
       "description": "These weapons are smeared with a lethal mix of toxins extracted from poison sludge, venomous swamp creatures and spit.",
       "declare": "Pick a friendly Kruleboyz Infantry unit to be the target, then make a dirty trick roll.",
       "effect": "Until the start of your next turn, the target's attacks score critical hits on unmodified hit rolls of 5+.",
@@ -289,7 +289,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Shield Inviolate",
+          "name": "Battle Damaged The Shield Inviolate",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
           "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
         },
@@ -396,7 +396,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Killabeak's Talons and Beak is 5."
         },
         {
@@ -511,7 +511,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Commanding View",
+          "name": "Battle Damaged Commanding View",
           "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead.",
           "description": "From his position high above the battlefield, a Killaboss riding a Corpse-rippa Vulcha can keep a careful eye on the battle, guiding the movements of their ladz."
         },
@@ -640,7 +640,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Keep 'Em In Line",
+          "name": "Stab-Grot Unleash The Stab-Grot! Keep 'Em In Line",
           "effect": "If this unit is wholly within 12\" of the unit using the 'All-out Attack' command, add 1 to wound rolls for combat attacks made by that unit for the rest of the phase.",
           "description": "With a threatening glare and barked commands, the Killaboss keeps their boyz in formation."
         }
@@ -692,7 +692,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "BREATH OF THE MIRE-DRAKES:",
+          "name": "Breath Of The Mire-Drakes",
           "description": "Belcha-bannas are typically built around the severed tongue of a mire-drake, creatures so vile that even after death, their remains belch forth clouds of soul- shrivelling gas.",
           "declare": "Pick each enemy unit in combat with this unit to be the targets.",
           "effect": "Roll a dice for each target. On a 1, this ability has no effect. On a 2-5, inflict 1 mortal damage on the target. On a 6, inflict D3 mortal damage on the target."
@@ -831,7 +831,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "KLUTCHA-GROT",
+          "name": "Klutcha-Grot",
           "effect": "This unit's Klutcha-grot is a token. If it is removed from the battlefield, this unit cannot use the 'A Tough Grot to Swallow' ability."
         },
         {
@@ -910,7 +910,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Sloppklaw's Talons is 4."
         },
         {
@@ -1003,7 +1003,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sludgeraker's Talons is 4."
         },
         {

@@ -5,7 +5,7 @@
       "phases": [
         "End of Any Turn"
       ],
-      "name": "BLESSED BY THE PLAGUEFATHER:",
+      "name": "Blessed By The Plaguefather",
       "description": "Each of the Maggotkin is a walking vector of disease, a willing incubator for maladies that ravage the body and spirit with horrific virulence.",
       "effect": "Pick 1 of the following effects: Infect: Pick an enemy unit that is in combat with a friendly Maggotkin of Nurgle unit to be the target. The target has the Diseased keyword. Spread: Pick a Diseased enemy unit to be the target. Each other enemy unit within the target's combat range has the Diseased keyword. Mutate: If all enemy units on the battlefield have the Diseased keyword, inflict 1 mortal damage on each of them."
     },
@@ -29,7 +29,7 @@
       "phases": [
         "End of Any Turn"
       ],
-      "name": "WRACKED WITH DISEASE:",
+      "name": "Wracked With Disease",
       "description": "The Maggotkin wage war with weeping wounds and pustulant boils as well as with rusted weapons.",
       "effect": "Roll a D3 for each Diseased enemy unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
     }
@@ -46,7 +46,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Personified",
+      "name": "Disease And Pestilence Personified",
       "description": "The Tallyband is a trudging, lumbering, squirming mass of rancid daemonflesh that rolls across the battlefield like the inexorable approach of death itself.",
       "effect": "From the second battle round onwards, add 1 to the amount of mortal damage inflicted, if any, by the 'Wracked with Disease' ability."
     },
@@ -76,7 +76,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Grotesque",
+      "name": "Tenders Of The Garden Grotesque",
       "description": "The children of Grandfather Nurgle seek any opportunity to rot the veil and let the festering delights of his Garden spill into the realms.",
       "effect": "During army composition, you can include 2 Feculent Gnarlmaws in your army instead of 1."
     },
@@ -111,7 +111,7 @@
       "phases": [
         "End of Any Turn"
       ],
-      "name": "Overpowering Stench",
+      "name": "Grandfather'S Blessing Overpowering Stench",
       "description": "This general exudes an odour so wretched that even Nurgle's daemons cannot adequately describe it. Enemies recoil, choking on their own vomit at the slightest whiff and rendered speechless as their senses are overwhelmed.",
       "effect": "Roll a dice. On a 5+, that command has no effect. The command still counts as having been used and the command points spent to use the command are still lost."
     }
@@ -243,7 +243,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Gnarlrod is 3. 8"
         },
         {
@@ -264,7 +264,7 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "MOUNTAIN OF LOATHSOME FLESH:",
+          "name": "Mountain Of Loathsome Flesh",
           "description": "Rotigus is a massively corpulent abomination; when he goes on a rampage, enemies caught in his path are often swallowed up and crushed between great rolls of rancid blubber.",
           "declare": "If this unit charged this phase, roll a dice. On a 3+, pick an enemy unit within 1\" of it to be the target.",
           "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target.",
@@ -333,7 +333,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Colossal Blight Weapons is 3."
         },
         {
@@ -351,7 +351,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "BLOATED WITH CORRUPTION:",
+          "name": "Bloated With Corruption",
           "description": "Should a Great Unclean One be wounded, the noxious effluvia within its swollen body bursts forth in a flesh-melting spray.",
           "declare": "If this unit is damaged, pick up to 3 enemy units in combat with this unit to be the targets.",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
@@ -462,7 +462,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "Of Nurgle",
+          "name": "Cultivating The Garden Of Nurgle",
           "description": "Wherever Horticulous slimes around in the Mortal Realms, daemonic foliage pokes through the cracks in reality and swiftly takes root.",
           "effect": "If there are fewer than 3 friendly Feculent Gnarlmaws on the battlefield, you can set up a Feculent Gnarlmaw wholly within 12\" of this unit, more than 3\" from all enemy units, objectives and other terrain features."
         },
@@ -524,7 +524,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "I'M Watching You",
+          "name": "Keep Counting, I'M Watching You",
           "description": "Spoilpox Scriveners are responsible for making sure that the Plaguebearers of the tallybands do not shirk their duties.",
           "declare": "Pick a friendly Plaguebearers unit wholly within 12\" of this unit to be the target.",
           "effect": "Roll a D6. On a 2+, pick 1 of the following effects to apply until the start of your next turn: Tally of Blows: Add 1 to the Attacks characteristic of the target's melee weapons. Recorded Stamina: Add 1 to save rolls for the target."
@@ -661,7 +661,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -826,7 +826,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points,the Attacks characteristic of Ghurk's Tentacle is 2."
         },
         {
@@ -933,7 +933,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Tripletongue's Claws and Maw is 3."
         },
         {
@@ -1035,7 +1035,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Bilespurter's Claws and Maw is 3. 6"
         },
         {
@@ -1100,7 +1100,7 @@
           "phases": [
             "Deployment Phase"
           ],
-          "name": "MASTER OF THE SLIME FLEET:",
+          "name": "Master Of The Slime Fleet",
           "description": "Gutrot's Slime Fleet haunts the oceans of the Mortal Realms, fighting alongside and transporting warriors that the Lord of Tentacles judges to share his aims.",
           "declare": "Pick a regiment led by this unit to be the target if it has not been deployed.",
           "effect": "Each unit in the target regiment is set up in reserve aboard the Slime Fleet. Those units have now been deployed.",
@@ -1170,7 +1170,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "VECTORS OF FOULEST CONTAGION:",
+          "name": "Vectors Of Foulest Contagion",
           "description": "Through the use of rancid corpse-totems and other such gifts from the Grandfather, a Lord of Afflictions spreads death wherever they travel.",
           "declare": "Pick up to 3 enemy units in combat with this unit to be the targets.",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
@@ -1247,7 +1247,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Whippermaw's Claws and Maws is 3."
         },
         {
@@ -1313,7 +1313,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "THRICE-RIPENED DEATH'S HEADS:",
+          "name": "Thrice-Ripened Death'S Heads",
           "description": "These blessed death's heads are projectiles ripe with disease and hurled at incoming foes to spread the plagues festering within.",
           "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
           "effect": "Roll D3. On 2+, inflict an amount of mortal damage on the target equal to the roll."

@@ -11,7 +11,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Moon",
+      "name": "Under The Light Of The Bad Moon",
       "description": "Grots are always vicious little monsters, but when their god's light falls upon them, they become an order of magnitude more dangerous.",
       "effect": "During the battle, an area of the battlefield will be the Bad Moon's location (see 'The Bad Moon's Orbit'). The Bad Moon's location will be either a quarter of the battlefield or the centre of the battlefield. While the Bad Moon's location is a quarter of the battlefield, all Gloomspite Gitz units (friendly and enemy) wholly within that quarter are under the light of the Bad Moon. While the Bad Moon's location is the centre of the battlefield, all Gloomspite Gitz units (friendly and enemy) on the battlefield are under the light of the Bad Moon. While a friendly Gloomspite Gitz unit is under the light of the Bad Moon, the appropriate effect below applies to it: Frothing Zealots: If the unit is a non-Squig Moonclan unit, add 3 to its control score. Lunar Squigs: If the unit is a Squig unit, you can re-roll the random characteristic roll for its Move characteristic. Moonlit Hide: If the unit is a Troggoth unit, add 1 to save rolls for it. Spiderfang Venom: If the unit is a Spiderfang unit, its combat attacks score critical hits on unmodified hit rolls of 5+. This ability also affects Companion weapons."
     },
@@ -217,7 +217,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Mushroom",
+        "name": "Summon Mork'S Mighty Mushroom",
         "description": "The shaman takes a small mushroom and hurls it with all his might. When it lands, it sprouts impossibly quickly into a gigantic skullshroom, a fungus said to grow between Mork's own toes.",
         "declare": "If there is not a friendly Mork's Mighty Mushroom on the battlefield, pick a friendly Gloomspite Gitz Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Mork's Mighty Mushroom wholly within 12\" of the caster and visible to them.",
@@ -226,7 +226,8 @@
           "Summon",
           "6"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Mork'S Mighty Mushroom"
       },
       {
         "phases": [
@@ -241,13 +242,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Scuttletide"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON MALEVOLENT MOON:",
+        "name": "Summon Malevolent Moon",
         "description": "The shaman transforms a loonstone statue into a huge glowing terror and lets it loose on the battlefield.",
         "declare": "If there is not a friendly Malevolent Moon on the battlefield, pick a friendly Gloomspite Gitz Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Malevolent Moon wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -256,13 +258,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Malevolent Moon"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Ar Achnacauldron",
+        "name": "Summon Scr Apskuttle'S Ar Achnacauldron",
         "description": "The shaman whistles loudly, calling the squealing, bubbling Scrapskuttle's Arachnacauldron to their side.",
         "declare": "If there is not a friendly Scrapskuttle's Arachnacauldron on the battlefield, pick a friendly Gloomspite Gitz Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Scrapskuttle's Arachnacauldron wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -270,7 +273,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Scr Apskuttle'S Ar Achnacauldron"
       }
     ]
   },
@@ -324,7 +328,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Shield Inviolate",
+          "name": "Battle Damaged The Shield Inviolate",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
           "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
         },
@@ -413,7 +417,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Babbling Wand",
+          "name": "Fangz Of Da Bad Moon Babbling Wand",
           "description": "This jabbering wand, said to be topped with the skull of the great prophet Kaloth, channels the voices of Skragrott's imprisoned scryers through clacking teeth.",
           "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
           "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead.",
@@ -508,7 +512,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Brews",
+          "name": "Hallucinogenic Fungus Brews",
           "description": "Gobbapalooza shamans drink hallucinogenic fungus brew before the battle begins, making them almost impervious to pain. However, as the battle progresses, the effects start to wear off.",
           "effect": "In the first battle round, this unit has Ward (4+). In the second battle round, this unit has Ward (5+). In the third and subsequent battle rounds, this unit has Ward (6+)."
         },
@@ -516,7 +520,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "GOBBAPALOOZA KNOW-WOTZ:",
+          "name": "Gobbapalooza Know-Wotz",
           "description": "From casting petty spells to scaring the other grots with bizarre performances, the Gobbapalooza is always up to something.",
           "effect": "Roll a dice. On a 3+, pick 1 of the following effects: Glareface Dance: Pick a friendly Gloomspite Gitz unit within this unit's combat range. Add 1 to run rolls and charge rolls for that unit until the start of your next turn. Nasty Poisons: Pick a friendly Gloomspite Gitz unit within this unit's combat range. Add 1 to the Rend characteristic of that unit's weapons until the start of your next turn. Mesmerise: Pick a visible enemy unit within 12\" of this unit. Until the start of your next turn, that unit cannot use commands."
         }
@@ -587,7 +591,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "Catch Me!'",
+          "name": "'Neh Neh Na-Neh Neh! Can'T Catch Me!'",
           "description": "With an infuriating taunt, the Rabble-Rowza riles up a lumbering beast, sending it into a blood-mad frenzy. A cunning trick, as long as the Rabble- Rowza isn't close enough to get caught!",
           "declare": "Pick a visible friendly Monster or Beast unit to be the target.",
           "effect": "For the rest of the turn, the target can use Charge abilities even if it used a Run ability in the same turn, but each time it uses a Move ability, it must end the move closer to this unit. In addition, for the rest of the turn, the first time the target ends a move within this unit's combat range, inflict D6 mortal damage on this unit."
@@ -1087,7 +1091,7 @@
           "phases": [
             "Deployment Phase"
           ],
-          "name": "A PROD IN THE RIGHT DIRECTION:",
+          "name": "A Prod In The Right Direction",
           "description": "As battle begins, grots like to give the Sporesplattas a helpful prod towards the enemy.",
           "effect": "This unit can use the 'Normal Move' ability as if it were your movement phase."
         },
@@ -1261,7 +1265,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         },
         {
@@ -1464,7 +1468,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, when it uses the 'Malfunctioning Leystone' ability, roll 1 dice instead of 3."
         },
         {
@@ -1492,7 +1496,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "MALFUNCTIONING LEYSTONE:",
+          "name": "Malfunctioning Leystone",
           "description": "Trugg can unwittingly channel powerful magic through the contraption on his back.",
           "effect": "Roll 3 dice. You must pick 1 of those dice and apply the effect that corresponds to its value. Effects 2-6 persist until the start of your next turn. 1 Glyph of Shyish: Inflict D3 mortal damage on this unit. 2 Glyph of Ghur: Add 1 to the Attacks characteristic of melee weapons used by friendly Troggoth units while they are wholly within 12\" of this unit. 3 Glyph of Aqshy: Add 1 to the Rend characteristic of melee weapons used by friendly Troggoth units while they are wholly within 12\" of this unit. 4 Glyph of Hysh: This unit can use Unbind abilities as if it had Wizard (1). 5 Glyph of Ulgu: Subtract 1 from hit rolls for shooting attacks that target friendly Troggoth units while they are wholly within 12\" of this unit. 6 Glyph of Chamon: This unit has Ward (5+)."
         }
@@ -1531,7 +1535,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "SHEPHERD OF DESTRUCTION:",
+          "name": "Shepherd Of Destruction",
           "description": "The Dankhold Troggboss bellows so loudly that the beasts of its herd come dangerously close to actually focusing their brutish efforts.",
           "effect": "If this unit is in combat, roll a dice. On a 3+, for the rest of the turn, add 1 to the Attacks characteristic of melee weapons used by friendly Troggoth units while they are within this unit's combat range.",
           "keywords": [
@@ -1542,7 +1546,7 @@
           "phases": [
             "Start of Any Turn"
           ],
-          "name": "Magical Resistance",
+          "name": "Greater Regener Ation Magical Resistance",
           "description": "The realmstone-infused mushrooms that Dankhold Troggoths consume make them naturally resistant to the effects of magic.",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 4+, ignore the effect of that spell on this unit."
         }
@@ -1579,7 +1583,7 @@
           "phases": [
             "Start of Any Turn"
           ],
-          "name": "Magical Resistance",
+          "name": "Regener Ation Magical Resistance",
           "description": "The realmstone- infused mushrooms that Dankhold Troggoths consume make them naturally resistant to the effects of magic.",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 4+, ignore the effect of that spell on this unit."
         },
@@ -1815,7 +1819,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "SPEED OF THE SPIDER GOD:",
+          "name": "Speed Of The Spider God",
           "description": "With a shriek, the shaman calls upon the Spider God to imbue its worshippers with preternatural speed.",
           "declare": "Pick a visible friendly Spiderfang unit wholly within 12\" of this unit to be the target, then make a casting roll of 2D6.",
           "effect": "The target can use a Run ability this turn and still use Shoot and/or Charge abilities later in the turn.",
@@ -1896,7 +1900,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
         },
         {
@@ -2006,7 +2010,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
         },
         {
@@ -2103,7 +2107,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
         },
         {
@@ -2234,7 +2238,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Chitinous Legs is 6."
         },
         {
@@ -2443,7 +2447,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "BLESSINGS OF THE CAULDRON:",
+          "name": "Blessings Of The Cauldron",
           "description": "Scrapskuttle's Arachnacauldron grants great arcane power to the one brave or mad enough to call upon its aid.",
           "declare": "Pick a friendly Gloomspite Gitz Wizard within 1\" of this Manifestation to be the target.",
           "effect": "Add 1 to the target's power level until the start of your next turn."

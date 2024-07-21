@@ -30,7 +30,7 @@
       "phases": [
         "Any Hero Phase"
       ],
-      "name": "RUNE OF FIERY DETER MINATION:",
+      "name": "Rune Of Fiery Deter Mination",
       "description": "A sliver of Grimnir's awesome resolve courses through the Fyreslayers.",
       "effect": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. Friendly Fyreslayers units have Ward (5+) for the rest of the battle round.",
       "keywords": [
@@ -101,7 +101,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "BULWARK OF MOLTEN STONE:",
+      "name": "Bulwark Of Molten Stone",
       "description": "Shrouded in the shimmering heat of the forge-temple, the Forge Brethren direct their magmapikes to form blazing barricades of lava with sustained volleys of fire, before returning to blasting their enemies to ash.",
       "effect": "Add 1 to save rolls for friendly Infantry units while they are wholly within friendly territory."
     },
@@ -116,7 +116,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Stubborn Will",
+      "name": "Martial Pride And Stubborn Will",
       "description": "The Lords of the Lodge burn with a rage tempered by sacred oaths of war.",
       "effect": "Add 3 to the control scores of friendly Fyreslayers Heroes. In addition, the control scores of Fyreslayers Heroes cannot be modified by enemy abilities."
     }
@@ -183,7 +183,7 @@
       "phases": [
         "Any Combat Phase"
       ],
-      "name": "Magmalt",
+      "name": "Draught Of The Finest Magmalt",
       "description": "A single draught of this fiery beverage sends shivers of energy surging through a Fyreslayer from toes to crest.",
       "effect": "Add 3 to the Attacks characteristic of this unit's melee weapons for the rest of the turn."
     },
@@ -223,7 +223,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "PRAYER OF GRIMNIR'S FURY:",
+        "name": "Prayer Of Grimnir'S Fury",
         "description": "A red rage fills the hearts of those blessed by this furious benediction.",
         "declare": "Pick a friendly Fyreslayers Priest to chant this prayer, pick a visible friendly Fyreslayers Infantry Hero wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "The target can use 2 Fight abilities this turn. After the first is used, however, the target has Strike-last for the rest of the turn. If the chanting roll was 8+, also add 1 to wound rolls for the target's combat attacks for the rest of the turn.",
@@ -264,13 +264,14 @@
           "Summon",
           "4"
         ],
-        "chanting_value": 4
+        "chanting_value": 4,
+        "summons": "Runic Fyrewall"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Flame-Spitter",
+        "name": "Summon Zharrgron Flame-Spitter",
         "description": "By concentrating their magmic powers, a Zharrgrim priest can summon forth fiery heat from the bowels of the realm. With a rumble and a crack, an angry geyser opens up in the earth, bombarding the foe with molten death.",
         "declare": "If there is not a friendly Zharrgron Flame-spitter on the battlefield, pick a friendly Fyreslayers Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Zharrgron Flame-spitter wholly within 12\" of the chanter and visible to them.",
@@ -279,13 +280,14 @@
           "Summon",
           "6"
         ],
-        "chanting_value": 4
+        "chanting_value": 4,
+        "summons": "Zharrgron Flame-Spitter"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Summon Molten Infernoth",
+        "name": "Summon Molten Infernoth Summon Molten Infernoth Summon Molten Infernoth",
         "description": "An elemental manifestation that personifies the blazing wrath of Vulcatrix, a Molten Infernoth can be drawn to battle by a Zharrgrim priest. Bursting out of the realm's crust, the ferocious entity lumbers across the battlefield, inspiring Fyreslayers while blasting the enemy with raging torrents of lava.",
         "declare": "If there is not a friendly Molten Infernoth on the battlefield, pick a friendly Fyreslayers Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Molten Infernoth wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units.",
@@ -293,7 +295,8 @@
           "Prayer",
           "Summon"
         ],
-        "chanting_value": 6
+        "chanting_value": 6,
+        "summons": "Molten Infernoth "
       }
     ]
   },
@@ -359,7 +362,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Magmadroth's Claws and Horns is 4."
         },
         {
@@ -472,7 +475,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Magmadroth's Claws and Horns is 4."
         },
         {
@@ -590,7 +593,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Magmadroth's Claws and Horns is 4."
         },
         {
@@ -822,7 +825,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Master Of The Runes",
+          "name": "High Priest Of The Zharrgrim Master Of The Runes",
           "description": "Drawing upon the divine power released by sacred battle, Runemasters are able to awaken the full potential of their ur-gold runes.",
           "effect": "Remove 3 of this unit's magmic power tokens. If you do so, apply the effect below that corresponds to the Ur-gold Rune ability that was used: Rune of Fury: For the rest of the battle round, add 1 to wound rolls for combat attacks made by friendly Fyreslayers units while they have Strike-first. Rune of Fiery Determination: Add 1 to save rolls for friendly Fyreslayers units for the rest of the battle round. Rune of Relentless Zeal: Add 1 to run rolls and charge rolls for friendly Fyreslayers units for the rest of the battle round. Rune of Searing Heat: Add 1 to the Rend characteristic of melee weapons used by friendly Fyreslayers units for the rest of the battle round. Rune of Farsight: Increase the range of the 'Rune of Farsight' ability to 16\"."
         }
@@ -969,8 +972,8 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "MASTERFLAME RUNE: A",
-          "description": "Flamekeeper's sacred symbol of office can harness the power within ur-gold runes of fallen warriors to bestow blessings of Grimnir upon their brethren.",
+          "name": "Masterflame Rune",
+          "description": "A Flamekeeper's sacred symbol of office can harness the power within ur-gold runes of fallen warriors to bestow blessings of Grimnir upon their brethren.",
           "declare": "If any friendly units have been destroyed during the battle, pick a friendly Fyreslayers Infantry unit wholly within 12\" of this unit to be the target.",
           "effect": "Roll a dice. If the roll is equal to or less than the number of Fyreslayers units that have been destroyed during the battle, pick 1 of the following effects to apply until the start of your next turn: Grimnir's Grit: The target has Ward (5+). Grimnir's Resolve: Add 2 to charge rolls for the target. Grimnir's Vengeance: Add 1 to the Damage characteristic of the target's melee weapons."
         }
@@ -1170,7 +1173,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "WHIRLWIND OF DESTRUCTION:",
+          "name": "Whirlwind Of Destruction",
           "description": "With the light of Grimnir burning in their eyes, these impetuous warriors hurl themselves into the fray, leaving a trail of death in their wake.",
           "effect": "Add 1 to the Attacks characteristic of this unit's melee weapons if this unit charged this turn."
         }

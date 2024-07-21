@@ -11,7 +11,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Gargant Charge",
+      "name": "Timberrrrr! Gargant Charge",
       "description": "A charging gargant will flatten anyone in their path.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
       "declare": "Pick a friendly Mega-Gargant or Gargant unit that charged this turn and has not used a Rampage ability this turn to use this ability, then pick a visible enemy unit within 1\" of it to be the target.",
@@ -65,7 +65,7 @@
       "phases": [
         "Deployment Phase"
       ],
-      "name": "MORE STUFF FOR ME COLLECTION:",
+      "name": "More Stuff For Me Collection",
       "description": "These gargants are avaricious hoarders who love collecting all kinds of baubles and artefacts - even ones that are too small for them to use.",
       "declare": "Pick a friendly non-Unique Sons of Behemat Hero that does not have an artefact of power.",
       "effect": "Give that Hero 1 artefact of power from 'Titanic Trophies'. Designer's Note: This artefact of power is given to the unit during the deployment phase, not during army composition."
@@ -174,7 +174,7 @@
       "phases": [
         "Your Combat Phase"
       ],
-      "name": "MANTLE OF TUSK AND HORNS:",
+      "name": "Mantle Of Tusk And Horns",
       "description": "Trophies taken from slain behemoths adorn the shoulders of this gargant, and through them they can channel the power of the Waaagh!.",
       "effect": "For the rest of the turn, add 1 to hit rolls for combat attacks made by friendly Sons of Behemat units while they are wholly within 12\" of this unit."
     },
@@ -204,7 +204,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "GLOW Y SHIELD OF PROTECTINESS:",
+      "name": "Glow Y Shield Of Protectiness",
       "description": "While raiding a lair belonging to the ratty pipsqueaks, this gargant found a shield studded with sickly green rock - and promptly strapped it to their body. Enemies who get close sometimes have their heads explode, which is always good for a laugh.",
       "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
     },
@@ -274,7 +274,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Shield Inviolate",
+          "name": "Battle Damaged The Shield Inviolate",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
           "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
         },
@@ -380,14 +380,14 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Obelisk of Tor Crania is 4 and this unit has a Control characteristic of 10. 5"
         },
         {
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "POWER OF BEHEMAT:",
+          "name": "Power Of Behemat",
           "description": "The primordial power of Behemat clings still to King Brodd, his favoured son.",
           "declare": "Make a chanting roll of D6.",
           "effect": "Pick 1 of the following effects. If the chanting roll was 10+, pick 2 instead: Shatter the Mountains: Add 2\" to the Move characteristic of friendly Sons of Behemat units for the rest of the turn. Might of the Earth: Heal (D3) each friendly Sons of Behemat unit. Pummel All to Dust: For the rest of the turn, add 1 to the Rend characteristic of the Obelisk of Tor Crania, Menhir Club, Fortcrusha Flail, Shipwrecka Warclub, Titanic Boulderclub and Massive Club used by friendly Sons of Behemat units.",
@@ -502,7 +502,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Menhir Club is 3 and this unit has a Control characteristic of 10."
         },
         {
@@ -516,7 +516,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEHEMOTH BRAWLER:",
+          "name": "Behemoth Brawler",
           "description": "Beast-smashers rely on their killer instincts when battling colossal creatures, fighting with the spirit of Gorkamorka and the ferocity of Behemat to overpower their prey.",
           "effect": "Subtract 1 from the Attacks characteristic of enemy Monsters while they are in combat with this unit."
         },
@@ -539,7 +539,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "BEAST-BREAKING STRIKE:",
+          "name": "Beast-Breaking Strike",
           "description": "Beast-smashers can shatter the ribcages and crack the skulls of even the most ferocious adversaries with a single mighty strike.",
           "declare": "Pick an enemy Monster in combat with this unit to be the target.",
           "effect": "This unit can make a pile-in move. Then, roll a dice. On a 4+, inflict 5D6 mortal damage on the target.",
@@ -634,7 +634,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Fortcrusha Flail is 4 and this unit has a Control characteristic of 10."
         },
         {
@@ -761,7 +761,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Shipwrecka Warclub is 3 and this unit has a Control characteristic of 10."
         },
         {
@@ -872,7 +872,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Titanic Boulderclub is 3 and this unit has a Control characteristic of 10."
         },
         {
@@ -916,7 +916,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "TITANIC BOULDERCLUB:",
+          "name": "Titanic Boulderclub",
           "description": "A Warstomper will drive straight into the midst of the enemy, swinging their titanic boulderclub to smash foes in all directions.",
           "effect": "If all of the attacks made with this unit's Titanic Boulderclub target the same enemy unit, for every 5 models in the target unit, add 2 to its Attacks characteristic for the rest of the phase."
         },

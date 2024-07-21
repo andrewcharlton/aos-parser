@@ -28,7 +28,7 @@
       "phases": [
         "Your Movement Phase"
       ],
-      "name": "WALK THE HIDDEN PATHS:",
+      "name": "Walk The Hidden Paths",
       "description": "Sylvaneth can draw upon the magic of the Wyldwoods to open hidden passageways across the battlefield.",
       "declare": "Pick a friendly Sylvaneth unit that is not in combat and is wholly within 6\" of a friendly Awakened Wyldwood to use this ability.",
       "effect": "Remove that unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units and wholly within 6\" of a different friendly Awakened Wyldwood.",
@@ -207,7 +207,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON SPITESWAR M HIVE:",
+        "name": "Summon Spiteswar M Hive",
         "description": "The air is filled with the buzzing of a thousand wings as a swarm of iridescent insects bursts from its hive.",
         "declare": "If there is not a friendly Spiteswarm Hive on the battlefield, pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Spiteswarm Hive wholly within 9\" of the caster, visible to them and more than 3\" from all enemy units.",
@@ -215,13 +215,14 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Spiteswar M Hive"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Skullroot",
+        "name": "Summon Vengeful Skullroot",
         "description": "From the shadows comes a nightmarish form, a huge, black-limbed tree clutching piles of bleached skulls within its tangled roots.",
         "declare": "If there is not a friendly Vengeful Skullroot on the battlefield, pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Vengeful Skullroot wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -229,7 +230,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Vengeful Skullroot"
       },
       {
         "phases": [
@@ -243,7 +245,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Gladew Yr M"
       }
     ]
   },
@@ -300,7 +303,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Wardroth's Great Antlers is 4."
         },
         {
@@ -410,7 +413,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "ASPECT OF THE EVERQUEEN:",
+          "name": "Aspect Of The Everqueen",
           "description": "The Lady of Vines channels the power of her goddess mother, shielding fellow Sylvaneth with the harnessed energies of nature.",
           "declare": "Make a casting roll of 2D6.",
           "effect": "Until the start of your next turn, friendly Sylvaneth units have Ward (5+) while they are wholly within 12\" of this unit.",
@@ -570,7 +573,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Carnelian Greatspite's Razor-like Mandibles is 3."
         },
         {
@@ -655,7 +658,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "UNLEASH SWAR M OF SPITES:",
+          "name": "Unleash Swar M Of Spites",
           "description": "The Warsong Revenant summons a large swarm of malicious spites that spiral outwards to attack those who have drawn their ire.",
           "declare": "Pick a friendly Awakened Wyldwood wholly within 18\" of this unit, pick up to 3 visible enemy units within 9\" of that terrain feature to be the targets, then make a casting roll of 2D6.",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
@@ -794,7 +797,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Guardian Sword is 3."
         },
         {
@@ -885,7 +888,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
         },
         {
@@ -970,7 +973,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
         },
         {
@@ -1185,7 +1188,7 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "ERUPTION OF THORNED VINES:",
+          "name": "Eruption Of Thorned Vines",
           "description": "Barbed vines burst from the ground and infected Sylvaneth flesh to ensnare foes, slowing their movement and forcing them to confront the Twistweald head on.",
           "declare": "If this unit is more than 6\" from all other friendly Sylvaneth units, pick an enemy unit within 12\" of this unit to be the target.",
           "effect": "Subtract D3 from charge rolls for the target for the rest of the turn."
@@ -1246,7 +1249,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "THRUMMING WITH LIFE:",
+          "name": "Thrumming With Life",
           "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
           "effect": "Heal (3) this unit."
         },
@@ -1254,7 +1257,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "DESCENT OF THE SPITERIDERS:",
+          "name": "Descent Of The Spiteriders",
           "description": "Should the buzzing chorus of the Spiterider Lancers be heard, it is already too late to evade their devastating charge.",
           "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit has Strike-first for the rest of the turn."
         }
@@ -1324,7 +1327,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "HARVESTERS OF THE LAMENTIRI:",
+          "name": "Harvesters Of The Lamentiri",
           "description": "The lamentiri collected by Revenant Seekers are potent stores of life energy that can be harnessed in desperate situations to heal and empower fellow Sylvaneth.",
           "effect": "Each time a friendly unit wholly within 12\" of any friendly Revenant Seekers units uses the 'Rally' command, you can make 3 additional rally rolls of D6."
         },
@@ -1332,7 +1335,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "THRUMMING WITH LIFE:",
+          "name": "Thrumming With Life",
           "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
           "effect": "Heal (3) this unit."
         }
@@ -1378,7 +1381,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ENVOYS OF THE EVERQUEEN:",
+          "name": "Envoys Of The Everqueen",
           "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
           "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
         },
@@ -1431,7 +1434,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ENVOYS OF THE EVERQUEEN:",
+          "name": "Envoys Of The Everqueen",
           "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
           "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
         },
@@ -1496,7 +1499,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ENVOYS OF THE EVERQUEEN:",
+          "name": "Envoys Of The Everqueen",
           "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
           "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
         },
@@ -1548,7 +1551,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BLESSINGS OF THE FOREST:",
+          "name": "Blessings Of The Forest",
           "description": "The forest folk draw upon currents of life magic running through their surroundings like freshwater streams, harnessing the energies to shield themselves from harm.",
           "effect": "Subtract 1 from hit rolls and wound rolls for attacks that target this unit while it is wholly within 6\" of any friendly Awakened Wyldwoods."
         }
@@ -1807,7 +1810,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "VENGEFUL FOREST SPIRITS:",
+          "name": "Vengeful Forest Spirits",
           "description": "The spirits within a Sylvaneth wyldwood are easily angered by trespassers into their domain.",
           "declare": "Pick each enemy unit within this terrain feature's combat range to be the targets.",
           "effect": "Roll a dice for each target. On a 4+, inflict D3 mortal damage on the target."

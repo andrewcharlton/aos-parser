@@ -71,7 +71,7 @@
       "phases": [
         "End of Any Turn"
       ],
-      "name": "DRAGGED DOWN AND TORN APART:",
+      "name": "Dragged Down And Torn Apart",
       "description": "Hordes of shambling Deadwalker Zombies flow around and over their victims like a rotten tide, bearing them to the ground through sheer weight of numbers before tearing them limb from limb.",
       "declare": "Pick up to 3 friendly Deadwalkers units in combat to be the targets.",
       "effect": "For each target: * Make a pile-in move. * Then, pick an enemy unit in combat with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
@@ -87,7 +87,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "ARISTOCRACY OF THE NIGHT:",
+      "name": "Aristocracy Of The Night",
       "description": "These vampires are expected to excel in all martial and mystical disciplines.",
       "effect": "Add 1 to casting rolls for friendly Vampire units that are not in combat and add 1 to wound rolls for combat attacks made by friendly Vampire units that charged in the same turn."
     },
@@ -102,7 +102,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "TIDE OF BONES AND BLADES:",
+      "name": "Tide Of Bones And Blades",
       "description": "The relentless advance of these skeletal undead can overwhelm even the most tenacious resistance.",
       "effect": "Add 1 to the Rend characteristic of melee weapons used by friendly Deathrattle units that charged in the same turn for attacks that target a unit that has fewer models than the attacking unit."
     }
@@ -166,7 +166,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Amulet Of Screams",
+      "name": "Shard Of Night Amulet Of Screams",
       "description": "The bearer of this amulet can flood the foe's mind with the tormented howling of damned souls.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the caster equal to the roll. If the target is destroyed by this ability, do not resolve the effect of that Spell ability."
     }
@@ -258,7 +258,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, subtract 3 from its power level."
         },
         {
@@ -294,7 +294,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "SUPREME LORD OF THE UNDEAD",
+          "name": "Supreme Lord Of The Undead",
           "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
           "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
         },
@@ -364,7 +364,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Ashigaroth's Claws is 3."
         },
         {
@@ -378,7 +378,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Mortarch Of Night",
+          "name": "The Sword Of Unholy Power The Mortarch Of Night",
           "description": "Mannfred's ancient cunning is rightly feared throughout the Mortal Realms.",
           "effect": "The unit using the 'Redeploy' command can move into combat when using that ability. 7"
         },
@@ -482,7 +482,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Shordemaire's Claws is 5."
         },
         {
@@ -582,7 +582,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Nagadron's Claws is 3."
         },
         {
@@ -1155,7 +1155,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "KEEPER OF THE CORPSE-GARDENS:",
+          "name": "Keeper Of The Corpse-Gardens",
           "description": "In battle, Gorslav can call upon his Deadwalker minions to throw themselves into enemy attacks and blunt their blades.",
           "effect": "While this unit is within the combat range of a friendly Deadwalker Zombies unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Deadwalker Zombies unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
         },
@@ -1404,7 +1404,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -1496,7 +1496,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "KISS OF THE BLADE PROBOSCIAN:",
+          "name": "Kiss Of The Blade Proboscian",
           "description": "This pitted and corroded blade should not endure - and yet, it does. The same cannot be said for anything scratched by its mouldering point.",
           "declare": "Pick an enemy unit that was allocated any damage points inflicted by this unit's combat attacks this turn to be the target.",
           "effect": "Roll a dice. On a 2+, subtract 1 from save rolls for the target for the rest of the battle."
@@ -1630,7 +1630,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
         },
         {
@@ -1740,7 +1740,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "RETRIBUTION OR SALVATION:",
+          "name": "Retribution Or Salvation",
           "description": "Cado's quest for both vengeance and self-control manifests as two forms of sorcery: bolts of killing judgement and an aura of regal authority that augments nearby undead.",
           "declare": "Pick a visible unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
           "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Deathrattle or Deadwalkers unit, subtract 1 from wound rolls for combat attacks that target that unit for the rest of the turn.",
@@ -1809,7 +1809,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "CREED OF THE ASKURGA RENKAI:",
+          "name": "Creed Of The Askurga Renkai",
           "description": "Faithful to the teachings of ancient masters long slain, Trueblades test themselves against the most powerful adversaries, feasting solely on monstrous blood to bolster their strength and speed.",
           "effect": "Subtract 1 from hit rolls for combat attacks made by enemy Monsters that target this unit. Add 1 to hit rolls for combat attacks made by this unit that target enemy Monsters."
         },
@@ -1988,7 +1988,7 @@
           "phases": [
             "Your Combat Phase"
           ],
-          "name": "A PROMISING CONCOCTION:",
+          "name": "A Promising Concoction",
           "description": "Sanguinarchs are obsessed with crafting the finest ichorous blends, and they can further refine such rich pickings to bolster their strength and that of their lackeys.",
           "declare": "Pick up to 3 friendly Vampire units wholly within 12\" of this unit to be the targets.",
           "effect": "Add 1 to the Attacks characteristic of the targets' melee weapons for the rest of the turn."
@@ -2045,7 +2045,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "NEXUS OF DEATH ENERGY:",
+          "name": "Nexus Of Death Energy",
           "description": "Mortis Engines are constructed around the remains of a slain Necromancer, who acts as a locus for the magics of the underworlds.",
           "effect": "When a friendly Deathrattle or Deadwalkers unit wholly within 12\" of this unit is picked to be the target of the 'Deathly Invocation' ability, add D3 to the number of damage points that can be healed or the combined Health characteristic of models that can be returned."
         },
@@ -2217,14 +2217,14 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
         },
         {
           "phases": [
             "Deployment Phase"
           ],
-          "name": "DEATH ON TATTERED WINGS:",
+          "name": "Death On Tattered Wings",
           "description": "The Zombie Dragon circles above the arrayed armies, eye sockets aglow with unholy energy.",
           "declare": "Pick this unit if it has not been deployed.",
           "effect": "Set up this unit in reserve high above the battlefield. It has now been deployed.",
@@ -2315,7 +2315,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Skeletal Talons is 4."
         },
         {
@@ -2430,7 +2430,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Royal Companions",
+          "name": "Lord Of Trampling Bones Royal Companions",
           "description": "Mounted Wight Kings fight accompanied by their most skilled cavaliers, tearing through enemy battlelines.",
           "effect": "Pick a friendly non-Hero Deathrattle Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }
@@ -2701,7 +2701,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -2804,7 +2804,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -2890,7 +2890,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "THE TIME-SWALLOWER'S MAW:",
+          "name": "The Time-Swallower'S Maw",
           "description": "Though Sekhar is loath to let Ouboroth feast upon souls, sometimes, needs must.",
           "declare": "Pick each enemy unit in combat with this unit to be the targets.",
           "effect": "This unit cannot use the 'Serpentine Agility' ability for the rest of the battle. Roll 2D6 for each target. If the roll exceeds the target's Move characteristic, inflict an amount of mortal damage on the target equal to the difference between the roll and its Move characteristic."
@@ -2914,7 +2914,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "DEATH'S CONSTRUCTION:",
+          "name": "Death'S Construction",
           "description": "Through the subtlest arcane suggestion, Sekhar implants her will in vulnerable minds - supplanting their former purpose with the undying will of Nulahmia.",
           "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
           "effect": "Until the start of your next turn, this unit, and any friendly Soulblight Gravelords units while they are wholly within 6\" of this unit, cannot be picked to be the target of abilities used by the target other than Fight abilities.",

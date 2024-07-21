@@ -89,7 +89,7 @@
       "phases": [
         "Any Charge Phase"
       ],
-      "name": "An' Eye For Da Fight",
+      "name": "Hulking Brute An' Eye For Da Fight",
       "description": "This Ironjaw is among the most dangerous of their brutal kind: one who instinctively understands the flow of battle and knows just where the best fights are likely to kick off.",
       "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
       "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead."
@@ -185,7 +185,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Gork",
+        "name": "Da Great Big Green Hand Of Gork",
         "description": "A ghostly green hand picks up a mob of Ironjawz and plonks them back down where they are most needed.",
         "declare": "Pick a friendly Ironjawz Wizard to cast this spell, pick a visible friendly unit wholly within 9\" of them and not in combat to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again wholly within 24\" of the caster and more than 9\" from all enemy units.",
@@ -292,7 +292,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Shield Inviolate",
+          "name": "Battle Damaged The Shield Inviolate",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
           "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
         },
@@ -402,7 +402,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Bigteef's Fists and Tail is 6."
         },
         {
@@ -499,7 +499,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Maw-krusha's Fists and Tail is 5."
         },
         {
@@ -573,7 +573,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Lead Da Brutes",
+          "name": "Get Stuck In, Ladz! Lead Da Brutes",
           "description": "Megabosses stride into battle flanked either side by the toughest and meanest Brutes.",
           "declare": "Pick a friendly Brute unit wholly within 12\" of this unit to be the target.",
           "effect": "Roll a dice. On a 3+, for the rest of the turn, add 1 to the Attacks characteristic of melee weapons used by friendly Brute units while they are within this unit's combat range."
@@ -619,7 +619,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "RHYTHM OF DESTRUCTION:",
+          "name": "Rhythm Of Destruction",
           "description": "With each enemy skull caved in by the Warchanter's Gorkstikk and Morkstikk, the febrile energy of the Waaagh! begins to build.",
           "effect": "If any enemy models were slain this turn by this unit's combat attacks, give this unit D3 ritual points."
         }
@@ -902,7 +902,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "POWER OF DA GREAT GREEN GOD:",
+          "name": "Power Of Da Great Green God",
           "description": "Channelling the raw energies of the Waaagh! with his 'bashin' tools', Zoggrok can empower the weapons of orruks gathered around him.",
           "declare": "Pick a visible friendly Ironjawz Infantry unit wholly within 12\" of this unit to be the target.",
           "effect": "Make a forgin' roll of D6. Add 1 to the roll if this unit is armed with Grunta-tongs. On a 4+, the target's melee weapons have Crit (Mortal) until the start of your next turn."
@@ -1079,7 +1079,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Maw-grunta's Tusks is 3."
         },
         {

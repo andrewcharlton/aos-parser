@@ -140,7 +140,7 @@
       "phases": [
         "Any Combat Phase"
       ],
-      "name": "ICON OF INFINITE EXCESS:",
+      "name": "Icon Of Infinite Excess",
       "description": "Slaanesh's most opulent standard drives both followers and enemies of the Dark Prince into orgiastic fits of violence.",
       "declare": "Pick a non-Hero Hedonites of Slaanesh unit wholly within 12\" of this unit to be the target.",
       "effect": "Add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn."
@@ -183,7 +183,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Acquiescence",
+        "name": "Overwhelming Acquiescence",
         "description": "The wizard engulfs the foe in an arcane haze of dreams and unattainable desires. 7",
         "declare": "Pick a friendly Hedonites of Slaanesh Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Add 1 to wound rolls for attacks that target that enemy unit until the start of your next turn.",
@@ -214,7 +214,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Mirror",
+        "name": "Summon Mesmerising Mirror",
         "description": "Smashing a small glass mirror to the ground, the wizard uses magical energy to cause it to reform and grow in size.",
         "declare": "If there is not a friendly Mesmerising Mirror on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Mesmerising Mirror wholly within 12\" of the caster and visible to them.",
@@ -222,13 +222,14 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Mesmerising Mirror"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON DREADFUL VISAGE:",
+        "name": "Summon Dreadful Visage",
         "description": "Inhaling draughts of hallucinogenic incense, the caster externalises their most unnatural desires in the form of a screaming daemonic visage.",
         "declare": "If there is not a friendly Dreadful Visage on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Dreadful Visage wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -236,13 +237,14 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Dreadful Visage"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Excruciation",
+        "name": "Summon Wheels Of Excruciation",
         "description": "Throwing a small multi-bladed knife into the air and channelling magical energy into it, the caster summons forth a storm of swiftly moving razor-sharp blades.",
         "declare": "If there is not a friendly Wheels of Excruciation endless spell on the battlefield, pick a friendly Hedonites of Slaanesh Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Wheels of Excruciation endless spell wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -250,7 +252,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Wheels Of Excruciation"
       }
     ]
   },
@@ -295,7 +298,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Soulpiercer is 4."
         },
         {
@@ -403,7 +406,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Elegant Greatblade is 4."
         },
         {
@@ -603,7 +606,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "FLEETING DANCE OF DEATH:",
+          "name": "Fleeting Dance Of Death",
           "description": "Dexcessa rarely stays locked in combat in one place for long, flitting swiftly all over the battlefield and bringing death wherever they alight.",
           "effect": "This unit can use Charge abilities even if it used a Retreat ability in the same turn. In addition, no mortal damage is inflicted on this unit by Retreat abilities."
         },
@@ -697,7 +700,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "THE VENGEFUL ALLEGIANCE:",
+          "name": "The Vengeful Allegiance",
           "description": "Should one aspect of the Vengeful Allegiance deflect a blow, their other half will swiftly capitalise on the situation.",
           "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved. 7"
         },
@@ -1150,7 +1153,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -1271,7 +1274,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Greatblade and Claws is 6."
         },
         {
@@ -1357,7 +1360,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "ONLY THE BEST WILL SUFFICE:",
+          "name": "Only The Best Will Suffice",
           "description": "Lords of Hubris refuse to fight alongside any but the finest warriors of the Sybarite hordes. In doing so, they inspire a level of pride worthy of their title.",
           "declare": "Pick a friendly Myrmidesh Painbringers or Symbaresh Twinsouls unit that is in combat and is wholly within 12\" of this unit to be the target.",
           "effect": "Roll a dice. On a 3+, for the rest of the turn, each time a model in the target unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. For each 4+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
@@ -1533,7 +1536,7 @@
           "phases": [
             "Enemy Shooting Phase"
           ],
-          "name": "SLAUGHTER AT ANY COST:",
+          "name": "Slaughter At Any Cost",
           "description": "When stirred by the excesses of battle, Fiendbloods waste no time in hunting down their victims.",
           "effect": "If any damage points were allocated to this unit this turn, this unit can use the 'Normal Move' ability as if it were your movement phase."
         }
@@ -1994,7 +1997,7 @@
           "phases": [
             "Any Movement Phase"
           ],
-          "name": "GAZE NOT INTO ITS DEPTHS:",
+          "name": "Gaze Not Into Its Depths",
           "description": "A Mesmerising Mirror can enthral a warrior's soul, offering tempting gifts of power while slowly sapping their very essence.",
           "declare": "Pick an enemy unit within 6\" of this Manifestation to be the target.",
           "effect": "Inflict D3 mortal damage on the target. Then, add 1 to hit rolls for the target's attacks for the rest of the turn."

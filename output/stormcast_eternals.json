@@ -268,7 +268,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON DAIS ARCANUM:",
+        "name": "Summon Dais Arcanum",
         "description": "The wizard calls down a single bolt of lightning to strike the ground at their feet, leaving behind a perfect sigmarite disc for a chosen Stormcast to mount and be carried into the air.",
         "declare": "If there is not a friendly Dais Arcanum on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, pick a friendly Stormcast Eternals Infantry Hero that does not have Fly and is wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Set up a Dais Arcanum within \u00bd\" of the target, visible to the caster and not in combat. Then, remove the target from the battlefield and place it on the platform of that Dais Arcanum.",
@@ -277,13 +277,14 @@
           "Summon",
           "6"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Dais Arcanum"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON CELESTIAN VORTEX:",
+        "name": "Summon Celestian Vortex",
         "description": "The wizard casts a pair of ensorcelled hammers into the air, which begin to spin. As the vortex gets more intense, the hammers multiply to form a maelstrom of skull-crushing force.",
         "declare": "If there is not a friendly Celestian Vortex on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Celestian Vortex wholly within 18\" of the caster and more than 9\" from all enemy units.",
@@ -292,13 +293,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Celestian Vortex"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON EVERBLAZE COMET:",
+        "name": "Summon Everblaze Comet",
         "description": "Reaching an arm to the heavens, the wizard calls down a pure comet of Azyrite energy that crashes into the foe's ranks with devastating effect.",
         "declare": "If there is not a friendly Everblaze Comet on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up an Everblaze Comet wholly within 18\" of the caster.",
@@ -306,7 +308,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Everblaze Comet"
       }
     ]
   },
@@ -740,8 +743,8 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "FAITHFUL GRYPH-HOUNDS: A",
-          "description": "Knight-Judicator is often accompanied into battle by a pair of these loyal beasts of Azyr.",
+          "name": "Faithful Gryph-Hounds",
+          "description": "A Knight-Judicator is often accompanied into battle by a pair of these loyal beasts of Azyr.",
           "effect": "This unit's Gryph-hounds are tokens. After setting up this unit on the battlefield for the first time, place both Gryph-hounds next to it."
         },
         {
@@ -879,7 +882,7 @@
           "phases": [
             "Any Hero Phase"
           ],
-          "name": "THE BANNER OF THE REFORGED:",
+          "name": "The Banner Of The Reforged",
           "description": "When the Knight-Vexillor plants their banner, the fortifying energy that emanates from it hardens flesh and seals sundered armour, empowering the faithful with new resolve.",
           "declare": "Pick D3 friendly Stormcast Eternals units wholly within 12\" of this unit to be the targets.",
           "effect": "Add 3 to each target's control score for the rest of the turn. In addition, Heal (D3) each target."
@@ -1056,7 +1059,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Righteous Avengers",
+          "name": "Extremis Chamber Righteous Avengers",
           "description": "Lord- Celestants inspire their brethren to mete out Sigmar's justice; nearby Stormcasts strike the instant they are given the order.",
           "effect": "Pick a friendly non-Hero Extremis Chamber Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }
@@ -1112,7 +1115,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "VOICE OF THUNDER:",
+          "name": "Voice Of Thunder",
           "description": "Lord-Commanders are among the few faithful who can commune with Sigmar in the heat of battle. Their words are like booming thunderclaps, each order ringing across the battlefield.",
           "effect": "Each time a friendly Stormcast Eternals unit wholly within 12\" of this unit uses the 'All-out Attack' command, no command points are spent."
         },
@@ -1129,7 +1132,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "MANTLE OF THE FIRST STOR M:",
+          "name": "Mantle Of The First Stor M",
           "description": "Bastian's armour is among the first of its kind, laboured over by Grungni himself and charged with the same holy energies as the Anvil of Apotheosis. It is a symbol of, and potent boon to, the Thunderborn's already legendary willpower.",
           "effect": "If any enemy models were slain by this unit's attacks this turn, Heal (4) this unit."
         }
@@ -1290,7 +1293,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "SENSE UNHOLY SORCERY:",
+          "name": "Sense Unholy Sorcery",
           "description": "Gryph-crows are sensitive to corruption and immediately alert their masters whenever unholy energies are nearby.",
           "effect": "This unit's Gryph-crow is a token. Subtract 1 from casting rolls and chanting rolls for enemy units within 12\" of this unit while its Gryph-crow is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-crow from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
         },
@@ -1594,7 +1597,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Vengeance Unleashed",
+          "name": "Lord Of The Hammerhands Vengeance Unleashed",
           "description": "Vandus inspires nearby members of the Warrior chambers to strike forth and deliver justice in the God-King's name.",
           "effect": "Pick a friendly non-Hero Warrior Chamber unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -1768,7 +1771,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
         },
         {
@@ -1950,7 +1953,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Apex Maw is 2."
         },
         {
@@ -2059,7 +2062,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
         },
         {
@@ -2155,7 +2158,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -2254,7 +2257,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -2608,7 +2611,7 @@
           "phases": [
             "Any Shooting Phase"
           ],
-          "name": "OVERWHELMING VOLLEYSTOR M:",
+          "name": "Overwhelming Volleystor M",
           "description": "The Tempestors fire charged crossbow bolts into the foe, weakening their defences and leaving them open to a follow-up assault.",
           "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Volleystorm Crossbows to be the target.",
           "effect": "Roll a dice. On a 2+, the target cannot use the 'All-out Defence' command in the following combat phase."
@@ -2739,7 +2742,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "HERALDS OF RIGHTEOUSNESS:",
+          "name": "Heralds Of Righteousness",
           "description": "Prosecutors cross the battlefield in a blur of light.",
           "effect": "Add 1 to the number of dice rolled when making charge rolls for this unit, to a maximum of 3."
         }
@@ -3384,7 +3387,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "NAVIGATORS OF THE STOR M:",
+          "name": "Navigators Of The Stor M",
           "description": "As the Vigilors move swiftly beneath dark thunderheads, the Grungni- forged arrowheads of their stormcaller bows unleash flickers of lightning that illuminate their target and allow vital reconnaissance.",
           "effect": "If an enemy unit had any damage points allocated to it this turn by this unit's shooting attacks, add 1 to hit rolls for attacks made by friendly Stormcast Eternals units that target that unit for the rest of the turn."
         }
@@ -3527,8 +3530,8 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ARCANE ENHANCEMENT: A",
-          "description": "Stormcast blessed to be borne upon a Dais Arcanum feels the celestial energies of Azyr course through them.",
+          "name": "Arcane Enhancement",
+          "description": "A Stormcast blessed to be borne upon a Dais Arcanum feels the celestial energies of Azyr course through them.",
           "effect": "While the unit that was picked to be the target of the 'Summon Dais Arcanum' ability is on the platform of this Manifestation: * That unit has Ward (5+). * If that unit is a Wizard, add 1 to that unit's power level. * That unit cannot use Move abilities and remains on this Manifestation each time it moves. * Instead of measuring range or visibility to that unit, measure to this Manifestation instead. * This Manifestation cannot be picked to be the target of abilities other than Banish abilities. If this Manifestation is banished, before removing it from the battlefield, set up the unit on its platform on the battlefield within 3\" of it. That unit can only be set up in combat with units it was already in combat with when this Manifestation was banished. If it is not possible to set up that unit, it is destroyed. If the unit on the platform is destroyed, immediately remove this Manifestation from play."
         }
       ],
@@ -3676,7 +3679,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Earn An Honourable Death",
+          "name": "Memorian Earn An Honourable Death",
           "description": "The Lord-Terminos heads to battle alongside the Ruination chamber, the Stormcasts seeking to earn their final rest by proving themselves in battle.",
           "effect": "Pick a friendly non-Hero Ruination Chamber Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -3728,7 +3731,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "MEMORIAN DESCENDANTS:",
+          "name": "Memorian Descendants",
           "description": "Reclusians are accompanied by Memorians who serve to remind them of their humanity.",
           "effect": "This unit's Memorians are tokens. There are 2 Memorians for every 3 models in this unit. While any of this unit's Memorians are on the battlefield, add 1 to this unit's resistance rolls when using the 'Ruination Chamber' ability. Each time you make an unmodified save roll of 1 for this unit, remove 1 of its Memorians from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
         }
@@ -3793,7 +3796,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Cthorak's Ancient Claws is 4. 5"
         },
         {

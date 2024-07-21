@@ -17,7 +17,7 @@
       "phases": [
         "Your Movement Phase"
       ],
-      "name": "Transport Skyfarers",
+      "name": "Descend From The Clouds Transport Skyfarers",
       "description": "The Kharadron rule the skies of the realms with fleets of fearsome airships crewed by hardened duardin. Used By: The Skyvessel using that Move ability.",
       "declare": "Pick a friendly Skyvessel in the clouds to use this ability.",
       "effect": "Pick a number of units up to that Skyvessel's Transport Capacity (see its warscroll) that are wholly within 6\" of it to be the targets. Units that have been transported this turn cannot be targets. Remove the targets from the battlefield. After the Skyvessel ends its move, you must set up each target unit on the battlefield, wholly within 6\" of that Skyvessel and not in combat. Those units have been transported. A unit cannot use Charge abilities if it was transported in the same turn."
@@ -50,7 +50,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "METICULOUSLY MAINTAINED:",
+      "name": "Meticulously Maintained",
       "description": "Iron Sky Attack Squadrons make up the main fighting force of each sky-port; no expense is spared in their upkeep, in the anticipation that they will bear the brunt of the enemy's attacks.",
       "effect": "Ignore the first damage point that would be allocated to each friendly Skyvessel in each phase."
     },
@@ -75,7 +75,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "FASTEST VESSELS IN THE FLEET:",
+      "name": "Fastest Vessels In The Fleet",
       "description": "The expert navigators of the Aether- runners can outmanoeuvre any enemy that challenges their mastery of the skies.",
       "effect": "Add 2\" to the Move characteristic of all friendly Skyvessels."
     },
@@ -84,7 +84,7 @@
       "phases": [
         "Your Shooting Phase"
       ],
-      "name": "GRUDGESETTLER PROTOCOLS:",
+      "name": "Grudgesettler Protocols",
       "description": "Grundstok marines have been trained to apply such overwhelming pressure that their targets do not even get a chance to fight back.",
       "effect": "Add 3\" to the Range characteristic of ranged weapons used by friendly Grundstok Thunderers and Grundstok Gunhaulers units for the rest of the turn."
     }
@@ -133,7 +133,7 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "name": "Hobbler' Mag-Bolas",
+      "name": "Blazebeard And Sons 'Drakk- Hobbler' Mag-Bolas",
       "description": "This patented device can entwine monstrous foes, impeding their advance to allow more firepower to be brought to bear upon them.",
       "declare": "Pick an enemy Monster within 12\" of this unit to be the target.",
       "effect": "Until the start of your next turn, subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1."
@@ -143,7 +143,7 @@
       "phases": [
         "Your Shooting Phase"
       ],
-      "name": "CELESTIUM BURST-GRENADE:",
+      "name": "Celestium Burst-Grenade",
       "description": "Typically used by the Grundstok 'black marines', this specialised anti-ethereal weapon can nullify magical wards.",
       "declare": "Pick an enemy unit within 12\" of this unit to be the target.",
       "effect": "Ward rolls cannot be made for the target for the rest of the turn."
@@ -223,7 +223,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "Aetherblasters",
+          "name": "Moustache-Mounted Aetherblasters",
           "description": "These custom aetherblasters deal short-range volleys of devastating fire.",
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
@@ -303,7 +303,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "You!",
+          "name": "By Grungni, I Have My Eye On You!",
           "description": "Endrinriggers will redouble their efforts to repair a skyvessel when they are overseen by an Endrinmaster.",
           "effect": "Add 1 to field repairs rolls for friendly Endrinriggers units while they are wholly within 12\" of this unit."
         }
@@ -354,7 +354,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Owed",
+          "name": "Always Take What You Are Owed",
           "description": "Following the decrees of the Code, the Admiral directs their fleet in the pursuit of profit and glory.",
           "declare": "Pick a friendly Arkanaut Company unit wholly within 12\" of this unit to be the target.",
           "effect": "Add D6 to the target's control score until the start of your next turn."
@@ -495,7 +495,7 @@
           "phases": [
             "Deployment Phase"
           ],
-          "name": "CAPTAIN OF THE AELSLING:",
+          "name": "Captain Of The Aelsling",
           "description": "Manned by a motley crew of ne'er- do-wells, Drekki's pride and joy is the Aelsling, said to be the fastest vessel in Barak-Mhornar.",
           "declare": "Pick a friendly Arkanaut Frigate in this unit's regiment to be the target.",
           "effect": "The target has the Aelsling keyword. Add 1 to the Damage characteristic of the target's melee weapons for the rest of the battle."
@@ -673,7 +673,7 @@
           "phases": [
             "Your Shooting Phase"
           ],
-          "name": "AETHERIC AUGMENTATION:",
+          "name": "Aetheric Augmentation",
           "description": "An Aether-Khemist can use their Anatomiser to augment the weapons of nearby skyfarers.",
           "declare": "Pick a friendly Kharadron Overlords Infantry unit wholly within 12\" of this unit to be the target.",
           "effect": "Roll a dice. On a 3+, add 1 to the Rend characteristic of the target's ranged weapons for the rest of the turn."
@@ -875,7 +875,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "EMERGENCY FIELD REPAIRS:",
+          "name": "Emergency Field Repairs",
           "description": "Endrinriggers are expert mechanics, able to keep all of the skyvessels in a Kharadron fleet afloat even in the midst of battle.",
           "declare": "Pick a friendly Skyvessel within this unit's combat range to be the target.",
           "effect": "Make a field repairs roll of D6 for each model in this unit. For each 4-5, Heal (1) the target. For each 6, Heal (2) the target."
@@ -1147,7 +1147,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Aethershot Carbines is 4."
         },
         {
@@ -1170,7 +1170,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "TRANSPORT CAPACITY",
+          "name": "Transport Capacity",
           "effect": "This unit can transport up to 3 friendly Kharadron Overlords Infantry units with a combined model count of up to 22 (see Battle Traits)."
         },
         {
@@ -1275,7 +1275,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "TRANSPORT CAPACITY",
+          "name": "Transport Capacity",
           "effect": "This unit can transport up to 2 friendly Kharadron Overlords Infantry units with a combined model count of up to 12 (see Battle Traits)."
         },
         {
@@ -1289,7 +1289,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Aethershot Carbines is 2."
         },
         {
@@ -1383,7 +1383,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "TRANSPORT CAPACITY",
+          "name": "Transport Capacity",
           "effect": "This unit can transport 1 friendly Kharadron Overlords Infantry unit with a model count of up to 5 (see Battle Traits)."
         },
         {

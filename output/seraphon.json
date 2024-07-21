@@ -297,7 +297,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "EMPOWERED CELESTITE:",
+        "name": "Empowered Celestite",
         "description": "Tapping into the ancient technologies within the weapons of the Coalesced, a light is birthed in each; for a few moments, every strike shatters armour in an explosion of sparks.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible friendly Saurus unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Add 1 to the Rend characteristic of the target's melee weapons for the rest of the turn.",
@@ -360,7 +360,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "DEAD FOR INNUMERABLE AGES:",
+          "name": "Dead For Innumerable Ages",
           "description": "Lord Kroak is no longer truly alive; his form is preserved only by his indomitable spirit. As a result, he is immune to all but the most devastating attacks.",
           "effect": "This unit must use this ability each turn while it is damaged. Roll 3D6 and add the number of damage points this unit has to the roll. On a 20+, this unit is destroyed. Otherwise, Heal (18) this unit."
         },
@@ -463,7 +463,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "CELESTIAL REINFORCEMENTS:",
+          "name": "Celestial Reinforcements",
           "description": "The slann summons Seraphon warriors to the battlefield to bolster their forces and ensure the Great Plan is made manifest.",
           "declare": "Pick a friendly Seraphon unit that started the battle with 3 or more models and that has been destroyed to be the target.",
           "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of this unit and more than 9\" from all enemy units."
@@ -542,7 +542,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Troglodon's Jaws is 2."
         },
         {
@@ -577,7 +577,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "TROGLODON REGENERATION:",
+          "name": "Troglodon Regeneration",
           "description": "Troglodons are able to mend injured flesh almost as soon as they are harmed.",
           "effect": "Heal (D3) this unit."
         }
@@ -652,7 +652,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Carnosaur's Massive Jaws is 2."
         },
         {
@@ -1434,7 +1434,7 @@
           "phases": [
             "Your Shooting Phase"
           ],
-          "name": "NERVE-SHREDDING SCREECHES:",
+          "name": "Nerve-Shredding Screeches",
           "description": "Despite their small stature, the shrill cries of a Terrawing flock can cause disarray across the enemy line as orders are drowned out by the cacophony.",
           "declare": "Pick an enemy unit within 10\" of this unit to be the target.",
           "effect": "Roll a D3. If the roll exceeds the target's Control characteristic, the target cannot use commands for the rest of the turn."
@@ -1450,7 +1450,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -1763,8 +1763,8 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "RIPPERDACTYL ASSAULT: A",
-          "description": "Ripperdactyl Chief is as ferocious as their mount, inspiring nearby Ripperdactyl Riders to attack with unbridled fury.",
+          "name": "Ripperdactyl Assault",
+          "description": "A Ripperdactyl Chief is as ferocious as their mount, inspiring nearby Ripperdactyl Riders to attack with unbridled fury.",
           "effect": "Add 1 to the Attacks characteristic of Moonstone Warspears used by friendly Ripperdactyl Riders units wholly within 12\" of this unit for the rest of the turn."
         },
         {
@@ -1902,7 +1902,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stegadon's Horns and Jaws is 4."
         },
         {
@@ -1975,7 +1975,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stegadon's Horns and Jaws is 4."
         }
       ],
@@ -2029,7 +2029,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stegadon's Horns and Jaws is 4."
         },
         {
@@ -2316,7 +2316,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Carnosaur's Massive Jaws is 2."
         },
         {
@@ -2381,7 +2381,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "Predatory Exemplar",
+          "name": "Wrath Of The Seraphon Predatory Exemplar",
           "description": "Oldbloods lead through instinctual ferocity, trusting their saurus kin to follow in their wake.",
           "effect": "Pick a friendly non-Hero Saurus Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }

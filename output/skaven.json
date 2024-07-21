@@ -17,7 +17,7 @@
       "phases": [
         "Start of Battle Round"
       ],
-      "name": "SPLINTERS OF THE VER MINDOOM:",
+      "name": "Splinters Of The Ver Mindoom",
       "description": "In the aftermath of the Vermindoom, reality continues to fracture and tear as gnawholes bore into reality, spewing forth endless tides of ratmen.",
       "declare": "You can use this ability if there are fewer than 3 friendly Gnawholes on the battlefield.",
       "effect": "Set up a Gnawhole on the battlefield more than 9\" from all enemy units, more than 1\" from all friendly units and more than 3\" from all objectives and other terrain features."
@@ -51,7 +51,7 @@
       "phases": [
         "Enemy Hero Phase"
       ],
-      "name": "Ahead",
+      "name": "Always Three Clawsteps Ahead",
       "description": "The best laid plans of the Skaven never go awry (or so they claim).",
       "declare": "Pick a friendly non-Monster Skaven unit that is not in combat and was not set up this turn to use this ability.",
       "effect": "That unit can use the 'Normal Move' ability as if it were your movement phase."
@@ -266,7 +266,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Vortex",
+        "name": "Summon Warp Lightning Vortex",
         "description": "Warpstone shards are cast into the air, growing impossibly large and discharging bolts of warp lightning.",
         "declare": "If there is not a friendly Warp Lightning Vortex on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up the first part of the Warp Lightning Vortex within 18\" of the caster and visible to them, then set up the second and third parts exactly 7\" from the first part and exactly 7\" from each other so that they form a triangle.",
@@ -275,13 +275,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Warp Lightning Vortex"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON VER MINTIDE:",
+        "name": "Summon Ver Mintide",
         "description": "A Skaven spellcaster can summon forth a seething mass of arcane rodents that consumes everything in its path.",
         "declare": "If there is not a friendly Vermintide on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Vermintide wholly within 13\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -290,13 +291,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Ver Mintide"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON BELL OF DOOM:",
+        "name": "Summon Bell Of Doom",
         "description": "Invoking ancient creation myths, the spellcaster causes a great Bell of Doom to manifest upon the battlefield.",
         "declare": "If there is not a friendly Bell of Doom on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Bell of Doom wholly within 13\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -304,7 +306,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Bell Of Doom"
       }
     ]
   },
@@ -361,7 +364,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Warpfire Braziers is 4."
         },
         {
@@ -450,7 +453,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Spell",
+          "name": "The Dreaded Thirteenth Spell",
           "description": "The twisting power of the Great Horned Rat transforms men into rat- mutants that swiftly join the evil throng.",
           "declare": "Pick a visible enemy unit within 13\" to be the target, then make a casting roll of 2D6.",
           "effect": "Roll 13 dice. For each 5+: * Inflict 1 mortal damage on the target. * You can return 1 slain model to a friendly Clanrats unit wholly within 13\" of this unit.",
@@ -535,8 +538,8 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "BURST FROM THE SHADOWS: A",
-          "description": "Verminlord Deceiver is shrouded in darkness and dread, leaping through the aether to strike at its foes in the blink of an eye.",
+          "name": "Burst From The Shadows",
+          "description": "A Verminlord Deceiver is shrouded in darkness and dread, leaping through the aether to strike at its foes in the blink of an eye.",
           "effect": "If this unit is in combat, roll a dice. On a 4+, you can pick a point on the battlefield within 13\" of this unit and within 1\" of any enemy units. Remove this unit from the battlefield and set it up again within 1\" of that point. Designer's Note: This ability allows the unit to set up in combat with a new enemy unit.",
           "keywords": [
             "Rampage"
@@ -726,7 +729,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "TECTONIC SPLINTERING:",
+          "name": "Tectonic Splintering",
           "description": "Hissing invocations of ruin and collapse, the Verminlord compels the earth to break and belch forth hostile warpgales, leaving their enemies staggering.",
           "declare": "Pick a visible enemy unit within 18\" to be the target, then make a casting roll of 2D6.",
           "effect": "Until the start of your next turn, subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1.",
@@ -828,7 +831,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Enginecovens",
+          "name": "Overseers Of The Enginecovens",
           "description": "The Arch-Warlocks of the Clans Skryre command their enginecovens with a blend of deadly efficiency and overt sadism.",
           "effect": "Each time a friendly Skryre unit wholly within 13\" of this unit uses the 'Covering Fire' command, do not subtract 1 from hit rolls for attacks made as part of that ability."
         }
@@ -936,7 +939,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "More-More Doom!",
+          "name": "Explosive Payload More-More Doom!",
           "description": "An extra doomrocket warhead can be attached to the payload if the wielder dares.",
           "effect": "Roll a dice. On a 2+, set the Damage characteristic of its Doomrocket to D3+3 for the rest of the turn. On a 1, inflict D3 mortal damage on this unit."
         }
@@ -1050,7 +1053,7 @@
           "phases": [
             "Any Movement Phase"
           ],
-          "name": "GRINDERFIST TUNNELLERS:",
+          "name": "Grinderfist Tunnellers",
           "description": "Grinderfists can be used to create underground tunnels.",
           "declare": "Pick this unit if it is in the tunnels below and includes any models armed with Grinderfists.",
           "effect": "Set up this unit anywhere on the battlefield more than 9\" from all enemy units."
@@ -1116,8 +1119,8 @@
           "phases": [
             "Your Shooting Phase"
           ],
-          "name": "MORE-MORE WARP LIGHTNING!: A",
-          "description": "Warlock Engineer can increase the power output of a Warp Lightning Cannon at the risk of harming the weapon and its crew.",
+          "name": "More-More Warp Lightning!",
+          "description": "A Warlock Engineer can increase the power output of a Warp Lightning Cannon at the risk of harming the weapon and its crew.",
           "effect": "If this unit is within the combat range of a friendly Skryre Hero, add 6 to the Attacks characteristic of this unit's Warp Lightning Blast for the rest of the turn. However, for each unmodified hit roll of 1 for an attack made with this unit's Warp Lightning Blast, inflict D3 mortal damage on this unit after the Shoot ability has been resolved."
         }
       ],
@@ -1561,7 +1564,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Great Plague Censer is 2."
         },
         {
@@ -1590,7 +1593,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ALTAR OF THE GREAT CORRUPTOR:",
+          "name": "Altar Of The Great Corruptor",
           "description": "This giant construct is venerated by the swarms of pox-ridden rats that flock to its side.",
           "effect": "Friendly Pestilens units have Ward (6+) while they are wholly within 6\" of this unit."
         }
@@ -1636,7 +1639,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "SPREADERS OF FILTH AND DISEASE:",
+          "name": "Spreaders Of Filth And Disease",
           "description": "Possessed with a mad zealotry, Plague Monks in their death throes will bite, claw and scratch their foe, leaving wounds that quickly fester and rot.",
           "effect": "Each time a model in this unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. On a 6+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
         }
@@ -1682,7 +1685,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Gnash-Gnaw On Their Bones!",
+          "name": "Cornered Rat Gnash-Gnaw On Their Bones!",
           "description": "At a Clawlord's command, their minions hurl themselves at the foe.",
           "effect": "Pick a friendly non-Hero Verminus Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }
@@ -1852,7 +1855,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "LORD OF FLESH-GRAFTING:",
+          "name": "Lord Of Flesh-Grafting",
           "description": "These burly commanders are the breeders, mutators and healers of the Clans Moulder.",
           "declare": "Pick another friendly Moulder unit wholly within 13\" of this unit to be the target.",
           "effect": "Heal (3) the target."
@@ -1906,7 +1909,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Gnashing Teeth and Flailing Fists is 8."
         },
         {
@@ -1926,7 +1929,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "REGENERATING MONSTROSITY:",
+          "name": "Regenerating Monstrosity",
           "description": "Hell Pit Abominations are notoriously difficult to slay and can even regrow severed limbs.",
           "effect": "Heal (D6) this unit."
         },
@@ -2147,7 +2150,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Crushing Bulk is 4."
         },
         {
@@ -2169,7 +2172,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ALTAR OF THE HORNED RAT:",
+          "name": "Altar Of The Horned Rat",
           "description": "Throngs of rat-thralls swarm around this mighty construct in battle and will sell their lives to see it from harm.",
           "effect": "Friendly Skaven Infantry units have Ward (6+) while they are wholly within 6\" of this unit. 6"
         },
@@ -2239,7 +2242,7 @@
           "phases": [
             "Your Shooting Phase"
           ],
-          "name": "Bullets!",
+          "name": "More-More Warpstone Bullets!",
           "description": "Under the dubious supervision of the Warlocks of Clans Skryre, the gunner cranks up the Ratling Warpblaster's velocity to the max.",
           "effect": "If this unit is within the combat range of a friendly Skryre Hero, this unit's Hail of Warpstone Bullets has an Attacks characteristic of 6D6+3 instead of 3D6+3 for the rest of the turn. However, for each unmodified hit roll of 1 for an attack made with this unit's Hail of Warpstone Bullets, inflict 1 mortal damage on this unit after the Shoot ability has been resolved."
         }
@@ -2466,14 +2469,14 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "MULTIPLE PARTS",
+          "name": "Multiple Parts",
           "effect": "When a number of damage points equal to this Manifestation's Health characteristic are allocated to it, this Manifestation is destroyed and all its parts are removed from play."
         },
         {
           "phases": [
             "Any Hero Phase"
           ],
-          "name": "WARP LIGHTNING BOLTS:",
+          "name": "Warp Lightning Bolts",
           "description": "Coruscating bolts of warp lightning leap outwards from the Warp Lightning Vortex, obliterating those nearby.",
           "declare": "If this Manifestation was not set up this turn, pick each enemy unit within 6\" of this Manifestation to be the targets.",
           "effect": "Roll a dice for each target. On a 4+, inflict D3 mortal damage on the target."

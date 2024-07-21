@@ -257,7 +257,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Amyntok",
+        "name": "Summon Sanctum Of Amyntok",
         "description": "The ground splits around the mage, and the life force of the realm springs forth as a crackling shield.",
         "declare": "If there is not a friendly Sanctum of Amyntok on the battlefield, pick a friendly Lumineth Realm-lords Wizard to cast this spell, pick a visible friendly Lumineth Realm-lords Infantry Hero wholly within 12\" of them and more than 3\" from all other units and terrain features to be the target, then make a casting roll of 2D6.",
         "effect": "Set up a Sanctum of Amyntok within the target's combat range, visible to the caster and not in combat. A Sanctum of Amyntok has 3 parts that must be set up touching each other so that they form a ring with the target inside.",
@@ -266,13 +266,14 @@
           "Summon",
           "5"
         ],
-        "casting_value": 4
+        "casting_value": 4,
+        "summons": "Sanctum Of Amyntok"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Twinstones",
+        "name": "Summon Hyshian Twinstones",
         "description": "The caster calls forth two giant crystal teardrops that orbit around each other. 5",
         "declare": "If there is not a friendly Hyshian Twinstones endless spell on the battlefield, pick a friendly Lumineth Realm-lords Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Hyshian Twinstones endless spell wholly within 6\" of the caster.",
@@ -280,20 +281,22 @@
           "Spell",
           "Summon",
           "7"
-        ]
+        ],
+        "summons": "Hyshian Twinstones"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Petrification",
+        "name": "Summon Rune Of Petrification",
         "description": "The caster calls forth a hovering sigil ripped from the crust of the realm underfoot. 7",
         "declare": "If there is not a friendly Rune of Petrification on the battlefield, pick a friendly Lumineth Realm-lords Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Rune of Petrification wholly within 18\" of the caster and visible to them.",
         "keywords": [
           "Spell",
           "Summon"
-        ]
+        ],
+        "summons": "Rune Of Petrification"
       }
     ]
   },
@@ -350,7 +353,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Celennar's Moonbright Talons is 3."
         },
         {
@@ -400,7 +403,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Light",
+          "name": "Stor M Of Searing White Light",
           "description": "Beams of light shoot out from Teclis's forehead to bisect nearby foes.",
           "declare": "Pick any number of different visible enemy units within 18\" of this unit to be the targets, then make a casting roll of 2D6 (see the 'Archmage' ability).",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
@@ -1072,7 +1075,7 @@
           "phases": [
             "Deployment Phase"
           ],
-          "name": "INDEPENDENT OPERATIVE:",
+          "name": "Independent Operative",
           "description": "Loreseekers venture deep into unknown lands, searching for esoteric knowledge and artefacts that only the Lumineth can be entrusted with.",
           "effect": "If this unit has not been deployed, set it up anywhere on the battlefield not in combat with any enemy units. This unit has now been deployed. Designer's Note: Enemy units that deploy after this unit can deploy in combat with it.",
           "keywords": [
@@ -1401,7 +1404,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Firestealer Hammers is 4."
         },
         {
@@ -1423,7 +1426,7 @@
           "phases": [
             "Your Combat Phase"
           ],
-          "name": "Mountains",
+          "name": "Unshakeable Faith Of The Mountains",
           "description": "A Spirit of the Mountain can inspire its aelven supplicants to fight all the harder in the name of Hysh.",
           "declare": "Pick up to 3 different friendly Alarith Aelf units wholly within 12\" of this unit to be the targets.",
           "effect": "Add 1 to the Attacks characteristic of the targets' melee weapons for the rest of the turn.",
@@ -1506,7 +1509,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stoneheart Worldhammer is 3."
         },
         {
@@ -1752,7 +1755,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "WINDCHARGER ARROWS:",
+          "name": "Windcharger Arrows",
           "description": "Windcharger arrows are guided to their target by aelementor winds.",
           "effect": "Ward rolls cannot be made for damage points inflicted by this unit's shooting attacks."
         }
@@ -1810,7 +1813,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "HUNTERS OF MAJESTIC BEASTS:",
+          "name": "Hunters Of Majestic Beasts",
           "description": "With vindictive glee, wind spirits race across the battlefield in pursuit of mighty behemoths, seeking to lay them low with a well-placed shot.",
           "effect": "The Damage characteristic of this unit's Bow of the Wind's Vengeance is 3 for attacks that target Monsters."
         },
@@ -1888,7 +1891,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "Current",
+          "name": "Relentless As The Driving Current",
           "description": "An Ydrilan warrior keeps surging forwards, their movements fluid and almost impossibly fast as they embody the momentum of rushing water.",
           "effect": "This unit can move 2D6\". It can pass through models in enemy units but must end that move in combat."
         },

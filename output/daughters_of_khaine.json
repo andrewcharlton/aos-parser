@@ -227,7 +227,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Covenant Of The Iron Heart",
+        "name": "Covenant Of The Iron Heart Covenant Of The Iron Heart Covenant Of The Iron Heart",
         "description": "The hearts of the Murder God's followers become as cold and hard as iron, crushing their fears and doubts with a chilling contempt.",
         "declare": "Pick a friendly Daughters of Khaine Priest to chant this prayer, pick a visible friendly Daughters of Khaine unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Ignore negative modifiers to the target's control score until the start of your next turn. In addition, if the chanting roll was 8+, add 5 to the target's control score until the start of your next turn.",
@@ -253,7 +253,8 @@
           "Summon",
           "5"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Bladewind"
       },
       {
         "phases": [
@@ -268,13 +269,14 @@
           "Summon",
           "6"
         ],
-        "chanting_value": 5
+        "chanting_value": 5,
+        "summons": "Heart Of Fury"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON BLOODWRACK VIPER:",
+        "name": "Summon Bloodwrack Viper",
         "description": "The caster weaves their outstretched hand in an elaborate pattern that mimics the structure of a monstrous snake drenched in blood.",
         "declare": "If there is not a friendly Bloodwrack Viper on the battlefield, pick a friendly Daughters of Khaine Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Bloodwrack Viper wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -282,7 +284,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Bloodwrack Viper"
       }
     ]
   },
@@ -331,7 +334,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ONE SOUL, TWO BODIES:",
+          "name": "One Soul, Two Bodies",
           "description": "Morathi-Khaine and the Shadow Queen are two entities that share the same life force.",
           "effect": "Each time a damage point would be allocated to this unit, it is instead allocated to a friendly The Shadow Queen (you cannot make any further ward rolls for that damage point). If this unit would be automatically destroyed by another ability, it is not automatically destroyed. Instead, allocate 3 damage points to a friendly The Shadow Queen (ward rolls cannot be made for those damage points). If a friendly The Shadow Queen is destroyed, this unit is automatically destroyed."
         },
@@ -433,7 +436,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "FURY OF THE SHADOW QUEEN:",
+          "name": "Fury Of The Shadow Queen",
           "description": "Bloodshed raises the Shadow Queen's fury to new heights and fuels the murderlust of nearby Sc\u00e1thborn.",
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If any models are slain by this ability, for the rest of the turn, add 1 to the Attacks characteristic of melee weapons used by friendly Khinerai and Melusai units while they are wholly within 12\" of this unit.",
@@ -787,7 +790,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Melusai Kin",
+          "name": "Bloodwr Ack Stare Melusai Kin",
           "description": "A Bloodwrack Medusa leads her Melusai kin into battle, encouraging them to follow her example and strike down the enemy with brutal swiftness.",
           "effect": "Pick a friendly non-Hero Melusai unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }
@@ -1542,7 +1545,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "Fight And Flight",
+          "name": "Death From Above Fight And Flight",
           "description": "The cults of the Khinerai are masters of the hit-and- run strike.",
           "declare": "Pick this unit if it is in the skies.",
           "effect": "After resolving the effect of that Fight ability, this unit can immediately move D6\". It cannot end that move in combat with any units that it was not already in combat with at the start of the move."

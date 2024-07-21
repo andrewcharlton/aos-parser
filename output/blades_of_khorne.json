@@ -11,7 +11,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "Spelleater Curse",
+      "name": "The Blood Tithe Spelleater Curse",
       "description": "Beneath Khorne's hateful gaze, even the most experienced spellcasters feel their powers wane.",
       "effect": "That spell is unbound.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 2 blood tithe points.",
@@ -104,7 +104,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "STRENGTH THROUGH SLAUGHTER:",
+      "name": "Strength Through Slaughter",
       "description": "The shedding of blood in abundance enhances a Khornate daemon's ability to linger in reality.",
       "effect": "If a friendly non-Monster Blades of Khorne Daemon uses a Fight ability, it has Ward (5+) for the rest of the turn."
     },
@@ -176,7 +176,7 @@
       "phases": [
         "Any Combat Phase"
       ],
-      "name": "AR'GATH, THE KING OF BLADES:",
+      "name": "Ar'Gath, The King Of Blades",
       "description": "This daemonic blade hungers for the flesh of champions and will not be denied by trickery or magic.",
       "declare": "Pick an enemy Hero in combat with this unit to be the target.",
       "effect": "Ward rolls cannot be made for the target for the rest of the turn."
@@ -218,8 +218,8 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "SUMMON BLEEDING ICON: A",
-        "description": "common sight in the crimson skies above Khorne's domain, a Bleeding Icon can be summoned to the Mortal Realms to skewer from on high those who have displeased the Lord of Battle.",
+        "name": "Summon Bleeding Icon",
+        "description": "A common sight in the crimson skies above Khorne's domain, a Bleeding Icon can be summoned to the Mortal Realms to skewer from on high those who have displeased the Lord of Battle.",
         "declare": "If there is not a friendly Bleeding Icon on the battlefield, pick a friendly Blades of Khorne Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Bleeding Icon wholly within 12\" of the chanter and visible to them.",
         "keywords": [
@@ -227,7 +227,8 @@
           "Summon",
           "4"
         ],
-        "chanting_value": 4
+        "chanting_value": 4,
+        "summons": "Bleeding Icon"
       },
       {
         "phases": [
@@ -242,13 +243,14 @@
           "Summon",
           "4"
         ],
-        "chanting_value": 4
+        "chanting_value": 4,
+        "summons": "Wrath-Axe"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Summon Hexgorger Skulls",
+        "name": "Summon Hexgorger Skulls Summon Hexgorger Skulls",
         "description": "Hexgorger Skulls are the physical manifestation of Khorne's hatred of the arcane arts. They drift across the battlefield, seeking to feed upon eldritch energy and those conjurers who attempt to use it.",
         "declare": "If there is not a friendly Hexgorger Skulls invocation on the battlefield, pick a friendly Blades of Khorne Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Hexgorger Skulls invocation wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units. A Hexgorger Skulls invocation has 2 parts that must be set up within 8\" of each other.",
@@ -256,7 +258,8 @@
           "Prayer",
           "Summon"
         ],
-        "chanting_value": 4
+        "chanting_value": 4,
+        "summons": "Hexgorger Skulls "
       }
     ]
   },
@@ -435,7 +438,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Mighty Axe of Khorne and Bloodflail is 4."
         },
         {
@@ -443,7 +446,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "COMMANDER OF TYRANTS:",
+          "name": "Commander Of Tyrants",
           "description": "Bloodthirsters of lesser rank are compelled to follow the orders of these bellowing greater daemons.",
           "declare": "Pick up to 3 other visible friendly non-Unique Bloodthirster units to be the targets.",
           "effect": "Add 1 to the Attacks characteristic of each target's melee weapons for the rest of the turn."
@@ -504,7 +507,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Great Axe of Khorne is 3."
         },
         {
@@ -527,8 +530,8 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "SHATTERING CHARGE: A",
-          "description": "Bloodthirster of Insensate Rage is an avatar of supreme carnage upon the battlefield, shattering formations with the force of its descent.",
+          "name": "Shattering Charge",
+          "description": "A Bloodthirster of Insensate Rage is an avatar of supreme carnage upon the battlefield, shattering formations with the force of its descent.",
           "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
           "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If the target is Infantry, inflict an additional 3 mortal damage on it.",
           "keywords": [
@@ -590,7 +593,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Mighty Axe of Khorne is 4 ."
         },
         {
@@ -733,7 +736,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "SKULLS FOR THE SKULL THRONE!:",
+          "name": "Skulls For The Skull Throne!",
           "description": "Skulltaker leaves only trophies taken from the strongest opponents at the foot of Khorne's throne.",
           "effect": "Each time an enemy Hero is slain by this unit, you receive 1 additional blood tithe point."
         }
@@ -794,7 +797,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -1043,7 +1046,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Skulls",
+          "name": "Grind Their Bones, Seize Their Skulls",
           "description": "Enemy skulls shorn by the Bloodletters atop the Skull Cannon are used as fiery munitions.",
           "effect": "If any enemy models are slain by a Fight ability used by this unit, after that Fight ability has been resolved, this unit can immediately use a Shoot ability as if it were your shooting phase."
         },
@@ -1058,7 +1061,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "GRUESOME BOMBARDMENT:",
+          "name": "Gruesome Bombardment",
           "description": "Piercing laughter and growls erupt from the Skull Cannon's jaws before its grisly missiles strike home - a salvo that can shatter the will.",
           "effect": "If any damage points are allocated to an enemy unit by a Shoot ability used by this unit, subtract 3 from that enemy unit's control score for the rest of the turn."
         }
@@ -1317,7 +1320,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "LORD OF THE BRASS STAMPEDE:",
+          "name": "Lord Of The Brass Stampede",
           "description": "Carnage erupts as the full force of a mounted Khornate warhorde collides with the enemy.",
           "effect": "If this unit charged this turn, for the rest of the turn, the following effects apply to friendly Blades of Khorne Cavalry units while they are wholly within 18\" of this unit: * Add 1 to charge rolls for those units. * You can re-roll crushing charge rolls for those units."
         }
@@ -1528,7 +1531,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BONE-CRUSHING STRIKES:",
+          "name": "Bone-Crushing Strikes",
           "description": "Larger beasts feel the full brunt of the Skullgrinder's anvil as it crashes into their flank, shattering ribs and sending them sprawling.",
           "effect": "If this unit uses a Fight ability, all of the attacks target the same enemy Monster, and any of the attacks score a critical hit, that Monster has Strike-last for the rest of the turn."
         },
@@ -1611,7 +1614,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "FIRST OF THE GORECHOSEN:",
+          "name": "First Of The Gorechosen",
           "description": "Exalted Deathbringers fight to scale the final heights of glory, hewing bloody handholds for their ascent with every worthy foe they butcher.",
           "effect": "If any damage points were allocated to an enemy unit by this unit's combat attacks this turn and that enemy unit has been destroyed, Heal (5) this unit and give this unit a glorious ascent token."
         },
@@ -1672,8 +1675,8 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BLOOD FOR THE BLOOD GOD!: A",
-          "description": "howling mass of Bloodreavers is never more dangerous than when seized by the frenzy of the charge.",
+          "name": "Blood For The Blood God!",
+          "description": "A howling mass of Bloodreavers is never more dangerous than when seized by the frenzy of the charge.",
           "effect": "Add 1 to the Rend characteristic of this unit's melee weapons for the rest of the turn if this unit charged in the same turn."
         }
       ],
@@ -2043,7 +2046,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "MULTIPLE PARTS",
+          "name": "Multiple Parts",
           "effect": "When a number of damage points equal to this Manifestation's Health characteristic are allocated to it, this Manifestation is destroyed and both its parts are removed from play. Each time this Manifestation moves, both its parts must end within 8\" of each other. Each part of this Manifestation is armed with a Stream of Molten Blood."
         },
         {
@@ -2137,7 +2140,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "ASCEND THE ALTAR",
+          "name": "Ascend The Altar",
           "declare": "If this terrain feature does not have an Invoker, pick a friendly Blades of Khorne Infantry Priest within 3\" of it to be the target.",
           "effect": "Place the target on this terrain feature. The target is now an Invoker (see 'Words of Hate')."
         },
@@ -2145,7 +2148,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "Hatred Of Sorcery",
+          "name": "Descend The Altar Hatred Of Sorcery",
           "effect": "Roll a dice. On a 5+: * If this terrain feature has an Invoker, gain 1 blood tithe point. * Ignore the effect of that spell on that friendly unit. This terrain feature can use this ability more than once per phase but you can only roll once for each friendly unit per spell cast.",
           "description": "Khorne's depthless scorn of magic radiates from these altars in waves."
         }

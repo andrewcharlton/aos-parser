@@ -219,7 +219,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Comet",
+        "name": "Speed Of The Twin-Tailed Comet",
         "description": "The wizard grants their allies swift-moving bestial forms.",
         "declare": "Pick a friendly Cities of Sigmar Wizard to cast this spell, pick a visible friendly Cities of Sigmar unit wholly within 12\" to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, add 1 to the number of dice rolled when making charge rolls for the target, to a maximum of 3.",
@@ -341,7 +341,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Infernadine's Leonine Jaws is 2."
         },
         {
@@ -548,7 +548,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Tactical Acumen",
+          "name": "Battle Damaged Tactical Acumen",
           "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead.",
           "description": "Those Freeguild Marshals who have earned the right to ride a griffon into battle not only are skilled warriors but also possess shrewd tactical minds."
         },
@@ -952,7 +952,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Griffon's Razor Claws and Twin Beaks is 4."
         },
         {
@@ -1769,7 +1769,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "WEAPONS OF BANISHMENT:",
+          "name": "Weapons Of Banishment",
           "description": "Inscribed with the holy writ of Sigmar and inlaid with nullstone and silver, the weapons of the Ven Densts are anathema to spellcasters and their works, banishing all forms of arcane energy in a flash.",
           "effect": "Double the Damage characteristic of this unit's weapons for attacks that target Wizards, Priests and Manifestations."
         },
@@ -1841,7 +1841,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "WEAPONS OF BANISHMENT:",
+          "name": "Weapons Of Banishment",
           "description": "Inscribed with the holy writ of Sigmar and inlaid with nullstone and silver, the weapons of the Ven Densts are anathema to spellcasters and their works, banishing all forms of arcane energy in a flash.",
           "effect": "Double the Damage characteristic of this unit's weapons for attacks that target Wizards, Priests and Manifestations."
         }
@@ -1925,7 +1925,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "RUNES OF SPELLBREAKING:",
+          "name": "Runes Of Spellbreaking",
           "description": "Runelords dampen the magic of their enemies with ancient sigils of unbinding.",
           "effect": "This unit can use the 'Unbind' ability as if it had Wizard (1). 5"
         },
@@ -1983,7 +1983,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Of Sterner Stuff!'",
+          "name": "'I Thought Duardin Were Made Of Sterner Stuff!'",
           "description": "A disgruntled look from a grumbling Longbeard is often enough to galvanise the spirits of younger duardin and keep them in the fight.",
           "effect": "Add 2 to the control scores of friendly Cities of Sigmar Duardin units, excluding Longbeards units, while they are wholly within 12\" of this unit."
         }
@@ -2306,7 +2306,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "GRUDGEBUSTER BOMBS:",
+          "name": "Grudgebuster Bombs",
           "description": "Gyrobombers swoop over the enemy lines, dropping a lethal payload onto the hapless warriors below.",
           "declare": "If this unit used a Move ability this phase, pick an enemy unit that does not have Fly and that this unit passed across this turn to be the target.",
           "effect": "Pick 1 of the following effects: Tactical Bombing: Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Drop It All!: Make 2 rolls of D3. For each 2+, inflict an amount of mortal damage on the target equal to the roll. Then, roll a D3 for each unit (friendly and enemy) within the target's combat range that does not have Fly. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. Once the 'Drop It All!' effect of this ability has been resolved, this unit cannot use this ability again for the rest of the battle."
@@ -2403,7 +2403,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Black Dragon's Fearsome Jaws and Claws is 4."
         },
         {
@@ -2585,7 +2585,7 @@
           "phases": [
             "End of Any Turn"
           ],
-          "name": "Its Place",
+          "name": "Sever One Head, Another Takes Its Place",
           "description": "It is almost impossible to kill a Hydra, for they regenerate wounds and regrow severed heads with alarming speed.",
           "effect": "Heal (6) this unit."
         },
@@ -2832,7 +2832,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Black Dragon's Fearsome Jaws and Claws is 4."
         },
         {
@@ -2846,7 +2846,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Wings",
+          "name": "Under The Shadow Of Black Wings",
           "description": "Dreadlords send in the cavalry to weaken the enemy before swooping down to deliver the killing blow.",
           "effect": "Add 1 to charge rolls for friendly Cities of Sigmar Aelf Cavalry units while they are wholly within 12\" of this unit."
         },
@@ -2855,7 +2855,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "INDISCRIMINATE SLAUGHTER:",
+          "name": "Indiscriminate Slaughter",
           "description": "The cruel rituals involved in raising Black Dragons curse them with sadistic urges, causing them to revel in slaughter just as much as their Dreadlord riders.",
           "declare": "Pick all units (friendly and enemy) within this unit's combat range, excluding this unit, to be the targets.",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
@@ -3346,7 +3346,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Get It Done",
+          "name": "Wily To The Last Get It Done",
           "description": "Callis, Toll and their companions are renowned for their dogged commitment to the mission.",
           "effect": "Pick a friendly Toll's Companions unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }

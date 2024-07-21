@@ -468,7 +468,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "FIRST AMONG AKHELIANS:",
+          "name": "First Among Akhelians",
           "description": "Volturnos is the greatest Akhelian King to have ever lived. His supreme skill and vast experience serve as an inspiration to all members of the Idoneth's warrior caste.",
           "effect": "Add 1 to hit rolls for combat attacks made by other friendly Akhelian units while they are wholly within 12\" of this unit."
         },
@@ -483,7 +483,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "Shield",
+          "name": "Cealith, The High King'S Shield",
           "description": "Cealith is said to have been crafted by Teclis himself. However it was created, the mystical aura it projects guards the bearer against malign magics.",
           "effect": "This unit has Ward (3+) against mortal damage inflicted by Spell abilities, Prayer abilities or abilities used by Manifestations."
         }
@@ -533,7 +533,7 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "Akhelian Paragon",
+          "name": "Wave Rider Akhelian Paragon",
           "description": "Each Akhelian King is a shining example of their caste, a master of battle whom all other Akhelians strive to emulate in battle.",
           "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
           "effect": "Pick a friendly non-Hero Akhelian Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -583,8 +583,8 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "MASTER OF THE ETHERSEA: A",
-          "description": "Tidecaster can manipulate the ethersea like no other.",
+          "name": "Master Of The Ethersea",
+          "description": "A Tidecaster can manipulate the ethersea like no other.",
           "declare": "Make an Isharann ritual roll of D6.",
           "effect": "On a 3+, pick 1 of the following effects to apply until the start of your next turn: Creeping Mist: Friendly Idoneth Deepkin units cannot be targeted by shooting attacks unless the attacking model is within 12\" of them. Surging Stream: Add 1 to run rolls and charge rolls for friendly Idoneth Deepkin units. Spiteful Riptide: Each time an enemy unit uses a Retreat ability, after the effect of that ability has been resolved, inflict D3 mortal damage on that unit."
         }
@@ -842,7 +842,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BLOODTHIRSTY PREDATORS:",
+          "name": "Bloodthirsty Predators",
           "description": "Allopexes are drawn towards the scent of freshly spilt blood.",
           "effect": "Add 1 to the Attacks characteristic of this unit's Allopex's Ferocious Bite while it is within 6\" of any damaged enemy units or while it is within 6\" of any enemy units that had any models slain in the same turn."
         },
@@ -1034,7 +1034,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Leviadon's Scythed Fins and Crushing Jaws is 5."
         },
         {
@@ -1109,7 +1109,7 @@
           "phases": [
             "Any Combat Phase"
           ],
-          "name": "Thrallmaster",
+          "name": "Akhelian Fighting Stance Thrallmaster",
           "description": "Thrallmasters are cunning and sea-scarred Akhelians who lead the Namarti hosts into battle.",
           "effect": "Pick a friendly Namarti Thralls unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
         }

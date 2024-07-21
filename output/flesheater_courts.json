@@ -218,7 +218,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "MIASMA OF MADNESS:",
+        "name": "Miasma Of Madness",
         "description": "The wizard calls forth a sanity-warping mist to engulf the foe.",
         "declare": "Pick a friendly Flesh-eater Courts Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll 7 dice and apply the corresponding effect: Ravaged Mind: If 2 or more dice have the same value, inflict 1 mortal damage on the target. Gory Visions: If 3 or more dice have the same value, in addition to the effect of 'Ravaged Mind', subtract 1 from hit rolls for the target's attacks until the start of your next turn. Drooling Stupor: If 4 or more dice have the same value, in addition to the effects of 'Ravaged Mind' and 'Gory Visions', subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
@@ -264,7 +264,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "THE SUMMERKING'S FAVOUR:",
+        "name": "The Summerking'S Favour",
         "description": "The priest delivers a blistering sermon lionising the deeds of a courtly champion, marking them out as a saint in their followers' eyes.",
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible friendly Flesh-eater Courts Hero wholly within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give the target 1 additional noble deeds point after the Fight ability has been resolved. If the chanting roll was 10+, until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give all friendly Flesh-eater Courts Heroes wholly within 18\" of the target 1 additional noble deeds point after the Fight ability has been resolved instead of only the target.",
@@ -279,7 +279,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "CHARNEL CONVICTION:",
+        "name": "Charnel Conviction",
         "description": "Anointed with libations by their priest, ghouls believe themselves to be invincible warriors of faith.",
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible friendly Flesh-eater Courts unit wholly within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, the target has Ward (5+). If the chanting roll was 10+, pick another friendly Flesh-eater Courts unit wholly within 18\" of the target. That unit also has Ward (5+) until the start of your next turn.",
@@ -296,7 +296,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Ushoran",
+        "name": "Summon Chalice Of Ushoran",
         "description": "The wizard conjures forth a manifestation of the sacred cup held by Ushoran. This bone-wrought goblet is continually filled with the blood of those slain in its presence.",
         "declare": "If there is not a friendly Chalice of Ushoran on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Chalice of Ushoran wholly within 12\" of the caster and visible to them.",
@@ -305,13 +305,14 @@
           "Summon",
           "7"
         ],
-        "casting_value": 6
+        "casting_value": 6,
+        "summons": "Chalice Of Ushoran"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Stampede",
+        "name": "Summon Corpsemare Stampede",
         "description": "Imbued with grisly vigour by the insane magics of the abhorrants, the undead beasts of a Corpsemare Stampede burst from the blood-soaked ground to trample across the battlefield with reckless abandon.",
         "declare": "If there is not a friendly Corpsemare Stampede on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Corpsemare Stampede wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
@@ -320,13 +321,14 @@
           "Summon",
           "5"
         ],
-        "casting_value": 7
+        "casting_value": 7,
+        "summons": "Corpsemare Stampede"
       },
       {
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "Barricade",
+        "name": "Summon Cadaverous Barricade",
         "description": "With a word of command, the corpses of those who once served Ushoran rise up from the grave, dragging with them the detritus of a forgotten civilisation and clawing at the living with lifeless hands.",
         "declare": "If there is not a friendly Cadaverous Barricade on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Cadaverous Barricade wholly within 18\" of the caster and visible to them.",
@@ -334,7 +336,8 @@
           "Spell",
           "Summon"
         ],
-        "casting_value": 5
+        "casting_value": 5,
+        "summons": "Cadaverous Barricade"
       }
     ]
   },
@@ -379,7 +382,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, subtract 3 from its power level."
         },
         {
@@ -415,7 +418,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "SUPREME LORD OF THE UNDEAD",
+          "name": "Supreme Lord Of The Undead",
           "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
           "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
         },
@@ -485,7 +488,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Monstrous Talons is 6."
         },
         {
@@ -533,7 +536,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "EPICENTRE OF DELUSION",
+          "name": "Epicentre Of Delusion",
           "effect": "Pick 1 of the following effects to apply until the start of your next turn: The Royal Hunt: Add 1 to wound rolls for attacks made by friendly Flesh-eater Courts units that target a Monster. Crusading Army: Add 1 to run rolls and charge rolls for friendly Flesh-eater Courts units. Defenders of the Realm: Add 1 to save rolls for friendly Flesh-eater Courts units while they are contesting an objective you control. The Grand Tournament: Add 1 to hit rolls for attacks made by other friendly Flesh-eater Courts Heroes if they charged in the same turn."
         }
       ],
@@ -610,7 +613,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Terrorgheist's Skeletal Talons is 4."
         },
         {
@@ -714,7 +717,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
         },
         {
@@ -782,7 +785,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "DELUSION OF JUSTICE SERVED:",
+          "name": "Delusion Of Justice Served",
           "description": "Should an enemy transgress Ushoran's laws, Gormayne's powerful oratory is quick to condemn them.",
           "declare": "Pick a visible enemy unit to be the target.",
           "effect": "Roll a dice. On a 3+, pick 1 of the following effects to apply to the target until the start of your next turn: Petty Transgression: Add 1 to wound rolls for combat attacks that target that unit. Dishonourable Conduct in Battle: Friendly non-Monster Flesh-eater Courts units can use Charge abilities even if they used a Run ability in the same turn, but if they do so, they must end the charge move within \u00bd\" of the target. Grievous Insult to the Court: While the target is in combat with a friendly Abhorrant, add 1 to hit rolls for attacks made by friendly Flesh-eater Courts units that target that unit. Regicide: If the target destroyed a friendly Abhorrant this battle, add 1 to the Damage characteristic of melee weapons used by friendly Flesh-eater Courts units that target that unit."
@@ -822,7 +825,7 @@
           "phases": [
             "Your Movement Phase"
           ],
-          "name": "ROYAL HUNTING PARTY:",
+          "name": "Royal Hunting Party",
           "description": "A Gorewarden is responsible for patrolling the borders of their liege's greater territory, leading flights of warriors to suddenly fall upon and eviscerate trespassers.",
           "declare": "If this unit is not in combat, you can pick up to 2 friendly Crypt Flayers or Morbheg Knights units that are not in combat and are wholly within 12\" of this unit to be the targets.",
           "effect": "Remove this unit and the targets (if any) from the battlefield. Set up this unit again on the battlefield more than 9\" from all enemy units. Then, set up each target wholly within 12\" of this unit and more than 9\" from all enemy units.",
@@ -883,7 +886,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "DON'T SHOOT THE MESSENGER:",
+          "name": "Don'T Shoot The Messenger",
           "description": "Marrowscroll Heralds are viewed as divine messengers by their ghoulish minions, who will go to any lengths to protect them.",
           "effect": "While this unit is not in combat and is wholly within the combat ranges of 3 or more other friendly Flesh-eater Courts Infantry models, it is not visible to enemy units."
         }
@@ -1298,7 +1301,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "MIND-SHATTERING CACOPHONY:",
+          "name": "Mind-Shattering Cacophony",
           "description": "When a Crypt Infernal Courtier directs their retinue to focus their death screams on an enemy, the resulting discordant soundwaves can fell the mightiest of foes.",
           "effect": "If any enemy models were slain by this unit's Piercing Death Screech this turn, for the rest of the turn, add 1 to the Damage characteristic of ranged weapons used by friendly Crypt Flayers units while they are wholly within 12\" of this unit."
         }
@@ -1337,7 +1340,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "Knightly Exemplar",
+          "name": "Noble Blood Knightly Exemplar",
           "description": "Witnessing a Crypt Haunter Courtier's frenzied, blood- spraying assault sends the warriors in their pack into a murderous frenzy.",
           "effect": "Pick a friendly Crypt Horrors unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
         }
@@ -1558,7 +1561,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
         },
         {
@@ -1655,7 +1658,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Skeletal Talons is 4."
         },
         {
@@ -1909,8 +1912,8 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "RULER OF ALL THEY SURVEY: A",
-          "description": "Charnel Throne forms a nexus of delusion, and a cannibal champion seated upon such a grisly construct becomes convinced of their own grandeur.",
+          "name": "Ruler Of All They Survey",
+          "description": "A Charnel Throne forms a nexus of delusion, and a cannibal champion seated upon such a grisly construct becomes convinced of their own grandeur.",
           "effect": "Give D3 noble deeds points to this terrain feature's Steward."
         }
       ],

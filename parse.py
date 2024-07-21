@@ -436,16 +436,14 @@ def parse_ability(text):
     for line in text.splitlines():
         line = tidy_string(line)
 
-        # Check whether we've moved onto a new stage first
-        if "name" not in ability and line.isupper():
-            ability["name"] = line
-            stage = "Name"
-            continue
-            
-        if ":" in line and line.split(":")[0].isupper():
+        if ("name" not in ability and line.isupper()) or (":" in line and line.split(":")[0].isupper()):
             split = line.split(":")
-            ability["name"] = split[0].title()
-            if len(split) > 0:
+            if "name" in ability:
+                ability["name"] += " " + split[0].title()
+            else:
+                ability["name"] = split[0].title()
+
+            if len(split) > 1:
                 ability["description"] = split[1]
 
             stage = "Name"
@@ -555,6 +553,9 @@ def parse_ability(text):
 
     if "keywords" in ability:
         ability["keywords"] = [k for k in ability["keywords"] if k != ""]
+
+        if "Summon" in ability["keywords"]:
+            ability["summons"] = ability["name"].split("Summon ")[1]
 
     return ability
 

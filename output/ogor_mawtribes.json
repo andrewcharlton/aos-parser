@@ -139,7 +139,7 @@
         "Any Combat Phase",
         "End of Any Turn"
       ],
-      "name": "TOUCHED BY THE EVERWINTER:",
+      "name": "Touched By The Everwinter",
       "description": "This warrior strayed close to the heart of the Everwinter and emerged with the power to commune with it.",
       "effect": "If this unit is not a Priest, it has Priest (1). If this unit is already a Priest, you can re-roll chanting rolls of 1 for it instead. If this unit is a Wizard, it cannot use Spell abilities and Prayer abilities in the same phase."
     }
@@ -175,7 +175,7 @@
       "phases": [
         "Any Shooting Phase"
       ],
-      "name": "ELIXIR OF THE FROSTW YR M:",
+      "name": "Elixir Of The Frostw Yr M",
       "description": "Distilled from the blood of a giant Frostwyrm, this rare elixir temporarily gives the drinker the power of those beasts to vomit forth a torrent of frost magic.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
       "effect": "Roll a dice. Inflict an amount of mortal damage on the target equal to the roll. Then, Heal (X) this unit, where X is an amount equal to the roll."
@@ -247,7 +247,7 @@
         "phases": [
           "Your Hero Phase"
         ],
-        "name": "PULVERISING HAILSTOR M:",
+        "name": "Pulverising Hailstor M",
         "description": "Fist-sized chunks of ice rain from the sky to crush those below.",
         "declare": "Pick a friendly Ogor Mawtribes Priest to chant this prayer, pick a point on the battlefield within 12\" of them, then pick each visible enemy unit within 3\" of that point to be the targets. Then, make a chanting roll of D6.",
         "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If the chanting roll was 10+, double the amount of mortal damage inflicted.",
@@ -323,7 +323,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "The Shield Inviolate",
+          "name": "Battle Damaged The Shield Inviolate",
           "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
           "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
         },
@@ -425,7 +425,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "BULLY OF THE FIRST DEGREE:",
+          "name": "Bully Of The First Degree",
           "description": "Tyrants use constant violence to help them maintain an iron rule, and they never let their underlings forget it.",
           "declare": "Pick another friendly Ogor Mawtribes unit wholly within 12\" of this unit to be the target.",
           "effect": "Add 3 to the target's control score until the start of your next turn."
@@ -1138,7 +1138,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
         },
         {
@@ -1146,7 +1146,7 @@
           "phases": [
             "Any Charge Phase"
           ],
-          "name": "EARTH-SHATTERING CHARGE:",
+          "name": "Earth-Shattering Charge",
           "description": "Enemies are crushed and trampled beneath the unstoppable ferocity of a Frostlord upon a charging Stonehorn.",
           "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
           "effect": "Inflict D3 mortal damage on the target. Then, roll 2D6. This unit can move a distance up to the value of the roll. During that move, it can pass through models in the target unit but must end that move in combat.",
@@ -1246,7 +1246,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
         },
         {
@@ -1363,7 +1363,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
         },
         {
@@ -1490,7 +1490,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
         },
         {
@@ -1604,7 +1604,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stonehorn's Rock-hard Horns is 4."
         },
         {
@@ -1732,7 +1732,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BATTLE DAMAGED",
+          "name": "Battle Damaged",
           "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Thundertusk's Colossal Tusks is 2."
         },
         {
@@ -1861,7 +1861,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "HUNTERS OF THE FROZEN WILDS:",
+          "name": "Hunters Of The Frozen Wilds",
           "description": "The coats of Frost Sabres act as a natural camouflage in the bleak wilderness.",
           "effect": "This unit is not visible to enemy units while it is within 3\" of a terrain feature and more than 9\" from all enemy units."
         },
@@ -1876,7 +1876,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "BEAST",
+          "name": "Beast",
           "effect": "This unit has a maximum control score of 1."
         }
       ],
@@ -1939,7 +1939,7 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "LUMPEN WALL OF FLESH:",
+          "name": "Lumpen Wall Of Flesh",
           "description": "Mournfangs and their riders provide a living shield for the other ogors, soaking up and foiling incoming ranged fire with their thick, furry hides and broad profiles.",
           "effect": "Subtract 1 from wound rolls for shooting attacks that target friendly Beastclaw Raiders units while they are within this unit's combat range."
         },
@@ -2106,7 +2106,7 @@
           "phases": [
             "Your Hero Phase"
           ],
-          "name": "VESSEL OF THE GULPING GOD:",
+          "name": "Vessel Of The Gulping God",
           "description": "Swirling gastromantic fumes emanate from the Great Mawpot when it is full to the brim.",
           "declare": "If the Great Mawpot is full, pick a friendly Ogor Wizard within 3\" of it to be the target.",
           "effect": "Add 1 to the power level of the target for the rest of the turn."
@@ -2145,8 +2145,8 @@
             "Any Combat Phase",
             "End of Any Turn"
           ],
-          "name": "ALTAR OF THE GULPING GOD: A",
-          "description": "Mawpit is a tooth-lined sinkhole in which the aggressive nature of Ghur has become manifest. They are used a places of worship by the ogors, who constantly hurl gory sacrifices into their chomping orifices.",
+          "name": "Altar Of The Gulping God",
+          "description": "A Mawpit is a tooth-lined sinkhole in which the aggressive nature of Ghur has become manifest. They are used a places of worship by the ogors, who constantly hurl gory sacrifices into their chomping orifices.",
           "effect": "While this terrain feature has a Head Butcher: * The Head Butcher cannot use Move abilities. * Instead of measuring range or visibility to the Head Butcher, measure to this terrain feature instead. * All attacks that would target the Head Butcher target this terrain feature instead. * If this terrain feature is destroyed, before removing it from the battlefield, inflict D3 mortal damage on the Head Butcher. Then, set up the Head Butcher on the battlefield wholly within 3\" of this terrain feature and not in combat. That unit is no longer a Head Butcher. If it is not possible to set up the Head Butcher, it is slain."
         },
         {
