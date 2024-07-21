@@ -1,15 +1,18 @@
 {
   "battle_traits": [
     {
-      "phases": ["Deployment Phase"],
+      "phases": [
+        "Deployment Phase"
+      ],
       "name": "Masters Of Destiny",
       "description": "To serve the Changer of the Ways is to instinctively understand the ebb and flow of future events and be able to manipulate their potential to the fullest.",
       "effect": "Roll 9 dice and place them to one side. These are your destiny dice. Destiny dice can be spent during the battle to change certain dice rolls. You can never have more than 9 destiny dice at once. During the battle, instead of making a roll from the list below for a friendly Disciples of Tzeentch unit, you can spend your destiny dice. The roll you would have made is replaced with the roll on the destiny dice you spend. If you want to replace a 2D6 roll, 3D6 roll, etc. you must spend a number of destiny dice equal to the number before 'D6'. Any rolls that have been replaced count as unmodified rolls, and they cannot be re-rolled, they cannot be changed and they cannot be modified by other friendly abilities (but they can be modified by enemy abilities). You cannot spend destiny dice to replace re-rolls. Destiny dice can be spent in place of the following dice rolls: * Casting rolls * Unbinding rolls * Banishment rolls * Run rolls * Charge rolls in your turn * Hit rolls * Wound rolls * Save rolls"
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Shooting Phase"],
+      "phases": [
+        "Any Shooting Phase"
+      ],
       "name": "CONFLAGRATION OF TZEENTCH:",
       "description": "Many worshippers of Tzeentch desire one thing above all: to engulf the realms in an inferno of wyrdflame and watch in gleeful amusement as the world burns.",
       "declare": "Pick an enemy unit that had any damage points allocated to it this turn by Wyrdflame Spell abilities or shooting attacks made with weapons that have the Wyrdflame weapon ability to be the target.",
@@ -17,14 +20,24 @@
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["End of Turn"],
+      "phases": [
+        "End of Any Turn"
+      ],
       "name": "Burning W Yrdflame",
       "description": "The profane flames that spew from the mouths and pointing fingers of the twisted worshippers of Tzeentch are nothing natural. Instead of merely scorching flesh, they cause horrific mutative wounds, causing skin and bones alike to bubble and twist.",
       "effect": "Roll a D3 for each Burning enemy unit. On a 2-3, inflict an amount of mortal damage on that unit equal to the roll. On a 1, that unit no longer has the Burning keyword."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Quenching The Flames",
       "description": "Those touched by wyrdflame thrash around desperately in an attempt to extinguish the mutagenic fires.",
       "effect": "If a Burning enemy unit uses an ability that would heal or return slain models to it, instead of healing or returning slain models to it, that unit no longer has the Burning keyword."
@@ -33,21 +46,39 @@
   "battle_formations": {
     "Arcanite Cabal": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Sinister Counter-Hexes",
       "description": "Arcanite cultists delight in unravelling the spellcraft of other, less blessed mages.",
       "effect": "Add 1 to unbinding rolls for friendly Arcanite units. In addition, if a friendly Arcanite unit unbinds a spell, no command points are spent for that unit to use the 'Magical Intervention' command in that phase."
     },
     "Tzaangor Coven": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Screeching Warflock",
       "description": "The promise of new-found knowledge or arcane trinkets spurs the bestial Tzaangors into a frenzy.",
       "effect": "Each time a friendly Warflock unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
     },
     "Change Host": {
       "activation": "Once Per Battle",
-      "once_per_army": true,
-      "phases": ["End of Turn"],
-      "your_turn_only": true,
+      "phases": [
+        "End of Your Turn"
+      ],
       "name": "Twist Of Fate",
       "description": "To battle a Change Host is a sanity-warping experience, for the Great Conspirator's servants make mockery of the laws of nature.",
       "declare": "Pick a friendly Disciples of Tzeentch Daemon unit that is in combat to be the target.",
@@ -55,6 +86,15 @@
     },
     "W Yrdflame Host": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Mutagenic Inferno",
       "description": "Those set ablaze by a Wyrdflame Host find their bodies writhing with possibility, stealing strength and focus from their sword-arms.",
       "effect": "Subtract 1 from wound rolls for attacks made by Burning enemy units."
@@ -63,19 +103,38 @@
   "heroic_traits": [
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Illusionist",
       "description": "This warrior uses misdirection and cunning to render their enemies clueless.",
       "effect": "Subtract 1 from hit rolls for attacks that target friendly units while they are wholly within this unit's combat range."
     },
     {
-      "phases": ["Hero Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Hero Phase"
+      ],
       "name": "Nexus Of Fate",
       "description": "Tzeentch's favoured servants manipulate what mortals consider 'destiny' as if it were a puppet.",
       "effect": "Roll a dice. You must replace 1 of your destiny dice with that roll."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Cult Demagogue",
       "description": "This cabalist's resounding spells draw the gaze of their master's minions quicker than most.",
       "effect": "If each dice in a casting roll for this unit has the same value and the spell is not miscast, add 3 to the casting roll."
@@ -84,19 +143,39 @@
   "artefacts_of_power": [
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Nine-Eyed Tome",
       "description": "Some of the most terrible arcane secrets known to the Change God are contained within this ancient tome, the surface of which is dotted with unblinking eyes.",
       "effect": "Add 1 to casting rolls and banishment rolls for this unit."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "W Yrdflame Blade",
       "description": "The flames that flicker around the bearer's blade can ignite the soul of its victim.",
       "effect": "If any damage points are allocated to an enemy unit by this unit's combat attacks, that enemy unit has the Burning keyword."
     },
     {
       "activation": "Once Per Battle",
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Ambition'S End",
       "description": "Many a sorcerer's quest to master the magical arts has ended upon this weapon's blade, for it spills not only blood but knowledge itself.",
       "declare": "Pick an enemy Wizard in combat with this unit to be the target.",
@@ -106,63 +185,88 @@
   "spell_lore": {
     "Lore Of Fate": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Glimpse The Future",
         "description": "By focusing on the skeins of potential fates, the sorcerer can glean hints as to future events and manipulate them to their advantage.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set aside any destiny dice that have a value of 6, and roll all of your other destiny dice again. If you have no destiny dice, roll a dice and add it to your destiny dice.",
-        "keywords": ["Spell", "Unlimited", "6"]
+        "keywords": [
+          "Spell",
+          "Unlimited",
+          "6"
+        ]
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Infernal Gateway",
         "description": "The sorcerer opens a portal to the Realm of Chaos, pulling enemies to their doom.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll either 4 dice or a number of dice equal to the number of destiny dice you have left, whichever is greater. For each 4+, inflict 1 mortal damage on the target.",
-        "keywords": ["Spell", "7", "7"],
+        "keywords": [
+          "Spell",
+          "7",
+          "7"
+        ],
         "casting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Shield Of Fate",
         "description": "There is little better protection than to be guided by destiny itself and to be defended by the very hand of fate.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible friendly unit wholly within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Ward (5+) until the start of your next turn. In addition, if you have 4 or more destiny dice left, subtract 1 from hit rolls for attacks that target that unit until the start of your next turn.",
-        "keywords": ["Spell"],
+        "keywords": [
+          "Spell"
+        ],
         "casting_value": 7
       }
     ],
     "Lore Of Change": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Bolt Of Tzeentch",
         "description": "This spell manifests as a prismatic beam of raw magic that tears its victims apart in a display of multispectral colour.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target.",
-        "keywords": ["Spell", "Unlimited", "Wyrdflame"]
+        "keywords": [
+          "Spell",
+          "Unlimited",
+          "Wyrdflame"
+        ]
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Fold Reality",
         "description": "The sorcerer contorts the very fabric of the cosmos, allowing their minions to slip from hither to thither in an eye-blink.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible friendly Disciples of Tzeentch unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-        "keywords": ["Spell", "6"],
+        "keywords": [
+          "Spell",
+          "6"
+        ],
         "casting_value": 7
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "TRANSFOR MED TO SPAWN:",
         "description": "Tzeentch is known as the Changer of the Ways; to be in the presence of his minions risks being mutated into a Chaos Spawn.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target. If any models are slain by this ability, pick a friendly Chaos Spawn of Tzeentch unit that is in reserve as a potential fate or that has been destroyed. If you picked a unit in reserve as a potential fate, set it up on the battlefield in combat with the target. If you picked a unit that has been destroyed, set up an identical replacement unit on the battlefield in combat with the target.",
-        "keywords": ["Spell"],
+        "keywords": [
+          "Spell"
+        ],
         "casting_value": 7
       }
     ]
@@ -170,33 +274,47 @@
   "manifestation_lore": {
     "Manifestations Of Tzeentch": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Summon Tome Of Eyes",
         "description": "With a snap of the conjurer's fingers, the Tome appears at their side from a spark of blue wyrdflame.",
         "declare": "If there is not a friendly Tome of Eyes on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Tome of Eyes wholly within 12\" of the caster and visible to them.",
-        "keywords": ["Spell", "Summon", "7"],
+        "keywords": [
+          "Spell",
+          "Summon",
+          "7"
+        ],
         "casting_value": 5
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Simulacrum",
         "description": "The wizard draws upon their understanding of change-lore to create a temporary portal for this mirage to enter the fray.",
         "declare": "If there is not a friendly Daemonic Simulacrum on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Daemonic Simulacrum wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": ["Spell", "Summon", "5"],
+        "keywords": [
+          "Spell",
+          "Summon",
+          "5"
+        ],
         "casting_value": 7
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Tzeentch",
         "description": "Brief incantations in the Dark Tongue see these burning symbols of worship spark into reality.",
         "declare": "If there is not a friendly Burning Sigil of Tzeentch on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Burning Sigil of Tzeentch wholly within 12\" of the caster and visible to them.",
-        "keywords": ["Spell", "Summon"],
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
         "casting_value": 5
       }
     ]
@@ -231,42 +349,71 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Curved Beaks is 3."
-          },
-          {
-            "activation": "Passive",
-            "name": "Mastery Of Magic",
-            "description": "To master the arcane is to embody Tzeentch's designs.",
-            "effect": "When you make a casting roll for this unit, you can change the lowest D6 to match the highest D6."
-          },
-          {
-            "activation": "Once Per Battle",
-            "reaction_condition": " You declared  the 'Tactical Gambit' ability",
-            "name": "Oracle Of Eternity",
-            "description": "Kairos's heads have insights into the future and the past.",
-            "effect": "Pick 1 of the following effects: Read the Past: You can pick 1 battle tactic that you have already attempted. Read the Future: You can pick 2 battle tactics that you have not yet attempted, but you can only complete 1 of them (even if you meet the conditions to complete both). The other does not count as having been attempted. If you do not complete either battle tactic, you can pick which does not count as having been attempted."
-          },
-          {
-            "activation": "Passive",
-            "name": "Beacon Of Sorcery",
-            "description": "Spreading his arms, Kairos saturates the area with magic.",
-            "effect": "Add 1 to casting rolls and unbinding rolls for friendly Disciples of Tzeentch Wizards while they are wholly within 12\" of this unit. 8"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Arcane Suggestion",
-            "description": "The sorcerer's victims are reduced to little more than puppets on a string.",
-            "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
-            "effect": "Pick 1 of the following effects to apply to the target until the start of your next turn: It's Hopeless: The target cannot use commands. Drop Your Weapons: Subtract 1 from hit rolls and wound rolls for the target's attacks. Kneel: Subtract 1 from save rolls for the target.",
-            "keywords": ["Spell"],
-            "casting_value": 8
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Curved Beaks is 3."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Mastery Of Magic",
+          "description": "To master the arcane is to embody Tzeentch's designs.",
+          "effect": "When you make a casting roll for this unit, you can change the lowest D6 to match the highest D6."
+        },
+        {
+          "activation": "Once Per Battle",
+          "is_reaction": true,
+          "reaction_condition": " You declared  the 'Tactical Gambit' ability",
+          "name": "Oracle Of Eternity",
+          "description": "Kairos's heads have insights into the future and the past.",
+          "effect": "Pick 1 of the following effects: Read the Past: You can pick 1 battle tactic that you have already attempted. Read the Future: You can pick 2 battle tactics that you have not yet attempted, but you can only complete 1 of them (even if you meet the conditions to complete both). The other does not count as having been attempted. If you do not complete either battle tactic, you can pick which does not count as having been attempted."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Beacon Of Sorcery",
+          "description": "Spreading his arms, Kairos saturates the area with magic.",
+          "effect": "Add 1 to casting rolls and unbinding rolls for friendly Disciples of Tzeentch Wizards while they are wholly within 12\" of this unit. 8"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Arcane Suggestion",
+          "description": "The sorcerer's victims are reduced to little more than puppets on a string.",
+          "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
+          "effect": "Pick 1 of the following effects to apply to the target until the start of your next turn: It's Hopeless: The target cannot use commands. Drop Your Weapons: Subtract 1 from hit rolls and wound rolls for the target's attacks. Kneel: Subtract 1 from save rolls for the target.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 8
+        }
       ],
       "keywords": [
         "Chaos",
@@ -343,39 +490,59 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Curved Beak is 3."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "SUMMON DAEMONS OF TZEENTCH:",
-            "description": "To challenge the fractal plans of the Architect of Fate is to face strange daemons born from chaotic sorcery itself.",
-            "declare": "Discard 1 destiny dice. Then, pick a friendly non-Hero non-Unique Disciples of Tzeentch Daemon unit that has been destroyed to be the target.",
-            "effect": "Set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 9\" of this unit and more than 9\" from all enemy units."
-          },
-          {
-            "activation": "Passive",
-            "name": "Locus Of Change",
-            "description": "The aura of instability surrounding Tzeentch's greatest daemons can send even the most focused warriors insane.",
-            "effect": "Subtract 1 from hit rolls for combat attacks that target friendly Disciples of Tzeentch Daemon units while they are wholly within 12\" of this unit. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Tzeentch'S Firestor M",
-            "description": "An apocalyptic inferno of raging wyrdflame surges from the daemon's hands to engulf its victims in a fiery maelstrom.",
-            "declare": "Pick a visible enemy unit within 18\" of the caster to be the target, then make a casting roll of 2D6.",
-            "effect": "Roll 9 dice. For each 6, inflict D3 mortal damage on the target.",
-            "keywords": ["Spell", "Wyrdflame"],
-            "casting_value": 7
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Curved Beak is 3."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "SUMMON DAEMONS OF TZEENTCH:",
+          "description": "To challenge the fractal plans of the Architect of Fate is to face strange daemons born from chaotic sorcery itself.",
+          "declare": "Discard 1 destiny dice. Then, pick a friendly non-Hero non-Unique Disciples of Tzeentch Daemon unit that has been destroyed to be the target.",
+          "effect": "Set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 9\" of this unit and more than 9\" from all enemy units."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Locus Of Change",
+          "description": "The aura of instability surrounding Tzeentch's greatest daemons can send even the most focused warriors insane.",
+          "effect": "Subtract 1 from hit rolls for combat attacks that target friendly Disciples of Tzeentch Daemon units while they are wholly within 12\" of this unit. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Tzeentch'S Firestor M",
+          "description": "An apocalyptic inferno of raging wyrdflame surges from the daemon's hands to engulf its victims in a fiery maelstrom.",
+          "declare": "Pick a visible enemy unit within 18\" of the caster to be the target, then make a casting roll of 2D6.",
+          "effect": "Roll 9 dice. For each 6, inflict D3 mortal damage on the target.",
+          "keywords": [
+            "Spell",
+            "Wyrdflame"
+          ],
+          "casting_value": 7
+        }
       ],
       "keywords": [
         "Hero",
@@ -429,23 +596,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Wake Of Fire",
-            "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
-            "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
-            "effect": "Roll a dice. On a 3+, the target has the Burning keyword."
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "Fuelling The Inferno",
-            "description": "The mere presence of a Fateskimmer causes wyrdflame to blaze brightly.",
-            "declare": "Pick up to 3 Burning enemy units within 12\" of this unit to be the targets.",
-            "effect": "Inflict 1 mortal damage on each target."
-          }
-        ]
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Wake Of Fire",
+          "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
+          "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
+          "effect": "Roll a dice. On a 3+, the target has the Burning keyword."
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "Fuelling The Inferno",
+          "description": "The mere presence of a Fateskimmer causes wyrdflame to blaze brightly.",
+          "declare": "Pick up to 3 Burning enemy units within 12\" of this unit to be the targets.",
+          "effect": "Inflict 1 mortal damage on each target."
+        }
       ],
       "keywords": [
         "Hero",
@@ -490,20 +658,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Lurid Flames",
-            "description": "The Heralds known as Changecasters summon the lurid flames of Tzeentch to engulf their foes. These screaming, living torches are thus marked as the next targets to be annihilated by the Change God's faithful.",
-            "effect": "Add 1 to hit rolls for combat attacks made by friendly units that target a Burning enemy unit within 12\" of this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "Daemonic Locus",
-            "description": "Daemons are drawn to a Changecaster's arcane aura.",
-            "effect": "Each time a friendly Disciples of Tzeentch Daemon unit wholly within 12\" of this unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Lurid Flames",
+          "description": "The Heralds known as Changecasters summon the lurid flames of Tzeentch to engulf their foes. These screaming, living torches are thus marked as the next targets to be annihilated by the Change God's faithful.",
+          "effect": "Add 1 to hit rolls for combat attacks made by friendly units that target a Burning enemy unit within 12\" of this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Daemonic Locus",
+          "description": "Daemons are drawn to a Changecaster's arcane aura.",
+          "effect": "Each time a friendly Disciples of Tzeentch Daemon unit wholly within 12\" of this unit uses the 'Rally' command, you can make 3 additional rally rolls of D6."
+        }
       ],
       "keywords": [
         "Hero",
@@ -535,29 +719,53 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "A Twisted Fate",
-            "description": "For some, their destiny is to become a mewling abomination - they just do not know it yet.",
-            "declare": "This unit must be deployed using this ability.",
-            "effect": "Set up this unit in reserve as a potential fate. It has now been deployed. Designer's Note: This unit can only be set up on the battlefield using the 'Transformed to Spawn' spell.",
-            "keywords": ["Deploy"]
-          },
-          {
-            "activation": "Passive",
-            "name": "BEAST",
-            "effect": "This unit has a maximum control score of 1."
-          },
-          {
-            "activation": "Passive",
-            "name": "Waves Of Mutation",
-            "description": "There is no limit to Tzeentch's appetite for change.",
-            "effect": "Each friendly Chaos Spawn of Tzeentch unit can be replaced any number of times."
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "A Twisted Fate",
+          "description": "For some, their destiny is to become a mewling abomination - they just do not know it yet.",
+          "declare": "This unit must be deployed using this ability.",
+          "effect": "Set up this unit in reserve as a potential fate. It has now been deployed. Designer's Note: This unit can only be set up on the battlefield using the 'Transformed to Spawn' spell.",
+          "keywords": [
+            "Deploy"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BEAST",
+          "effect": "This unit has a maximum control score of 1."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Waves Of Mutation",
+          "description": "There is no limit to Tzeentch's appetite for change.",
+          "effect": "Each friendly Chaos Spawn of Tzeentch unit can be replaced any number of times."
+        }
       ],
-      "keywords": ["Beast", "Chaos", "Disciples of Tzeentch"]
+      "keywords": [
+        "Beast",
+        "Chaos",
+        "Disciples of Tzeentch"
+      ]
     },
     {
       "name": "THE CHANGELING",
@@ -579,32 +787,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "Arch-Deceiver",
-            "description": "None can detect the veil of the Changeling. Assuming the form of comrade and ally, it reveals itself only when its plans have been made a reality.",
-            "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units. 6"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Discord And Confusion",
-            "description": "The Changeling is a master of deception and bait-and-switch tactics.",
-            "declare": "Make a casting roll of 2D6.",
-            "effect": "Subtract 1 from hit rolls for attacks that target this unit until the start of your next turn. In addition, until the start of your next turn, roll a dice each time this unit is targeted by an ability that is not an Attack ability. On a 4+, another eligible unit must be targeted by that ability instead of this unit. If it is not possible to target another unit, that ability has no effect.",
-            "keywords": ["Spell"],
-            "casting_value": 6
-          },
-          {
-            "phases": ["Hero Phase"],
-            "enemy_turn_only": true,
-            "name": "Puckish Misdirection",
-            "description": "The Changeling can manipulate the most stalwart of warriors while appearing as a trusted advisor or comrade.",
-            "declare": "Pick an enemy unit within 9\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, halve the target's Move characteristic for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Arch-Deceiver",
+          "description": "None can detect the veil of the Changeling. Assuming the form of comrade and ally, it reveals itself only when its plans have been made a reality.",
+          "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units. 6"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Discord And Confusion",
+          "description": "The Changeling is a master of deception and bait-and-switch tactics.",
+          "declare": "Make a casting roll of 2D6.",
+          "effect": "Subtract 1 from hit rolls for attacks that target this unit until the start of your next turn. In addition, until the start of your next turn, roll a dice each time this unit is targeted by an ability that is not an Attack ability. On a 4+, another eligible unit must be targeted by that ability instead of this unit. If it is not possible to target another unit, that ability has no effect.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 6
+        },
+        {
+          "phases": [
+            "Enemy Hero Phase"
+          ],
+          "name": "Puckish Misdirection",
+          "description": "The Changeling can manipulate the most stalwart of warriors while appearing as a trusted advisor or comrade.",
+          "declare": "Pick an enemy unit within 9\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, halve the target's Move characteristic for the rest of the turn."
+        }
       ],
       "keywords": [
         "Unique",
@@ -649,14 +861,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Lunatic Demise",
-            "description": "Should a Pink Horror be slain, it is capable of bursting into two smaller daemons or else detonating in a blast of wyrdflame.",
-            "effect": "Each time a model in this unit is slain, before removing the model from play, pick 1 of the following effects: Split: Pick a friendly Blue Horrors and Brimstone Horrors unit within 12\" of this unit. Return up to 2 slain Blue Horror models to that unit. Petty Vengeance: Pick an enemy unit in combat with this unit to be the target and roll a dice. On a 4+, inflict 1 mortal damage on the target."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Lunatic Demise",
+          "description": "Should a Pink Horror be slain, it is capable of bursting into two smaller daemons or else detonating in a blast of wyrdflame.",
+          "effect": "Each time a model in this unit is slain, before removing the model from play, pick 1 of the following effects: Split: Pick a friendly Blue Horrors and Brimstone Horrors unit within 12\" of this unit. Return up to 2 slain Blue Horror models to that unit. Petty Vengeance: Pick an enemy unit in combat with this unit to be the target and roll a dice. On a 4+, inflict 1 mortal damage on the target."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -722,14 +941,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Split Again",
-            "description": "Should a Blue Horror meet its end at the hands of the enemy, it is capable of splitting itself into two lesser daemons.",
-            "effect": "Each time a Blue Horror model in this unit is slain, before removing the model from play, roll a dice. On a 3+, you can add 1 Brimstone Horrors model to this unit. Designer's Note: You cannot have more than 10 Blue Horror models and 10 Brimstone Horrors models in a non-reinforced unit. You cannot have more than 20 Blue Horror models and 20 Brimstone Horrors models in a reinforced unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Split Again",
+          "description": "Should a Blue Horror meet its end at the hands of the enemy, it is capable of splitting itself into two lesser daemons.",
+          "effect": "Each time a Blue Horror model in this unit is slain, before removing the model from play, roll a dice. On a 3+, you can add 1 Brimstone Horrors model to this unit. Designer's Note: You cannot have more than 10 Blue Horror models and 10 Brimstone Horrors models in a non-reinforced unit. You cannot have more than 20 Blue Horror models and 20 Brimstone Horrors models in a reinforced unit."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -780,16 +1006,15 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Wake Of Fire",
-            "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
-            "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
-            "effect": "Roll a dice. On a 3+, the target has the Burning keyword."
-          }
-        ]
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Wake Of Fire",
+          "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
+          "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
+          "effect": "Roll a dice. On a 3+, the target has the Burning keyword."
+        }
       ],
       "keywords": [
         "War Machine",
@@ -820,21 +1045,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Slashing Fins",
-            "description": "A pack of Screamers travelling at great speed can slash and eviscerate an enemy formation to ribbons.",
-            "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
-            "effect": "Roll a dice for each model in this unit that passed across the target. For each 4+, inflict 1 mortal damage on the target."
-          },
-          {
-            "activation": "Passive",
-            "name": "BEAST",
-            "effect": "This unit has a maximum control score of 1."
-          }
-        ]
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Slashing Fins",
+          "description": "A pack of Screamers travelling at great speed can slash and eviscerate an enemy formation to ribbons.",
+          "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
+          "effect": "Roll a dice for each model in this unit that passed across the target. For each 4+, inflict 1 mortal damage on the target."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BEAST",
+          "effect": "This unit has a maximum control score of 1."
+        }
       ],
       "keywords": [
         "Beast",
@@ -877,24 +1110,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Capricious W Yrdflame",
-            "description": "The mutagenic fires expelled by Flamers are most drawn to those already ablaze with the potential for change.",
-            "effect": "Add 1 to wound rolls for this unit's shooting attacks that target a Burning enemy unit."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "TRANSMOGRIFYING BEACON:",
-            "description": "Wyrdflame shimmers and crackles around an Exalted Flamer, empowering those daemons who draw upon such energies.",
-            "declare": "Pick another friendly Exalted Flamer of Tzeentch or Flamers of Tzeentch unit within this unit's combat range to be the target.",
-            "effect": "Roll a dice. On a 3+, the target's ranged weapons have Crit (2 Hits) for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Capricious W Yrdflame",
+          "description": "The mutagenic fires expelled by Flamers are most drawn to those already ablaze with the potential for change.",
+          "effect": "Add 1 to wound rolls for this unit's shooting attacks that target a Burning enemy unit."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "TRANSMOGRIFYING BEACON:",
+          "description": "Wyrdflame shimmers and crackles around an Exalted Flamer, empowering those daemons who draw upon such energies.",
+          "declare": "Pick another friendly Exalted Flamer of Tzeentch or Flamers of Tzeentch unit within this unit's combat range to be the target.",
+          "effect": "Roll a dice. On a 3+, the target's ranged weapons have Crit (2 Hits) for the rest of the turn."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -937,14 +1177,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Capricious W Yrdflame",
-            "description": "The mutagenic fires expelled by Flamers are most drawn to those already ablaze with the potential for change.",
-            "effect": "Add 1 to wound rolls for this unit's shooting attacks that target a Burning enemy unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Capricious W Yrdflame",
+          "description": "The mutagenic fires expelled by Flamers are most drawn to those already ablaze with the potential for change.",
+          "effect": "Add 1 to wound rolls for this unit's shooting attacks that target a Burning enemy unit."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -997,34 +1244,40 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "MINIONS OF THE SILVER TOWER:",
-            "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
-            "declare": "Pick a friendly unit that has not been deployed to be the target.",
-            "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
-            "keywords": ["Deploy"]
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Book Of Profane Secrets",
-            "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
-            "declare": "Pick a friendly unit in a Silver Tower to be the target.",
-            "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "ARCANE IMPRISONMENT:",
-            "description": "Gaunt Summoners delight in banishing foes to their Silver Towers.",
-            "declare": "Pick an enemy Hero in combat with this unit to be the target, then make a casting roll of 2D6.",
-            "effect": "If the unmodified casting roll exceeds the target's Health characteristic, it is automatically destroyed. For the rest of the battle, that unit cannot be picked to be the target of an ability that allows a replacement unit to be set up.",
-            "keywords": ["Spell"],
-            "casting_value": 7
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "MINIONS OF THE SILVER TOWER:",
+          "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
+          "declare": "Pick a friendly unit that has not been deployed to be the target.",
+          "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
+          "keywords": [
+            "Deploy"
+          ]
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Book Of Profane Secrets",
+          "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
+          "declare": "Pick a friendly unit in a Silver Tower to be the target.",
+          "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "ARCANE IMPRISONMENT:",
+          "description": "Gaunt Summoners delight in banishing foes to their Silver Towers.",
+          "declare": "Pick an enemy Hero in combat with this unit to be the target, then make a casting roll of 2D6.",
+          "effect": "If the unmodified casting roll exceeds the target's Health characteristic, it is automatically destroyed. For the rest of the battle, that unit cannot be picked to be the target of an ability that allows a replacement unit to be set up.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 7
+        }
       ],
       "keywords": [
         "Hero",
@@ -1070,34 +1323,40 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "MINIONS OF THE SILVER TOWER:",
-            "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
-            "declare": "Pick a friendly unit that has not been deployed to be the target.",
-            "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
-            "keywords": ["Deploy"]
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Book Of Profane Secrets",
-            "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
-            "declare": "Pick a friendly unit in a Silver Tower to be the target.",
-            "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Divert Realmgate",
-            "description": "Whispering fell incantations, a Gaunt Summoner can temporarily divert the path of a realmgate, allowing malefic Chaos entities to storm the battlefield.",
-            "declare": "Make a casting roll of 2D6.",
-            "effect": "Units set up this turn using this unit's 'Book of Profane Secrets' ability can be set up wholly within 18\" of this unit and more than 7\" from all enemy units instead of the distances in the ability.",
-            "keywords": ["Spell"],
-            "casting_value": 7
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "MINIONS OF THE SILVER TOWER:",
+          "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
+          "declare": "Pick a friendly unit that has not been deployed to be the target.",
+          "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
+          "keywords": [
+            "Deploy"
+          ]
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Book Of Profane Secrets",
+          "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
+          "declare": "Pick a friendly unit in a Silver Tower to be the target.",
+          "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Divert Realmgate",
+          "description": "Whispering fell incantations, a Gaunt Summoner can temporarily divert the path of a realmgate, allowing malefic Chaos entities to storm the battlefield.",
+          "declare": "Make a casting roll of 2D6.",
+          "effect": "Units set up this turn using this unit's 'Book of Profane Secrets' ability can be set up wholly within 18\" of this unit and more than 7\" from all enemy units instead of the distances in the ability.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 7
+        }
       ],
       "keywords": [
         "Hero",
@@ -1150,21 +1409,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Magic-Touched",
-            "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
-            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "MASTER OF THE BLAZING SKIES:",
-            "description": "A Magister takes to the air surrounded by sorcerers and minions riding daemonic Discs.",
-            "effect": "While they are within this unit's combat range, friendly Disc of Tzeentch units can use Charge abilities even if they used a Run ability in the same turn."
-          }
-        ]
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Magic-Touched",
+          "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
+          "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "MASTER OF THE BLAZING SKIES:",
+          "description": "A Magister takes to the air surrounded by sorcerers and minions riding daemonic Discs.",
+          "effect": "While they are within this unit's combat range, friendly Disc of Tzeentch units can use Charge abilities even if they used a Run ability in the same turn."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1209,24 +1476,34 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "DISRUPTER OF THE ARCANE: A",
-            "description": "Curseling can reach into a spell and undo the magical forces that keep it whole.",
-            "effect": "Each time this unit unbinds a spell, roll a dice. On a 4+, subtract 1 from the power level of the enemy Wizard that used that Spell ability, to a minimum of 0, until the start of your next turn. 5"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Infusion Arcanum",
-            "description": "The sorcerer's body becomes saturated with death-dealing energies, transforming even the frailest warlock into a truly formidable adversary.",
-            "declare": "Make a casting roll of 2D6.",
-            "effect": "Until the start of your next turn, add 1 to the Rend and Damage characteristics of this unit's Staff of Tzeentch and Blazing Sword.",
-            "keywords": ["Spell"],
-            "casting_value": 5
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "DISRUPTER OF THE ARCANE: A",
+          "description": "Curseling can reach into a spell and undo the magical forces that keep it whole.",
+          "effect": "Each time this unit unbinds a spell, roll a dice. On a 4+, subtract 1 from the power level of the enemy Wizard that used that Spell ability, to a minimum of 0, until the start of your next turn. 5"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Infusion Arcanum",
+          "description": "The sorcerer's body becomes saturated with death-dealing energies, transforming even the frailest warlock into a truly formidable adversary.",
+          "declare": "Make a casting roll of 2D6.",
+          "effect": "Until the start of your next turn, add 1 to the Rend and Damage characteristics of this unit's Staff of Tzeentch and Blazing Sword.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 5
+        }
       ],
       "keywords": [
         "Hero",
@@ -1269,23 +1546,23 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Magic-Touched",
-            "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
-            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Web Of Intrigue",
-            "description": "Magisters excel in pre-empting the crude schemes of their enemies, directing their cultic minions to outmanoeuvre them in turn.",
-            "declare": "Pick an enemy unit within 12\" of this unit to be the target.",
-            "effect": "Until the start of your next turn, each time your opponent declares a Move ability for the target, before reactions are used, you can pick a friendly Arcanite unit that is not in combat and is within 12\" of the target. That friendly unit can move 3\", but it cannot move into combat during any part of that move."
-          }
-        ]
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Magic-Touched",
+          "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
+          "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Web Of Intrigue",
+          "description": "Magisters excel in pre-empting the crude schemes of their enemies, directing their cultic minions to outmanoeuvre them in turn.",
+          "declare": "Pick an enemy unit within 12\" of this unit to be the target.",
+          "effect": "Until the start of your next turn, each time your opponent declares a Move ability for the target, before reactions are used, you can pick a friendly Arcanite unit that is not in combat and is within 12\" of the target. That friendly unit can move 3\", but it cannot move into combat during any part of that move."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1337,23 +1614,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Thaumaturge Rage",
-            "description": "When wounded, the ogroid's rage gives rise to bursts of renewed energy.",
-            "effect": "Add 1 to hit rolls and wound rolls for this unit's combat attacks while it is damaged."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["End of Turn"],
-            "name": "Burning Fury",
-            "description": "As an Ogroid Thaumaturge rages and roars, the multi- hued flames of Tzeentch erupt from their totemic stave to ravage the enemy.",
-            "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this unit's combat attacks to be the target.",
-            "effect": "The target has the Burning keyword."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Thaumaturge Rage",
+          "description": "When wounded, the ogroid's rage gives rise to bursts of renewed energy.",
+          "effect": "Add 1 to hit rolls and wound rolls for this unit's combat attacks while it is damaged."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "Burning Fury",
+          "description": "As an Ogroid Thaumaturge rages and roars, the multi- hued flames of Tzeentch erupt from their totemic stave to ravage the enemy.",
+          "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this unit's combat attacks to be the target.",
+          "effect": "The target has the Burning keyword."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1394,23 +1679,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Rite Of Haste",
-            "description": "Tzaangor Shamans guide their warflocks through fell rites to push them beyond their mortal limits.",
-            "declare": "Pick a friendly Warflock unit that does not have Fly and is wholly within 12\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, for the rest of the turn, the target can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "Mutagenic Sorcery",
-            "description": "As warriors fall around the Tzaangor, some mutate to become the creature that struck them down.",
-            "declare": "Pick an enemy unit within 12\" of this unit to be the enemy target. Then, pick a friendly Tzaangors unit in combat with that enemy unit to be the friendly target.",
-            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the enemy target equal to the roll. * Return a number of slain models to the friendly target equal to the roll."
-          }
-        ]
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Rite Of Haste",
+          "description": "Tzaangor Shamans guide their warflocks through fell rites to push them beyond their mortal limits.",
+          "declare": "Pick a friendly Warflock unit that does not have Fly and is wholly within 12\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, for the rest of the turn, the target can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "Mutagenic Sorcery",
+          "description": "As warriors fall around the Tzaangor, some mutate to become the creature that struck them down.",
+          "declare": "Pick an enemy unit within 12\" of this unit to be the enemy target. Then, pick a friendly Tzaangors unit in combat with that enemy unit to be the friendly target.",
+          "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the enemy target equal to the roll. * Return a number of slain models to the friendly target equal to the roll."
+        }
       ],
       "keywords": [
         "Chaos",
@@ -1465,22 +1751,30 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Guided By The Future",
-            "description": "The attacks of these warriors are directed by glimpses of the future.",
-            "effect": "Ignore negative modifiers to hit rolls and wound rolls for this unit's shooting attacks."
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "Judgement From Afar",
-            "description": "To be struck by an Arrow of Fate is to be judged by destiny itself.",
-            "declare": "Pick an enemy unit that had any damage points allocated to it by this unit's attacks this phase to be the target.",
-            "effect": "Add 1 to hit rolls for combat attacks made by friendly Warflock units that target that enemy unit for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Guided By The Future",
+          "description": "The attacks of these warriors are directed by glimpses of the future.",
+          "effect": "Ignore negative modifiers to hit rolls and wound rolls for this unit's shooting attacks."
+        },
+        {
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "Judgement From Afar",
+          "description": "To be struck by an Arrow of Fate is to be judged by destiny itself.",
+          "declare": "Pick an enemy unit that had any damage points allocated to it by this unit's attacks this phase to be the target.",
+          "effect": "Add 1 to hit rolls for combat attacks made by friendly Warflock units that target that enemy unit for the rest of the turn."
+        }
       ],
       "keywords": [
         "Chaos",
@@ -1522,14 +1816,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Screeching Raiders",
-            "description": "Tzaangor flocks are ferocious when ransacking enemy territory for arcane secrets.",
-            "effect": "While this unit is wholly within enemy territory, its weapons have Crit (2 Hits)."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Screeching Raiders",
+          "description": "Tzaangor flocks are ferocious when ransacking enemy territory for arcane secrets.",
+          "effect": "While this unit is wholly within enemy territory, its weapons have Crit (2 Hits)."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1562,15 +1863,15 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Charge Phase"],
-            "name": "BABBLING STREAM OF SECRETS:",
-            "description": "The dark truths revealed by the Tzaangor Enlightened utterly unnerve the foe.",
-            "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
-            "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "BABBLING STREAM OF SECRETS:",
+          "description": "The dark truths revealed by the Tzaangor Enlightened utterly unnerve the foe.",
+          "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
+          "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1610,14 +1911,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Guided By The Past",
-            "description": "These warriors see at once every moment that led to the present and seek retribution against those who set the chain of events in motion.",
-            "effect": "This unit's Tzeentchian Spears and Vicious Beaks have Charge (+1 Damage) if you are the underdog or it was determined at the start of the battle round that you would take the second turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Guided By The Past",
+          "description": "These warriors see at once every moment that led to the present and seek retribution against those who set the chain of events in motion.",
+          "effect": "This unit's Tzeentchian Spears and Vicious Beaks have Charge (+1 Damage) if you are the underdog or it was determined at the start of the battle round that you would take the second turn."
+        }
       ],
       "keywords": [
         "Chaos",
@@ -1671,21 +1979,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vulcharc",
-            "description": "Especially talented Kairic Acolytes are gifted with magic-eating Vulcharcs that act as familiars.",
-            "effect": "While this unit includes any models accompanied by Vulcharcs, subtract 1 from casting rolls for enemy Wizards within 12\" of this unit."
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "Gestalt Sorcery",
-            "description": "Through combined worship, a cult of Acolytes can swell their arcane power to new levels of ferocity.",
-            "effect": "If this unit includes any models carrying a Scroll of Dark Arts, roll a dice. Add 1 to the roll for each other friendly Kairic Acolytes unit within this unit's combat range. On a 5+, add 1 to the Rend characteristic of this unit's Sorcerous Bolts for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vulcharc",
+          "description": "Especially talented Kairic Acolytes are gifted with magic-eating Vulcharcs that act as familiars.",
+          "effect": "While this unit includes any models accompanied by Vulcharcs, subtract 1 from casting rolls for enemy Wizards within 12\" of this unit."
+        },
+        {
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "Gestalt Sorcery",
+          "description": "Through combined worship, a cult of Acolytes can swell their arcane power to new levels of ferocity.",
+          "effect": "If this unit includes any models carrying a Scroll of Dark Arts, roll a dice. Add 1 to the roll for each other friendly Kairic Acolytes unit within this unit's combat range. On a 5+, add 1 to the Rend characteristic of this unit's Sorcerous Bolts for the rest of the turn."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1745,20 +2061,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Stone-Cursed Resolve",
-            "description": "These rock-skinned warriors are virtually impossible to move against their will.",
-            "effect": "Ignore all modifiers to save rolls for this unit (positive and negative)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Cast Down The Idol",
-            "description": "The Jade Obelisk turn former tools of construction upon blasphemous effigies, rendering them little more than rubble.",
-            "effect": "Add 1 to the Damage characteristic of this unit's melee weapons for attacks that target Faction Terrain."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Stone-Cursed Resolve",
+          "description": "These rock-skinned warriors are virtually impossible to move against their will.",
+          "effect": "Ignore all modifiers to save rolls for this unit (positive and negative)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Cast Down The Idol",
+          "description": "The Jade Obelisk turn former tools of construction upon blasphemous effigies, rendering them little more than rubble.",
+          "effect": "Add 1 to the Damage characteristic of this unit's melee weapons for attacks that target Faction Terrain."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1776,15 +2108,15 @@
       "banishment": "7+",
       "weapons": {},
       "abilities": [
-        [
-          {
-            "phases": ["Movement Phase"],
-            "name": "RADIANT TRANSMOGRIFICATION:",
-            "description": "The Burning Sigil channels the energies of the Impossible Fortress; with each pulse comes a handful of blessings and curses as fickle as the bastion's master.",
-            "declare": "This Manifestation must use this ability in each movement phase. Pick each unit (friendly and enemy) within 9\" of this Manifestation to be the targets.",
-            "effect": "Roll 2 dice, pick either result, then apply the corresponding effect to all targets for the rest of the turn. 1-2 No effect. 3 Subtract 2\" from the target's Move characteristic. 4 Subtract 1 from hit rolls for the target's attacks. 5 Subtract 1 from wound rolls for the target's attacks. 6 Inflict D3 mortal damage on the target, then add 1 to the Attacks characteristic of the target's melee weapons."
-          }
-        ]
+        {
+          "phases": [
+            "Any Movement Phase"
+          ],
+          "name": "RADIANT TRANSMOGRIFICATION:",
+          "description": "The Burning Sigil channels the energies of the Impossible Fortress; with each pulse comes a handful of blessings and curses as fickle as the bastion's master.",
+          "declare": "This Manifestation must use this ability in each movement phase. Pick each unit (friendly and enemy) within 9\" of this Manifestation to be the targets.",
+          "effect": "Roll 2 dice, pick either result, then apply the corresponding effect to all targets for the rest of the turn. 1-2 No effect. 3 Subtract 2\" from the target's Move characteristic. 4 Subtract 1 from hit rolls for the target's attacks. 5 Subtract 1 from wound rolls for the target's attacks. 6 Inflict D3 mortal damage on the target, then add 1 to the Attacks characteristic of the target's melee weapons."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -1814,14 +2146,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Manifested Jaws",
-            "description": "The Simulacrum feeds upon the minds of any beings in its path and is especially drawn to sources of the arcane.",
-            "effect": "While this Manifestation's attacks target a Wizard, add a number equal to that Wizard's power level to the Damage characteristic of this unit's Snapping Jaws."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Manifested Jaws",
+          "description": "The Simulacrum feeds upon the minds of any beings in its path and is especially drawn to sources of the arcane.",
+          "effect": "While this Manifestation's attacks target a Wizard, add a number equal to that Wizard's power level to the Damage characteristic of this unit's Snapping Jaws."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -1839,17 +2178,7 @@
       "save": "4+",
       "banishment": "7+",
       "weapons": {},
-      "abilities": [
-        [
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Spell ability  for a Wizard within this Manifestation's combat range ",
-            "name": "Eyes",
-            "description": "As the Tome flicks through its endless pages, it peers into the mind of its summoner, giving knowledge to the loyal and punishing the insatiable as it sees fit.",
-            "effect": "You can add 1 or 2 to the casting roll for that spell. Roll a number of dice equal to the amount added. For each 1-2, allocate 1 damage point to the caster. If the caster is destroyed by this ability, the spell has no effect."
-          }
-        ]
-      ],
+      "abilities": [],
       "keywords": [
         "Manifestation",
         "Endless Spell",

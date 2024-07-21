@@ -2,8 +2,9 @@
   "battle_traits": [
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["End of Turn"],
+      "phases": [
+        "End of Any Turn"
+      ],
       "name": "Endless Growth",
       "description": "Flourishing groves underfoot bring a surge of rebirth to the Sylvaneth. Their forms are invigorated with restorative sapwood.",
       "declare": "Pick any number of friendly Sylvaneth units wholly within 6\" of a friendly Awakened Wyldwood to be the targets.",
@@ -11,50 +12,82 @@
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["End of Turn"],
+      "phases": [
+        "End of Any Turn"
+      ],
       "name": "Strike And Fade",
       "description": "These warriors use the spirit paths to ambush the enemy before retreating back into the shadows.",
       "declare": "Pick a friendly Sylvaneth unit that is in combat and is wholly within 6\" of a friendly Awakened Wyldwood to use this ability.",
       "effect": "Remove that unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units and wholly within 6\" of a different friendly Awakened Wyldwood.",
-      "keywords": ["Core"]
+      "keywords": [
+        "Core"
+      ]
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Movement Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Movement Phase"
+      ],
       "name": "WALK THE HIDDEN PATHS:",
       "description": "Sylvaneth can draw upon the magic of the Wyldwoods to open hidden passageways across the battlefield.",
       "declare": "Pick a friendly Sylvaneth unit that is not in combat and is wholly within 6\" of a friendly Awakened Wyldwood to use this ability.",
       "effect": "Remove that unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units and wholly within 6\" of a different friendly Awakened Wyldwood.",
-      "keywords": ["Core"]
+      "keywords": [
+        "Core"
+      ]
     }
   ],
   "battle_formations": {
     "Lords Of The Clan": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Healing Song",
       "description": "The spirit-song surges through the Lords of the Clan like a raging river. As they stride across the battlefield, the Treelords harness that energy to further rejuvenate their forms.",
       "effect": "When using the 'Endless Growth' ability, friendly Sylvaneth Monsters can Heal (3) instead of Heal (D3)."
     },
     "Outcasts": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "The Terror In The Eaves",
       "description": "The Outcasts are the terrors that lurk in the shadows, the creeping things beneath the forest eaves. When great masses of them surge into battle, it is all the enemy can do to avoid dying of sheer fright.",
       "effect": "Subtract 3 from the control scores of enemy units while they are in combat with friendly Sylvaneth units."
     },
     "Forest Folk": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Lacerating Strike",
       "description": "Moving quickly through the undergrowth, the Forest Folk plunge into battle. Attacking from every side, multiple bands of infantry lash their victims to bloody tatters.",
       "effect": "Add 1 to the Rend characteristic of melee weapons used by friendly Sylvaneth non-Kurnothi Infantry units that charged in the same turn."
     },
     "Free Spirits": {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Charge Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Charge Phase"
+      ],
       "name": "Fleet And Swift",
       "description": "The Free Spirits are the instruments of Alarielle's will, a cadre of elite warriors whose presence hones the Sylvaneth into a weapon of singular purpose that brings swift retribution.",
       "declare": "Pick a friendly Sylvaneth Cavalry unit to use this ability.",
@@ -63,15 +96,9 @@
   },
   "heroic_traits": [
     {
-      "activation": "Reaction",
-      "reaction_condition": " Opponent declared a Spell or  Prayer ability",
-      "name": "Radiant Spirit",
-      "description": "Shielding emerald energy surrounds this hero like a leafy sanctuary. Used By: This unit if it is wholly within 12\" of a friendly Sylvaneth unit picked to be the target of that spell or prayer.",
-      "effect": "Roll a dice. On a 3+, ignore the effect of that spell or prayer on that unit. This unit can use this ability more than once per phase but only once per Spell or Prayer ability."
-    },
-    {
-      "phases": ["Movement Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Movement Phase"
+      ],
       "name": "Warsinger",
       "description": "This general spurs on Alarielle's children with stirring songs.",
       "declare": "Pick a friendly Sylvaneth unit wholly within 12\" of this unit to be the target.",
@@ -79,6 +106,15 @@
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Spellsinger",
       "description": "This hero draws on the magical power of the Awakened Wyldwoods.",
       "effect": "While this unit is within the combat range of an Awakened Wyldwood: If this unit is a Wizard, add 1 to casting rolls for this unit. If this unit is not a Wizard, it has Wizard (1) instead."
@@ -87,19 +123,32 @@
   "artefacts_of_power": [
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Seed Of Rebirth",
       "description": "Should its bearer ever fall, the seed's rejuvenating energies will pour into its host to grant them new life.",
       "effect": "If this unit would be destroyed, before removing it from play, roll a dice. On a 3+, this unit is not destroyed and any remaining damage points inflicted on it have no effect. Then, Heal (1) this unit. This unit cannot use this ability again for the rest of the battle."
     },
     {
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Greenwood Gladius",
       "description": "This blade strikes with the youthful vigour of springtime.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
     },
     {
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Crown Of Fell Bowers",
       "description": "Rooted in this elegant circlet, a canopy of spectral branches forms above the foe, rendering them strangely vulnerable to the enchanted weapons of the Sylvaneth.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -109,32 +158,45 @@
   "spell_lore": {
     "Lore Of The Deepwood": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Treesong",
         "description": "Sylvaneth wizards have a strong spiritual connection to the wyldwoods and can call forth these eldritch copses at a whim.",
         "declare": "Pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "If there are fewer than 3 friendly Awakened Wyldwoods on the battlefield, you can set up an Awakened Wyldwood wholly within 18\" of the caster and more than 3\" from all enemy units, objectives and other terrain features. If there are already 3 friendly Awakened Wyldwoods on the battlefield, Heal (3) each friendly Awakened Wyldwood.",
-        "keywords": ["Spell", "Unlimited", "6"]
+        "keywords": [
+          "Spell",
+          "Unlimited",
+          "6"
+        ]
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Wrathful Spirits",
         "description": "The caster implores the simple spirits of the Wyldwoods to guide the blades of their allies and expose the weaknesses of the foe.",
         "declare": "Pick a friendly Sylvaneth Wizard to cast this spell, pick a friendly Awakened Wyldwood wholly within 18\" of the caster to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, add 1 to the Rend characteristic of melee weapons used by friendly Sylvaneth units while they are wholly within 6\" of the target.",
-        "keywords": ["Spell", "6", "7"],
+        "keywords": [
+          "Spell",
+          "6",
+          "7"
+        ],
         "casting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "The Dwellers Below",
         "description": "Drawing upon the darkest and most spiteful aspects of nature's power, the caster summons a seething swarm of tendrils from beneath the ground.",
         "declare": "Pick a friendly Sylvaneth Wizard to cast this spell, pick a visible enemy unit that is either within 12\" of this unit or within 6\" of an Awakened Wyldwood to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target unit.",
-        "keywords": ["Spell"],
+        "keywords": [
+          "Spell"
+        ],
         "casting_value": 7
       }
     ]
@@ -142,33 +204,45 @@
   "manifestation_lore": {
     "Manifestations Of The Deepwood": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "SUMMON SPITESWAR M HIVE:",
         "description": "The air is filled with the buzzing of a thousand wings as a swarm of iridescent insects bursts from its hive.",
         "declare": "If there is not a friendly Spiteswarm Hive on the battlefield, pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Spiteswarm Hive wholly within 9\" of the caster, visible to them and more than 3\" from all enemy units.",
-        "keywords": ["Spell", "Summon"],
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
         "casting_value": 7
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Skullroot",
         "description": "From the shadows comes a nightmarish form, a huge, black-limbed tree clutching piles of bleached skulls within its tangled roots.",
         "declare": "If there is not a friendly Vengeful Skullroot on the battlefield, pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Vengeful Skullroot wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": ["Spell", "Summon"],
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
         "casting_value": 7
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Summon Gladew Yr M",
         "description": "The earth splits apart as a sleek, serpentine form heaves itself free, eyes blazing with arcane energies.",
         "declare": "If there is not a friendly Gladewyrm on the battlefield, pick a friendly Sylvaneth Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Gladewyrm wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": ["Spell", "Summon"],
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
         "casting_value": 7
       }
     ]
@@ -215,47 +289,63 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Wardroth's Great Antlers is 4."
-          },
-          {
-            "phases": ["Hero Phase"],
-            "name": "Lifebloom",
-            "description": "The restorative energies of Ghyran heal Alarielle's wounds.",
-            "effect": "Pick 1 of the following effects: * Add 1 to casting rolls for this unit for the rest of the turn. * Heal (2D3) this unit. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Metamorphosis",
-            "description": "With a glare, Alarielle's foes transform into living wood.",
-            "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
-            "effect": "Inflict 2D3 mortal damage on the target. If the target is destroyed by this spell, you can immediately resolve the effect of the 'Treesong' spell as if this unit had successfully cast it.",
-            "keywords": ["Spell"],
-            "casting_value": 7
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Rite Of Life",
-            "description": "Wherever the Everqueen goes, so too does the power of her great rite.",
-            "declare": "Pick a friendly Sylvaneth unit that has been destroyed to be the target. This unit can use this ability if it has been destroyed, but if it does, this unit must be the target.",
-            "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 9\" of a friendly Awakened Wyldwood and more than 9\" from all enemy units. If the target was a Monster, allocate 8 damage points to the replacement unit (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Charge Phase"],
-            "name": "Living Battering Ram",
-            "description": "A charging Wardroth Beetle tramples all in its path.",
-            "declare": "If this unit charged this turn, pick an enemy Infantry unit within 1\" of it to be the target.",
-            "effect": "Roll a dice. On a 3+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": ["Rampage"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Wardroth's Great Antlers is 4."
+        },
+        {
+          "phases": [
+            "Any Hero Phase"
+          ],
+          "name": "Lifebloom",
+          "description": "The restorative energies of Ghyran heal Alarielle's wounds.",
+          "effect": "Pick 1 of the following effects: * Add 1 to casting rolls for this unit for the rest of the turn. * Heal (2D3) this unit. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Metamorphosis",
+          "description": "With a glare, Alarielle's foes transform into living wood.",
+          "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
+          "effect": "Inflict 2D3 mortal damage on the target. If the target is destroyed by this spell, you can immediately resolve the effect of the 'Treesong' spell as if this unit had successfully cast it.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 7
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Rite Of Life",
+          "description": "Wherever the Everqueen goes, so too does the power of her great rite.",
+          "declare": "Pick a friendly Sylvaneth unit that has been destroyed to be the target. This unit can use this ability if it has been destroyed, but if it does, this unit must be the target.",
+          "effect": "Roll a dice. On a 4+, set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 9\" of a friendly Awakened Wyldwood and more than 9\" from all enemy units. If the target was a Monster, allocate 8 damage points to the replacement unit (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Living Battering Ram",
+          "description": "A charging Wardroth Beetle tramples all in its path.",
+          "declare": "If this unit charged this turn, pick an enemy Infantry unit within 1\" of it to be the target.",
+          "effect": "Roll a dice. On a 3+, inflict an amount of mortal damage on the target equal to the roll.",
+          "keywords": [
+            "Rampage"
+          ]
+        }
       ],
       "keywords": [
         "Order",
@@ -301,34 +391,47 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Verdian Crown",
-            "description": "The power of the Everqueen herself pulses through the Lady of Vines and radiates from the ornate crown she bears.",
-            "effect": "This unit counts as an Awakened Wyldwood for the purposes of the 'Endless Growth', 'Walk the Hidden Paths' and 'Strike and Fade' abilities. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "ASPECT OF THE EVERQUEEN:",
-            "description": "The Lady of Vines channels the power of her goddess mother, shielding fellow Sylvaneth with the harnessed energies of nature.",
-            "declare": "Make a casting roll of 2D6.",
-            "effect": "Until the start of your next turn, friendly Sylvaneth units have Ward (5+) while they are wholly within 12\" of this unit.",
-            "keywords": ["Spell"],
-            "casting_value": 7
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Writhing Vines",
-            "description": "The whipping tendrils that sprout from the Lady's back can ensnare foes or confound their attacks.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply for the rest of the turn: Barrier: Subtract 1 from hit rolls for the target's attacks. Ensnare: Add 1 to hit rolls for attacks made by friendly units that target that enemy unit.",
-            "keywords": ["Rampage"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Verdian Crown",
+          "description": "The power of the Everqueen herself pulses through the Lady of Vines and radiates from the ornate crown she bears.",
+          "effect": "This unit counts as an Awakened Wyldwood for the purposes of the 'Endless Growth', 'Walk the Hidden Paths' and 'Strike and Fade' abilities. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "ASPECT OF THE EVERQUEEN:",
+          "description": "The Lady of Vines channels the power of her goddess mother, shielding fellow Sylvaneth with the harnessed energies of nature.",
+          "declare": "Make a casting roll of 2D6.",
+          "effect": "Until the start of your next turn, friendly Sylvaneth units have Ward (5+) while they are wholly within 12\" of this unit.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 7
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Writhing Vines",
+          "description": "The whipping tendrils that sprout from the Lady's back can ensnare foes or confound their attacks.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply for the rest of the turn: Barrier: Subtract 1 from hit rolls for the target's attacks. Ensnare: Add 1 to hit rolls for attacks made by friendly units that target that enemy unit.",
+          "keywords": [
+            "Rampage"
+          ]
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -381,35 +484,42 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Hero Phase"],
-            "name": "Mercurial Aspect",
-            "description": "The Flitterfuries that dwell in Drycha's body bask in the heat of her rage, while the Squirmlings she hosts suckle at her sorrow.",
-            "effect": "Pick 1 of the following effects to apply to this unit for the rest of the turn: Enraged: Add 10 to the Attacks characteristic of this unit's Flitterfuries. Embittered: Add 10 to the Attacks characteristic of this unit's Swarm of Squirmlings."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Primal Terror",
-            "description": "Throwing back her head, Drycha gives voice to a soul-rending scream of anguish and pain.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 2+, halve the target's control score (rounding up) for the rest of the turn.",
-            "keywords": ["Rampage", "6"]
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Song Of Spite",
-            "description": "Drycha shares a special kinship with the Outcasts, who seem to echo her fury.",
-            "declare": "Pick an enemy Infantry unit within 12\" of the caster to be the target, then make a casting roll of 2D6.",
-            "effect": "The following effects apply for the rest of the turn: Add 1 to hit rolls for combat attacks made by friendly Sylvaneth units that target that enemy unit. In addition, add 1 to wound rolls for combat attacks made by friendly Spite- Revenants or The Twistweald units that target that enemy unit.",
-            "keywords": ["Spell"],
-            "casting_value": 6
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Hero Phase"
+          ],
+          "name": "Mercurial Aspect",
+          "description": "The Flitterfuries that dwell in Drycha's body bask in the heat of her rage, while the Squirmlings she hosts suckle at her sorrow.",
+          "effect": "Pick 1 of the following effects to apply to this unit for the rest of the turn: Enraged: Add 10 to the Attacks characteristic of this unit's Flitterfuries. Embittered: Add 10 to the Attacks characteristic of this unit's Swarm of Squirmlings."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Primal Terror",
+          "description": "Throwing back her head, Drycha gives voice to a soul-rending scream of anguish and pain.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 2+, halve the target's control score (rounding up) for the rest of the turn.",
+          "keywords": [
+            "Rampage",
+            "6"
+          ]
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Song Of Spite",
+          "description": "Drycha shares a special kinship with the Outcasts, who seem to echo her fury.",
+          "declare": "Pick an enemy Infantry unit within 12\" of the caster to be the target, then make a casting roll of 2D6.",
+          "effect": "The following effects apply for the rest of the turn: Add 1 to hit rolls for combat attacks made by friendly Sylvaneth units that target that enemy unit. In addition, add 1 to wound rolls for combat attacks made by friendly Spite- Revenants or The Twistweald units that target that enemy unit.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 6
+        }
       ],
       "keywords": [
         "Unique",
@@ -449,39 +559,52 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Carnelian Greatspite's Razor-like Mandibles is 3."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Rhythm Of The Chase",
-            "description": "Belthanos is a relentless hunter who harasses his quarry before fatally cutting them down.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll, then you can remove this unit from the battlefield and set it up again on the battlefield within 1\" of the target.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Start of Turn"],
-            "name": "Nature Aetheric",
-            "description": "The Carnelian Greatspite is Ghyranite magic made manifest and where it roams, the land is imbued with life-giving energy.",
-            "declare": "Pick a terrain feature within 6\" of this unit to be the target.",
-            "effect": "For the rest of the battle, the target gains the 'Place of Power' terrain ability (Terrain 1.2) and counts as a friendly Awakened Wyldwood for the purposes of the 'Endless Growth', 'Walk the Hidden Paths' and 'Strike and Fade' abilities."
-          },
-          {
-            "phases": ["Charge Phase"],
-            "your_turn_only": true,
-            "name": "Kurnothi War-Horn",
-            "description": "The sounding of Belthanos's war-horn brings forth a surging response from the hunt.",
-            "declare": "Pick up to 3 friendly Sylvaneth units to be the target.",
-            "effect": "Each target can use Charge abilities even if they used a Run ability in the same turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Carnelian Greatspite's Razor-like Mandibles is 3."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Rhythm Of The Chase",
+          "description": "Belthanos is a relentless hunter who harasses his quarry before fatally cutting them down.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll, then you can remove this unit from the battlefield and set it up again on the battlefield within 1\" of the target.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Start of Any Turn"
+          ],
+          "name": "Nature Aetheric",
+          "description": "The Carnelian Greatspite is Ghyranite magic made manifest and where it roams, the land is imbued with life-giving energy.",
+          "declare": "Pick a terrain feature within 6\" of this unit to be the target.",
+          "effect": "For the rest of the battle, the target gains the 'Place of Power' terrain ability (Terrain 1.2) and counts as a friendly Awakened Wyldwood for the purposes of the 'Endless Growth', 'Walk the Hidden Paths' and 'Strike and Fade' abilities."
+        },
+        {
+          "phases": [
+            "Your Charge Phase"
+          ],
+          "name": "Kurnothi War-Horn",
+          "description": "The sounding of Belthanos's war-horn brings forth a surging response from the hunt.",
+          "declare": "Pick up to 3 friendly Sylvaneth units to be the target.",
+          "effect": "Each target can use Charge abilities even if they used a Run ability in the same turn."
+        }
       ],
       "keywords": [
         "Unique",
@@ -513,30 +636,49 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Alarielle'S Song",
-            "description": "To the Sylvaneth, the sound that emanates from a Warsong Revenant's flute is sweet and uplifting. To their foes, it is a sonic assault of devastating potency.",
-            "effect": "Friendly Sylvaneth units have Ward (6+) while they are wholly within 12\" of this unit. Subtract 1 from ward rolls for enemy units while they are within 12\" of this unit. 7"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "UNLEASH SWAR M OF SPITES:",
-            "description": "The Warsong Revenant summons a large swarm of malicious spites that spiral outwards to attack those who have drawn their ire.",
-            "declare": "Pick a friendly Awakened Wyldwood wholly within 18\" of this unit, pick up to 3 visible enemy units within 9\" of that terrain feature to be the targets, then make a casting roll of 2D6.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": ["Spell"],
-            "casting_value": 7
-          },
-          {
-            "activation": "Passive",
-            "name": "W Yldwood Revenants",
-            "description": "Warsong Revenants are bound to nature and draw strength from the forests.",
-            "effect": "Add 1 to unbinding rolls and banishment rolls for this unit while it is wholly within 6\" of any Awakened Wyldwoods."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Alarielle'S Song",
+          "description": "To the Sylvaneth, the sound that emanates from a Warsong Revenant's flute is sweet and uplifting. To their foes, it is a sonic assault of devastating potency.",
+          "effect": "Friendly Sylvaneth units have Ward (6+) while they are wholly within 12\" of this unit. Subtract 1 from ward rolls for enemy units while they are within 12\" of this unit. 7"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "UNLEASH SWAR M OF SPITES:",
+          "description": "The Warsong Revenant summons a large swarm of malicious spites that spiral outwards to attack those who have drawn their ire.",
+          "declare": "Pick a friendly Awakened Wyldwood wholly within 18\" of this unit, pick up to 3 visible enemy units within 9\" of that terrain feature to be the targets, then make a casting roll of 2D6.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 7
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "W Yldwood Revenants",
+          "description": "Warsong Revenants are bound to nature and draw strength from the forests.",
+          "effect": "Add 1 to unbinding rolls and banishment rolls for this unit while it is wholly within 6\" of any Awakened Wyldwoods."
+        }
       ],
       "keywords": [
         "Hero",
@@ -568,22 +710,37 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Combat Phase"],
-            "name": "Crescent Shield",
-            "description": "This shield can be used both to deflect the enemy's blows and to steady the shaft of the bearer's weapon.",
-            "effect": "Pick 1 of the following effects to apply to this unit for the rest of the turn: Defensive Stance: This unit has Ward (4+). Aggressive Stance: Add 1 to the Attacks characteristic of this unit's melee weapons, and add 1 to wound rolls for this unit's combat attacks."
-          },
-          {
-            "activation": "Passive",
-            "name": "Champion Of Kurnoth",
-            "description": "An Arch-Revenant commands instant obedience and commitment from Kurnoth Hunters who are nearby.",
-            "effect": "Add 1 to wound rolls for combat attacks made by friendly Kurnothi units while they are wholly within 12\" of this unit."
-          }
-        ]
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Crescent Shield",
+          "description": "This shield can be used both to deflect the enemy's blows and to steady the shaft of the bearer's weapon.",
+          "effect": "Pick 1 of the following effects to apply to this unit for the rest of the turn: Defensive Stance: This unit has Ward (4+). Aggressive Stance: Add 1 to the Attacks characteristic of this unit's melee weapons, and add 1 to wound rolls for this unit's combat attacks."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Champion Of Kurnoth",
+          "description": "An Arch-Revenant commands instant obedience and commitment from Kurnoth Hunters who are nearby.",
+          "effect": "Add 1 to wound rolls for combat attacks made by friendly Kurnothi units while they are wholly within 12\" of this unit."
+        }
       ],
-      "keywords": ["Hero", "Infantry", "Fly", "Order", "Sylvaneth"]
+      "keywords": [
+        "Hero",
+        "Infantry",
+        "Fly",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "SPIRIT OF DURTHU",
@@ -626,31 +783,55 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Guardian Sword is 3."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Titanic Duel",
-            "description": "These ancient protectors of the forest parry and hold back the mightiest of beasts with their guardian sword.",
-            "declare": "Pick an enemy Monster in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, subtract 1 from the Attacks characteristic of the target's melee weapons for the rest of the turn.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Passive",
-            "name": "Wrathful Guardian",
-            "description": "When the sacred groves of the Sylvaneth are threatened, Spirits of Durthu fight with all the wrath of their legendary ancestor.",
-            "effect": "Add 1 to hit rolls for this unit's combat attacks while the target is within 3\" of an Awakened Wyldwood."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Guardian Sword is 3."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Titanic Duel",
+          "description": "These ancient protectors of the forest parry and hold back the mightiest of beasts with their guardian sword.",
+          "declare": "Pick an enemy Monster in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, subtract 1 from the Attacks characteristic of the target's melee weapons for the rest of the turn.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Wrathful Guardian",
+          "description": "When the sacred groves of the Sylvaneth are threatened, Spirits of Durthu fight with all the wrath of their legendary ancestor.",
+          "effect": "Add 1 to hit rolls for this unit's combat attacks while the target is within 3\" of an Awakened Wyldwood."
+        }
       ],
-      "keywords": ["Hero", "Monster", "Order", "Sylvaneth"]
+      "keywords": [
+        "Hero",
+        "Monster",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "TREELORD",
@@ -693,32 +874,49 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Lash And Tangle",
-            "description": "As a Treelord lays about themselves in combat, the whipping tendrils that shoot from their barkflesh ensnare enemies and keep them at bay with their frantic thrashing.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, subtract 1 from wound rolls for the target's attacks for the rest of the turn.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "name": "Entangling Grasp",
-            "description": "Lashing strangleroots wrap around the foe, leaving them ensnared and at the mercy of the vengeful Sylvaneth.",
-            "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Strangleroots to be the target.",
-            "effect": "Roll a dice. On a 3+, the target cannot use Run or Retreat abilities until the start of your next turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Lash And Tangle",
+          "description": "As a Treelord lays about themselves in combat, the whipping tendrils that shoot from their barkflesh ensnare enemies and keep them at bay with their frantic thrashing.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, subtract 1 from wound rolls for the target's attacks for the rest of the turn.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "Entangling Grasp",
+          "description": "Lashing strangleroots wrap around the foe, leaving them ensnared and at the mercy of the vengeful Sylvaneth.",
+          "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Strangleroots to be the target.",
+          "effect": "Roll a dice. On a 3+, the target cannot use Run or Retreat abilities until the start of your next turn."
+        }
       ],
-      "keywords": ["Hero", "Monster", "Order", "Sylvaneth"]
+      "keywords": [
+        "Hero",
+        "Monster",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "TREELORD ANCIENT",
@@ -761,35 +959,51 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Groundshaker",
-            "description": "The earth quakes as this mighty tree spirit stamps its limbs, shaking the enemy's wits.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Awakening The Wood",
-            "description": "At a Treelord Ancient's command, wyldwood trees come to life and attack with twisted branches and thorny boughs.",
-            "declare": "Pick a visible friendly Awakened Wyldwood wholly within 18\" of this unit to be the target.",
-            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage equal to the roll on each enemy unit within the target's combat range."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sweeping Blows is 3."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Groundshaker",
+          "description": "The earth quakes as this mighty tree spirit stamps its limbs, shaking the enemy's wits.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Awakening The Wood",
+          "description": "At a Treelord Ancient's command, wyldwood trees come to life and attack with twisted branches and thorny boughs.",
+          "declare": "Pick a visible friendly Awakened Wyldwood wholly within 18\" of this unit to be the target.",
+          "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage equal to the roll on each enemy unit within the target's combat range."
+        }
       ],
-      "keywords": ["Hero", "Monster", "Wizard (1)", "Order", "Sylvaneth"]
+      "keywords": [
+        "Hero",
+        "Monster",
+        "Wizard (1)",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "BRANCHWYCH",
@@ -823,20 +1037,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "enemy_turn_only": true,
-            "name": "Fury Of The Forest",
-            "description": "Fiercely protective of the forests, Branchwyches provoke fury in their kin should their sacred domains and soulpod groves be threatened.",
-            "declare": "If this unit is wholly within 6\" of any friendly Awakened Wyldwoods, pick a friendly Sylvaneth unit wholly within 12\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, the target has Strike-first for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Enemy Combat Phase"
+          ],
+          "name": "Fury Of The Forest",
+          "description": "Fiercely protective of the forests, Branchwyches provoke fury in their kin should their sacred domains and soulpod groves be threatened.",
+          "declare": "If this unit is wholly within 6\" of any friendly Awakened Wyldwoods, pick a friendly Sylvaneth unit wholly within 12\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, the target has Strike-first for the rest of the turn."
+        }
       ],
-      "keywords": ["Hero", "Wizard (1)", "Infantry", "Order", "Sylvaneth"]
+      "keywords": [
+        "Hero",
+        "Wizard (1)",
+        "Infantry",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "GOSSAMID ARCHERS",
@@ -870,23 +1088,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Forest Fighters",
-            "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
-            "effect": "This unit has a coherency range of 2\"."
-          },
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Shooting Phase"],
-            "name": "Zephyrspites",
-            "description": "These buzzing insectile symbiotes can be released to confound the attacks of the foe for a short time as their masters sprint off to find safety anew.",
-            "effect": "If this unit used a Shoot ability this phase, this unit can move D6\". It cannot move into combat during any part of that move."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Forest Fighters",
+          "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
+          "effect": "This unit has a coherency range of 2\"."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "Zephyrspites",
+          "description": "These buzzing insectile symbiotes can be released to confound the attacks of the foe for a short time as their masters sprint off to find safety anew.",
+          "effect": "If this unit used a Shoot ability this phase, this unit can move D6\". It cannot move into combat during any part of that move."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Fly", "Order", "Sylvaneth"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Fly",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "THE TWISTWEALD",
@@ -948,17 +1181,22 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Charge Phase"],
-            "name": "ERUPTION OF THORNED VINES:",
-            "description": "Barbed vines burst from the ground and infected Sylvaneth flesh to ensnare foes, slowing their movement and forcing them to confront the Twistweald head on.",
-            "declare": "If this unit is more than 6\" from all other friendly Sylvaneth units, pick an enemy unit within 12\" of this unit to be the target.",
-            "effect": "Subtract D3 from charge rolls for the target for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "ERUPTION OF THORNED VINES:",
+          "description": "Barbed vines burst from the ground and infected Sylvaneth flesh to ensnare foes, slowing their movement and forcing them to confront the Twistweald head on.",
+          "declare": "If this unit is more than 6\" from all other friendly Sylvaneth units, pick an enemy unit within 12\" of this unit to be the target.",
+          "effect": "Subtract D3 from charge rolls for the target for the rest of the turn."
+        }
       ],
-      "keywords": ["Infantry", "Champion (1/8)", "Order", "Sylvaneth"]
+      "keywords": [
+        "Infantry",
+        "Champion (1/8)",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "SPITERIDER LANCERS",
@@ -989,26 +1227,37 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Forest Fighters",
-            "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
-            "effect": "This unit has a coherency range of 2\"."
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "THRUMMING WITH LIFE:",
-            "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
-            "effect": "Heal (3) this unit."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "DESCENT OF THE SPITERIDERS:",
-            "description": "Should the buzzing chorus of the Spiterider Lancers be heard, it is already too late to evade their devastating charge.",
-            "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit has Strike-first for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Forest Fighters",
+          "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
+          "effect": "This unit has a coherency range of 2\"."
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "THRUMMING WITH LIFE:",
+          "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
+          "effect": "Heal (3) this unit."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "DESCENT OF THE SPITERIDERS:",
+          "description": "Should the buzzing chorus of the Spiterider Lancers be heard, it is already too late to evade their devastating charge.",
+          "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit has Strike-first for the rest of the turn."
+        }
       ],
       "keywords": [
         "Order",
@@ -1049,26 +1298,44 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Forest Fighters",
-            "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
-            "effect": "This unit has a coherency range of 2\"."
-          },
-          {
-            "activation": "Passive",
-            "name": "HARVESTERS OF THE LAMENTIRI:",
-            "description": "The lamentiri collected by Revenant Seekers are potent stores of life energy that can be harnessed in desperate situations to heal and empower fellow Sylvaneth.",
-            "effect": "Each time a friendly unit wholly within 12\" of any friendly Revenant Seekers units uses the 'Rally' command, you can make 3 additional rally rolls of D6."
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "THRUMMING WITH LIFE:",
-            "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
-            "effect": "Heal (3) this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Forest Fighters",
+          "description": "These warriors fight in loosely scattered formations, the better to take advantage of the terrain in their arboreal domains.",
+          "effect": "This unit has a coherency range of 2\"."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "HARVESTERS OF THE LAMENTIRI:",
+          "description": "The lamentiri collected by Revenant Seekers are potent stores of life energy that can be harnessed in desperate situations to heal and empower fellow Sylvaneth.",
+          "effect": "Each time a friendly unit wholly within 12\" of any friendly Revenant Seekers units uses the 'Rally' command, you can make 3 additional rally rolls of D6."
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "THRUMMING WITH LIFE:",
+          "description": "Ancient creatures who endured the death of a world, dragonspites possess a deep connection to the energies of life, and are almost impossible to slay.",
+          "effect": "Heal (3) this unit."
+        }
       ],
       "keywords": [
         "Order",
@@ -1100,23 +1367,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "ENVOYS OF THE EVERQUEEN:",
-            "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
-            "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "Trample Underfoot",
-            "description": "Kurnoth Hunters use their size and strength against their foes, stamping on and crushing them.",
-            "declare": "If this unit charged this turn, pick an enemy unit that is in combat with this unit to be the target.",
-            "effect": "Roll a dice for each model in this unit. For each 3+, inflict 1 mortal damage on the target."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "ENVOYS OF THE EVERQUEEN:",
+          "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
+          "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Trample Underfoot",
+          "description": "Kurnoth Hunters use their size and strength against their foes, stamping on and crushing them.",
+          "declare": "If this unit charged this turn, pick an enemy unit that is in combat with this unit to be the target.",
+          "effect": "Roll a dice for each model in this unit. For each 3+, inflict 1 mortal damage on the target."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Order", "Sylvaneth", "Kurnothi"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Order",
+        "Sylvaneth",
+        "Kurnothi"
+      ]
     },
     {
       "name": "KURNOTH HUNTERS WITH KURNOTH SCYTHES",
@@ -1138,23 +1420,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "ENVOYS OF THE EVERQUEEN:",
-            "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
-            "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "Tanglethorn Thicket",
-            "description": "Kurnoth Hunters sprout thick weaves of thorned branches that pin their foe in place and tear them to shreds if they try to move.",
-            "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
-            "effect": "Roll a dice for each model in this unit. For each 3+, inflict 1 mortal damage on the target."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "ENVOYS OF THE EVERQUEEN:",
+          "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
+          "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Tanglethorn Thicket",
+          "description": "Kurnoth Hunters sprout thick weaves of thorned branches that pin their foe in place and tear them to shreds if they try to move.",
+          "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
+          "effect": "Roll a dice for each model in this unit. For each 3+, inflict 1 mortal damage on the target."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Order", "Sylvaneth", "Kurnothi"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Order",
+        "Sylvaneth",
+        "Kurnothi"
+      ]
     },
     {
       "name": "KURNOTH HUNTERS WITH KURNOTH GREATBOWS",
@@ -1188,23 +1485,37 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "ENVOYS OF THE EVERQUEEN:",
-            "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
-            "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "Steady Aim",
-            "description": "Kurnoth Hunters take the time to steady their aim and line up a priority target before unleashing their arrows with deadly precision.",
-            "effect": "This unit can ignore the 'Guarded Hero' ability (Core Rules, 25.0) for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "ENVOYS OF THE EVERQUEEN:",
+          "description": "Kurnoth Hunters heed the will of Alarielle through arcane vibrations in nexuses of the realmroots.",
+          "effect": "While this unit is contesting an objective, friendly Sylvaneth units contesting that objective have Ward (6+)."
+        },
+        {
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "Steady Aim",
+          "description": "Kurnoth Hunters take the time to steady their aim and line up a priority target before unleashing their arrows with deadly precision.",
+          "effect": "This unit can ignore the 'Guarded Hero' ability (Core Rules, 25.0) for the rest of the turn."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Order", "Sylvaneth", "Kurnothi"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Order",
+        "Sylvaneth",
+        "Kurnothi"
+      ]
     },
     {
       "name": "DRYADS",
@@ -1226,16 +1537,28 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BLESSINGS OF THE FOREST:",
-            "description": "The forest folk draw upon currents of life magic running through their surroundings like freshwater streams, harnessing the energies to shield themselves from harm.",
-            "effect": "Subtract 1 from hit rolls and wound rolls for attacks that target this unit while it is wholly within 6\" of any friendly Awakened Wyldwoods."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BLESSINGS OF THE FOREST:",
+          "description": "The forest folk draw upon currents of life magic running through their surroundings like freshwater streams, harnessing the energies to shield themselves from harm.",
+          "effect": "Subtract 1 from hit rolls and wound rolls for attacks that target this unit while it is wholly within 6\" of any friendly Awakened Wyldwoods."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Order", "Sylvaneth"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "TREE-REVENANTS",
@@ -1257,18 +1580,18 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Waypiper'S Dance",
-            "description": "The Tree- Revenants move with flowing grace, following their waypiper's lead along the spirit paths to strike the enemy where it is most needed.",
-            "effect": "If this unit is not in combat, remove it from the battlefield, and set it up again on the battlefield more than 9\" from all enemy units.",
-            "keywords": ["Core"]
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Waypiper'S Dance",
+          "description": "The Tree- Revenants move with flowing grace, following their waypiper's lead along the spirit paths to strike the enemy where it is most needed.",
+          "effect": "If this unit is not in combat, remove it from the battlefield, and set it up again on the battlefield more than 9\" from all enemy units.",
+          "keywords": [
+            "Core"
+          ]
+        }
       ],
       "keywords": [
         "Order",
@@ -1299,17 +1622,22 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Combat Phase"],
-            "name": "Unbridled Malice",
-            "description": "Spite- Revenants fill the air with blood-chilling curses and wailed disharmonies in unknowable tongues.",
-            "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Unbridled Malice",
+          "description": "Spite- Revenants fill the air with blood-chilling curses and wailed disharmonies in unknowable tongues.",
+          "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
+        }
       ],
-      "keywords": ["Infantry", "Champion", "Order", "Sylvaneth"]
+      "keywords": [
+        "Infantry",
+        "Champion",
+        "Order",
+        "Sylvaneth"
+      ]
     },
     {
       "name": "GLADEWYRM",
@@ -1331,23 +1659,26 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Burrow Below",
-            "description": "Navigating the realmroots and ley lines in search of prey, Gladewyrms are able to burrow deep into the earth before reappearing elsewhere.",
-            "effect": "If this Manifestation is not in combat, remove it from the battlefield and set it up again on the battlefield more than 9\" from all enemy non-Wizard units and more than 3\" from all enemy Wizards.",
-            "keywords": ["Core"]
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "Feed On Eldritch Energy",
-            "description": "The Gladewyrm emerges from below to protect the realmroots from hostile magic.",
-            "declare": "Pick an enemy Wizard in combat with this Manifestation to be the target.",
-            "effect": "Subtract 1 from casting rolls, unbinding rolls and banishment rolls for the target until the end of your next turn."
-          }
-        ]
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Burrow Below",
+          "description": "Navigating the realmroots and ley lines in search of prey, Gladewyrms are able to burrow deep into the earth before reappearing elsewhere.",
+          "effect": "If this Manifestation is not in combat, remove it from the battlefield and set it up again on the battlefield more than 9\" from all enemy non-Wizard units and more than 3\" from all enemy Wizards.",
+          "keywords": [
+            "Core"
+          ]
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "Feed On Eldritch Energy",
+          "description": "The Gladewyrm emerges from below to protect the realmroots from hostile magic.",
+          "declare": "Pick an enemy Wizard in combat with this Manifestation to be the target.",
+          "effect": "Subtract 1 from casting rolls, unbinding rolls and banishment rolls for the target until the end of your next turn."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -1377,15 +1708,15 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["End of Turn"],
-            "name": "Vengeful Terrors",
-            "description": "Wherever this rogue spirit creeps, its roots open the shallow graves of battles past, dragging grotesque remains to the surface which chill the hearts of the forest's foes.",
-            "declare": "Pick an enemy unit within 3\" of this Manifestation to be the target.",
-            "effect": "Subtract an amount from the target's control score equal to the number of friendly units that have been destroyed this battle (not including Manifestations or Faction Terrain)."
-          }
-        ]
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "Vengeful Terrors",
+          "description": "Wherever this rogue spirit creeps, its roots open the shallow graves of battles past, dragging grotesque remains to the surface which chill the hearts of the forest's foes.",
+          "declare": "Pick an enemy unit within 3\" of this Manifestation to be the target.",
+          "effect": "Subtract an amount from the target's control score equal to the number of friendly units that have been destroyed this battle (not including Manifestations or Faction Terrain)."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -1404,16 +1735,15 @@
       "banishment": "7+",
       "weapons": {},
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "The Hive Nourishes",
-            "description": "Blessed are the Spiteswarms with Ghyranite magic, which suffuses their hives and drips from their mandibles. When these creatures are summoned forth by their Sylvaneth masters, they burst from the hive in obscuring clouds to bestow their healing bite.",
-            "declare": "Pick a visible friendly Sylvaneth unit within 3\" of this Manifestation to be the target.",
-            "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply to the target for the rest of the turn: Vital Venoms: Add 1 to run rolls and charge rolls for the target. Shielding Swarm: The target has Ward (6+)."
-          }
-        ]
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "The Hive Nourishes",
+          "description": "Blessed are the Spiteswarms with Ghyranite magic, which suffuses their hives and drips from their mandibles. When these creatures are summoned forth by their Sylvaneth masters, they burst from the hive in obscuring clouds to bestow their healing bite.",
+          "declare": "Pick a visible friendly Sylvaneth unit within 3\" of this Manifestation to be the target.",
+          "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply to the target for the rest of the turn: Vital Venoms: Add 1 to run rolls and charge rolls for the target. Shielding Swarm: The target has Ward (6+)."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -1431,38 +1761,63 @@
       "control": "-",
       "weapons": {},
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "Deploy W Yldwood",
-            "description": "The wyldwoods within which the Sylvaneth dwell are possessed of a bitter animus. They stir for the sole purpose of excising intruders to their tree-kin's territories. Their reaching branches and choking roots will crush, slash and stab through any that dare come near, watering the soil with their blood.",
-            "effect": "Set up this terrain feature wholly within friendly territory, more than 3\" from all objectives and other terrain features. This terrain feature has now been deployed.",
-            "keywords": ["Deploy Terrain"]
-          },
-          {
-            "activation": "Passive",
-            "name": "Growing Woods",
-            "description": "An Awakened Wyldwood varies greatly in size and scale, but often grow rapidly once summoned by the Sylvaneth.",
-            "effect": "Each time you set up an Awakened Wyldwood, you can place 1-3 scenery pieces (Terrain, 1.6). If you place more than 1 scenery piece, the tips at the end of each base must touch, forming a circle. Add 2 to the Health characteristic of this terrain feature for each additional scenery piece that is placed after the first."
-          },
-          {
-            "activation": "Passive",
-            "name": "Overgrown Wilderness",
-            "description": "Only the Sylvaneth can see more than a few yards into these foreboding thickets.",
-            "effect": "Enemy units can be targeted by shooting attacks made by friendly Sylvaneth units even if they are behind or wholly on this terrain feature (this is an exception to Terrain, 1.2)."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "VENGEFUL FOREST SPIRITS:",
-            "description": "The spirits within a Sylvaneth wyldwood are easily angered by trespassers into their domain.",
-            "declare": "Pick each enemy unit within this terrain feature's combat range to be the targets.",
-            "effect": "Roll a dice for each target. On a 4+, inflict D3 mortal damage on the target."
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Deploy W Yldwood",
+          "description": "The wyldwoods within which the Sylvaneth dwell are possessed of a bitter animus. They stir for the sole purpose of excising intruders to their tree-kin's territories. Their reaching branches and choking roots will crush, slash and stab through any that dare come near, watering the soil with their blood.",
+          "effect": "Set up this terrain feature wholly within friendly territory, more than 3\" from all objectives and other terrain features. This terrain feature has now been deployed.",
+          "keywords": [
+            "Deploy Terrain"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Growing Woods",
+          "description": "An Awakened Wyldwood varies greatly in size and scale, but often grow rapidly once summoned by the Sylvaneth.",
+          "effect": "Each time you set up an Awakened Wyldwood, you can place 1-3 scenery pieces (Terrain, 1.6). If you place more than 1 scenery piece, the tips at the end of each base must touch, forming a circle. Add 2 to the Health characteristic of this terrain feature for each additional scenery piece that is placed after the first."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Overgrown Wilderness",
+          "description": "Only the Sylvaneth can see more than a few yards into these foreboding thickets.",
+          "effect": "Enemy units can be targeted by shooting attacks made by friendly Sylvaneth units even if they are behind or wholly on this terrain feature (this is an exception to Terrain, 1.2)."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "VENGEFUL FOREST SPIRITS:",
+          "description": "The spirits within a Sylvaneth wyldwood are easily angered by trespassers into their domain.",
+          "declare": "Pick each enemy unit within this terrain feature's combat range to be the targets.",
+          "effect": "Roll a dice for each target. On a 4+, inflict D3 mortal damage on the target."
+        }
       ],
-      "keywords": ["Faction Terrain", "Order", "Sylvaneth"]
+      "keywords": [
+        "Faction Terrain",
+        "Order",
+        "Sylvaneth"
+      ]
     }
   ]
 }

@@ -198,17 +198,17 @@ def parse_warscroll(page):
         warscroll["banishment"] = banishment
 
     warscroll["weapons"] = parse_weapons(weapons)
-    warscroll["abilities"] = parse_abilities(abilities),
+    warscroll["abilities"] = parse_abilities(abilities)
     warscroll["keywords"] = parse_keywords(keywords)
-
     return warscroll
 
 
 Activation_Keywords = [
     "Passive",
     "Once Per Turn",
+    "Once Per Turn (Army)",
     "Once Per Battle",
-    "Reaction"
+    "Once Per Battle (Army)",
 ]
 
 Phase_Keywords = [
@@ -217,11 +217,21 @@ Phase_Keywords = [
     "Start of Any Turn",
     "Start of Your Turn",
     "Start of Enemy Turn",
-    "Hero Phase",
-    "Movement Phase",
-    "Shooting Phase",
-    "Charge Phase",
-    "Combat Phase",
+    "Any Hero Phase",
+    "Your Hero Phase",
+    "Enemy Hero Phase",
+    "Any Movement Phase",
+    "Your Movement Phase",
+    "Enemy Movement Phase",
+    "Any Shooting Phase",
+    "Your Shooting Phase",
+    "Enemy Shooting Phase",
+    "Any Charge Phase",
+    "Your Charge Phase",
+    "Enemy Charge Phase",
+    "Any Combat Phase",
+    "Your Combat Phase",
+    "Enemy Combat Phase",
     "End of Any Turn",
     "End of Your Turn",
     "End of Enemy Turn",
@@ -389,8 +399,14 @@ def parse_abilities(elements):
 
     for text in elements:
         if text_is_start_of_ability(text):
+            if current_ability is not None and len(current_ability) == 1:
+                # The activation text can span multiple lines, so if we only have a single line in the ability
+                # so far, we just continue with that ability
+                current_ability.append(text)
+                continue
+
             if current_ability is not None:
-                abilities.append(current_ability)
+                abilities.append(parse_ability(current_ability))
 
             current_ability = [text]
             if previous_line.strip().isnumeric():
@@ -405,9 +421,9 @@ def parse_abilities(elements):
         previous_line = text
 
     if current_ability is not None:
-        abilities.append(current_ability)
+        abilities.append(parse_ability(current_ability))
 
-    return [parse_ability(a) for a in abilities]
+    return abilities
 
 
 def parse_ability(text):
@@ -455,21 +471,19 @@ def parse_ability(text):
             for keyword in Activation_Keywords:
                 if keyword in line:
                     ability["activation"] = keyword
-                    if "(Army)" in text:
-                        ability["once_per_army"] = True
-                    break
 
                     if keyword == "Passive":
-                        ability["phases"] = []
+                        ability["phases"] = [k for k in Phase_Keywords if "Any" in k]
+
+                    break
+
+            if "Reaction" in line:
+                ability["is_reaction"] = True
     
             # Check the phase of the ability
             for keyword in Phase_Keywords:
                 if keyword in line:
-                    ability["phases"] = [keyword.replace(" Enemy", "").replace(" Your", "").replace(" Any", "")]
-                    if "Your" in line:
-                        ability["your_turn_only"] = True
-                    elif "Enemy" in line:
-                        ability["enemy_turn_only"] = True
+                    ability["phases"] = [keyword]
 
             if line.isnumeric():
                 cost = int(line)
@@ -524,6 +538,20 @@ def parse_ability(text):
     for key in ["name", "description", "declare", "effect", "reaction_condtion"]:
         if key in ability:
             ability[key] = tidy_string(ability[key])
+
+    if "phases" not in ability and ability["activation"] == "Reaction" and "reaction_condition" in ability:
+        # Do a rough approximation parse to try and work out which phase a reaction is in.
+        rc = ability["reaction_condition"]
+        if "Spell" in rc:
+            ability["phases"] = ["Any Hero Phase"]
+        elif "Move" in rc:
+            ability["phases"] = ["Any Movement Phase"]
+        elif "Shoot" in rc:
+            ability["phases"] = ["Any Shoot Phase"]
+        elif "Charge" in rc:
+            ability["phases"] = ["Any Charge Phase"]
+        elif "Fight" in rc:
+            ability["phases"] = ["Any Combat Phase"]
 
     if "keywords" in ability:
         ability["keywords"] = [k for k in ability["keywords"] if k != ""]

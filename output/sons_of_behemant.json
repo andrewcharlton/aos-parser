@@ -2,47 +2,69 @@
   "battle_traits": [
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Gargant Charge",
       "description": "A charging gargant will flatten anyone in their path.",
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
       "declare": "Pick a friendly Mega-Gargant or Gargant unit that charged this turn and has not used a Rampage ability this turn to use this ability, then pick a visible enemy unit within 1\" of it to be the target.",
-      "keywords": ["Rampage"]
+      "keywords": [
+        "Rampage"
+      ]
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Earthshaking Roar",
       "description": "A blast of this gargant's hot, stinking breath delivered at volume bowls over those nearby.",
       "declare": "Pick a friendly Mega-Gargant or Gargant unit that has not used a Rampage ability this turn to use this ability, then pick an enemy unit in combat with it to be the target.",
       "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
-      "keywords": ["Rampage"]
+      "keywords": [
+        "Rampage"
+      ]
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Colossal Slam",
       "description": "The Mega-Gargant hoicks the foe over their shoulder and slams them full force into the ground.",
       "declare": "Pick a friendly Mega-Gargant that has not used a Rampage ability this turn to use this ability, then pick an enemy Monster or War Machine within 1\" of it to be the target.",
       "effect": "Roll a dice. On a 3+, remove the target from the battlefield and set it up again within 1\" of the unit using this ability. Then, inflict D3 mortal damage on the target.",
-      "keywords": ["Rampage"]
+      "keywords": [
+        "Rampage"
+      ]
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Jump Up And Down",
       "description": "A gargant's massive, stomping feet are devastating against smaller opponents.",
       "declare": "Pick a friendly Mega-Gargant or Gargant unit that has not used a Rampage ability this turn to use this ability, then pick an enemy Infantry unit in combat with it to be the target.",
       "effect": "Roll a dice. On a 3+, roll a dice for each model in the target unit. If the unit using this ability is a Gargant, inflict 1 mortal damage on the target for each 6. If it is a Mega-Gargant, inflict 1 mortal damage on the target for each 5+.",
-      "keywords": ["Rampage"]
+      "keywords": [
+        "Rampage"
+      ]
     }
   ],
   "battle_formations": {
     "Taker Tribe": {
       "activation": "Once Per Battle",
-      "phases": ["Deployment Phase"],
+      "phases": [
+        "Deployment Phase"
+      ],
       "name": "MORE STUFF FOR ME COLLECTION:",
       "description": "These gargants are avaricious hoarders who love collecting all kinds of baubles and artefacts - even ones that are too small for them to use.",
       "declare": "Pick a friendly non-Unique Sons of Behemat Hero that does not have an artefact of power.",
@@ -50,13 +72,22 @@
     },
     "Breaker Tribe": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Besieging Bulk",
       "description": "When a group of Mega-Gargants take to battle together, they are able to use each other's enormous bulk to shelter themselves from harm.",
       "effect": "Friendly Mega-Gargants have Ward (6+) while they are within the combat ranges of any other friendly Mega-Gargants."
     },
     "Boss Tribe": {
       "activation": "Once Per Turn",
-      "once_per_army": true,
+      "is_reaction": true,
       "reaction_condition": "  You declared a Fight ability for a friendly Mega-Gargant ",
       "name": "Big Mouth",
       "description": "Mancrusher Gargants are used to being bossed around by the colossal Mega-Gargants. The orders they are given usually boil down to 'hit that thing' or 'squish them ones there'. Used By: The Mega-Gargant using that Fight ability.",
@@ -64,6 +95,15 @@
     },
     "Stomper Tribe": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Revel In War",
       "description": "These boisterous gargants launch themselves into enemy lines, revelling in crushing the puny pipsqueaks below their feet.",
       "effect": "You can pick 2 friendly Mega-Gargants or Gargant units that have not used a Rampage ability this turn to use the 'Jump Up and Down' ability instead of 1."
@@ -72,19 +112,39 @@
   "heroic_traits": [
     {
       "activation": "Once Per Battle",
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Furious Temper",
       "description": "Nothing can stop this Mega-Gargant when the rage of battle clouds their mind.",
       "effect": "For the rest of the turn: * Add 2 to the Attacks characteristic of this unit's melee weapons. * Subtract 1 from save rolls for this unit."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Monstrously Tough",
       "description": "This Mega- Gargant is incredibly hard to kill.",
       "effect": "This unit has a Health characteristic of 40 instead of 35."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Rabble Rouser",
       "description": "This Mega-Gargant bellows at their kin to race forward and pummel the enemy into the dust.",
       "effect": "Add 1 to charge rolls for friendly Sons of Behemat units while they are wholly within 12\" of this unit."
@@ -93,41 +153,72 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": ["Charge Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Charge Phase"
+      ],
       "name": "Amberbone Totem",
       "description": "Somewhere along the way, this gargant has picked up a totem of Ghurish realmstone. No matter how long they run for, the urge to hunt burns within them.",
       "effect": "For the rest of the turn, this unit can use Charge abilities even if it used a Run ability in the same turn."
     },
     {
       "activation": "Once Per Battle",
-      "phases": ["Deployment Phase"],
+      "phases": [
+        "Deployment Phase"
+      ],
       "name": "Glow Y Lantern",
       "description": "Stolen from the aelves of Hysh after a botched alliance, this aetherquartz jar was at first carried around just because it was shiny; however, over time, it has granted this Mega-Gargant an innate power over malign sorceries.",
       "effect": "Pick 1 manifestation lore available to your faction. This unit can use Summon abilities from that manifestation lore as if it had Wizard (1)."
     },
     {
       "activation": "Once Per Battle",
-      "phases": ["Combat Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Combat Phase"
+      ],
       "name": "MANTLE OF TUSK AND HORNS:",
       "description": "Trophies taken from slain behemoths adorn the shoulders of this gargant, and through them they can channel the power of the Waaagh!.",
       "effect": "For the rest of the turn, add 1 to hit rolls for combat attacks made by friendly Sons of Behemat units while they are wholly within 12\" of this unit."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Extra-Calloused Feet",
       "description": "This gargant has become so used to stomping on even the toughest enemies that their feet are legendary weapons in their own right.",
       "effect": "Add 1 to the Attacks characteristic, Rend characteristic and Damage characteristic of this unit's Almighty Stomp or Almightier Stomp."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "GLOW Y SHIELD OF PROTECTINESS:",
       "description": "While raiding a lair belonging to the ratty pipsqueaks, this gargant found a shield studded with sickly green rock - and promptly strapped it to their body. Enemies who get close sometimes have their heads explode, which is always good for a laugh.",
       "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Kingslaughter Cowl",
       "description": "Those who wear this blood-encrusted leather hood make it their business to crush upstart monarchs and warlords across the realms.",
       "effect": "Add 1 to the Attacks characteristic of this unit's melee weapons while this unit is in combat with an enemy Hero."
@@ -172,41 +263,63 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of The Dread Mace is 4 and this unit has a Control characteristic of 10."
-          },
-          {
-            "activation": "Reaction",
-            "reaction_condition": " Opponent declared a  Spell ability",
-            "name": "The Shield Inviolate",
-            "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force.",
-            "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability."
-          },
-          {
-            "activation": "Passive",
-            "name": "Avatar Of Destruction",
-            "description": "Kragnos is the embodiment of Ghur's relentless ferocity. No single strike can lay him low.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Charge Phase"],
-            "name": "Rampaging Destruction",
-            "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
-            "effect": "If this unit charged this phase, pick 1 of the following effects: * Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. * Pick an enemy Monster in combat with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Passive",
-            "name": "The End Of Empires",
-            "description": "Where Kragnos goes, the hordes of Destruction follow.",
-            "effect": "Add 1 to the number of dice rolled when making charge rolls for friendly Destruction units while they are wholly within 12\" of this unit, to a maximum of 3."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "The Shield Inviolate",
+          "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability.",
+          "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Avatar Of Destruction",
+          "description": "Kragnos is the embodiment of Ghur's relentless ferocity. No single strike can lay him low.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Rampaging Destruction",
+          "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
+          "effect": "If this unit charged this phase, pick 1 of the following effects: * Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. * Pick an enemy Monster in combat with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "The End Of Empires",
+          "description": "Where Kragnos goes, the hordes of Destruction follow.",
+          "effect": "Add 1 to the number of dice rolled when making charge rolls for friendly Destruction units while they are wholly within 12\" of this unit, to a maximum of 3."
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -256,41 +369,78 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Obelisk of Tor Crania is 4 and this unit has a Control characteristic of 10. 5"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "POWER OF BEHEMAT:",
-            "description": "The primordial power of Behemat clings still to King Brodd, his favoured son.",
-            "declare": "Make a chanting roll of D6.",
-            "effect": "Pick 1 of the following effects. If the chanting roll was 10+, pick 2 instead: Shatter the Mountains: Add 2\" to the Move characteristic of friendly Sons of Behemat units for the rest of the turn. Might of the Earth: Heal (D3) each friendly Sons of Behemat unit. Pummel All to Dust: For the rest of the turn, add 1 to the Rend characteristic of the Obelisk of Tor Crania, Menhir Club, Fortcrusha Flail, Shipwrecka Warclub, Titanic Boulderclub and Massive Club used by friendly Sons of Behemat units.",
-            "keywords": ["Prayer"],
-            "chanting_value": 5
-          },
-          {
-            "activation": "Passive",
-            "name": "Creepers",
-            "description": "Riding on top of King Brodd, these creatures will leap upon enemy predators and distract them while Brodd deals a killing blow.",
-            "effect": "This unit cannot be picked to be the target of enemy Rampage abilities."
-          },
-          {
-            "activation": "Passive",
-            "name": "Son Of Behemat",
-            "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Longshanks",
-            "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
-            "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Obelisk of Tor Crania is 4 and this unit has a Control characteristic of 10. 5"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "POWER OF BEHEMAT:",
+          "description": "The primordial power of Behemat clings still to King Brodd, his favoured son.",
+          "declare": "Make a chanting roll of D6.",
+          "effect": "Pick 1 of the following effects. If the chanting roll was 10+, pick 2 instead: Shatter the Mountains: Add 2\" to the Move characteristic of friendly Sons of Behemat units for the rest of the turn. Might of the Earth: Heal (D3) each friendly Sons of Behemat unit. Pummel All to Dust: For the rest of the turn, add 1 to the Rend characteristic of the Obelisk of Tor Crania, Menhir Club, Fortcrusha Flail, Shipwrecka Warclub, Titanic Boulderclub and Massive Club used by friendly Sons of Behemat units.",
+          "keywords": [
+            "Prayer"
+          ],
+          "chanting_value": 5
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Creepers",
+          "description": "Riding on top of King Brodd, these creatures will leap upon enemy predators and distract them while Brodd deals a killing blow.",
+          "effect": "This unit cannot be picked to be the target of enemy Rampage abilities."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Son Of Behemat",
+          "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Longshanks",
+          "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
+          "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -341,39 +491,79 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Menhir Club is 3 and this unit has a Control characteristic of 10."
-          },
-          {
-            "activation": "Passive",
-            "name": "BEHEMOTH BRAWLER:",
-            "description": "Beast-smashers rely on their killer instincts when battling colossal creatures, fighting with the spirit of Gorkamorka and the ferocity of Behemat to overpower their prey.",
-            "effect": "Subtract 1 from the Attacks characteristic of enemy Monsters while they are in combat with this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "Longshanks",
-            "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
-            "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "BEAST-BREAKING STRIKE:",
-            "description": "Beast-smashers can shatter the ribcages and crack the skulls of even the most ferocious adversaries with a single mighty strike.",
-            "declare": "Pick an enemy Monster in combat with this unit to be the target.",
-            "effect": "This unit can make a pile-in move. Then, roll a dice. On a 4+, inflict 5D6 mortal damage on the target.",
-            "keywords": ["Core", "Attack", "Fight"]
-          },
-          {
-            "activation": "Passive",
-            "name": "Son Of Behemat",
-            "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Menhir Club is 3 and this unit has a Control characteristic of 10."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BEHEMOTH BRAWLER:",
+          "description": "Beast-smashers rely on their killer instincts when battling colossal creatures, fighting with the spirit of Gorkamorka and the ferocity of Behemat to overpower their prey.",
+          "effect": "Subtract 1 from the Attacks characteristic of enemy Monsters while they are in combat with this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Longshanks",
+          "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
+          "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "BEAST-BREAKING STRIKE:",
+          "description": "Beast-smashers can shatter the ribcages and crack the skulls of even the most ferocious adversaries with a single mighty strike.",
+          "declare": "Pick an enemy Monster in combat with this unit to be the target.",
+          "effect": "This unit can make a pile-in move. Then, roll a dice. On a 4+, inflict 5D6 mortal damage on the target.",
+          "keywords": [
+            "Core",
+            "Attack",
+            "Fight"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Son Of Behemat",
+          "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        }
       ],
       "keywords": [
         "Hero",
@@ -433,42 +623,74 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Fortcrusha Flail is 4 and this unit has a Control characteristic of 10."
-          },
-          {
-            "activation": "Passive",
-            "name": "Son Of Behemat",
-            "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Longshanks",
-            "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
-            "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "Pulverising Strike",
-            "description": "A Gatebreaker may swing its fortcrusha flail hard and bring it down in a single pulverising strike.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "This unit can make a pile-in move. Then, roll a dice. On a 4+, inflict 4D6 mortal damage on the target.",
-            "keywords": ["Core", "Attack", "Fight"]
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Smash Down",
-            "description": "Gatebreakers have a deep loathing of settlements, which they see as symbols of those who killed Behemat.",
-            "declare": "Pick a terrain feature within 3\" of this unit to be the target.",
-            "effect": "If the target is Faction Terrain, inflict D3+3 mortal damage on it. Then, roll a D3 for each non-Monster unit (friendly and enemy) within 3\" of the target. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Fortcrusha Flail is 4 and this unit has a Control characteristic of 10."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Son Of Behemat",
+          "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Longshanks",
+          "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
+          "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Pulverising Strike",
+          "description": "A Gatebreaker may swing its fortcrusha flail hard and bring it down in a single pulverising strike.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "This unit can make a pile-in move. Then, roll a dice. On a 4+, inflict 4D6 mortal damage on the target.",
+          "keywords": [
+            "Core",
+            "Attack",
+            "Fight"
+          ]
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Smash Down",
+          "description": "Gatebreakers have a deep loathing of settlements, which they see as symbols of those who killed Behemat.",
+          "declare": "Pick a terrain feature within 3\" of this unit to be the target.",
+          "effect": "If the target is Faction Terrain, inflict D3+3 mortal damage on it. Then, roll a D3 for each non-Monster unit (friendly and enemy) within 3\" of the target. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
+        }
       ],
       "keywords": [
         "Hero",
@@ -528,43 +750,70 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Shipwrecka Warclub is 3 and this unit has a Control characteristic of 10."
-          },
-          {
-            "activation": "Passive",
-            "name": "Son Of Behemat",
-            "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Longshanks",
-            "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
-            "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Get Orf Me Land!",
-            "description": "Kraken-eaters hate intruders and trespassers, and they do not take kindly to people who decide to fight battles on their land.",
-            "declare": "Pick an objective within 1\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 2+, move the target 2D6\" to a new position on the battlefield more than 1\" from all models, terrain features and other objectives."
-          },
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Combat Phase"],
-            "name": "Stuff 'Em In Me Net",
-            "description": "Kraken-eaters are constantly putting things into the nets they carry ' for later', including unlucky opponents and other tasty- looking morsels.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll 3 dice. For each roll that is at least double the target's Health characteristic, 1 model in the target unit is slain."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Shipwrecka Warclub is 3 and this unit has a Control characteristic of 10."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Son Of Behemat",
+          "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Longshanks",
+          "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
+          "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Get Orf Me Land!",
+          "description": "Kraken-eaters hate intruders and trespassers, and they do not take kindly to people who decide to fight battles on their land.",
+          "declare": "Pick an objective within 1\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 2+, move the target 2D6\" to a new position on the battlefield more than 1\" from all models, terrain features and other objectives."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Stuff 'Em In Me Net",
+          "description": "Kraken-eaters are constantly putting things into the nets they carry ' for later', including unlucky opponents and other tasty- looking morsels.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll 3 dice. For each roll that is at least double the target's Health characteristic, 1 model in the target unit is slain."
+        }
       ],
       "keywords": [
         "Hero",
@@ -612,38 +861,74 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Titanic Boulderclub is 3 and this unit has a Control characteristic of 10."
-          },
-          {
-            "activation": "Passive",
-            "name": "Son Of Behemat",
-            "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
-            "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Longshanks",
-            "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
-            "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
-          },
-          {
-            "activation": "Passive",
-            "name": "TITANIC BOULDERCLUB:",
-            "description": "A Warstomper will drive straight into the midst of the enemy, swinging their titanic boulderclub to smash foes in all directions.",
-            "effect": "If all of the attacks made with this unit's Titanic Boulderclub target the same enemy unit, for every 5 models in the target unit, add 2 to its Attacks characteristic for the rest of the phase."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "Hurled Body",
-            "description": "Warstompers wade into the thick of battle and pick up smaller opponents to hurl at other enemies.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in that unit is slain and you can pick a visible enemy unit within 12\" of this unit. Inflict an amount of mortal damage on that unit equal to the target's Health characteristic."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 15 or more damage points, the Attacks characteristic of its Titanic Boulderclub is 3 and this unit has a Control characteristic of 10."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Son Of Behemat",
+          "description": "The Sons of Behemat are nearly as difficult to kill as their mighty progenitor.",
+          "effect": "If this unit would be automatically destroyed, it is not automatically destroyed. Instead, allocate 6 damage points to it (ward rolls cannot be made for those damage points)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Longshanks",
+          "description": "Mega-Gargants tower high above the battlefield; with their long legs, they can step over most obstacles.",
+          "effect": "This unit can pass through models in non-Monster units and parts of terrain features that are less than 4\" tall."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "TITANIC BOULDERCLUB:",
+          "description": "A Warstomper will drive straight into the midst of the enemy, swinging their titanic boulderclub to smash foes in all directions.",
+          "effect": "If all of the attacks made with this unit's Titanic Boulderclub target the same enemy unit, for every 5 models in the target unit, add 2 to its Attacks characteristic for the rest of the phase."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Hurled Body",
+          "description": "Warstompers wade into the thick of battle and pick up smaller opponents to hurl at other enemies.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in that unit is slain and you can pick a visible enemy unit within 12\" of this unit. Inflict an amount of mortal damage on that unit equal to the target's Health characteristic."
+        }
       ],
       "keywords": [
         "Hero",
@@ -703,24 +988,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Keep Up!",
-            "description": "Mancrusher Gargants run as fast as they can so as not to be left out behind when their bigger brethren charge into battle.",
-            "effect": "While this unit is wholly within 12\" of a friendly Mega-Gargant, this unit can use Charge abilities even if it used a Run ability in the same turn."
-          },
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Combat Phase"],
-            "name": "Stuff 'Em In Me Bag",
-            "description": "Gargants are known to grab hapless warriors and stuff them screaming into their bags ' for later'\u2026",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in the target unit is slain."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Keep Up!",
+          "description": "Mancrusher Gargants run as fast as they can so as not to be left out behind when their bigger brethren charge into battle.",
+          "effect": "While this unit is wholly within 12\" of a friendly Mega-Gargant, this unit can use Charge abilities even if it used a Run ability in the same turn."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Stuff 'Em In Me Bag",
+          "description": "Gargants are known to grab hapless warriors and stuff them screaming into their bags ' for later'\u2026",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in the target unit is slain."
+        }
       ],
-      "keywords": ["Monster", "Destruction", "Sons of Behemat", "Gargant"]
+      "keywords": [
+        "Monster",
+        "Destruction",
+        "Sons of Behemat",
+        "Gargant"
+      ]
     },
     {
       "name": "MANCRUSHER MOB",
@@ -772,30 +1071,53 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Keep Up!",
-            "description": "Mancrusher Gargants run as fast as they can so as not to be left out behind when their bigger brethren charge into battle.",
-            "effect": "While this unit is wholly within 12\" of a friendly Mega-Gargant, this unit can use Charge abilities even if it used a Run ability in the same turn."
-          },
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Combat Phase"],
-            "name": "Stuff 'Em In Me Bag",
-            "description": "Gargants are known to grab hapless warriors and stuff them screaming into their bags ' for later'\u2026",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in the target unit is slain."
-          },
-          {
-            "activation": "Passive",
-            "name": "'Oo'S Under The Heel Now?",
-            "description": "The mob of gargants crash into the enemy in unison, wreaking havoc among the enemy ranks.",
-            "effect": "Each time this unit uses the 'Gargant Charge' ability, add 1 to the amount of mortal damage inflicted, if any, for each model in this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Keep Up!",
+          "description": "Mancrusher Gargants run as fast as they can so as not to be left out behind when their bigger brethren charge into battle.",
+          "effect": "While this unit is wholly within 12\" of a friendly Mega-Gargant, this unit can use Charge abilities even if it used a Run ability in the same turn."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Stuff 'Em In Me Bag",
+          "description": "Gargants are known to grab hapless warriors and stuff them screaming into their bags ' for later'\u2026",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. If the roll is at least double the target's Health characteristic, 1 model in the target unit is slain."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "'Oo'S Under The Heel Now?",
+          "description": "The mob of gargants crash into the enemy in unison, wreaking havoc among the enemy ranks.",
+          "effect": "Each time this unit uses the 'Gargant Charge' ability, add 1 to the amount of mortal damage inflicted, if any, for each model in this unit."
+        }
       ],
-      "keywords": ["Monster", "Destruction", "Sons of Behemat", "Gargant"]
+      "keywords": [
+        "Monster",
+        "Destruction",
+        "Sons of Behemat",
+        "Gargant"
+      ]
     }
   ]
 }

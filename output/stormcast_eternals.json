@@ -1,16 +1,21 @@
 {
   "battle_traits": [
     {
-      "phases": ["Deployment Phase"],
+      "phases": [
+        "Deployment Phase"
+      ],
       "name": "The Celestial Realm",
       "description": "In High Azyr, the Stormcast Eternals await their call to deliver retribution.",
       "declare": "If there are more friendly Stormcast Eternals units on the battlefield than there are set up in reserve, pick a friendly Stormcast Eternals unit that has not been deployed.",
       "effect": "Set up that unit in reserve in the Celestial Realm. It has now been deployed.",
-      "keywords": ["Deploy"]
+      "keywords": [
+        "Deploy"
+      ]
     },
     {
-      "phases": ["Movement Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Movement Phase"
+      ],
       "name": "Scions Of The Stor M",
       "description": "Upon blessed bolts of lightning do the Stormcast Eternals ride to war, the furious rumble of thunder heralding their arrival.",
       "declare": "Pick a friendly Stormcast Eternals unit that is in the Celestial Realm.",
@@ -18,8 +23,9 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": ["Movement Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Movement Phase"
+      ],
       "name": "Heavens-Sent",
       "description": "More reinforcements More reinforcements are sent down from Azyr in their fellow warriors' time of need.",
       "declare": "Pick a friendly non-Unique Stormcast Eternals Infantry or Cavalry unit that started the battle with 2 or more models and that has been destroyed to be the target.",
@@ -28,9 +34,9 @@
     },
     {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Hero Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Hero Phase"
+      ],
       "name": "Their Finest Hour",
       "description": "Stormcast Eternals are bastions of hope for the forces of Order. In times of desperate need, each fighter does what is necessary to keep their enemies at bay.",
       "declare": "Pick a friendly Stormcast Eternals unit that has not used this ability this battle to use this ability.",
@@ -40,8 +46,9 @@
   "battle_formations": {
     "Sentinels Of The \nBleak Citadels": {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Hero Phase"],
+      "phases": [
+        "Any Hero Phase"
+      ],
       "name": "Ancient Aura",
       "description": "Storm-charged energy ebbs and flows around the warriors of the Ruination chamber, surrounding them in a scouring aura of power. Finding purchase with a weapon on these ancient heroes can be a difficult task for even the mightiest of mortal foes.",
       "declare": "Pick a friendly Ruination Chamber unit.",
@@ -49,25 +56,37 @@
     },
     "Vanguard Wing": {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Movement Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Movement Phase"
+      ],
       "name": "Peerless Manoeuvres",
       "description": "These warriors are the precision weapon of the God-King, skilled at manipulating a battlefield in their favour by feinting from view and reappearing where they are needed most.",
       "declare": "Pick a friendly Vanguard Chamber unit that is not in combat.",
       "effect": "Roll a dice. On a 3+, remove that unit from the battlefield and set it up again anywhere on the battlefield more than 9\" from all enemy units.",
-      "keywords": ["Core"]
+      "keywords": [
+        "Core"
+      ]
     },
     "Thunderhead Host": {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Synchronised Strikes",
       "description": "The core of a Thunderhead Host is often made up of fighters from the Warrior chambers; having trained relentlessly with the sworn brethren of their Stormhost, they operate like a well-oiled cogfort.",
       "effect": "Add 1 to hit rolls for combat attacks made by friendly Warrior Chamber units while they are wholly within 12\" of any friendly non-Hero Stormcast Eternals units that do not have the Warrior Chamber keyword."
     },
     "Lightning Echelon": {
       "activation": "Once Per Turn",
-      "once_per_army": true,
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Oncoming Stor M",
       "description": "First to the fight, the Lightning Echelon is akin to a spear-thrust into the heart of the enemy. Deployed only in times of great need, they smash into the foe's vanguard with the force of an oncoming tempest.",
       "declare": "Pick a friendly Extremis Chamber unit that charged this turn.",
@@ -77,19 +96,38 @@
   "heroic_traits": [
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Staunch Defender",
       "description": "To contest the sacred grounds of Sigmar is to invoke the almighty power of Azyr.",
       "effect": "While this unit is contesting an objective in friendly territory, add 3 to the control scores of all friendly Stormcast Eternals units contesting that objective."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Shock And Awe",
       "description": "When this general and their Stormcasts take to the field, their shining visage strikes fear into the foe.",
       "effect": "Each time a friendly Stormcast Eternals unit is set up wholly within 12\" of this unit using the 'Scions of the Storm' ability, subtract 1 from hit rolls for attacks that target that unit for the rest of the battle round."
     },
     {
-      "phases": ["Hero Phase"],
-      "your_turn_only": true,
+      "phases": [
+        "Your Hero Phase"
+      ],
       "name": "Envoy Of The Heavens",
       "description": "When a Stormcast Eternal is laid low, the light that carries the warrior's soul back to Azyr invigorates those who fight on.",
       "declare": "If a friendly unit was destroyed in the previous turn, pick a visible friendly Stormcast Eternals unit wholly within 12\" of this unit to be the target.",
@@ -99,7 +137,9 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": ["End of Turn"],
+      "phases": [
+        "End of Any Turn"
+      ],
       "name": "Null Pendant",
       "description": "This dark amulet holds magic within that can sap the resolve of the enemy.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -107,13 +147,24 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": ["Combat Phase"],
+      "phases": [
+        "Any Combat Phase"
+      ],
       "name": "Quicksilver Draught",
       "description": "This potion lends uncanny speed to the one who imbibes it.",
       "effect": "This unit has Strike-first for the rest of the turn."
     },
     {
       "activation": "Passive",
+      "phases": [
+        "Start of Any Turn",
+        "Any Hero Phase",
+        "Any Movement Phase",
+        "Any Shooting Phase",
+        "Any Charge Phase",
+        "Any Combat Phase",
+        "End of Any Turn"
+      ],
       "name": "Mirrorshield",
       "description": "This shield reflects the sun's rays in questing beams that seek out the eyes of enemy marksmen.",
       "effect": "This unit cannot be targeted by shooting attacks unless the attacking model is within 9\" of it."
@@ -122,32 +173,45 @@
   "spell_lore": {
     "Lore Of The Storm": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Lightning Blast",
         "description": "The wizard releases pent-up storm energy into the foe.",
         "declare": "Pick a friendly Stormcast Eternals Wizard to cast this spell, then pick the closest visible enemy unit to them that has not been picked to be the target of this ability this turn to be the target. If 2 or more visible enemy units are tied to be the closest, you can pick which is the target. Then, make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target.",
-        "keywords": ["Spell", "Unlimited", "6"]
+        "keywords": [
+          "Spell",
+          "Unlimited",
+          "6"
+        ]
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Thundershock",
         "description": "The wizard unleashes the power of Sigmar's storm as a roiling wave of pure force.",
         "declare": "Pick a friendly Stormcast Eternals Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
-        "keywords": ["Spell", "5", "7"],
+        "keywords": [
+          "Spell",
+          "5",
+          "7"
+        ],
         "casting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Starfall",
         "description": "Gazing towards the heavens, the wizard hurls meteoric rain into the enemy's path.",
         "declare": "Pick a friendly Stormcast Eternals Wizard to cast this spell, pick a visible enemy Infantry or Cavalry unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1.",
-        "keywords": ["Spell"],
+        "keywords": [
+          "Spell"
+        ],
         "casting_value": 7
       }
     ]
@@ -155,32 +219,45 @@
   "prayer_lore": {
     "Prayers Of The Stormhosts": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Healing Stor M",
         "description": "The priest calls down cleansing bolts from the sky, their invigorating energies closing even the most grievous wounds.",
         "declare": "Pick a friendly Stormcast Eternals Priest to chant this prayer, pick a visible friendly Stormcast Eternals unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Heal (D3) the target. If the chanting roll was 8+, Heal (D3) each visible friendly Stormcast Eternals unit wholly within 12\" of the chanter instead.",
-        "keywords": ["Prayer", "Unlimited", "6"]
+        "keywords": [
+          "Prayer",
+          "Unlimited",
+          "6"
+        ]
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Bless Weapons",
         "description": "The priest imbues The priest imbues weapons of those nearby with the pure essence of the storm.",
         "declare": "Pick a friendly Stormcast Eternals Priest to chant this prayer, pick a visible friendly Stormcast Eternals Infantry unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Add 1 to the Attacks characteristic of the target's melee weapons until the start of your next turn. If the chanting roll was 12+, this ability affects all visible friendly Stormcast Eternals units wholly within 12\" of the chanter.",
-        "keywords": ["Prayer", "4", "4"],
+        "keywords": [
+          "Prayer",
+          "4",
+          "4"
+        ],
         "chanting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "Translocation",
         "description": "The priest summons bolts of lightning to transport nearby warriors across the battlefield.",
         "declare": "Pick a friendly Stormcast Eternals Priest to chant this prayer, pick a visible friendly Stormcast Eternals unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units. In addition, if the chanting roll was 8+, subtract 1 from hit rolls for attacks that target that unit for the rest of the battle round.",
-        "keywords": ["Prayer"],
+        "keywords": [
+          "Prayer"
+        ],
         "chanting_value": 4
       }
     ]
@@ -188,33 +265,47 @@
   "manifestation_lore": {
     "Manifestations Of The Storm": [
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "SUMMON DAIS ARCANUM:",
         "description": "The wizard calls down a single bolt of lightning to strike the ground at their feet, leaving behind a perfect sigmarite disc for a chosen Stormcast to mount and be carried into the air.",
         "declare": "If there is not a friendly Dais Arcanum on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, pick a friendly Stormcast Eternals Infantry Hero that does not have Fly and is wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Set up a Dais Arcanum within \u00bd\" of the target, visible to the caster and not in combat. Then, remove the target from the battlefield and place it on the platform of that Dais Arcanum.",
-        "keywords": ["Spell", "Summon", "6"],
+        "keywords": [
+          "Spell",
+          "Summon",
+          "6"
+        ],
         "casting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "SUMMON CELESTIAN VORTEX:",
         "description": "The wizard casts a pair of ensorcelled hammers into the air, which begin to spin. As the vortex gets more intense, the hammers multiply to form a maelstrom of skull-crushing force.",
         "declare": "If there is not a friendly Celestian Vortex on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Celestian Vortex wholly within 18\" of the caster and more than 9\" from all enemy units.",
-        "keywords": ["Spell", "Summon", "7"],
+        "keywords": [
+          "Spell",
+          "Summon",
+          "7"
+        ],
         "casting_value": 6
       },
       {
-        "phases": ["Hero Phase"],
-        "your_turn_only": true,
+        "phases": [
+          "Your Hero Phase"
+        ],
         "name": "SUMMON EVERBLAZE COMET:",
         "description": "Reaching an arm to the heavens, the wizard calls down a pure comet of Azyrite energy that crashes into the foe's ranks with devastating effect.",
         "declare": "If there is not a friendly Everblaze Comet on the battlefield, pick a friendly Stormcast Eternals Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up an Everblaze Comet wholly within 18\" of the caster.",
-        "keywords": ["Spell", "Summon"],
+        "keywords": [
+          "Spell",
+          "Summon"
+        ],
         "casting_value": 7
       }
     ]
@@ -249,14 +340,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Stalwart Defenders",
-            "description": "Liberators fiercely guard the lands brought into Sigmar's domain.",
-            "effect": "Add 3 to this unit's control score while it is contesting an objective wholly within friendly territory."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Stalwart Defenders",
+          "description": "Liberators fiercely guard the lands brought into Sigmar's domain.",
+          "effect": "Add 3 to this unit's control score while it is contesting an objective wholly within friendly territory."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -286,14 +384,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Lightning Strikes",
-            "description": "Vanquishers utilise a stance that allows them to make a flurry of rapid strikes against a numerous foe.",
-            "effect": "Add 1 to the Damage characteristic of this unit's Celestial Greatswords for attacks that target an enemy unit that has 5 or more models."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Lightning Strikes",
+          "description": "Vanquishers utilise a stance that allows them to make a flurry of rapid strikes against a numerous foe.",
+          "effect": "Add 1 to the Damage characteristic of this unit's Celestial Greatswords for attacks that target an enemy unit that has 5 or more models."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -325,14 +430,14 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Combat Phase"],
-            "name": "Hold The Shieldwall",
-            "description": "The Vindictor retinues are the shieldwall upon which the forces of ruin shatter.",
-            "effect": "If this unit did not charge this turn and is in combat with an enemy unit that charged this turn, roll a dice. On a 4+, this unit has Strike-first for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Hold The Shieldwall",
+          "description": "The Vindictor retinues are the shieldwall upon which the forces of ruin shatter.",
+          "effect": "If this unit did not charge this turn and is in combat with an enemy unit that charged this turn, roll a dice. On a 4+, this unit has Strike-first for the rest of the turn."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -375,23 +480,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Retribution From On High",
-            "description": "The Celestant-Prime descends from Azyr into the thickest fighting, Ghal Maraz glowing with power as it smites the foe.",
-            "declare": "Pick this unit if it is in the Celestial Realm.",
-            "effect": "Subtract the current battle round number from 10 to determine this unit's strike zone. Set up this unit on the battlefield more than a number of inches equal to its strike zone from all enemy units."
-          },
-          {
-            "activation": "Passive",
-            "name": "Cometstrike Sceptre",
-            "description": "Blazing with celestial might, the Celestant-Prime raises his sceptre high before letting it fall, causing comets to rain from above.",
-            "effect": "Each time this unit attacks with its Cometstrike Sceptre, if the attack scores a hit, inflict D3 mortal damage on the target."
-          }
-        ]
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Retribution From On High",
+          "description": "The Celestant-Prime descends from Azyr into the thickest fighting, Ghal Maraz glowing with power as it smites the foe.",
+          "declare": "Pick this unit if it is in the Celestial Realm.",
+          "effect": "Subtract the current battle round number from 10 to determine this unit's strike zone. Set up this unit on the battlefield more than a number of inches equal to its strike zone from all enemy units."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Cometstrike Sceptre",
+          "description": "Blazing with celestial might, the Celestant-Prime raises his sceptre high before letting it fall, causing comets to rain from above.",
+          "effect": "Each time this unit attacks with its Cometstrike Sceptre, if the attack scores a hit, inflict D3 mortal damage on the target."
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -424,23 +537,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Aura Of Purity",
-            "description": "Gardus's faith is so strong when he is in full flow that even Nurgle's garden was unable to corrupt him.",
-            "effect": "If this unit charged this turn, for the rest of the turn, friendly Stormcast Eternals units have Ward (5+) while they are wholly within 12\" of this unit."
-          },
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Charge Phase"],
-            "your_turn_only": true,
-            "name": "Saintly Assault",
-            "description": "Calling upon the celestial grace of Sigmar, the lords of the Steel Souls engage the foe with zealous wrath.",
-            "declare": "Pick up to 3 visible friendly Stormcast Eternals Infantry units wholly within 6\" of this unit to be the targets.",
-            "effect": "For the rest of the turn: * Add 1 to charge rolls for the targets. * Add 1 to the Attacks characteristic of the targets' melee weapons."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Aura Of Purity",
+          "description": "Gardus's faith is so strong when he is in full flow that even Nurgle's garden was unable to corrupt him.",
+          "effect": "If this unit charged this turn, for the rest of the turn, friendly Stormcast Eternals units have Ward (5+) while they are wholly within 12\" of this unit."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Your Charge Phase"
+          ],
+          "name": "Saintly Assault",
+          "description": "Calling upon the celestial grace of Sigmar, the lords of the Steel Souls engage the foe with zealous wrath.",
+          "declare": "Pick up to 3 visible friendly Stormcast Eternals Infantry units wholly within 6\" of this unit to be the targets.",
+          "effect": "For the rest of the turn: * Add 1 to charge rolls for the targets. * Add 1 to the Attacks characteristic of the targets' melee weapons."
+        }
       ],
       "keywords": [
         "Unique",
@@ -472,14 +593,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Indomitable Loreseekers",
-            "description": "The thick tomes carried by Knight-Arcanums are filled with the magical secrets they have learnt, including how to resist the raging sorcerous energies of the realms.",
-            "effect": "Add 1 to casting rolls for this unit when it uses a Summon ability and add 1 to banishment rolls for this unit. Enemy Manifestations cannot pass through or end any move within this unit's combat range unless they started that move within this unit's combat range. This unit has Ward (4+) against mortal damage inflicted by Manifestations."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Indomitable Loreseekers",
+          "description": "The thick tomes carried by Knight-Arcanums are filled with the magical secrets they have learnt, including how to resist the raging sorcerous energies of the realms.",
+          "effect": "Add 1 to casting rolls for this unit when it uses a Summon ability and add 1 to banishment rolls for this unit. Enemy Manifestations cannot pass through or end any move within this unit's combat range unless they started that move within this unit's combat range. This unit has Ward (4+) against mortal damage inflicted by Manifestations."
+        }
       ],
       "keywords": [
         "Hero",
@@ -531,31 +659,34 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Reaction",
-            "reaction_condition": " Opponent declared a  Spell ability",
-            "name": "Arcane Heritage",
-            "description": "Whether raised within the temple-vessels of the Seraphon or born in the wilds of the realms, every young Draconith has developed a resistance to the arcane.",
-            "effect": "If this unit or a friendly Stormdrake Guard unit wholly within 12\" of this unit was picked to be the target of that spell, roll a dice. On a 4+, ignore the effect of that spell on this unit or that friendly unit. This unit can use this ability more than once per phase but only once per Spell ability."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Wrath Of The Draconith",
-            "description": "At their champion's command, the Stormdrake Guard loose the searing force of their mounts when the foe least expects it.",
-            "declare": "Pick a friendly Stormdrake Guard unit within this unit's combat range to be the target.",
-            "effect": "Roll a dice. On a 2+, add 1 to the Attacks characteristic of both this unit's and the target's Draconith's Fangs and Talons for the rest of the turn.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Wrath Of The Draconith",
+          "description": "At their champion's command, the Stormdrake Guard loose the searing force of their mounts when the foe least expects it.",
+          "declare": "Pick a friendly Stormdrake Guard unit within this unit's combat range to be the target.",
+          "effect": "Roll a dice. On a 2+, add 1 to the Attacks characteristic of both this unit's and the target's Draconith's Fangs and Talons for the rest of the turn.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        }
       ],
       "keywords": [
         "Hero",
@@ -598,23 +729,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "FAITHFUL GRYPH-HOUNDS: A",
-            "description": "Knight-Judicator is often accompanied into battle by a pair of these loyal beasts of Azyr.",
-            "effect": "This unit's Gryph-hounds are tokens. After setting up this unit on the battlefield for the first time, place both Gryph-hounds next to it."
-          },
-          {
-            "activation": "Once Per Turn",
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Hunting Hounds",
-            "description": "The Knight- Judicator sends one of their Gryph-hounds to harass an enemy unit.",
-            "declare": "If this unit was not set up this turn and any of this unit's Gryph-hounds are on the battlefield, pick an enemy unit within 12\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 1, remove 1 of this unit's Gryph-hounds from the battlefield. On a 2+, pick 1 of this unit's Gryph-hounds that is next to this unit or next to an enemy unit and place it next to the target instead. While any of this unit's Gryph-hounds are next to an enemy unit, add 1 to hit rolls and wound rolls for this unit's shooting attacks that target that unit. If an enemy unit is destroyed or removed from the battlefield while any of this unit's Gryph-hounds are next to it, place those Gryph-hounds next to this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "FAITHFUL GRYPH-HOUNDS: A",
+          "description": "Knight-Judicator is often accompanied into battle by a pair of these loyal beasts of Azyr.",
+          "effect": "This unit's Gryph-hounds are tokens. After setting up this unit on the battlefield for the first time, place both Gryph-hounds next to it."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Hunting Hounds",
+          "description": "The Knight- Judicator sends one of their Gryph-hounds to harass an enemy unit.",
+          "declare": "If this unit was not set up this turn and any of this unit's Gryph-hounds are on the battlefield, pick an enemy unit within 12\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 1, remove 1 of this unit's Gryph-hounds from the battlefield. On a 2+, pick 1 of this unit's Gryph-hounds that is next to this unit or next to an enemy unit and place it next to the target instead. While any of this unit's Gryph-hounds are next to an enemy unit, add 1 to hit rolls and wound rolls for this unit's shooting attacks that target that unit. If an enemy unit is destroyed or removed from the battlefield while any of this unit's Gryph-hounds are next to it, place those Gryph-hounds next to this unit."
+        }
       ],
       "keywords": [
         "Hero",
@@ -644,29 +783,30 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability  for this unit",
-            "name": "Heroic Retribution",
-            "description": "Should the need arise, the Knight-Questor will call upon their Soulsworn brethren to make the God-King's justice a reality.",
-            "effect": "Pick a friendly Questor Soulsworn unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
-          },
-          {
-            "activation": "Once Per Battle",
-            "once_per_army": true,
-            "phases": ["Deployment Phase"],
-            "name": "Ordained Quest",
-            "description": "Questors travel deep into enemy territory to gain control of vital landmarks with hidden secrets.",
-            "effect": "Pick an objective wholly outside friendly territory. That objective is considered by you to be questmarked."
-          },
-          {
-            "activation": "Passive",
-            "name": "His Will Be Done",
-            "description": "Questors will stop at nothing to fulfil the sacred task given to them by the God-King himself.",
-            "effect": "While this unit is contesting a questmarked objective: * Add 3 to this unit's control score. * This unit has Ward (5+)."
-          }
-        ]
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Ordained Quest",
+          "description": "Questors travel deep into enemy territory to gain control of vital landmarks with hidden secrets.",
+          "effect": "Pick an objective wholly outside friendly territory. That objective is considered by you to be questmarked."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "His Will Be Done",
+          "description": "Questors will stop at nothing to fulfil the sacred task given to them by the God-King himself.",
+          "effect": "While this unit is contesting a questmarked objective: * Add 3 to this unit's control score. * This unit has Ward (5+)."
+        }
       ],
       "keywords": [
         "Hero",
@@ -696,16 +836,15 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "Relic Censer",
-            "description": "The censers of the Relictor temple emanate purifying incense that can burn through the very fabric of heretical falsehoods and mystical hexes.",
-            "declare": "Pick an enemy unit within 12\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 2+, subtract 1 from ward rolls made by the target for the rest of the turn."
-          }
-        ]
+        {
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "Relic Censer",
+          "description": "The censers of the Relictor temple emanate purifying incense that can burn through the very fabric of heretical falsehoods and mystical hexes.",
+          "declare": "Pick an enemy unit within 12\" of this unit to be the target.",
+          "effect": "Roll a dice. On a 2+, subtract 1 from ward rolls made by the target for the rest of the turn."
+        }
       ],
       "keywords": [
         "Hero",
@@ -736,15 +875,15 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "name": "THE BANNER OF THE REFORGED:",
-            "description": "When the Knight-Vexillor plants their banner, the fortifying energy that emanates from it hardens flesh and seals sundered armour, empowering the faithful with new resolve.",
-            "declare": "Pick D3 friendly Stormcast Eternals units wholly within 12\" of this unit to be the targets.",
-            "effect": "Add 3 to each target's control score for the rest of the turn. In addition, Heal (D3) each target."
-          }
-        ]
+        {
+          "phases": [
+            "Any Hero Phase"
+          ],
+          "name": "THE BANNER OF THE REFORGED:",
+          "description": "When the Knight-Vexillor plants their banner, the fortifying energy that emanates from it hardens flesh and seals sundered armour, empowering the faithful with new resolve.",
+          "declare": "Pick D3 friendly Stormcast Eternals units wholly within 12\" of this unit to be the targets.",
+          "effect": "Add 3 to each target's control score for the rest of the turn. In addition, Heal (D3) each target."
+        }
       ],
       "keywords": [
         "Hero",
@@ -795,22 +934,30 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Ride The Winds Aetheric",
-            "description": "Gryph- chargers can move faster than the eye can follow along the winds aetheric.",
-            "declare": "If this unit is not in combat, you can pick up to 2 friendly Vanguard- Palladors units that are not in combat to be the targets.",
-            "effect": "Remove this unit and the targets (if any) from the battlefield. Set this unit up again on the battlefield more than 9\" from all enemy units. Then, set up each target wholly within 12\" of this unit and more than 9\" from all enemy units."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Ride The Winds Aetheric",
+          "description": "Gryph- chargers can move faster than the eye can follow along the winds aetheric.",
+          "declare": "If this unit is not in combat, you can pick up to 2 friendly Vanguard- Palladors units that are not in combat to be the targets.",
+          "effect": "Remove this unit and the targets (if any) from the battlefield. Set this unit up again on the battlefield more than 9\" from all enemy units. Then, set up each target wholly within 12\" of this unit and more than 9\" from all enemy units."
+        }
       ],
       "keywords": [
         "Hero",
@@ -836,20 +983,19 @@
             "rend": "1",
             "damage": "2",
             "ability": "Crit (Auto-wound)"
+          },
+          {
+            "ability": ""
+          },
+          {
+            "ability": ""
+          },
+          {
+            "ability": ""
           }
         ]
       },
-      "abilities": [
-        [
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability  for this unit ",
-            "name": "FURIOUS RETRIBUTION:",
-            "description": "Lord-Celestants lead their brethren in assaults upon the enemy lines, breaking the foe beneath their immortal fury.",
-            "effect": "Pick a friendly non-Hero Warrior Chamber Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to wound rolls for the target's attacks for the rest of the turn."
-          }
-        ]
-      ],
+      "abilities": [],
       "keywords": [
         "Hero",
         "Infantry",
@@ -899,21 +1045,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability  for this unit",
-            "name": "Righteous Avengers",
-            "description": "Lord- Celestants inspire their brethren to mete out Sigmar's justice; nearby Stormcasts strike the instant they are given the order.",
-            "effect": "Pick a friendly non-Hero Extremis Chamber Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Righteous Avengers",
+          "description": "Lord- Celestants inspire their brethren to mete out Sigmar's justice; nearby Stormcasts strike the instant they are given the order.",
+          "effect": "Pick a friendly non-Hero Extremis Chamber Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
+        }
       ],
       "keywords": [
         "Hero",
@@ -955,27 +1101,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "VOICE OF THUNDER:",
-            "description": "Lord-Commanders are among the few faithful who can commune with Sigmar in the heat of battle. Their words are like booming thunderclaps, each order ringing across the battlefield.",
-            "effect": "Each time a friendly Stormcast Eternals unit wholly within 12\" of this unit uses the 'All-out Attack' command, no command points are spent."
-          },
-          {
-            "phases": ["Deployment Phase"],
-            "name": "Castellan Of Azyr",
-            "description": "Centuries spent commanding Sigmar's prime Stormhost have sharpened Bastian's tactical nous to a deadly edge. There are few warlords more adept than he in all the armies of Order.",
-            "declare": "Pick up to 3 friendly Stormcast Eternals Infantry units to be the targets.",
-            "effect": "Each target can use the 'Normal Move' ability as if it were your movement phase."
-          },
-          {
-            "phases": ["End of Turn"],
-            "name": "MANTLE OF THE FIRST STOR M:",
-            "description": "Bastian's armour is among the first of its kind, laboured over by Grungni himself and charged with the same holy energies as the Anvil of Apotheosis. It is a symbol of, and potent boon to, the Thunderborn's already legendary willpower.",
-            "effect": "If any enemy models were slain by this unit's attacks this turn, Heal (4) this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "VOICE OF THUNDER:",
+          "description": "Lord-Commanders are among the few faithful who can commune with Sigmar in the heat of battle. Their words are like booming thunderclaps, each order ringing across the battlefield.",
+          "effect": "Each time a friendly Stormcast Eternals unit wholly within 12\" of this unit uses the 'All-out Attack' command, no command points are spent."
+        },
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Castellan Of Azyr",
+          "description": "Centuries spent commanding Sigmar's prime Stormhost have sharpened Bastian's tactical nous to a deadly edge. There are few warlords more adept than he in all the armies of Order.",
+          "declare": "Pick up to 3 friendly Stormcast Eternals Infantry units to be the targets.",
+          "effect": "Each target can use the 'Normal Move' ability as if it were your movement phase."
+        },
+        {
+          "phases": [
+            "End of Any Turn"
+          ],
+          "name": "MANTLE OF THE FIRST STOR M:",
+          "description": "Bastian's armour is among the first of its kind, laboured over by Grungni himself and charged with the same holy energies as the Anvil of Apotheosis. It is a symbol of, and potent boon to, the Thunderborn's already legendary willpower.",
+          "effect": "If any enemy models were slain by this unit's attacks this turn, Heal (4) this unit."
+        }
       ],
       "keywords": [
         "Unique",
@@ -1006,23 +1163,31 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Loyal Gryph-Hound",
-            "description": "The Gryph- hound that accompanies the Lord- Imperatant is the most faithful guard.",
-            "effect": "This unit's Gryph-hound is a token. This unit has Ward (5+) while its Gryph-hound is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-hound from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
-          },
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Guided By Lightning",
-            "description": "With the aid of their enchanted stormcaller baton, a Lord-Imperatant can direct the arrival of their brethren with the utmost precision.",
-            "declare": "Pick up to 3 friendly Stormcast Eternals units wholly within 12\" of this unit that were set up this turn using the 'Scions of the Storm' ability to be the targets.",
-            "effect": "Each target can immediately move D3\". The targets cannot move into combat during any part of that move."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Loyal Gryph-Hound",
+          "description": "The Gryph- hound that accompanies the Lord- Imperatant is the most faithful guard.",
+          "effect": "This unit's Gryph-hound is a token. This unit has Ward (5+) while its Gryph-hound is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-hound from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Guided By Lightning",
+          "description": "With the aid of their enchanted stormcaller baton, a Lord-Imperatant can direct the arrival of their brethren with the utmost precision.",
+          "declare": "Pick up to 3 friendly Stormcast Eternals units wholly within 12\" of this unit that were set up this turn using the 'Scions of the Storm' ability to be the targets.",
+          "effect": "Each target can immediately move D3\". The targets cannot move into combat during any part of that move."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1052,14 +1217,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Mortis Priest",
-            "description": "Though all mortals chosen by the God-King demonstrate their martial strength, those selected to become Lord-Relictors possess a rare wisdom that sets them apart.",
-            "effect": "Add 1 to chanting rolls for this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Mortis Priest",
+          "description": "Though all mortals chosen by the God-King demonstrate their martial strength, those selected to become Lord-Relictors possess a rare wisdom that sets them apart.",
+          "effect": "Add 1 to chanting rolls for this unit."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1099,28 +1271,44 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "reaction_condition": " This unit was picked as the target of a non-Core ability ",
-            "name": "Ruination Chamber",
-            "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
-            "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "SENSE UNHOLY SORCERY:",
-            "description": "Gryph-crows are sensitive to corruption and immediately alert their masters whenever unholy energies are nearby.",
-            "effect": "This unit's Gryph-crow is a token. Subtract 1 from casting rolls and chanting rolls for enemy units within 12\" of this unit while its Gryph-crow is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-crow from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
-          },
-          {
-            "activation": "Passive",
-            "name": "Staff Of Abjuration",
-            "description": "The blessed light that shines from this staff can banish even the most potent sorceries.",
-            "effect": "This unit can use Unbind abilities as if it had Wizard (1)."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "is_reaction": true,
+          "reaction_condition": " This unit was picked as the target of a non-Core ability ",
+          "name": "Ruination Chamber",
+          "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
+          "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "SENSE UNHOLY SORCERY:",
+          "description": "Gryph-crows are sensitive to corruption and immediately alert their masters whenever unholy energies are nearby.",
+          "effect": "This unit's Gryph-crow is a token. Subtract 1 from casting rolls and chanting rolls for enemy units within 12\" of this unit while its Gryph-crow is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Gryph-crow from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Staff Of Abjuration",
+          "description": "The blessed light that shines from this staff can banish even the most potent sorceries.",
+          "effect": "This unit can use Unbind abilities as if it had Wizard (1)."
+        }
       ],
       "keywords": [
         "Hero",
@@ -1184,14 +1372,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Shield Of Azyr",
-            "description": "These golden- armoured warriors will willingly put themselves in mortal danger in order to protect Neave and Lorai.",
-            "effect": "While any friendly The Blacktalons Heroes are wholly within this unit's combat range, both this unit and those friendly units have Ward (5+)."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Shield Of Azyr",
+          "description": "These golden- armoured warriors will willingly put themselves in mortal danger in order to protect Neave and Lorai.",
+          "effect": "While any friendly The Blacktalons Heroes are wholly within this unit's combat range, both this unit and those friendly units have Ward (5+)."
+        }
       ],
       "keywords": [
         "Unique",
@@ -1233,29 +1428,50 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Justice From Azyr",
-            "description": "When the chance to eliminate her mark presents itself, Neave is merciless in bringing them to justice.",
-            "effect": "Add 1 to the Damage characteristic of this unit's Whirlwind Axes for attacks that target Heroes."
-          },
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "your_turn_only": true,
-            "name": "Windrider",
-            "description": "Neave Blacktalon has a natural talent at translocating in a blur of lightning to ride the winds aetheric.",
-            "declare": "If this unit is in combat or charged this turn, this unit can make a pile-in move. Then, if this unit is in combat, you must pick 1 or more enemy units to be the target(s) of this unit's attacks.",
-            "effect": "Resolve combat attacks against the target unit(s). Then, roll a dice. On a 3+, remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units and wholly within the combat range of a friendly The Blacktalons unit that is not in combat.",
-            "keywords": ["Core", "Attack", "Fight"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Justice From Azyr",
+          "description": "When the chance to eliminate her mark presents itself, Neave is merciless in bringing them to justice.",
+          "effect": "Add 1 to the Damage characteristic of this unit's Whirlwind Axes for attacks that target Heroes."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "phases": [
+            "Your Combat Phase"
+          ],
+          "name": "Windrider",
+          "description": "Neave Blacktalon has a natural talent at translocating in a blur of lightning to ride the winds aetheric.",
+          "declare": "If this unit is in combat or charged this turn, this unit can make a pile-in move. Then, if this unit is in combat, you must pick 1 or more enemy units to be the target(s) of this unit's attacks.",
+          "effect": "Resolve combat attacks against the target unit(s). Then, roll a dice. On a 3+, remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units and wholly within the combat range of a friendly The Blacktalons unit that is not in combat.",
+          "keywords": [
+            "Core",
+            "Attack",
+            "Fight"
+          ]
+        }
       ],
       "keywords": [
         "Order",
@@ -1287,23 +1503,33 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Aquatic Illusions",
-            "description": "Lorai conjures liquid figures out of the ethersea that mystify and confuse nearby enemies.",
-            "effect": "Subtract 1 from hit rolls for attacks that target this unit. 6"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Nebulous Sea-Fog",
-            "description": "A hazy mist coalesces into a thick, obscuring fog around Lorai.",
-            "effect": "Until the start of your next turn, while a friendly The Blacktalons unit is wholly within 6\" of this unit, if the unmodified hit roll for a shooting attack that targets that unit is 1-5, the attack fails and the attack sequence ends.",
-            "keywords": ["Spell"],
-            "casting_value": 6
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Aquatic Illusions",
+          "description": "Lorai conjures liquid figures out of the ethersea that mystify and confuse nearby enemies.",
+          "effect": "Subtract 1 from hit rolls for attacks that target this unit. 6"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Nebulous Sea-Fog",
+          "description": "A hazy mist coalesces into a thick, obscuring fog around Lorai.",
+          "effect": "Until the start of your next turn, while a friendly The Blacktalons unit is wholly within 6\" of this unit, if the unmodified hit roll for a shooting attack that targets that unit is 1-5, the attack fails and the attack sequence ends.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 6
+        }
       ],
       "keywords": [
         "Unique",
@@ -1357,21 +1583,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "LORD OF THE HAMMERHANDS:",
-            "description": "Vandus is a mighty champion of the Hammers of Sigmar and a consummate commander.",
-            "effect": "Add 3 to the control scores of friendly Warrior Chamber units while they are wholly within 12\" of this unit."
-          },
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability  for this unit",
-            "name": "Vengeance Unleashed",
-            "description": "Vandus inspires nearby members of the Warrior chambers to strike forth and deliver justice in the God-King's name.",
-            "effect": "Pick a friendly non-Hero Warrior Chamber unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vengeance Unleashed",
+          "description": "Vandus inspires nearby members of the Warrior chambers to strike forth and deliver justice in the God-King's name.",
+          "effect": "Pick a friendly non-Hero Warrior Chamber unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
+        }
       ],
       "keywords": [
         "Unique",
@@ -1423,26 +1649,51 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "The Prime Huntress",
-            "description": "Lifetimes of experience, celestial strength and the power of Yndrasta's spear Thengavar see even the most behemothic of terrors swiftly fall.",
-            "effect": "Double the Damage characteristic of this unit's Thengavar for attacks that target Monsters."
-          },
-          {
-            "activation": "Passive",
-            "name": "On Wings Of Brilliance",
-            "description": "Yndrasta soars across the battlefield to strike at the heart of Sigmar's enemies.",
-            "effect": "Add 1 to the number of dice rolled when making charge rolls for this unit, to a maximum of 3."
-          },
-          {
-            "activation": "Passive",
-            "name": "Dazzling Radiance",
-            "description": "Yndrasta's god- touched brilliance casts a protective aura of light around nearby Stormcasts.",
-            "effect": "Ignore negative modifiers to the control scores of friendly Stormcast Eternals units while they are wholly within 12\" of this unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "The Prime Huntress",
+          "description": "Lifetimes of experience, celestial strength and the power of Yndrasta's spear Thengavar see even the most behemothic of terrors swiftly fall.",
+          "effect": "Double the Damage characteristic of this unit's Thengavar for attacks that target Monsters."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "On Wings Of Brilliance",
+          "description": "Yndrasta soars across the battlefield to strike at the heart of Sigmar's enemies.",
+          "effect": "Add 1 to the number of dice rolled when making charge rolls for this unit, to a maximum of 3."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Dazzling Radiance",
+          "description": "Yndrasta's god- touched brilliance casts a protective aura of light around nearby Stormcasts.",
+          "effect": "Ignore negative modifiers to the control scores of friendly Stormcast Eternals units while they are wholly within 12\" of this unit."
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -1506,32 +1757,48 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
-          },
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true
-          },
-          {
-            "phases": ["Combat Phase"],
-            "your_turn_only": true,
-            "name": "Monstrous Challenge",
-            "description": "Though not strictly holding the rank of knight, the Drakesworn Templars fulfil a similar role within the Extremis chambers, charging off to face the greatest threats in single combat.",
-            "declare": "Pick an enemy Monster in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 2+, for the rest of the turn: * Add 1 to the Damage characteristic of this unit's Stardrake's Cavernous Jaws for attacks that target that unit. * If the target is also a Hero, add 1 to the Damage characteristic of this unit's Templar Weapons for attacks that target that unit.",
-            "keywords": ["Rampage"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Your Combat Phase"
+          ],
+          "name": "Monstrous Challenge",
+          "description": "Though not strictly holding the rank of knight, the Drakesworn Templars fulfil a similar role within the Extremis chambers, charging off to face the greatest threats in single combat.",
+          "declare": "Pick an enemy Monster in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 2+, for the rest of the turn: * Add 1 to the Damage characteristic of this unit's Stardrake's Cavernous Jaws for attacks that target that unit. * If the target is also a Hero, add 1 to the Damage characteristic of this unit's Templar Weapons for attacks that target that unit.",
+          "keywords": [
+            "Rampage"
+          ]
+        }
       ],
       "keywords": [
         "Hero",
@@ -1583,31 +1850,43 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Fires Of Retribution",
-            "description": "Vengeance burns blinding and everlasting in Karazai's soul.",
-            "effect": "While this unit has 5-9 damage points, add 1 to the Attacks characteristic of its melee weapons. While this unit has 10 or more damage points, add 2 to the Attacks characteristic of its melee weapons instead."
-          },
-          {
-            "phases": ["Combat Phase"],
-            "name": "Ancient Master Of War",
-            "description": "Karazai has seen countless battles over the heady span of his life, and the reptilian fury he displays can soon overpower any foe.",
-            "declare": "Pick an enemy unit within this unit's combat range to be the target.",
-            "effect": "Subtract 1 from the Attacks characteristic of the target's melee weapons for the rest of the turn."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Calamitous Tail Sweep",
-            "description": "With a sweep of his destructive tail, Karazai can deliver a killing blow to those in his path.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": ["Rampage"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Fires Of Retribution",
+          "description": "Vengeance burns blinding and everlasting in Karazai's soul.",
+          "effect": "While this unit has 5-9 damage points, add 1 to the Attacks characteristic of its melee weapons. While this unit has 10 or more damage points, add 2 to the Attacks characteristic of its melee weapons instead."
+        },
+        {
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Ancient Master Of War",
+          "description": "Karazai has seen countless battles over the heady span of his life, and the reptilian fury he displays can soon overpower any foe.",
+          "declare": "Pick an enemy unit within this unit's combat range to be the target.",
+          "effect": "Subtract 1 from the Attacks characteristic of the target's melee weapons for the rest of the turn."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Calamitous Tail Sweep",
+          "description": "With a sweep of his destructive tail, Karazai can deliver a killing blow to those in his path.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
+          "keywords": [
+            "Rampage"
+          ]
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -1660,39 +1939,62 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Apex Maw is 2."
-          },
-          {
-            "activation": "Passive",
-            "name": "Regalia Fulmentarus",
-            "description": "A symbol of the Draconith-Stormcast alliance, this mastersmithed mantle enhances Krondys's arcane strength to even greater heights.",
-            "effect": "Add 2 to casting rolls for this unit."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Soul-Shaking Roar",
-            "description": "Defiant in the face of any foe, Krondys issues an ear- shattering roar at those who dare face him.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
-            "keywords": ["Rampage", "8"]
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Atavistic Tempest",
-            "description": "Wielding the Wielding the power of Azyr alongside the lost magics of the Draconith empire, Krondys barrages the enemy with elemental storms.",
-            "declare": "Pick a visible enemy unit within 18\" of the caster to be the target, then make a casting roll of 2D6.",
-            "effect": "Pick 1 of the following effects to apply to the target until the start of your next turn: Blinding Gales: Subtract 1 from hit rolls for the target's attacks. Meteor-hail: Subtract 1 from the Rend characteristic of the target's weapons. Flash-freezing Blizzard: Subtract 1 from save rolls for the target.",
-            "keywords": ["Spell"],
-            "casting_value": 8
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Apex Maw is 2."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Regalia Fulmentarus",
+          "description": "A symbol of the Draconith-Stormcast alliance, this mastersmithed mantle enhances Krondys's arcane strength to even greater heights.",
+          "effect": "Add 2 to casting rolls for this unit."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Soul-Shaking Roar",
+          "description": "Defiant in the face of any foe, Krondys issues an ear- shattering roar at those who dare face him.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
+          "keywords": [
+            "Rampage",
+            "8"
+          ]
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Atavistic Tempest",
+          "description": "Wielding the Wielding the power of Azyr alongside the lost magics of the Draconith empire, Krondys barrages the enemy with elemental storms.",
+          "declare": "Pick a visible enemy unit within 18\" of the caster to be the target, then make a casting roll of 2D6.",
+          "effect": "Pick 1 of the following effects to apply to the target until the start of your next turn: Blinding Gales: Subtract 1 from hit rolls for the target's attacks. Meteor-hail: Subtract 1 from the Rend characteristic of the target's weapons. Flash-freezing Blizzard: Subtract 1 from save rolls for the target.",
+          "keywords": [
+            "Spell"
+          ],
+          "casting_value": 8
+        }
       ],
       "keywords": [
         "Warmaster",
@@ -1746,36 +2048,57 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
-          },
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Combat Phase"],
-            "name": "Lord Of The Host",
-            "description": "A Lord-Celestant is a trusted and respected leader. Their presence steels the souls of those who fight nearby.",
-            "effect": "Add 1 to the Attacks characteristic of other friendly Extremis Chamber units wholly within 12\" of this unit for the rest of the turn."
-          },
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Cavernous Jaws",
-            "description": "The enormous maw of a Stardrake can bite a foe in half.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll 3 dice. For each roll that equals or exceeds the target's Health characteristic, 1 model in the target unit is slain.",
-            "keywords": ["Rampage"]
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Stardrake's Cavernous Jaws is 4."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Lord Of The Host",
+          "description": "A Lord-Celestant is a trusted and respected leader. Their presence steels the souls of those who fight nearby.",
+          "effect": "Add 1 to the Attacks characteristic of other friendly Extremis Chamber units wholly within 12\" of this unit for the rest of the turn."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Cavernous Jaws",
+          "description": "The enormous maw of a Stardrake can bite a foe in half.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll 3 dice. For each roll that equals or exceeds the target's Health characteristic, 1 model in the target unit is slain.",
+          "keywords": [
+            "Rampage"
+          ]
+        }
       ],
       "keywords": [
         "Hero",
@@ -1806,19 +2129,35 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Marked For Destruction",
-            "description": "Those who oppose the masters of these loyal beasts hear doom approaching in the beating of celestial wings.",
-            "effect": "Add 1 to hit rolls for shooting attacks made by friendly Vanguard Chamber units if the target is within 9\" of this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "BEAST",
-            "effect": "This unit has a maximum control score of 1."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Marked For Destruction",
+          "description": "Those who oppose the masters of these loyal beasts hear doom approaching in the beating of celestial wings.",
+          "effect": "Add 1 to hit rolls for shooting attacks made by friendly Vanguard Chamber units if the target is within 9\" of this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BEAST",
+          "effect": "This unit has a maximum control score of 1."
+        }
       ],
       "keywords": [
         "Beast",
@@ -1848,23 +2187,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Charge Phase"],
-            "name": "Brace For Impact",
-            "description": "Annihilators brace behind their mighty shields to hold off even the most ferocious charge.",
-            "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
-            "effect": "Roll a dice for each model in this unit. If any of the rolls are a 6, the target has Strike-last for the rest of the turn."
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Blazing Impact",
-            "description": "Annihilators arrive upon the field with devastating force, twin- tailed trails streaking behind them as an earth-shattering shock-wave blasts apart the foes of Sigmar.",
-            "declare": "If this unit was set up this turn using the 'Scions of the Storm' ability, pick up to 3 enemy units within 10\" of it to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          }
-        ]
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Brace For Impact",
+          "description": "Annihilators brace behind their mighty shields to hold off even the most ferocious charge.",
+          "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
+          "effect": "Roll a dice for each model in this unit. If any of the rolls are a 6, the target has Strike-last for the rest of the turn."
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Blazing Impact",
+          "description": "Annihilators arrive upon the field with devastating force, twin- tailed trails streaking behind them as an earth-shattering shock-wave blasts apart the foes of Sigmar.",
+          "declare": "If this unit was set up this turn using the 'Scions of the Storm' ability, pick up to 3 enemy units within 10\" of it to be the targets.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1894,22 +2234,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Shooting Phase"],
-            "name": "Warning Cry",
-            "description": "It is said that it is impossible to sneak up on a Gryph-hound.",
-            "declare": "Pick an enemy unit within 12\" of this unit that was set up this turn. Then, pick up to 3 friendly Stormcast Eternals units armed with ranged weapons that are within 12\" of that enemy unit to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
-          },
-          {
-            "activation": "Passive",
-            "name": "BEAST",
-            "effect": "This unit has a maximum control score of 1."
-          }
-        ]
+        {
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "Warning Cry",
+          "description": "It is said that it is impossible to sneak up on a Gryph-hound.",
+          "declare": "Pick an enemy unit within 12\" of this unit that was set up this turn. Then, pick up to 3 friendly Stormcast Eternals units armed with ranged weapons that are within 12\" of that enemy unit to be the targets.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BEAST",
+          "effect": "This unit has a maximum control score of 1."
+        }
       ],
-      "keywords": ["Beast", "Champion", "Order", "Stormcast Eternals"]
+      "keywords": [
+        "Beast",
+        "Champion",
+        "Order",
+        "Stormcast Eternals"
+      ]
     },
     {
       "name": "ANNIHILATORS WITH METEORIC GRANDHAMMERS",
@@ -1931,23 +2285,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Charge Phase"],
-            "name": "Force Of A Falling Star",
-            "description": "As Annihilators build up momentum, their charge carries the same force as the impact of their arrival.",
-            "declare": "If this unit charged this phase and the unmodified charge roll was 8+, pick an enemy unit within 1\" of it to be the target.",
-            "effect": "The target has Strike-last for the rest of the turn."
-          },
-          {
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Blazing Impact",
-            "description": "Annihilators arrive upon the field with devastating force, twin- tailed trails streaking behind them as an earth-shattering shock-wave blasts apart the foes of Sigmar.",
-            "declare": "If this unit was set up this turn using the 'Scions of the Storm' ability, pick up to 3 enemy units within 10\" of it to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          }
-        ]
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Force Of A Falling Star",
+          "description": "As Annihilators build up momentum, their charge carries the same force as the impact of their arrival.",
+          "declare": "If this unit charged this phase and the unmodified charge roll was 8+, pick an enemy unit within 1\" of it to be the target.",
+          "effect": "The target has Strike-last for the rest of the turn."
+        },
+        {
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Blazing Impact",
+          "description": "Annihilators arrive upon the field with devastating force, twin- tailed trails streaking behind them as an earth-shattering shock-wave blasts apart the foes of Sigmar.",
+          "declare": "If this unit was set up this turn using the 'Scions of the Storm' ability, pick up to 3 enemy units within 10\" of it to be the targets.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -1998,25 +2353,38 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Thunderstruck",
-            "description": "When a lightning hammer finds its mark, enemies are paralysed by crackling energy and a flash of blinding light.",
-            "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Thunderstruck",
+          "description": "When a lightning hammer finds its mark, enemies are paralysed by crackling energy and a flash of blinding light.",
+          "declare": "Pick an enemy unit in combat with this unit to be the target.",
+          "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn."
+        }
       ],
-      "keywords": ["Cavalry", "Order", "Stormcast Eternals", "Extremis Chamber"]
+      "keywords": [
+        "Cavalry",
+        "Order",
+        "Stormcast Eternals",
+        "Extremis Chamber"
+      ]
     },
     {
       "name": "DRACOTHIAN GUARD DESOLATORS",
@@ -2059,22 +2427,43 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "activation": "Passive",
-            "name": "Cleaving Blow",
-            "description": "A single swing of a thunderaxe can carve through several foes.",
-            "effect": "Add 1 to the Damage characteristic of this unit's Thunderaxes if the target unit has 10 or more models."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Cleaving Blow",
+          "description": "A single swing of a thunderaxe can carve through several foes.",
+          "effect": "Add 1 to the Damage characteristic of this unit's Thunderaxes if the target unit has 10 or more models."
+        }
       ],
-      "keywords": ["Cavalry", "Order", "Stormcast Eternals", "Extremis Chamber"]
+      "keywords": [
+        "Cavalry",
+        "Order",
+        "Stormcast Eternals",
+        "Extremis Chamber"
+      ]
     },
     {
       "name": "DRACOTHIAN GUARD FULMINATORS",
@@ -2117,23 +2506,37 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "phases": ["Charge Phase"],
-            "name": "Impaling Strikes",
-            "description": "On the charge, the blade of a stormstrike glaive can impale several foes.",
-            "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
-            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Impaling Strikes",
+          "description": "On the charge, the blade of a stormstrike glaive can impale several foes.",
+          "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
+          "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        }
       ],
-      "keywords": ["Cavalry", "Order", "Stormcast Eternals", "Extremis Chamber"]
+      "keywords": [
+        "Cavalry",
+        "Order",
+        "Stormcast Eternals",
+        "Extremis Chamber"
+      ]
     },
     {
       "name": "DRACOTHIAN GUARD TEMPESTORS",
@@ -2186,23 +2589,37 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "name": "OVERWHELMING VOLLEYSTOR M:",
-            "description": "The Tempestors fire charged crossbow bolts into the foe, weakening their defences and leaving them open to a follow-up assault.",
-            "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Volleystorm Crossbows to be the target.",
-            "effect": "Roll a dice. On a 2+, the target cannot use the 'All-out Defence' command in the following combat phase."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        },
+        {
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "OVERWHELMING VOLLEYSTOR M:",
+          "description": "The Tempestors fire charged crossbow bolts into the foe, weakening their defences and leaving them open to a follow-up assault.",
+          "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Volleystorm Crossbows to be the target.",
+          "effect": "Roll a dice. On a 2+, the target cannot use the 'All-out Defence' command in the following combat phase."
+        }
       ],
-      "keywords": ["Cavalry", "Order", "Stormcast Eternals", "Extremis Chamber"]
+      "keywords": [
+        "Cavalry",
+        "Order",
+        "Stormcast Eternals",
+        "Extremis Chamber"
+      ]
     },
     {
       "name": "PRAETORS",
@@ -2224,20 +2641,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Deployment Phase"],
-            "name": "Soul-Bonded",
-            "description": "Praetors are exemplary bodyguards, linked to their assigned wards at an arcane, spiritual level.",
-            "effect": "Pick a friendly Stormcast Eternals Hero to be this unit's soul- bonded charge for the rest of the battle."
-          },
-          {
-            "activation": "Passive",
-            "name": "Soul-Forged Guardians",
-            "description": "Praetors will protect their soul-bonded charges with every ounce of their being.",
-            "effect": "While this unit's soul-bonded charge is within this unit's combat range, both this unit and that soul-bonded charge have Ward (5+)."
-          }
-        ]
+        {
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Soul-Bonded",
+          "description": "Praetors are exemplary bodyguards, linked to their assigned wards at an arcane, spiritual level.",
+          "effect": "Pick a friendly Stormcast Eternals Hero to be this unit's soul- bonded charge for the rest of the battle."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Soul-Forged Guardians",
+          "description": "Praetors will protect their soul-bonded charges with every ounce of their being.",
+          "effect": "While this unit's soul-bonded charge is within this unit's combat range, both this unit and that soul-bonded charge have Ward (5+)."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2279,28 +2705,44 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "reaction_condition": " This unit was picked as the target of a non-Core ability ",
-            "name": "Ruination Chamber",
-            "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
-            "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "Dispersed For Mation",
-            "description": "These warriors maintain a wide formation, enabling more precise strikes and greater battlefield control.",
-            "effect": "This unit has a coherency range of 2\"."
-          },
-          {
-            "activation": "Passive",
-            "name": "HERALDS OF RIGHTEOUSNESS:",
-            "description": "Prosecutors cross the battlefield in a blur of light.",
-            "effect": "Add 1 to the number of dice rolled when making charge rolls for this unit, to a maximum of 3."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "is_reaction": true,
+          "reaction_condition": " This unit was picked as the target of a non-Core ability ",
+          "name": "Ruination Chamber",
+          "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
+          "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Dispersed For Mation",
+          "description": "These warriors maintain a wide formation, enabling more precise strikes and greater battlefield control.",
+          "effect": "This unit has a coherency range of 2\"."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "HERALDS OF RIGHTEOUSNESS:",
+          "description": "Prosecutors cross the battlefield in a blur of light.",
+          "effect": "Add 1 to the number of dice rolled when making charge rolls for this unit, to a maximum of 3."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2373,29 +2815,48 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Draconic Onslaught",
-            "description": "To reclaim their old empire, the Draconith and their riders fight together as a single furious whole, savaging any who cross their path.",
-            "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit can move 2D6\". It can pass through the combat ranges of enemy units and can end that move in combat. Then, pick an enemy unit that this unit passed across during that move. Inflict D3 mortal damage on that enemy unit.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "activation": "Passive",
-            "name": "Dispersed For Mation",
-            "description": "These warriors maintain a wide formation, enabling more precise strikes and greater battlefield control.",
-            "effect": "This unit has a coherency range of 2\"."
-          },
-          {
-            "activation": "Passive",
-            "name": "Extremis Chamber",
-            "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
-            "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Draconic Onslaught",
+          "description": "To reclaim their old empire, the Draconith and their riders fight together as a single furious whole, savaging any who cross their path.",
+          "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit can move 2D6\". It can pass through the combat ranges of enemy units and can end that move in combat. Then, pick an enemy unit that this unit passed across during that move. Inflict D3 mortal damage on that enemy unit.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Dispersed For Mation",
+          "description": "These warriors maintain a wide formation, enabling more precise strikes and greater battlefield control.",
+          "effect": "This unit has a coherency range of 2\"."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Extremis Chamber",
+          "description": "Most scarce of Sigmar's forces are the Extremis chambers, with each Stormcast mounted on a living weapon. To draw near these warriors is to risk being scoured by lightning or flame.",
+          "effect": "Each time you make an unmodified save roll of 6 for a combat attack that targets this unit, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved."
+        }
       ],
       "keywords": [
         "Monster",
@@ -2466,21 +2927,30 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "phases": ["Charge Phase"],
-            "name": "Azyr Unleashed",
-            "description": "The impact of a Stormstrike Chariot on the charge can obliterate even the most durable of shieldwalls.",
-            "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
-            "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          },
-          {
-            "activation": "Passive",
-            "name": "Celestial Blaze",
-            "description": "The Stormstrike Chariot smashes through lesser foes in a blaze of celestial power.",
-            "effect": "When this unit uses the 'Power Through' command, inflict an additional D3 mortal damage on the target and add D6\" to the distance this unit can move as part of that ability."
-          }
-        ]
+        {
+          "phases": [
+            "Any Charge Phase"
+          ],
+          "name": "Azyr Unleashed",
+          "description": "The impact of a Stormstrike Chariot on the charge can obliterate even the most durable of shieldwalls.",
+          "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
+          "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Celestial Blaze",
+          "description": "The Stormstrike Chariot smashes through lesser foes in a blaze of celestial power.",
+          "effect": "When this unit uses the 'Power Through' command, inflict an additional D3 mortal damage on the target and add D6\" to the distance this unit can move as part of that ability."
+        }
       ],
       "keywords": [
         "War Machine",
@@ -2521,29 +2991,46 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "activation": "Once Per Battle",
-            "once_per_army": true,
-            "phases": ["Deployment Phase"],
-            "name": "Astral Compass",
-            "description": "The Vanguard- Hunters use their astral compass to track their enemies across the Mortal Realms.",
-            "declare": "Pick an enemy unit to be the target.",
-            "effect": "The target has the Hunted keyword for the rest of the battle."
-          },
-          {
-            "activation": "Passive",
-            "name": "Star-Marked",
-            "description": "Those tracked by the Vanguard-Hunters can be sensed from great distances.",
-            "effect": "Add 2\" to this unit's Move characteristic while a Hunted enemy unit is on the battlefield. In addition, add 1 to hit rolls for this unit's attacks that target a Hunted enemy unit."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Astral Compass",
+          "description": "The Vanguard- Hunters use their astral compass to track their enemies across the Mortal Realms.",
+          "declare": "Pick an enemy unit to be the target.",
+          "effect": "The target has the Hunted keyword for the rest of the battle."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Star-Marked",
+          "description": "Those tracked by the Vanguard-Hunters can be sensed from great distances.",
+          "effect": "Add 2\" to this unit's Move characteristic while a Hunted enemy unit is on the battlefield. In addition, add 1 to hit rolls for this unit's attacks that target a Hunted enemy unit."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2604,22 +3091,30 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "phases": ["Charge Phase"],
-            "your_turn_only": true,
-            "name": "Charging Volley",
-            "description": "Vanguard- Palladors unleash a deadly volley of missiles as they charge into their foes.",
-            "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
-            "effect": "This unit can immediately use a Shoot ability as if it were your shooting phase, but it must target that enemy unit. This unit's Starstrike Javelins have Shoot in Combat this phase."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "phases": [
+            "Your Charge Phase"
+          ],
+          "name": "Charging Volley",
+          "description": "Vanguard- Palladors unleash a deadly volley of missiles as they charge into their foes.",
+          "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
+          "effect": "This unit can immediately use a Shoot ability as if it were your shooting phase, but it must target that enemy unit. This unit's Starstrike Javelins have Shoot in Combat this phase."
+        }
       ],
       "keywords": [
         "Order",
@@ -2671,20 +3166,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "activation": "Passive",
-            "name": "Shocking Strikes",
-            "description": "Enemies struck with shock handaxes reel in pain as electricity courses through their veins.",
-            "effect": "If any damage points are allocated to an enemy unit by attacks made with this unit's Shock Handaxes, subtract 1 from wound rolls for that enemy unit's combat attacks for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Shocking Strikes",
+          "description": "Enemies struck with shock handaxes reel in pain as electricity courses through their veins.",
+          "effect": "If any damage points are allocated to an enemy unit by attacks made with this unit's Shock Handaxes, subtract 1 from wound rolls for that enemy unit's combat attacks for the rest of the turn."
+        }
       ],
       "keywords": [
         "Order",
@@ -2727,20 +3238,36 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "activation": "Passive",
-            "name": "Coordinated Strike",
-            "description": "The warriors of the Vanguard chamber train relentlessly to fight in perfect unison.",
-            "effect": "Add 1 to wound rolls for this unit's shooting attacks if the target is in combat with any friendly Vanguard Chamber units."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Coordinated Strike",
+          "description": "The warriors of the Vanguard chamber train relentlessly to fight in perfect unison.",
+          "effect": "Add 1 to wound rolls for this unit's shooting attacks if the target is in combat with any friendly Vanguard Chamber units."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2782,21 +3309,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Vanguard Chamber",
-            "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
-            "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "your_turn_only": true,
-            "name": "Headshot",
-            "description": "When given time to take careful aim, a Vanguard-Raptor can find their mark even amidst the roiling mass of battle.",
-            "effect": "If this unit has not used a Move ability this turn and was not set up this turn, for the rest of the turn, this unit can ignore the effects of the 'Guarded Hero' ability (Core Rules, 25.0) when picking targets for its shooting attacks."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Vanguard Chamber",
+          "description": "Through swiftness, guile and more than a hint of savagery, the warriors of the Vanguard chamber are able to outfight forces many times their own limited numbers.",
+          "effect": "This unit can use Shoot and/or Charge abilities even if it used a Run or Retreat ability in the same turn."
+        },
+        {
+          "phases": [
+            "Your Shooting Phase"
+          ],
+          "name": "Headshot",
+          "description": "When given time to take careful aim, a Vanguard-Raptor can find their mark even amidst the roiling mass of battle.",
+          "effect": "If this unit has not used a Move ability this turn and was not set up this turn, for the rest of the turn, this unit can ignore the effects of the 'Guarded Hero' ability (Core Rules, 25.0) when picking targets for its shooting attacks."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2838,14 +3373,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "NAVIGATORS OF THE STOR M:",
-            "description": "As the Vigilors move swiftly beneath dark thunderheads, the Grungni- forged arrowheads of their stormcaller bows unleash flickers of lightning that illuminate their target and allow vital reconnaissance.",
-            "effect": "If an enemy unit had any damage points allocated to it this turn by this unit's shooting attacks, add 1 to hit rolls for attacks made by friendly Stormcast Eternals units that target that unit for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "NAVIGATORS OF THE STOR M:",
+          "description": "As the Vigilors move swiftly beneath dark thunderheads, the Grungni- forged arrowheads of their stormcaller bows unleash flickers of lightning that illuminate their target and allow vital reconnaissance.",
+          "effect": "If an enemy unit had any damage points allocated to it this turn by this unit's shooting attacks, add 1 to hit rolls for attacks made by friendly Stormcast Eternals units that target that unit for the rest of the turn."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2875,32 +3417,43 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Battle",
-            "once_per_army": true,
-            "phases": ["Deployment Phase"],
-            "name": "Ordained Quest",
-            "description": "Questors travel deep into enemy territory to gain control of vital landmarks with hidden secrets.",
-            "effect": "Pick an objective wholly outside friendly territory. That objective is considered by you to be questmarked."
-          },
-          {
-            "activation": "Once Per Battle",
-            "phases": ["Movement Phase"],
-            "your_turn_only": true,
-            "name": "Relictor Soulguide",
-            "description": "The Knight- Relictor who accompanies the Soulsworn uses the winds of Sigmar's Tempest to translocate the Questors to where they are most needed.",
-            "declare": "You can pick a friendly Knight-Questor within this unit's combat range to be the target.",
-            "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units. Then, if you picked a target, remove it from the battlefield and set it up again within this unit's combat range and more than 9\" from all enemy units.",
-            "keywords": ["Core"]
-          },
-          {
-            "activation": "Passive",
-            "name": "His Will Be Done",
-            "description": "Questors will stop at nothing to fulfil the sacred task given to them by the God-King himself.",
-            "effect": "While this unit is contesting a questmarked objective: * Add 3 to this unit's control score. * This unit has Ward (5+)."
-          }
-        ]
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Deployment Phase"
+          ],
+          "name": "Ordained Quest",
+          "description": "Questors travel deep into enemy territory to gain control of vital landmarks with hidden secrets.",
+          "effect": "Pick an objective wholly outside friendly territory. That objective is considered by you to be questmarked."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Your Movement Phase"
+          ],
+          "name": "Relictor Soulguide",
+          "description": "The Knight- Relictor who accompanies the Soulsworn uses the winds of Sigmar's Tempest to translocate the Questors to where they are most needed.",
+          "declare": "You can pick a friendly Knight-Questor within this unit's combat range to be the target.",
+          "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units. Then, if you picked a target, remove it from the battlefield and set it up again within this unit's combat range and more than 9\" from all enemy units.",
+          "keywords": [
+            "Core"
+          ]
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "His Will Be Done",
+          "description": "Questors will stop at nothing to fulfil the sacred task given to them by the God-King himself.",
+          "effect": "While this unit is contesting a questmarked objective: * Add 3 to this unit's control score. * This unit has Ward (5+)."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -2930,14 +3483,21 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "Tornado Of Magic",
-            "description": "A Celestian Vortex whips the air around it into a tornado that disrupts attacks made with missile weapons.",
-            "effect": "Subtract 1 from hit rolls for shooting attacks made by enemy units while they are within 12\" of this Manifestation."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Tornado Of Magic",
+          "description": "A Celestian Vortex whips the air around it into a tornado that disrupts attacks made with missile weapons.",
+          "effect": "Subtract 1 from hit rolls for shooting attacks made by enemy units while they are within 12\" of this Manifestation."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -2956,14 +3516,21 @@
       "banishment": "7+",
       "weapons": {},
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "ARCANE ENHANCEMENT: A",
-            "description": "Stormcast blessed to be borne upon a Dais Arcanum feels the celestial energies of Azyr course through them.",
-            "effect": "While the unit that was picked to be the target of the 'Summon Dais Arcanum' ability is on the platform of this Manifestation: * That unit has Ward (5+). * If that unit is a Wizard, add 1 to that unit's power level. * That unit cannot use Move abilities and remains on this Manifestation each time it moves. * Instead of measuring range or visibility to that unit, measure to this Manifestation instead. * This Manifestation cannot be picked to be the target of abilities other than Banish abilities. If this Manifestation is banished, before removing it from the battlefield, set up the unit on its platform on the battlefield within 3\" of it. That unit can only be set up in combat with units it was already in combat with when this Manifestation was banished. If it is not possible to set up that unit, it is destroyed. If the unit on the platform is destroyed, immediately remove this Manifestation from play."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "ARCANE ENHANCEMENT: A",
+          "description": "Stormcast blessed to be borne upon a Dais Arcanum feels the celestial energies of Azyr course through them.",
+          "effect": "While the unit that was picked to be the target of the 'Summon Dais Arcanum' ability is on the platform of this Manifestation: * That unit has Ward (5+). * If that unit is a Wizard, add 1 to that unit's power level. * That unit cannot use Move abilities and remains on this Manifestation each time it moves. * Instead of measuring range or visibility to that unit, measure to this Manifestation instead. * This Manifestation cannot be picked to be the target of abilities other than Banish abilities. If this Manifestation is banished, before removing it from the battlefield, set up the unit on its platform on the battlefield within 3\" of it. That unit can only be set up in combat with units it was already in combat with when this Manifestation was banished. If it is not possible to set up that unit, it is destroyed. If the unit on the platform is destroyed, immediately remove this Manifestation from play."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -2981,21 +3548,30 @@
       "banishment": "6+",
       "weapons": {},
       "abilities": [
-        [
-          {
-            "phases": ["Hero Phase"],
-            "name": "Burning Vengeance",
-            "description": "An Everblaze Comet smashes into the battlefield with tremendous force, whereupon it embeds itself into the ground, radiating a corona of deadly Azyrite energies.",
-            "declare": "If this Manifestation was summoned this phase, pick any number of enemy units within 6\" of it to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          },
-          {
-            "activation": "Passive",
-            "name": "Arcane Disruption",
-            "description": "The emanations from an Everblaze Comet disrupt the magical abilities of nearby wizards.",
-            "effect": "Subtract 1 from casting rolls for enemy Wizards while they are within 12\" of this Manifestation."
-          }
-        ]
+        {
+          "phases": [
+            "Any Hero Phase"
+          ],
+          "name": "Burning Vengeance",
+          "description": "An Everblaze Comet smashes into the battlefield with tremendous force, whereupon it embeds itself into the ground, radiating a corona of deadly Azyrite energies.",
+          "declare": "If this Manifestation was summoned this phase, pick any number of enemy units within 6\" of it to be the targets.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Arcane Disruption",
+          "description": "The emanations from an Everblaze Comet disrupt the magical abilities of nearby wizards.",
+          "effect": "Subtract 1 from casting rolls for enemy Wizards while they are within 12\" of this Manifestation."
+        }
       ],
       "keywords": [
         "Manifestation",
@@ -3034,25 +3610,24 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "reaction_condition": " This unit was picked as the target of a non-Core ability ",
-            "name": "Ruination Chamber",
-            "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
-            "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
-          },
-          {
-            "activation": "Once Per Battle",
-            "once_per_army": true,
-            "phases": ["Combat Phase"],
-            "name": "Deliver Judgement",
-            "description": "This warrior orders Sigmar's wrath to be delivered unto their enemies.",
-            "declare": "Pick a friendly non-Hero Ruination Chamber unit wholly within 12\" of this unit.",
-            "effect": "That unit can use 2 Fight abilities this phase. After the first is used, however, that unit has Strike-last for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "is_reaction": true,
+          "reaction_condition": " This unit was picked as the target of a non-Core ability ",
+          "name": "Ruination Chamber",
+          "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
+          "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
+        },
+        {
+          "activation": "Once Per Battle",
+          "phases": [
+            "Any Combat Phase"
+          ],
+          "name": "Deliver Judgement",
+          "description": "This warrior orders Sigmar's wrath to be delivered unto their enemies.",
+          "declare": "Pick a friendly non-Hero Ruination Chamber unit wholly within 12\" of this unit.",
+          "effect": "That unit can use 2 Fight abilities this phase. After the first is used, however, that unit has Strike-last for the rest of the turn."
+        }
       ],
       "keywords": [
         "Hero",
@@ -3082,29 +3657,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "reaction_condition": " This unit was picked as the target of a non-Core ability ",
-            "name": "Ruination Chamber",
-            "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
-            "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "Memorian",
-            "description": "Memorians serve to remind soul-damaged Stormcasts of their humanity.",
-            "effect": "This unit's Memorian is a token. Add 3 to the control scores of friendly Ruination Chamber units wholly within 12\" of this unit while its Memorian is on the battlefield. If you make an unmodified save roll of 1 for this unit, remove its Memorian from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
-          },
-          {
-            "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability  for this unit ",
-            "name": "Earn An Honourable Death",
-            "description": "The Lord-Terminos heads to battle alongside the Ruination chamber, the Stormcasts seeking to earn their final rest by proving themselves in battle.",
-            "effect": "Pick a friendly non-Hero Ruination Chamber Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "is_reaction": true,
+          "reaction_condition": " This unit was picked as the target of a non-Core ability ",
+          "name": "Ruination Chamber",
+          "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
+          "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "Earn An Honourable Death",
+          "description": "The Lord-Terminos heads to battle alongside the Ruination chamber, the Stormcasts seeking to earn their final rest by proving themselves in battle.",
+          "effect": "Pick a friendly non-Hero Ruination Chamber Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
+        }
       ],
       "keywords": [
         "Hero",
@@ -3134,22 +3709,29 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "reaction_condition": " This unit was picked as the target of a non-Core ability ",
-            "name": "Ruination Chamber",
-            "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
-            "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
-          },
-          {
-            "activation": "Passive",
-            "name": "MEMORIAN DESCENDANTS:",
-            "description": "Reclusians are accompanied by Memorians who serve to remind them of their humanity.",
-            "effect": "This unit's Memorians are tokens. There are 2 Memorians for every 3 models in this unit. While any of this unit's Memorians are on the battlefield, add 1 to this unit's resistance rolls when using the 'Ruination Chamber' ability. Each time you make an unmodified save roll of 1 for this unit, remove 1 of its Memorians from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
-          }
-        ]
+        {
+          "activation": "Once Per Turn",
+          "is_reaction": true,
+          "reaction_condition": " This unit was picked as the target of a non-Core ability ",
+          "name": "Ruination Chamber",
+          "description": "These veterans march where others cannot tread, fighting upon battlefields transformed into scenes of apocalypse. Even the most corrosive magics find no purchase on their souls.",
+          "effect": "Make a resistance roll of D6. On a 4+, that ability has no effect on this unit."
+        },
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "MEMORIAN DESCENDANTS:",
+          "description": "Reclusians are accompanied by Memorians who serve to remind them of their humanity.",
+          "effect": "This unit's Memorians are tokens. There are 2 Memorians for every 3 models in this unit. While any of this unit's Memorians are on the battlefield, add 1 to this unit's resistance rolls when using the 'Ruination Chamber' ability. Each time you make an unmodified save roll of 1 for this unit, remove 1 of its Memorians from the battlefield after the Attack ability has been resolved (the damage point is still inflicted)."
+        }
       ],
       "keywords": [
         "Infantry",
@@ -3200,40 +3782,55 @@
         ]
       },
       "abilities": [
-        [
-          {
-            "activation": "Passive",
-            "name": "BATTLE DAMAGED",
-            "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Cthorak's Ancient Claws is 4. 5"
-          },
-          {
-            "phases": ["Hero Phase"],
-            "your_turn_only": true,
-            "name": "Lightning Tempest",
-            "description": "Ionus calls Ionus calls upon Sigmar to unleash the wrath of Azyr.",
-            "declare": "Pick a visible enemy unit within 12\" of this unit to be struck by lightning, then make a chanting roll of D6.",
-            "effect": "Inflict D3 mortal damage on that unit, then roll a dice. On a 1-2, the sequence ends. On a 3+, pick another enemy unit within 3\" of that unit to be struck by lightning and inflict D3 mortal damage on it. If the chanting roll was 10+, you can pick another enemy unit within 6\" of that unit instead of 3\". Keep rolling dice in this way until the sequence ends or there are no other enemy units eligible to be struck by lightning. A unit cannot be struck by lightning more than once per turn.",
-            "keywords": ["Prayer"],
-            "chanting_value": 5
-          },
-          {
-            "activation": "Once Per Turn",
-            "once_per_army": true,
-            "phases": ["Shooting Phase"],
-            "name": "Spirit-Scouring Flames",
-            "description": "Enemies engulfed by Cthorak's pale-flame breath feel their very souls begin to burn away.",
-            "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Spirit-scouring Flames to be the target.",
-            "effect": "The target has the Soulburned keyword for the rest of the battle.",
-            "keywords": ["Rampage"]
-          },
-          {
-            "phases": ["Shooting Phase"],
-            "name": "Soulburned",
-            "description": "Once an enemy has been burnt by Cthorak's scouring flames, their soul ignites deep within their body.",
-            "declare": "This unit can use this ability even if it has been destroyed. Pick any number of Soulburned enemy units to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
-          }
-        ]
+        {
+          "activation": "Passive",
+          "phases": [
+            "Start of Any Turn",
+            "Any Hero Phase",
+            "Any Movement Phase",
+            "Any Shooting Phase",
+            "Any Charge Phase",
+            "Any Combat Phase",
+            "End of Any Turn"
+          ],
+          "name": "BATTLE DAMAGED",
+          "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Cthorak's Ancient Claws is 4. 5"
+        },
+        {
+          "phases": [
+            "Your Hero Phase"
+          ],
+          "name": "Lightning Tempest",
+          "description": "Ionus calls Ionus calls upon Sigmar to unleash the wrath of Azyr.",
+          "declare": "Pick a visible enemy unit within 12\" of this unit to be struck by lightning, then make a chanting roll of D6.",
+          "effect": "Inflict D3 mortal damage on that unit, then roll a dice. On a 1-2, the sequence ends. On a 3+, pick another enemy unit within 3\" of that unit to be struck by lightning and inflict D3 mortal damage on it. If the chanting roll was 10+, you can pick another enemy unit within 6\" of that unit instead of 3\". Keep rolling dice in this way until the sequence ends or there are no other enemy units eligible to be struck by lightning. A unit cannot be struck by lightning more than once per turn.",
+          "keywords": [
+            "Prayer"
+          ],
+          "chanting_value": 5
+        },
+        {
+          "activation": "Once Per Turn",
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "Spirit-Scouring Flames",
+          "description": "Enemies engulfed by Cthorak's pale-flame breath feel their very souls begin to burn away.",
+          "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Spirit-scouring Flames to be the target.",
+          "effect": "The target has the Soulburned keyword for the rest of the battle.",
+          "keywords": [
+            "Rampage"
+          ]
+        },
+        {
+          "phases": [
+            "Any Shooting Phase"
+          ],
+          "name": "Soulburned",
+          "description": "Once an enemy has been burnt by Cthorak's scouring flames, their soul ignites deep within their body.",
+          "declare": "This unit can use this ability even if it has been destroyed. Pick any number of Soulburned enemy units to be the targets.",
+          "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll."
+        }
       ],
       "keywords": [
         "Warmaster",
