@@ -3,30 +3,22 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "The Hunger",
       "description": "Those who bear the Soulblight Curse constantly crave blood and are empowered by feasting upon their foes.",
       "declare": "Pick each friendly Vampire unit that used a Fight ability this turn to be the targets.",
       "effect": "Heal (D3) each target. Heal (2D3) the target instead if it destroyed an enemy unit this turn using a Fight ability."
     },
     {
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "The Unquiet Dead",
       "description": "Animated by necromancy, the undead rise from their graves, balefire eyes blazing with dark purpose.",
       "declare": "Pick a friendly Deathrattle or Deadwalkers unit that has not been deployed.",
       "effect": "Set up that unit in reserve in the grave. It has now been deployed. You cannot set up more friendly units in the grave than there are on the battlefield.",
-      "keywords": [
-        "Deploy"
-      ]
+      "keywords": ["Deploy"]
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "The Rising Dead",
       "description": "Clawing their way through the soil and rock, more undead warriors join the fight.",
@@ -36,25 +28,21 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "name": "Deathly Invocation",
       "description": "Powerful practitioners of death magic are able to summon hordes of undead minions.",
       "declare": "Pick a friendly Soulblight Gravelords Hero to use this ability, then pick up to 3 friendly Deathrattle or Deadwalkers units wholly within 12\" of that Hero to be the targets.",
-      "effect": "For each target: \n* If the target is damaged, Heal (3) the target. \n* If the target is not damaged, return  a number of slain models to it with a combined Health characteristic of up to 3."
+      "effect": "For each target: * If the target is damaged, Heal (3) the target. * If the target is not damaged, return a number of slain models to it with a combined Health characteristic of up to 3."
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
       "name": "Endless Legions",
-      "description": "To the Soulblight  To the Soulblight aristocracy, the dead are mere chattel to be raised and expended.",
+      "description": "To the Soulblight To the Soulblight aristocracy, the dead are mere chattel to be raised and expended.",
       "command_point_cost": 1
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "declare": "Pick a friendly non-Unique Deathrattle or Deadwalkers unit that started the battle with 2 or more models and that has been destroyed to be the target.",
       "effect": "Set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 12\" of a friendly Soulblight Gravelords Hero or wholly within 6\" of a terrain feature. It must be set up more than 9\" from all enemy units. If it is your movement phase, you can set up the replacement unit more than 3\" from all enemy units instead of more than 9\", but if you set it up within 9\" of any enemy units, it cannot use Charge abilities this turn."
     }
@@ -69,13 +57,11 @@
     "Deathstench Drove": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "DRAGGED DOWN AND TORN APART:",
       "description": "Hordes of shambling Deadwalker Zombies flow around and over their victims like a rotten tide, bearing them to the ground through sheer weight of numbers before tearing them limb from limb.",
       "declare": "Pick up to 3 friendly Deadwalkers units in combat to be the targets.",
-      "effect": "For each target: \n* Make a pile-in move. \n* Then, pick an enemy unit in combat  with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
+      "effect": "For each target: * Make a pile-in move. * Then, pick an enemy unit in combat with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     "Bacchanal Of Blood": {
       "activation": "Passive",
@@ -93,9 +79,7 @@
   "heroic_traits": [
     {
       "activation": "Once Per Turn",
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "Lash Of The Sire",
       "description": "Such is the domineering force of this undead overlord's willpower that it can imbue nearby vassals with sudden impetus.",
@@ -104,9 +88,7 @@
     },
     {
       "activation": "Once Per Turn",
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "Unbending Will",
       "description": "This general and their minions are a force of unliving conquest like no other.",
@@ -123,9 +105,7 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Orb Of Enchantment",
       "description": "To glance into the swirling depths of this crystal orb is to become hypnotised by alluring visions and half-glimpsed futures.",
       "declare": "Pick an enemy Hero in combat to be the target.",
@@ -148,55 +128,39 @@
   "spell_lore": {
     "Lore Of Undeath": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Vile Transference",
         "description": "The caster siphons the animus from nearby enemies and uses it to empower their necromantic powers.",
         "declare": "Pick a friendly Soulblight Gravelords Wizard to cast this spell, pick a visible enemy unit within 18\" of them that has not been picked to be the target of this ability this turn to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 6, inflict 1 mortal damage on that unit. If any enemy models were slain by this spell, Heal (D3) the caster.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "7"
-        ]
+        "keywords": ["Spell", "Unlimited", "7"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Prison Of Grief",
         "description": "Victims of this curse relive their tragedies, their will to fight replaced by self-pity.",
         "declare": "Pick a friendly Soulblight Gravelords Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Strike-last until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "7",
-          "7"
-        ],
+        "keywords": ["Spell", "7", "7"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Waste Away",
-        "description": "The wizard causes the  The wizard causes the muscles of the foe to atrophy, robbing them of their strength.",
+        "description": "The wizard causes the The wizard causes the muscles of the foe to atrophy, robbing them of their strength.",
         "declare": "Pick a friendly Soulblight Gravelords Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "For the rest of the turn, subtract 1 from the Damage characteristic of the target's melee weapons.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 7
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Nagash, Supreme Lord Of The Undead",
+      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -239,39 +203,29 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Hand Of Dust",
             "description": "Nagash's touch can turn a foe to a pile of dusty bones in moments.",
             "declare": "Pick a visible enemy Hero or Monster in combat with this unit to be the target.",
             "effect": "Hide a dice in one of your hands or under one of two appropriate containers. Your opponent must pick one of your hands or containers. If they pick the one hiding the dice, this ability has no effect. If they pick the empty one, the target is automatically destroyed.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "SUPREME LORD OF THE UNDEAD",
             "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
             "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Invocation Of Nagash",
             "description": "In a storm of morbid sorcery, Nagash blasts his foes' souls or re-knits his minions' bodies.",
             "declare": "This unit can cast this spell more than once per phase. Pick a visible unit wholly within 18\" of this unit that has not been picked to be the target of this spell this turn to be the target, then make a casting roll of 2D6.",
-            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: \n* Return a number of slain models to  the target unit with a combined Health characteristic of up to 3. \n* The target has Ward (5+) until the start  of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: * Return a number of slain models to the target unit with a combined Health characteristic of up to 3. * The target has Ward (5+) until the start of your next turn.",
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -289,7 +243,7 @@
       ]
     },
     {
-      "name": "Mannfred Von Carstein, Mortarch Of Night",
+      "name": "MANNFRED VON CARSTEIN MORTARCH OF NIGHT",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -331,34 +285,29 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared the \u2018Redeploy\u2019  command for a Soulblight Gravelords unit wholly within 12\" of this unit ",
+            "reaction_condition": " You declared the 'Redeploy' command for a Soulblight Gravelords unit wholly within 12\" of this unit ",
             "name": "THE MORTARCH OF NIGHT:",
             "description": "Mannfred's ancient cunning is rightly feared throughout the Mortal Realms.",
             "effect": "The unit using the 'Redeploy' command can move into combat when using that ability. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Wind Of Death",
             "description": "Mannfred conjures a howling gust of spectral wind that tears the souls from the bodies of those who feel its chilling bite.",
             "declare": "Pick a point on the battlefield within 18\" of the caster, pick up to 3 visible enemy units within 6\" of that point to be the targets, then make a casting roll of 2D6.",
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Ashigaroth'S Hunger",
             "description": "Mannfred's dread abyssal is afflicted by a hunger as indiscriminate as it is unending, and it strikes with lightning-fast speed to attempt in vain to satiate that hunger.",
             "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit has Strike-first for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -376,7 +325,7 @@
       ]
     },
     {
-      "name": "Prince Vhordrai",
+      "name": "PRINCE VHORDRAI",
       "move": "12",
       "health": "16",
       "save": "3+",
@@ -432,38 +381,31 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Shordemaire's Claws is 5."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Saint Of Slaughter",
             "description": "Under the fierce scrutiny of Prince Vhordrai, vampires revel in displaying their martial skill.",
             "declare": "Pick a friendly non-Monster Vampire unit that destroyed a unit this turn using a Fight ability and is wholly within 12\" of this unit to be the target.",
-            "effect": "Pick 1 of the following effects to apply for the rest of the battle: \n* Add 2\" to the target's Move characteristic. \n* Add 1 to the Attacks characteristic of the  target's melee weapons. \n* Add 1 to the Damage characteristic of the  target's melee weapons. More than 1 effect can apply to a unit at the same time; however, each effect can only be applied to a unit once. 7"
+            "effect": "Pick 1 of the following effects to apply for the rest of the battle: * Add 2\" to the target's Move characteristic. * Add 1 to the Attacks characteristic of the target's melee weapons. * Add 1 to the Damage characteristic of the target's melee weapons. More than 1 effect can apply to a unit at the same time; however, each effect can only be applied to a unit once. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Quickblood",
             "description": "Vhordrai calls upon the power of the curse running through his veins to strike with impossible speed.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "This unit has Strike-first until the start of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Snapping Jaws",
             "description": "The giant jaws of Shordemaire tear huge chunks from monsters or swallow smaller foes whole.",
             "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
             "effect": "Roll a dice. On a 4+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -480,7 +422,7 @@
       ]
     },
     {
-      "name": "Neferata, Mortarch Of Blood",
+      "name": "NEFERATA MORTARCH OF BLOOD",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -526,16 +468,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "The Adevore",
             "description": "Should Nagadron sense the impending doom of a foe wounded by the Dagger of Jet, it will fall upon them and hungrily feast on their soul.",
             "declare": "Pick an enemy Hero that was allocated any damage points inflicted by this unit's Akmet-har this turn to be the target.",
             "effect": "Roll a dice. On a 5+, the target is automatically destroyed.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -544,26 +482,20 @@
             "effect": "Subtract 1 from hit rolls for combat attacks that target friendly Soulblight Gravelords units while they are wholly within 6\" of this unit."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "The Mortarch Of Blood",
             "description": "Neferata has millennia of experience analysing and unpicking her foes' ploys.",
             "declare": "Pick up to 3 friendly Deathrattle Infantry or Deadwalkers Infantry units to be the targets.",
             "effect": "Each target can use the 'Normal Move' ability as if it were your movement phase. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Dark Mist",
             "description": "Neferata summons tendrils of penumbral mist to coil around her minions, rendering their corporeal forms as insubstantial as smoke.",
             "declare": "Pick a visible friendly non-Monster Soulblight Gravelords unit wholly within 12\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Ignore modifiers to save rolls for the target (positive and negative) until the start of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -582,7 +514,7 @@
       ]
     },
     {
-      "name": "Lauka Vai, Mother Of Nightmares",
+      "name": "LAUKA VAI MOTHER OF NIGHTMARES",
       "move": "10",
       "health": "11",
       "save": "4+",
@@ -620,27 +552,21 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Impaling Talons",
             "description": "Lauka Vai thrusts her massive talons into her prey with lethal precision, inflicting horrendous wounds upon them.",
             "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
             "effect": "Roll a dice. If the roll is equal to or less than the target's Health characteristic, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Rampage",
-              "6"
-            ]
+            "keywords": ["Rampage", "6"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "The Queen'S Dictat",
             "description": "Lauka summons an arcane blood-mist that drives a beast among her brood into a terrible frenzy.",
             "declare": "Pick a visible friendly Soulblight Gravelords Monster wholly within 12\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Pick 1 of the target's Companion melee weapons. Add D3 to the Attacks characteristic of that weapon for the rest of the turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -658,7 +584,7 @@
       ]
     },
     {
-      "name": "Vengorian Lord",
+      "name": "VENGORIAN LORD",
       "move": "10",
       "health": "11",
       "save": "4+",
@@ -688,9 +614,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Festering Feast",
             "description": "Vengorians bid their monstrous broods indulge in gory feasts even as battle rages.",
             "declare": "Pick a visible friendly non-Hero Soulblight Gravelords Monster that destroyed an enemy unit this turn and that is wholly within 12\" of this unit to be the target.",
@@ -699,13 +623,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Scything Talons",
             "description": "As the Vengorian Lord crashes into the foe, it lays about itself with frenzied sweeps of its huge talons, cutting down droves of lesser foes.",
             "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
             "effect": "Roll a dice. On a 3+, roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -727,7 +650,7 @@
       ]
     },
     {
-      "name": "Radukar The Wolf",
+      "name": "RADUKAR THE WOLF",
       "move": "6",
       "health": "7",
       "save": "4+",
@@ -754,17 +677,13 @@
             "effect": "If this unit charged this turn, for the rest of the turn, add 1 to wound rolls for combat attacks made by friendly Deathrattle, Deadwalkers and Vyrkos Blood-born units while they are wholly within 12\" of this unit. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Master Of The Pack",
             "description": "His voice redolent with supernatural power, Radukar the Wolf barks the command to charge and his undead minions hurl themselves at the enemy.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "Until the start of your next turn, you can re-roll charge rolls for friendly Soulblight Gravelords Infantry units while they are wholly within 12\" of this unit.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -781,7 +700,7 @@
       ]
     },
     {
-      "name": "Radukar The Beast",
+      "name": "RADUKAR THE BEAST",
       "move": "8",
       "health": "12",
       "save": "4+",
@@ -819,29 +738,20 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "The Beast Will Out",
             "description": "In his hulking bestial form, Radukar is a frenzied abomination concerned only with tearing apart everything in his path.",
             "effect": "If this unit is not in combat, it can move D6\". It can move into combat.",
-            "keywords": [
-              "Rampage",
-              "6"
-            ]
+            "keywords": ["Rampage", "6"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Ar Mour Of The Night",
             "description": "With a mere thought, Radukar the Beast summons wisps of pure darkness to form a penumbral shield around his body, protecting him from harm.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "Subtract 1 from hit rolls and wound rolls for attacks that target this unit for the rest of the turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -858,7 +768,7 @@
       ]
     },
     {
-      "name": "Ivya Volga, The Outcast",
+      "name": "IVYA VOLGA THE OUTCAST",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -903,17 +813,13 @@
             "effect": "Subtract 2 from the Attacks characteristic of enemy Monsters' melee weapons while they are in combat with this unit. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Total Dominance",
             "description": "With a swift and precise gesture, Ivya exerts her powerful influence over nearby monsters.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "For the rest of the turn, subtract 5 from the control scores of enemy Monsters while they are within 12\" of this unit.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -930,7 +836,7 @@
       ]
     },
     {
-      "name": "Belladamma Volga, First Of The V Yrkos",
+      "name": "BELLADAMMA VOLGA FIRST OF THE V YRKOS",
       "move": "8",
       "health": "9",
       "save": "4+",
@@ -963,20 +869,16 @@
             "activation": "Passive",
             "name": "Wolfguard",
             "description": "Volga's lupine allies will sacrifice themselves to protect her.",
-            "effect": "While this unit is within the combat range of a friendly Dire Wolves unit: \n* This unit has Ward (4+). \n* Each time you make a successful ward  roll for this unit, allocate 1 damage point to a friendly Dire Wolves unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points). 7"
+            "effect": "While this unit is within the combat range of a friendly Dire Wolves unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Dire Wolves unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points). 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Under A Killing Moon",
-            "description": "Beneath  Beneath the light of a blood moon, Volga's wolves attack with mad-eyed ferocity.",
+            "description": "Beneath Beneath the light of a blood moon, Volga's wolves attack with mad-eyed ferocity.",
             "declare": "Pick up to 3 visible friendly Dire Wolves units wholly within 18\" of this unit to be the targets, then make a casting roll of 2D6.",
-            "effect": "For the rest of the turn: \n* Add 1 to the Rend characteristic of the  targets' melee weapons. \n* The targets can ignore the effect of the  'Beast' ability.",
-            "keywords": [
-              "Spell"
-            ],
+            "effect": "For the rest of the turn: * Add 1 to the Rend characteristic of the targets' melee weapons. * The targets can ignore the effect of the 'Beast' ability.",
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
@@ -999,7 +901,7 @@
       ]
     },
     {
-      "name": "Gorslav The Gravekeeper",
+      "name": "GORSLAV THE GRAVEKEEPER",
       "move": "5",
       "health": "6",
       "save": "6+",
@@ -1023,13 +925,11 @@
             "activation": "Passive",
             "name": "KEEPER OF THE CORPSE-GARDENS:",
             "description": "In battle, Gorslav can call upon his Deadwalker minions to throw themselves into enemy attacks and blunt their blades.",
-            "effect": "While this unit is within the combat range of a friendly Deadwalker Zombies unit: \n* This unit has Ward (4+). \n* Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Deadwalker Zombies unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
+            "effect": "While this unit is within the combat range of a friendly Deadwalker Zombies unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Deadwalker Zombies unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
           },
           {
             "activation": "Once Per Turn",
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Arise! Arise!",
             "description": "With a rasping cry, the Gravekeeper beckons his freshly buried victims to rise as undead and defend the walls of Ulfenkarn.",
@@ -1049,7 +949,7 @@
       ]
     },
     {
-      "name": "Torgilliusthe Chamberlain",
+      "name": "TORGILLIUS THE CHAMBERLAIN",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -1088,17 +988,13 @@
             "effect": "This unit can use the 'Deathly Invocation' ability even if a different friendly unit has already used it this turn. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Failing Fortitude",
             "description": "Ruthlessly targeting his prey's weaknesses, Torgillius hurls bolts of enervating energy to drain their strength and resilience.",
             "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Until the start of your next turn, subtract 1 from wound rolls for the target's attacks.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -1114,7 +1010,7 @@
       ]
     },
     {
-      "name": "Vyrkos Blood-Born",
+      "name": "VYRKOS BLOOD-BORN",
       "move": "8",
       "health": "3",
       "save": "6+",
@@ -1141,9 +1037,7 @@
             "effect": "While each model in this unit is within 1\" of any terrain features, this unit cannot be targeted by shooting attacks unless the attacking model is within 9\" of it."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Shadowfast",
             "description": "Vyrkos Blood-born move with savage swiftness.",
             "effect": "Roll a dice. On a 3+, this unit can use a Move ability as if it were your movement phase."
@@ -1159,7 +1053,7 @@
       ]
     },
     {
-      "name": "Watch Captain Halgrim",
+      "name": "WATCH CAPTAIN HALGRIM",
       "move": "4",
       "health": "5",
       "save": "4+",
@@ -1181,7 +1075,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for\u00a0this unit",
+            "reaction_condition": " You declared a Fight ability  for this unit",
             "name": "Echoes Of The Watch",
             "description": "Beneath the sightless gaze of Halgrim, the long- dead garrison of Mournhold act with a disturbing semblance of the martial training they prided themselves on in life.",
             "effect": "Pick a friendly Deathrattle Skeletons unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -1205,7 +1099,7 @@
       ]
     },
     {
-      "name": "Vargskyr",
+      "name": "VARGSKYR",
       "move": "8",
       "health": "8",
       "save": "5+",
@@ -1256,7 +1150,7 @@
       ]
     },
     {
-      "name": "Kosargi Nightguard",
+      "name": "KOSARGI NIGHTGUARD",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -1293,7 +1187,7 @@
       ]
     },
     {
-      "name": "Lady Annika, The Thirsting Blade",
+      "name": "LADY ANNIKA THE THIRSTING BLADE",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1314,30 +1208,22 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Supernatural Speed",
             "description": "Lady Annika's near-permanent state of starvation drives her ahead of the main battlelines, ready to pounce as soon as prey draws near.",
             "declare": "Pick this unit if it has not been deployed.",
             "effect": "Set up this unit in reserve lying in wait. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "KISS OF THE BLADE PROBOSCIAN:",
             "description": "This pitted and corroded blade should not endure - and yet, it does. The same cannot be said for anything scratched by its mouldering point.",
             "declare": "Pick an enemy unit that was allocated any damage points inflicted by this unit's combat attacks this turn to be the target.",
             "effect": "Roll a dice. On a 2+, subtract 1 from save rolls for the target for the rest of the battle."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Starving Nightmare",
             "description": "Unable to contain her hunger any longer, Lady Annika springs forth from hiding, eager to glut herself on the blood of the foe.",
@@ -1357,7 +1243,7 @@
       ]
     },
     {
-      "name": "Kritza, The Rat Prince",
+      "name": "KRITZA THE RAT PRINCE",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1378,17 +1264,13 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Scurrying Retreat",
             "description": "Just when a foe has him cornered, Kritza transfigures into a swarm of scurrying rats, only to rematerialise elsewhere and drive his blade into an enemy's back.",
             "effect": "If this unit is in combat, roll a dice. On a 2+, this unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "The Ver Minous Court",
             "description": "Kritza believes himself an appreciator of the finer things in undeath, and his rodent servants are adept in snatching away trinkets and treasures for his collection.",
             "declare": "Pick an enemy unit in combat with this unit to be the target, then pick an artefact of power that the target has.",
@@ -1407,7 +1289,7 @@
       ]
     },
     {
-      "name": "Vampire Lord, On Zombie Dragon",
+      "name": "VAMPIRE LORD ON ZOMBIE DRAGON",
       "move": "12",
       "health": "16",
       "save": "3+",
@@ -1471,16 +1353,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Bloodthirsty Dominance",
             "description": "The Vampire Lord and its monstrous mount single out worthy prey, tearing into them with relentless fury.",
             "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
             "effect": "Roll a number of dice equal to the target's Health characteristic. For each 6, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -1496,7 +1374,7 @@
       ]
     },
     {
-      "name": "Vampire Lord",
+      "name": "VAMPIRE LORD",
       "move": "6",
       "health": "5",
       "save": "3+",
@@ -1521,16 +1399,12 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Sanguine Blur",
             "description": "By the time this vampire's prey notices the crimson streak heading towards them, it is far too late.",
             "effect": "Roll a dice. On a 3+, remove this unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy non-Hero units and more than 3\" from all enemy Heroes.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -1545,7 +1419,7 @@
       ]
     },
     {
-      "name": "Cado Ezechiar, The Hollow King",
+      "name": "CADO EZECHIAR THE HOLLOW KING",
       "move": "6",
       "health": "6",
       "save": "4+",
@@ -1566,27 +1440,21 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "RETRIBUTION OR SALVATION:",
             "description": "Cado's quest for both vengeance and self-control manifests as two forms of sorcery: bolts of killing judgement and an aura of regal authority that augments nearby undead.",
             "declare": "Pick a visible unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Deathrattle or Deadwalkers unit, subtract 1 from wound rolls for combat attacks that target that unit for the rest of the turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "The Court Of The Lost",
             "description": "The iron rings worn by Cado hold the spirits of souls from his past. In times of need, he summons their ethereal forms to aid him.",
-            "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply until the start of your next turn. \n* This unit has a Move characteristic of 12\". \n* Add 1 to casting rolls, unbinding rolls  and banishment rolls for this unit. \n* This unit's melee weapons have  Crit (Mortal)."
+            "effect": "Roll a dice. On a 2+, pick 1 of the following effects to apply until the start of your next turn. * This unit has a Move characteristic of 12\". * Add 1 to casting rolls, unbinding rolls and banishment rolls for this unit. * This unit's melee weapons have Crit (Mortal)."
           }
         ]
       ],
@@ -1602,7 +1470,7 @@
       ]
     },
     {
-      "name": "Askurgan Trueblades",
+      "name": "ASKURGAN TRUEBLADES",
       "move": "6",
       "health": "2",
       "save": "5+",
@@ -1638,9 +1506,7 @@
             "effect": "Subtract 1 from hit rolls for combat attacks made by enemy Monsters that target this unit. Add 1 to hit rolls for combat attacks made by this unit that target enemy Monsters."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Gut-Wrenching Howl",
             "description": "The howl of a Curseblood resounds with the force of long-repressed bloodlust finally finding release, staggering even the bravest souls.",
             "declare": "Pick an enemy unit in combat with this unit's Curseblood to be the target.",
@@ -1658,7 +1524,7 @@
       ]
     },
     {
-      "name": "Blood Knights",
+      "name": "BLOOD KNIGHTS",
       "move": "12",
       "health": "3",
       "save": "3+",
@@ -1694,9 +1560,7 @@
             "effect": "When this unit moves, it can pass through models in enemy Infantry units and can pass through the combat ranges of enemy Infantry units, but it cannot end a move in combat unless specified in the ability used."
           },
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Trampled To Dust",
             "description": "Infantrymen who find themselves in the Blood Knights' path are crushed beneath the hooves of their Nightmare steeds.",
             "declare": "Pick an enemy unit that this unit passed across this turn to be the target.",
@@ -1715,7 +1579,7 @@
       ]
     },
     {
-      "name": "Vargheists",
+      "name": "VARGHEISTS",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1740,16 +1604,12 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Death'S Descent",
             "description": "Vargheists swoop down upon their victims from the sky, suddenly overwhelming them in a flurry of claws and fangs.",
             "effect": "If this unit is not in combat, remove it from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -1764,7 +1624,7 @@
       ]
     },
     {
-      "name": "Bloodseeker Palanquin",
+      "name": "BLOODSEEKER PALANQUIN",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -1804,9 +1664,7 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "your_turn_only": true,
             "name": "A PROMISING CONCOCTION:",
             "description": "Sanguinarchs are obsessed with crafting the finest ichorous blends, and they can further refine such rich pickings to bolster their strength and that of their lackeys.",
@@ -1827,7 +1685,7 @@
       ]
     },
     {
-      "name": "Mortis Engine",
+      "name": "MORTIS ENGINE",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -1873,9 +1731,7 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Wave Of Power",
             "description": "With arms held aloft, the Corpsemaster discharges the energy stored within the Mortis Engine, searing the life force from those nearby.",
@@ -1895,7 +1751,7 @@
       ]
     },
     {
-      "name": "Coven Throne",
+      "name": "COVEN THRONE",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -1959,7 +1815,7 @@
       ]
     },
     {
-      "name": "Zombie Dragon",
+      "name": "ZOMBIE DRAGON",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -2006,21 +1862,15 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "DEATH ON TATTERED WINGS:",
             "description": "The Zombie Dragon circles above the arrayed armies, eye sockets aglow with unholy energy.",
             "declare": "Pick this unit if it has not been deployed.",
             "effect": "Set up this unit in reserve high above the battlefield. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Loathsome Descent",
             "description": "With a deafening roar, the Zombie Dragon dives into battle like a foul comet.",
@@ -2030,16 +1880,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Ar Mour Crunch",
             "description": "The Zombie Dragon bites down hard on a target protected by enclosing armour or a thick hide, crumpling and shredding its layers of protection and crushing the bones beneath.",
             "declare": "If this unit charged this turn, pick an enemy Cavalry or Monster unit in combat with it to be the target.",
             "effect": "Roll a dice. If the roll is equal to or exceeds the target's Save characteristic, inflict 3 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -2052,7 +1898,7 @@
       ]
     },
     {
-      "name": "Terrorgheist",
+      "name": "TERRORGHEIST",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -2101,16 +1947,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Sonic Assault",
             "description": "With a barrage of ear-piercing shrieks, the Terrorgheist drops from the sky to savage its stunned prey.",
             "declare": "If this unit charged this turn, pick an enemy unit in combat with it to be the target.",
-            "effect": "Roll a dice for each model in the target unit.  If 3 or more of the dice have the same value, for the rest of the turn, this unit has Strike-first. If 6 or more of the dice have the same value, for the rest of the turn, this unit has Strike-first and the target cannot use commands.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "Roll a dice for each model in the target unit. If 3 or more of the dice have the same value, for the rest of the turn, this unit has Strike-first. If 6 or more of the dice have the same value, for the rest of the turn, this unit has Strike-first and the target cannot use commands.",
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -2129,7 +1971,7 @@
       ]
     },
     {
-      "name": "Wight King",
+      "name": "WIGHT KING",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -2151,7 +1993,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Ancient Strategies",
             "description": "Death does not rob a Wight King of their strategic genius, and they direct their undead thralls with great skill.",
             "effect": "Pick a friendly non-Hero Deathrattle Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
@@ -2168,7 +2010,7 @@
       ]
     },
     {
-      "name": "Wight King, On Skeletal Steed",
+      "name": "WIGHT KING ON SKELETAL STEED",
       "move": "10",
       "health": "7",
       "save": "3+",
@@ -2205,7 +2047,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Royal Companions",
             "description": "Mounted Wight Kings fight accompanied by their most skilled cavaliers, tearing through enemy battlelines.",
             "effect": "Pick a friendly non-Hero Deathrattle Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -2222,7 +2064,7 @@
       ]
     },
     {
-      "name": "Black Knights",
+      "name": "BLACK KNIGHTS",
       "move": "10",
       "health": "3",
       "save": "4+",
@@ -2271,7 +2113,7 @@
       ]
     },
     {
-      "name": "Grave Guard",
+      "name": "GRAVE GUARD",
       "move": "4",
       "health": "1",
       "save": "4+",
@@ -2311,7 +2153,7 @@
       ]
     },
     {
-      "name": "Necromancer",
+      "name": "NECROMANCER",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -2335,16 +2177,14 @@
             "activation": "Passive",
             "name": "Undead Minions",
             "description": "Necromancers are obsessed with staving off death and will sacrifice any number of their resurrected servants to protect themselves.",
-            "effect": "While this unit is within the combat range of a friendly Deathrattle or Deadwalkers unit: \n* This unit has Ward (4+). \n* Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Deathrattle or Deadwalkers unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
+            "effect": "While this unit is within the combat range of a friendly Deathrattle or Deadwalkers unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly Deathrattle or Deadwalkers unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "your_turn_only": true,
             "name": "Vanhel'S Danse Macabre",
             "description": "The undead are filled with magical energy that causes them to jerk forwards and attack with tireless, unnatural speed.",
@@ -2363,7 +2203,7 @@
       ]
     },
     {
-      "name": "Corpse Cart",
+      "name": "CORPSE CART",
       "move": "4",
       "health": "7",
       "save": "6+",
@@ -2409,7 +2249,7 @@
       ]
     },
     {
-      "name": "Dire Wolves",
+      "name": "DIRE WOLVES",
       "move": "10",
       "health": "2",
       "save": "5+",
@@ -2452,7 +2292,7 @@
       ]
     },
     {
-      "name": "Deadwalker Zombies",
+      "name": "DEADWALKER ZOMBIES",
       "move": "4",
       "health": "1",
       "save": "6+",
@@ -2489,7 +2329,7 @@
       ]
     },
     {
-      "name": "Fell Bats",
+      "name": "FELL BATS",
       "move": "12",
       "health": "3",
       "save": "6+",
@@ -2532,7 +2372,7 @@
       ]
     },
     {
-      "name": "Deathrattle Skeletons",
+      "name": "DEATHRATTLE SKELETONS",
       "move": "4",
       "health": "1",
       "save": "5+",
@@ -2553,9 +2393,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Skeleton Legion",
             "description": "As necromantic energies blanket the battlefield, long-dead warriors stagger to their feet once more, eye sockets aglow with killing light.",
             "effect": "You can return D3 slain models to this unit."
@@ -2573,7 +2411,7 @@
       ]
     },
     {
-      "name": "Sekhar, Fang Of Nulahmia",
+      "name": "SEKHAR FANG OF NULAHMIA",
       "move": "MOVE6",
       "health": "6",
       "save": "3+",
@@ -2604,9 +2442,7 @@
         [
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "THE TIME-SWALLOWER'S MAW:",
             "description": "Though Sekhar is loath to let Ouboroth feast upon souls, sometimes, needs must.",
             "declare": "Pick each enemy unit in combat with this unit to be the targets.",
@@ -2619,17 +2455,13 @@
             "effect": "If the unmodified hit roll for an attack that targets this unit is 1-4, the attack fails and the attack sequence ends. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "DEATH'S CONSTRUCTION:",
             "description": "Through the subtlest arcane suggestion, Sekhar implants her will in vulnerable minds - supplanting their former purpose with the undying will of Nulahmia.",
             "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Until the start of your next turn, this unit, and any friendly Soulblight Gravelords units while they are wholly within 6\" of this unit, cannot be picked to be the target of abilities used by the target other than Fight abilities.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]

@@ -3,53 +3,46 @@
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
-      "phases": [
-        "Start of Turn"
-      ],
+      "phases": ["Start of Turn"],
       "name": "Rune Of Fury",
       "description": "The rune of fury grants the Fyreslayers a portion of their god's battle rage.",
       "effect": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. For the rest of the battle round, friendly Fyreslayers units have Strike-first while they are in combat with an enemy unit that charged in the same turn.",
-      "keywords": [
-        "Ur-gold Rune"
-      ]
+      "keywords": ["Ur-gold Rune"]
     },
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
+      "phases": ["Shooting Phase"],
+      "your_turn_only": true,
       "name": "Rune Of Farsight",
       "description": "Empowered by this rune, the Fyreslayers hurl their throwing axes into the enemy with devastating accuracy.",
-      "declare": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round.  Pick any number of enemy units within 10\" of any visible friendly Fyreslayers units to be targets.",
+      "declare": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. Pick any number of enemy units within 10\" of any visible friendly Fyreslayers units to be targets.",
       "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
-      "keywords": [
-        "Ur-gold Rune"
-      ]
+      "keywords": ["Ur-gold Rune"]
     },
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "name": "RUNE OF FIERY DETER MINATION:",
       "description": "A sliver of Grimnir's awesome resolve courses through the Fyreslayers.",
       "effect": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. Friendly Fyreslayers units have Ward (5+) for the rest of the battle round.",
-      "keywords": [
-        "Ur-gold Rune"
-      ]
+      "keywords": ["Ur-gold Rune"]
     },
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
+      "your_turn_only": true,
       "name": "Rune Of Relentless Zeal",
       "description": "The hearts of the Fyreslayers swell with a fiery conviction that sees them bear down upon the foe with surprising swiftness.",
       "effect": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. For the rest of the battle round, friendly Fyreslayers units can use Charge abilities even if they used a Run ability in the same turn.",
-      "keywords": [
-        "Ur-gold Rune"
-      ]
+      "keywords": ["Ur-gold Rune"]
     },
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
+      "phases": ["Combat Phase"],
       "name": "Rune Of Searing Heat",
       "description": "The edges of the Fyreslayers' weapons glow with the heat of the forge.",
       "effect": "You can only use this ability if you have not used any Ur-gold Rune abilities this battle round. Melee weapons used by friendly Fyreslayers units have Crit (Mortal) for the rest of the battle round."
@@ -104,9 +97,7 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "enemy_turn_only": true,
       "name": "Ash-Cloud Rune",
       "description": "The bearer of this rune can call down a column of soot that blankets the battlefield.",
@@ -114,9 +105,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Magmalt",
       "description": "A single draught of this fiery beverage sends shivers of energy surging through a Fyreslayer from toes to crest.",
       "effect": "Add 3 to the Attacks characteristic of this unit's melee weapons for the rest of the turn."
@@ -131,48 +120,32 @@
   "prayer_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Prayer Of Ash",
-        "description": "Borne on a gust of hot forge-winds, a circle of ash settles around the  Borne on a gust of hot forge-winds, a circle of ash settles around the priest's allies, protecting them from harm.",
+        "description": "Borne on a gust of hot forge-winds, a circle of ash settles around the Borne on a gust of hot forge-winds, a circle of ash settles around the priest's allies, protecting them from harm.",
         "declare": "Pick a friendly Fyreslayers Priest to chant this prayer, pick a visible friendly Fyreslayers unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Subtract 1 from wound rolls for attacks that target that friendly unit until the start of your next turn. If the chanting roll was 8+, also subtract 1 from the Rend characteristic of attacks that target that friendly unit until the start of your next turn.",
-        "keywords": [
-          "Prayer",
-          "Unlimited",
-          "4"
-        ]
+        "keywords": ["Prayer", "Unlimited", "4"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "PRAYER OF GRIMNIR'S FURY:",
         "description": "A red rage fills the hearts of those blessed by this furious benediction.",
         "declare": "Pick a friendly Fyreslayers Priest to chant this prayer, pick a visible friendly Fyreslayers Infantry Hero wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "The target can use 2 Fight abilities this turn. After the first is used, however, the target has Strike-last for the rest of the turn. If the chanting roll was 8+, also add 1 to wound rolls for the target's combat attacks for the rest of the turn.",
-        "keywords": [
-          "Prayer",
-          "4",
-          "4"
-        ],
+        "keywords": ["Prayer", "4", "4"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Wrath Of Vulcatrix",
         "description": "The priest sets the runes pressed into a Magmadroth's hide ablaze, and the colossal beast roars with fury.",
         "declare": "Pick a friendly Fyreslayers Priest to chant this prayer, pick a visible friendly Magmadroth unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "For the rest of the turn, the 'Battle Damaged' ability has no effect on the target and add 1 to the Attacks characteristic of the target's Companion weapons. If the chanting roll was 8+, add 1 to the Attacks characteristic of the target's Companion weapons for every 4 damage points the target has.",
-        "keywords": [
-          "Prayer"
-        ],
+        "keywords": ["Prayer"],
         "chanting_value": 4
       }
     ]
@@ -180,57 +153,40 @@
   "manifestation_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Runic Fyrewall",
         "description": "At the command of a Zharrgrim priest, a Runic Fyrewall can be raised from the fiery chasms far beneath their soot- stained feet. Glinting with runes, this scintillating barrier of gold and flame bars the enemy's path and protects the flanks of the Fyreslayers' fyrds as they press ever forward.",
         "declare": "If there is not a friendly Runic Fyrewall on the battlefield, pick a friendly Fyreslayers Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Runic Fyrewall wholly within 12\" of the chanter and visible to them.",
-        "keywords": [
-          "Prayer",
-          "Summon",
-          "4"
-        ],
+        "keywords": ["Prayer", "Summon", "4"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Flame-Spitter",
         "description": "By concentrating their magmic powers, a Zharrgrim priest can summon forth fiery heat from the bowels of the realm. With a rumble and a crack, an angry geyser opens up in the earth, bombarding the foe with molten death.",
         "declare": "If there is not a friendly Zharrgron Flame-spitter on the battlefield, pick a friendly Fyreslayers Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Zharrgron Flame-spitter wholly within 12\" of the chanter and visible to them.",
-        "keywords": [
-          "Prayer",
-          "Summon",
-          "6"
-        ],
+        "keywords": ["Prayer", "Summon", "6"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Molten Infernoth",
         "description": "An elemental manifestation that personifies the blazing wrath of Vulcatrix, a Molten Infernoth can be drawn to battle by a Zharrgrim priest. Bursting out of the realm's crust, the ferocious entity lumbers across the battlefield, inspiring Fyreslayers while blasting the enemy with raging torrents of lava.",
         "declare": "If there is not a friendly Molten Infernoth on the battlefield, pick a friendly Fyreslayers Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Molten Infernoth wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Prayer",
-          "Summon"
-        ],
+        "keywords": ["Prayer", "Summon"],
         "chanting_value": 6
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Auric Runefather, On Magmadroth",
+      "name": "AURIC RUNEFATHER ON MAGMADROTH",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -290,25 +246,19 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Raging Inferno",
             "description": "Throwing back its head, a Magmadroth can spew a wave of flaming bile that scorches through enemy armour.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, subtract 1 from save rolls for the target for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Once Per Battle",
             "once_per_army": true
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "your_turn_only": true,
             "name": "Warrior-Kings",
             "description": "With discipline and zeal in equal measure, the Runefather inspires his warriors to bring down the wrath of Grimnir upon any who oppose them.",
@@ -334,7 +284,7 @@
       ]
     },
     {
-      "name": "Auric Runeson, On Magmadroth",
+      "name": "AURIC RUNESON ON MAGMADROTH",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -398,16 +348,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Dominating Roar",
             "description": "The Flame-scale Youngbloods ridden by Auric Runesons are fiercely territorial when faced with a monstrous challenger.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
             "effect": "If this unit has fewer damage points than the target, subtract 10 from the target's control score for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -428,7 +374,7 @@
       ]
     },
     {
-      "name": "Auric Runesmiter, On Magmadroth",
+      "name": "AURIC RUNESMITER ON MAGMADROTH",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -484,9 +430,7 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Magmadroth's Claws and Horns is 4."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Runic Empower Ment",
             "description": "With a sonorous chant, the Runesmiter draws forth the power of the ur-gold runes set into the flesh of their Fyreslayer kin.",
@@ -498,16 +442,12 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Lashing Tail",
             "description": "Magmadroths can use their muscular spiked tails to pulverise lesser prey with a single swipe.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll 2D6. If the roll is equal to or less than the number of models in the target unit, inflict D3+3 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -529,7 +469,7 @@
       ]
     },
     {
-      "name": "Auric Runefather",
+      "name": "AURIC RUNEFATHER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -554,18 +494,14 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Royal Retinue",
             "description": "Auric Runefathers go to battle flanked by the most skilled warriors in the lodge, who are sworn to protect him from harm.",
             "declare": "Pick a friendly non-Hero Fyreslayers Infantry unit within this unit's combat range to be the royal retinue.",
             "effect": "For the rest of the battle, while the royal retinue is wholly within 6\" of this unit, add 1 to hit rolls for attacks made by the royal retinue and this unit has Ward (4+)."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Commanding Presence",
             "description": "The presence of a Runefather in the Fyreslayer battleline bolsters the warriors' already considerable will, ensuring that the doughty duardin will hold their ground and slog it out with any foe.",
             "effect": "Add the current battle round number to the control scores of friendly Fyreslayers Infantry units wholly within 12\" of this unit for the rest of the turn."
@@ -583,7 +519,7 @@
       ]
     },
     {
-      "name": "Auric Runeson",
+      "name": "AURIC RUNESON",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -605,7 +541,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Dauntless Assault",
             "description": "Eager to prove themselves in battle, Auric Runesons are at their best leading from the front lines alongside their allies.",
             "effect": "Pick a friendly non-Hero Fyreslayers Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -628,7 +564,7 @@
       ]
     },
     {
-      "name": "Auric Runesmiter",
+      "name": "AURIC RUNESMITER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -649,21 +585,15 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Magmic Tunnelling",
             "description": "A Runesmiter standing upon stone can command the rock to allow them passage.",
             "declare": "Pick this unit and up to 1 unit in its regiment if neither unit has been deployed.",
             "effect": "Set up those units in reserve underground. They have now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Emergence",
             "description": "The ground opens up to reveal the Runesmiter and their entourage.",
@@ -683,7 +613,7 @@
       ]
     },
     {
-      "name": "Auric Runemaster",
+      "name": "AURIC RUNEMASTER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -711,7 +641,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared an Ur-gold   Rune ability",
+            "reaction_condition": " You declared an Ur-gold  Rune ability",
             "name": "Master Of The Runes",
             "description": "Drawing upon the divine power released by sacred battle, Runemasters are able to awaken the full potential of their ur-gold runes.",
             "effect": "Remove 3 of this unit's magmic power tokens. If you do so, apply the effect below that corresponds to the Ur-gold Rune ability that was used: Rune of Fury: For the rest of the battle round, add 1 to wound rolls for combat attacks made by friendly Fyreslayers units while they have Strike-first. Rune of Fiery Determination: Add 1 to save rolls for friendly Fyreslayers units for the rest of the battle round. Rune of Relentless Zeal: Add 1 to run rolls and charge rolls for friendly Fyreslayers units for the rest of the battle round. Rune of Searing Heat: Add 1 to the Rend characteristic of melee weapons used by friendly Fyreslayers units for the rest of the battle round. Rune of Farsight: Increase the range of the 'Rune of Farsight' ability to 16\"."
@@ -729,7 +659,7 @@
       ]
     },
     {
-      "name": "Battlesmith",
+      "name": "BATTLESMITH",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -773,7 +703,7 @@
       ]
     },
     {
-      "name": "Grimwrath Berzerker",
+      "name": "GRIMWRATH BERZERKER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -794,18 +724,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Grimwrath Oaths",
             "description": "Before battle, each Grimwrath Berzerker swears a sacred oath to Grimnir that they will fulfil a certain deed in his honour that day.",
-            "effect": "Pick 1 of the following oaths for this unit to swear: 'I will guard them with my life!': While this unit is wholly within 6\" of another friendly Fyreslayers Hero: \n* Add 1 to hit rolls for this unit's attacks. \n* Add 1 to ward rolls for this unit.  If a friendly Fyreslayers Hero wholly within 6\" of this unit is destroyed, this effect no longer applies. 'I will not be stopped!': Add 1 to charge rolls for this unit, and add 1 to save rolls for this unit while it is in combat. If this unit uses the 'Retreat' or 'Rally' abilities, this effect no longer applies."
+            "effect": "Pick 1 of the following oaths for this unit to swear: 'I will guard them with my life!': While this unit is wholly within 6\" of another friendly Fyreslayers Hero: * Add 1 to hit rolls for this unit's attacks. * Add 1 to ward rolls for this unit. If a friendly Fyreslayers Hero wholly within 6\" of this unit is destroyed, this effect no longer applies. 'I will not be stopped!': Add 1 to charge rolls for this unit, and add 1 to save rolls for this unit while it is in combat. If this unit uses the 'Retreat' or 'Rally' abilities, this effect no longer applies."
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Battle-Fury",
             "description": "Hewing left and right with their greataxe, a Grimwrath Berzerker enters a state of single- minded frenzy.",
             "effect": "If this unit is in combat, it can use 2 Fight abilities this phase. After the first is used, however, this unit has Strike-last for the rest of the phase."
@@ -822,7 +748,7 @@
       ]
     },
     {
-      "name": "Auric Flamekeeper",
+      "name": "AURIC FLAMEKEEPER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -845,9 +771,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "MASTERFLAME RUNE: A",
             "description": "Flamekeeper's sacred symbol of office can harness the power within ur-gold runes of fallen warriors to bestow blessings of Grimnir upon their brethren.",
@@ -866,7 +790,7 @@
       ]
     },
     {
-      "name": "Doomseeker",
+      "name": "DOOMSEEKER",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -887,9 +811,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Oathbound",
             "description": "A Doomseeker chooses their quarry and shouts a vow to Grimnir that they will either destroy the enemy or die trying.",
             "declare": "Pick an enemy unit to be this unit's quarry. You can pick a unit that has been deployed in reserve.",
@@ -913,7 +835,7 @@
       ]
     },
     {
-      "name": "Grimhold Exile",
+      "name": "GRIMHOLD EXILE",
       "move": "4",
       "health": "6",
       "save": "5+",
@@ -935,24 +857,16 @@
         [
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Last Of The Lodge-Fire",
             "description": "In desperate need, a Grimhold Exile can draw upon the embers of the Zharrkhul by striking their hammer-faces together, setting a powerful foe ablaze with the flames of Grimnir's wrath.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a number of dice equal to the target's Health characteristic. For each 4+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Core",
-              "Attack",
-              "Fight"
-            ]
+            "keywords": ["Core", "Attack", "Fight"]
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Honour To Grimnir!",
             "description": "Grimhold Exiles exhort their fellow duardin to fight with the vigour of their fallen god.",
@@ -971,7 +885,7 @@
       ]
     },
     {
-      "name": "Vulkite Berzerkers, With Bladed Slingshields",
+      "name": "VULKITE BERZERKERS WITH BLADED SLINGSHIELDS",
       "move": "4",
       "health": "2",
       "save": "5+",
@@ -1010,7 +924,7 @@
       ]
     },
     {
-      "name": "Vulkite Berzerkers, With Fyresteel Weapons",
+      "name": "VULKITE BERZERKERS WITH FYRESTEEL WEAPONS",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1049,7 +963,7 @@
       ]
     },
     {
-      "name": "Auric Hearthguard",
+      "name": "AURIC HEARTHGUARD",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1099,7 +1013,7 @@
       ]
     },
     {
-      "name": "Vulkyn Flameseekers",
+      "name": "VULKYN FLAMESEEKERS",
       "move": "4",
       "health": "2",
       "save": "5+",
@@ -1129,9 +1043,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Drothmasters",
             "description": "Vulkyn Flameseekers are skilled at dominating monstrous wild beasts.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -1149,7 +1061,7 @@
       ]
     },
     {
-      "name": "Hearthguard Berzerkers, With Flamestrike Poleaxes",
+      "name": "HEARTHGUARD BERZERKERS WITH FLAMESTRIKE POLEAXES",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1176,9 +1088,7 @@
             "effect": "While any friendly Fyreslayers Infantry Heroes are wholly within this unit's combat range, both this unit and those friendly units have Ward (5+)."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Smouldering Braziers",
             "description": "With each swing of a flamestrike poleaxe, the brazier chained to it arcs towards the foe, sparks and fire trailing in its wake.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -1196,7 +1106,7 @@
       ]
     },
     {
-      "name": "Hearthguard Berzerkers, With Berzerker Broadaxes",
+      "name": "HEARTHGUARD BERZERKERS WITH BERZERKER BROADAXES",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1240,7 +1150,7 @@
       ]
     },
     {
-      "name": "Molten Infernoth",
+      "name": "MOLTEN INFERNOTH",
       "move": "8",
       "health": "10",
       "save": "5+",
@@ -1273,9 +1183,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Flamescarred",
             "description": "Those wounded by a Molten Infernoth are left scorched and writhing in pain.",
             "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this Manifestation's attacks to be the target.",
@@ -1293,7 +1201,7 @@
       ]
     },
     {
-      "name": "Runic Fyrewall",
+      "name": "RUNIC FYREWALL",
       "move": "-",
       "health": "8",
       "save": "3+",
@@ -1302,14 +1210,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "enemy_turn_only": true,
             "name": "Roaring Rune-Fire",
             "description": "The leaping flames of a Runic Fyrewall act as a barrier that only creatures born of fire can pass.",
             "declare": "Pick up to 3 enemy units within 6\" of this Manifestation to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Subtract 3 from the target's control  score for the rest of the turn."
+            "effect": "Roll a D3 for each target. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Subtract 3 from the target's control score for the rest of the turn."
           }
         ]
       ],
@@ -1322,7 +1228,7 @@
       ]
     },
     {
-      "name": "Zharrgron Flame-Spitter",
+      "name": "ZHARRGRON FLAME-SPITTER",
       "move": "-",
       "health": "5",
       "save": "6+",
@@ -1360,7 +1266,7 @@
       ]
     },
     {
-      "name": "Magmic Battleforge",
+      "name": "MAGMIC BATTLEFORGE",
       "move": "-",
       "health": "8",
       "save": "3+",
@@ -1371,9 +1277,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Spending The Forge",
             "description": "In times of need, a Zharrgrim priest may expend all of the Magmic Battleforge's power, igniting the ur-gold runes of their Fyreslayer kin and infusing the warriors with strength.",
@@ -1381,9 +1285,7 @@
             "effect": "Heal (D3) each friendly Fyreslayers unit on the battlefield. Once this ability has been used, this terrain feature cannot use the 'Molten Blessing' abiity for the rest of the battle."
           },
           {
-            "phases": [
-              "Start of Turn"
-            ],
+            "phases": ["Start of Turn"],
             "name": "Molten Blessing",
             "description": "Drawing upon the powerful elemental energies of the Magmic Battleforge, a Zharrgrim priest casts clouds of cinders into the air, imbuing those of their sacred order with burning power.",
             "declare": "Pick a friendly Fyreslayers Priest within this terrain feature's combat range to be the target.",
@@ -1391,12 +1293,7 @@
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Ward (6+)",
-        "Order",
-        "Fyreslayers"
-      ]
+      "keywords": ["Faction Terrain", "Ward (6+)", "Order", "Fyreslayers"]
     }
   ]
 }

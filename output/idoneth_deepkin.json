@@ -3,18 +3,15 @@
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
+      "phases": ["Deployment Phase"],
       "name": "Ethersea Voyagers",
       "description": "The Idoneth spend their entire lives in the ocean depths, emerging for one reason only: to enact raids on the land-dwelling races.",
       "declare": "Pick a friendly regiment led by an Idoneth Deepkin Hero. No units in that regiment can have already been deployed.",
       "effect": "Set up those units in reserve travelling the ethersea. They have now been deployed.",
-      "keywords": [
-        "Deploy"
-      ]
+      "keywords": ["Deploy"]
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "Raiders From The Deep",
       "description": "The Idoneth Deepkin are merciless reavers, as cold and cruel as the abyssal depths that they call home. They surge forth on a tide of ocean magic, striking out across the lands in search of souls to raid.",
@@ -49,9 +46,7 @@
     },
     "Soul-Raid Ambushers": {
       "activation": "Once Per Turn",
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "your_turn_only": true,
       "name": "Fade Like Mist",
       "description": "The Soul-raid Ambushers are experts in hit-and-run tactics, riding the currents of the ethersea to strike the foe from new directions.",
@@ -73,9 +68,7 @@
       "effect": "This unit's melee weapons have Anti-Hero (+1 Rend)."
     },
     {
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Nightmare Legacy",
       "description": "The repressed horror of the Idoneth's long incarceration emanates from this dark-visaged warrior in palpable waves of doom.",
       "declare": "Pick a visible enemy unit that had any damage points allocated to it this turn by an ability used by this unit to be the target.",
@@ -91,9 +84,7 @@
     },
     {
       "activation": "Once Per Turn",
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "name": "Delicious Morsels",
       "description": "This hero carries with them rare crustaceans favoured by Allopexes and Fangmora Eels.",
       "effect": "Heal (D3) each friendly Idoneth Deepkin Cavalry unit within this unit's combat range."
@@ -108,55 +99,39 @@
   "spell_lore": {
     "Lore Of The Deeps": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Steed Of Tides",
         "description": "The wizard conjures a watery elemental to transport comrades through the ethersea.",
         "declare": "Pick a friendly Idoneth Deepkin Wizard to cast this spell, pick a visible friendly Idoneth Deepkin unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "6"
-        ]
+        "keywords": ["Spell", "Unlimited", "6"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Arcane Corrasion",
         "description": "The spellcaster pushes forth a wave of aetheric energy that picks particles up off the ground and hurls them at the foe, dulling their weapons.",
         "declare": "Pick a friendly Idoneth Deepkin Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from the Rend characteristic of the target's melee weapons until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "7"
-        ],
+        "keywords": ["Spell", "7"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Pressure Of The Deep",
         "description": "The wizard enfolds their victims in a shimmering bubble of crushing force.",
         "declare": "Pick a friendly Idoneth Deepkin Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "6"
-        ],
+        "keywords": ["Spell", "6"],
         "casting_value": 7
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Eidolon Of Mathlann, Aspect Of The Storm",
+      "name": "EIDOLON OF MATHLANN ASPECT OF THE STORM",
       "move": "10",
       "health": "12",
       "save": "3+",
@@ -194,16 +169,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Pulled Into The Depths",
             "description": "The viciously barbed crulhook can ensnare unfortunate foes.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, the target has Strike-last for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -225,7 +196,7 @@
       ]
     },
     {
-      "name": "Eidolon Of Mathlann, Aspect Of The Sea",
+      "name": "EIDOLON OF MATHLANN ASPECT OF THE SEA",
       "move": "10",
       "health": "12",
       "save": "3+",
@@ -273,32 +244,24 @@
             "effect": "Add 1 to casting rolls for this unit. 8"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Tsunami Of Terror",
             "description": "With a wave of its sceptre, the Eidolon sends forth invisible waves of fear that cause even the bravest of opponents to cower.",
             "declare": "Pick up to 3 different visible enemy units within 12\" of this unit to be the targets, then make a casting roll of 2D6.",
             "effect": "Subtract 1 from save rolls for combat attacks that target those units until the start of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 8
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Vengeful Waves",
             "description": "When threatened, the Eidolon causes the ethersea to crash around it, overwhelming its enemies.",
             "declare": "If this unit has not charged this turn, pick an enemy unit in combat with it to be the target.",
             "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -321,7 +284,7 @@
       ]
     },
     {
-      "name": "Volturnos, High King Of The Deep",
+      "name": "VOLTURNOS HIGH KING OF THE DEEP",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -352,9 +315,7 @@
         [
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Supreme Lord Of Tides",
             "description": "At the High King's command, his warriors will attack with unrelenting fury.",
             "declare": "Pick up to 3 other friendly Idoneth Deepkin units wholly within 12\" of this unit to be the targets.",
@@ -387,7 +348,7 @@
       ]
     },
     {
-      "name": "Akhelian King",
+      "name": "AKHELIAN KING",
       "move": "12",
       "health": "7",
       "save": "3+",
@@ -417,17 +378,15 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Wave Rider",
             "description": "When an Akhelian King charges the foe, they hit with the power of a crashing wave.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Add 1 to the Rend characteristic of this unit's Akhelian Royal Weapons for attacks that target that enemy unit for the rest of the turn."
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Add 1 to the Rend characteristic of this unit's Akhelian Royal Weapons for attacks that target that enemy unit for the rest of the turn."
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Akhelian Paragon",
             "description": "Each Akhelian King is a shining example of their caste, a master of battle whom all other Akhelians strive to emulate in battle.",
             "effect": "Pick a friendly non-Hero Akhelian Cavalry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -445,7 +404,7 @@
       ]
     },
     {
-      "name": "Isharann Tidecaster",
+      "name": "ISHARANN TIDECASTER",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -477,9 +436,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "MASTER OF THE ETHERSEA: A",
             "description": "Tidecaster can manipulate the ethersea like no other.",
@@ -499,7 +456,7 @@
       ]
     },
     {
-      "name": "Lotann, Warden Of The Soul Ledgers",
+      "name": "LOTANN WARDEN OF THE SOUL LEDGERS",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -544,7 +501,7 @@
       ]
     },
     {
-      "name": "Isharann Soulscryer",
+      "name": "ISHARANN SOULSCRYER",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -577,9 +534,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Finder Of Ways",
             "description": "Soulscryers are the Idoneth's navigators, helping them divine hidden paths through the realmseas.",
@@ -589,9 +544,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Cyfar Compass",
             "description": "Using a cyfar compass, a Soulscryer identifies the souls most worthy of reaping.",
@@ -611,7 +564,7 @@
       ]
     },
     {
-      "name": "Isharann Soulrender",
+      "name": "ISHARANN SOULRENDER",
       "move": "6",
       "health": "5",
       "save": "3+",
@@ -641,9 +594,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Lurelight",
             "description": "Isharann Soulrenders possess a mystical lure that is used to draw unto them the souls of slain opponents so that they can be captured. Should the Soulrender act quickly enough, the stolen essence can be repurposed to resurrect fallen Namarti mid-battle.",
             "declare": "Pick up to 3 different friendly Namarti units wholly within 12\" of this unit to be the targets. You cannot pick the same unit to be the target of this ability more than once per turn. Make a lurelight roll of D3 for each target unit.",
@@ -651,9 +602,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Hangman'S Knot",
             "description": "The noose on a tal\u00fanhook can be used to ensnare a victim, ensuring they cannot escape their doom at the hands of the Soulrender.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
@@ -671,7 +620,7 @@
       ]
     },
     {
-      "name": "Akhelian Allopex",
+      "name": "AKHELIAN ALLOPEX",
       "move": "12",
       "health": "8",
       "save": "4+",
@@ -729,9 +678,7 @@
             "effect": "Add 1 to the Attacks characteristic of this unit's Allopex's Ferocious Bite while it is within 6\" of any damaged enemy units or while it is within 6\" of any enemy units that had any models slain in the same turn."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "name": "Ensnared",
             "description": "The Akhelians are experts at ensnaring their prey with a well-placed harpoon or Retarius net.",
             "declare": "Pick an enemy Monster or Cavalry unit that had any damage points allocated to it this turn by this unit's shooting attacks to be the target.",
@@ -749,7 +696,7 @@
       ]
     },
     {
-      "name": "Akhelian Morrsarr Guard",
+      "name": "AKHELIAN MORRSARR GUARD",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -779,9 +726,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Biovoltaic Blast",
             "description": "The biovoltaic energy produced by Fangmora Eels is stored by Morrsarr Guard, ready to be discharged as a bolt of energy when the time is right.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target, then roll a number of dice equal to the number of models in this unit.",
@@ -802,7 +747,7 @@
       ]
     },
     {
-      "name": "Akhelian Ishlaen Guard",
+      "name": "AKHELIAN ISHLAEN GUARD",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -832,9 +777,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Biovoltaic Barrier",
             "description": "The biovoltaic energy produced by Fangmora Eels is channelled by Ishlaen Guard into a crackling luminescent energy field that protects them from harm.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -861,7 +804,7 @@
       ]
     },
     {
-      "name": "Akhelian Leviadon",
+      "name": "AKHELIAN LEVIADON",
       "move": "10",
       "health": "16",
       "save": "3+",
@@ -916,16 +859,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Crushing Charge",
             "description": "When a Leviadon charges into battle, it crushes the foe with its sheer mass.",
             "declare": "If this unit charged this phase, pick an enemy Infantry unit within 1\" of it to be the target.",
             "effect": "Roll a dice. Add 1 to the roll if the target unit has more than 10 models. On a 3+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -940,7 +879,7 @@
       ]
     },
     {
-      "name": "Akhelian Thrallmaster",
+      "name": "AKHELIAN THRALLMASTER",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -970,16 +909,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "AKHELIAN FIGHTING STANCE:",
             "description": "Thrallmasters carry a personal armoury to suit the fighting stances needed to best any form of foe. They rigorously train their Namarti warriors to support each attack style at a moment's notice.",
             "effect": "Pick 1 of the following effects to apply to this unit and any friendly Namarti units wholly within 12\" of this unit for the rest of the turn. Way of the Riptide: Those units' melee weapons have Crit (2 Hits). Way of the Vortex: Subtract 1 from wound rolls for attacks that target those units."
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Thrallmaster",
             "description": "Thrallmasters are cunning and sea-scarred Akhelians who lead the Namarti hosts into battle.",
             "effect": "Pick a friendly Namarti Thralls unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -996,7 +933,7 @@
       ]
     },
     {
-      "name": "Namarti Reavers",
+      "name": "NAMARTI REAVERS",
       "move": "7",
       "health": "1",
       "save": "5+",
@@ -1046,7 +983,7 @@
       ]
     },
     {
-      "name": "Namarti Thralls",
+      "name": "NAMARTI THRALLS",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1084,7 +1021,7 @@
       ]
     },
     {
-      "name": "Gloomtide Shipwreck",
+      "name": "GLOOMTIDE SHIPWRECK",
       "move": "-",
       "health": "7",
       "save": "4+",
@@ -1093,15 +1030,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Rise From The Depths",
             "description": "Ancient wreckages adrift in the great currents of the ethersea provide a haven for Idoneth.",
             "effect": "Set up this faction terrain either as 1 terrain feature consisting of 2 scenery pieces (that must be set up within 3\" of each other) or as 2 separate terrain features. Set up each terrain feature wholly within friendly territory and more than 3\" from all objectives and other terrain features. After you have done so, it has been deployed. If this faction terrain is set up as 1 terrain feature consisting of 2 scenery pieces, it has a Health characteristic of 14 instead of 7.",
-            "keywords": [
-              "Deploy Terrain"
-            ]
+            "keywords": ["Deploy Terrain"]
           },
           {
             "activation": "Passive",
@@ -1111,11 +1044,7 @@
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Order",
-        "Idoneth Deepkin"
-      ]
+      "keywords": ["Faction Terrain", "Order", "Idoneth Deepkin"]
     }
   ]
 }

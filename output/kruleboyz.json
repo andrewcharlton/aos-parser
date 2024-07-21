@@ -9,55 +9,45 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
       "name": "Lethal Surprise",
       "description": "As the enemy charges into the Kruleboyz line, little do they know that they have been lured into a series of cunningly concealed traps.",
       "declare": "Pick an enemy unit that charged this turn and is in combat with any friendly Kruleboyz units to be the target, then make a dirty trick roll.",
       "effect": "Inflict D3 mortal damage on the target. In addition, for the rest of the turn, the target's weapons cannot be affected by the Charge (+1 Damage) weapon ability.",
-      "keywords": [
-        "Dirty Trick"
-      ]
+      "keywords": ["Dirty Trick"]
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "VENOM-ENCRUSTED WEAPONS:",
       "description": "These weapons are smeared with a lethal mix of toxins extracted from poison sludge, venomous swamp creatures and spit.",
       "declare": "Pick a friendly Kruleboyz Infantry unit to be the target, then make a dirty trick roll.",
       "effect": "Until the start of your next turn, the target's attacks score critical hits on unmodified hit rolls of 5+.",
-      "keywords": [
-        "Dirty Trick"
-      ]
+      "keywords": ["Dirty Trick"]
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "name": "Sneaky Sneakin'",
       "description": "Cloying swamp- mists mask the Kruleboyz' movements.",
       "declare": "Pick a friendly Kruleboyz Infantry unit that has 10 or fewer models and is not in combat to be the target, then make a dirty trick roll.",
       "effect": "Remove the target from the battlefield and set it up again wholly within 3\" of a terrain feature and more than 9\" from all enemy units.",
-      "keywords": [
-        "Dirty Trick"
-      ]
+      "keywords": ["Dirty Trick"]
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Combat Phase"],
       "name": "Noisy Racket",
       "description": "After a sustained barrage of hurled insults and the clanging of weapons on shields, the Kruleboyz have driven some of their foes to distraction.",
       "declare": "Pick an enemy unit in combat with any friendly Kruleboyz units to be the target, then make a dirty trick roll.",
       "effect": "The target has Strike-last for the rest of the turn.",
-      "keywords": [
-        "Dirty Trick"
-      ]
+      "keywords": ["Dirty Trick"]
     }
   ],
   "battle_formations": {
@@ -74,9 +64,7 @@
       "effect": "You can use the 'Sneaky Sneakin'' Dirty Trick ability twice per turn instead of only once per turn."
     },
     "Middul Finga": {
-      "phases": [
-        "Shooting Phase"
-      ],
+      "phases": ["Shooting Phase"],
       "your_turn_only": true,
       "name": "Far-Killa Bolts",
       "description": "The many Deffspikerz of the Middul Finger often keep a limited supply of bolts fletched with bog-shryke feathers, which give their shots that extra bit of distance when needed.",
@@ -95,21 +83,17 @@
       "activation": "Passive",
       "name": "Egomaniak",
       "description": "This self-important boss is willing to use anyone to protect their own hide.",
-      "effect": "While this unit is within the combat range of a friendly non-Hero Kruleboyz Infantry unit: \n* This unit has Ward (4+). \n* Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly non-Hero Kruleboyz Infantry unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
+      "effect": "While this unit is within the combat range of a friendly non-Hero Kruleboyz Infantry unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly non-Hero Kruleboyz Infantry unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
     },
     {
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Backstabba",
       "description": "When their enemy's back is turned, this boss has no qualms about sticking a dagger in it.",
       "declare": "Pick an enemy Hero in combat with both this unit and another friendly Kruleboyz unit to be the target.",
       "effect": "Inflict D3 mortal damage on the target. Add 1 to the mortal damage inflicted for each friendly Kruleboyz unit in combat with the target in addition to the first two Kruleboyz units."
     },
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Slippery Skumbag",
       "description": "This wily boss has mastered the art of the feint, breaking away from fights that aren't going his way and then coming back for another go when the odds are in his favour.",
       "effect": "If this unit is in combat, roll a dice. On a 3+, it can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
@@ -118,9 +102,7 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Eye-Biter Ash",
       "description": "Stored in a heat- proof pouch, this strange ash never stops smouldering. The bearer can cast it at a foe, creating a blistering ash cloud that blinds the targets and causes them terrible pain.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -128,7 +110,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "reaction_condition": " Opponent   declared an Attack ability",
+      "reaction_condition": " Opponent  declared an Attack ability",
       "name": "Mork'S Eye Pebble",
       "description": "When rubbed, this dark-grey rock produces a swirling bank of thick fog that protects the bearer and their allies from harm.",
       "effect": "For the rest of the turn, friendly Kruleboyz units have Ward (5+) while they are wholly within 12\" of this unit."
@@ -143,55 +125,39 @@
   "spell_lore": {
     "Kruleboyz Spell Lore\nLore Of The Swamp": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Da Black Pit",
         "description": "The shaman taps his staff on the ground. Forking out from that spot, and surging towards a nearby foe, the earth turns into a noisome quagmire that sucks victims below its surface to their doom.",
         "declare": "Pick a friendly Kruleboyz Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a dice for each model in the target unit. For each 6, inflict 1 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "7"
-        ]
+        "keywords": ["Spell", "Unlimited", "7"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Choking Mist",
         "description": "The shaman summons a cloud of corrosive vapour that scorches the lungs of any caught within it, racking them with agonising coughing fits.",
         "declare": "Pick a friendly Kruleboyz Wizard to cast this spell, pick a visible enemy unit wholly within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from the Attacks characteristic of the target's weapons until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "5",
-          "6"
-        ],
+        "keywords": ["Spell", "5", "6"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Mork'S Kunnin'",
         "description": "The shaman channels the raw power of Mork to imbue their allies with uncanny cunning, enabling them to evade enemy blows and missiles with supernatural slipperiness.",
         "declare": "Pick a friendly Kruleboyz Wizard to cast this spell, pick a visible friendly Kruleboyz unit wholly within 12\" of them, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, add 1 to save rolls for attacks that target that friendly unit.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 6
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Kragnos, The End Of Empires",
+      "name": "KRAGNOS THE END OF EMPIRES",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -236,7 +202,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " Opponent declared a   Spell\u00a0ability",
+            "reaction_condition": " Opponent declared a  Spell ability",
             "name": "The Shield Inviolate",
             "description": "Tuskbreaker has the power to guard Kragnos against even the most potent magical force.",
             "effect": "If this unit was picked to be the target of that spell, roll a dice. On a 3+, ignore the effect of that spell on this unit. This unit can use this ability more than once per phase but only once per Spell ability."
@@ -250,15 +216,11 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Rampaging Destruction",
             "description": "Kragnos rampages through the press of his foes, his hooves flattening all in his path.",
-            "effect": "If this unit charged this phase, pick 1 of the following effects: \n* Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. \n* Pick an enemy Monster in combat  with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "If this unit charged this phase, pick 1 of the following effects: * Roll a dice for each enemy unit within 1\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. * Pick an enemy Monster in combat with this unit and roll 2D6. On a 7, this ability has no effect. Otherwise, inflict an amount of mortal damage on that unit equal to the results on the dice used for the 2D6 roll multiplied together. For example, a 2D6 roll of 2 and 6 would inflict 12 mortal damage (2 \u00d7 6).",
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -280,7 +242,7 @@
       ]
     },
     {
-      "name": "Gobsprakk, The Mouth Of Mork",
+      "name": "GOBSPRAKK THE MOUTH OF MORK",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -325,7 +287,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "reaction_condition": " Opponent   declared a Spell ability",
+            "reaction_condition": " Opponent  declared a Spell ability",
             "name": "Screamin' Mandrakk",
             "description": "The awful sound this plant emits wreaks havoc on the concentration of enemy wizards.",
             "effect": "This unit uses the 'Unbind' ability but the unbinding roll is 3D6 instead of 2D6."
@@ -333,16 +295,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Crush To Death",
             "description": "Gobsprakk's mount, Killabeak, takes wicked delight in crushing smaller foes in its talons.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. If the roll exceeds the target's Health characteristic, 1 model in the target unit is slain.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -351,17 +309,13 @@
             "effect": "Each time this unit unbinds a spell, inflict D3 mortal damage on the caster. If the unbinding roll was 10+, inflict D6 mortal damage on the caster instead. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Strangle Hex",
             "description": "Coiling tendrils of magic burst from Gobsprakk's outstretched hand, choking the life from the target.",
             "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Roll a number of dice equal to the target's Health characteristic, to a maximum of 10. For each 4+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -380,7 +334,7 @@
       ]
     },
     {
-      "name": "Killaboss, On Corpse-Rippa Vulcha",
+      "name": "KILLABOSS ON CORPSE-RIPPA VULCHA",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -425,7 +379,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared the \u2018Redeploy\u2019  command for a friendly Gutrippaz unit  wholly within 12\" of this unit ",
+            "reaction_condition": " You declared the 'Redeploy' command for a friendly Gutrippaz unit wholly within 12\" of this unit ",
             "name": "Commanding View",
             "description": "From his position high above the battlefield, a Killaboss riding a Corpse-rippa Vulcha can keep a careful eye on the battle, guiding the movements of their ladz.",
             "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead."
@@ -433,16 +387,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Vulcha Dive",
             "description": "The Corpse-rippa crashes down into the enemy's ranks from on high, tearing into reeling warriors with cruel relish.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
             "effect": "Roll a number of dice equal to the unmodified charge roll. For each 4+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -456,7 +406,7 @@
       ]
     },
     {
-      "name": "Killaboss, On Great Gnashtoof",
+      "name": "KILLABOSS ON GREAT GNASHTOOF",
       "move": "10",
       "health": "10",
       "save": "3+",
@@ -492,9 +442,7 @@
             "effect": "While this unit is contesting an objective you do not control, add 1 to hit rolls for combat attacks made by friendly Kruleboyz Infantry units wholly within 12\" of this unit."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "All Part Of Da Plan",
             "description": "Kruleboyz tend to be very impressed by a Killaboss's kunnin' feats - so long as the boss has a plan, they are willing to face down even the most unlikely odds.",
@@ -503,16 +451,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "Hero",
-        "Cavalry",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "Hero", "Cavalry", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Killaboss, With Stab-Grot",
+      "name": "KILLABOSS WITH STAB-GROT",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -548,32 +490,24 @@
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "UNLEASH THE STAB-GROT!: A",
             "description": "Stab-grot isn't just good for stabbin' - they double up as an effective living shield when things get dicey.",
-            "effect": "Pick 1 of the following effects: \n* Pick an enemy unit in combat with this unit to be the target. Inflict D3 mortal damage on the target. \n* This unit has Ward (5+) for the rest of  the turn. After resolving either effect, remove this unit's Stab-grot from the battlefield."
+            "effect": "Pick 1 of the following effects: * Pick an enemy unit in combat with this unit to be the target. Inflict D3 mortal damage on the target. * This unit has Ward (5+) for the rest of the turn. After resolving either effect, remove this unit's Stab-grot from the battlefield."
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared the \u2018All-out   Attack\u2019 command for a friendly Kruleboyz  Infantry unit ",
+            "reaction_condition": " You declared the 'All-out  Attack' command for a friendly Kruleboyz Infantry unit ",
             "name": "Keep 'Em In Line",
             "description": "With a threatening glare and barked commands, the Killaboss keeps their boyz in formation.",
             "effect": "If this unit is wholly within 12\" of the unit using the 'All-out Attack' command, add 1 to wound rolls for combat attacks made by that unit for the rest of the phase."
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "Hero",
-        "Infantry",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "Hero", "Infantry", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Murknob, With Belcha-Banna",
+      "name": "MURKNOB WITH BELCHA-BANNA",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -600,9 +534,7 @@
             "effect": "Friendly Kruleboyz units have Ward (6+) while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "BREATH OF THE MIRE-DRAKES:",
             "description": "Belcha-bannas are typically built around the severed tongue of a mire-drake, creatures so vile that even after death, their remains belch forth clouds of soul- shrivelling gas.",
             "declare": "Pick each enemy unit in combat with this unit to be the targets.",
@@ -610,16 +542,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "Hero",
-        "Infantry",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "Hero", "Infantry", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Swampcalla Shaman, With Pot-Grot",
+      "name": "SWAMPCALLA SHAMAN WITH POT-GROT",
       "move": "5",
       "health": "6",
       "save": "6+",
@@ -648,9 +574,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Foul Elixirs",
             "description": "Swampcalla Shamans brew up disgusting but life-saving elixirs, which they distribute to their Kruleboyz mates to aid them in battle.",
@@ -669,7 +593,7 @@
       ]
     },
     {
-      "name": "Gutrippaz",
+      "name": "GUTRIPPAZ",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -690,9 +614,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Scare Taktikz",
             "description": "Gutrippaz use all manner of means to unnerve and soften up their foes before the first blow is struck, from gruesome 'skareshields' to ululating battle cries that echo from the boggy mists.",
             "effect": "Roll a dice. On a 3+, subtract 1 from hit rolls for attacks made by non- Hero units that target this unit for the rest of the turn."
@@ -710,7 +632,7 @@
       ]
     },
     {
-      "name": "Kruleboyz Monsta-Killaz",
+      "name": "KRULEBOYZ MONSTA-KILLAZ",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -736,9 +658,7 @@
             "effect": "This unit's Klutcha-grot is a token. If it is removed from the battlefield, this unit cannot use the 'A Tough Grot to Swallow' ability."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Bait And Trap",
             "description": "The Monsta-killaz have perfected the art of baiting even the most fearsome monsters into debilitating traps.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -746,7 +666,7 @@
           },
           {
             "activation": "Once Per Turn",
-            "reaction_condition": " Opponent  declared a Rampage ability for an enemy  Monster within 6\" of this unit ",
+            "reaction_condition": " Opponent declared a Rampage ability for an enemy Monster within 6\" of this unit ",
             "name": "A Tough Grot To Swallow",
             "description": "The spiky-armoured Klutcha-grot is usually gobbled up by the Monsta-killaz' prey, causing it to choke, retch and vomit up the little git. Of course, sometimes the grot just gets eaten, which the orruks find equally hilarious.",
             "effect": "Roll a dice. On a 2+, that Rampage ability has no effect. On a 1, remove this unit's Klutcha-grot from the battlefield."
@@ -763,7 +683,7 @@
       ]
     },
     {
-      "name": "Swampboss Skumdrekk",
+      "name": "SWAMPBOSS SKUMDREKK",
       "move": "8",
       "health": "15",
       "save": "4+",
@@ -807,18 +727,14 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of Sloppklaw's Talons is 4."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Kountin' Krew",
             "description": "Swampboss Skumdrekk keeps his hobgrot lackeys, known as his 'Kountin' Krew', close to hand. So close, in fact, that it is they who get first dibs on the toxic sludge that coats the underbelly of his Sludgeraker.",
             "declare": "Pick a friendly Hobgrot Slittaz unit within this unit's combat range to be the target.",
             "effect": "For the rest of the battle, the target's Slitta-knives have Crit (Mortal) while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Bet-Master",
             "description": "Skumdrekk and his hobgrot Kountin' Krew take bets at the start of a battle as to which of the enemy will be first to die.",
             "declare": "Pick an enemy unit on the battlefield to be the bet.",
@@ -827,16 +743,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Aggravate Wounds",
             "description": "The ornery and near-sighted Sloppklaw has developed a keen scent for weakness, and he will eagerly tear into wounded prey in a savage frenzy.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
             "effect": "Roll a number of dice equal to the number of damage points the target has. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -850,7 +762,7 @@
       ]
     },
     {
-      "name": "Snatchaboss, On Sludgeraker Beast",
+      "name": "SNATCHABOSS ON SLUDGERAKER BEAST",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -894,9 +806,7 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Sludgeraker's Talons is 4."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Sludgeraker Venom",
             "description": "The underbelly of a Sludgeraker Beast is coated in rotting detritus, encrusted marsh-slime and the beast's own secretions - a highly virulent mixture that is used by nearby Kruleboyz to coat their weapons.",
@@ -906,29 +816,19 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Festering Wounds",
             "description": "A Sludgeraker's talons and fangs are so coated with toxins and grime that wounds they inflict swiftly turn foul and gangrenous.",
             "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this unit's combat attacks to be the target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Subtract 1 from wound rolls for attacks  made by the target until the start of your next turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Subtract 1 from wound rolls for attacks made by the target until the start of your next turn.",
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "Hero",
-        "Monster",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "Hero", "Monster", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Marshcrawla Sloggoth",
+      "name": "MARSHCRAWLA SLOGGOTH",
       "move": "6",
       "health": "10",
       "save": "4+",
@@ -964,24 +864,17 @@
             "effect": "While they are wholly within 12\" of this unit, friendly Kruleboyz Infantry units can use Charge abilities even if they used a Run ability in the same turn."
           },
           {
-            "phases": [
-              "Start of Turn"
-            ],
+            "phases": ["Start of Turn"],
             "name": "Regeneration",
             "description": "Troggoths are able to regrow injured flesh almost as quickly as it is harmed.",
             "effect": "Heal (D3) this unit."
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "War Machine",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "War Machine", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Breaka-Boss, On Mirebrute Troggoth",
+      "name": "BREAKA-BOSS ON MIREBRUTE TROGGOTH",
       "move": "5",
       "health": "12",
       "save": "4+",
@@ -1011,17 +904,13 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Breaka-Harness",
             "description": "When a Breaka- boss enters combat, they yank their Mirebrute Troggoth's harness savagely to get the beast good and angry!",
             "effect": "Allocate D3 damage points to this unit (ward rolls cannot be made for those damage points). For each damage point allocated to this unit by this ability, add 2 to the Attacks characteristic of this unit's Mirebrute's Clubs for the rest of the turn."
           },
           {
-            "phases": [
-              "Start of Turn"
-            ],
+            "phases": ["Start of Turn"],
             "name": "Regeneration",
             "description": "Troggoths are able to regrow injured flesh almost as quickly as it is harmed.",
             "effect": "Heal (D3) this unit."
@@ -1029,29 +918,19 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Tear Limb From Limb",
             "description": "Mirebrute Troggoths take great delight plucking foes from the enemy ranks and pulling off their limbs one by one.",
             "declare": "Pick an enemy Infantry unit within 1\" of this unit to be the target.",
             "effect": "Roll a dice. If the roll exceeds the target's Health characteristic, 1 model in the target unit is slain.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "Hero",
-        "Monster",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "Hero", "Monster", "Destruction", "Kruleboyz"]
     },
     {
-      "name": "Hobgrot Slittaz",
+      "name": "HOBGROT SLITTAZ",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1084,13 +963,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Scrap-Bang",
             "description": "By detonating their scrap- grenades at the feet of the foe, Hobgrot Slittaz can scarper off to a safe distance.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+: \n* Inflict 1 mortal damage on the target. \n* This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
+            "effect": "Roll a dice. On a 3+: * Inflict 1 mortal damage on the target. * This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
           }
         ]
       ],
@@ -1105,7 +982,7 @@
       ]
     },
     {
-      "name": "Man-Skewer Boltboyz",
+      "name": "MAN-SKEWER BOLTBOYZ",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -1154,9 +1031,7 @@
             "effect": "Each time this unit uses a Shoot ability, pick either the Hasty Shot or Aimed Shot weapon characteristics for all the attacks it makes with its Man-skewer Crossbows."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Pick 'Em Off",
             "description": "Boltboyz prefer to remain stationary to fire carefully aimed shots.",
@@ -1173,7 +1048,7 @@
       ]
     },
     {
-      "name": "Beast-Skewer Killbow",
+      "name": "BEAST-SKEWER KILLBOW",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -1210,18 +1085,14 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Skewering Bolts",
             "description": "When sighting a particularly large target, the crew load vicious skewering bolts that can tear through even the mightiest of beasts.",
             "effect": "For the rest of the turn, the Damage characteristic of this unit's Beast-skewer Bolts is 6 if the target is a Monster."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Pick 'Em Off",
             "description": "Once set up in position, the Beast-skewer Killbow takes its time to line up every shot with deadly results.",
@@ -1229,12 +1100,7 @@
           }
         ]
       ],
-      "keywords": [
-        "Keywords",
-        "War Machine",
-        "Destruction",
-        "Kruleboyz"
-      ]
+      "keywords": ["Keywords", "War Machine", "Destruction", "Kruleboyz"]
     }
   ]
 }

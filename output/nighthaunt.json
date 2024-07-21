@@ -3,28 +3,30 @@
     {
       "activation": "Passive",
       "name": "Discorporate",
-      "description": "If given the order, the  If given the order, the Nighthaunt can flicker between the realms of the living and dead.",
+      "description": "If given the order, the If given the order, the Nighthaunt can flicker between the realms of the living and dead.",
       "effect": "Ignore all modifiers to save rolls (positive and negative) for friendly Nighthaunt units, excluding Nagash. 1 Attack ability"
     },
     {
       "activation": "Reaction",
-      "reaction_condition": " Opponent declared an   Used By: A friendly Nighthaunt unit  targeted by that Attack ability. ",
+      "reaction_condition": " Opponent declared an  Used By: A friendly Nighthaunt unit targeted by that Attack ability. ",
       "effect": "That unit has Ward (5+) for the rest of the phase."
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
+      "your_turn_only": true,
       "name": "Shriek",
       "description": "The keening wails of the Nighthaunt lodge a stake of fear within all those who hear them.",
       "declare": "Pick a friendly Nighthaunt unit that has not used an Aura of Dread ability this turn and that charged this turn to use this ability, then pick an enemy unit within 1\" of it to be the target. The number of models in the friendly Nighthaunt unit must be greater than the number of models in the target unit.",
       "effect": "Subtract 1 from hit rolls for the target's attacks for the rest of the turn.",
-      "keywords": [
-        "Aura of Dread"
-      ]
+      "keywords": ["Aura of Dread"]
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
+      "your_turn_only": true,
       "name": "Wave Of Terror",
       "description": "Many foes freeze in fear when faced with a swarming Nighthaunt charge.",
       "effect": "Friendly Nighthaunt units that are in combat can use Charge abilities this phase. However, if a unit that is in combat uses a Charge ability and the charge roll is 3 or less, that unit does not count as having charged that turn."
@@ -32,37 +34,37 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
+      "your_turn_only": true,
       "name": "Stun",
       "description": "The sight of onrushing Nighthaunt can stun enemies that do not thoroughly steel their hearts.",
       "declare": "Pick a friendly Nighthaunt War Machine or Cavalry unit that has not used an Aura of Dread ability this turn and that charged this turn to use this ability, then pick an enemy unit within 1\" of it to be the target.",
       "effect": "Subtract 1 from save rolls for the target for the rest of the turn.",
-      "keywords": [
-        "Aura of Dread"
-      ]
+      "keywords": ["Aura of Dread"]
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Charge Phase"],
+      "your_turn_only": true,
       "name": "Petrify",
       "description": "Those who lay eyes on a spectral champion may find they are rooted in place with terror, allowing the Nighthaunt to strike them with ease.",
       "declare": "Pick a friendly Nighthaunt Hero that has not used an Aura of Dread ability this turn and that charged this turn to use this ability, then pick an enemy unit within 1\" of it to be the target.",
       "effect": "The target has Strike-last for the rest of the turn.",
-      "keywords": [
-        "Aura of Dread"
-      ]
+      "keywords": ["Aura of Dread"]
     }
   ],
   "battle_formations": {
     "Vanishing Phantasms": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Movement Phase"],
+      "your_turn_only": true,
       "name": "Ethereal Translocation",
       "description": "The Nighthaunt appear and disappear from sight to torment their prey.",
       "declare": "Pick a friendly Nighthaunt unit that is not in combat to use this ability.",
       "effect": "Remove that unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-      "keywords": [
-        "Core"
-      ]
+      "keywords": ["Core"]
     },
     "Death Stalkers": {
       "activation": "Passive",
@@ -73,9 +75,7 @@
     "Hunters Of\nThe Accursed": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Vengeful Malison",
       "description": "Those who cross the machinations of the Nighthaunt are marked for death with an unyielding curse.",
       "declare": "Pick up to 3 enemy Heroes each within 12\" of a different friendly Nighthaunt Hero to be the targets.",
@@ -91,9 +91,7 @@
   "heroic_traits": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "RULER OF THE SPECTRAL HOSTS:",
       "description": "The deathly power of this spirit is like a siren call, an unseen signal that beckons to others from beyond the grave.",
@@ -117,9 +115,7 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Moon",
       "description": "This lightshard is filled with a baleful gloom that, upon release, casts the battlefield in an eerie glow, readying the enemy for the reaping.",
       "effect": "If this unit is in combat, add 1 to the Attacks characteristic of melee weapons used by friendly Nighthaunt units wholly within 12\" of this unit for the rest of the turn."
@@ -132,9 +128,7 @@
       "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     {
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Soulfire Ring",
       "description": "Gouts of lashing green flames leap forth from this ring as it consumes the souls of those slain by the wearer.",
       "effect": "If any enemy models were slain by this unit's combat attacks this turn, Heal (D6) this unit."
@@ -143,48 +137,32 @@
   "spell_lore": {
     "Lore Of The Underworlds": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Shademist",
         "description": "A supernatural mist envelops the caster's comrades, causing them to glimmer as they fade in and out of reality.",
         "declare": "Pick a friendly Nighthaunt Wizard to cast this spell, pick a visible friendly Nighthaunt unit that has 3 or more models and is wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from wound rolls for attacks that target that unit until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "7"
-        ]
+        "keywords": ["Spell", "Unlimited", "7"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Spirit Drain",
         "description": "With a series of fell words of power, the caster can whittle away a mortal's life force, causing their spirit to seep out of their physical form.",
         "declare": "Pick a friendly Nighthaunt Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "6",
-          "6"
-        ],
+        "keywords": ["Spell", "6", "6"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Spectral Lure",
         "description": "Embracing the chill of death, the wizard summons forth the spirits of the dead.",
         "declare": "Pick a friendly Nighthaunt Wizard to cast this spell, pick a friendly Nighthaunt unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Return a number of slain models to the target unit with a combined Health characteristic of up to D6.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 6
       }
     ]
@@ -192,55 +170,40 @@
   "manifestation_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Ter Minexus",
         "description": "A spectral hourglass filled with shifting grave-sand takes shape, promising temporal grace or doom to mortal and immortal alike.",
         "declare": "If there is not a friendly Mortalis Terminexus on the battlefield, pick a friendly Nighthaunt Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Mortalis Terminexus wholly within 12\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Vault Of Souls",
         "description": "This summoned chest siphons souls, filling itself to overflowing with the rich spirits of mortalkind.",
         "declare": "If there is not a friendly Vault of Souls on the battlefield, pick a friendly Nighthaunt Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Vault of Souls wholly within 12\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Shyish Reaper",
         "description": "The wizard sweeps down their arm as they utter this spell's final incantation, and a fearsome scythe formed of purest amethyst magic tears through their foes with unstoppable force.",
         "declare": "If there is not a friendly Shyish Reaper on the battlefield, pick a friendly Nighthaunt Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Shyish Reaper wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 6
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Nagash, Supreme Lord Of The Undead",
+      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -283,39 +246,29 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Hand Of Dust",
             "description": "Nagash's touch can turn a foe to a pile of dusty bones in moments.",
             "declare": "Pick a visible enemy Hero or Monster in combat with this unit to be the target.",
             "effect": "Hide a dice in one of your hands or under one of two appropriate containers. Your opponent must pick one of your hands or containers. If they pick the one hiding the dice, this ability has no effect. If they pick the empty one, the target is automatically destroyed.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "SUPREME LORD OF THE UNDEAD",
             "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
             "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Invocation Of Nagash",
             "description": "In a storm of morbid sorcery, Nagash blasts his foes' souls or re-knits his minions' bodies.",
             "declare": "This unit can cast this spell more than once per phase. Pick a visible unit wholly within 18\" of this unit that has not been picked to be the target of this spell this turn to be the target, then make a casting roll of 2D6.",
-            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: \n* Return a number of slain models to  the target unit with a combined Health characteristic of up to 3. \n* The target has Ward (5+) until the start  of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: * Return a number of slain models to the target unit with a combined Health characteristic of up to 3. * The target has Ward (5+) until the start of your next turn.",
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -333,7 +286,7 @@
       ]
     },
     {
-      "name": "Lady Olynder, Mortarch Of Grief",
+      "name": "LADY OLYNDER MORTARCH OF GRIEF",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -376,9 +329,7 @@
         [
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "No Rest For The Wicked",
             "description": "Should the spectral forms of her minions be banished, Lady Olynder will wrench their souls back from the underworlds.",
@@ -392,17 +343,13 @@
             "effect": "Subtract 3 from the control scores of enemy units while they are within 12\" of this unit. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Grief-Stricken",
             "description": "Lady Olynder's incantations can cause a pall of misery and utter desolation to descend upon her enemies.",
             "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Ignore positive modifiers to hit rolls, wound rolls and save rolls for the target for the rest of the turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -420,7 +367,7 @@
       ]
     },
     {
-      "name": "Kurdoss Valentian, The Craven King",
+      "name": "KURDOSS VALENTIAN THE CRAVEN KING",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -451,7 +398,7 @@
         [
           {
             "activation": "Once Per Turn",
-            "reaction_condition": " Opponent  declared a command for a unit within 12\"  of this unit ",
+            "reaction_condition": " Opponent declared a command for a unit within 12\" of this unit ",
             "name": "Shall Rule!",
             "description": "In the presence of Kurdoss Valentian's all-consuming bitterness and the cruel malice of his heralds, the commands of enemy generals turn to dust in their mouths even as they issue them.",
             "effect": "Roll a dice. On a 3+, unless your opponent spends 1 additional command point to use that command, the command has no effect, it still counts as having been used and the command points spent to use the command are still lost."
@@ -469,7 +416,7 @@
       ]
     },
     {
-      "name": "Awlrach The Drowner",
+      "name": "AWLRACH THE DROWNER",
       "move": "10",
       "health": "7",
       "save": "4+",
@@ -492,13 +439,13 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "Underworlds",
             "description": "A master of navigation, Awlrach can drift through the ethereal plane to new locations at will. By the time the foe has discovered his arrival, it is all too late to stop the spectral cargo that made the journey with him.",
             "declare": "If this unit is not in combat, pick a friendly non-Hero Nighthaunt unit that is not in combat and is wholly within 12\" of this unit to be the target.",
             "effect": "Remove this unit and the target from the battlefield, then set them up again on the battlefield wholly within 6\" of each other and more than 7\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -513,7 +460,7 @@
       ]
     },
     {
-      "name": "Reikenor The Grimhailer",
+      "name": "REIKENOR THE GRIMHAILER",
       "move": "12",
       "health": "7",
       "save": "4+",
@@ -543,26 +490,20 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "name": "Corpse Candles",
             "description": "When preparing to cast a spell by snuffing out the flame of a corpse candle, Reikenor can drain his own or a victim's essence to help fuel his sorcery.",
             "declare": "Pick either this unit or a visible enemy unit within 12\" of this unit to be the target.",
-            "effect": "Allocate 1 damage point to the target. If you picked an enemy unit, add 1 to casting rolls for this unit for the rest of the turn. If you picked this unit, for the rest of the turn: \n* Add 1 to casting rolls for this unit. \n* Add 1 to this unit's power level. 7"
+            "effect": "Allocate 1 damage point to the target. If you picked an enemy unit, add 1 to casting rolls for this unit for the rest of the turn. If you picked this unit, for the rest of the turn: * Add 1 to casting rolls for this unit. * Add 1 to this unit's power level. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Wraithstor M",
             "description": "Reikenor tears the souls from his victims and commands them to assail their allies.",
             "declare": "Pick a visible enemy unit within 12\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Inflict D3 mortal damage on the target. If any models are slain by this ability, inflict an additional D3 mortal damage on the target.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
@@ -585,7 +526,7 @@
       ]
     },
     {
-      "name": "Scriptor Mortis",
+      "name": "SCRIPTOR MORTIS",
       "move": "8",
       "health": "6",
       "save": "4+",
@@ -608,9 +549,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Tor Ment",
             "description": "Once the true name of a judged enemy is recorded, their unending punishment is all but inescapable.",
@@ -620,9 +559,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "your_turn_only": true,
             "name": "JUDGE, JURY AND EXECUTIONER:",
             "description": "With a mere flick of a quill, sentenced souls are dragged to the underworlds.",
@@ -640,7 +577,7 @@
       ]
     },
     {
-      "name": "Tomb Banshee",
+      "name": "TOMB BANSHEE",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -677,9 +614,7 @@
             "once_per_army": true
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "name": "Ghostly Howl",
             "description": "There is no describing the shrieking wail of the Banshee; it is so horrific that its sound alone can pierce the soul of any who hear it.",
             "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Piercing Scream to be the target.",
@@ -703,7 +638,7 @@
       ]
     },
     {
-      "name": "Knight Of Shrouds",
+      "name": "KNIGHT OF SHROUDS",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -731,7 +666,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Infantry Overseer",
             "description": "Each Knight of Shrouds was a mighty general in mortal life and still retains the ability to spur their soldiery to great feats of arms.",
             "effect": "Pick a friendly non-Hero Nighthaunt Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
@@ -748,7 +683,7 @@
       ]
     },
     {
-      "name": "Knight Of Shrouds, On Ethereal Steed",
+      "name": "KNIGHT OF SHROUDS ON ETHEREAL STEED",
       "move": "12",
       "health": "7",
       "save": "4+",
@@ -785,24 +720,17 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Cavalry Overseer",
             "description": "In life, the Knight of Shrouds commanded legions of devoted soldiers. In death, they turn their military genius to the command of shrieking spirits and vengeful phantasms.",
             "effect": "Pick a friendly non-Hero Nighthaunt Cavalry or War Machine unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Hero", "Cavalry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Cairn Wraith",
+      "name": "CAIRN WRAITH",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -840,7 +768,7 @@
       ]
     },
     {
-      "name": "Krulghast Cruciator",
+      "name": "KRULGHAST CRUCIATOR",
       "move": "8",
       "health": "6",
       "save": "4+",
@@ -890,7 +818,7 @@
       ]
     },
     {
-      "name": "Lord Executioner",
+      "name": "LORD EXECUTIONER",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -912,9 +840,7 @@
         [
           {
             "activation": "Once Per Turn",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Staring Death In The Face",
             "description": "The unwavering stare of a Lord Executioner seems to penetrate the victim's very soul.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -932,7 +858,7 @@
       ]
     },
     {
-      "name": "Dreadblade Harrows",
+      "name": "DREADBLADE HARROWS",
       "move": "12",
       "health": "3",
       "save": "4+",
@@ -968,28 +894,18 @@
             "effect": "If this unit charged this turn, add 3 to the control scores of friendly Nighthaunt units while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "name": "PHANTASMAL DISCORPORATION:",
             "description": "Dreadblade Harrows are able to disappear in a spectral mist.",
             "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
-      "keywords": [
-        "Cavalry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Cavalry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Guardian Of Souls",
+      "name": "GUARDIAN OF SOULS",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -1028,7 +944,7 @@
       ]
     },
     {
-      "name": "Pyregheists",
+      "name": "PYREGHEISTS",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1061,13 +977,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Light A Pyre",
             "description": "Arcane loci are set ablaze by the Pyregheists, who direct those deadly witchfires with terrible efficacy.",
             "declare": "If this unit is contesting an objective, pick a visible enemy unit within 6\" of this unit to be the target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Add a number equal to the roll to  this unit's control score for the rest of the turn."
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Add a number equal to the roll to this unit's control score for the rest of the turn."
           }
         ]
       ],
@@ -1081,7 +995,7 @@
       ]
     },
     {
-      "name": "Spirit Torment",
+      "name": "SPIRIT TORMENT",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -1119,7 +1033,7 @@
       ]
     },
     {
-      "name": "Grimghast Reapers",
+      "name": "GRIMGHAST REAPERS",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1157,7 +1071,7 @@
       ]
     },
     {
-      "name": "Chainghasts",
+      "name": "CHAINGHASTS",
       "move": "8",
       "health": "3",
       "save": "4+",
@@ -1190,9 +1104,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "your_turn_only": true,
             "name": "ANOTHER LINK IN THE CHAIN:",
             "description": "Chainghasts act as conduits for Spirit Torments, ensuring all nearby Nighthaunt are invigorated by deathly energies.",
@@ -1200,16 +1112,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Infantry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Chainrasps",
+      "name": "CHAINRASPS",
       "move": "8",
       "health": "1",
       "save": "5+",
@@ -1247,7 +1153,7 @@
       ]
     },
     {
-      "name": "Black Coach",
+      "name": "BLACK COACH",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -1298,30 +1204,22 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Runaway Coach",
             "description": "This nightmare-drawn carriage crushes any who attempt to withstand its momentum.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
             "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage equal on the target equal to the roll."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Nimbus Of Power",
             "description": "Dark magic lends the vehicle blurring speed that allows it to disappear, only to reappear in a more advantageous position.",
             "effect": "If this unit is not in combat, remove it from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Evocation Of Death",
             "description": "The dormant occupant feeds upon the energies of death and uses them to bring spectral champions back from the underworlds.",
             "declare": "If this unit destroyed any enemy units this turn, pick a friendly non-Unique Nighthaunt Hero that has been destroyed.",
@@ -1329,16 +1227,10 @@
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["War Machine", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Craventhrone Guard",
+      "name": "CRAVENTHRONE GUARD",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1389,7 +1281,7 @@
       ]
     },
     {
-      "name": "Bladegheist Revenants",
+      "name": "BLADEGHEIST REVENANTS",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1417,16 +1309,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Infantry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Glaivewraith Stalkers",
+      "name": "GLAIVEWRAITH STALKERS",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1449,6 +1335,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Deployment Phase"],
             "name": "The Point Of Death",
             "description": "The glaives wielded by these long-dead warriors always point compass-like towards their prey.",
             "declare": "Pick an enemy unit to be the target.",
@@ -1456,7 +1343,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Charge ability   for this unit and a Stalked enemy unit is  within 12\" of it",
+            "reaction_condition": " You declared a Charge ability  for this unit and a Stalked enemy unit is within 12\" of it",
             "name": "Unerring Hunters",
             "description": "These spectral hunters will hound their prey until the very end of existence itself.",
             "effect": "Add 2 to charge rolls for this unit made as part of that ability, but this unit must end the move in combat with the Stalked enemy unit."
@@ -1473,7 +1360,7 @@
       ]
     },
     {
-      "name": "Myrmourn Banshees",
+      "name": "MYRMOURN BANSHEES",
       "move": "8",
       "health": "2",
       "save": "4+",
@@ -1495,23 +1382,17 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " Opponent declared a   Spell\u00a0ability",
+            "reaction_condition": " Opponent declared a  Spell ability",
             "name": "Spell-Eaters",
             "description": "These spirits were once wizards, but they failed to pay proper respect to Nagash and are now cursed to agonisingly withstand the magic of others.",
             "effect": "If a friendly Nighthaunt unit wholly within 12\" of this unit was picked to be the target of that spell, this unit can use the 'Unbind' ability as if it had Wizard (1). Add 1 to the unbinding roll for that ability. If the spell is unbound, inflict D3 mortal damage on the caster."
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Infantry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Spirit Hosts",
+      "name": "SPIRIT HOSTS",
       "move": "8",
       "health": "3",
       "save": "4+",
@@ -1539,16 +1420,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Nighthaunt"
-      ]
+      "keywords": ["Infantry", "Fly", "Ward (6+)", "Death", "Nighthaunt"]
     },
     {
-      "name": "Dreadscythe Harridans",
+      "name": "DREADSCYTHE HARRIDANS",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1592,7 +1467,7 @@
       ]
     },
     {
-      "name": "Hexwraiths",
+      "name": "HEXWRAITHS",
       "move": "12",
       "health": "3",
       "save": "4+",
@@ -1622,9 +1497,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Spectral Hunters",
             "description": "As the Hexwraiths ride down their chosen prey, their targets are subject to the phantasmal cavalry's life-leeching powers.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -1642,7 +1515,7 @@
       ]
     },
     {
-      "name": "Mortalis Terminexus",
+      "name": "MORTALIS TERMINEXUS",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -1651,14 +1524,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Keeper Of Mortality",
             "description": "A Mortalis Terminexus is a catalyst of deathly magic that invigorates surrounding Nighthaunt.",
             "declare": "Pick a visible friendly Nighthaunt unit within 3\" of this Manifestation to be the target.",
-            "effect": "Roll a dice. On a 2+, pick 1 of the following effects: \n* Add 1 to run rolls and charge rolls for  target for the rest of the turn. \n* Heal (3) the target."
+            "effect": "Roll a dice. On a 2+, pick 1 of the following effects: * Add 1 to run rolls and charge rolls for target for the rest of the turn. * Heal (3) the target."
           }
         ]
       ],
@@ -1672,7 +1543,7 @@
       ]
     },
     {
-      "name": "Vault Of Souls",
+      "name": "VAULT OF SOULS",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -1687,9 +1558,7 @@
             "effect": "Each time a model (friendly or enemy) is slain within 12\" of this Manifestation, give this Manifestation a soul point, to a maximum of 6."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Soul Eruption",
             "description": "Should a Vault of Souls glut itself too greedily, the captured spirits within will burst free, tearing at those nearby in their desperation to escape.",
             "declare": "If this Manifestation has 6 soul points, pick any number of enemy units within 6\" of this unit to be the targets.",
@@ -1707,7 +1576,7 @@
       ]
     },
     {
-      "name": "Shyish Reaper",
+      "name": "SHYISH REAPER",
       "move": "8",
       "health": "7",
       "save": "4+",

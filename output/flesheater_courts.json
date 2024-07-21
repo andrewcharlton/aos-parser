@@ -13,9 +13,7 @@
       "effect": "Add 1 to the Attacks characteristic of melee weapons, including Companion weapons, used by friendly Flesh-eater Courts units while they are wholly within 12\" of any friendly Heroes that have 6 noble deeds points."
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "Muster Guard",
       "description": "Courtiers are perceived as ranking officers who possess the charisma to rally wavering troops.",
@@ -23,9 +21,7 @@
       "effect": "Spend any of that Hero's noble deeds points. If the target is a Serfs unit, for each noble deeds point spent, return 1 slain model to it. If the target is a Knights unit, for every 2 noble deeds points spent, return 1 slain model to it."
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "Summon Loyal Subjects",
       "description": "To the mordants, an ear-splitting howl from the throat of an abhorrant is a clarion call to defend the kingdom.",
@@ -35,9 +31,7 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "Royal Blood",
       "description": "The vampiric blood that courses through an abhorrant's veins can heal even the most terrible wounds.",
@@ -49,9 +43,7 @@
     "Cannibal Court": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "A Hunger For Glory",
       "description": "Seeking to rise up the depraved hierarchy of their kind, champions of the courts will attempt to outdo one another with acts of derring-do, such as launching bold and bloody raids deep into enemy territory.",
       "effect": "Give 1 noble deeds point to each friendly Flesh-eater Courts Hero wholly outside friendly territory."
@@ -71,6 +63,8 @@
     "Royal Menagerie": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Combat Phase"],
+      "your_turn_only": true,
       "name": "Meat For The Beast",
       "description": "In battle, Flesh-eater monarchs often toss their pet monstrosities choice cuts of flesh, granting them a burst of strength and ferocity.",
       "declare": "Pick a friendly Flesh-eater Courts Monster to be the target.",
@@ -112,9 +106,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Heart Of The Gargant",
       "description": "This slab of muscle still beats with the strength of the gargant from which it was torn, and each bite of it grants colossal might.",
       "effect": "If this unit is in combat, add 1 to the Attacks characteristic of its melee weapons for the rest of the turn. This ability also affects Companion weapons."
@@ -123,48 +115,32 @@
   "spell_lore": {
     "Lore Of Madness": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Deranged Transfor Mation",
         "description": "The spellcaster causes the limbs of a nearby pack to bulge and lengthen, allowing the creatures to charge forwards at a furious pace and imbuing them with greater strength.",
         "declare": "Pick a friendly Flesh-eater Courts Wizard to cast this spell, pick a visible friendly Flesh-eater Courts Infantry or Cavalry unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
-        "effect": "Until the start of your next turn: \n* Add 2\" to the target's Move characteristic. \n* Add 1 to wound rolls for the target's combat attacks.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "5"
-        ]
+        "effect": "Until the start of your next turn: * Add 2\" to the target's Move characteristic. * Add 1 to wound rolls for the target's combat attacks.",
+        "keywords": ["Spell", "Unlimited", "5"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "MIASMA OF MADNESS:",
         "description": "The wizard calls forth a sanity-warping mist to engulf the foe.",
         "declare": "Pick a friendly Flesh-eater Courts Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
-        "effect": "Roll 7 dice and apply the corresponding effect:  Ravaged Mind: If 2 or more dice have the same value, inflict 1 mortal damage on the target.  Gory Visions: If 3 or more dice have the same value, in addition to the effect of 'Ravaged Mind', subtract 1 from hit rolls for the target's attacks until the start of your next turn.  Drooling Stupor: If 4 or more dice have the same value, in addition to the effects of 'Ravaged Mind' and 'Gory Visions', subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "6",
-          "6"
-        ],
+        "effect": "Roll 7 dice and apply the corresponding effect: Ravaged Mind: If 2 or more dice have the same value, inflict 1 mortal damage on the target. Gory Visions: If 3 or more dice have the same value, in addition to the effect of 'Ravaged Mind', subtract 1 from hit rolls for the target's attacks until the start of your next turn. Drooling Stupor: If 4 or more dice have the same value, in addition to the effects of 'Ravaged Mind' and 'Gory Visions', subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
+        "keywords": ["Spell", "6", "6"],
         "casting_value": 5
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Charnel Feast",
         "description": "The caster draws out the life essence of nearby foes and uses it to heal the injured warriors of the court.",
         "declare": "Pick a friendly Flesh-eater Courts Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target. Then, you can pick a friendly Flesh-eater Courts Infantry unit within 6\" of the target. For each damage point allocated to the target by this ability, you can return 1 slain model to that friendly unit.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 6
       }
     ]
@@ -172,48 +148,32 @@
   "prayer_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Blessed Feast",
         "description": "The priest blesses his followers' next meal to bring health and happiness to those who partake.",
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible enemy unit within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, each time a model in the target unit is slain, Heal (1) a friendly Flesh-eater Courts unit in combat with the target. If the chanting roll was 10+, Heal (D3) that friendly unit instead.",
-        "keywords": [
-          "Prayer",
-          "Unlimited",
-          "5"
-        ]
+        "keywords": ["Prayer", "Unlimited", "5"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "THE SUMMERKING'S FAVOUR:",
         "description": "The priest delivers a blistering sermon lionising the deeds of a courtly champion, marking them out as a saint in their followers' eyes.",
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible friendly Flesh-eater Courts Hero wholly within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give the target 1 additional noble deeds point after the Fight ability has been resolved. If the chanting roll was 10+, until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give all friendly Flesh-eater Courts Heroes wholly within 18\" of the target 1 additional noble deeds point after the Fight ability has been resolved instead of only the target.",
-        "keywords": [
-          "Prayer",
-          "5",
-          "5"
-        ],
+        "keywords": ["Prayer", "5", "5"],
         "chanting_value": 5
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "CHARNEL CONVICTION:",
         "description": "Anointed with libations by their priest, ghouls believe themselves to be invincible warriors of faith.",
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible friendly Flesh-eater Courts unit wholly within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, the target has Ward (5+). If the chanting roll was 10+, pick another friendly Flesh-eater Courts unit wholly within 18\" of the target. That unit also has Ward (5+) until the start of your next turn.",
-        "keywords": [
-          "Prayer"
-        ],
+        "keywords": ["Prayer"],
         "chanting_value": 5
       }
     ]
@@ -221,57 +181,40 @@
   "manifestation_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Ushoran",
         "description": "The wizard conjures forth a manifestation of the sacred cup held by Ushoran. This bone-wrought goblet is continually filled with the blood of those slain in its presence.",
         "declare": "If there is not a friendly Chalice of Ushoran on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Chalice of Ushoran wholly within 12\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "7"
-        ],
+        "keywords": ["Spell", "Summon", "7"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Stampede",
         "description": "Imbued with grisly vigour by the insane magics of the abhorrants, the undead beasts of a Corpsemare Stampede burst from the blood-soaked ground to trample across the battlefield with reckless abandon.",
         "declare": "If there is not a friendly Corpsemare Stampede on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Corpsemare Stampede wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "5"
-        ],
+        "keywords": ["Spell", "Summon", "5"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Barricade",
         "description": "With a word of command, the corpses of those who once served Ushoran rise up from the grave, dragging with them the detritus of a forgotten civilisation and clawing at the living with lifeless hands.",
         "declare": "If there is not a friendly Cadaverous Barricade on the battlefield, pick a friendly Flesh-eater Courts Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Cadaverous Barricade wholly within 18\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 5
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Nagash, Supreme Lord Of The Undead",
+      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -314,39 +257,29 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Hand Of Dust",
             "description": "Nagash's touch can turn a foe to a pile of dusty bones in moments.",
             "declare": "Pick a visible enemy Hero or Monster in combat with this unit to be the target.",
             "effect": "Hide a dice in one of your hands or under one of two appropriate containers. Your opponent must pick one of your hands or containers. If they pick the one hiding the dice, this ability has no effect. If they pick the empty one, the target is automatically destroyed.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "SUPREME LORD OF THE UNDEAD",
             "declare": "Pick a friendly non-Hero non-Unique Death unit that has been destroyed to be the target.",
             "effect": "Set up a replacement unit identical to the target wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Invocation Of Nagash",
             "description": "In a storm of morbid sorcery, Nagash blasts his foes' souls or re-knits his minions' bodies.",
             "declare": "This unit can cast this spell more than once per phase. Pick a visible unit wholly within 18\" of this unit that has not been picked to be the target of this spell this turn to be the target, then make a casting roll of 2D6.",
-            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: \n* Return a number of slain models to  the target unit with a combined Health characteristic of up to 3. \n* The target has Ward (5+) until the start  of your next turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "effect": "If the target is an enemy unit, inflict D3 mortal damage on it. If the target is a friendly Death unit, pick 1 of the following effects: * Return a number of slain models to the target unit with a combined Health characteristic of up to 3. * The target has Ward (5+) until the start of your next turn.",
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -364,7 +297,7 @@
       ]
     },
     {
-      "name": "Ushoran, Mortarch Of Delusion",
+      "name": "USHORAN MORTARCH OF DELUSION",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -405,37 +338,27 @@
             "effect": "While this unit has 6 noble deeds points, the effect of the 'Feeding Frenzy' ability applies to friendly Flesh-eater Courts units while they are wholly within 24\" of this unit instead of 12\". 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Glimpse Of Delusion",
             "description": "Ushoran pulls an enemy into his delusion, causing them to see friends as vicious monsters.",
             "declare": "Pick a visible enemy model within 18\" of this unit to be the target, pick another enemy unit within the target's combat range to be the victim, then make a casting roll of 2D6.",
             "effect": "Pick 1 of the target's melee weapons. Immediately resolve combat attacks made with that weapon against the victim.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Shroudcage Fragment",
             "description": "Madness pulses from the gem in Ushoran's crown, overwhelming those who draw too close.",
             "declare": "Pick up to 3 enemy units in combat with this unit to be the targets.",
             "effect": "Roll a dice for each target. If the roll exceeds the target's Control characteristic, the target has Strike-last for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "EPICENTRE OF DELUSION",
             "effect": "Pick 1 of the following effects to apply until the start of your next turn: The Royal Hunt: Add 1 to wound rolls for attacks made by friendly Flesh-eater Courts units that target a Monster. Crusading Army: Add 1 to run rolls and charge rolls for friendly Flesh-eater Courts units. Defenders of the Realm: Add 1 to save rolls for friendly Flesh-eater Courts units while they are contesting an objective you control. The Grand Tournament: Add 1 to hit rolls for attacks made by other friendly Flesh-eater Courts Heroes if they charged in the same turn."
@@ -455,7 +378,7 @@
       ]
     },
     {
-      "name": "Abhorrant Ghoul King, On Royal Terrorgheist",
+      "name": "ABHORRANT GHOUL KING ON ROYAL TERRORGHEIST",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -519,16 +442,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Ferocious Hunger",
             "description": "Assailed by visions of the glorious feast to come, the abhorrant's steed is filled with a hunger- driven impetus.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, attacks made with this unit's Terrorgheist's Fanged Maw that target that enemy unit score critical hits on unmodified hit rolls of 5+ for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -544,7 +463,7 @@
       ]
     },
     {
-      "name": "Abhorrant Ghoul King, On Royal Zombie Dragon",
+      "name": "ABHORRANT GHOUL KING ON ROYAL ZOMBIE DRAGON",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -602,16 +521,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Draconic Terror",
             "description": "To behold such a majestic beast as a dragon in the grip of undeath evokes awe and abject terror in equal measure.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. If the roll exceeds the target's Control characteristic, the target cannot use commands for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -633,7 +548,7 @@
       ]
     },
     {
-      "name": "Grand Justice Gormayne",
+      "name": "GRAND JUSTICE GORMAYNE",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -656,9 +571,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "DELUSION OF JUSTICE SERVED:",
             "description": "Should an enemy transgress Ushoran's laws, Gormayne's powerful oratory is quick to condemn them.",
@@ -678,7 +591,7 @@
       ]
     },
     {
-      "name": "Abhorrant Gorewarden",
+      "name": "ABHORRANT GOREWARDEN",
       "move": "12",
       "health": "7",
       "save": "5+",
@@ -699,17 +612,13 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "ROYAL HUNTING PARTY:",
             "description": "A Gorewarden is responsible for patrolling the borders of their liege's greater territory, leading flights of warriors to suddenly fall upon and eviscerate trespassers.",
             "declare": "If this unit is not in combat, you can pick up to 2 friendly Crypt Flayers or Morbheg Knights units that are not in combat and are wholly within 12\" of this unit to be the targets.",
             "effect": "Remove this unit and the targets (if any) from the battlefield. Set up this unit again on the battlefield more than 9\" from all enemy units. Then, set up each target wholly within 12\" of this unit and more than 9\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -725,7 +634,7 @@
       ]
     },
     {
-      "name": "Marrowscroll Herald",
+      "name": "MARROWSCROLL HERALD",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -748,13 +657,11 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "The King'S Entreaty",
             "description": "The message within the infected bone carried by a Marrowscroll Herald is an entreaty to madness and carnage; to reject it is to rouse the ire of the ghoulish throngs.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+, pick 1 of the following effects: Attack the Apostate!: Friendly Flesh-eater Courts units in combat with the target have Strike-first for the rest of the turn.  Welcome the Disciple!: The target has the Infected keyword for the rest of the battle. Each time your opponent declares a command, Spell ability or Prayer ability for an Infected unit, roll a dice. On a 5+:  \n* If they declared a command, that  command has no effect. The command still counts as having been used and the command points spent to use the command are still lost.  \n* If they declared a Spell or Prayer ability, that spell or prayer fails."
+            "effect": "Roll a dice. On a 3+, pick 1 of the following effects: Attack the Apostate!: Friendly Flesh-eater Courts units in combat with the target have Strike-first for the rest of the turn. Welcome the Disciple!: The target has the Infected keyword for the rest of the battle. Each time your opponent declares a command, Spell ability or Prayer ability for an Infected unit, roll a dice. On a 5+: * If they declared a command, that command has no effect. The command still counts as having been used and the command points spent to use the command are still lost. * If they declared a Spell or Prayer ability, that spell or prayer fails."
           },
           {
             "activation": "Passive",
@@ -774,7 +681,7 @@
       ]
     },
     {
-      "name": "Morbheg Knights",
+      "name": "MORBHEG KNIGHTS",
       "move": "12",
       "health": "4",
       "save": "4+",
@@ -804,9 +711,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Shrieking Charge",
             "description": "Nightshriekers emit bursts of maniacal, screech-like laughter that carry the curse of madness, leaving their prey staggering.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of this unit to be the target.",
@@ -833,7 +738,7 @@
       ]
     },
     {
-      "name": "Cryptguard",
+      "name": "CRYPTGUARD",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -855,7 +760,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Ar Moury Of Madness",
             "description": "The weapons wielded by the Cryptguard are infused with their delusional curse, and they can drive the wits from any they strike.",
             "effect": "If any damage points inflicted by attacks made as part of that Fight ability are allocated to any enemy units, those enemy units cannot use commands until the start of your next turn."
@@ -880,7 +785,7 @@
       ]
     },
     {
-      "name": "Varghulf Courtier",
+      "name": "VARGHULF COURTIER",
       "move": "10",
       "health": "8",
       "save": "5+",
@@ -916,12 +821,10 @@
             "effect": "This unit can pass across terrain features as if it had Fly."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Victory Feast",
             "description": "A Varghulf rampages through the enemy's ranks at will, its wounds sealing with unholy rapidity as it guzzles the flesh of the savaged foe.",
-            "effect": "If any models were slain by this unit this turn: \n* Heal (D6) this unit. \n* This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
+            "effect": "If any models were slain by this unit this turn: * Heal (D6) this unit. * This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
           }
         ]
       ],
@@ -935,7 +838,7 @@
       ]
     },
     {
-      "name": "Abhorrant Cardinal",
+      "name": "ABHORRANT CARDINAL",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -956,9 +859,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "name": "Rousing Oration",
             "description": "The Cardinal espouses the virtues of the noble heroes of the court.",
             "declare": "Pick a friendly Flesh-eater Courts Hero wholly within 12\" of this unit to be the target.",
@@ -977,7 +878,7 @@
       ]
     },
     {
-      "name": "Royal Decapitator",
+      "name": "ROYAL DECAPITATOR",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -999,15 +900,13 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "EXECUTIONER'S ENTOURAGE:",
             "description": "Though Royal Decapitators are often shunned by their fellow ghouls, when the blood starts flying, these sinister figures can attract quite the following.",
             "effect": "Pick a friendly Serfs unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Off With Their Head!",
             "description": "A Royal Decapitator's axe hungers to cleave through necks in one fell swing.",
             "declare": "Pick an enemy Infantry Hero that had any damage points allocated to it this turn by this unit's attacks to be the target.",
@@ -1025,7 +924,7 @@
       ]
     },
     {
-      "name": "Abhorrant Archregent",
+      "name": "ABHORRANT ARCHREGENT",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -1046,31 +945,23 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Carrion Call",
             "description": "A triumphant bellowing blast echoes across the land, beckoning the ghoulish hordes to battle.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "The first friendly Flesh-eater Courts unit to be set up in the following movement phase can immediately move D6\". That unit cannot move into combat during any part of that move.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Countless Servants",
             "description": "With a chilling shriek, the Archregent summons some of their most trusted warriors.",
             "declare": "Pick a friendly Serfs or Knights unit wholly within 12\" of this unit to be the target.",
-            "effect": "Roll a dice. On a 3+: \n* If the target is a Serfs unit, you can  return up to 3 slain models to that unit. \n* If the target is a Knights unit, you can  return 1 slain model to that unit.",
-            "keywords": [
-              "Core"
-            ]
+            "effect": "Roll a dice. On a 3+: * If the target is a Serfs unit, you can return up to 3 slain models to that unit. * If the target is a Knights unit, you can return 1 slain model to that unit.",
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -1085,7 +976,7 @@
       ]
     },
     {
-      "name": "Abhorrant Ghoul King",
+      "name": "ABHORRANT GHOUL KING",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -1106,18 +997,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Code Of Honour",
             "description": "Delusions of chivalry and honourable combat swirling in their fevered mind, the Ghoul King issues a direct challenge to an enemy champion - and then immediately pounces upon them like a frenzied beast.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
             "effect": "For the rest of the turn, add 1 to the Damage characteristic of this unit's melee weapons, but all of this unit's attacks must target that Hero."
           },
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "your_turn_only": true,
             "name": "Unnatural Speed",
             "description": "Deathly energies swell the abhorrant's muscles and strengthen their sinews before they explode into motion, bounding towards the foe with terrifying swiftness.",
@@ -1136,7 +1023,7 @@
       ]
     },
     {
-      "name": "Crypt Infernal Courtier",
+      "name": "CRYPT INFERNAL COURTIER",
       "move": "12",
       "health": "6",
       "save": "5+",
@@ -1187,7 +1074,7 @@
       ]
     },
     {
-      "name": "Crypt Haunter Courtier",
+      "name": "CRYPT HAUNTER COURTIER",
       "move": "7",
       "health": "6",
       "save": "5+",
@@ -1208,9 +1095,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Noble Blood",
             "description": "The blood of their liege grants these Flesh-eaters a supernatural regenerative capacity.",
@@ -1218,7 +1103,7 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit",
+            "reaction_condition": " You declared a Fight ability  for this unit",
             "name": "Knightly Exemplar",
             "description": "Witnessing a Crypt Haunter Courtier's frenzied, blood- spraying assault sends the warriors in their pack into a murderous frenzy.",
             "effect": "Pick a friendly Crypt Horrors unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to hit rolls for the target's attacks for the rest of the turn."
@@ -1235,7 +1120,7 @@
       ]
     },
     {
-      "name": "Crypt Flayers",
+      "name": "CRYPT FLAYERS",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1270,14 +1155,13 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "Escort Courtier",
             "description": "There are many ghoulish legends of Crypt Flayers winging down to lift noble heroes into the sky, either plucking them from danger or carrying them into the fray.",
             "declare": "If this unit is not in combat, pick a friendly Flesh-eater Courts Infantry Hero that does not have Fly and is within this unit's combat range to be the target.",
             "effect": "Remove the target from the battlefield. Then, this unit can move a distance up to its Move characteristic. It cannot end that move in combat. Then, set up the target within this unit's combat range and more than 3\" from all enemy units.",
-            "keywords": [
-              "Core",
-              "Move"
-            ]
+            "keywords": ["Core", "Move"]
           }
         ]
       ],
@@ -1292,7 +1176,7 @@
       ]
     },
     {
-      "name": "Crypt Horrors",
+      "name": "CRYPT HORRORS",
       "move": "7",
       "health": "4",
       "save": "5+",
@@ -1319,9 +1203,7 @@
             "effect": "Add 1 to the Rend characteristic of this unit's melee weapons while it is wholly within 12\" of any friendly Courtiers or Abhorrants."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Noble Blood",
             "description": "The blood of their liege grants these Flesh-eaters a supernatural regenerative capacity.",
@@ -1339,7 +1221,7 @@
       ]
     },
     {
-      "name": "Crypt Ghouls",
+      "name": "CRYPT GHOULS",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1377,7 +1259,7 @@
       ]
     },
     {
-      "name": "Royal Zombie Dragon",
+      "name": "ROYAL ZOMBIE DRAGON",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -1424,21 +1306,15 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Draconic Claws is 5."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Vantage Point",
             "description": "The Zombie Dragon approaches the front line from above, eye sockets aglow with unholy energy.",
             "declare": "Pick this unit if it has not been deployed.",
             "effect": "Set up this unit in reserve high above the battlefield. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Loathsome Descent",
             "description": "With a deafening roar, the Zombie Dragon dives into battle like a foul comet.",
@@ -1448,28 +1324,18 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Soaring Terror",
             "description": "The Zombie Dragon soars over the enemy warriors, scouring those below with its corrosive breath.",
             "effect": "If this unit charged this turn, roll a dice. On a 3+, this unit can move 2D6\". It can pass through the combat ranges of enemy units but must end that move in combat. Then, pick an enemy unit that this unit passed across during that move. Inflict D3 mortal damage on that enemy unit.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Flesh-eater Courts"
-      ]
+      "keywords": ["Monster", "Fly", "Ward (6+)", "Death", "Flesh-eater Courts"]
     },
     {
-      "name": "Royal Terrorgheist",
+      "name": "ROYAL TERRORGHEIST",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -1524,29 +1390,19 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Death Shriek",
             "description": "The terrifying shriek of a Terrorgheist is enough to stop a warrior's heart.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
             "effect": "Roll a dice for each model in the target unit. For each 6, inflict 1 mortal damage on the target. If 3 or more damage points are allocated to the target by this ability, subtract 1 from hit rolls for the target's attacks for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Fly",
-        "Ward (6+)",
-        "Death",
-        "Flesh-eater Courts"
-      ]
+      "keywords": ["Monster", "Fly", "Ward (6+)", "Death", "Flesh-eater Courts"]
     },
     {
-      "name": "Royal Beastflayers",
+      "name": "ROYAL BEASTFLAYERS",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1573,9 +1429,7 @@
             "effect": "Enemy Monsters cannot use Rampage abilities while they are in combat with this unit. In addition, subtract 1 from the Damage characteristic of melee weapons used by enemy Monsters and Beast units while they are in combat with this unit."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Royal Flaymaster",
             "description": "The Royal Flaymaster skewers enemies using their hunting polearm as the Offal Hounds pounce to finish off their prey.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -1593,7 +1447,7 @@
       ]
     },
     {
-      "name": "Corpsemare Stampede",
+      "name": "CORPSEMARE STAMPEDE",
       "move": "12",
       "health": "10",
       "save": "5+",
@@ -1614,17 +1468,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Trampled Underfoot",
             "description": "As a Corpsemare Stampede charges across the battlefield, it tramples over anything that gets in its way.",
-            "effect": "This Manifestation can move a distance up to its Move characteristic. This Manifestation can pass through models and the combat ranges of enemy units, but it cannot end that move in combat.  Then, pick up to 3 enemy units that this Manifestation passed across during that move to be the targets. Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Designer's Note: This Manifestation can use this ability even if it is in combat.",
-            "keywords": [
-              "Core",
-              "Move"
-            ]
+            "effect": "This Manifestation can move a distance up to its Move characteristic. This Manifestation can pass through models and the combat ranges of enemy units, but it cannot end that move in combat. Then, pick up to 3 enemy units that this Manifestation passed across during that move to be the targets. Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Designer's Note: This Manifestation can use this ability even if it is in combat.",
+            "keywords": ["Core", "Move"]
           }
         ]
       ],
@@ -1638,7 +1487,7 @@
       ]
     },
     {
-      "name": "Cadaverous Barricade",
+      "name": "CADAVEROUS BARRICADE",
       "move": "-",
       "health": "10",
       "save": "4+",
@@ -1650,7 +1499,7 @@
             "activation": "Passive",
             "name": "Grasping Hands",
             "description": "The animated corpses trapped in a Cadaverous Barricade grab at any living creature that comes too close.",
-            "effect": "Enemy units cannot use Run or Retreat abilities while they are within this Manifestation's combat range.  In addition, if an enemy unit is picked to use a Move ability while it is within this Manifestation's combat range, halve that unit's Move characteristic (rounding up) for the rest of the turn."
+            "effect": "Enemy units cannot use Run or Retreat abilities while they are within this Manifestation's combat range. In addition, if an enemy unit is picked to use a Move ability while it is within this Manifestation's combat range, halve that unit's Move characteristic (rounding up) for the rest of the turn."
           }
         ]
       ],
@@ -1663,7 +1512,7 @@
       ]
     },
     {
-      "name": "Chalice Of Ushoran",
+      "name": "CHALICE OF USHORAN",
       "move": "-",
       "health": "6",
       "save": "6+",
@@ -1678,9 +1527,7 @@
             "effect": "Each time a model (friendly or enemy) is slain within 12\" of this Manifestation, give this Manifestation a blood point, to a maximum of 6."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Overflowing Gore",
             "description": "When the gore inside the chalice overflows, the Flesh-eaters upon whom it slops are granted unnatural vitality.",
             "declare": "Pick a friendly Flesh-eater Courts unit wholly within 18\" of this Manifestation to be the target.",
@@ -1698,7 +1545,7 @@
       ]
     },
     {
-      "name": "Charnel Throne",
+      "name": "CHARNEL THRONE",
       "move": "-",
       "health": "10",
       "save": "4+",
@@ -1710,12 +1557,10 @@
             "activation": "Passive",
             "name": "Steward Of The Realm",
             "description": "Those who sit upon a Charnel Throne rule over all they survey, but they must be wary of foes who would see them violently cast down.",
-            "effect": "While this terrain feature has a Steward: \n* The Steward cannot use Move abilities. \n* Instead of measuring range or visibility to the Steward, measure to this terrain feature instead.  \n* All attacks that would target the Steward  target this terrain feature instead. \n* If this terrain feature is destroyed,  before removing it from the battlefield, inflict D3 mortal damage on the Steward. Then, set up the Steward on the battlefield within 3\" of this terrain feature and not in combat. That unit is no longer the Steward. If it is not possible to set up the Steward, it is slain."
+            "effect": "While this terrain feature has a Steward: * The Steward cannot use Move abilities. * Instead of measuring range or visibility to the Steward, measure to this terrain feature instead. * All attacks that would target the Steward target this terrain feature instead. * If this terrain feature is destroyed, before removing it from the battlefield, inflict D3 mortal damage on the Steward. Then, set up the Steward on the battlefield within 3\" of this terrain feature and not in combat. That unit is no longer the Steward. If it is not possible to set up the Steward, it is slain."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Reigning Champion",
             "description": "A trusted member of the court may sit the throne in the absence of their liege-lord, though they must abdicate immediately on their return.",
@@ -1723,18 +1568,14 @@
             "effect": "Place the target on this terrain feature. The target is now the Steward (see 'Steward of the Realm')."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Duty Calls",
             "description": "When duty demands it, an abhorrant monarch or their regent will descend from the throne to take up the sword and defend the kingdom.",
             "effect": "If this terrain feature has a Steward, set up the Steward on the battlefield wholly within 6\" of this terrain feature and not in combat. That unit is no longer the Steward."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "RULER OF ALL THEY SURVEY: A",
             "description": "Charnel Throne forms a nexus of delusion, and a cannibal champion seated upon such a grisly construct becomes convinced of their own grandeur.",
@@ -1742,11 +1583,7 @@
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Death",
-        "Flesh-eater Courts"
-      ]
+      "keywords": ["Faction Terrain", "Death", "Flesh-eater Courts"]
     }
   ]
 }

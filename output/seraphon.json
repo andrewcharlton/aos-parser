@@ -2,9 +2,7 @@
   "battle_traits": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "The Great Plan",
       "description": "The Seraphon look to the heavens for guidance, scrying the stars above in the hope that the Great Plan is revealed to them.",
       "declare": "Pick an Asterism ability.",
@@ -14,7 +12,7 @@
       "activation": "Once Per Battle",
       "name": "Further The Great Plan",
       "description": "As the battle unfolds, so do the machinations of the Old Ones.",
-      "declare": "You can use this ability if you meet the condition below that corresponds to the Asterism you picked in the deployment phase.  Itzl the Tamer: 3 or more enemy units have been destroyed. Quetzl the Preserver: There are no enemy units wholly within friendly territory. Sotek the Deliverer: The enemy general is in combat or has been destroyed. Tepok the Seer: There are any friendly Slann units on the battlefield and no friendly Slann units are in combat or have been destroyed.",
+      "declare": "You can use this ability if you meet the condition below that corresponds to the Asterism you picked in the deployment phase. Itzl the Tamer: 3 or more enemy units have been destroyed. Quetzl the Preserver: There are no enemy units wholly within friendly territory. Sotek the Deliverer: The enemy general is in combat or has been destroyed. Tepok the Seer: There are any friendly Slann units on the battlefield and no friendly Slann units are in combat or have been destroyed.",
       "effect": "Pick a different Asterism ability. It can be used in addition to the one you picked in the deployment phase."
     },
     {
@@ -22,64 +20,56 @@
       "name": "Itzl The Tamer",
       "description": "Itzl is the most bestial of all the Old Ones and his asterism fills the Seraphon with ferocity.",
       "effect": "Companion weapons used by friendly Seraphon units have Crit (2 Hits).",
-      "keywords": [
-        "Asterism"
-      ]
+      "keywords": ["Asterism"]
     },
     {
       "activation": "Passive",
       "name": "Quetzl The Preserver",
       "description": "Quetzl grants protection from the dangers of the physical realms.",
       "effect": "Subtract 1 from the Rend characteristic of melee weapons for attacks that target friendly Seraphon units that are wholly within friendly territory.",
-      "keywords": [
-        "Asterism"
-      ]
+      "keywords": ["Asterism"]
     },
     {
       "activation": "Passive",
       "name": "Sotek The Deliverer",
       "description": "The Asterism of Sotek emboldens the Seraphon with a war-hungry aggression.",
       "effect": "Add 2 to the Move characteristic of friendly Seraphon units.",
-      "keywords": [
-        "Asterism"
-      ]
+      "keywords": ["Asterism"]
     },
     {
       "activation": "Passive",
       "name": "Tepok The Seer",
       "description": "The sign of Tepok, resplendent in the stars above, enlivens the land with thrumming geomantic energy.",
       "effect": "Add 1 to casting rolls for friendly Seraphon units.",
-      "keywords": [
-        "Asterism"
-      ]
+      "keywords": ["Asterism"]
     }
   ],
   "battle_formations": {
     "Eternal Starhost": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Movement Phase"],
+      "your_turn_only": true,
       "name": "Celestial Translocation",
       "description": "In a flash of starlight, an Eternal Starhost arrives to enact the will of the Old Ones. Tapping into the celestial power that surrounds the slann, they teleport across the battlefield to catch the foe off guard.",
       "declare": "Pick a friendly Seraphon unit wholly within 12\" of a friendly Seraphon Wizard to use this ability.",
       "effect": "Roll a dice. On a 3+, remove that unit from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-      "keywords": [
-        "Core"
-      ]
+      "keywords": ["Core"]
     },
     "Sunclaw Starhost": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Vengeance Of Azyr",
       "description": "The celestite weapons carried by the warriors of a Sunclaw Starhost are supercharged with the power of Azyr.",
       "declare": "Pick up to 3 friendly Saurus or Kroxigor units that are in combat to be the targets.",
-      "effect": "For each target: \n* Make a pile-in move. \n* Then, pick an enemy unit in combat  with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
+      "effect": "For each target: * Make a pile-in move. * Then, pick an enemy unit in combat with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     "Shadowstrike Starhost": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Shooting Phase"],
+      "your_turn_only": true,
       "name": "Nimble And Quick",
       "description": "The skink warriors of a Shadowstrike Starhost outmanoeuvre their enemies at every turn.",
       "declare": "Pick up to 3 friendly Skink Infantry or Skink Cavalry units that are not in combat to be the targets.",
@@ -115,15 +105,13 @@
   "artefacts_of_power": [
     {
       "activation": "Once Per Battle",
-      "reaction_condition": " You declared a   Spell ability for a friendly Seraphon  Wizard within this unit\u2019s combat range ",
+      "reaction_condition": " You declared a  Spell ability for a friendly Seraphon Wizard within this unit's combat range ",
       "name": "Coatl Familiar",
       "description": "Though only a juvenile example of the great feathered serpents, this winged creature is still sacred to the mage-god Tepok.",
       "effect": "Add D6 to the casting roll for that spell."
     },
     {
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "name": "Incandescent Rectrices",
       "description": "This vibrant plumage imbues the bearer with the restorative power of the heavens.",
       "effect": "Heal (D3) this unit."
@@ -138,100 +126,70 @@
   "spell_lore": {
     "Lore Of Celestial Manipulation": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Mystical Unforging",
         "description": "The magic of unmaking flies from the wizard's outstretched hands.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from the Rend characteristic of the target's weapons until the start of your next turn.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "7"
-        ]
+        "keywords": ["Spell", "Unlimited", "7"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Comet'S Call",
         "description": "Their consciousness soaring up to the heavens, the wizard summons a celestial comet that plummets down into the enemy ranks.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "6",
-          "6"
-        ],
+        "keywords": ["Spell", "6", "6"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Speed Of Huanchi",
         "description": "With the grace and momentum of a prowling beast, the allies of the priestly mage are filled with a celestial haste.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible friendly Seraphon unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, the target can use a Run ability and still use Shoot and/or Charge abilities later in the turn.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 6
       }
     ],
     "Lore Of Primal Jungles": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Light Of Chotec",
         "description": "The wizard calls upon the sun god Chotec to energise an injured warrior with rays of invigorating solar magics.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible friendly Seraphon unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a number of dice equal to the number of damage points the target has. For each 4+, Heal (1) the target.",
-        "keywords": [
-          "Spell",
-          "Unlimited"
-        ]
+        "keywords": ["Spell", "Unlimited"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "The Earth Trembles",
         "description": "With a focused pulse of will, the Starmaster sets the energy of the ley lines spiking until the ground is violently torn asunder.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a point on the battlefield within 18\" of them to be the target point, then make a casting roll of 2D6.",
         "effect": "Draw a straight line between the target point and the closest part on the caster's base. Roll a D3 for each unit (friendly and enemy) that has models passed across by this line. On a 2+, inflict an amount of mortal damage on that unit equal to the roll.",
-        "keywords": [
-          "Spell",
-          "6"
-        ],
+        "keywords": ["Spell", "6"],
         "casting_value": 8
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "EMPOWERED CELESTITE:",
         "description": "Tapping into the ancient technologies within the weapons of the Coalesced, a light is birthed in each; for a few moments, every strike shatters armour in an explosion of sparks.",
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible friendly Saurus unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Add 1 to the Rend characteristic of the target's melee weapons for the rest of the turn.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 7
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Lord Kroak",
+      "name": "LORD KROAK",
       "move": "5",
       "health": "18",
       "save": "4+",
@@ -270,35 +228,27 @@
             "effect": "Add 2 to casting rolls for this unit. In addition, this unit can use an Unbind ability if an enemy Wizard anywhere on the battlefield uses a Spell ability instead of an enemy Wizard within 30\" of this unit, and when using the 'Banish Manifestation' ability, this unit can pick a manifestation anywhere on the battlefield instead of within 30\" of it."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "DEAD FOR INNUMERABLE AGES:",
             "description": "Lord Kroak is no longer truly alive; his form is preserved only by his indomitable spirit. As a result, he is immune to all but the most devastating attacks.",
             "effect": "This unit must use this ability each turn while it is damaged. Roll 3D6 and add the number of damage points this unit has to the roll. On a 20+, this unit is destroyed. Otherwise, Heal (18) this unit."
           },
           {
             "activation": "Once Per Turn",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "name": "Arcane Vassal",
             "description": "A Slann Starmaster can channel the power of a spell through one of their followers.",
             "declare": "Pick a friendly Skink Wizard wholly within 18\" of this unit to be the target.",
             "effect": "Measure the range and visibility of the next Spell ability used by this unit from the target instead of from this unit. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Celestial Deliverance",
             "description": "Lord Kroak's palanquin quivers with barely contained force before unleashing ruination on the enemies of the Seraphon.",
             "declare": "This unit can cast this spell more than once per phase. Pick up to 3 different visible enemy units within 12\" of this unit to be the targets, then make a casting roll of 2D6.",
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -316,7 +266,7 @@
       ]
     },
     {
-      "name": "Slann Starmaster",
+      "name": "SLANN STARMASTER",
       "move": "5",
       "health": "9",
       "save": "5+",
@@ -343,24 +293,18 @@
             "effect": "Add 1 to casting rolls for this unit. In addition, this unit can use an Unbind ability if an enemy Wizard anywhere on the battlefield uses a Spell ability instead of an enemy Wizard within 30\" of this unit, and when using the 'Banish Manifestation' ability, this unit can pick a manifestation anywhere on the battlefield instead of within 30\" of it. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Celestial Equilibrium",
             "description": "The slann's form seems to shimmer and fade as it draws links between their allies and the turnings of the stars.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "For the rest of the turn, add 1 to casting rolls made for other friendly Seraphon Wizards while they are wholly within 12\" of this unit.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           },
           {
             "activation": "Once Per Turn",
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "name": "Arcane Vassal",
             "description": "A Slann Starmaster can channel the power of a spell through one of their followers.",
             "declare": "Pick a friendly Skink Wizard wholly within 18\" of this unit to be the target.",
@@ -369,9 +313,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "CELESTIAL REINFORCEMENTS:",
             "description": "The slann summons Seraphon warriors to the battlefield to bolster their forces and ensure the Great Plan is made manifest.",
@@ -393,7 +335,7 @@
       ]
     },
     {
-      "name": "Skink Oracle, On Troglodon",
+      "name": "SKINK ORACLE ON TROGLODON",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -451,13 +393,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Noxious Roar",
             "description": "These creatures bring the roul stench of their swampland homes to battle, their noxious breath reeking all the worse when they roar in anger.",
             "declare": "Pick up to 3 enemy units in combat with this unit to be the targets.",
             "effect": "Roll a dice for each target. On a 3+, subtract 1 from hit rolls for the target's attacks for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -466,26 +407,17 @@
             "effect": "Subtract 2 from the control scores of enemy units while they are in combat with this unit."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "TROGLODON REGENERATION:",
             "description": "Troglodons are able to mend injured flesh almost as soon as they are harmed.",
             "effect": "Heal (D3) this unit."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Monster",
-        "Wizard(1)",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Hero", "Monster", "Wizard(1)", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Saurus Oldblood, On Carnosaur",
+      "name": "SAURUS OLDBLOOD ON CARNOSAUR",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -555,25 +487,18 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Blood Frenzy",
             "description": "A Carnosaur that senses an injured predator will not hesitate to assert its dominance in combat.",
             "effect": "If this unit is in combat with any damaged enemy Monsters, roll a dice. On a 3+, this unit has Strike-first for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Saurus"
-      ]
+      "keywords": ["Hero", "Monster", "Order", "Seraphon", "Saurus"]
     },
     {
-      "name": "Saurus Scar-Veteran, On Aggradon",
+      "name": "SAURUS SCAR-VETERAN ON AGGRADON",
       "move": "10",
       "health": "8",
       "save": "4+",
@@ -603,9 +528,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Primal Rage",
             "description": "The mere taste of enemy blood whips an Aggradon into a battle frenzy and sends the beast on a violent rampage.",
             "effect": "This unit must use this ability each turn. If this unit used any Fight abilities this turn, place a rage token next to it, to a maximum of 3. If this unit did not use any Fight abilities this turn, remove all rage tokens it has. Add 1 to the Attacks characteristic of this unit's Companion weapons for each rage token it has until the end of the next turn."
@@ -613,22 +536,17 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Alpha Roar",
             "description": "The Aggradons ridden by Scar-Veterans are the most violent examples of a brutal species. When they throw back their heads to unleash a ear- splitting roar, their kin soon follow suit.",
             "effect": "Place a rage token next to this unit and each friendly Aggradon Lancers unit wholly within 12\" of this unit, to a maximum of 3 per unit."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Order",
-        "Seraphon",
-        "Saurus"
-      ]
+      "keywords": ["Hero", "Cavalry", "Order", "Seraphon", "Saurus"]
     },
     {
-      "name": "Aggradon Lancers",
+      "name": "AGGRADON LANCERS",
       "move": "10",
       "health": "5",
       "save": "4+",
@@ -658,12 +576,10 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Primal Rage",
             "description": "The mere taste of enemy blood whips an Aggradon into a battle frenzy and sends the beast on a violent rampage.",
-            "effect": "This unit must use this ability each turn.  If this unit used any Fight abilities this turn, place a rage token next to it, to a maximum of 3. If this unit did not use any Fight abilities this turn, remove all rage tokens it has. Add 1 to the Attacks characteristic of this unit's Companion weapons for each rage token it has until the end of the next turn."
+            "effect": "This unit must use this ability each turn. If this unit used any Fight abilities this turn, place a rage token next to it, to a maximum of 3. If this unit did not use any Fight abilities this turn, remove all rage tokens it has. Add 1 to the Attacks characteristic of this unit's Companion weapons for each rage token it has until the end of the next turn."
           }
         ]
       ],
@@ -678,7 +594,7 @@
       ]
     },
     {
-      "name": "Saurus Warriors",
+      "name": "SAURUS WARRIORS",
       "move": "5",
       "health": "2",
       "save": "4+",
@@ -717,7 +633,7 @@
       ]
     },
     {
-      "name": "Saurus Guard",
+      "name": "SAURUS GUARD",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -756,7 +672,7 @@
       ]
     },
     {
-      "name": "Skink Starseer",
+      "name": "SKINK STARSEER",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -779,26 +695,20 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Scry The Stars",
             "description": "By drawing upon the energies of the heavens, the Starseer peers along the tangled weave of fate, gleaning insight that can be used to prepare their servants.",
             "effect": "Roll a number of dice equal to the current battle round number. For each 3+, pick a friendly Seraphon unit wholly within 18\" of this unit. That unit has Ward (5+) until the start of your next turn. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Celestial Doom",
             "description": "The Starseer harnesses their deep connection with Azyr to subtly shift the alignment of the stars above, altering the path of fate and spelling doom for those who stand in the way of the Great Plan.",
             "declare": "Pick a visible enemy unit within 18\" to be the target, then make a casting roll of 2D6.",
             "effect": "Ward rolls cannot be made for the target for the rest of the turn.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -814,7 +724,7 @@
       ]
     },
     {
-      "name": "Skink Starpriest",
+      "name": "SKINK STARPRIEST",
       "move": "8",
       "health": "5",
       "save": "6+",
@@ -835,9 +745,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Serpent Staff",
             "description": "Channelling cosmic power through their twin-headed staff, a Starpriest causes their allies' weapons to drip with deadly venom.",
@@ -856,7 +764,7 @@
       ]
     },
     {
-      "name": "Skinks",
+      "name": "SKINKS",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -896,16 +804,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Champion",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Infantry", "Champion", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Spawn Of Chotec",
+      "name": "SPAWN OF CHOTEC",
       "move": "5",
       "health": "8",
       "save": "5+",
@@ -961,15 +863,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Beast",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Beast", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Raptadon Hunters",
+      "name": "RAPTADON HUNTERS",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1011,9 +908,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Deadly Cohesion",
             "description": "Raptadon Hunters pepper enemy lines with volleys of starstone javelins, exposing weak points for Raptadon Chargers to exploit.",
             "declare": "If this unit is not in combat, pick a friendly Raptadon Chargers unit that charged this turn and is within 12\" of this unit to be the target.",
@@ -1032,7 +927,7 @@
       ]
     },
     {
-      "name": "Raptadon Chargers",
+      "name": "RAPTADON CHARGERS",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1080,7 +975,7 @@
       ]
     },
     {
-      "name": "Hunters Of Huanchi, With Dartpipes",
+      "name": "HUNTERS OF HUANCHI WITH DARTPIPES",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -1113,30 +1008,22 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Hidden Hunters",
             "description": "The Hunters of Huanchi can blend in with their surroundings and vanish from sight.",
             "declare": "Pick this unit if it has not been deployed.",
             "effect": "Set up this unit in reserve in ambush. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "name": "Star-Venom",
             "description": "The blowdarts used by the Hunters of Huanchi are coated in deadly toxins.",
             "declare": "Pick an enemy unit that had any damage points allocated to it this turn by attacks made with this unit's Dartpipe to be the target.",
             "effect": "Roll a dice. On a 2+, subtract 1 from wound rolls for the target's combat attacks for the rest of the turn."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Chameleon Ambush",
             "description": "The Hunters of Huanchi emerge from hiding and pepper their enemies with projectiles.",
@@ -1156,7 +1043,7 @@
       ]
     },
     {
-      "name": "Hunters Of Huanchi, With Starstone Bolas",
+      "name": "HUNTERS OF HUANCHI WITH STARSTONE BOLAS",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -1208,21 +1095,15 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Hidden Hunters",
             "description": "The Hunters of Huanchi can blend in with their surroundings and vanish from sight.",
             "declare": "Pick this unit if it has not been deployed.",
             "effect": "Set up this unit in reserve in ambush. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Chameleon Ambush",
             "description": "The Hunters of Huanchi emerge from hiding and pepper their enemies with projectiles.",
@@ -1230,9 +1111,7 @@
             "effect": "Set up this unit anywhere on the battlefield more than 9\" from all enemy units."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "name": "Starstone Bolas",
             "description": "A perfectly timed bola throw can ensnare an enemy.",
             "declare": "Pick an enemy unit that was targeted by this unit's Starstone Bolas this turn to be the target.",
@@ -1251,7 +1130,7 @@
       ]
     },
     {
-      "name": "Terrawings",
+      "name": "TERRAWINGS",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1272,9 +1151,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "NERVE-SHREDDING SCREECHES:",
             "description": "Despite their small stature, the shrill cries of a Terrawing flock can cause disarray across the enemy line as orders are drowned out by the cacophony.",
@@ -1288,15 +1165,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Beast",
-        "Fly",
-        "Order",
-        "Seraphon"
-      ]
+      "keywords": ["Beast", "Fly", "Order", "Seraphon"]
     },
     {
-      "name": "Bastiladon, With Ark Of Sotek",
+      "name": "BASTILADON WITH ARK OF SOTEK",
       "move": "5",
       "health": "12",
       "save": "2+",
@@ -1340,28 +1212,19 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Ark Of Sotek",
             "description": "So numerous are the snakes unleashed by an Ark of Sotek that some will find their way past the foe's defences to deliver a lethal venomous bite.",
             "declare": "Pick up to 3 different enemy units within 9\" of this unit to be the targets.",
             "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Monster", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Bastiladon, With Solar Engine",
+      "name": "BASTILADON WITH SOLAR ENGINE",
       "move": "5",
       "health": "12",
       "save": "2+",
@@ -1406,28 +1269,19 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Tail Swipe",
             "description": "The mighty Bastiladon swings its clubbed tail into the ranks of enemies, knocking them back with brutal force.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice for each model in the target unit, to a maximum of 8. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Monster", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Terradon Chief",
+      "name": "TERRADON CHIEF",
       "move": "14",
       "health": "5",
       "save": "5+",
@@ -1457,14 +1311,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Chief'S Deadly Cargo",
             "description": "Terradons carry heavy boulders hewn from meteoric rock and carved with sigils of destruction. When these are dropped upon enemy lines, those not immediately crushed are sent flying in all directions.",
             "declare": "Pick an enemy unit that this unit passed across this phase to be the target.",
-            "effect": "Roll a dice and add 2 to the roll if this unit is within the combat ranges of any friendly Terradon Riders units. On a 5+: \n* Inflict D3 mortal damage on the target. \n* If any damage points are allocated by  this ability and the target does not have Fly, the target cannot use Run abilities until the start of your next turn."
+            "effect": "Roll a dice and add 2 to the roll if this unit is within the combat ranges of any friendly Terradon Riders units. On a 5+: * Inflict D3 mortal damage on the target. * If any damage points are allocated by this ability and the target does not have Fly, the target cannot use Run abilities until the start of your next turn."
           },
           {
             "activation": "Passive",
@@ -1474,17 +1326,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Fly",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Hero", "Cavalry", "Fly", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Terradon Riders",
+      "name": "TERRADON RIDERS",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -1517,14 +1362,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Deadly Cargo",
             "description": "Terradons carry heavy boulders hewn from meteoric rock and carved with sigils of destruction. When these are dropped upon enemy lines, those not immediately crushed are sent flying in all directions.",
-            "declare": "Pick an enemy unit that this unit  Pick an enemy unit that this unit passed across this phase to be the target. passed across this phase to be the target.  Roll a dice for each model in this",
-            "effect": "Roll a dice for each model in this unit, and add 2 to each roll if this unit is unit, and add 2 to each roll if this unit is within the combat ranges of any friendly within the combat ranges of any friendly  units. For each 5+: Terradon Chief units. For each 5+: Inflict 1 mortal damage on the target. \n* Inflict 1 mortal damage on the target. \n* If any damage points are allocated by If any damage points are allocated by this ability and the target does not have this ability and the target does not have Fly, the target cannot use Run abilities  abilities until the start of your next turn."
+            "declare": "Pick an enemy unit that this unit Pick an enemy unit that this unit passed across this phase to be the target. passed across this phase to be the target. Roll a dice for each model in this",
+            "effect": "Roll a dice for each model in this unit, and add 2 to each roll if this unit is unit, and add 2 to each roll if this unit is within the combat ranges of any friendly within the combat ranges of any friendly units. For each 5+: Terradon Chief units. For each 5+: Inflict 1 mortal damage on the target. * Inflict 1 mortal damage on the target. * If any damage points are allocated by If any damage points are allocated by this ability and the target does not have this ability and the target does not have Fly, the target cannot use Run abilities abilities until the start of your next turn."
           },
           {
             "activation": "Passive",
@@ -1548,7 +1391,7 @@
       ]
     },
     {
-      "name": "Ripperdactyl Chief",
+      "name": "RIPPERDACTYL CHIEF",
       "move": "14",
       "health": "5",
       "save": "5+",
@@ -1580,6 +1423,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Deployment Phase"],
             "name": "Blot Toad",
             "description": "When a Ripperdactyl flock takes flight, the Seraphon will seed creatures known as blot toads across the battlefield. These loathsome amphibians emit a pervasive stink that is unpalatable to all cold-blooded creatures, but especially the Ripperdactyls.",
             "declare": "You receive 1 Blot Toad token for each Ripperdactyl Chief or Ripperdactyl Riders unit in your army, to a maximum of 3 tokens. Pick a number of enemy units equal to the number of Blot Toads you have to be the targets.",
@@ -1587,9 +1431,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "RIPPERDACTYL ASSAULT: A",
             "description": "Ripperdactyl Chief is as ferocious as their mount, inspiring nearby Ripperdactyl Riders to attack with unbridled fury.",
             "effect": "Add 1 to the Attacks characteristic of Moonstone Warspears used by friendly Ripperdactyl Riders units wholly within 12\" of this unit for the rest of the turn."
@@ -1602,17 +1444,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Fly",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Hero", "Cavalry", "Fly", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Ripperdactyl Riders",
+      "name": "RIPPERDACTYL RIDERS",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -1644,6 +1479,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Deployment Phase"],
             "name": "Blot Toad",
             "description": "When a Ripperdactyl flock takes flight, the Seraphon will seed creatures known as blot toads across the battlefield. These loathsome amphibians emit a pervasive stink that is unpalatable to all cold-blooded creatures, but especially the Ripperdactyls.",
             "declare": "You receive 1 Blot Toad token for each Ripperdactyl Chief or Ripperdactyl Riders unit in your army, to a maximum of 3 tokens. Pick a number of enemy units equal to the number of Blot Toads you have to be the targets.",
@@ -1657,17 +1493,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Cavalry",
-        "Champion",
-        "Fly",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Cavalry", "Champion", "Fly", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Stegadon Chief",
+      "name": "STEGADON CHIEF",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1692,13 +1521,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Crushing Stomps",
             "description": "At the command of the Stegadon Chief, the Stegadon crushes its enemies with its unstoppable bulk.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Add 2 to the amount of mortal damage inflicted, if any, if this unit charged this turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -1713,16 +1541,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Hero", "Monster", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Stegadon",
+      "name": "STEGADON",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1747,13 +1569,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Charge Phase"],
             "name": "Unstoppable Stampede",
             "description": "Stegadons are nigh unstoppable as they crash through the midst of battle.",
             "declare": "If this unit charged this phase, pick an enemy Infantry unit in combat with it to be the target.",
             "effect": "Inflict D3 mortal damage on the target. Then, this unit can move 2D6\". This unit can pass through models in the target unit but must end that move in combat.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -1762,15 +1583,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Monster", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Engine Of The Gods",
+      "name": "ENGINE OF THE GODS",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1810,21 +1626,15 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Crest Of Horns",
             "description": "A Stegadon prepares to face a charging enemy by turning its mighty head and bracing for impact, impaling the enemy and blunting their attacks with its thickly scaled crest.",
             "declare": "Pick an enemy unit that charged this turn and is in combat with this unit to be the target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Add 1 to save rolls for attacks made by that enemy unit that target this unit for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Add 1 to save rolls for attacks made by that enemy unit that target this unit for the rest of the turn.",
+            "keywords": ["Rampage"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Cosmic Engine",
             "description": "The Engine of the Gods is an ancient device capable of disrupting the natural laws of the universe.",
@@ -1833,15 +1643,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Skink"
-      ]
+      "keywords": ["Monster", "Order", "Seraphon", "Skink"]
     },
     {
-      "name": "Realmshaper Engine",
+      "name": "REALMSHAPER ENGINE",
       "move": "-",
       "health": "15",
       "save": "4+",
@@ -1856,9 +1661,7 @@
             "effect": "Add 1 to hit rolls for combat attacks made by friendly Saurus or Kroxigor units that target an enemy unit while that enemy unit is within 9\" of this terrain feature."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Power Unleashed",
             "description": "The waves of power that spread from an activated Realmshaper Engine bring the surrounding landscape to violent life.",
@@ -1867,14 +1670,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Order",
-        "Seraphon"
-      ]
+      "keywords": ["Faction Terrain", "Order", "Seraphon"]
     },
     {
-      "name": "Saurus Astrolith Bearer",
+      "name": "SAURUS ASTROLITH BEARER",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -1896,7 +1695,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Spell ability  for a friendly Seraphon Wizard wholly  within 12\" of this unit",
+            "reaction_condition": " You declared a Spell ability for a friendly Seraphon Wizard wholly within 12\" of this unit",
             "name": "Celestial Conduit",
             "description": "An astrolith is empowered by celestial magic in the vicinity.",
             "effect": "If that spell is successfully cast, add 3 to the control scores of friendly Seraphon units wholly within 12\" of this unit for the rest of the turn."
@@ -1909,16 +1708,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Order",
-        "Seraphon",
-        "Saurus"
-      ]
+      "keywords": ["Hero", "Infantry", "Order", "Seraphon", "Saurus"]
     },
     {
-      "name": "Kroxigor Warspawned",
+      "name": "KROXIGOR WARSPAWNED",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -1961,15 +1754,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Order",
-        "Seraphon",
-        "Kroxigor"
-      ]
+      "keywords": ["Infantry", "Order", "Seraphon", "Kroxigor"]
     },
     {
-      "name": "Kroxigor",
+      "name": "KROXIGOR",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -2006,15 +1794,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Order",
-        "Seraphon",
-        "Kroxigor"
-      ]
+      "keywords": ["Infantry", "Order", "Seraphon", "Kroxigor"]
     },
     {
-      "name": "Saurusscar-Veteran, On Carnosaur",
+      "name": "SAURUS SCAR-VETERAN ON CARNOSAUR",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -2060,16 +1843,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Maim And Tear",
             "description": "As champions of the Seraphon hosts, Scar-Veterans and their especially bloodthirsty mounts pursue the greatest enemy warriors, falling on them with vicious brutality.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
             "effect": "Roll a number of dice equal to the number of damage points the target has. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -2079,16 +1858,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Monster",
-        "Order",
-        "Seraphon",
-        "Saurus"
-      ]
+      "keywords": ["Hero", "Monster", "Order", "Seraphon", "Saurus"]
     },
     {
-      "name": "Saurus Oldblood",
+      "name": "SAURUS OLDBLOOD",
       "move": "5",
       "health": "7",
       "save": "4+",
@@ -2110,29 +1883,21 @@
         [
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Wrath Of The Seraphon",
             "description": "The Oldblood directs nearby saurus to act upon their savage instincts.",
             "effect": "For the rest of the turn, add 1 to wound rolls for combat attacks made by friendly Saurus Infantry units while they are wholly within 12\" of this unit."
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Predatory Exemplar",
             "description": "Oldbloods lead through instinctual ferocity, trusting their saurus kin to follow in their wake.",
             "effect": "Pick a friendly non-Hero Saurus Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Order",
-        "Seraphon",
-        "Saurus"
-      ]
+      "keywords": ["Hero", "Infantry", "Order", "Seraphon", "Saurus"]
     }
   ]
 }

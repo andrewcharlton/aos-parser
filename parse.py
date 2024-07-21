@@ -177,7 +177,7 @@ def parse_warscroll(page):
     characteristics = [e for e in elements if e.x1 < 75 and e.y0 > 350]
 
     # The unit's name is at the top, to the right of the characteristics.
-    name = [e for e in elements if (e.x0 + e.x1) > 240 and (e.y0 + e.y1) > 760 and (e.y0 +e.y1) < 840] # mid_x > 120 && mid_y > 380 && mid_y < 420
+    name = [e for e in elements if (e.x0 + e.x1) > 240 and (e.y0 + e.y1) > 760]
 
     # Split the rest of the page up accordingly.
     first_ability = find_first_ability(elements, 40) + 3 # Add a little padding to be safe
@@ -250,8 +250,13 @@ def find_first_ability(elements, start=0):
 
 
 def parse_name(elements):
-    elements.sort(key = lambda e: (e.y0 + e.y1), reverse=True)
-    return tidy_string(", ".join([e.get_text() for e in elements if "WARSCROLL" not in e.get_text()]).replace("\n", "").title())
+    objs = []
+    for e in elements:
+        objs.extend([obj for obj in e._objs if isinstance(obj, LTTextLineHorizontal)])
+
+    objs.sort(key=lambda obj: (obj.y0 + obj.y1), reverse=True)
+    objs = [obj.get_text().strip() for obj in objs]
+    return tidy_string(" ".join([o for o in objs if "WARSCROLL" not in o and "2024" not in o]))
 
 
 def parse_characteristics(elements):
@@ -413,6 +418,8 @@ def parse_ability(text):
     cost = 0
 
     for line in text.splitlines():
+        line = tidy_string(line)
+
         # Check whether we've moved onto a new stage first
         if "name" not in ability and line.isupper():
             ability["name"] = line

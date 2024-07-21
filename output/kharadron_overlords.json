@@ -2,21 +2,15 @@
   "battle_traits": [
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "Flying High",
       "description": "Often one skyvessel will hold back high above the battlefield, only to descend and deploy additional troops where and when they are most needed.",
       "declare": "Pick a friendly Skyvessel that is part of a regiment from which no units have been deployed, then pick a number of units up to its Transport Capacity (see its warscroll) that are in its regiment.",
       "effect": "Set up all of those units in reserve in the clouds. They have now been deployed.",
-      "keywords": [
-        "Deploy"
-      ]
+      "keywords": ["Deploy"]
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "Descend From The Clouds",
       "description": "As a skyvessel swoops down to the battlefield, its Kharadron passengers scramble to disembark and storm the battlefield.",
@@ -25,7 +19,7 @@
     },
     {
       "activation": "Reaction",
-      "reaction_condition": " You declared a non-Charge   Move ability for a friendly Skyvessel",
+      "reaction_condition": " You declared a non-Charge  Move ability for a friendly Skyvessel",
       "name": "Transport Skyfarers",
       "description": "The Kharadron rule the skies of the realms with fleets of fearsome airships crewed by hardened duardin. Used By: The Skyvessel using that Move ability.",
       "effect": "Pick a number of units up to that Skyvessel's Transport Capacity (see its warscroll) that are wholly within 6\" of it to be the targets. Units that have been transported this turn cannot be targets. Remove the targets from the battlefield. After the Skyvessel ends its move, you must set up each target unit on the battlefield, wholly within 6\" of that Skyvessel and not in combat. Those units have been transported. A unit cannot use Charge abilities if it was transported in the same turn."
@@ -46,9 +40,7 @@
     },
     "Endrineers Guild \nExpeditionary Force": {
       "activation": "Once Per Battle",
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "Special Procurement",
       "description": "The mechanically minded Endrineers Guild often charter fleets to form expeditionary forces equipped with the most advanced inventions in the Mortal Realms.",
       "declare": "Pick a friendly non-Unique Kharadron Overlords Hero that does not have an artefact of power.",
@@ -62,9 +54,7 @@
     },
     "Grundcorps Wing": {
       "activation": "Once Per Battle",
-      "phases": [
-        "Shooting Phase"
-      ],
+      "phases": ["Shooting Phase"],
       "your_turn_only": true,
       "name": "GRUDGESETTLER PROTOCOLS:",
       "description": "Grundstok marines have been trained to apply such overwhelming pressure that their targets do not even get a chance to fight back.",
@@ -85,9 +75,7 @@
       "effect": "Each time a friendly Skyvessel wholly within 12\" of this unit uses the 'Redeploy' command, roll 2 dice and use the highest result when determining the distance that unit can move."
     },
     {
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "Grudgebearer",
       "description": "This leader never forgets a slight, biding their time until they can take revenge.",
       "declare": "Pick an enemy unit to be the target.",
@@ -99,9 +87,7 @@
       "activation": "Once Per Battle"
     },
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Hobbler' Mag-Bolas",
       "description": "This patented device can entwine monstrous foes, impeding their advance to allow more firepower to be brought to bear upon them.",
       "declare": "Pick an enemy Monster within 12\" of this unit to be the target.",
@@ -109,9 +95,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Shooting Phase"
-      ],
+      "phases": ["Shooting Phase"],
       "your_turn_only": true,
       "name": "CELESTIUM BURST-GRENADE:",
       "description": "Typically used by the Grundstok 'black marines', this specialised anti-ethereal weapon can nullify magical wards.",
@@ -120,7 +104,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "reaction_condition": " Opponent   declared a Spell ability for a Wizard within 30\" of this unit ",
+      "reaction_condition": " Opponent  declared a Spell ability for a Wizard within 30\" of this unit ",
       "name": "Voidstone Orb",
       "description": "This small, unassuming black globe contains the power to disrupt enemy spells.",
       "effect": "That spell is unbound."
@@ -128,7 +112,7 @@
   ],
   "warscrolls": [
     {
-      "name": "Brokk Grungsson, Lord-Magnate Of Barak-Nar",
+      "name": "BROKK GRUNGSSON LORD-MAGNATE OF BARAK-NAR",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -171,9 +155,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "First Rule Of Grungsson",
             "description": "When Brokk Grungsson leads his warriors into battle, he reminds them of his first and most significant commentary on the Code.",
             "declare": "Pick up to 2 other friendly Skyfarer units within this unit's combat range to be the targets.",
@@ -181,9 +163,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Command The Fleet",
             "description": "Brokk's preferred strategy is to instruct his fleet before leading his Skyriggers on bold manoeuvres to vanquish the enemy.",
@@ -191,9 +171,7 @@
             "effect": "Each target can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Aetherblasters",
             "description": "These custom aetherblasters deal short-range volleys of devastating fire.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -214,7 +192,7 @@
       ]
     },
     {
-      "name": "Endrinmaster, With Dirigible Suit",
+      "name": "ENDRINMASTER WITH DIRIGIBLE SUIT",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -257,9 +235,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Endrinmaster",
             "description": "Endrinmasters are unsurpassed at keeping the skyvessels in a fleet battleworthy.",
@@ -285,7 +261,7 @@
       ]
     },
     {
-      "name": "Arkanaut Admiral",
+      "name": "ARKANAUT ADMIRAL",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -318,9 +294,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Owed",
             "description": "Following the decrees of the Code, the Admiral directs their fleet in the pursuit of profit and glory.",
@@ -330,6 +304,8 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "'Bring Every Gun To Bear!'",
             "description": "At the Admiral's order, the skyvessel is steered into position to deliver a devastating salvo.",
             "declare": "Pick a friendly Skyvessel wholly within 24\" of this unit that is not in combat to be the target.",
@@ -338,6 +314,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Deployment Phase"],
             "name": "The Admiral'S Flagship",
             "description": "Every Admiral designates one of their vessels in the airfleet to be their flagship.",
             "declare": "Pick an Arkanaut Ironclad or Arkanaut Frigate in this unit's regiment to be the target.",
@@ -355,7 +332,7 @@
       ]
     },
     {
-      "name": "Aetheric Navigator",
+      "name": "AETHERIC NAVIGATOR",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -396,17 +373,13 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Read The Winds",
             "description": "Navigators can signal to nearby Kharadron airships, helping them to steer into prevailing currents.",
             "declare": "Roll 6 dice. For each 1, pick a visible enemy unit within 18\" of this unit to be an enemy target. For each 6, pick a visible friendly Skyvessel within 18\" of this unit to be a friendly target.",
             "effect": "Inflict D3 mortal damage on each enemy target. If any damage points are allocated to an enemy target by this ability, halve its Move characteristic until the start of your next turn. Add 3\" to the Move characteristic of each friendly target until the start of your next turn.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -420,7 +393,7 @@
       ]
     },
     {
-      "name": "Drekki Flynt",
+      "name": "DREKKI FLYNT",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -453,18 +426,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "CAPTAIN OF THE AELSLING:",
             "description": "Manned by a motley crew of ne'er- do-wells, Drekki's pride and joy is the Aelsling, said to be the fastest vessel in Barak-Mhornar.",
             "declare": "Pick a friendly Arkanaut Frigate in this unit's regiment to be the target.",
             "effect": "The target has the Aelsling keyword. Add 1 to the Damage characteristic of the target's melee weapons for the rest of the battle."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Auxiliary Skyhook",
             "description": "Drekki's axe is custom-fitted with a small skyhook that can skewer beasties that stray too close.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
@@ -489,7 +458,7 @@
       ]
     },
     {
-      "name": "Endrinmaster, With Endrinharness",
+      "name": "ENDRINMASTER WITH ENDRINHARNESS",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -512,19 +481,15 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "'Aye Aye, Captain!'",
             "description": "Under orders of the ship's Captain, the Endrinmaster attempts to squeeze every bit of power out of a vessel's endrin.",
             "declare": "Pick a friendly Skyvessel within this unit's combat range to be the target.",
-            "effect": "Roll a dice. On a 2+, for the rest of the turn: \n* The target can use a Retreat or Run ability and still use Shoot abilities later in the turn. \n* No mortal damage is inflicted on the  target by Retreat abilities."
+            "effect": "Roll a dice. On a 2+, for the rest of the turn: * The target can use a Retreat or Run ability and still use Shoot abilities later in the turn. * No mortal damage is inflicted on the target by Retreat abilities."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Endrinmaster",
             "description": "Endrinmasters are unsurpassed at keeping the skyvessels in a fleet battleworthy.",
@@ -543,7 +508,7 @@
       ]
     },
     {
-      "name": "Codewright",
+      "name": "CODEWRIGHT",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -578,9 +543,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Advisory Role",
             "description": "With the right tome at their fingertips, a shrewdly worded recommendation from a Codewright can have as much of an impact on a battle as a direct order from an Admiral.",
@@ -599,7 +562,7 @@
       ]
     },
     {
-      "name": "Aether-Khemist",
+      "name": "AETHER-KHEMIST",
       "move": "4",
       "health": "5",
       "save": "4+",
@@ -634,15 +597,15 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "AETHERIC AUGMENTATION:",
             "description": "An Aether-Khemist can use their Anatomiser to augment the weapons of nearby skyfarers.",
             "declare": "Pick a friendly Kharadron Overlords Infantry unit wholly within 12\" of this unit to be the target.",
             "effect": "Roll a dice. On a 3+, add 1 to the Rend characteristic of the target's ranged weapons for the rest of the turn."
           },
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Atmospheric Isolation",
             "description": "At the push of a button, the Aether-Khemist's Anatomiser creates a vacuum around themselves, suffocating their foes.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -660,7 +623,7 @@
       ]
     },
     {
-      "name": "Arkanaut Company",
+      "name": "ARKANAUT COMPANY",
       "move": "4",
       "health": "1",
       "save": "4+",
@@ -739,7 +702,7 @@
       ]
     },
     {
-      "name": "Endrinriggers",
+      "name": "ENDRINRIGGERS",
       "move": "12",
       "health": "2",
       "save": "4+",
@@ -828,9 +791,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "EMERGENCY FIELD REPAIRS:",
             "description": "Endrinriggers are expert mechanics, able to keep all of the skyvessels in a Kharadron fleet afloat even in the midst of battle.",
             "declare": "Pick a friendly Skyvessel within this unit's combat range to be the target.",
@@ -849,7 +810,7 @@
       ]
     },
     {
-      "name": "Skywardens",
+      "name": "SKYWARDENS",
       "move": "12",
       "health": "2",
       "save": "4+",
@@ -932,13 +893,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Timed Charges",
             "description": "Skywardens are practised at striking hard and then retreating quickly amidst timed explosions to cause massive damage.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
-            "effect": "Roll a D3. On a 2+:  \n* Inflict an amount of mortal damage on  the target equal to the roll.  \n* This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * This unit can immediately use the 'Retreat' ability as if it were your movement phase without any mortal damage being inflicted on it."
           }
         ]
       ],
@@ -953,7 +912,7 @@
       ]
     },
     {
-      "name": "Grundstok Thunderers",
+      "name": "GRUNDSTOK THUNDERERS",
       "move": "4",
       "health": "2",
       "save": "3+",
@@ -1006,9 +965,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Hold This Position!",
             "description": "Kharadron military history is filled with tales of Thunderers standing alone at battle's end surrounded by a circle of fallen foes.",
@@ -1027,7 +984,7 @@
       ]
     },
     {
-      "name": "Arkanaut Ironclad",
+      "name": "ARKANAUT IRONCLAD",
       "move": "10",
       "health": "20",
       "save": "3+",
@@ -1105,9 +1062,7 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Aethershot Carbines is 4."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Heav Y Bomb Racks",
             "description": "This skyvessel carries a variety of bombs that can be dropped onto the battlefield.",
@@ -1120,9 +1075,7 @@
             "effect": "This unit can transport up to 3 friendly Kharadron Overlords Infantry units with a combined model count of up to 22 (see Battle Traits)."
           },
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Great Endrinworks",
             "description": "Each Ironclad is a master-crafted vessel with a host of custom modifications.",
             "effect": "Pick 1 of the following effects to apply to this unit for the rest of the battle: Magnificent Omniscope: Add 2\" to this unit's Move characteristic. Collapsible Compartments: Add 1 to the total number of units and 10 to the total number of models this unit can transport. Aetheric Repulsion Field: This unit can use the 'Unbind' ability as if it had Wizard (1)."
@@ -1139,7 +1092,7 @@
       ]
     },
     {
-      "name": "Arkanaut Frigate",
+      "name": "ARKANAUT FRIGATE",
       "move": "12",
       "health": "15",
       "save": "3+",
@@ -1199,19 +1152,13 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "your_turn_only": true,
             "name": "Assault Boat",
             "description": "The Frigate is designed to deliver warriors directly into the fray.",
             "declare": "This unit cannot use this ability if it is in combat or has used a Run or Retreat ability this turn. Pick a number of units up to its Transport Capacity that are wholly within 6\" of it and that have not charged this turn to be the targets. Then, make a charge roll of 2D6.",
             "effect": "Remove the targets from the battlefield. Then, this unit can move a distance up to the value of the charge roll and must end the move within \u00bd\" of a visible enemy unit. Then, set up the targets wholly within this unit's combat range. The targets can be set up in combat and have Strike-first for the rest of the turn. This unit and the targets have charged.",
-            "keywords": [
-              "Core",
-              "Move",
-              "Charge"
-            ]
+            "keywords": ["Core", "Move", "Charge"]
           },
           {
             "activation": "Passive",
@@ -1224,9 +1171,7 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Aethershot Carbines is 2."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Medium Bomb Racks",
             "description": "This skyvessel carries a variety of bombs that can be dropped onto the battlefield.",
@@ -1245,7 +1190,7 @@
       ]
     },
     {
-      "name": "Grundstok Gunhauler",
+      "name": "GRUNDSTOK GUNHAULER",
       "move": "12",
       "health": "10",
       "save": "3+",
@@ -1298,9 +1243,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Light Bomb Racks",
             "description": "This skyvessel carries a variety of bombs that can be dropped onto the battlefield.",

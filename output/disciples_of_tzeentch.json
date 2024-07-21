@@ -1,16 +1,15 @@
 {
   "battle_traits": [
     {
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "Masters Of Destiny",
       "description": "To serve the Changer of the Ways is to instinctively understand the ebb and flow of future events and be able to manipulate their potential to the fullest.",
-      "effect": "Roll 9 dice and place them to one side. These are your destiny dice. Destiny dice can be spent during the battle to change certain dice rolls. You can never have more than 9 destiny dice at once. During the battle, instead of making a roll from the list below for a friendly Disciples of Tzeentch unit, you can spend your destiny dice. The roll you would have made is replaced with the roll on the destiny dice you spend. If you want to replace a 2D6 roll, 3D6 roll, etc. you must spend a number of destiny dice equal to the number before 'D6'. Any rolls that have been replaced count as unmodified rolls, and they cannot be re-rolled, they cannot be changed and they cannot be modified by other friendly abilities (but they can be modified by enemy abilities). You cannot spend destiny dice to replace re-rolls. Destiny dice can be spent in place of the following dice rolls: \n* Casting rolls \n* Unbinding rolls \n* Banishment rolls \n* Run rolls \n* Charge rolls in your turn \n* Hit rolls \n* Wound rolls \n* Save rolls"
+      "effect": "Roll 9 dice and place them to one side. These are your destiny dice. Destiny dice can be spent during the battle to change certain dice rolls. You can never have more than 9 destiny dice at once. During the battle, instead of making a roll from the list below for a friendly Disciples of Tzeentch unit, you can spend your destiny dice. The roll you would have made is replaced with the roll on the destiny dice you spend. If you want to replace a 2D6 roll, 3D6 roll, etc. you must spend a number of destiny dice equal to the number before 'D6'. Any rolls that have been replaced count as unmodified rolls, and they cannot be re-rolled, they cannot be changed and they cannot be modified by other friendly abilities (but they can be modified by enemy abilities). You cannot spend destiny dice to replace re-rolls. Destiny dice can be spent in place of the following dice rolls: * Casting rolls * Unbinding rolls * Banishment rolls * Run rolls * Charge rolls in your turn * Hit rolls * Wound rolls * Save rolls"
     },
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Shooting Phase"],
       "name": "CONFLAGRATION OF TZEENTCH:",
       "description": "Many worshippers of Tzeentch desire one thing above all: to engulf the realms in an inferno of wyrdflame and watch in gleeful amusement as the world burns.",
       "declare": "Pick an enemy unit that had any damage points allocated to it this turn by Wyrdflame Spell abilities or shooting attacks made with weapons that have the Wyrdflame weapon ability to be the target.",
@@ -19,9 +18,7 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Burning W Yrdflame",
       "description": "The profane flames that spew from the mouths and pointing fingers of the twisted worshippers of Tzeentch are nothing natural. Instead of merely scorching flesh, they cause horrific mutative wounds, causing skin and bones alike to bubble and twist.",
       "effect": "Roll a D3 for each Burning enemy unit. On a 2-3, inflict an amount of mortal damage on that unit equal to the roll. On a 1, that unit no longer has the Burning keyword."
@@ -49,9 +46,7 @@
     "Change Host": {
       "activation": "Once Per Battle",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "your_turn_only": true,
       "name": "Twist Of Fate",
       "description": "To battle a Change Host is a sanity-warping experience, for the Great Conspirator's servants make mockery of the laws of nature.",
@@ -73,9 +68,7 @@
       "effect": "Subtract 1 from hit rolls for attacks that target friendly units while they are wholly within this unit's combat range."
     },
     {
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "Nexus Of Fate",
       "description": "Tzeentch's favoured servants manipulate what mortals consider 'destiny' as if it were a puppet.",
@@ -103,9 +96,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Ambition'S End",
       "description": "Many a sorcerer's quest to master the magical arts has ended upon this weapon's blade, for it spills not only blood but knowledge itself.",
       "declare": "Pick an enemy Wizard in combat with this unit to be the target.",
@@ -115,94 +106,63 @@
   "spell_lore": {
     "Lore Of Fate": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Glimpse The Future",
         "description": "By focusing on the skeins of potential fates, the sorcerer can glean hints as to future events and manipulate them to their advantage.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set aside any destiny dice that have a value of 6, and roll all of your other destiny dice again. If you have no destiny dice, roll a dice and add it to your destiny dice.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "6"
-        ]
+        "keywords": ["Spell", "Unlimited", "6"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Infernal Gateway",
         "description": "The sorcerer opens a portal to the Realm of Chaos, pulling enemies to their doom.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll either 4 dice or a number of dice equal to the number of destiny dice you have left, whichever is greater. For each 4+, inflict 1 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "7",
-          "7"
-        ],
+        "keywords": ["Spell", "7", "7"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Shield Of Fate",
         "description": "There is little better protection than to be guided by destiny itself and to be defended by the very hand of fate.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible friendly unit wholly within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Ward (5+) until the start of your next turn. In addition, if you have 4 or more destiny dice left, subtract 1 from hit rolls for attacks that target that unit until the start of your next turn.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 7
       }
     ],
     "Lore Of Change": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Bolt Of Tzeentch",
         "description": "This spell manifests as a prismatic beam of raw magic that tears its victims apart in a display of multispectral colour.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "Wyrdflame"
-        ]
+        "keywords": ["Spell", "Unlimited", "Wyrdflame"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Fold Reality",
         "description": "The sorcerer contorts the very fabric of the cosmos, allowing their minions to slip from hither to thither in an eye-blink.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible friendly Disciples of Tzeentch unit wholly within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "6"
-        ],
+        "keywords": ["Spell", "6"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "TRANSFOR MED TO SPAWN:",
         "description": "Tzeentch is known as the Changer of the Ways; to be in the presence of his minions risks being mutated into a Chaos Spawn.",
         "declare": "Pick a friendly Disciples of Tzeentch Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
-        "effect": "Inflict D3 mortal damage on the target. If any models are slain by this ability, pick a friendly Chaos Spawn of Tzeentch unit that is in reserve as a potential fate or that has been destroyed.  If you picked a unit in reserve as a potential fate, set it up on the battlefield in combat with the target. If you picked a unit that has been destroyed, set up an identical replacement unit on the battlefield in combat with the target.",
-        "keywords": [
-          "Spell"
-        ],
+        "effect": "Inflict D3 mortal damage on the target. If any models are slain by this ability, pick a friendly Chaos Spawn of Tzeentch unit that is in reserve as a potential fate or that has been destroyed. If you picked a unit in reserve as a potential fate, set it up on the battlefield in combat with the target. If you picked a unit that has been destroyed, set up an identical replacement unit on the battlefield in combat with the target.",
+        "keywords": ["Spell"],
         "casting_value": 7
       }
     ]
@@ -210,57 +170,40 @@
   "manifestation_lore": {
     "Manifestations Of Tzeentch": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Tome Of Eyes",
         "description": "With a snap of the conjurer's fingers, the Tome appears at their side from a spark of blue wyrdflame.",
         "declare": "If there is not a friendly Tome of Eyes on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Tome of Eyes wholly within 12\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "7"
-        ],
+        "keywords": ["Spell", "Summon", "7"],
         "casting_value": 5
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Simulacrum",
         "description": "The wizard draws upon their understanding of change-lore to create a temporary portal for this mirage to enter the fray.",
         "declare": "If there is not a friendly Daemonic Simulacrum on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Daemonic Simulacrum wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "5"
-        ],
+        "keywords": ["Spell", "Summon", "5"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Tzeentch",
         "description": "Brief incantations in the Dark Tongue see these burning symbols of worship spark into reality.",
         "declare": "If there is not a friendly Burning Sigil of Tzeentch on the battlefield, pick a friendly Disciples of Tzeentch Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Burning Sigil of Tzeentch wholly within 12\" of the caster and visible to them.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 5
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Kairos Fateweaver",
+      "name": "KAIROS FATEWEAVER",
       "move": "12",
       "health": "16",
       "save": "5+",
@@ -302,7 +245,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "reaction_condition": " You declared   the \u2018Tactical Gambit\u2019 ability",
+            "reaction_condition": " You declared  the 'Tactical Gambit' ability",
             "name": "Oracle Of Eternity",
             "description": "Kairos's heads have insights into the future and the past.",
             "effect": "Pick 1 of the following effects: Read the Past: You can pick 1 battle tactic that you have already attempted. Read the Future: You can pick 2 battle tactics that you have not yet attempted, but you can only complete 1 of them (even if you meet the conditions to complete both). The other does not count as having been attempted. If you do not complete either battle tactic, you can pick which does not count as having been attempted."
@@ -314,17 +257,13 @@
             "effect": "Add 1 to casting rolls and unbinding rolls for friendly Disciples of Tzeentch Wizards while they are wholly within 12\" of this unit. 8"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Arcane Suggestion",
             "description": "The sorcerer's victims are reduced to little more than puppets on a string.",
             "declare": "Pick a visible enemy unit within 18\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "Pick 1 of the following effects to apply to the target until the start of your next turn: It's Hopeless: The target cannot use commands. Drop Your Weapons: Subtract 1 from hit rolls and wound rolls for the target's attacks. Kneel: Subtract 1 from save rolls for the target.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 8
           }
         ]
@@ -343,7 +282,7 @@
       ]
     },
     {
-      "name": "Lord Of Change",
+      "name": "LORD OF CHANGE",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -413,6 +352,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "SUMMON DAEMONS OF TZEENTCH:",
             "description": "To challenge the fractal plans of the Architect of Fate is to face strange daemons born from chaotic sorcery itself.",
             "declare": "Discard 1 destiny dice. Then, pick a friendly non-Hero non-Unique Disciples of Tzeentch Daemon unit that has been destroyed to be the target.",
@@ -425,18 +366,13 @@
             "effect": "Subtract 1 from hit rolls for combat attacks that target friendly Disciples of Tzeentch Daemon units while they are wholly within 12\" of this unit. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Tzeentch'S Firestor M",
             "description": "An apocalyptic inferno of raging wyrdflame surges from the daemon's hands to engulf its victims in a fiery maelstrom.",
             "declare": "Pick a visible enemy unit within 18\" of the caster to be the target, then make a casting roll of 2D6.",
             "effect": "Roll 9 dice. For each 6, inflict D3 mortal damage on the target.",
-            "keywords": [
-              "Spell",
-              "Wyrdflame"
-            ],
+            "keywords": ["Spell", "Wyrdflame"],
             "casting_value": 7
           }
         ]
@@ -453,7 +389,7 @@
       ]
     },
     {
-      "name": "Fateskimmer, Herald Of Tzeentch On Burning Chariot",
+      "name": "FATESKIMMER HERALD OF TZEENTCH ON BURNING CHARIOT",
       "move": "12",
       "health": "8",
       "save": "5+",
@@ -495,9 +431,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Wake Of Fire",
             "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
@@ -505,9 +439,7 @@
             "effect": "Roll a dice. On a 3+, the target has the Burning keyword."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Fuelling The Inferno",
             "description": "The mere presence of a Fateskimmer causes wyrdflame to blaze brightly.",
             "declare": "Pick up to 3 Burning enemy units within 12\" of this unit to be the targets.",
@@ -527,7 +459,7 @@
       ]
     },
     {
-      "name": "Changecaster, Herald Of Tzeentch",
+      "name": "CHANGECASTER HERALD OF TZEENTCH",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -584,7 +516,7 @@
       ]
     },
     {
-      "name": "Chaos Spawn Of Tzeentch",
+      "name": "CHAOS SPAWN OF TZEENTCH",
       "move": "2D6",
       "health": "5",
       "save": "5+",
@@ -605,16 +537,12 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "A Twisted Fate",
             "description": "For some, their destiny is to become a mewling abomination - they just do not know it yet.",
             "declare": "This unit must be deployed using this ability.",
             "effect": "Set up this unit in reserve as a potential fate. It has now been deployed. Designer's Note: This unit can only be set up on the battlefield using the 'Transformed to Spawn' spell.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
             "activation": "Passive",
@@ -629,14 +557,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Beast",
-        "Chaos",
-        "Disciples of Tzeentch"
-      ]
+      "keywords": ["Beast", "Chaos", "Disciples of Tzeentch"]
     },
     {
-      "name": "The Changeling",
+      "name": "THE CHANGELING",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -657,31 +581,23 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Arch-Deceiver",
             "description": "None can detect the veil of the Changeling. Assuming the form of comrade and ally, it reveals itself only when its plans have been made a reality.",
             "effect": "Remove this unit from the battlefield and set it up again on the battlefield more than 3\" from all enemy units. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Discord And Confusion",
             "description": "The Changeling is a master of deception and bait-and-switch tactics.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "Subtract 1 from hit rolls for attacks that target this unit until the start of your next turn. In addition, until the start of your next turn, roll a dice each time this unit is targeted by an ability that is not an Attack ability. On a 4+, another eligible unit must be targeted by that ability instead of this unit. If it is not possible to target another unit, that ability has no effect.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "enemy_turn_only": true,
             "name": "Puckish Misdirection",
             "description": "The Changeling can manipulate the most stalwart of warriors while appearing as a trusted advisor or comrade.",
@@ -702,7 +618,7 @@
       ]
     },
     {
-      "name": "Pink Horrors",
+      "name": "PINK HORRORS",
       "move": "6",
       "health": "2",
       "save": "6+",
@@ -754,7 +670,7 @@
       ]
     },
     {
-      "name": "Blue Horrors And Brimstone Horrors",
+      "name": "BLUE HORRORS AND BRIMSTONE HORRORS",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -811,7 +727,7 @@
             "activation": "Passive",
             "name": "Split Again",
             "description": "Should a Blue Horror meet its end at the hands of the enemy, it is capable of splitting itself into two lesser daemons.",
-            "effect": "Each time a Blue Horror model in this unit is slain, before removing the model from play, roll a dice. On a 3+, you can add 1 Brimstone Horrors model to this unit.  Designer's Note: You cannot have more than 10 Blue Horror models and 10 Brimstone Horrors models in a non-reinforced unit. You cannot have more than 20 Blue Horror models and 20 Brimstone Horrors models in a reinforced unit."
+            "effect": "Each time a Blue Horror model in this unit is slain, before removing the model from play, roll a dice. On a 3+, you can add 1 Brimstone Horrors model to this unit. Designer's Note: You cannot have more than 10 Blue Horror models and 10 Brimstone Horrors models in a non-reinforced unit. You cannot have more than 20 Blue Horror models and 20 Brimstone Horrors models in a reinforced unit."
           }
         ]
       ],
@@ -824,7 +740,7 @@
       ]
     },
     {
-      "name": "Burning Chariot Of Tzeentch",
+      "name": "BURNING CHARIOT OF TZEENTCH",
       "move": "12",
       "health": "6",
       "save": "5+",
@@ -866,9 +782,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Wake Of Fire",
             "description": "Enemies unfortunate enough to be passed by a Burning Chariot are consumed by waves of unnatural fire.",
@@ -887,7 +801,7 @@
       ]
     },
     {
-      "name": "Screamers Of Tzeentch",
+      "name": "SCREAMERS OF TZEENTCH",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -908,9 +822,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Slashing Fins",
             "description": "A pack of Screamers travelling at great speed can slash and eviscerate an enemy formation to ribbons.",
@@ -934,7 +846,7 @@
       ]
     },
     {
-      "name": "Exalted Flamer Of Tzeentch",
+      "name": "EXALTED FLAMER OF TZEENTCH",
       "move": "9",
       "health": "4",
       "save": "5+",
@@ -975,6 +887,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "TRANSMOGRIFYING BEACON:",
             "description": "Wyrdflame shimmers and crackles around an Exalted Flamer, empowering those daemons who draw upon such energies.",
             "declare": "Pick another friendly Exalted Flamer of Tzeentch or Flamers of Tzeentch unit within this unit's combat range to be the target.",
@@ -992,7 +906,7 @@
       ]
     },
     {
-      "name": "Flamers Of Tzeentch",
+      "name": "FLAMERS OF TZEENTCH",
       "move": "9",
       "health": "2",
       "save": "5+",
@@ -1043,7 +957,7 @@
       ]
     },
     {
-      "name": "Gaunt Summoner, On Disc Of Tzeentch",
+      "name": "GAUNT SUMMONER ON DISC OF TZEENTCH",
       "move": "14",
       "health": "6",
       "save": "4+",
@@ -1085,21 +999,15 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "MINIONS OF THE SILVER TOWER:",
             "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
             "declare": "Pick a friendly unit that has not been deployed to be the target.",
             "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Book Of Profane Secrets",
             "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
@@ -1107,17 +1015,13 @@
             "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "ARCANE IMPRISONMENT:",
             "description": "Gaunt Summoners delight in banishing foes to their Silver Towers.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target, then make a casting roll of 2D6.",
             "effect": "If the unmodified casting roll exceeds the target's Health characteristic, it is automatically destroyed. For the rest of the battle, that unit cannot be picked to be the target of an ability that allows a replacement unit to be set up.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -1135,7 +1039,7 @@
       ]
     },
     {
-      "name": "Gaunt Summoner",
+      "name": "GAUNT SUMMONER",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -1168,21 +1072,15 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "MINIONS OF THE SILVER TOWER:",
             "description": "The warped fortresses of the Gaunt Summoners are infested with their thrall hosts.",
             "declare": "Pick a friendly unit that has not been deployed to be the target.",
             "effect": "The target is set up in reserve in a Silver Tower. It has now been deployed.",
-            "keywords": [
-              "Deploy"
-            ]
+            "keywords": ["Deploy"]
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Book Of Profane Secrets",
             "description": "Using this arcane tome, the Gaunt Summoner calls forth minions from their Silver Tower.",
@@ -1190,17 +1088,13 @@
             "effect": "Set up the target on the battlefield wholly within 12\" of this unit and more than 9\" from all enemy units. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Divert Realmgate",
             "description": "Whispering fell incantations, a Gaunt Summoner can temporarily divert the path of a realmgate, allowing malefic Chaos entities to storm the battlefield.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "Units set up this turn using this unit's 'Book of Profane Secrets' ability can be set up wholly within 18\" of this unit and more than 7\" from all enemy units instead of the distances in the ability.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -1216,7 +1110,7 @@
       ]
     },
     {
-      "name": "Magister, On Disc Of Tzeentch",
+      "name": "MAGISTER ON DISC OF TZEENTCH",
       "move": "14",
       "health": "6",
       "save": "4+",
@@ -1258,13 +1152,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Magic-Touched",
             "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
-            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: \n* Add 1 to this unit's power level. \n* If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
+            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
           },
           {
             "activation": "Passive",
@@ -1286,7 +1178,7 @@
       ]
     },
     {
-      "name": "Curseling, Eye Of Tzeentch",
+      "name": "CURSELING EYE OF TZEENTCH",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1325,17 +1217,13 @@
             "effect": "Each time this unit unbinds a spell, roll a dice. On a 4+, subtract 1 from the power level of the enemy Wizard that used that Spell ability, to a minimum of 0, until the start of your next turn. 5"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Infusion Arcanum",
             "description": "The sorcerer's body becomes saturated with death-dealing energies, transforming even the frailest warlock into a truly formidable adversary.",
             "declare": "Make a casting roll of 2D6.",
             "effect": "Until the start of your next turn, add 1 to the Rend and Damage characteristics of this unit's Staff of Tzeentch and Blazing Sword.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 5
           }
         ]
@@ -1350,7 +1238,7 @@
       ]
     },
     {
-      "name": "Magister",
+      "name": "MAGISTER",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1383,18 +1271,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Magic-Touched",
             "description": "Magisters are attuned to magical energy and can harness the raw essence of Chaos. There are those however, that delve too deep into this source of power.",
-            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: \n* Add 1 to this unit's power level. \n* If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
+            "effect": "If this unit successfully cast a spell this phase, for the rest of the turn: * Add 1 to this unit's power level. * If 2 or more dice in a casting roll for this unit have the same value, the spell fails, its effect is not resolved and D6 mortal damage is inflicted on this unit."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Web Of Intrigue",
             "description": "Magisters excel in pre-empting the crude schemes of their enemies, directing their cultic minions to outmanoeuvre them in turn.",
@@ -1413,7 +1297,7 @@
       ]
     },
     {
-      "name": "Ogroid Thaumaturge",
+      "name": "OGROID THAUMATURGE",
       "move": "6",
       "health": "8",
       "save": "5+",
@@ -1463,9 +1347,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Burning Fury",
             "description": "As an Ogroid Thaumaturge rages and roars, the multi- hued flames of Tzeentch erupt from their totemic stave to ravage the enemy.",
             "declare": "Pick an enemy unit that had any damage points allocated to it this turn by this unit's combat attacks to be the target.",
@@ -1484,7 +1366,7 @@
       ]
     },
     {
-      "name": "Tzaangor Shaman",
+      "name": "TZAANGOR SHAMAN",
       "move": "14",
       "health": "6",
       "save": "5+",
@@ -1514,9 +1396,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Rite Of Haste",
             "description": "Tzaangor Shamans guide their warflocks through fell rites to push them beyond their mortal limits.",
@@ -1524,13 +1404,11 @@
             "effect": "Roll a dice. On a 3+, for the rest of the turn, the target can use a Run ability and still use Shoot and/or Charge abilities later in the turn."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Mutagenic Sorcery",
             "description": "As warriors fall around the Tzaangor, some mutate to become the creature that struck them down.",
             "declare": "Pick an enemy unit within 12\" of this unit to be the enemy target. Then, pick a friendly Tzaangors unit in combat with that enemy unit to be the friendly target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the enemy target equal to the roll. \n* Return a number of slain models to the  friendly target equal to the roll."
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the enemy target equal to the roll. * Return a number of slain models to the friendly target equal to the roll."
           }
         ]
       ],
@@ -1547,7 +1425,7 @@
       ]
     },
     {
-      "name": "Tzaangor Skyfires",
+      "name": "TZAANGOR SKYFIRES",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -1595,9 +1473,7 @@
             "effect": "Ignore negative modifiers to hit rolls and wound rolls for this unit's shooting attacks."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Judgement From Afar",
             "description": "To be struck by an Arrow of Fate is to be judged by destiny itself.",
@@ -1618,7 +1494,7 @@
       ]
     },
     {
-      "name": "Tzaangors",
+      "name": "TZAANGORS",
       "move": "6",
       "health": "2",
       "save": "5+",
@@ -1667,7 +1543,7 @@
       ]
     },
     {
-      "name": "Tzaangor Enlightened",
+      "name": "TZAANGOR ENLIGHTENED",
       "move": "6",
       "health": "3",
       "save": "4+",
@@ -1688,9 +1564,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "BABBLING STREAM OF SECRETS:",
             "description": "The dark truths revealed by the Tzaangor Enlightened utterly unnerve the foe.",
             "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
@@ -1708,7 +1582,7 @@
       ]
     },
     {
-      "name": "Tzaangor Enlightened, On Discs Of Tzeentch",
+      "name": "TZAANGOR ENLIGHTENED ON DISCS OF TZEENTCH",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -1757,7 +1631,7 @@
       ]
     },
     {
-      "name": "Kairic Acolytes",
+      "name": "KAIRIC ACOLYTES",
       "move": "5",
       "health": "1",
       "save": "5+",
@@ -1805,9 +1679,7 @@
             "effect": "While this unit includes any models accompanied by Vulcharcs, subtract 1 from casting rolls for enemy Wizards within 12\" of this unit."
           },
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Gestalt Sorcery",
             "description": "Through combined worship, a cult of Acolytes can swell their arcane power to new levels of ferocity.",
@@ -1824,7 +1696,7 @@
       ]
     },
     {
-      "name": "Jade Obelisk",
+      "name": "JADE OBELISK",
       "move": "5",
       "health": "1",
       "save": "4+",
@@ -1897,7 +1769,7 @@
       ]
     },
     {
-      "name": "Burning Sigil Of Tzeentch",
+      "name": "BURNING SIGIL OF TZEENTCH",
       "move": "-",
       "health": "6",
       "save": "5+",
@@ -1906,13 +1778,11 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "name": "RADIANT TRANSMOGRIFICATION:",
             "description": "The Burning Sigil channels the energies of the Impossible Fortress; with each pulse comes a handful of blessings and curses as fickle as the bastion's master.",
             "declare": "This Manifestation must use this ability in each movement phase. Pick each unit (friendly and enemy) within 9\" of this Manifestation to be the targets.",
-            "effect": "Roll 2 dice, pick either result, then apply the corresponding effect to all targets for the rest of the turn. 1-2 No effect. 3  Subtract 2\" from the target's Move characteristic. 4  Subtract 1 from hit rolls for the target's attacks. 5  Subtract 1 from wound rolls for the target's attacks. 6  Inflict D3 mortal damage on the target, then add 1 to the Attacks characteristic of the target's melee weapons."
+            "effect": "Roll 2 dice, pick either result, then apply the corresponding effect to all targets for the rest of the turn. 1-2 No effect. 3 Subtract 2\" from the target's Move characteristic. 4 Subtract 1 from hit rolls for the target's attacks. 5 Subtract 1 from wound rolls for the target's attacks. 6 Inflict D3 mortal damage on the target, then add 1 to the Attacks characteristic of the target's melee weapons."
           }
         ]
       ],
@@ -1925,7 +1795,7 @@
       ]
     },
     {
-      "name": "Daemonic Simulacrum",
+      "name": "DAEMONIC SIMULACRUM",
       "move": "9",
       "health": "8",
       "save": "6+",
@@ -1963,7 +1833,7 @@
       ]
     },
     {
-      "name": "Tome Of Eyes",
+      "name": "TOME OF EYES",
       "move": "-",
       "health": "5",
       "save": "4+",
@@ -1973,7 +1843,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Spell ability   for a Wizard within this  Manifestation\u2019s combat range ",
+            "reaction_condition": " You declared a Spell ability  for a Wizard within this Manifestation's combat range ",
             "name": "Eyes",
             "description": "As the Tome flicks through its endless pages, it peers into the mind of its summoner, giving knowledge to the loyal and punishing the insatiable as it sees fit.",
             "effect": "You can add 1 or 2 to the casting roll for that spell. Roll a number of dice equal to the amount added. For each 1-2, allocate 1 damage point to the caster. If the caster is destroyed by this ability, the spell has no effect."

@@ -8,70 +8,51 @@
     },
     {
       "activation": "Reaction",
-      "reaction_condition": " Opponent declared a   Spell\u00a0ability",
+      "reaction_condition": " Opponent declared a  Spell ability",
       "name": "Spelleater Curse",
       "description": "Beneath Khorne's hateful gaze, even the most experienced spellcasters feel their powers wane.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 2 blood tithe points.",
       "effect": "That spell is unbound.",
-      "keywords": [
-        "Blood Tithe"
-      ]
+      "keywords": ["Blood Tithe"]
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "name": "Slaughter Triumphant",
       "description": "Reality convulses as Khorne's rage floods the battle.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 8 blood tithe points.",
-      "effect": "Pick 1 of the following effects: \n* Add 1 to the Attacks characteristic of melee weapons used by friendly Blades of Khorne units for the rest of the battle. \n* Pick a friendly non-Unique Bloodthirster unit that has been destroyed. Set up an identical replacement unit on the battlefield more than 9\" from all enemy units.",
-      "keywords": [
-        "Blood Tithe"
-      ]
+      "effect": "Pick 1 of the following effects: * Add 1 to the Attacks characteristic of melee weapons used by friendly Blades of Khorne units for the rest of the battle. * Pick a friendly non-Unique Bloodthirster unit that has been destroyed. Set up an identical replacement unit on the battlefield more than 9\" from all enemy units.",
+      "keywords": ["Blood Tithe"]
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "name": "Murderlust",
       "description": "All servants of Khorne feel the urge to kill, but when prey is near, the impulse becomes all-consuming.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 1 blood tithe point and pick a friendly Blades of Khorne unit that is not in combat to be the target.",
       "effect": "The target can move 3\". It can move into combat.",
-      "keywords": [
-        "Blood Tithe",
-        "Move"
-      ]
+      "keywords": ["Blood Tithe", "Move"]
     },
     {
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "name": "Brass Skull Meteor",
       "description": "A brass skull crashes down to obliterate all in its path.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 4 blood tithe points and pick an enemy unit that is visible to a friendly Blades of Khorne Hero to be the target.",
       "effect": "Roll 8 dice. For each 3+, inflict 1 mortal damage on the target.",
-      "keywords": [
-        "Blood Tithe"
-      ]
+      "keywords": ["Blood Tithe"]
     },
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Heads Must Roll",
       "description": "The weapons brandished by Khorne's followers glisten with a gore-slick sheen.",
       "declare": "You can only use this ability if you have not used any Blood Tithe abilities this turn. Spend 6 blood tithe points.",
       "effect": "For the rest of the turn, add 1 to the Rend characteristic of melee weapons used by friendly Blades of Khorne units.",
-      "keywords": [
-        "Blood Tithe"
-      ]
+      "keywords": ["Blood Tithe"]
     }
   ],
   "battle_formations": {
     "Khornate Legion": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "reaction_condition": " You   declared a Fight ability for a friendly  Blades of Khorne Daemon unit ",
+      "reaction_condition": " You  declared a Fight ability for a friendly Blades of Khorne Daemon unit ",
       "name": "Butchers Of Nations",
       "description": "When the daemonic hosts of Khorne lead their Bloodbound followers into battle, they crush all before them in a storm of gore- splattered carnage. Used By: The unit using that Fight ability.",
       "effect": "Pick a friendly Bloodbound unit that has not used a Fight ability this turn and is within 12\" of the unit using this ability to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
@@ -117,9 +98,7 @@
   ],
   "artefacts_of_power": [
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "AR'GATH, THE KING OF BLADES:",
       "description": "This daemonic blade hungers for the flesh of champions and will not be denied by trickery or magic.",
       "declare": "Pick an enemy Hero in combat with this unit to be the target.",
@@ -141,50 +120,33 @@
   "manifestation_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "SUMMON BLEEDING ICON: A",
         "description": "common sight in the crimson skies above Khorne's domain, a Bleeding Icon can be summoned to the Mortal Realms to skewer from on high those who have displeased the Lord of Battle.",
         "declare": "If there is not a friendly Bleeding Icon on the battlefield, pick a friendly Blades of Khorne Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Bleeding Icon wholly within 12\" of the chanter and visible to them.",
-        "keywords": [
-          "Prayer",
-          "Summon",
-          "4"
-        ],
+        "keywords": ["Prayer", "Summon", "4"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Wrath-Axe",
         "description": "A Wrath- axe is a manifestation of Khorne's otherworldly anger, its razor-sharp edges glowing red-hot from the Blood God's rage. At signs of weakness or wizardry, such a blazing axe appears in the air, splitting reality with its downwards stroke.",
         "declare": "If there is not a friendly Wrath- axe on the battlefield, pick a friendly Blades of Khorne Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Wrath-axe wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Prayer",
-          "Summon",
-          "4"
-        ],
+        "keywords": ["Prayer", "Summon", "4"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Summon Hexgorger Skulls",
         "description": "Hexgorger Skulls are the physical manifestation of Khorne's hatred of the arcane arts. They drift across the battlefield, seeking to feed upon eldritch energy and those conjurers who attempt to use it.",
         "declare": "If there is not a friendly Hexgorger Skulls invocation on the battlefield, pick a friendly Blades of Khorne Priest to chant this prayer, then make a chanting roll of D6.",
         "effect": "Set up a Hexgorger Skulls invocation wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units. A Hexgorger Skulls invocation has 2 parts that must be set up within 8\" of each other.",
-        "keywords": [
-          "Prayer",
-          "Summon"
-        ],
+        "keywords": ["Prayer", "Summon"],
         "chanting_value": 4
       }
     ]
@@ -192,55 +154,39 @@
   "prayer_lore": {
     "": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Unholy Flames",
         "description": "The priest imbues the blades of their allies with daemonic fire, so that they may claim skulls with horrific ease.",
         "declare": "Pick a friendly Blades of Khorne Priest to chant this prayer, pick a visible friendly Blades of Khorne unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Add 1 to the Rend characteristic of the target's melee weapons for the rest of the turn. In addition, if the chanting roll was 10+, add 1 to wound rolls for the target's attacks for the rest of the turn.",
-        "keywords": [
-          "Prayer",
-          "Unlimited",
-          "4"
-        ]
+        "keywords": ["Prayer", "Unlimited", "4"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Witchbane Curse",
         "description": "A blood-hex is placed upon a craven wizard of the enemy, sapping their willpower.",
         "declare": "Pick a friendly Blades of Khorne Priest to chant this prayer, pick a visible enemy Wizard within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Subtract 1 from the target's power level, to a minimum of 0, until the end of your next turn. In addition, if the chanting roll was 8+, inflict 3 mortal damage on the target.",
-        "keywords": [
-          "Prayer",
-          "5",
-          "4"
-        ],
+        "keywords": ["Prayer", "5", "4"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Blood Boil",
         "description": "Spitting ritualistic words of wrath into the air, the priest turns the blood coursing through the veins of the enemy red-hot, burning them from the inside out.",
         "declare": "Pick a friendly Blades of Khorne Priest to chant this prayer, pick a visible enemy unit within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target. In addition, if the chanting roll was 8+, subtract 1 from wound rolls for the target until the start of your next turn.",
-        "keywords": [
-          "Prayer"
-        ],
+        "keywords": ["Prayer"],
         "chanting_value": 4
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Skarbrand",
+      "name": "SKARBRAND",
       "move": "8",
       "health": "16",
       "save": "4+",
@@ -278,13 +224,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Roar Of Total Rage",
             "description": "When Skarbrand roars, heads explode and blood boils in the veins of his victims.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll either 3 dice or a number of dice equal to the number of damage points this unit has. For each 4+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -307,7 +252,7 @@
       ]
     },
     {
-      "name": "Bloodthirster",
+      "name": "WRATH OF KHORNE BLOODTHIRSTER",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -347,6 +292,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "COMMANDER OF TYRANTS:",
             "description": "Bloodthirsters of lesser rank are compelled to follow the orders of these bellowing greater daemons.",
             "declare": "Pick up to 3 other visible friendly non-Unique Bloodthirster units to be the targets.",
@@ -355,13 +301,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Vengeance Of Khorne",
             "description": "Wrath of Khorne Bloodthirsters are the Lord of Battle's agents of vengeance, sent to claim the skulls of those who have offended him.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
             "effect": "Roll 8 dice. For each 4+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -377,7 +322,7 @@
       ]
     },
     {
-      "name": "Bloodthirster, Of Insensate Rage",
+      "name": "BLOODTHIRSTER OF INSENSATE RAGE",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -411,16 +356,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "SHATTERING CHARGE: A",
             "description": "Bloodthirster of Insensate Rage is an avatar of supreme carnage upon the battlefield, shattering formations with the force of its descent.",
             "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
             "effect": "Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If the target is Infantry, inflict an additional 3 mortal damage on it.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -436,7 +377,7 @@
       ]
     },
     {
-      "name": "Bloodthirster, Of Unfettered Fury",
+      "name": "BLOODTHIRSTER OF UNFETTERED FURY",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -474,9 +415,7 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Mighty Axe of Khorne is 4 ."
           },
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "your_turn_only": true,
             "name": "Beckon The Hunt",
             "description": "The air shudders and convulses with each crack of the Bloodthirster's whip as it drives those in its shadow to bring slaughter and bloodshed in the name of Khorne.",
@@ -486,13 +425,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Ensnaring Lash",
             "description": "The Lash of Khorne wraps around an enemy, stripping flesh as they try to pull away.",
             "declare": "Pick an enemy Monster in combat with this unit to be the target.",
-            "effect": "If the target is in combat with this unit when the target is picked to use a Fight ability: \n* It must pick this unit to be the target of  the pile-in move (Core Rules, 15.3). \n* Subtract 1 from hit rolls and wound rolls for attacks made as part of that Fight ability against this unit.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "If the target is in combat with this unit when the target is picked to use a Fight ability: * It must pick this unit to be the target of the pile-in move (Core Rules, 15.3). * Subtract 1 from hit rolls and wound rolls for attacks made as part of that Fight ability against this unit.",
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -508,7 +446,7 @@
       ]
     },
     {
-      "name": "Karanak",
+      "name": "KARANAK",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -529,9 +467,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Prey Of The Blood God",
             "description": "Karanak hunts those who have earned the Blood God's ire.",
             "effect": "Pick an enemy Hero to be this unit's quarry (see 'Stalk the Prey'). You can pick a Hero in reserve."
@@ -543,17 +479,12 @@
             "effect": "While this unit is wholly within 12\" of a friendly Flesh Hounds unit, add 2 to charge rolls for this unit. In addition, while any friendly Flesh Hounds units are wholly within 12\" of this unit, they can ignore the effect of the 'Beast' ability."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "enemy_turn_only": true,
             "name": "Stalk The Prey",
             "description": "Karanak's intended quarry is relentlessly and mercilessly run to ground.",
             "effect": "If this unit's quarry moved this phase, this unit can move up to 8\". It cannot move into combat during any part of that move and must end that move closer to its quarry.",
-            "keywords": [
-              "Core",
-              "Move"
-            ]
+            "keywords": ["Core", "Move"]
           }
         ]
       ],
@@ -568,7 +499,7 @@
       ]
     },
     {
-      "name": "Skulltaker",
+      "name": "SKULLTAKER",
       "move": "5",
       "health": "7",
       "save": "4+",
@@ -589,9 +520,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Heroes' Bane",
             "description": "Khorne's eternal champion seeks out the worthiest of foes and demands they face him in single combat.",
             "declare": "Pick an enemy Hero in combat with this unit to be the target.",
@@ -616,7 +545,7 @@
       ]
     },
     {
-      "name": "Flesh Hounds",
+      "name": "FLESH HOUNDS",
       "move": "8",
       "health": "2",
       "save": "5+",
@@ -659,7 +588,7 @@
       ]
     },
     {
-      "name": "Bloodmaster, Herald Of Khorne",
+      "name": "BLOODMASTER HERALD OF KHORNE",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -681,7 +610,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "The Blood Must Flow",
             "description": "Rallied by bloody example, Khorne's lesser daemons leap into combat.",
             "effect": "Pick a friendly Bloodletters unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, subtract 1 from ward rolls for damage points inflicted by each of those Fight abilities."
@@ -699,7 +628,7 @@
       ]
     },
     {
-      "name": "Skullmaster, Herald Of Khorne",
+      "name": "SKULLMASTER HERALD OF KHORNE",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -729,9 +658,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Slaughterous Charge",
             "description": "The crushing mass and stamping hooves of Khorne's Juggernauts are a threat to all in their path.",
             "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
@@ -740,6 +667,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Charge Phase"],
             "name": "Herald Of Trampling Death",
             "description": "The earth shatters under the metal hooves of a Slaughtermaster and its warriors, a wall of living brass that crushes all before it.",
             "declare": "Pick a friendly Bloodcrushers unit within this unit's combat range to be the target.",
@@ -757,7 +685,7 @@
       ]
     },
     {
-      "name": "Bloodletters",
+      "name": "BLOODLETTERS",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -778,9 +706,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "The Thinning Veil",
             "description": "As heads roll and blood flows, more daemons from beyond the veil are summoned forth to partake in the slaughter.",
             "effect": "If this unit is in combat, you can return D3 slain models to this unit."
@@ -799,7 +725,7 @@
       ]
     },
     {
-      "name": "Bloodcrushers",
+      "name": "BLOODCRUSHERS",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -829,9 +755,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Slaughterous Charge",
             "description": "The crushing mass and stamping hooves of Khorne's Juggernauts are a threat to all in their path.",
             "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
@@ -851,7 +775,7 @@
       ]
     },
     {
-      "name": "Skull Cannon",
+      "name": "SKULL CANNON",
       "move": "8",
       "health": "8",
       "save": "4+",
@@ -915,7 +839,7 @@
       ]
     },
     {
-      "name": "Blood Throne",
+      "name": "HERALD OF KHORNE ON BLOOD THRONE",
       "move": "8",
       "health": "10",
       "save": "4+",
@@ -938,6 +862,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "Blood Call",
             "description": "Words of wrath uttered in the Dark Tongue slice bleeding wounds in the skin of reality, from which pour more daemons of the Blood God to reinforce his legions.",
             "declare": "Pick a friendly Blades of Khorne Daemon unit that started the battle with 3 or more models and that has been destroyed to be the target.",
@@ -956,7 +882,7 @@
       ]
     },
     {
-      "name": "Claws Of Karanak",
+      "name": "CLAWS OF KARANAK",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -977,9 +903,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "The Scent Of Blood",
             "description": "These savage warriors roam ahead of the advancing army, seeking out the enemy so that they can be the first to draw blood.",
             "effect": "This unit can use the 'Normal Move' ability as if it were your movement phase."
@@ -1001,7 +925,7 @@
       ]
     },
     {
-      "name": "Realmgore Ritualist",
+      "name": "REALMGORE RITUALIST",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -1024,6 +948,8 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "Desecrating Blood Runes",
             "description": "The Ritualist carves blasphemous runes into the earth with their gore-slickened dagger, bringing down a rain of gore that drives Khorne's faithful into a frenzy.",
             "declare": "Pick an objective or terrain feature within this unit's combat range to be the target.",
@@ -1042,7 +968,7 @@
       ]
     },
     {
-      "name": "Mighty Lord Of Khorne",
+      "name": "MIGHTY LORD OF KHORNE",
       "move": "5",
       "health": "7",
       "save": "3+",
@@ -1080,6 +1006,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
+            "your_turn_only": true,
             "name": "'Bring Me Their Skull!'",
             "description": "Axe held aloft, this warlord orders one of his Gorechosen forward.",
             "declare": "Pick a friendly Gorechosen unit wholly within 12\" of this unit to be the target.",
@@ -1096,7 +1024,7 @@
       ]
     },
     {
-      "name": "Lord Of Khorne, On Juggernaut",
+      "name": "LORD OF KHORNE ON JUGGERNAUT",
       "move": "8",
       "health": "8",
       "save": "2+",
@@ -1126,9 +1054,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Slaughterous Charge",
             "description": "The crushing mass and stamping hooves of Khorne's Juggernauts are a threat to all in their path.",
             "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
@@ -1138,20 +1064,14 @@
             "activation": "Passive",
             "name": "LORD OF THE BRASS STAMPEDE:",
             "description": "Carnage erupts as the full force of a mounted Khornate warhorde collides with the enemy.",
-            "effect": "If this unit charged this turn, for the rest of the turn, the following effects apply to friendly Blades of Khorne Cavalry units while they are wholly within 18\" of this unit: \n* Add 1 to charge rolls for those units. \n* You can re-roll crushing charge rolls for  those units."
+            "effect": "If this unit charged this turn, for the rest of the turn, the following effects apply to friendly Blades of Khorne Cavalry units while they are wholly within 18\" of this unit: * Add 1 to charge rolls for those units. * You can re-roll crushing charge rolls for those units."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Chaos",
-        "Blades of Khorne",
-        "Bloodbound"
-      ]
+      "keywords": ["Hero", "Cavalry", "Chaos", "Blades of Khorne", "Bloodbound"]
     },
     {
-      "name": "Bloodsecrator",
+      "name": "BLOODSECRATOR",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1174,6 +1094,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Rage Of Khorne",
             "description": "The Bloodsecrator slams his banner into the ground, flooding the battlefield with the violent energies of Khorne's hellish domain.",
             "effect": "Add 1 to the Attacks characteristics of melee weapons used by friendly Bloodbound units for the rest of the turn."
@@ -1196,7 +1117,7 @@
       ]
     },
     {
-      "name": "Skarr Bloodwrath",
+      "name": "SKARR BLOODWRATH",
       "move": "5",
       "health": "7",
       "save": "4+",
@@ -1223,16 +1144,12 @@
             "effect": "If this unit is in combat, add 1 to the Attacks characteristic of melee weapons used by friendly Wrathmongers units while they are wholly within 12\" of this unit."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "name": "The Slaughterborn",
             "description": "Skarr Bloodwrath has been killed on battlefields beyond count, but each time he has been reborn amidst the clash of blades and the screams of the dying.",
             "declare": "This unit can use this ability if it has been destroyed.",
             "effect": "Roll 2D6. On an 8+, set up a replacement unit on the battlefield more than 9\" from all enemy units.",
-            "keywords": [
-              "Core"
-            ]
+            "keywords": ["Core"]
           }
         ]
       ],
@@ -1246,7 +1163,7 @@
       ]
     },
     {
-      "name": "Slaughterpriest",
+      "name": "SLAUGHTERPRIEST",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -1269,14 +1186,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Blood Sacrifice",
             "description": "A Slaughterpriest knows better than any that Khorne cares not from where the blood flows\u2026",
             "declare": "Pick a friendly unit within this unit's combat range to be the target.",
-            "effect": "Roll a D3. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Gain 1 blood tithe point."
+            "effect": "Roll a D3. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Gain 1 blood tithe point."
           },
           {
             "activation": "Passive",
@@ -1297,7 +1212,7 @@
       ]
     },
     {
-      "name": "Skullgrinder",
+      "name": "SKULLGRINDER",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1326,6 +1241,7 @@
           {
             "activation": "Once Per Battle",
             "once_per_army": true,
+            "phases": ["Deployment Phase"],
             "name": "Tempered By Fury",
             "description": "Until the horns for battle are sounded, Skullgrinders are known to work on their craft ceaselessly, tempering the weapons of their fellow warriors so that they glow red-hot with the rage of Khorne.",
             "declare": "Pick another friendly Bloodbound Hero within 8\" of this unit to be the target.",
@@ -1343,7 +1259,7 @@
       ]
     },
     {
-      "name": "Aspiring Deathbringer",
+      "name": "ASPIRING DEATHBRINGER",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1365,7 +1281,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit ",
+            "reaction_condition": " You declared a Fight ability  for this unit ",
             "name": "Furious Warleader",
             "description": "An Aspiring Deathbringer's quest for renown sees them amass bands of equally ambitious warriors.",
             "effect": "Pick a friendly Blood Warriors unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved. If it is picked to do so, add 1 to wound rolls for attacks made by this unit and the target for the rest of the turn."
@@ -1382,7 +1298,7 @@
       ]
     },
     {
-      "name": "Exalted Deathbringer",
+      "name": "EXALTED DEATHBRINGER",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -1403,9 +1319,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "FIRST OF THE GORECHOSEN:",
             "description": "Exalted Deathbringers fight to scale the final heights of glory, hewing bloody handholds for their ascent with every worthy foe they butcher.",
             "effect": "If any damage points were allocated to an enemy unit by this unit's combat attacks this turn and that enemy unit has been destroyed, Heal (5) this unit and give this unit a glorious ascent token."
@@ -1429,7 +1343,7 @@
       ]
     },
     {
-      "name": "Bloodreavers",
+      "name": "BLOODREAVERS",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1468,7 +1382,7 @@
       ]
     },
     {
-      "name": "Mighty Skullcrushers",
+      "name": "MIGHTY SKULLCRUSHERS",
       "move": "8",
       "health": "5",
       "save": "2+",
@@ -1498,9 +1412,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Slaughterous Charge",
             "description": "The crushing mass and stamping hooves of Khorne's Juggernauts are a threat to all in their path.",
             "declare": "If this unit charged this turn, pick an enemy unit within 1\" of it to be the target.",
@@ -1519,7 +1431,7 @@
       ]
     },
     {
-      "name": "Skullreapers",
+      "name": "SKULLREAPERS",
       "move": "5",
       "health": "3",
       "save": "4+",
@@ -1557,7 +1469,7 @@
       ]
     },
     {
-      "name": "Wrathmongers",
+      "name": "WRATHMONGERS",
       "move": "5",
       "health": "3",
       "save": "5+",
@@ -1600,7 +1512,7 @@
       ]
     },
     {
-      "name": "Blood Warriors",
+      "name": "BLOOD WARRIORS",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -1647,7 +1559,7 @@
       ]
     },
     {
-      "name": "Bloodstoker",
+      "name": "BLOODSTOKER",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1670,6 +1582,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Movement Phase"],
+            "your_turn_only": true,
             "name": "Whipped To Fury",
             "description": "The ferocious bite of a Bloodstoker's lash reminds every Khorne follower of the bloody dues their master expects.",
             "declare": "Pick a friendly non-Hero Bloodbound unit within this unit's combat range to be the target.",
@@ -1687,7 +1601,7 @@
       ]
     },
     {
-      "name": "Khorgorath",
+      "name": "KHORGORATH",
       "move": "8",
       "health": "8",
       "save": "5+",
@@ -1722,33 +1636,25 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Horrific Predators",
             "description": "Khorgoraths are nightmarish beasts, given form only to harvest skulls.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Taker Of Heads",
             "description": "Swallowing the skulls of its victims breathes a twisted sustenance into the Khorgorath's brutish body.",
             "effect": "If this unit is in combat, Heal (3) this unit."
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Chaos",
-        "Blades of Khorne",
-        "Bloodbound"
-      ]
+      "keywords": ["Monster", "Chaos", "Blades of Khorne", "Bloodbound"]
     },
     {
-      "name": "Bleeding Icon",
+      "name": "BLEEDING ICON",
       "move": "-",
       "health": "8",
       "save": "4+",
@@ -1758,7 +1664,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " Opponent declared a command  for a unit within 8\" of this Manifestation",
+            "reaction_condition": " Opponent declared a command for a unit within 8\" of this Manifestation",
             "name": "Sigil Of Doom",
             "description": "Shedding gore as it hovers menacingly in the air, the Bleeding Icon is a fearsome portent of doom.",
             "effect": "Roll 2D6. On an 8+, that command has no effect, it still counts as having been used and the command points spent to use it are still lost."
@@ -1775,7 +1681,7 @@
       ]
     },
     {
-      "name": "Hexgorger Skulls",
+      "name": "HEXGORGER SKULLS",
       "move": "8",
       "health": "6",
       "save": "5+",
@@ -1818,7 +1724,7 @@
       ]
     },
     {
-      "name": "Wrath-Axe",
+      "name": "WRATH-AXE",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -1839,9 +1745,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Hatred'S Edge",
             "description": "The supernatural blade scrapes along the ground, its razor edge cutting in half those too slow to get out of the way. It then rises in the air before smashing down with deadly force upon Khorne's enemies.",
@@ -1860,7 +1764,7 @@
       ]
     },
     {
-      "name": "Skull Altar",
+      "name": "SKULL ALTAR",
       "move": "-",
       "health": "10",
       "save": "4+",
@@ -1872,39 +1776,31 @@
             "activation": "Passive",
             "name": "Words Of Hate",
             "description": "As much a platform of violent oratory as bloody sacrifice, the exhortations of Khorne's priests echo from this brass-clad edifice like the tolling of infernal bells.",
-            "effect": "While this terrain feature has an Invoker: \n* Add 1 to chanting rolls for the Invoker. \n* The Invoker cannot use Move abilities. \n* Instead of measuring range or visibility to the Invoker, measure to this terrain feature instead. \n* All attacks that would target  the Invoker target this terrain feature instead. \n* If this terrain feature is destroyed,  before removing it from the battlefield, inflict D3 mortal damage on the Invoker. Then, set up the Invoker on the battlefield wholly within 3\" of this terrain feature and not in combat. That unit is no longer an Invoker. If it is not possible to set up the Invoker, it is slain."
+            "effect": "While this terrain feature has an Invoker: * Add 1 to chanting rolls for the Invoker. * The Invoker cannot use Move abilities. * Instead of measuring range or visibility to the Invoker, measure to this terrain feature instead. * All attacks that would target the Invoker target this terrain feature instead. * If this terrain feature is destroyed, before removing it from the battlefield, inflict D3 mortal damage on the Invoker. Then, set up the Invoker on the battlefield wholly within 3\" of this terrain feature and not in combat. That unit is no longer an Invoker. If it is not possible to set up the Invoker, it is slain."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "ASCEND THE ALTAR",
             "declare": "If this terrain feature does not have an Invoker, pick a friendly Blades of Khorne Infantry Priest within 3\" of it to be the target.",
             "effect": "Place the target on this terrain feature. The target is now an Invoker (see 'Words of Hate')."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "DESCEND THE ALTAR",
             "effect": "If this terrain feature has an Invoker, set up the Invoker on the battlefield wholly within 6\" of this terrain feature and not in combat. That unit is no longer an Invoker."
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " A friendly unit within 18\" of   this terrain feature was picked to be the  target of an enemy spell ",
+            "reaction_condition": " A friendly unit within 18\" of  this terrain feature was picked to be the target of an enemy spell ",
             "name": "Hatred Of Sorcery",
             "description": "Khorne's depthless scorn of magic radiates from these altars in waves.",
-            "effect": "Roll a dice. On a 5+: \n* If this terrain feature has an Invoker,  gain 1 blood tithe point. \n* Ignore the effect of that spell on that  friendly unit. This terrain feature can use this ability more than once per phase but you can only roll once for each friendly unit per spell cast."
+            "effect": "Roll a dice. On a 5+: * If this terrain feature has an Invoker, gain 1 blood tithe point. * Ignore the effect of that spell on that friendly unit. This terrain feature can use this ability more than once per phase but you can only roll once for each friendly unit per spell cast."
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Chaos",
-        "Blades of Khorne"
-      ]
+      "keywords": ["Faction Terrain", "Chaos", "Blades of Khorne"]
     }
   ]
 }

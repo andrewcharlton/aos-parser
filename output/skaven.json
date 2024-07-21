@@ -1,20 +1,17 @@
 {
   "battle_traits": [
     {
-      "phases": [
-        "Deployment Phase"
-      ],
+      "phases": ["Deployment Phase"],
       "name": "The Lurking Ver Mintide",
       "description": "What scurries beneath the surface?",
       "declare": "Pick a friendly Skaven unit that has not been deployed.",
       "effect": "Set up that unit in reserve in the tunnels below. It has now been deployed.",
-      "keywords": [
-        "Deploy"
-      ]
+      "keywords": ["Deploy"]
     },
     {
       "activation": "Once Per Battle",
       "once_per_army": true,
+      "phases": ["Start of Battle Round"],
       "name": "SPLINTERS OF THE VER MINDOOM:",
       "description": "In the aftermath of the Vermindoom, reality continues to fracture and tear as gnawholes bore into reality, spewing forth endless tides of ratmen.",
       "declare": "You can use this ability if there are fewer than 3 friendly Gnawholes on the battlefield.",
@@ -27,9 +24,7 @@
       "effect": "No mortal damage is inflicted on friendly Skaven Infantry and Cavalry units by Retreat abilities."
     },
     {
-      "phases": [
-        "Movement Phase"
-      ],
+      "phases": ["Movement Phase"],
       "your_turn_only": true,
       "name": "Gnawhole Ambush",
       "description": "Emerging from a green, glowing rift, the Skaventide pours onto the battlefield.",
@@ -39,6 +34,8 @@
     {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Hero Phase"],
+      "enemy_turn_only": true,
       "name": "Ahead",
       "description": "The best laid plans of the Skaven never go awry (or so they claim).",
       "declare": "Pick a friendly non-Monster Skaven unit that is not in combat and was not set up this turn to use this ability.",
@@ -49,37 +46,37 @@
     "Warpcog Convocation": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Shooting Phase"],
+      "your_turn_only": true,
       "name": "Skryre Prototypes",
       "description": "The fell contraptions wielded by these ratmen were created by the Clans Skryre's most ingenious weaponsmiths.",
       "declare": "Pick up to 3 friendly Skryre units to be the targets.",
-      "effect": "Roll a dice for each target and apply the corresponding effect:  1  Kaboom!: Inflict D3 mortal damage on the target. 6  2-5  More Power!: Add 1 to wound rolls for the target's shooting attacks for the rest of the turn. More-more Power!: In addition to the effect of 'More Power!', add 1 to the Rend characteristic of the target's ranged weapons for the rest of the turn."
+      "effect": "Roll a dice for each target and apply the corresponding effect: 1 Kaboom!: Inflict D3 mortal damage on the target. 6 2-5 More Power!: Add 1 to wound rolls for the target's shooting attacks for the rest of the turn. More-more Power!: In addition to the effect of 'More Power!', add 1 to the Rend characteristic of the target's ranged weapons for the rest of the turn."
     },
     "Virulent Procession": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Corrupted Earth",
       "description": "The Clans Pestilens are relentless in advancing the spread of plague and corruption.",
       "declare": "Pick up to 3 friendly Pestilens units to be the targets.",
-      "effect": "For each target: \n* Make a pile-in move. \n* Then, pick an enemy unit in combat  with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
+      "effect": "For each target: * Make a pile-in move. * Then, pick an enemy unit in combat with the target and roll a D3. On a 2+, inflict an amount of mortal damage on that enemy unit equal to the roll."
     },
     "Fleshmeld Menagerie": {
       "activation": "Once Per Turn",
       "once_per_army": true,
-      "phases": [
-        "Hero Phase"
-      ],
+      "phases": ["Hero Phase"],
       "your_turn_only": true,
       "name": "Prized Creations",
       "description": "Moulder warbeasts are studded with warpstone crystals and pumped full of vile serums that spur their battle-rage - at the occasional cost of overtaxing their forms.",
       "declare": "Pick up to 3 friendly non-Hero Moulder units to be the targets.",
-      "effect": "Roll a dice for each target and apply the corresponding effect: 1-2  Self-destructive Fury: Inflict D3 mortal damage on the target. 3-4  Rabid Infusion: Add 1 to the  Attacks characteristic of the target's melee weapons until the start of your next turn. 5-6  Blinded by Frenzy: In addition to the effect of 'Rabid Infusion', the target has Ward (5+) until the start of your next turn."
+      "effect": "Roll a dice for each target and apply the corresponding effect: 1-2 Self-destructive Fury: Inflict D3 mortal damage on the target. 3-4 Rabid Infusion: Add 1 to the Attacks characteristic of the target's melee weapons until the start of your next turn. 5-6 Blinded by Frenzy: In addition to the effect of 'Rabid Infusion', the target has Ward (5+) until the start of your next turn."
     },
     "Claw-Horde": {
       "activation": "Once Per Turn",
       "once_per_army": true,
+      "phases": ["Combat Phase"],
+      "your_turn_only": true,
       "name": "Claw-Picked",
       "description": "The Stormvermin and Clanrats of a Verminus Claw-horde are amongst the most ferocious of all ratmen.",
       "declare": "Pick up to 3 friendly Verminus units that charged this turn to be the targets.",
@@ -88,9 +85,7 @@
   },
   "heroic_traits": [
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Scurry Away",
       "description": "This Skaven chief does not think twice about scampering to safety when things look to be going south. Perhaps that's why they have lived so long.",
       "effect": "If this unit is in combat, roll a dice. On a 3+, this unit can immediately use the 'Retreat' ability as if it were your movement phase."
@@ -105,22 +100,18 @@
       "activation": "Passive",
       "name": "Skilled Manipulator",
       "description": "This Skaven warlord is particularly devious and self- serving, deftly ensuring that their minions are always conveniently positioned between themselves and potential threats.",
-      "effect": "While this unit is within the combat range of a friendly non-Hero Skaven Infantry unit: \n* This unit has Ward (4+). \n* Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly non-Hero Skaven Infantry unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
+      "effect": "While this unit is within the combat range of a friendly non-Hero Skaven Infantry unit: * This unit has Ward (4+). * Each time you make a successful ward roll for this unit, allocate 1 damage point to a friendly non-Hero Skaven Infantry unit within this unit's combat range after the damage sequence for this unit has been resolved (ward rolls cannot be made for those damage points)."
     }
   ],
   "artefacts_of_power": [
     {
-      "phases": [
-        "End of Turn"
-      ],
+      "phases": ["End of Turn"],
       "name": "Foulhide",
       "description": "Fashioned from the flensed flesh of Rat Ogors and soaked in cloying alchemical agents, this stinking armour sticks to its wearer like a bloated second skin and regrows as fast as it can be hacked apart.",
       "effect": "Heal (D3) this unit."
     },
     {
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Warpstone Char M",
       "description": "This foul talisman radiates mutating energy that can be directed at an enemy unit to erode their armour.",
       "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -128,9 +119,7 @@
     },
     {
       "activation": "Once Per Battle",
-      "phases": [
-        "Combat Phase"
-      ],
+      "phases": ["Combat Phase"],
       "name": "Sk Avenbrew",
       "description": "This foul concoction, brewed from blood and warpstone, is dispensed to expendable underlings to drive them into a short-lived but devastating killing frenzy.",
       "declare": "Pick a friendly non-Hero Skaven Infantry unit wholly within 13\" of this unit to be the target.",
@@ -140,48 +129,32 @@
   "spell_lore": {
     "Lore Of Ruin": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Wither",
         "description": "The spellcaster hurls a glowing green globe of magical energy at the foe. Anyone touched by the globe starts to shrivel and wither away.",
         "declare": "Pick a friendly Skaven Wizard to cast this spell, pick a visible enemy unit within 13\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target.",
-        "keywords": [
-          "Spell",
-          "Unlimited",
-          "6"
-        ]
+        "keywords": ["Spell", "Unlimited", "6"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Skitterleap",
         "description": "Vanishing in a puff of foul-smelling smoke, the verminkin reappear elsewhere on the battlefield an eye-blink later.",
         "declare": "Pick a friendly Skaven Wizard to cast this spell, pick a visible friendly Skaven Hero wholly within 13\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "6",
-          "7"
-        ],
+        "keywords": ["Spell", "6", "7"],
         "casting_value": 6
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Warpgale",
         "description": "Screeching in an unholy tongue, the caster parts the veil of reality and draws a ravening gale of unnatural energies forth.",
         "declare": "Pick a friendly Skaven Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Strike-last for the rest of the turn.",
-        "keywords": [
-          "Spell"
-        ],
+        "keywords": ["Spell"],
         "casting_value": 7
       }
     ]
@@ -189,48 +162,32 @@
   "prayer_lore": {
     "Noxious Prayers": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Filth-Crust",
         "description": "The Great Horned Rat heeds the call of this priest to encrust the weapons of their minions with irresistible contagions.",
         "declare": "Pick a friendly Skaven Priest to chant this prayer, pick a visible friendly Skaven Infantry unit wholly within 13\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Add 1 to wound rolls for the target's combat attacks until the start of your next turn. In addition, if the chanting roll was 8+, the target's melee weapons have Crit (Mortal) until the start of your next turn.",
-        "keywords": [
-          "Prayer",
-          "Unlimited",
-          "4"
-        ]
+        "keywords": ["Prayer", "Unlimited", "4"]
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Bile-Torrent",
-        "description": "The priest screeches  The priest screeches with glowing green eyes as a torrent of bile sweeps over their foe.",
+        "description": "The priest screeches The priest screeches with glowing green eyes as a torrent of bile sweeps over their foe.",
         "declare": "Pick a friendly Skaven Priest to chant this prayer, pick a visible enemy unit within 13\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target. If the chanting roll was 8+, inflict 1 mortal damage on the target for each 4+ instead.",
-        "keywords": [
-          "Prayer",
-          "4",
-          "5"
-        ],
+        "keywords": ["Prayer", "4", "5"],
         "chanting_value": 4
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Rabid-Tough",
         "description": "The priest snarls and conjures a dense cloud of toxins that sends their followers into a frenzy that numbs them to pain.",
         "declare": "Pick a friendly Skaven Priest to chant this prayer, pick a visible friendly Skaven Infantry unit wholly within 13\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Subtract 1 from wound rolls for attacks that target that unit until the start of your next turn. In addition, if the chanting roll was 8+, add 1 to save rolls for the target until the start of your next turn.",
-        "keywords": [
-          "Prayer"
-        ],
+        "keywords": ["Prayer"],
         "chanting_value": 5
       }
     ]
@@ -238,57 +195,40 @@
   "manifestation_lore": {
     "Manifestations Of Doom": [
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "Vortex",
         "description": "Warpstone shards are cast into the air, growing impossibly large and discharging bolts of warp lightning.",
         "declare": "If there is not a friendly Warp Lightning Vortex on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up the first part of the Warp Lightning Vortex within 18\" of the caster and visible to them, then set up the second and third parts exactly 7\" from the first part and exactly 7\" from each other so that they form a triangle.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "7"
-        ],
+        "keywords": ["Spell", "Summon", "7"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "SUMMON VER MINTIDE:",
         "description": "A Skaven spellcaster can summon forth a seething mass of arcane rodents that consumes everything in its path.",
         "declare": "If there is not a friendly Vermintide on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Vermintide wholly within 13\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Summon",
-          "7"
-        ],
+        "keywords": ["Spell", "Summon", "7"],
         "casting_value": 7
       },
       {
-        "phases": [
-          "Hero Phase"
-        ],
+        "phases": ["Hero Phase"],
         "your_turn_only": true,
         "name": "SUMMON BELL OF DOOM:",
         "description": "Invoking ancient creation myths, the spellcaster causes a great Bell of Doom to manifest upon the battlefield.",
         "declare": "If there is not a friendly Bell of Doom on the battlefield, pick a friendly Skaven Wizard to cast this spell, then make a casting roll of 2D6.",
         "effect": "Set up a Bell of Doom wholly within 13\" of the caster, visible to them and more than 9\" from all enemy units.",
-        "keywords": [
-          "Spell",
-          "Summon"
-        ],
+        "keywords": ["Spell", "Summon"],
         "casting_value": 7
       }
     ]
   },
   "warscrolls": [
     {
-      "name": "Thanquol, On Boneripper",
+      "name": "THANQUOL ON BONERIPPER",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -337,13 +277,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Boneripper Rampage",
             "description": "Thanquol's monstrous Rat Ogor, Boneripper, pulverises enemies that dare stray too close.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3-5, inflict D3 mortal damage on the target. On a 6, inflict 2D3 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
             "activation": "Passive",
@@ -352,25 +291,19 @@
             "effect": "Add 1 to casting rolls for this unit."
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Warp-Amulet",
             "description": "Thanquol wears a thrumming green warpstone amulet, the mutating magics of which serve to meld and rapidly heal his, or Boneripper's, flesh.",
             "effect": "Heal (D3) this unit. 7"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Terrible Madness",
             "description": "Thanquol can inflict madness on his enemies, causing them to lash out at close allies.",
             "declare": "Pick a visible enemy unit within 13\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "The target cannot use commands until the start of your next turn. In addition, roll a number of dice equal to the number of models in the target unit. For each 6, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -388,7 +321,7 @@
       ]
     },
     {
-      "name": "Lord Skreech Verminking",
+      "name": "LORD SKREECH VERMINKING",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -409,34 +342,27 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Spell",
             "description": "The twisting power of the Great Horned Rat transforms men into rat- mutants that swiftly join the evil throng.",
             "declare": "Pick a visible enemy unit within 13\" to be the target, then make a casting roll of 2D6.",
-            "effect": "Roll 13 dice. For each 5+: \n* Inflict 1 mortal damage on the target. \n* You can return 1 slain model to a  friendly Clanrats unit wholly within 13\" of this unit.",
-            "keywords": [
-              "Spell"
-            ],
+            "effect": "Roll 13 dice. For each 5+: * Inflict 1 mortal damage on the target. * You can return 1 slain model to a friendly Clanrats unit wholly within 13\" of this unit.",
+            "keywords": ["Spell"],
             "casting_value": 7
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Terrifying Monstrosity",
             "description": "Lord Skreech has a malevolent and horrific visage that can shatter the enemy's resolve.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
-            "effect": "Roll a dice. On a 3+: \n* The target cannot use commands for the  rest of the turn.  \n* Subtract an amount equal to the roll  from the target's control score until the start of your next turn.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "Roll a dice. On a 3+: * The target cannot use commands for the rest of the turn. * Subtract an amount equal to the roll from the target's control score until the start of your next turn.",
+            "keywords": ["Rampage"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "The Thirteen-Headed One",
             "description": "Lord Verminking can call upon his extensive knowledge of the Skaven clans.",
@@ -462,7 +388,7 @@
       ]
     },
     {
-      "name": "Verminlord Deceiver",
+      "name": "VERMINLORD DECEIVER",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -496,7 +422,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared the \u2018Redeploy\u2019  command for a friendly Eshin Infantry unit wholly within 13\" of this unit",
+            "reaction_condition": " You declared the 'Redeploy' command for a friendly Eshin Infantry unit wholly within 13\" of this unit",
             "name": "Lord Of Assassins",
             "description": "The skulking warriors of the Clans Eshin move like swift smoke in a Verminlord Deceiver's presence.",
             "effect": "If you roll a 1-3 when determining the distance that unit can move, you can use a value of 4 instead."
@@ -504,12 +430,11 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "BURST FROM THE SHADOWS: A",
             "description": "Verminlord Deceiver is shrouded in darkness and dread, leaping through the aether to strike at its foes in the blink of an eye.",
             "effect": "If this unit is in combat, roll a dice. On a 4+, you can pick a point on the battlefield within 13\" of this unit and within 1\" of any enemy units. Remove this unit from the battlefield and set it up again within 1\" of that point. Designer's Note: This ability allows the unit to set up in combat with a new enemy unit.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -525,7 +450,7 @@
       ]
     },
     {
-      "name": "Verminlord Corruptor",
+      "name": "VERMINLORD CORRUPTOR",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -548,9 +473,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Lord Of Great Plagues",
             "description": "If the raving prayers of Pestilens priests reach fever pitch across the battlefield, the Verminlord Corruptor can cause one of the legendary Great Plagues to temporarily manifest.",
@@ -559,13 +482,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Plaguemaster",
             "description": "Hideous parasites and diseases made flesh spill from a Verminlord Corruptor to spread their sickness.",
             "declare": "Pick up to 3 enemy units in combat with this unit to be the targets.",
-            "effect": "Roll a D3 for each target. On a 2+: \n* Inflict an amount of mortal damage on  the target equal to the roll. \n* Give this unit 1 ritual point.",
-            "keywords": [
-              "Rampage"
-            ]
+            "effect": "Roll a D3 for each target. On a 2+: * Inflict an amount of mortal damage on the target equal to the roll. * Give this unit 1 ritual point.",
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -581,7 +503,7 @@
       ]
     },
     {
-      "name": "Verminlord Warbringer",
+      "name": "VERMINLORD WARBRINGER",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -604,6 +526,7 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Tyrant Of Battle",
             "description": "These towering monstrosities are the commanders of the seething hordes of Clans Verminus.",
             "declare": "Pick up to 2 friendly Verminus Infantry units wholly within 13\" of this unit to be the targets.",
@@ -612,16 +535,12 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Killing Blow",
             "description": "Warbringers drive their spike-fists into already wounded enemies, exploiting the slightest gap in their foe's defences to deliver a bloody coup de gr\u00e2ce.",
             "declare": "Pick a damaged enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. If the roll is less than the number of damage points the target has, inflict an amount of mortal damage on the target equal to the roll.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           }
         ]
       ],
@@ -637,7 +556,7 @@
       ]
     },
     {
-      "name": "Verminlord Warpseer",
+      "name": "VERMINLORD WARPSEER",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -665,9 +584,7 @@
           },
           {
             "activation": "Once Per Battle",
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Hurl Scry-Orb",
             "description": "The Warpseer throws its scry-orb into the midst of the foe, where it explodes in a shattering cloud of madness and destruction.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
@@ -676,27 +593,21 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Arch-Manipulator",
             "description": "Those who dare face a Warpseer find themselves utterly pre-empted and outmanoeuvred.",
             "declare": "Pick an enemy unit in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn.",
-            "keywords": [
-              "Rampage",
-              "7"
-            ]
+            "keywords": ["Rampage", "7"]
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "TECTONIC SPLINTERING:",
             "description": "Hissing invocations of ruin and collapse, the Verminlord compels the earth to break and belch forth hostile warpgales, leaving their enemies staggering.",
             "declare": "Pick a visible enemy unit within 18\" to be the target, then make a casting roll of 2D6.",
             "effect": "Until the start of your next turn, subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 7
           }
         ]
@@ -713,7 +624,7 @@
       ]
     },
     {
-      "name": "Grey Seer",
+      "name": "GREY SEER",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -734,9 +645,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Warpstone Shards",
             "description": "Grey Seers consume potentially lethal shards of warpstone to enhance their spellcasting.",
@@ -754,7 +663,7 @@
       ]
     },
     {
-      "name": "Arch-Warlock",
+      "name": "ARCH-WARLOCK",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -804,7 +713,7 @@
       ]
     },
     {
-      "name": "Warlock Engineer",
+      "name": "WARLOCK ENGINEER",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -838,7 +747,7 @@
         [
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Shoot ability  for this unit, it was not set up this turn and it  has not used a Move ability this turn ",
+            "reaction_condition": " You declared a Shoot ability for this unit, it was not set up this turn and it has not used a Move ability this turn ",
             "name": "MORE-MORE WARP ENERGY!:",
             "description": "The Engineer overcharges their weapon with volatile energy.",
             "effect": "Roll a dice. On a 2+, set the Damage characteristic of this unit's Warplock Musket to 3 for the rest of the turn. On a 1, inflict D3 mortal damage on this unit."
@@ -846,6 +755,8 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "Sniper-Master",
             "description": "No enemy is safe from the warp-laced bullets of a Warlock Engineer and his underlings.",
             "declare": "Pick a visible enemy Hero to be the target.",
@@ -853,16 +764,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Hero", "Infantry", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Warlock Bombardier",
+      "name": "WARLOCK BOMBARDIER",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -902,23 +807,17 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Shoot ability  for this unit, it was not set up this turn and it  has not used a Move ability this turn",
+            "reaction_condition": " You declared a Shoot ability for this unit, it was not set up this turn and it has not used a Move ability this turn",
             "name": "More-More Doom!",
             "description": "An extra doomrocket warhead can be attached to the payload if the wielder dares.",
             "effect": "Roll a dice. On a 2+, set the Damage characteristic of its Doomrocket to D3+3 for the rest of the turn. On a 1, inflict D3 mortal damage on this unit."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Hero", "Infantry", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Stormfiends",
+      "name": "STORMFIENDS",
       "move": "6",
       "health": "6",
       "save": "4+",
@@ -1007,9 +906,7 @@
             "effect": "Each time an attack made with this unit's Shock Gauntlets scores a critical hit, that attack scores D6 hits on the target unit instead of 1. Make a wound roll for each hit."
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "name": "GRINDERFIST TUNNELLERS:",
             "description": "Grinderfists can be used to create underground tunnels.",
             "declare": "Pick this unit if it is in the tunnels below and includes any models armed with Grinderfists.",
@@ -1017,16 +914,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Skryre",
-        "Moulder"
-      ]
+      "keywords": ["Infantry", "Chaos", "Skaven", "Skryre", "Moulder"]
     },
     {
-      "name": "Warp Lightning Cannon",
+      "name": "WARP LIGHTNING CANNON",
       "move": "3",
       "health": "8",
       "save": "4+",
@@ -1067,21 +958,18 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "MORE-MORE WARP LIGHTNING!: A",
             "description": "Warlock Engineer can increase the power output of a Warp Lightning Cannon at the risk of harming the weapon and its crew.",
             "effect": "If this unit is within the combat range of a friendly Skryre Hero, add 6 to the Attacks characteristic of this unit's Warp Lightning Blast for the rest of the turn. However, for each unmodified hit roll of 1 for an attack made with this unit's Warp Lightning Blast, inflict D3 mortal damage on this unit after the Shoot ability has been resolved."
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["War Machine", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Acolyte Globadiers",
+      "name": "ACOLYTE GLOBADIERS",
       "move": "6",
       "health": "2",
       "save": "6+",
@@ -1127,16 +1015,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Weapon Team",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Infantry", "Weapon Team", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Doomwheel",
+      "name": "DOOMWHEEL",
       "move": "2D6+7",
       "health": "8",
       "save": "4+",
@@ -1169,29 +1051,19 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Rolling Doom",
             "description": "A Doomwheel will mercilessly crush anything in its path.",
-            "effect": "This unit can move a distance up to its Move characteristic. This unit can pass through other models and the combat ranges of enemy units, but it cannot end that move in combat.  Then, pick up to 3 enemy units that this unit passed across during that move to be the targets. Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Designer's Note: This unit can use this ability even if it is in combat.",
-            "keywords": [
-              "Core",
-              "Move"
-            ]
+            "effect": "This unit can move a distance up to its Move characteristic. This unit can pass through other models and the combat ranges of enemy units, but it cannot end that move in combat. Then, pick up to 3 enemy units that this unit passed across during that move to be the targets. Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. Designer's Note: This unit can use this ability even if it is in combat.",
+            "keywords": ["Core", "Move"]
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["War Machine", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Warplock Jezzails",
+      "name": "WARPLOCK JEZZAILS",
       "move": "6",
       "health": "2",
       "save": "4+",
@@ -1224,9 +1096,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Shooting Phase"
-            ],
+            "phases": ["Shooting Phase"],
             "your_turn_only": true,
             "name": "Warpstone Snipers",
             "description": "Having set up the Warplock Jezzail in position, the gunner can wait for the perfect moment to fire their shot.",
@@ -1234,15 +1104,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Infantry", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Warpfire Thrower",
+      "name": "WARPFIRE THROWER",
       "move": "6",
       "health": "3",
       "save": "6+",
@@ -1282,16 +1147,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Weapon Team",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Infantry", "Weapon Team", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Ratling Gun",
+      "name": "RATLING GUN",
       "move": "6",
       "health": "3",
       "save": "6+",
@@ -1331,16 +1190,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Weapon Team",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["Infantry", "Weapon Team", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Doom-Flayer",
+      "name": "DOOM-FLAYER",
       "move": "D6+8",
       "health": "4",
       "save": "4+",
@@ -1361,9 +1214,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "name": "Whirling Doom",
             "description": "Doom-Flayers crash into the foe with hellish results, leaving a trail of gore in their wake.",
             "declare": "If this unit charged this phase, pick an enemy unit within 1\" of it to be the target.",
@@ -1371,15 +1222,10 @@
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["War Machine", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Plagueclaw",
+      "name": "PLAGUECLAW",
       "move": "3",
       "health": "8",
       "save": "4+",
@@ -1419,15 +1265,10 @@
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Chaos",
-        "Skaven",
-        "Pestilens"
-      ]
+      "keywords": ["War Machine", "Chaos", "Skaven", "Pestilens"]
     },
     {
-      "name": "Plague Priest, On Plague Furnace",
+      "name": "PLAGUE PRIEST ON PLAGUE FURNACE",
       "move": "6",
       "health": "15",
       "save": "4+",
@@ -1504,7 +1345,7 @@
       ]
     },
     {
-      "name": "Plague Monks",
+      "name": "PLAGUE MONKS",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1543,7 +1384,7 @@
       ]
     },
     {
-      "name": "Clawlord",
+      "name": "CLAWLORD",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1571,23 +1412,17 @@
           },
           {
             "activation": "Reaction",
-            "reaction_condition": " You declared a Fight ability   for this unit",
+            "reaction_condition": " You declared a Fight ability  for this unit",
             "name": "GNASH-GNAW ON THEIR BONES!:",
             "description": "At a Clawlord's command, their minions hurl themselves at the foe.",
             "effect": "Pick a friendly non-Hero Verminus Infantry unit that has not used a Fight ability this turn and is within this unit's combat range to be the target. The target can be picked to use a Fight ability immediately after the Fight ability used by this unit has been resolved."
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Verminus"
-      ]
+      "keywords": ["Hero", "Infantry", "Chaos", "Skaven", "Verminus"]
     },
     {
-      "name": "Clanrats",
+      "name": "CLANRATS",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1608,9 +1443,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "Seething Swar M",
             "description": "Clanrats overwhelm their enemies with their seemingly endless numbers - biting, stabbing and trampling their own fallen beneath their bloody claws.",
             "effect": "You can return D3 slain models to this unit."
@@ -1628,7 +1461,7 @@
       ]
     },
     {
-      "name": "Stormvermin",
+      "name": "STORMVERMIN",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -1667,7 +1500,7 @@
       ]
     },
     {
-      "name": "Rat Ogors",
+      "name": "RAT OGORS",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -1700,24 +1533,17 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Combat Phase"
-            ],
+            "phases": ["Combat Phase"],
             "name": "Unleashed Warp-Fury",
             "description": "The warpstone hammered into the flesh of these creatures crackles with volatile energies, driving them into a frenzy.",
             "effect": "Inflict D3 mortal damage on this unit. Then, add 1 to the Attacks characteristic of this unit's melee weapons for the rest of the turn."
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Moulder"
-      ]
+      "keywords": ["Infantry", "Chaos", "Skaven", "Moulder"]
     },
     {
-      "name": "Master Moulder",
+      "name": "MASTER MOULDER",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -1738,18 +1564,14 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "LORD OF FLESH-GRAFTING:",
             "description": "These burly commanders are the breeders, mutators and healers of the Clans Moulder.",
             "declare": "Pick another friendly Moulder unit wholly within 13\" of this unit to be the target.",
             "effect": "Heal (3) the target."
           },
           {
-            "phases": [
-              "Charge Phase"
-            ],
+            "phases": ["Charge Phase"],
             "your_turn_only": true,
             "name": "Tyrannical Packmaster",
             "description": "Master Moulders use pain and terror to drive their fighting beasts into a battle frenzy.",
@@ -1758,16 +1580,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Moulder"
-      ]
+      "keywords": ["Hero", "Infantry", "Chaos", "Skaven", "Moulder"]
     },
     {
-      "name": "Hell Pit Abomination",
+      "name": "HELL PIT ABOMINATION",
       "move": "D6+5",
       "health": "14",
       "save": "5+",
@@ -1795,18 +1611,15 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Combat Phase"],
             "name": "Avalanche Of Flesh",
             "description": "A Hell Pit Abomination can rear up to its fullest height before crashing back to the ground, crushing foes beneath its sickening bulk.",
             "declare": "Pick an enemy Infantry unit in combat with this unit to be the target.",
             "effect": "Roll a dice. On a 3+, roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
-            "keywords": [
-              "Rampage"
-            ]
+            "keywords": ["Rampage"]
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "REGENERATING MONSTROSITY:",
             "description": "Hell Pit Abominations are notoriously difficult to slay and can even regrow severed limbs.",
             "effect": "Heal (D6) this unit."
@@ -1815,19 +1628,14 @@
             "activation": "Passive",
             "name": "Too Horrible To Die",
             "description": "As it twitches in its shuddering death throes, there is a chance that either the Abomination's unholy metabolism will restart one of its many foul hearts or its carcass will disgorge the revolting tide of parasitic rats that had been gnawing upon its innards.",
-            "effect": "The first time this unit would be destroyed, before removing it from the battlefield, roll a dice and apply the corresponding effect: 1  Dead: This unit is destroyed. 2-4  The Rats Emerge: Roll a D3 for each enemy unit in combat with this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. Then, this unit is destroyed. 5-6  It's Alive!: This unit is not destroyed  and any remaining damage points inflicted on it have no effect. Then, Heal (D6) this unit."
+            "effect": "The first time this unit would be destroyed, before removing it from the battlefield, roll a dice and apply the corresponding effect: 1 Dead: This unit is destroyed. 2-4 The Rats Emerge: Roll a D3 for each enemy unit in combat with this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll. Then, this unit is destroyed. 5-6 It's Alive!: This unit is not destroyed and any remaining damage points inflicted on it have no effect. Then, Heal (D6) this unit."
           }
         ]
       ],
-      "keywords": [
-        "Monster",
-        "Chaos",
-        "Skaven",
-        "Moulder"
-      ]
+      "keywords": ["Monster", "Chaos", "Skaven", "Moulder"]
     },
     {
-      "name": "Deathmaster",
+      "name": "DEATHMASTER",
       "move": "7",
       "health": "5",
       "save": "5+",
@@ -1873,16 +1681,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Infantry",
-        "Chaos",
-        "Skaven",
-        "Eshin"
-      ]
+      "keywords": ["Hero", "Infantry", "Chaos", "Skaven", "Eshin"]
     },
     {
-      "name": "Clawlord, On Gnaw-Beast",
+      "name": "CLAWLORD ON GNAW-BEAST",
       "move": "9",
       "health": "7",
       "save": "4+",
@@ -1930,9 +1732,7 @@
             "effect": "While this unit is damaged, add 3 to the Attacks characteristic of its Warpforged Halberd."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Cruel Commander",
             "description": "The Clawlord strikes down one of their underlings to show their cruel power and then, with shrieks and hissed threats, commands their swarming underlings to overrun the foe.",
@@ -1941,16 +1741,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Hero",
-        "Cavalry",
-        "Chaos",
-        "Skaven",
-        "Verminus"
-      ]
+      "keywords": ["Hero", "Cavalry", "Chaos", "Skaven", "Verminus"]
     },
     {
-      "name": "Grey Seer, On Screaming Bell",
+      "name": "GREY SEER ON SCREAMING BELL",
       "move": "6",
       "health": "15",
       "save": "4+",
@@ -1994,13 +1788,11 @@
             "effect": "While this unit has 10 or more damage points, the Attacks characteristic of its Crushing Bulk is 4."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Peal Of Doom",
             "description": "The ominous tolling of a Screaming Bell resounds above the clamour of battle, crying out 'Doom! Doom! Doom!'",
-            "effect": "Roll a dice and apply the corresponding effect: 1  Magical Backlash: Inflict D3 mortal damage on this unit. 2-4  Wall of Unholy Sound: Until the start of your next turn, subtract 1 from hit rolls for combat attacks made by enemy units while they are within 13\" of this unit. 5-6  Apocalyptic Doom: Roll a D3 for  each enemy unit within 13\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
+            "effect": "Roll a dice and apply the corresponding effect: 1 Magical Backlash: Inflict D3 mortal damage on this unit. 2-4 Wall of Unholy Sound: Until the start of your next turn, subtract 1 from hit rolls for combat attacks made by enemy units while they are within 13\" of this unit. 5-6 Apocalyptic Doom: Roll a D3 for each enemy unit within 13\" of this unit. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
           },
           {
             "activation": "Passive",
@@ -2009,17 +1801,13 @@
             "effect": "Friendly Skaven Infantry units have Ward (6+) while they are wholly within 6\" of this unit. 6"
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "your_turn_only": true,
             "name": "Cracks Call",
             "description": "Harnessing the thunderous peals of the Screaming Bell, the Grey Seer channels a sorcerous blast into the ground beneath the foe's feet. Gaping chasms yawn wide, sending screaming victims vanishing into the depths.",
             "declare": "Pick a visible enemy unit that does not have Fly and is within 13\" of this unit to be the target, then make a casting roll of 2D6.",
             "effect": "If the casting roll exceeds the target's Move characteristic, inflict an amount of mortal damage on the target equal to the difference between the casting roll and its Move characteristic.",
-            "keywords": [
-              "Spell"
-            ],
+            "keywords": ["Spell"],
             "casting_value": 6
           }
         ]
@@ -2035,7 +1823,7 @@
       ]
     },
     {
-      "name": "Ratling Warpblaster",
+      "name": "RATLING WARPBLASTER",
       "move": "6",
       "health": "7",
       "save": "4+",
@@ -2066,21 +1854,18 @@
           {
             "activation": "Once Per Turn",
             "once_per_army": true,
+            "phases": ["Shooting Phase"],
+            "your_turn_only": true,
             "name": "Bullets!",
             "description": "Under the dubious supervision of the Warlocks of Clans Skryre, the gunner cranks up the Ratling Warpblaster's velocity to the max.",
             "effect": "If this unit is within the combat range of a friendly Skryre Hero, this unit's Hail of Warpstone Bullets has an Attacks characteristic of 6D6+3 instead of 3D6+3 for the rest of the turn. However, for each unmodified hit roll of 1 for an attack made with this unit's Hail of Warpstone Bullets, inflict 1 mortal damage on this unit after the Shoot ability has been resolved."
           }
         ]
       ],
-      "keywords": [
-        "War Machine",
-        "Chaos",
-        "Skaven",
-        "Skryre"
-      ]
+      "keywords": ["War Machine", "Chaos", "Skaven", "Skryre"]
     },
     {
-      "name": "Night Runners",
+      "name": "NIGHT RUNNERS",
       "move": "7",
       "health": "1",
       "save": "6+",
@@ -2113,9 +1898,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "Deployment Phase"
-            ],
+            "phases": ["Deployment Phase"],
             "name": "Slinking Advance",
             "description": "Night Runners scurry ahead of the main body of a Skaven army to harass and slow down the foe.",
             "effect": "This unit can use the 'Normal Move' ability as if it were your movement phase."
@@ -2128,16 +1911,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Infantry",
-        "Champion",
-        "Chaos",
-        "Skaven",
-        "Eshin"
-      ]
+      "keywords": ["Infantry", "Champion", "Chaos", "Skaven", "Eshin"]
     },
     {
-      "name": "Bell Of Doom",
+      "name": "BELL OF DOOM",
       "move": "3D6",
       "health": "7",
       "save": "6+",
@@ -2175,7 +1952,7 @@
       ]
     },
     {
-      "name": "Gnawhole",
+      "name": "GNAWHOLE",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -2187,27 +1964,23 @@
             "activation": "Passive",
             "name": "Volatile Ground",
             "description": "Crackling warp lightning skitters around the ruptured rocks that ring this tear in reality.",
-            "effect": "Models can pass through this terrain feature but cannot be set up on or end moves on any part of this terrain feature.  Each time an enemy unit ends a move that passed through or across this terrain feature, roll a D3. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
+            "effect": "Models can pass through this terrain feature but cannot be set up on or end moves on any part of this terrain feature. Each time an enemy unit ends a move that passed through or across this terrain feature, roll a D3. On a 2+, inflict an amount of mortal damage on that unit equal to the roll."
           },
           {
             "activation": "Once Per Turn",
             "once_per_army": true
           },
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "your_turn_only": true,
             "name": "The Endless Ver Mintide",
-            "description": "Swarms  Swarms of vermin scurry forth from the gnawhole, overwhelming the enemy lines.",
+            "description": "Swarms Swarms of vermin scurry forth from the gnawhole, overwhelming the enemy lines.",
             "declare": "Pick a friendly non-Hero Skaven Infantry unit that has been destroyed to be the target.",
             "effect": "Set up a replacement unit with half the number of models from the target unit (rounding up) wholly within 6\" of a friendly Gnawhole and more than 3\" from all enemy units.",
             "command_point_cost": 1
           },
           {
-            "phases": [
-              "Movement Phase"
-            ],
+            "phases": ["Movement Phase"],
             "your_turn_only": true,
             "name": "Tunnels Through Reality",
             "description": "The Skaven can move through gnawholes to invade any corner of the Mortal Realms.",
@@ -2216,14 +1989,10 @@
           }
         ]
       ],
-      "keywords": [
-        "Faction Terrain",
-        "Chaos",
-        "Skaven"
-      ]
+      "keywords": ["Faction Terrain", "Chaos", "Skaven"]
     },
     {
-      "name": "Vermintide",
+      "name": "VERMINTIDE",
       "move": "7",
       "health": "13",
       "save": "6+",
@@ -2244,9 +2013,7 @@
       "abilities": [
         [
           {
-            "phases": [
-              "End of Turn"
-            ],
+            "phases": ["End of Turn"],
             "name": "More-More Rats",
             "description": "An endless tide of unholy vermin pours through the cracks in reality, their eyes aglow and their fangs unnaturally sharp.",
             "effect": "Heal (D6) this Manifestation."
@@ -2262,7 +2029,7 @@
       ]
     },
     {
-      "name": "Warp Lightning Vortex",
+      "name": "WARP LIGHTNING VORTEX",
       "move": "-",
       "health": "7",
       "save": "6+",
@@ -2276,9 +2043,7 @@
             "effect": "When a number of damage points equal to this Manifestation's Health characteristic are allocated to it, this Manifestation is destroyed and all its parts are removed from play."
           },
           {
-            "phases": [
-              "Hero Phase"
-            ],
+            "phases": ["Hero Phase"],
             "name": "WARP LIGHTNING BOLTS:",
             "description": "Coruscating bolts of warp lightning leap outwards from the Warp Lightning Vortex, obliterating those nearby.",
             "declare": "If this Manifestation was not set up this turn, pick each enemy unit within 6\" of this Manifestation to be the targets.",
