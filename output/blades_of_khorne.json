@@ -224,8 +224,7 @@
         "effect": "Set up a Bleeding Icon wholly within 12\" of the chanter and visible to them.",
         "keywords": [
           "Prayer",
-          "Summon",
-          "4"
+          "Summon"
         ],
         "chanting_value": 4,
         "summons": "Bleeding Icon"
@@ -240,8 +239,7 @@
         "effect": "Set up a Wrath-axe wholly within 12\" of the chanter, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Prayer",
-          "Summon",
-          "4"
+          "Summon"
         ],
         "chanting_value": 4,
         "summons": "Wrath-Axe"
@@ -275,8 +273,7 @@
         "effect": "Add 1 to the Rend characteristic of the target's melee weapons for the rest of the turn. In addition, if the chanting roll was 10+, add 1 to wound rolls for the target's attacks for the rest of the turn.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -288,9 +285,7 @@
         "declare": "Pick a friendly Blades of Khorne Priest to chant this prayer, pick a visible enemy Wizard within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Subtract 1 from the target's power level, to a minimum of 0, until the end of your next turn. In addition, if the chanting roll was 8+, inflict 3 mortal damage on the target.",
         "keywords": [
-          "Prayer",
-          "5",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -311,7 +306,7 @@
   },
   "warscrolls": [
     {
-      "name": "SKARBRAND",
+      "name": "Skarbrand",
       "move": "8",
       "health": "16",
       "save": "4+",
@@ -396,7 +391,7 @@
       ]
     },
     {
-      "name": "WRATH OF KHORNE BLOODTHIRSTER",
+      "name": "Wrath of Khorne Bloodthirster",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -477,7 +472,7 @@
       ]
     },
     {
-      "name": "BLOODTHIRSTER OF INSENSATE RAGE",
+      "name": "Bloodthirster of Insensate Rage",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -551,7 +546,7 @@
       ]
     },
     {
-      "name": "BLOODTHIRSTER OF UNFETTERED FURY",
+      "name": "Bloodthirster of Unfettered Fury",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -631,7 +626,7 @@
       ]
     },
     {
-      "name": "KARANAK",
+      "name": "Karanak",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -697,7 +692,7 @@
       ]
     },
     {
-      "name": "SKULLTAKER",
+      "name": "Skulltaker",
       "move": "5",
       "health": "7",
       "save": "4+",
@@ -752,7 +747,7 @@
       ]
     },
     {
-      "name": "FLESH HOUNDS",
+      "name": "Flesh Hounds",
       "move": "8",
       "health": "2",
       "save": "5+",
@@ -811,7 +806,7 @@
       ]
     },
     {
-      "name": "BLOODMASTER HERALD OF KHORNE",
+      "name": "Bloodmaster Herald of Khorne",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -847,7 +842,7 @@
       ]
     },
     {
-      "name": "SKULLMASTER HERALD OF KHORNE",
+      "name": "Skullmaster Herald of Khorne",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -905,7 +900,7 @@
       ]
     },
     {
-      "name": "BLOODLETTERS",
+      "name": "Bloodletters",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -945,7 +940,7 @@
       ]
     },
     {
-      "name": "BLOODCRUSHERS",
+      "name": "Bloodcrushers",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -995,7 +990,7 @@
       ]
     },
     {
-      "name": "SKULL CANNON",
+      "name": "Skull Cannon",
       "move": "8",
       "health": "8",
       "save": "4+",
@@ -1075,7 +1070,7 @@
       ]
     },
     {
-      "name": "HERALD OF KHORNE ON BLOOD THRONE",
+      "name": "Herald of Khorne on Blood Throne",
       "move": "8",
       "health": "10",
       "save": "4+",
@@ -1116,7 +1111,7 @@
       ]
     },
     {
-      "name": "CLAWS OF KARANAK",
+      "name": "Claws of Karanak",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1168,7 +1163,7 @@
       ]
     },
     {
-      "name": "REALMGORE RITUALIST",
+      "name": "Realmgore Ritualist",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -1209,7 +1204,7 @@
       ]
     },
     {
-      "name": "MIGHTY LORD OF KHORNE",
+      "name": "Mighty Lord of Khorne",
       "move": "5",
       "health": "7",
       "save": "3+",
@@ -1272,7 +1267,7 @@
       ]
     },
     {
-      "name": "LORD OF KHORNE ON JUGGERNAUT",
+      "name": "Lord of Khorne on Juggernaut",
       "move": "8",
       "health": "8",
       "save": "2+",
@@ -1334,7 +1329,7 @@
       ]
     },
     {
-      "name": "BLOODSECRATOR",
+      "name": "Bloodsecrator",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1388,7 +1383,7 @@
       ]
     },
     {
-      "name": "SKARR BLOODWRATH",
+      "name": "Skarr Bloodwrath",
       "move": "5",
       "health": "7",
       "save": "4+",
@@ -1445,7 +1440,7 @@
       ]
     },
     {
-      "name": "SLAUGHTERPRIEST",
+      "name": "Slaughterpriest",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -1501,7 +1496,7 @@
       ]
     },
     {
-      "name": "SKULLGRINDER",
+      "name": "Skullgrinder",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1556,7 +1551,7 @@
       ]
     },
     {
-      "name": "ASPIRING DEATHBRINGER",
+      "name": "Aspiring Deathbringer",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1591,7 +1586,7 @@
       ]
     },
     {
-      "name": "EXALTED DEATHBRINGER",
+      "name": "Exalted Deathbringer",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -1645,7 +1640,7 @@
       ]
     },
     {
-      "name": "BLOODREAVERS",
+      "name": "Bloodreavers",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1691,7 +1686,7 @@
       ]
     },
     {
-      "name": "MIGHTY SKULLCRUSHERS",
+      "name": "Mighty Skullcrushers",
       "move": "8",
       "health": "5",
       "save": "2+",
@@ -1740,7 +1735,7 @@
       ]
     },
     {
-      "name": "SKULLREAPERS",
+      "name": "Skullreapers",
       "move": "5",
       "health": "3",
       "save": "4+",
@@ -1785,7 +1780,7 @@
       ]
     },
     {
-      "name": "WRATHMONGERS",
+      "name": "Wrathmongers",
       "move": "5",
       "health": "3",
       "save": "5+",
@@ -1844,7 +1839,7 @@
       ]
     },
     {
-      "name": "BLOOD WARRIORS",
+      "name": "Blood Warriors",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -1898,7 +1893,7 @@
       ]
     },
     {
-      "name": "BLOODSTOKER",
+      "name": "Bloodstoker",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1938,7 +1933,7 @@
       ]
     },
     {
-      "name": "KHORGORATH",
+      "name": "Khorgorath",
       "move": "8",
       "health": "8",
       "save": "5+",
@@ -1999,7 +1994,7 @@
       ]
     },
     {
-      "name": "BLEEDING ICON",
+      "name": "Bleeding Icon",
       "move": "-",
       "health": "8",
       "save": "4+",
@@ -2016,7 +2011,7 @@
       ]
     },
     {
-      "name": "HEXGORGER SKULLS",
+      "name": "Hexgorger Skulls",
       "move": "8",
       "health": "6",
       "save": "5+",
@@ -2075,7 +2070,7 @@
       ]
     },
     {
-      "name": "WRATH-AXE",
+      "name": "Wrath-Axe",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -2114,7 +2109,7 @@
       ]
     },
     {
-      "name": "SKULL ALTAR",
+      "name": "Skull Altar",
       "move": "-",
       "health": "10",
       "save": "4+",

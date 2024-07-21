@@ -162,8 +162,7 @@
         "effect": "The target's melee weapons have Crit (2 Hits) for the rest of the turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -175,9 +174,7 @@
         "declare": "Pick a friendly Ironjawz Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Inflict D3 mortal damage on the target. If the target is a Wizard, inflict 3 mortal damage on the target instead.",
         "keywords": [
-          "Spell",
-          "6",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -208,8 +205,7 @@
         "effect": "Until the start of your next turn, add 1 to charge rolls for the target. In addition, if the chanting roll was 8+, add 1 to the number of dice rolled when making charge rolls for the target, to a maximum of 3.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -221,9 +217,7 @@
         "declare": "Pick a friendly Ironjawz Priest to chant this prayer, pick a visible friendly Ironjawz unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Heal (D6) the target. If the chanting roll was 8+, Heal (D3+3) the target instead.",
         "keywords": [
-          "Prayer",
-          "4",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -244,7 +238,7 @@
   },
   "warscrolls": [
     {
-      "name": "KRAGNOS THE END OF EMPIRES",
+      "name": "Kragnos the End of Empires",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -351,7 +345,7 @@
       ]
     },
     {
-      "name": "GORDRAKK THE FIST OF GORK",
+      "name": "Gordrakk the Fist of Gork",
       "move": "MOVE10",
       "health": "20",
       "save": "3+",
@@ -448,7 +442,7 @@
       ]
     },
     {
-      "name": "MEGABOSS ON MAW-KRUSHA",
+      "name": "Megaboss on Maw-Krusha",
       "move": "MOVE10",
       "health": "18",
       "save": "3+",
@@ -550,7 +544,7 @@
       ]
     },
     {
-      "name": "MEGABOSS",
+      "name": "Megaboss",
       "move": "MOVE4",
       "health": "8",
       "save": "3+",
@@ -596,7 +590,7 @@
       ]
     },
     {
-      "name": "WARCHANTER",
+      "name": "Warchanter",
       "move": "MOVE4",
       "health": "6",
       "save": "4+",
@@ -634,7 +628,7 @@
       ]
     },
     {
-      "name": "WEIRDNOB SHAMAN",
+      "name": "Weirdnob Shaman",
       "move": "MOVE4",
       "health": "6",
       "save": "6+",
@@ -691,7 +685,7 @@
       ]
     },
     {
-      "name": "BRUTES",
+      "name": "Brutes",
       "move": "4",
       "health": "3",
       "save": "3+",
@@ -745,7 +739,7 @@
       ]
     },
     {
-      "name": "ARDBOYZ",
+      "name": "Ardboyz",
       "move": "MOVE4",
       "health": "2",
       "save": "3+",
@@ -784,7 +778,7 @@
       ]
     },
     {
-      "name": "GORE-GRUNTAS",
+      "name": "Gore-Gruntas",
       "move": "MOVE9",
       "health": "5",
       "save": "3+",
@@ -831,7 +825,7 @@
       ]
     },
     {
-      "name": "ZOGGROK ANVILSMASHA",
+      "name": "Zoggrok Anvilsmasha",
       "move": "4",
       "health": "7",
       "save": "3+",
@@ -918,7 +912,7 @@
       ]
     },
     {
-      "name": "ARDBOY BIG BOSS",
+      "name": "Ardboy Big Boss",
       "move": "MOVE4",
       "health": "6",
       "save": "3+",
@@ -977,7 +971,7 @@
       ]
     },
     {
-      "name": "WEIRDBRUTE WREKKAZ",
+      "name": "Weirdbrute Wrekkaz",
       "move": "MOVE4",
       "health": "3",
       "save": "5+",
@@ -1022,7 +1016,7 @@
       ]
     },
     {
-      "name": "TUSKBOSS ON MAW-GRUNTA",
+      "name": "Tuskboss on Maw-Grunta",
       "move": "MOVE10",
       "health": "14",
       "save": "3+",
@@ -1121,7 +1115,7 @@
       ]
     },
     {
-      "name": "BRUTE RAGERZ",
+      "name": "Brute Ragerz",
       "move": "MOVE4",
       "health": "3",
       "save": "5+",
@@ -1180,7 +1174,7 @@
       ]
     },
     {
-      "name": "MAW-GRUNTA WITH HAKKIN' KREW",
+      "name": "Maw-Grunta with Hakkin' Krew",
       "move": "MOVE10",
       "health": "12",
       "save": "3+",
@@ -1265,7 +1259,7 @@
       ]
     },
     {
-      "name": "MAW-GRUNTA GOUGERS",
+      "name": "Maw-Grunta Gougers",
       "move": "MOVE10",
       "health": "12",
       "save": "4+",

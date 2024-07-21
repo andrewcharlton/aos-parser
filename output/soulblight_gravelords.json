@@ -183,8 +183,7 @@
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 6, inflict 1 mortal damage on that unit. If any enemy models were slain by this spell, Heal (D3) the caster.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -196,9 +195,7 @@
         "declare": "Pick a friendly Soulblight Gravelords Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Strike-last until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "7",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -219,7 +216,7 @@
   },
   "warscrolls": [
     {
-      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
+      "name": "Nagash Supreme Lord of the Undead",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -325,7 +322,7 @@
       ]
     },
     {
-      "name": "MANNFRED VON CARSTEIN MORTARCH OF NIGHT",
+      "name": "Mannfred Von Carstein Mortarch of Night",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -422,7 +419,7 @@
       ]
     },
     {
-      "name": "PRINCE VHORDRAI",
+      "name": "Prince Vhordrai",
       "move": "12",
       "health": "16",
       "save": "3+",
@@ -534,7 +531,7 @@
       ]
     },
     {
-      "name": "NEFERATA MORTARCH OF BLOOD",
+      "name": "Neferata Mortarch of Blood",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -650,7 +647,7 @@
       ]
     },
     {
-      "name": "LAUKA VAI MOTHER OF NIGHTMARES",
+      "name": "Lauka Vai Mother of Nightmares",
       "move": "10",
       "health": "11",
       "save": "4+",
@@ -703,8 +700,7 @@
           "declare": "If this unit charged this phase, pick an enemy unit in combat with it to be the target.",
           "effect": "Roll a dice. If the roll is equal to or less than the target's Health characteristic, inflict an amount of mortal damage on the target equal to the roll.",
           "keywords": [
-            "Rampage",
-            "6"
+            "Rampage"
           ]
         },
         {
@@ -734,7 +730,7 @@
       ]
     },
     {
-      "name": "VENGORIAN LORD",
+      "name": "Vengorian Lord",
       "move": "10",
       "health": "11",
       "save": "4+",
@@ -812,7 +808,7 @@
       ]
     },
     {
-      "name": "RADUKAR THE WOLF",
+      "name": "Radukar the Wolf",
       "move": "6",
       "health": "7",
       "save": "4+",
@@ -872,7 +868,7 @@
       ]
     },
     {
-      "name": "RADUKAR THE BEAST",
+      "name": "Radukar the Beast",
       "move": "8",
       "health": "12",
       "save": "4+",
@@ -924,8 +920,7 @@
           "description": "In his hulking bestial form, Radukar is a frenzied abomination concerned only with tearing apart everything in his path.",
           "effect": "If this unit is not in combat, it can move D6\". It can move into combat.",
           "keywords": [
-            "Rampage",
-            "6"
+            "Rampage"
           ]
         },
         {
@@ -954,7 +949,7 @@
       ]
     },
     {
-      "name": "IVYA VOLGA THE OUTCAST",
+      "name": "Ivya Volga the Outcast",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1041,7 +1036,7 @@
       ]
     },
     {
-      "name": "BELLADAMMA VOLGA FIRST OF THE V YRKOS",
+      "name": "Belladamma Volga First of the V Yrkos",
       "move": "8",
       "health": "9",
       "save": "4+",
@@ -1125,7 +1120,7 @@
       ]
     },
     {
-      "name": "GORSLAV THE GRAVEKEEPER",
+      "name": "Gorslav the Gravekeeper",
       "move": "5",
       "health": "6",
       "save": "6+",
@@ -1181,7 +1176,7 @@
       ]
     },
     {
-      "name": "TORGILLIUS THE CHAMBERLAIN",
+      "name": "Torgillius the Chamberlain",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -1252,7 +1247,7 @@
       ]
     },
     {
-      "name": "VYRKOS BLOOD-BORN",
+      "name": "Vyrkos Blood-Born",
       "move": "8",
       "health": "3",
       "save": "6+",
@@ -1304,7 +1299,7 @@
       ]
     },
     {
-      "name": "WATCH CAPTAIN HALGRIM",
+      "name": "Watch Captain Halgrim",
       "move": "4",
       "health": "5",
       "save": "4+",
@@ -1350,7 +1345,7 @@
       ]
     },
     {
-      "name": "VARGSKYR",
+      "name": "Vargskyr",
       "move": "8",
       "health": "8",
       "save": "5+",
@@ -1417,7 +1412,7 @@
       ]
     },
     {
-      "name": "KOSARGI NIGHTGUARD",
+      "name": "Kosargi Nightguard",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -1461,7 +1456,7 @@
       ]
     },
     {
-      "name": "LADY ANNIKA THE THIRSTING BLADE",
+      "name": "Lady Annika the Thirsting Blade",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1522,7 +1517,7 @@
       ]
     },
     {
-      "name": "KRITZA THE RAT PRINCE",
+      "name": "Kritza the Rat Prince",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1570,7 +1565,7 @@
       ]
     },
     {
-      "name": "VAMPIRE LORD ON ZOMBIE DRAGON",
+      "name": "Vampire Lord on Zombie Dragon",
       "move": "12",
       "health": "16",
       "save": "3+",
@@ -1674,7 +1669,7 @@
       ]
     },
     {
-      "name": "VAMPIRE LORD",
+      "name": "Vampire Lord",
       "move": "6",
       "health": "5",
       "save": "3+",
@@ -1717,7 +1712,7 @@
       ]
     },
     {
-      "name": "CADO EZECHIAR THE HOLLOW KING",
+      "name": "Cado Ezechiar the Hollow King",
       "move": "6",
       "health": "6",
       "save": "4+",
@@ -1770,7 +1765,7 @@
       ]
     },
     {
-      "name": "ASKURGAN TRUEBLADES",
+      "name": "Askurgan Trueblades",
       "move": "6",
       "health": "2",
       "save": "5+",
@@ -1833,7 +1828,7 @@
       ]
     },
     {
-      "name": "BLOOD KNIGHTS",
+      "name": "Blood Knights",
       "move": "12",
       "health": "3",
       "save": "3+",
@@ -1897,7 +1892,7 @@
       ]
     },
     {
-      "name": "VARGHEISTS",
+      "name": "Vargheists",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1940,7 +1935,7 @@
       ]
     },
     {
-      "name": "BLOODSEEKER PALANQUIN",
+      "name": "Bloodseeker Palanquin",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -2006,7 +2001,7 @@
       ]
     },
     {
-      "name": "MORTIS ENGINE",
+      "name": "Mortis Engine",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -2086,7 +2081,7 @@
       ]
     },
     {
-      "name": "COVEN THRONE",
+      "name": "Coven Throne",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -2166,7 +2161,7 @@
       ]
     },
     {
-      "name": "ZOMBIE DRAGON",
+      "name": "Zombie Dragon",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -2264,7 +2259,7 @@
       ]
     },
     {
-      "name": "TERRORGHEIST",
+      "name": "Terrorgheist",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -2356,7 +2351,7 @@
       ]
     },
     {
-      "name": "WIGHT KING",
+      "name": "Wight King",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -2391,7 +2386,7 @@
       ]
     },
     {
-      "name": "WIGHT KING ON SKELETAL STEED",
+      "name": "Wight King on Skeletal Steed",
       "move": "10",
       "health": "7",
       "save": "3+",
@@ -2445,7 +2440,7 @@
       ]
     },
     {
-      "name": "BLACK KNIGHTS",
+      "name": "Black Knights",
       "move": "10",
       "health": "3",
       "save": "4+",
@@ -2501,7 +2496,7 @@
       ]
     },
     {
-      "name": "GRAVE GUARD",
+      "name": "Grave Guard",
       "move": "4",
       "health": "1",
       "save": "4+",
@@ -2548,7 +2543,7 @@
       ]
     },
     {
-      "name": "NECROMANCER",
+      "name": "Necromancer",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -2603,7 +2598,7 @@
       ]
     },
     {
-      "name": "CORPSE CART",
+      "name": "Corpse Cart",
       "move": "4",
       "health": "7",
       "save": "6+",
@@ -2656,7 +2651,7 @@
       ]
     },
     {
-      "name": "DIRE WOLVES",
+      "name": "Dire Wolves",
       "move": "10",
       "health": "2",
       "save": "5+",
@@ -2715,7 +2710,7 @@
       ]
     },
     {
-      "name": "DEADWALKER ZOMBIES",
+      "name": "Deadwalker Zombies",
       "move": "4",
       "health": "1",
       "save": "6+",
@@ -2759,7 +2754,7 @@
       ]
     },
     {
-      "name": "FELL BATS",
+      "name": "Fell Bats",
       "move": "12",
       "health": "3",
       "save": "6+",
@@ -2818,7 +2813,7 @@
       ]
     },
     {
-      "name": "DEATHRATTLE SKELETONS",
+      "name": "Deathrattle Skeletons",
       "move": "4",
       "health": "1",
       "save": "5+",
@@ -2857,7 +2852,7 @@
       ]
     },
     {
-      "name": "SEKHAR FANG OF NULAHMIA",
+      "name": "Sekhar Fang of Nulahmia",
       "move": "MOVE6",
       "health": "6",
       "save": "3+",

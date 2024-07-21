@@ -205,8 +205,7 @@
         "effect": "Roll a dice for each model in the target unit. For each 6, inflict 1 mortal damage on the target.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -218,9 +217,7 @@
         "declare": "Pick a friendly Kruleboyz Wizard to cast this spell, pick a visible enemy unit wholly within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from the Attacks characteristic of the target's weapons until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "5",
-          "6"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -241,7 +238,7 @@
   },
   "warscrolls": [
     {
-      "name": "KRAGNOS THE END OF EMPIRES",
+      "name": "Kragnos the End of Empires",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -348,7 +345,7 @@
       ]
     },
     {
-      "name": "GOBSPRAKK THE MOUTH OF MORK",
+      "name": "Gobsprakk the Mouth of Mork",
       "move": "12",
       "health": "14",
       "save": "5+",
@@ -463,7 +460,7 @@
       ]
     },
     {
-      "name": "KILLABOSS ON CORPSE-RIPPA VULCHA",
+      "name": "Killaboss on Corpse-Rippa Vulcha",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -539,7 +536,7 @@
       ]
     },
     {
-      "name": "KILLABOSS ON GREAT GNASHTOOF",
+      "name": "Killaboss on Great Gnashtoof",
       "move": "10",
       "health": "10",
       "save": "3+",
@@ -601,7 +598,7 @@
       ]
     },
     {
-      "name": "KILLABOSS WITH STAB-GROT",
+      "name": "Killaboss with Stab-Grot",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -654,7 +651,7 @@
       ]
     },
     {
-      "name": "MURKNOB WITH BELCHA-BANNA",
+      "name": "Murknob with Belcha-Banna",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -707,7 +704,7 @@
       ]
     },
     {
-      "name": "SWAMPCALLA SHAMAN WITH POT-GROT",
+      "name": "Swampcalla Shaman with Pot-Grot",
       "move": "5",
       "health": "6",
       "save": "6+",
@@ -762,7 +759,7 @@
       ]
     },
     {
-      "name": "GUTRIPPAZ",
+      "name": "Gutrippaz",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -801,7 +798,7 @@
       ]
     },
     {
-      "name": "KRULEBOYZ MONSTA-KILLAZ",
+      "name": "Kruleboyz Monsta-Killaz",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -862,7 +859,7 @@
       ]
     },
     {
-      "name": "SWAMPBOSS SKUMDREKK",
+      "name": "Swampboss Skumdrekk",
       "move": "8",
       "health": "15",
       "save": "4+",
@@ -955,7 +952,7 @@
       ]
     },
     {
-      "name": "SNATCHABOSS ON SLUDGERAKER BEAST",
+      "name": "Snatchaboss on Sludgeraker Beast",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1038,7 +1035,7 @@
       ]
     },
     {
-      "name": "MARSHCRAWLA SLOGGOTH",
+      "name": "Marshcrawla Sloggoth",
       "move": "6",
       "health": "10",
       "save": "4+",
@@ -1098,7 +1095,7 @@
       ]
     },
     {
-      "name": "BREAKA-BOSS ON MIREBRUTE TROGGOTH",
+      "name": "Breaka-Boss on Mirebrute Troggoth",
       "move": "5",
       "health": "12",
       "save": "4+",
@@ -1165,7 +1162,7 @@
       ]
     },
     {
-      "name": "HOBGROT SLITTAZ",
+      "name": "Hobgrot Slittaz",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1217,7 +1214,7 @@
       ]
     },
     {
-      "name": "MAN-SKEWER BOLTBOYZ",
+      "name": "Man-Skewer Boltboyz",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -1291,7 +1288,7 @@
       ]
     },
     {
-      "name": "BEAST-SKEWER KILLBOW",
+      "name": "Beast-Skewer Killbow",
       "move": "5",
       "health": "5",
       "save": "5+",

@@ -266,7 +266,10 @@ def parse_name(elements):
 
     objs.sort(key=lambda obj: (obj.y0 + obj.y1), reverse=True)
     objs = [obj.get_text().strip() for obj in objs]
-    return tidy_string(" ".join([o for o in objs if "WARSCROLL" not in o and "2024" not in o]))
+
+    name = tidy_string(" ".join([o for o in objs if "WARSCROLL" not in o and "2024" not in o])).title()
+    name = name.replace(" And ", " and ").replace(" Of ", " of ").replace(" On ", " on ").replace(" The ", " the ").replace(" With ", " with ")
+    return name
 
 
 def parse_characteristics(elements):
@@ -552,7 +555,7 @@ def parse_ability(text):
             ability["phases"] = ["Any Combat Phase"]
 
     if "keywords" in ability:
-        ability["keywords"] = [k for k in ability["keywords"] if k != ""]
+        ability["keywords"] = [k for k in ability["keywords"] if k != "" and not k.isnumeric()]
 
         if "Summon" in ability["keywords"]:
             ability["summons"] = ability["name"].split("Summon ")[1]

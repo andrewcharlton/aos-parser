@@ -226,7 +226,7 @@
   ],
   "warscrolls": [
     {
-      "name": "KRAGNOS THE END OF EMPIRES",
+      "name": "Kragnos the End of Empires",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -332,7 +332,7 @@
       ]
     },
     {
-      "name": "KING BRODD",
+      "name": "King Brodd",
       "move": "10",
       "health": "40",
       "save": "4+",
@@ -454,7 +454,7 @@
       ]
     },
     {
-      "name": "BEAST-SMASHER MEGA-GARGANT",
+      "name": "Beast-Smasher Mega-Gargant",
       "move": "10",
       "health": "35",
       "save": "4+",
@@ -574,7 +574,7 @@
       ]
     },
     {
-      "name": "GATEBREAKER MEGA-GARGANT",
+      "name": "Gatebreaker Mega-Gargant",
       "move": "10",
       "health": "35",
       "save": "4+",
@@ -701,7 +701,7 @@
       ]
     },
     {
-      "name": "KRAKEN-EATER MEGA-GARGANT",
+      "name": "Kraken-Eater Mega-Gargant",
       "move": "10",
       "health": "35",
       "save": "4+",
@@ -824,7 +824,7 @@
       ]
     },
     {
-      "name": "WARSTOMPER MEGA-GARGANT",
+      "name": "Warstomper Mega-Gargant",
       "move": "10",
       "health": "35",
       "save": "4+",
@@ -939,7 +939,7 @@
       ]
     },
     {
-      "name": "MANCRUSHER GARGANT",
+      "name": "Mancrusher Gargant",
       "move": "8",
       "health": "12",
       "save": "5+",
@@ -1022,7 +1022,7 @@
       ]
     },
     {
-      "name": "MANCRUSHER MOB",
+      "name": "Mancrusher Mob",
       "move": "8",
       "health": "12",
       "save": "5+",

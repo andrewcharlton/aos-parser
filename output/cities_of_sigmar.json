@@ -211,8 +211,7 @@
         "effect": "Inflict D3 mortal damage on the target. Then, roll a dice for each other enemy unit within the target's combat range. On a 4+, inflict D3 mortal damage on that unit.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -224,9 +223,7 @@
         "declare": "Pick a friendly Cities of Sigmar Wizard to cast this spell, pick a visible friendly Cities of Sigmar unit wholly within 12\" to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, add 1 to the number of dice rolled when making charge rolls for the target, to a maximum of 3.",
         "keywords": [
-          "Spell",
-          "7",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -257,8 +254,7 @@
         "effect": "Roll 6 dice. If the chanting roll was 8+, roll 9 dice instead. For each 5+, inflict 1 mortal damage on the target. If 3 or more damage points are allocated to the target as a result of those dice rolls, ignore positive modifiers to save rolls for the target until the start of your next turn.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -270,9 +266,7 @@
         "declare": "Pick a friendly Cities of Sigmar Priest to chant this prayer, pick a visible friendly Cities of Sigmar unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Add 1 to hit rolls for the target's shooting attacks for the rest of the turn. In addition, if the chanting roll was 10+, add 1 to wound rolls for the target's shooting attacks for the rest of the turn.",
         "keywords": [
-          "Prayer",
-          "4",
-          "5"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -293,7 +287,7 @@
   },
   "warscrolls": [
     {
-      "name": "TAHLIA VEDRA LIONESS OF THE PARCH",
+      "name": "Tahlia Vedra Lioness of the Parch",
       "move": "12",
       "health": "15",
       "save": "4+",
@@ -396,7 +390,7 @@
       ]
     },
     {
-      "name": "PONTIFEX ZENESTRA MATRIARCH OF THE GREAT WHEEL",
+      "name": "Pontifex Zenestra Matriarch of the Great Wheel",
       "move": "5",
       "health": "9",
       "save": "5+",
@@ -465,7 +459,7 @@
       ]
     },
     {
-      "name": "FLAGELLANTS",
+      "name": "Flagellants",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -509,7 +503,7 @@
       ]
     },
     {
-      "name": "FREEGUILD MARSHAL ON GRIFFON",
+      "name": "Freeguild Marshal on Griffon",
       "move": "12",
       "health": "15",
       "save": "4+",
@@ -576,7 +570,7 @@
       ]
     },
     {
-      "name": "FREEGUILD MARSHAL AND RELIC ENVOY",
+      "name": "Freeguild Marshal and Relic Envoy",
       "move": "5",
       "health": "5",
       "save": "3+",
@@ -659,7 +653,7 @@
       ]
     },
     {
-      "name": "FREEGUILD CAVALIER-MARSHAL",
+      "name": "Freeguild Cavalier-Marshal",
       "move": "10",
       "health": "7",
       "save": "3+",
@@ -704,7 +698,7 @@
       ]
     },
     {
-      "name": "FREEGUILD COMMAND CORPS",
+      "name": "Freeguild Command Corps",
       "move": "5",
       "health": "3",
       "save": "4+",
@@ -802,7 +796,7 @@
       ]
     },
     {
-      "name": "FUSIL-MAJOR ON OGOR WARHULK",
+      "name": "Fusil-Major on Ogor Warhulk",
       "move": "5",
       "health": "8",
       "save": "3+",
@@ -863,7 +857,7 @@
       ]
     },
     {
-      "name": "BATTLEMAGE",
+      "name": "Battlemage",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -901,7 +895,7 @@
       ]
     },
     {
-      "name": "BATTLEMAGE ON GRIFFON",
+      "name": "Battlemage on Griffon",
       "move": "12",
       "health": "15",
       "save": "4+",
@@ -979,7 +973,7 @@
       ]
     },
     {
-      "name": "BATTLEMAGE ON CELESTIAL HURRICANUM",
+      "name": "Battlemage on Celestial Hurricanum",
       "move": "8",
       "health": "12",
       "save": "4+",
@@ -1038,7 +1032,7 @@
       ]
     },
     {
-      "name": "BATTLEMAGE ON LUMINARK OF HYSH",
+      "name": "Battlemage on Luminark of Hysh",
       "move": "8",
       "health": "12",
       "save": "4+",
@@ -1119,7 +1113,7 @@
       ]
     },
     {
-      "name": "FREEGUILD STEELHELMS",
+      "name": "Freeguild Steelhelms",
       "move": "5",
       "health": "1",
       "save": "4+",
@@ -1160,7 +1154,7 @@
       ]
     },
     {
-      "name": "FREEGUILD FUSILIERS",
+      "name": "Freeguild Fusiliers",
       "move": "5",
       "health": "1",
       "save": "4+",
@@ -1253,7 +1247,7 @@
       ]
     },
     {
-      "name": "CELESTIAL HURRICANUM",
+      "name": "Celestial Hurricanum",
       "move": "8",
       "health": "10",
       "save": "4+",
@@ -1301,7 +1295,7 @@
       ]
     },
     {
-      "name": "LUMINARK OF HYSH",
+      "name": "Luminark of Hysh",
       "move": "8",
       "health": "10",
       "save": "4+",
@@ -1371,7 +1365,7 @@
       ]
     },
     {
-      "name": "FREEGUILD CAVALIERS",
+      "name": "Freeguild Cavaliers",
       "move": "10",
       "health": "3",
       "save": "3+",
@@ -1419,7 +1413,7 @@
       ]
     },
     {
-      "name": "IRONWELD GREAT CANNON",
+      "name": "Ironweld Great Cannon",
       "move": "3",
       "health": "8",
       "save": "4+",
@@ -1495,7 +1489,7 @@
       ]
     },
     {
-      "name": "WILDERCORPS HUNTERS",
+      "name": "Wildercorps Hunters",
       "move": "5",
       "health": "1",
       "save": "5+",
@@ -1581,7 +1575,7 @@
       ]
     },
     {
-      "name": "STEAM TANK COMMANDER",
+      "name": "Steam Tank Commander",
       "move": "8",
       "health": "12",
       "save": "2+",
@@ -1669,7 +1663,7 @@
       ]
     },
     {
-      "name": "STEAM TANK",
+      "name": "Steam Tank",
       "move": "8",
       "health": "12",
       "save": "2+",
@@ -1727,7 +1721,7 @@
       ]
     },
     {
-      "name": "GALEN VEN DENST",
+      "name": "Galen Ven Denst",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1799,7 +1793,7 @@
       ]
     },
     {
-      "name": "DORALIA VEN DENST",
+      "name": "Doralia Ven Denst",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1856,7 +1850,7 @@
       ]
     },
     {
-      "name": "WARDEN KING",
+      "name": "Warden King",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -1895,7 +1889,7 @@
       ]
     },
     {
-      "name": "RUNELORD",
+      "name": "Runelord",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -1953,7 +1947,7 @@
       ]
     },
     {
-      "name": "LONGBEARDS",
+      "name": "Longbeards",
       "move": "4",
       "health": "1",
       "save": "3+",
@@ -1999,7 +1993,7 @@
       ]
     },
     {
-      "name": "HAMMERERS",
+      "name": "Hammerers",
       "move": "4",
       "health": "1",
       "save": "3+",
@@ -2045,7 +2039,7 @@
       ]
     },
     {
-      "name": "IRONBREAKERS",
+      "name": "Ironbreakers",
       "move": "4",
       "health": "1",
       "save": "3+",
@@ -2103,7 +2097,7 @@
       ]
     },
     {
-      "name": "IRONDRAKES",
+      "name": "Irondrakes",
       "move": "4",
       "health": "1",
       "save": "3+",
@@ -2169,7 +2163,7 @@
       ]
     },
     {
-      "name": "COGSMITH",
+      "name": "Cogsmith",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -2220,7 +2214,7 @@
       ]
     },
     {
-      "name": "GYROCOPTER",
+      "name": "Gyrocopter",
       "move": "12",
       "health": "5",
       "save": "3+",
@@ -2271,7 +2265,7 @@
       ]
     },
     {
-      "name": "GYROBOMBER",
+      "name": "Gyrobomber",
       "move": "12",
       "health": "6",
       "save": "3+",
@@ -2321,7 +2315,7 @@
       ]
     },
     {
-      "name": "SORCERESS",
+      "name": "Sorceress",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -2371,7 +2365,7 @@
       ]
     },
     {
-      "name": "SORCERESS ON BLACK DRAGON",
+      "name": "Sorceress on Black Dragon",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -2455,7 +2449,7 @@
       ]
     },
     {
-      "name": "DREADSPEARS",
+      "name": "Dreadspears",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -2494,7 +2488,7 @@
       ]
     },
     {
-      "name": "BLACK GUARD",
+      "name": "Black Guard",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -2540,7 +2534,7 @@
       ]
     },
     {
-      "name": "WAR HYDRA",
+      "name": "War Hydra",
       "move": "8",
       "health": "12",
       "save": "5+",
@@ -2611,7 +2605,7 @@
       ]
     },
     {
-      "name": "BLEAKSWORDS",
+      "name": "Bleakswords",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -2657,7 +2651,7 @@
       ]
     },
     {
-      "name": "EXECUTIONERS",
+      "name": "Executioners",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -2703,7 +2697,7 @@
       ]
     },
     {
-      "name": "DARKSHARDS",
+      "name": "Darkshards",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -2754,7 +2748,7 @@
       ]
     },
     {
-      "name": "DRAKESPAWN CHARIOT",
+      "name": "Drakespawn Chariot",
       "move": "10",
       "health": "8",
       "save": "4+",
@@ -2800,7 +2794,7 @@
       ]
     },
     {
-      "name": "DREADLORD ON BLACK DRAGON",
+      "name": "Dreadlord on Black Dragon",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -2874,7 +2868,7 @@
       ]
     },
     {
-      "name": "DARK RIDERS",
+      "name": "Dark Riders",
       "move": "12",
       "health": "3",
       "save": "4+",
@@ -2935,7 +2929,7 @@
       ]
     },
     {
-      "name": "DRAKESPAWN KNIGHTS",
+      "name": "Drakespawn Knights",
       "move": "10",
       "health": "3",
       "save": "3+",
@@ -2983,7 +2977,7 @@
       ]
     },
     {
-      "name": "ASSASSIN",
+      "name": "Assassin",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -3042,7 +3036,7 @@
       ]
     },
     {
-      "name": "BLACK ARK FLEETMASTER",
+      "name": "Black Ark Fleetmaster",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -3079,7 +3073,7 @@
       ]
     },
     {
-      "name": "BLACK ARK CORSAIRS",
+      "name": "Black Ark Corsairs",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -3137,7 +3131,7 @@
       ]
     },
     {
-      "name": "SCOURGERUNNER CHARIOT",
+      "name": "Scourgerunner Chariot",
       "move": "10",
       "health": "8",
       "save": "5+",
@@ -3201,7 +3195,7 @@
       ]
     },
     {
-      "name": "KHARIBDYSS",
+      "name": "Kharibdyss",
       "move": "8",
       "health": "12",
       "save": "5+",
@@ -3251,7 +3245,7 @@
       ]
     },
     {
-      "name": "ALCHEMITE WARFORGER",
+      "name": "Alchemite Warforger",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -3289,7 +3283,7 @@
       ]
     },
     {
-      "name": "CALLIS AND TOLL",
+      "name": "Callis and Toll",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -3362,7 +3356,7 @@
       ]
     },
     {
-      "name": "TOLL'S COMPANIONS",
+      "name": "Toll'S Companions",
       "move": "5",
       "health": "3",
       "save": "4+",

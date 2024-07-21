@@ -193,8 +193,7 @@
         "effect": "Heal (D3) the target and add 3 to the target's control score for the rest of the turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -206,9 +205,7 @@
         "declare": "Pick a friendly Ogor Mawtribes Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from hit rolls for the target's attacks until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "5",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -239,8 +236,7 @@
         "effect": "Place a blizzard token next to the target. Terrain features that have a blizzard token gain the 'Obscuring' terrain ability. In addition, if the chanting roll was 10+, until the start of your next turn, friendly Beastclaw Raiders units have Ward (5+) while they are within 3\" of any terrain features that have blizzard tokens.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "5"
+          "Unlimited"
         ]
       },
       {
@@ -252,9 +248,7 @@
         "declare": "Pick a friendly Ogor Mawtribes Priest to chant this prayer, pick a point on the battlefield within 12\" of them, then pick each visible enemy unit within 3\" of that point to be the targets. Then, make a chanting roll of D6.",
         "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll. If the chanting roll was 10+, double the amount of mortal damage inflicted.",
         "keywords": [
-          "Prayer",
-          "4",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 5
       },
@@ -275,7 +269,7 @@
   },
   "warscrolls": [
     {
-      "name": "KRAGNOS THE END OF EMPIRES",
+      "name": "Kragnos the End of Empires",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -381,7 +375,7 @@
       ]
     },
     {
-      "name": "TYRANT",
+      "name": "Tyrant",
       "move": "6",
       "health": "8",
       "save": "4+",
@@ -456,7 +450,7 @@
       ]
     },
     {
-      "name": "SLAUGHTERMASTER",
+      "name": "Slaughtermaster",
       "move": "6",
       "health": "8",
       "save": "5+",
@@ -510,7 +504,7 @@
       ]
     },
     {
-      "name": "BUTCHER",
+      "name": "Butcher",
       "move": "6",
       "health": "7",
       "save": "5+",
@@ -556,7 +550,7 @@
       ]
     },
     {
-      "name": "BLOODPELT HUNTER",
+      "name": "Bloodpelt Hunter",
       "move": "6",
       "health": "8",
       "save": "5+",
@@ -632,7 +626,7 @@
       ]
     },
     {
-      "name": "OGOR GLUTTONS",
+      "name": "Ogor Gluttons",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -679,7 +673,7 @@
       ]
     },
     {
-      "name": "IRONGUTS",
+      "name": "Ironguts",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -735,7 +729,7 @@
       ]
     },
     {
-      "name": "MANEATERS",
+      "name": "Maneaters",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -783,7 +777,7 @@
       ]
     },
     {
-      "name": "GORGER MAWPACK",
+      "name": "Gorger Mawpack",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -834,7 +828,7 @@
       ]
     },
     {
-      "name": "LEADBELCHERS",
+      "name": "Leadbelchers",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -899,7 +893,7 @@
       ]
     },
     {
-      "name": "IRONBLASTER",
+      "name": "Ironblaster",
       "move": "9",
       "health": "9",
       "save": "4+",
@@ -975,7 +969,7 @@
       ]
     },
     {
-      "name": "GNOBLAR SCRAPLAUNCHER",
+      "name": "Gnoblar Scraplauncher",
       "move": "9",
       "health": "9",
       "save": "4+",
@@ -1041,7 +1035,7 @@
       ]
     },
     {
-      "name": "GNOBLARS",
+      "name": "Gnoblars",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1090,7 +1084,7 @@
       ]
     },
     {
-      "name": "FROSTLORD ON STONEHORN",
+      "name": "Frostlord on Stonehorn",
       "move": "10",
       "health": "15",
       "save": "4+",
@@ -1195,7 +1189,7 @@
       ]
     },
     {
-      "name": "FROSTLORD ON THUNDERTUSK",
+      "name": "Frostlord on Thundertusk",
       "move": "10",
       "health": "15",
       "save": "4+",
@@ -1283,7 +1277,7 @@
       ]
     },
     {
-      "name": "HUSKARD ON STONEHORN",
+      "name": "Huskard on Stonehorn",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1406,7 +1400,7 @@
       ]
     },
     {
-      "name": "HUSKARD ON THUNDERTUSK",
+      "name": "Huskard on Thundertusk",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1518,7 +1512,7 @@
       ]
     },
     {
-      "name": "STONEHORN BEASTRIDERS",
+      "name": "Stonehorn Beastriders",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1644,7 +1638,7 @@
       ]
     },
     {
-      "name": "THUNDERTUSK BEASTRIDERS",
+      "name": "Thundertusk Beastriders",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1758,7 +1752,7 @@
       ]
     },
     {
-      "name": "ICEBROW HUNTER",
+      "name": "Icebrow Hunter",
       "move": "6",
       "health": "7",
       "save": "5+",
@@ -1831,7 +1825,7 @@
       ]
     },
     {
-      "name": "FROST SABRES",
+      "name": "Frost Sabres",
       "move": "9",
       "health": "3",
       "save": "6+",
@@ -1888,7 +1882,7 @@
       ]
     },
     {
-      "name": "MOURNFANG PACK",
+      "name": "Mournfang Pack",
       "move": "9",
       "health": "6",
       "save": "4+",
@@ -1971,7 +1965,7 @@
       ]
     },
     {
-      "name": "FIREBELLY",
+      "name": "Firebelly",
       "move": "6",
       "health": "7",
       "save": "5+",
@@ -2028,7 +2022,7 @@
       ]
     },
     {
-      "name": "ICEFALL YHETEES",
+      "name": "Icefall Yhetees",
       "move": "6",
       "health": "4",
       "save": "6+",
@@ -2065,7 +2059,7 @@
       ]
     },
     {
-      "name": "GREAT MAWPOT",
+      "name": "Great Mawpot",
       "move": "-",
       "health": "6",
       "save": "5+",
@@ -2127,7 +2121,7 @@
       ]
     },
     {
-      "name": "MAWPIT",
+      "name": "Mawpit",
       "move": "-",
       "health": "10",
       "save": "5+",

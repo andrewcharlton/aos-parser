@@ -219,8 +219,7 @@
         "effect": "The target's combat attacks score critical hits on unmodified hit rolls of 5+ until the start of your next turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -232,9 +231,7 @@
         "declare": "Pick a friendly Ossiarch Bonereapers Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, subtract 1 from hit rolls for the target's attacks and subtract 1 from save rolls for the target.",
         "keywords": [
-          "Spell",
-          "5",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -304,7 +301,7 @@
   },
   "warscrolls": [
     {
-      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
+      "name": "Nagash Supreme Lord of the Undead",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -410,7 +407,7 @@
       ]
     },
     {
-      "name": "KATAKROS MORTARCH OF THE NECROPOLIS",
+      "name": "Katakros Mortarch of the Necropolis",
       "move": "4",
       "health": "20",
       "save": "3+",
@@ -521,7 +518,7 @@
       ]
     },
     {
-      "name": "ARKHAN THE BLACK MORTARCH OF SACRAMENT",
+      "name": "Arkhan the Black Mortarch of Sacrament",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -620,7 +617,7 @@
       ]
     },
     {
-      "name": "ARCH-KAVALOS ZANDTOS",
+      "name": "Arch-Kavalos Zandtos",
       "move": "10",
       "health": "8",
       "save": "3+",
@@ -692,7 +689,7 @@
       ]
     },
     {
-      "name": "VOKMORTIAN MASTER OF THE BONE-TITHE",
+      "name": "Vokmortian Master of the Bone-Tithe",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -758,7 +755,7 @@
       ]
     },
     {
-      "name": "MORTISAN BONESHAPER",
+      "name": "Mortisan Boneshaper",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -799,7 +796,7 @@
       ]
     },
     {
-      "name": "MORTISAN OSSIFECTOR",
+      "name": "Mortisan Ossifector",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -840,7 +837,7 @@
       ]
     },
     {
-      "name": "MORTISAN SOULREAPER",
+      "name": "Mortisan Soulreaper",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -886,7 +883,7 @@
       ]
     },
     {
-      "name": "MORTISAN SOULMASON",
+      "name": "Mortisan Soulmason",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -939,7 +936,7 @@
       ]
     },
     {
-      "name": "TERATIC COHORT",
+      "name": "Teratic Cohort",
       "move": "7",
       "health": "2",
       "save": "4+",
@@ -998,7 +995,7 @@
       ]
     },
     {
-      "name": "MORTEK GUARD",
+      "name": "Mortek Guard",
       "move": "4",
       "health": "1",
       "save": "4+",
@@ -1043,7 +1040,7 @@
       ]
     },
     {
-      "name": "IMMORTIS GUARD",
+      "name": "Immortis Guard",
       "move": "5",
       "health": "4",
       "save": "3+",
@@ -1086,7 +1083,7 @@
       ]
     },
     {
-      "name": "NECROPOLIS STALKERS",
+      "name": "Necropolis Stalkers",
       "move": "6",
       "health": "4",
       "save": "4+",
@@ -1122,7 +1119,7 @@
       ]
     },
     {
-      "name": "LIEGE-KAVALOS",
+      "name": "Liege-Kavalos",
       "move": "10",
       "health": "7",
       "save": "3+",
@@ -1184,7 +1181,7 @@
       ]
     },
     {
-      "name": "MORTEK CRAWLER",
+      "name": "Mortek Crawler",
       "move": "5",
       "health": "12",
       "save": "4+",
@@ -1233,7 +1230,7 @@
       ]
     },
     {
-      "name": "KAVALOS DEATHRIDERS",
+      "name": "Kavalos Deathriders",
       "move": "10",
       "health": "3",
       "save": "4+",
@@ -1296,7 +1293,7 @@
       ]
     },
     {
-      "name": "GOTHIZZAR HARVESTER",
+      "name": "Gothizzar Harvester",
       "move": "6",
       "health": "10",
       "save": "4+",
@@ -1382,7 +1379,7 @@
       ]
     },
     {
-      "name": "MORGHAST ARCHAI",
+      "name": "Morghast Archai",
       "move": "10",
       "health": "6",
       "save": "3+",
@@ -1435,7 +1432,7 @@
       ]
     },
     {
-      "name": "MORGHAST HARBINGERS",
+      "name": "Morghast Harbingers",
       "move": "10",
       "health": "6",
       "save": "4+",
@@ -1487,7 +1484,7 @@
       ]
     },
     {
-      "name": "NIGHTMARE PREDATOR",
+      "name": "Nightmare Predator",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -1525,7 +1522,7 @@
       ]
     },
     {
-      "name": "SOULSTEALER CARRION",
+      "name": "Soulstealer Carrion",
       "move": "10",
       "health": "7",
       "save": "5+",
@@ -1570,7 +1567,7 @@
       ]
     },
     {
-      "name": "BONE-TITHE SHRIEKER",
+      "name": "Bone-Tithe Shrieker",
       "move": "8",
       "health": "7",
       "save": "5+",
@@ -1627,7 +1624,7 @@
       ]
     },
     {
-      "name": "BONE-TITHE NEXUS",
+      "name": "Bone-Tithe Nexus",
       "move": "-",
       "health": "13",
       "save": "4+",

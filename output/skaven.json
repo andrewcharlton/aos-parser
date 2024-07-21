@@ -180,8 +180,7 @@
         "effect": "Inflict D3 mortal damage on the target.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -193,9 +192,7 @@
         "declare": "Pick a friendly Skaven Wizard to cast this spell, pick a visible friendly Skaven Hero wholly within 13\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
         "keywords": [
-          "Spell",
-          "6",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -226,8 +223,7 @@
         "effect": "Add 1 to wound rolls for the target's combat attacks until the start of your next turn. In addition, if the chanting roll was 8+, the target's melee weapons have Crit (Mortal) until the start of your next turn.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -239,9 +235,7 @@
         "declare": "Pick a friendly Skaven Priest to chant this prayer, pick a visible enemy unit within 13\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target. If the chanting roll was 8+, inflict 1 mortal damage on the target for each 4+ instead.",
         "keywords": [
-          "Prayer",
-          "4",
-          "5"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -272,8 +266,7 @@
         "effect": "Set up the first part of the Warp Lightning Vortex within 18\" of the caster and visible to them, then set up the second and third parts exactly 7\" from the first part and exactly 7\" from each other so that they form a triangle.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 7,
         "summons": "Warp Lightning Vortex"
@@ -288,8 +281,7 @@
         "effect": "Set up a Vermintide wholly within 13\" of the caster, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 7,
         "summons": "Ver Mintide"
@@ -313,7 +305,7 @@
   },
   "warscrolls": [
     {
-      "name": "THANQUOL ON BONERIPPER",
+      "name": "Thanquol on Boneripper",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -430,7 +422,7 @@
       ]
     },
     {
-      "name": "LORD SKREECH VERMINKING",
+      "name": "Lord Skreech Verminking",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -502,7 +494,7 @@
       ]
     },
     {
-      "name": "VERMINLORD DECEIVER",
+      "name": "Verminlord Deceiver",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -558,7 +550,7 @@
       ]
     },
     {
-      "name": "VERMINLORD CORRUPTOR",
+      "name": "Verminlord Corruptor",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -612,7 +604,7 @@
       ]
     },
     {
-      "name": "VERMINLORD WARBRINGER",
+      "name": "Verminlord Warbringer",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -667,7 +659,7 @@
       ]
     },
     {
-      "name": "VERMINLORD WARPSEER",
+      "name": "Verminlord Warpseer",
       "move": "10",
       "health": "13",
       "save": "4+",
@@ -721,8 +713,7 @@
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Roll a dice. On a 4+, the target has Strike-last for the rest of the turn.",
           "keywords": [
-            "Rampage",
-            "7"
+            "Rampage"
           ]
         },
         {
@@ -751,7 +742,7 @@
       ]
     },
     {
-      "name": "GREY SEER",
+      "name": "Grey Seer",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -789,7 +780,7 @@
       ]
     },
     {
-      "name": "ARCH-WARLOCK",
+      "name": "Arch-Warlock",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -846,7 +837,7 @@
       ]
     },
     {
-      "name": "WARLOCK ENGINEER",
+      "name": "Warlock Engineer",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -897,7 +888,7 @@
       ]
     },
     {
-      "name": "WARLOCK BOMBARDIER",
+      "name": "Warlock Bombardier",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -953,7 +944,7 @@
       ]
     },
     {
-      "name": "STORMFIENDS",
+      "name": "Stormfiends",
       "move": "6",
       "health": "6",
       "save": "4+",
@@ -1068,7 +1059,7 @@
       ]
     },
     {
-      "name": "WARP LIGHTNING CANNON",
+      "name": "Warp Lightning Cannon",
       "move": "3",
       "health": "8",
       "save": "4+",
@@ -1132,7 +1123,7 @@
       ]
     },
     {
-      "name": "ACOLYTE GLOBADIERS",
+      "name": "Acolyte Globadiers",
       "move": "6",
       "health": "2",
       "save": "6+",
@@ -1203,7 +1194,7 @@
       ]
     },
     {
-      "name": "DOOMWHEEL",
+      "name": "Doomwheel",
       "move": "2D6+7",
       "health": "8",
       "save": "4+",
@@ -1255,7 +1246,7 @@
       ]
     },
     {
-      "name": "WARPLOCK JEZZAILS",
+      "name": "Warplock Jezzails",
       "move": "6",
       "health": "2",
       "save": "4+",
@@ -1303,7 +1294,7 @@
       ]
     },
     {
-      "name": "WARPFIRE THROWER",
+      "name": "Warpfire Thrower",
       "move": "6",
       "health": "3",
       "save": "6+",
@@ -1359,7 +1350,7 @@
       ]
     },
     {
-      "name": "RATLING GUN",
+      "name": "Ratling Gun",
       "move": "6",
       "health": "3",
       "save": "6+",
@@ -1415,7 +1406,7 @@
       ]
     },
     {
-      "name": "DOOM-FLAYER",
+      "name": "Doom-Flayer",
       "move": "D6+8",
       "health": "4",
       "save": "4+",
@@ -1452,7 +1443,7 @@
       ]
     },
     {
-      "name": "PLAGUECLAW",
+      "name": "Plagueclaw",
       "move": "3",
       "health": "8",
       "save": "4+",
@@ -1507,7 +1498,7 @@
       ]
     },
     {
-      "name": "PLAGUE PRIEST ON PLAGUE FURNACE",
+      "name": "Plague Priest on Plague Furnace",
       "move": "6",
       "health": "15",
       "save": "4+",
@@ -1609,7 +1600,7 @@
       ]
     },
     {
-      "name": "PLAGUE MONKS",
+      "name": "Plague Monks",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1655,7 +1646,7 @@
       ]
     },
     {
-      "name": "CLAWLORD",
+      "name": "Clawlord",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1699,7 +1690,7 @@
       ]
     },
     {
-      "name": "CLANRATS",
+      "name": "Clanrats",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1738,7 +1729,7 @@
       ]
     },
     {
-      "name": "STORMVERMIN",
+      "name": "Stormvermin",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -1784,7 +1775,7 @@
       ]
     },
     {
-      "name": "RAT OGORS",
+      "name": "Rat Ogors",
       "move": "6",
       "health": "4",
       "save": "5+",
@@ -1832,7 +1823,7 @@
       ]
     },
     {
-      "name": "MASTER MOULDER",
+      "name": "Master Moulder",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -1879,7 +1870,7 @@
       ]
     },
     {
-      "name": "HELL PIT ABOMINATION",
+      "name": "Hell Pit Abomination",
       "move": "D6+5",
       "health": "14",
       "save": "5+",
@@ -1957,7 +1948,7 @@
       ]
     },
     {
-      "name": "DEATHMASTER",
+      "name": "Deathmaster",
       "move": "7",
       "health": "5",
       "save": "5+",
@@ -2028,7 +2019,7 @@
       ]
     },
     {
-      "name": "CLAWLORD ON GNAW-BEAST",
+      "name": "Clawlord on Gnaw-Beast",
       "move": "9",
       "health": "7",
       "save": "4+",
@@ -2102,7 +2093,7 @@
       ]
     },
     {
-      "name": "GREY SEER ON SCREAMING BELL",
+      "name": "Grey Seer on Screaming Bell",
       "move": "6",
       "health": "15",
       "save": "4+",
@@ -2201,7 +2192,7 @@
       ]
     },
     {
-      "name": "RATLING WARPBLASTER",
+      "name": "Ratling Warpblaster",
       "move": "6",
       "health": "7",
       "save": "4+",
@@ -2255,7 +2246,7 @@
       ]
     },
     {
-      "name": "NIGHT RUNNERS",
+      "name": "Night Runners",
       "move": "7",
       "health": "1",
       "save": "6+",
@@ -2319,7 +2310,7 @@
       ]
     },
     {
-      "name": "BELL OF DOOM",
+      "name": "Bell of Doom",
       "move": "3D6",
       "health": "7",
       "save": "6+",
@@ -2364,7 +2355,7 @@
       ]
     },
     {
-      "name": "GNAWHOLE",
+      "name": "Gnawhole",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -2414,7 +2405,7 @@
       ]
     },
     {
-      "name": "VERMINTIDE",
+      "name": "Vermintide",
       "move": "7",
       "health": "13",
       "save": "6+",
@@ -2451,7 +2442,7 @@
       ]
     },
     {
-      "name": "WARP LIGHTNING VORTEX",
+      "name": "Warp Lightning Vortex",
       "move": "-",
       "health": "7",
       "save": "6+",

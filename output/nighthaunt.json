@@ -193,8 +193,7 @@
         "effect": "Subtract 1 from wound rolls for attacks that target that unit until the start of your next turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -206,9 +205,7 @@
         "declare": "Pick a friendly Nighthaunt Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a number of dice equal to the number of models in the target unit. For each 5+, inflict 1 mortal damage on the target.",
         "keywords": [
-          "Spell",
-          "6",
-          "6"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -278,7 +275,7 @@
   },
   "warscrolls": [
     {
-      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
+      "name": "Nagash Supreme Lord of the Undead",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -384,7 +381,7 @@
       ]
     },
     {
-      "name": "LADY OLYNDER MORTARCH OF GRIEF",
+      "name": "Lady Olynder Mortarch of Grief",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -476,7 +473,7 @@
       ]
     },
     {
-      "name": "KURDOSS VALENTIAN THE CRAVEN KING",
+      "name": "Kurdoss Valentian the Craven King",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -524,7 +521,7 @@
       ]
     },
     {
-      "name": "AWLRACH THE DROWNER",
+      "name": "Awlrach the Drowner",
       "move": "10",
       "health": "7",
       "save": "4+",
@@ -568,7 +565,7 @@
       ]
     },
     {
-      "name": "REIKENOR THE GRIMHAILER",
+      "name": "Reikenor the Grimhailer",
       "move": "12",
       "health": "7",
       "save": "4+",
@@ -646,7 +643,7 @@
       ]
     },
     {
-      "name": "SCRIPTOR MORTIS",
+      "name": "Scriptor Mortis",
       "move": "8",
       "health": "6",
       "save": "4+",
@@ -695,7 +692,7 @@
       ]
     },
     {
-      "name": "TOMB BANSHEE",
+      "name": "Tomb Banshee",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -762,7 +759,7 @@
       ]
     },
     {
-      "name": "KNIGHT OF SHROUDS",
+      "name": "Knight of Shrouds",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -807,7 +804,7 @@
       ]
     },
     {
-      "name": "KNIGHT OF SHROUDS ON ETHEREAL STEED",
+      "name": "Knight of Shrouds on Ethereal Steed",
       "move": "12",
       "health": "7",
       "save": "4+",
@@ -861,7 +858,7 @@
       ]
     },
     {
-      "name": "CAIRN WRAITH",
+      "name": "Cairn Wraith",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -906,7 +903,7 @@
       ]
     },
     {
-      "name": "KRULGHAST CRUCIATOR",
+      "name": "Krulghast Cruciator",
       "move": "8",
       "health": "6",
       "save": "4+",
@@ -963,7 +960,7 @@
       ]
     },
     {
-      "name": "LORD EXECUTIONER",
+      "name": "Lord Executioner",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -1003,7 +1000,7 @@
       ]
     },
     {
-      "name": "DREADBLADE HARROWS",
+      "name": "Dreadblade Harrows",
       "move": "12",
       "health": "3",
       "save": "4+",
@@ -1067,7 +1064,7 @@
       ]
     },
     {
-      "name": "GUARDIAN OF SOULS",
+      "name": "Guardian of Souls",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -1113,7 +1110,7 @@
       ]
     },
     {
-      "name": "PYREGHEISTS",
+      "name": "Pyregheists",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1164,7 +1161,7 @@
       ]
     },
     {
-      "name": "SPIRIT TORMENT",
+      "name": "Spirit Torment",
       "move": "8",
       "health": "5",
       "save": "4+",
@@ -1209,7 +1206,7 @@
       ]
     },
     {
-      "name": "GRIMGHAST REAPERS",
+      "name": "Grimghast Reapers",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1254,7 +1251,7 @@
       ]
     },
     {
-      "name": "CHAINGHASTS",
+      "name": "Chainghasts",
       "move": "8",
       "health": "3",
       "save": "4+",
@@ -1303,7 +1300,7 @@
       ]
     },
     {
-      "name": "CHAINRASPS",
+      "name": "Chainrasps",
       "move": "8",
       "health": "1",
       "save": "5+",
@@ -1348,7 +1345,7 @@
       ]
     },
     {
-      "name": "BLACK COACH",
+      "name": "Black Coach",
       "move": "10",
       "health": "12",
       "save": "4+",
@@ -1436,7 +1433,7 @@
       ]
     },
     {
-      "name": "CRAVENTHRONE GUARD",
+      "name": "Craventhrone Guard",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1494,7 +1491,7 @@
       ]
     },
     {
-      "name": "BLADEGHEIST REVENANTS",
+      "name": "Bladegheist Revenants",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1538,7 +1535,7 @@
       ]
     },
     {
-      "name": "GLAIVEWRAITH STALKERS",
+      "name": "Glaivewraith Stalkers",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1578,7 +1575,7 @@
       ]
     },
     {
-      "name": "MYRMOURN BANSHEES",
+      "name": "Myrmourn Banshees",
       "move": "8",
       "health": "2",
       "save": "4+",
@@ -1618,7 +1615,7 @@
       ]
     },
     {
-      "name": "SPIRIT HOSTS",
+      "name": "Spirit Hosts",
       "move": "8",
       "health": "3",
       "save": "4+",
@@ -1662,7 +1659,7 @@
       ]
     },
     {
-      "name": "DREADSCYTHE HARRIDANS",
+      "name": "Dreadscythe Harridans",
       "move": "8",
       "health": "1",
       "save": "4+",
@@ -1722,7 +1719,7 @@
       ]
     },
     {
-      "name": "HEXWRAITHS",
+      "name": "Hexwraiths",
       "move": "12",
       "health": "3",
       "save": "4+",
@@ -1770,7 +1767,7 @@
       ]
     },
     {
-      "name": "MORTALIS TERMINEXUS",
+      "name": "Mortalis Terminexus",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -1797,7 +1794,7 @@
       ]
     },
     {
-      "name": "VAULT OF SOULS",
+      "name": "Vault of Souls",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -1839,7 +1836,7 @@
       ]
     },
     {
-      "name": "SHYISH REAPER",
+      "name": "Shyish Reaper",
       "move": "8",
       "health": "7",
       "save": "4+",

@@ -189,8 +189,7 @@
         "effect": "Remove the target from the battlefield and set it up again on the battlefield more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -202,8 +201,7 @@
         "declare": "Pick a friendly Idoneth Deepkin Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from the Rend characteristic of the target's melee weapons until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -216,8 +214,7 @@
         "declare": "Pick a friendly Idoneth Deepkin Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
         "keywords": [
-          "Spell",
-          "6"
+          "Spell"
         ],
         "casting_value": 7
       }
@@ -225,7 +222,7 @@
   },
   "warscrolls": [
     {
-      "name": "EIDOLON OF MATHLANN ASPECT OF THE STORM",
+      "name": "Eidolon of Mathlann Aspect of the Storm",
       "move": "10",
       "health": "12",
       "save": "3+",
@@ -309,7 +306,7 @@
       ]
     },
     {
-      "name": "EIDOLON OF MATHLANN ASPECT OF THE SEA",
+      "name": "Eidolon of Mathlann Aspect of the Sea",
       "move": "10",
       "health": "12",
       "save": "3+",
@@ -419,7 +416,7 @@
       ]
     },
     {
-      "name": "VOLTURNOS HIGH KING OF THE DEEP",
+      "name": "Volturnos High King of the Deep",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -501,7 +498,7 @@
       ]
     },
     {
-      "name": "AKHELIAN KING",
+      "name": "Akhelian King",
       "move": "12",
       "health": "7",
       "save": "3+",
@@ -550,7 +547,7 @@
       ]
     },
     {
-      "name": "ISHARANN TIDECASTER",
+      "name": "Isharann Tidecaster",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -600,7 +597,7 @@
       ]
     },
     {
-      "name": "LOTANN WARDEN OF THE SOUL LEDGERS",
+      "name": "Lotann Warden of the Soul Ledgers",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -661,7 +658,7 @@
       ]
     },
     {
-      "name": "ISHARANN SOULSCRYER",
+      "name": "Isharann Soulscryer",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -723,7 +720,7 @@
       ]
     },
     {
-      "name": "ISHARANN SOULRENDER",
+      "name": "Isharann Soulrender",
       "move": "6",
       "health": "5",
       "save": "3+",
@@ -781,7 +778,7 @@
       ]
     },
     {
-      "name": "AKHELIAN ALLOPEX",
+      "name": "Akhelian Allopex",
       "move": "12",
       "health": "8",
       "save": "4+",
@@ -866,7 +863,7 @@
       ]
     },
     {
-      "name": "AKHELIAN MORRSARR GUARD",
+      "name": "Akhelian Morrsarr Guard",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -917,7 +914,7 @@
       ]
     },
     {
-      "name": "AKHELIAN ISHLAEN GUARD",
+      "name": "Akhelian Ishlaen Guard",
       "move": "14",
       "health": "4",
       "save": "4+",
@@ -983,7 +980,7 @@
       ]
     },
     {
-      "name": "AKHELIAN LEVIADON",
+      "name": "Akhelian Leviadon",
       "move": "10",
       "health": "16",
       "save": "3+",
@@ -1077,7 +1074,7 @@
       ]
     },
     {
-      "name": "AKHELIAN THRALLMASTER",
+      "name": "Akhelian Thrallmaster",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1124,7 +1121,7 @@
       ]
     },
     {
-      "name": "NAMARTI REAVERS",
+      "name": "Namarti Reavers",
       "move": "7",
       "health": "1",
       "save": "5+",
@@ -1181,7 +1178,7 @@
       ]
     },
     {
-      "name": "NAMARTI THRALLS",
+      "name": "Namarti Thralls",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1226,7 +1223,7 @@
       ]
     },
     {
-      "name": "GLOOMTIDE SHIPWRECK",
+      "name": "Gloomtide Shipwreck",
       "move": "-",
       "health": "7",
       "save": "4+",

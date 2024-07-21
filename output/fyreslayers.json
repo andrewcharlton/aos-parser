@@ -215,8 +215,7 @@
         "effect": "Subtract 1 from wound rolls for attacks that target that friendly unit until the start of your next turn. If the chanting roll was 8+, also subtract 1 from the Rend characteristic of attacks that target that friendly unit until the start of your next turn.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -228,9 +227,7 @@
         "declare": "Pick a friendly Fyreslayers Priest to chant this prayer, pick a visible friendly Fyreslayers Infantry Hero wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "The target can use 2 Fight abilities this turn. After the first is used, however, the target has Strike-last for the rest of the turn. If the chanting roll was 8+, also add 1 to wound rolls for the target's combat attacks for the rest of the turn.",
         "keywords": [
-          "Prayer",
-          "4",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -261,8 +258,7 @@
         "effect": "Set up a Runic Fyrewall wholly within 12\" of the chanter and visible to them.",
         "keywords": [
           "Prayer",
-          "Summon",
-          "4"
+          "Summon"
         ],
         "chanting_value": 4,
         "summons": "Runic Fyrewall"
@@ -277,8 +273,7 @@
         "effect": "Set up a Zharrgron Flame-spitter wholly within 12\" of the chanter and visible to them.",
         "keywords": [
           "Prayer",
-          "Summon",
-          "6"
+          "Summon"
         ],
         "chanting_value": 4,
         "summons": "Zharrgron Flame-Spitter"
@@ -302,7 +297,7 @@
   },
   "warscrolls": [
     {
-      "name": "AURIC RUNEFATHER ON MAGMADROTH",
+      "name": "Auric Runefather on Magmadroth",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -415,7 +410,7 @@
       ]
     },
     {
-      "name": "AURIC RUNESON ON MAGMADROTH",
+      "name": "Auric Runeson on Magmadroth",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -533,7 +528,7 @@
       ]
     },
     {
-      "name": "AURIC RUNESMITER ON MAGMADROTH",
+      "name": "Auric Runesmiter on Magmadroth",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -646,7 +641,7 @@
       ]
     },
     {
-      "name": "AURIC RUNEFATHER",
+      "name": "Auric Runefather",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -695,7 +690,7 @@
       ]
     },
     {
-      "name": "AURIC RUNESON",
+      "name": "Auric Runeson",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -743,7 +738,7 @@
       ]
     },
     {
-      "name": "AURIC RUNESMITER",
+      "name": "Auric Runesmiter",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -795,7 +790,7 @@
       ]
     },
     {
-      "name": "AURIC RUNEMASTER",
+      "name": "Auric Runemaster",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -841,7 +836,7 @@
       ]
     },
     {
-      "name": "BATTLESMITH",
+      "name": "Battlesmith",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -901,7 +896,7 @@
       ]
     },
     {
-      "name": "GRIMWRATH BERZERKER",
+      "name": "Grimwrath Berzerker",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -948,7 +943,7 @@
       ]
     },
     {
-      "name": "AURIC FLAMEKEEPER",
+      "name": "Auric Flamekeeper",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -988,7 +983,7 @@
       ]
     },
     {
-      "name": "DOOMSEEKER",
+      "name": "Doomseeker",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -1042,7 +1037,7 @@
       ]
     },
     {
-      "name": "GRIMHOLD EXILE",
+      "name": "Grimhold Exile",
       "move": "4",
       "health": "6",
       "save": "5+",
@@ -1097,7 +1092,7 @@
       ]
     },
     {
-      "name": "VULKITE BERZERKERS WITH BLADED SLINGSHIELDS",
+      "name": "Vulkite Berzerkers with Bladed Slingshields",
       "move": "4",
       "health": "2",
       "save": "5+",
@@ -1143,7 +1138,7 @@
       ]
     },
     {
-      "name": "VULKITE BERZERKERS WITH FYRESTEEL WEAPONS",
+      "name": "Vulkite Berzerkers with Fyresteel Weapons",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1189,7 +1184,7 @@
       ]
     },
     {
-      "name": "AURIC HEARTHGUARD",
+      "name": "Auric Hearthguard",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1246,7 +1241,7 @@
       ]
     },
     {
-      "name": "VULKYN FLAMESEEKERS",
+      "name": "Vulkyn Flameseekers",
       "move": "4",
       "health": "2",
       "save": "5+",
@@ -1294,7 +1289,7 @@
       ]
     },
     {
-      "name": "HEARTHGUARD BERZERKERS WITH FLAMESTRIKE POLEAXES",
+      "name": "Hearthguard Berzerkers with Flamestrike Poleaxes",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1348,7 +1343,7 @@
       ]
     },
     {
-      "name": "HEARTHGUARD BERZERKERS WITH BERZERKER BROADAXES",
+      "name": "Hearthguard Berzerkers with Berzerker Broadaxes",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -1408,7 +1403,7 @@
       ]
     },
     {
-      "name": "MOLTEN INFERNOTH",
+      "name": "Molten Infernoth",
       "move": "8",
       "health": "10",
       "save": "5+",
@@ -1459,7 +1454,7 @@
       ]
     },
     {
-      "name": "RUNIC FYREWALL",
+      "name": "Runic Fyrewall",
       "move": "-",
       "health": "8",
       "save": "3+",
@@ -1485,7 +1480,7 @@
       ]
     },
     {
-      "name": "ZHARRGRON FLAME-SPITTER",
+      "name": "Zharrgron Flame-Spitter",
       "move": "-",
       "health": "5",
       "save": "6+",
@@ -1530,7 +1525,7 @@
       ]
     },
     {
-      "name": "MAGMIC BATTLEFORGE",
+      "name": "Magmic Battleforge",
       "move": "-",
       "health": "8",
       "save": "3+",

@@ -177,8 +177,7 @@
         "effect": "Until the start of your next turn, subtract 1 from hit rolls for attacks made by enemy units while they are wholly within 12\" of the caster.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -190,9 +189,7 @@
         "declare": "Pick a friendly Gloomspite Gitz Wizard to cast this spell, pick a visible friendly unit wholly within 12\" of them and not in combat to be the target, then make a casting roll of 2D6.",
         "effect": "Remove the target from the battlefield and set it up again on the battlefield wholly within 24\" of the caster and more than 9\" from all enemy units.",
         "keywords": [
-          "Spell",
-          "7",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -223,8 +220,7 @@
         "effect": "Set up a Mork's Mighty Mushroom wholly within 12\" of the caster and visible to them.",
         "keywords": [
           "Spell",
-          "Summon",
-          "6"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Mork'S Mighty Mushroom"
@@ -239,8 +235,7 @@
         "effect": "Set up a Scuttletide wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Scuttletide"
@@ -255,8 +250,7 @@
         "effect": "Set up a Malevolent Moon wholly within 12\" of the caster, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 7,
         "summons": "Malevolent Moon"
@@ -280,7 +274,7 @@
   },
   "warscrolls": [
     {
-      "name": "KRAGNOS THE END OF EMPIRES",
+      "name": "Kragnos the End of Empires",
       "move": "10",
       "health": "18",
       "save": "4+",
@@ -386,7 +380,7 @@
       ]
     },
     {
-      "name": "SKRAGROTT THE LOONKING",
+      "name": "Skragrott the Loonking",
       "move": "5",
       "health": "6",
       "save": "6+",
@@ -443,7 +437,7 @@
       ]
     },
     {
-      "name": "LOONBOSS",
+      "name": "Loonboss",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -482,7 +476,7 @@
       ]
     },
     {
-      "name": "GOBBAPALOOZA",
+      "name": "Gobbapalooza",
       "move": "5",
       "health": "3",
       "save": "6+",
@@ -534,7 +528,7 @@
       ]
     },
     {
-      "name": "RABBLE-ROWZA",
+      "name": "Rabble-Rowza",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -606,7 +600,7 @@
       ]
     },
     {
-      "name": "FUNGOID CAVE-SHAMAN",
+      "name": "Fungoid Cave-Shaman",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -654,7 +648,7 @@
       ]
     },
     {
-      "name": "SQUIGBOSS WITH GNASHA-SQUIG",
+      "name": "Squigboss with Gnasha-Squig",
       "move": "5",
       "health": "4",
       "save": "6+",
@@ -703,7 +697,7 @@
       ]
     },
     {
-      "name": "LOONBOSS ON MANGLER SQUIGS",
+      "name": "Loonboss on Mangler Squigs",
       "move": "D6+8",
       "health": "14",
       "save": "5+",
@@ -805,7 +799,7 @@
       ]
     },
     {
-      "name": "MANGLER SQUIGS",
+      "name": "Mangler Squigs",
       "move": "D6+8",
       "health": "14",
       "save": "5+",
@@ -895,7 +889,7 @@
       ]
     },
     {
-      "name": "SNEAKY SNUFFLERS",
+      "name": "Sneaky Snufflers",
       "move": "5",
       "health": "2",
       "save": "6+",
@@ -943,7 +937,7 @@
       ]
     },
     {
-      "name": "SNARLFANG RIDERS",
+      "name": "Snarlfang Riders",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1004,7 +998,7 @@
       ]
     },
     {
-      "name": "LOONSMASHA FANATICS",
+      "name": "Loonsmasha Fanatics",
       "move": "2D6",
       "health": "1",
       "save": "6+",
@@ -1068,7 +1062,7 @@
       ]
     },
     {
-      "name": "SPORESPLATTA FANATICS",
+      "name": "Sporesplatta Fanatics",
       "move": "2D6",
       "health": "1",
       "save": "6+",
@@ -1119,7 +1113,7 @@
       ]
     },
     {
-      "name": "MOONCLAN SHOOTAS",
+      "name": "Moonclan Shootas",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1171,7 +1165,7 @@
       ]
     },
     {
-      "name": "MOONCLAN STABBAS",
+      "name": "Moonclan Stabbas",
       "move": "5",
       "health": "1",
       "save": "5+",
@@ -1211,7 +1205,7 @@
       ]
     },
     {
-      "name": "SQUIG HERD",
+      "name": "Squig Herd",
       "move": "D6+3",
       "health": "1",
       "save": "6+",
@@ -1286,7 +1280,7 @@
       ]
     },
     {
-      "name": "LOONBOSS ON GIANT CAVE SQUIG",
+      "name": "Loonboss on Giant Cave Squig",
       "move": "D6+6",
       "health": "6",
       "save": "5+",
@@ -1331,7 +1325,7 @@
       ]
     },
     {
-      "name": "SQUIG HOPPERS",
+      "name": "Squig Hoppers",
       "move": "D6+8",
       "health": "2",
       "save": "6+",
@@ -1380,7 +1374,7 @@
       ]
     },
     {
-      "name": "BOINGROT BOUNDERZ",
+      "name": "Boingrot Bounderz",
       "move": "D6+6",
       "health": "2",
       "save": "5+",
@@ -1429,7 +1423,7 @@
       ]
     },
     {
-      "name": "TRUGG THE TROGGOTH KING",
+      "name": "Trugg the Troggoth King",
       "move": "6",
       "health": "16",
       "save": "4+",
@@ -1511,7 +1505,7 @@
       ]
     },
     {
-      "name": "DANKHOLD TROGGBOSS",
+      "name": "Dankhold Troggboss",
       "move": "6",
       "health": "12",
       "save": "4+",
@@ -1560,7 +1554,7 @@
       ]
     },
     {
-      "name": "DANKHOLD TROGGOTH",
+      "name": "Dankhold Troggoth",
       "move": "6",
       "health": "10",
       "save": "4+",
@@ -1608,7 +1602,7 @@
       ]
     },
     {
-      "name": "FELLWATER TROGGOTHS",
+      "name": "Fellwater Troggoths",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1671,7 +1665,7 @@
       ]
     },
     {
-      "name": "ROCKGUT TROGGOTHS",
+      "name": "Rockgut Troggoths",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1720,7 +1714,7 @@
       ]
     },
     {
-      "name": "SPIDER RIDERS",
+      "name": "Spider Riders",
       "move": "10",
       "health": "2",
       "save": "5+",
@@ -1787,7 +1781,7 @@
       ]
     },
     {
-      "name": "WEBSPINNER SHAMAN",
+      "name": "Webspinner Shaman",
       "move": "6",
       "health": "4",
       "save": "6+",
@@ -1840,7 +1834,7 @@
       ]
     },
     {
-      "name": "ARACHNAROK SPIDER WITH SPIDERFANG WARPARTY",
+      "name": "Arachnarok Spider with Spiderfang Warparty",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -1941,7 +1935,7 @@
       ]
     },
     {
-      "name": "WEBSPINNER SHAMAN ON ARACHNAROK SPIDER",
+      "name": "Webspinner Shaman on Arachnarok Spider",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -2068,7 +2062,7 @@
       ]
     },
     {
-      "name": "SKITTERSTRAND ARACHNAROK",
+      "name": "Skitterstrand Arachnarok",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -2168,7 +2162,7 @@
       ]
     },
     {
-      "name": "ARACHNAROK SPIDER WITH FLINGER",
+      "name": "Arachnarok Spider with Flinger",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -2294,7 +2288,7 @@
       ]
     },
     {
-      "name": "SCUTTLETIDE",
+      "name": "Scuttletide",
       "move": "8",
       "health": "6",
       "save": "6+",
@@ -2353,7 +2347,7 @@
       ]
     },
     {
-      "name": "MORK'S MIGHTY MUSHROOM",
+      "name": "Mork'S Mighty Mushroom",
       "move": "-",
       "health": "6",
       "save": "6+",
@@ -2379,7 +2373,7 @@
       ]
     },
     {
-      "name": "MALEVOLENT MOON",
+      "name": "Malevolent Moon",
       "move": "12",
       "health": "6",
       "save": "6+",
@@ -2424,7 +2418,7 @@
       ]
     },
     {
-      "name": "SCRAPSKUTTLE'S ARACHNACAULDRON",
+      "name": "Scrapskuttle'S Arachnacauldron",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -2462,7 +2456,7 @@
       ]
     },
     {
-      "name": "BAD MOON LOONSHRINE",
+      "name": "Bad Moon Loonshrine",
       "move": "-",
       "health": "14",
       "save": "4+",

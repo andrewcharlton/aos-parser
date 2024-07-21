@@ -175,8 +175,7 @@
         "effect": "The target's melee weapons have Crit (Mortal) instead of Crit (2 Hits) for the rest of the battle round.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -188,9 +187,7 @@
         "declare": "Pick a friendly Hedonites of Slaanesh Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Add 1 to wound rolls for attacks that target that enemy unit until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "6",
-          "5"
+          "Spell"
         ]
       },
       {
@@ -259,7 +256,7 @@
   },
   "warscrolls": [
     {
-      "name": "SHALAXI HELBANE",
+      "name": "Shalaxi Helbane",
       "move": "14",
       "health": "16",
       "save": "4+",
@@ -367,7 +364,7 @@
       ]
     },
     {
-      "name": "KEEPER OF SECRETS",
+      "name": "Keeper of Secrets",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -443,8 +440,7 @@
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Pick 1 of the following effects: * Add 1 to hit rolls for the target's attacks for the rest of the turn. * Add 1 to save rolls for the target for the rest of the turn. * If the target is damaged, Heal (D3) the target. Then, add 1 to the Damage characteristic of this unit's Elegant Greatblade for attacks that target that enemy unit for the rest of the turn.",
           "keywords": [
-            "Rampage",
-            "6"
+            "Rampage"
           ]
         },
         {
@@ -472,7 +468,7 @@
       ]
     },
     {
-      "name": "SYNESSA THE VOICE OF SLA ANESH",
+      "name": "Synessa the Voice of Sla Anesh",
       "move": "12",
       "health": "10",
       "save": "5+",
@@ -568,7 +564,7 @@
       ]
     },
     {
-      "name": "DEXCESSA THE TALON OF SLA ANESH",
+      "name": "Dexcessa the Talon of Sla Anesh",
       "move": "12",
       "health": "10",
       "save": "5+",
@@ -652,7 +648,7 @@
       ]
     },
     {
-      "name": "SYLL'ESSKE THE VENGEFUL ALLEGIANCE",
+      "name": "Syll'Esske the Vengeful Allegiance",
       "move": "8",
       "health": "9",
       "save": "4+",
@@ -731,7 +727,7 @@
       ]
     },
     {
-      "name": "CONTORTED EPITOME",
+      "name": "Contorted Epitome",
       "move": "9",
       "health": "7",
       "save": "5+",
@@ -777,7 +773,7 @@
       ]
     },
     {
-      "name": "INFERNAL ENRAPTURESS HERALD OF SLA ANESH",
+      "name": "Infernal Enrapturess Herald of Sla Anesh",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -827,7 +823,7 @@
       ]
     },
     {
-      "name": "THE MASQUE",
+      "name": "The Masque",
       "move": "8",
       "health": "5",
       "save": "5+",
@@ -874,7 +870,7 @@
       ]
     },
     {
-      "name": "SEEKER CHARIOT",
+      "name": "Seeker Chariot",
       "move": "12",
       "health": "6",
       "save": "4+",
@@ -921,7 +917,7 @@
       ]
     },
     {
-      "name": "HELLFLAYER",
+      "name": "Hellflayer",
       "move": "10",
       "health": "7",
       "save": "4+",
@@ -992,7 +988,7 @@
       ]
     },
     {
-      "name": "BLADEBRINGER HERALD ON EXALTED CHARIOT",
+      "name": "Bladebringer Herald on Exalted Chariot",
       "move": "12",
       "health": "12",
       "save": "4+",
@@ -1051,7 +1047,7 @@
       ]
     },
     {
-      "name": "DAEMONETTES",
+      "name": "Daemonettes",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1098,7 +1094,7 @@
       ]
     },
     {
-      "name": "FIENDS",
+      "name": "Fiends",
       "move": "10",
       "health": "4",
       "save": "5+",
@@ -1167,7 +1163,7 @@
       ]
     },
     {
-      "name": "SEEKERS",
+      "name": "Seekers",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1223,7 +1219,7 @@
       ]
     },
     {
-      "name": "GLUTOS ORSCOLLION LORD OF GLUTTONY",
+      "name": "Glutos Orscollion Lord of Gluttony",
       "move": "8",
       "health": "18",
       "save": "4+",
@@ -1328,7 +1324,7 @@
       ]
     },
     {
-      "name": "LORD OF HUBRIS",
+      "name": "Lord of Hubris",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1376,7 +1372,7 @@
       ]
     },
     {
-      "name": "LORD OF PAIN",
+      "name": "Lord of Pain",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1436,7 +1432,7 @@
       ]
     },
     {
-      "name": "SIGVALD PRINCE OF SLA ANESH",
+      "name": "Sigvald Prince of Sla Anesh",
       "move": "6",
       "health": "7",
       "save": "3+",
@@ -1513,7 +1509,7 @@
       ]
     },
     {
-      "name": "SLAANGOR FIENDBLOODS",
+      "name": "Slaangor Fiendbloods",
       "move": "6",
       "health": "3",
       "save": "5+",
@@ -1550,7 +1546,7 @@
       ]
     },
     {
-      "name": "SHARDSPEAKER OF SLAANESH",
+      "name": "Shardspeaker of Slaanesh",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1615,7 +1611,7 @@
       ]
     },
     {
-      "name": "MYRMIDESH PAINBRINGERS",
+      "name": "Myrmidesh Painbringers",
       "move": "6",
       "health": "2",
       "save": "3+",
@@ -1659,7 +1655,7 @@
       ]
     },
     {
-      "name": "BLISSBARB ARCHERS",
+      "name": "Blissbarb Archers",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1715,7 +1711,7 @@
       ]
     },
     {
-      "name": "SYMBARESH TWINSOULS",
+      "name": "Symbaresh Twinsouls",
       "move": "6",
       "health": "2",
       "save": "4+",
@@ -1774,7 +1770,7 @@
       ]
     },
     {
-      "name": "HELLSTRIDERS",
+      "name": "Hellstriders",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1829,7 +1825,7 @@
       ]
     },
     {
-      "name": "SLICKBLADE SEEKERS",
+      "name": "Slickblade Seekers",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1882,7 +1878,7 @@
       ]
     },
     {
-      "name": "BLISSBARB SEEKERS",
+      "name": "Blissbarb Seekers",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1947,7 +1943,7 @@
       ]
     },
     {
-      "name": "DREADFUL VISAGE",
+      "name": "Dreadful Visage",
       "move": "8",
       "health": "6",
       "save": "6+",
@@ -1986,7 +1982,7 @@
       ]
     },
     {
-      "name": "MESMERISING MIRROR",
+      "name": "Mesmerising Mirror",
       "move": "-",
       "health": "6",
       "save": "5+",
@@ -2012,7 +2008,7 @@
       ]
     },
     {
-      "name": "WHEELS OF EXCRUCIATION",
+      "name": "Wheels of Excruciation",
       "move": "8",
       "health": "6",
       "save": "5+",
@@ -2051,7 +2047,7 @@
       ]
     },
     {
-      "name": "FANE OF SLAANESH",
+      "name": "Fane of Slaanesh",
       "move": "-",
       "health": "10",
       "save": "4+",

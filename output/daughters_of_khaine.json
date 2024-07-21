@@ -158,8 +158,7 @@
         "effect": "The target can use Charge abilities this turn even if it used a Run ability in the same turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -171,9 +170,7 @@
         "declare": "Pick a friendly Daughters of Khaine Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "If the target unit has fewer than 10 models, inflict D3 mortal damage on the target. If the target unit has 10-19 models, inflict D6 mortal damage on the target. If the target unit has 20 or more models, inflict 6 mortal damage on the target.",
         "keywords": [
-          "Spell",
-          "5",
-          "8"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -204,8 +201,7 @@
         "effect": "Until the start of your next turn, add 1 to the current battle round number when determining which effects of the 'Blood Rites' ability apply to the target. If the chanting roll was 10+, until the start of your next turn, treat the current battle round number as 5 when determining which effects of the 'Blood Rites' ability apply to the target instead.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "4"
+          "Unlimited"
         ]
       },
       {
@@ -217,9 +213,7 @@
         "declare": "Pick a friendly Daughters of Khaine Priest to chant this prayer, pick a visible friendly Daughters of Khaine unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, each time a model in the target unit is slain by a combat attack, before removing the model from play, pick an enemy unit in combat with the target and roll a dice. If the chanting roll was 8+, roll 2 dice instead of 1. For each 5+, inflict 1 mortal damage on that enemy unit after the Fight ability has been resolved.",
         "keywords": [
-          "Prayer",
-          "5",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 4
       },
@@ -250,8 +244,7 @@
         "effect": "Set up a Bladewind wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "5"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Bladewind"
@@ -266,8 +259,7 @@
         "effect": "Set up a Heart of Fury wholly within 9\" of the chanter and visible to them.",
         "keywords": [
           "Prayer",
-          "Summon",
-          "6"
+          "Summon"
         ],
         "chanting_value": 5,
         "summons": "Heart Of Fury"
@@ -291,7 +283,7 @@
   },
   "warscrolls": [
     {
-      "name": "MORATHI-KHAINE",
+      "name": "Morathi-Khaine",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -367,7 +359,7 @@
       ]
     },
     {
-      "name": "THE SHADOW QUEEN",
+      "name": "The Shadow Queen",
       "move": "12",
       "health": "12",
       "save": "4+",
@@ -456,7 +448,7 @@
       ]
     },
     {
-      "name": "KRETHUSA THE CRONESEER",
+      "name": "Krethusa the Croneseer",
       "move": "12",
       "health": "6",
       "save": "5+",
@@ -512,7 +504,7 @@
       ]
     },
     {
-      "name": "BLOODWRACK SHRINE",
+      "name": "Bloodwrack Shrine",
       "move": "6",
       "health": "12",
       "save": "4+",
@@ -596,7 +588,7 @@
       ]
     },
     {
-      "name": "MELUSAI IRONSCALE",
+      "name": "Melusai Ironscale",
       "move": "8",
       "health": "6",
       "save": "5+",
@@ -653,7 +645,7 @@
       ]
     },
     {
-      "name": "HAG QUEEN ON CAULDRON OF BLOOD",
+      "name": "Hag Queen on Cauldron of Blood",
       "move": "6",
       "health": "12",
       "save": "4+",
@@ -749,7 +741,7 @@
       ]
     },
     {
-      "name": "BLOODWRACK MEDUSA",
+      "name": "Bloodwrack Medusa",
       "move": "8",
       "health": "6",
       "save": "5+",
@@ -806,7 +798,7 @@
       ]
     },
     {
-      "name": "HAG QUEEN",
+      "name": "Hag Queen",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -847,7 +839,7 @@
       ]
     },
     {
-      "name": "AVATAR OF KHAINE",
+      "name": "Avatar of Khaine",
       "move": "6",
       "health": "7",
       "save": "3+",
@@ -900,7 +892,7 @@
       ]
     },
     {
-      "name": "SLAUGHTER QUEEN ON CAULDRON OF BLOOD",
+      "name": "Slaughter Queen on Cauldron of Blood",
       "move": "6",
       "health": "12",
       "save": "4+",
@@ -996,7 +988,7 @@
       ]
     },
     {
-      "name": "SLAUGHTER QUEEN",
+      "name": "Slaughter Queen",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1037,7 +1029,7 @@
       ]
     },
     {
-      "name": "HIGH GLADIATRIX",
+      "name": "High Gladiatrix",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1086,7 +1078,7 @@
       ]
     },
     {
-      "name": "DOOMFIRE WARLOCKS",
+      "name": "Doomfire Warlocks",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -1153,7 +1145,7 @@
       ]
     },
     {
-      "name": "SISTERS OF SLAUGHTER WITH SACRIFICIAL KNIVES",
+      "name": "Sisters of Slaughter with Sacrificial Knives",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1193,7 +1185,7 @@
       ]
     },
     {
-      "name": "SISTERS OF SLAUGHTER WITH BLADED BUCKLERS",
+      "name": "Sisters of Slaughter with Bladed Bucklers",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1255,7 +1247,7 @@
       ]
     },
     {
-      "name": "WITCH AELVES WITH BLADED BUCKLERS",
+      "name": "Witch Aelves with Bladed Bucklers",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1302,7 +1294,7 @@
       ]
     },
     {
-      "name": "WITCH AELVES WITH PAIRED SCIANS\u00c1",
+      "name": "Witch Aelves with Paired Scians\u00e1",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1349,7 +1341,7 @@
       ]
     },
     {
-      "name": "BLOOD STALKERS",
+      "name": "Blood Stalkers",
       "move": "8",
       "health": "2",
       "save": "5+",
@@ -1399,7 +1391,7 @@
       ]
     },
     {
-      "name": "KHINERAI HEARTRENDERS",
+      "name": "Khinerai Heartrenders",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1471,7 +1463,7 @@
       ]
     },
     {
-      "name": "BLOOD SISTERS",
+      "name": "Blood Sisters",
       "move": "8",
       "health": "2",
       "save": "5+",
@@ -1510,7 +1502,7 @@
       ]
     },
     {
-      "name": "KHINERAI LIFETAKERS",
+      "name": "Khinerai Lifetakers",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1562,7 +1554,7 @@
       ]
     },
     {
-      "name": "KHAINITE SHADOWSTALKERS",
+      "name": "Khainite Shadowstalkers",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1615,7 +1607,7 @@
       ]
     },
     {
-      "name": "BLOODWRACK VIPER",
+      "name": "Bloodwrack Viper",
       "move": "9",
       "health": "10",
       "save": "4+",
@@ -1658,7 +1650,7 @@
       ]
     },
     {
-      "name": "BLADEWIND",
+      "name": "Bladewind",
       "move": "12",
       "health": "7",
       "save": "6+",
@@ -1697,7 +1689,7 @@
       ]
     },
     {
-      "name": "HEART OF FURY",
+      "name": "Heart of Fury",
       "move": "-",
       "health": "7",
       "save": "4+",

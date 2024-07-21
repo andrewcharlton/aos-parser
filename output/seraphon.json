@@ -232,8 +232,7 @@
         "effect": "Subtract 1 from the Rend characteristic of the target's weapons until the start of your next turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -245,9 +244,7 @@
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll a dice for each model in the target unit. For each 5+, inflict 1 mortal damage on the target.",
         "keywords": [
-          "Spell",
-          "6",
-          "6"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -288,8 +285,7 @@
         "declare": "Pick a friendly Seraphon Wizard to cast this spell, pick a point on the battlefield within 18\" of them to be the target point, then make a casting roll of 2D6.",
         "effect": "Draw a straight line between the target point and the closest part on the caster's base. Roll a D3 for each unit (friendly and enemy) that has models passed across by this line. On a 2+, inflict an amount of mortal damage on that unit equal to the roll.",
         "keywords": [
-          "Spell",
-          "6"
+          "Spell"
         ],
         "casting_value": 8
       },
@@ -310,7 +306,7 @@
   },
   "warscrolls": [
     {
-      "name": "LORD KROAK",
+      "name": "Lord Kroak",
       "move": "5",
       "health": "18",
       "save": "4+",
@@ -401,7 +397,7 @@
       ]
     },
     {
-      "name": "SLANN STARMASTER",
+      "name": "Slann Starmaster",
       "move": "5",
       "health": "9",
       "save": "5+",
@@ -482,7 +478,7 @@
       ]
     },
     {
-      "name": "SKINK ORACLE ON TROGLODON",
+      "name": "Skink Oracle on Troglodon",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -592,7 +588,7 @@
       ]
     },
     {
-      "name": "SAURUS OLDBLOOD ON CARNOSAUR",
+      "name": "Saurus Oldblood on Carnosaur",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -707,7 +703,7 @@
       ]
     },
     {
-      "name": "SAURUS SCAR-VETERAN ON AGGRADON",
+      "name": "Saurus Scar-Veteran on Aggradon",
       "move": "10",
       "health": "8",
       "save": "4+",
@@ -762,7 +758,7 @@
       ]
     },
     {
-      "name": "AGGRADON LANCERS",
+      "name": "Aggradon Lancers",
       "move": "10",
       "health": "5",
       "save": "4+",
@@ -810,7 +806,7 @@
       ]
     },
     {
-      "name": "SAURUS WARRIORS",
+      "name": "Saurus Warriors",
       "move": "5",
       "health": "2",
       "save": "4+",
@@ -856,7 +852,7 @@
       ]
     },
     {
-      "name": "SAURUS GUARD",
+      "name": "Saurus Guard",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -902,7 +898,7 @@
       ]
     },
     {
-      "name": "SKINK STARSEER",
+      "name": "Skink Starseer",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -955,7 +951,7 @@
       ]
     },
     {
-      "name": "SKINK STARPRIEST",
+      "name": "Skink Starpriest",
       "move": "8",
       "health": "5",
       "save": "6+",
@@ -994,7 +990,7 @@
       ]
     },
     {
-      "name": "SKINKS",
+      "name": "Skinks",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -1050,7 +1046,7 @@
       ]
     },
     {
-      "name": "SPAWN OF CHOTEC",
+      "name": "Spawn of Chotec",
       "move": "5",
       "health": "8",
       "save": "5+",
@@ -1130,7 +1126,7 @@
       ]
     },
     {
-      "name": "RAPTADON HUNTERS",
+      "name": "Raptadon Hunters",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1191,7 +1187,7 @@
       ]
     },
     {
-      "name": "RAPTADON CHARGERS",
+      "name": "Raptadon Chargers",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -1246,7 +1242,7 @@
       ]
     },
     {
-      "name": "HUNTERS OF HUANCHI WITH DARTPIPES",
+      "name": "Hunters of Huanchi with Dartpipes",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -1319,7 +1315,7 @@
       ]
     },
     {
-      "name": "HUNTERS OF HUANCHI WITH STARSTONE BOLAS",
+      "name": "Hunters of Huanchi with Starstone Bolas",
       "move": "8",
       "health": "1",
       "save": "6+",
@@ -1411,7 +1407,7 @@
       ]
     },
     {
-      "name": "TERRAWINGS",
+      "name": "Terrawings",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1462,7 +1458,7 @@
       ]
     },
     {
-      "name": "BASTILADON WITH ARK OF SOTEK",
+      "name": "Bastiladon with Ark of Sotek",
       "move": "5",
       "health": "12",
       "save": "2+",
@@ -1524,7 +1520,7 @@
       ]
     },
     {
-      "name": "BASTILADON WITH SOLAR ENGINE",
+      "name": "Bastiladon with Solar Engine",
       "move": "5",
       "health": "12",
       "save": "2+",
@@ -1587,7 +1583,7 @@
       ]
     },
     {
-      "name": "TERRADON CHIEF",
+      "name": "Terradon Chief",
       "move": "14",
       "health": "5",
       "save": "5+",
@@ -1650,7 +1646,7 @@
       ]
     },
     {
-      "name": "TERRADON RIDERS",
+      "name": "Terradon Riders",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -1720,7 +1716,7 @@
       ]
     },
     {
-      "name": "RIPPERDACTYL CHIEF",
+      "name": "Ripperdactyl Chief",
       "move": "14",
       "health": "5",
       "save": "5+",
@@ -1793,7 +1789,7 @@
       ]
     },
     {
-      "name": "RIPPERDACTYL RIDERS",
+      "name": "Ripperdactyl Riders",
       "move": "14",
       "health": "3",
       "save": "5+",
@@ -1857,7 +1853,7 @@
       ]
     },
     {
-      "name": "STEGADON CHIEF",
+      "name": "Stegadon Chief",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1930,7 +1926,7 @@
       ]
     },
     {
-      "name": "STEGADON",
+      "name": "Stegadon",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1987,7 +1983,7 @@
       ]
     },
     {
-      "name": "ENGINE OF THE GODS",
+      "name": "Engine of the Gods",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -2063,7 +2059,7 @@
       ]
     },
     {
-      "name": "REALMSHAPER ENGINE",
+      "name": "Realmshaper Engine",
       "move": "-",
       "health": "15",
       "save": "4+",
@@ -2102,7 +2098,7 @@
       ]
     },
     {
-      "name": "SAURUS ASTROLITH BEARER",
+      "name": "Saurus Astrolith Bearer",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -2149,7 +2145,7 @@
       ]
     },
     {
-      "name": "KROXIGOR WARSPAWNED",
+      "name": "Kroxigor Warspawned",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -2216,7 +2212,7 @@
       ]
     },
     {
-      "name": "KROXIGOR",
+      "name": "Kroxigor",
       "move": "5",
       "health": "6",
       "save": "4+",
@@ -2268,7 +2264,7 @@
       ]
     },
     {
-      "name": "SAURUS SCAR-VETERAN ON CARNOSAUR",
+      "name": "Saurus Scar-Veteran on Carnosaur",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -2357,7 +2353,7 @@
       ]
     },
     {
-      "name": "SAURUS OLDBLOOD",
+      "name": "Saurus Oldblood",
       "move": "5",
       "health": "7",
       "save": "4+",

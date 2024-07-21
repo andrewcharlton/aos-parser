@@ -210,8 +210,7 @@
         "effect": "Until the start of your next turn: * Add 2\" to the target's Move characteristic. * Add 1 to wound rolls for the target's combat attacks.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "5"
+          "Unlimited"
         ]
       },
       {
@@ -223,9 +222,7 @@
         "declare": "Pick a friendly Flesh-eater Courts Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Roll 7 dice and apply the corresponding effect: Ravaged Mind: If 2 or more dice have the same value, inflict 1 mortal damage on the target. Gory Visions: If 3 or more dice have the same value, in addition to the effect of 'Ravaged Mind', subtract 1 from hit rolls for the target's attacks until the start of your next turn. Drooling Stupor: If 4 or more dice have the same value, in addition to the effects of 'Ravaged Mind' and 'Gory Visions', subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "6",
-          "6"
+          "Spell"
         ],
         "casting_value": 5
       },
@@ -256,8 +253,7 @@
         "effect": "Until the start of your next turn, each time a model in the target unit is slain, Heal (1) a friendly Flesh-eater Courts unit in combat with the target. If the chanting roll was 10+, Heal (D3) that friendly unit instead.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "5"
+          "Unlimited"
         ]
       },
       {
@@ -269,9 +265,7 @@
         "declare": "Pick a friendly Flesh-eater Courts Priest to chant this prayer, pick a visible friendly Flesh-eater Courts Hero wholly within 18\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give the target 1 additional noble deeds point after the Fight ability has been resolved. If the chanting roll was 10+, until the start of your next turn, each time an enemy model is slain by a combat attack made by the target, give all friendly Flesh-eater Courts Heroes wholly within 18\" of the target 1 additional noble deeds point after the Fight ability has been resolved instead of only the target.",
         "keywords": [
-          "Prayer",
-          "5",
-          "5"
+          "Prayer"
         ],
         "chanting_value": 5
       },
@@ -302,8 +296,7 @@
         "effect": "Set up a Chalice of Ushoran wholly within 12\" of the caster and visible to them.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Chalice Of Ushoran"
@@ -318,8 +311,7 @@
         "effect": "Set up a Corpsemare Stampede wholly within 9\" of the caster, visible to them and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "5"
+          "Summon"
         ],
         "casting_value": 7,
         "summons": "Corpsemare Stampede"
@@ -343,7 +335,7 @@
   },
   "warscrolls": [
     {
-      "name": "NAGASH SUPREME LORD OF THE UNDEAD",
+      "name": "Nagash Supreme Lord of the Undead",
       "move": "10",
       "health": "18",
       "save": "3+",
@@ -449,7 +441,7 @@
       ]
     },
     {
-      "name": "USHORAN MORTARCH OF DELUSION",
+      "name": "Ushoran Mortarch of Delusion",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -553,7 +545,7 @@
       ]
     },
     {
-      "name": "ABHORRANT GHOUL KING ON ROYAL TERRORGHEIST",
+      "name": "Abhorrant Ghoul King on Royal Terrorgheist",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -657,7 +649,7 @@
       ]
     },
     {
-      "name": "ABHORRANT GHOUL KING ON ROYAL ZOMBIE DRAGON",
+      "name": "Abhorrant Ghoul King on Royal Zombie Dragon",
       "move": "12",
       "health": "16",
       "save": "4+",
@@ -761,7 +753,7 @@
       ]
     },
     {
-      "name": "GRAND JUSTICE GORMAYNE",
+      "name": "Grand Justice Gormayne",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -802,7 +794,7 @@
       ]
     },
     {
-      "name": "ABHORRANT GOREWARDEN",
+      "name": "Abhorrant Gorewarden",
       "move": "12",
       "health": "7",
       "save": "5+",
@@ -846,7 +838,7 @@
       ]
     },
     {
-      "name": "MARROWSCROLL HERALD",
+      "name": "Marrowscroll Herald",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -901,7 +893,7 @@
       ]
     },
     {
-      "name": "MORBHEG KNIGHTS",
+      "name": "Morbheg Knights",
       "move": "12",
       "health": "4",
       "save": "4+",
@@ -967,7 +959,7 @@
       ]
     },
     {
-      "name": "CRYPTGUARD",
+      "name": "Cryptguard",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1014,7 +1006,7 @@
       ]
     },
     {
-      "name": "VARGHULF COURTIER",
+      "name": "Varghulf Courtier",
       "move": "10",
       "health": "8",
       "save": "5+",
@@ -1076,7 +1068,7 @@
       ]
     },
     {
-      "name": "ABHORRANT CARDINAL",
+      "name": "Abhorrant Cardinal",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -1116,7 +1108,7 @@
       ]
     },
     {
-      "name": "ROYAL DECAPITATOR",
+      "name": "Royal Decapitator",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1155,7 +1147,7 @@
       ]
     },
     {
-      "name": "ABHORRANT ARCHREGENT",
+      "name": "Abhorrant Archregent",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -1211,7 +1203,7 @@
       ]
     },
     {
-      "name": "ABHORRANT GHOUL KING",
+      "name": "Abhorrant Ghoul King",
       "move": "6",
       "health": "6",
       "save": "5+",
@@ -1259,7 +1251,7 @@
       ]
     },
     {
-      "name": "CRYPT INFERNAL COURTIER",
+      "name": "Crypt Infernal Courtier",
       "move": "12",
       "health": "6",
       "save": "5+",
@@ -1317,7 +1309,7 @@
       ]
     },
     {
-      "name": "CRYPT HAUNTER COURTIER",
+      "name": "Crypt Haunter Courtier",
       "move": "7",
       "health": "6",
       "save": "5+",
@@ -1355,7 +1347,7 @@
       ]
     },
     {
-      "name": "CRYPT FLAYERS",
+      "name": "Crypt Flayers",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -1412,7 +1404,7 @@
       ]
     },
     {
-      "name": "CRYPT HORRORS",
+      "name": "Crypt Horrors",
       "move": "7",
       "health": "4",
       "save": "5+",
@@ -1465,7 +1457,7 @@
       ]
     },
     {
-      "name": "CRYPT GHOULS",
+      "name": "Crypt Ghouls",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1510,7 +1502,7 @@
       ]
     },
     {
-      "name": "ROYAL ZOMBIE DRAGON",
+      "name": "Royal Zombie Dragon",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -1607,7 +1599,7 @@
       ]
     },
     {
-      "name": "ROYAL TERRORGHEIST",
+      "name": "Royal Terrorgheist",
       "move": "12",
       "health": "14",
       "save": "4+",
@@ -1699,7 +1691,7 @@
       ]
     },
     {
-      "name": "ROYAL BEASTFLAYERS",
+      "name": "Royal Beastflayers",
       "move": "6",
       "health": "1",
       "save": "6+",
@@ -1753,7 +1745,7 @@
       ]
     },
     {
-      "name": "CORPSEMARE STAMPEDE",
+      "name": "Corpsemare Stampede",
       "move": "12",
       "health": "10",
       "save": "5+",
@@ -1795,7 +1787,7 @@
       ]
     },
     {
-      "name": "CADAVEROUS BARRICADE",
+      "name": "Cadaverous Barricade",
       "move": "-",
       "health": "10",
       "save": "4+",
@@ -1827,7 +1819,7 @@
       ]
     },
     {
-      "name": "CHALICE OF USHORAN",
+      "name": "Chalice of Ushoran",
       "move": "-",
       "health": "6",
       "save": "6+",
@@ -1869,7 +1861,7 @@
       ]
     },
     {
-      "name": "CHARNEL THRONE",
+      "name": "Charnel Throne",
       "move": "-",
       "health": "10",
       "save": "4+",

@@ -159,8 +159,7 @@
         "effect": "If the target unit is damaged, Heal (D3) the target. If the target is not damaged, subtract 1 from wound rolls for attacks that target that unit until the start of your next turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -172,9 +171,7 @@
         "declare": "Pick a friendly Maggotkin of Nurgle Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Halve the target's Move characteristic until the start of your next turn. If the target's Save characteristic is 3+ or better, subtract 1 from run rolls and charge rolls for that unit until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "7",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -195,7 +192,7 @@
   },
   "warscrolls": [
     {
-      "name": "ROTIGUS",
+      "name": "Rotigus",
       "move": "6",
       "health": "22",
       "save": "4+",
@@ -301,7 +298,7 @@
       ]
     },
     {
-      "name": "GREAT UNCLEAN ONE",
+      "name": "Great Unclean One",
       "move": "6",
       "health": "20",
       "save": "4+",
@@ -356,8 +353,7 @@
           "declare": "If this unit is damaged, pick up to 3 enemy units in combat with this unit to be the targets.",
           "effect": "Roll a D3 for each target. On a 2+, inflict an amount of mortal damage on the target equal to the roll.",
           "keywords": [
-            "Rampage",
-            "7"
+            "Rampage"
           ]
         },
         {
@@ -385,7 +381,7 @@
       ]
     },
     {
-      "name": "POXBRINGER HERALD OF NURGLE",
+      "name": "Poxbringer Herald of Nurgle",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -430,7 +426,7 @@
       ]
     },
     {
-      "name": "HORTICULOUS SLIMUX",
+      "name": "Horticulous Slimux",
       "move": "4",
       "health": "8",
       "save": "4+",
@@ -488,7 +484,7 @@
       ]
     },
     {
-      "name": "SPOILPOX SCRIVENER HERALD OF NURGLE",
+      "name": "Spoilpox Scrivener Herald of Nurgle",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -540,7 +536,7 @@
       ]
     },
     {
-      "name": "SLOPPITY BILEPIPER HERALD OF NURGLE",
+      "name": "Sloppity Bilepiper Herald of Nurgle",
       "move": "4",
       "health": "5",
       "save": "5+",
@@ -580,7 +576,7 @@
       ]
     },
     {
-      "name": "NURGLINGS",
+      "name": "Nurglings",
       "move": "4",
       "health": "4",
       "save": "6+",
@@ -617,7 +613,7 @@
       ]
     },
     {
-      "name": "BEASTS OF NURGLE",
+      "name": "Beasts of Nurgle",
       "move": "7",
       "health": "8",
       "save": "5+",
@@ -674,7 +670,7 @@
       ]
     },
     {
-      "name": "PLAGUE DRONES",
+      "name": "Plague Drones",
       "move": "8",
       "health": "5",
       "save": "5+",
@@ -731,7 +727,7 @@
       ]
     },
     {
-      "name": "PLAGUEBEARERS",
+      "name": "Plaguebearers",
       "move": "4",
       "health": "2",
       "save": "6+",
@@ -778,7 +774,7 @@
       ]
     },
     {
-      "name": "THE GLOTTKIN",
+      "name": "The Glottkin",
       "move": "6",
       "health": "24",
       "save": "4+",
@@ -882,7 +878,7 @@
       ]
     },
     {
-      "name": "MORBIDEX TWICEBORN",
+      "name": "Morbidex Twiceborn",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -984,7 +980,7 @@
       ]
     },
     {
-      "name": "BLOAB ROTSPAWNED",
+      "name": "Bloab Rotspawned",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1077,7 +1073,7 @@
       ]
     },
     {
-      "name": "GUTROT SPUME",
+      "name": "Gutrot Spume",
       "move": "4",
       "health": "7",
       "save": "4+",
@@ -1138,7 +1134,7 @@
       ]
     },
     {
-      "name": "LORD OF AFFLICTIONS",
+      "name": "Lord of Afflictions",
       "move": "8",
       "health": "8",
       "save": "3+",
@@ -1196,7 +1192,7 @@
       ]
     },
     {
-      "name": "ORGHOTTS DAEMONSPEW",
+      "name": "Orghotts Daemonspew",
       "move": "8",
       "health": "14",
       "save": "3+",
@@ -1290,7 +1286,7 @@
       ]
     },
     {
-      "name": "LORD OF BLIGHTS",
+      "name": "Lord of Blights",
       "move": "4",
       "health": "7",
       "save": "3+",
@@ -1344,7 +1340,7 @@
       ]
     },
     {
-      "name": "HARBINGER OF DECAY",
+      "name": "Harbinger of Decay",
       "move": "8",
       "health": "7",
       "save": "3+",
@@ -1407,7 +1403,7 @@
       ]
     },
     {
-      "name": "ROTBRINGER SORCERER",
+      "name": "Rotbringer Sorcerer",
       "move": "4",
       "health": "6",
       "save": "5+",
@@ -1447,7 +1443,7 @@
       ]
     },
     {
-      "name": "LORD OF PLAGUES",
+      "name": "Lord of Plagues",
       "move": "4",
       "health": "7",
       "save": "4+",
@@ -1501,7 +1497,7 @@
       ]
     },
     {
-      "name": "PUSGOYLE BLIGHTLORDS",
+      "name": "Pusgoyle Blightlords",
       "move": "8",
       "health": "8",
       "save": "4+",
@@ -1555,7 +1551,7 @@
       ]
     },
     {
-      "name": "PUTRID BLIGHTKINGS",
+      "name": "Putrid Blightkings",
       "move": "4",
       "health": "3",
       "save": "3+",
@@ -1602,7 +1598,7 @@
       ]
     },
     {
-      "name": "ROTMIRE CREED",
+      "name": "Rotmire Creed",
       "move": "5",
       "health": "1",
       "save": "6+",
@@ -1659,7 +1655,7 @@
       ]
     },
     {
-      "name": "FECULENT GNARLMAW",
+      "name": "Feculent Gnarlmaw",
       "move": "-",
       "health": "7",
       "save": "5+",

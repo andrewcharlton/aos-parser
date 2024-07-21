@@ -182,8 +182,7 @@
         "effect": "Inflict D3 mortal damage on the target.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -195,9 +194,7 @@
         "declare": "Pick a friendly Stormcast Eternals Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Subtract 1 from wound rolls for the target's attacks until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "5",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -228,8 +225,7 @@
         "effect": "Heal (D3) the target. If the chanting roll was 8+, Heal (D3) each visible friendly Stormcast Eternals unit wholly within 12\" of the chanter instead.",
         "keywords": [
           "Prayer",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -241,9 +237,7 @@
         "declare": "Pick a friendly Stormcast Eternals Priest to chant this prayer, pick a visible friendly Stormcast Eternals Infantry unit wholly within 12\" of them to be the target, then make a chanting roll of D6.",
         "effect": "Add 1 to the Attacks characteristic of the target's melee weapons until the start of your next turn. If the chanting roll was 12+, this ability affects all visible friendly Stormcast Eternals units wholly within 12\" of the chanter.",
         "keywords": [
-          "Prayer",
-          "4",
-          "4"
+          "Prayer"
         ],
         "chanting_value": 6
       },
@@ -274,8 +268,7 @@
         "effect": "Set up a Dais Arcanum within \u00bd\" of the target, visible to the caster and not in combat. Then, remove the target from the battlefield and place it on the platform of that Dais Arcanum.",
         "keywords": [
           "Spell",
-          "Summon",
-          "6"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Dais Arcanum"
@@ -290,8 +283,7 @@
         "effect": "Set up a Celestian Vortex wholly within 18\" of the caster and more than 9\" from all enemy units.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "casting_value": 6,
         "summons": "Celestian Vortex"
@@ -315,7 +307,7 @@
   },
   "warscrolls": [
     {
-      "name": "LIBERATORS",
+      "name": "Liberators",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -368,7 +360,7 @@
       ]
     },
     {
-      "name": "VANQUISHERS",
+      "name": "Vanquishers",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -414,7 +406,7 @@
       ]
     },
     {
-      "name": "VINDICTORS",
+      "name": "Vindictors",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -452,7 +444,7 @@
       ]
     },
     {
-      "name": "CELESTANT-PRIME HAMMER OF SIGMAR",
+      "name": "Celestant-Prime Hammer of Sigmar",
       "move": "12",
       "health": "10",
       "save": "3+",
@@ -521,7 +513,7 @@
       ]
     },
     {
-      "name": "GARDUS STEEL SOUL",
+      "name": "Gardus Steel Soul",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -577,7 +569,7 @@
       ]
     },
     {
-      "name": "KNIGHT-ARCANUM",
+      "name": "Knight-Arcanum",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -622,7 +614,7 @@
       ]
     },
     {
-      "name": "KNIGHT-DRACONIS",
+      "name": "Knight-Draconis",
       "move": "12",
       "health": "11",
       "save": "3+",
@@ -701,7 +693,7 @@
       ]
     },
     {
-      "name": "KNIGHT-JUDICATOR WITH GRYPH-HOUNDS",
+      "name": "Knight-Judicator with Gryph-Hounds",
       "move": "6",
       "health": "6",
       "save": "3+",
@@ -767,7 +759,7 @@
       ]
     },
     {
-      "name": "KNIGHT-QUESTOR",
+      "name": "Knight-Questor",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -820,7 +812,7 @@
       ]
     },
     {
-      "name": "KNIGHT-RELICTOR",
+      "name": "Knight-Relictor",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -859,7 +851,7 @@
       ]
     },
     {
-      "name": "KNIGHT-VEXILLOR",
+      "name": "Knight-Vexillor",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -897,7 +889,7 @@
       ]
     },
     {
-      "name": "LORD-AQUILOR",
+      "name": "Lord-Aquilor",
       "move": "14",
       "health": "8",
       "save": "3+",
@@ -971,7 +963,7 @@
       ]
     },
     {
-      "name": "LORD-CELESTANT",
+      "name": "Lord-Celestant",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1008,7 +1000,7 @@
       ]
     },
     {
-      "name": "LORD-CELESTANT ON DRACOTH",
+      "name": "Lord-Celestant on Dracoth",
       "move": "10",
       "health": "8",
       "save": "3+",
@@ -1073,7 +1065,7 @@
       ]
     },
     {
-      "name": "LORD-COMMANDER BASTIAN CARTHALOS",
+      "name": "Lord-Commander Bastian Carthalos",
       "move": "5",
       "health": "8",
       "save": "3+",
@@ -1147,7 +1139,7 @@
       ]
     },
     {
-      "name": "LORD-IMPERATANT",
+      "name": "Lord-Imperatant",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1201,7 +1193,7 @@
       ]
     },
     {
-      "name": "LORD-RELICTOR",
+      "name": "Lord-Relictor",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1246,7 +1238,7 @@
       ]
     },
     {
-      "name": "LORD-VERITANT",
+      "name": "Lord-Veritant",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1323,7 +1315,7 @@
       ]
     },
     {
-      "name": "NEAVE'S COMPANIONS",
+      "name": "Neave'S Companions",
       "move": "5",
       "health": "3",
       "save": "3+",
@@ -1400,7 +1392,7 @@
       ]
     },
     {
-      "name": "NEAVE BLACKTALON",
+      "name": "Neave Blacktalon",
       "move": "7",
       "health": "6",
       "save": "3+",
@@ -1487,7 +1479,7 @@
       ]
     },
     {
-      "name": "LORAI CHILD OF THE ABYSS",
+      "name": "Lorai Child of the Abyss",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1546,7 +1538,7 @@
       ]
     },
     {
-      "name": "VANDUS HAMMERHAND",
+      "name": "Vandus Hammerhand",
       "move": "10",
       "health": "8",
       "save": "3+",
@@ -1612,7 +1604,7 @@
       ]
     },
     {
-      "name": "YNDRASTA THE CELESTIAL SPEAR",
+      "name": "Yndrasta the Celestial Spear",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -1710,7 +1702,7 @@
       ]
     },
     {
-      "name": "DRAKESWORN TEMPLAR",
+      "name": "Drakesworn Templar",
       "move": "12",
       "health": "18",
       "save": "3+",
@@ -1813,7 +1805,7 @@
       ]
     },
     {
-      "name": "KARAZAI THE SCARRED",
+      "name": "Karazai the Scarred",
       "move": "12",
       "health": "20",
       "save": "3+",
@@ -1902,7 +1894,7 @@
       ]
     },
     {
-      "name": "KRONDYS SON OF DRACOTHION",
+      "name": "Krondys Son of Dracothion",
       "move": "12",
       "health": "20",
       "save": "3+",
@@ -1981,8 +1973,7 @@
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Roll a dice. On a 3+, the target cannot use commands for the rest of the turn.",
           "keywords": [
-            "Rampage",
-            "8"
+            "Rampage"
           ]
         },
         {
@@ -2011,7 +2002,7 @@
       ]
     },
     {
-      "name": "LORD-CELESTANT ON STARDRAKE",
+      "name": "Lord-Celestant on Stardrake",
       "move": "12",
       "health": "18",
       "save": "3+",
@@ -2113,7 +2104,7 @@
       ]
     },
     {
-      "name": "AETHERWINGS",
+      "name": "Aetherwings",
       "move": "12",
       "health": "2",
       "save": "6+",
@@ -2171,7 +2162,7 @@
       ]
     },
     {
-      "name": "ANNIHILATORS",
+      "name": "Annihilators",
       "move": "4",
       "health": "3",
       "save": "2+",
@@ -2218,7 +2209,7 @@
       ]
     },
     {
-      "name": "GRYPH-HOUNDS",
+      "name": "Gryph-Hounds",
       "move": "9",
       "health": "2",
       "save": "6+",
@@ -2269,7 +2260,7 @@
       ]
     },
     {
-      "name": "ANNIHILATORS WITH METEORIC GRANDHAMMERS",
+      "name": "Annihilators with Meteoric Grandhammers",
       "move": "4",
       "health": "3",
       "save": "3+",
@@ -2316,7 +2307,7 @@
       ]
     },
     {
-      "name": "DRACOTHIAN GUARD CONCUSSORS",
+      "name": "Dracothian Guard Concussors",
       "move": "10",
       "health": "5",
       "save": "3+",
@@ -2390,7 +2381,7 @@
       ]
     },
     {
-      "name": "DRACOTHIAN GUARD DESOLATORS",
+      "name": "Dracothian Guard Desolators",
       "move": "10",
       "health": "5",
       "save": "3+",
@@ -2469,7 +2460,7 @@
       ]
     },
     {
-      "name": "DRACOTHIAN GUARD FULMINATORS",
+      "name": "Dracothian Guard Fulminators",
       "move": "10",
       "health": "5",
       "save": "3+",
@@ -2542,7 +2533,7 @@
       ]
     },
     {
-      "name": "DRACOTHIAN GUARD TEMPESTORS",
+      "name": "Dracothian Guard Tempestors",
       "move": "10",
       "health": "5",
       "save": "3+",
@@ -2625,7 +2616,7 @@
       ]
     },
     {
-      "name": "PRAETORS",
+      "name": "Praetors",
       "move": "5",
       "health": "3",
       "save": "3+",
@@ -2677,7 +2668,7 @@
       ]
     },
     {
-      "name": "PROSECUTORS",
+      "name": "Prosecutors",
       "move": "12",
       "health": "2",
       "save": "3+",
@@ -2757,7 +2748,7 @@
       ]
     },
     {
-      "name": "STORMDRAKE GUARD",
+      "name": "Stormdrake Guard",
       "move": "12",
       "health": "9",
       "save": "3+",
@@ -2871,7 +2862,7 @@
       ]
     },
     {
-      "name": "STORMSTRIKE CHARIOT",
+      "name": "Stormstrike Chariot",
       "move": "10",
       "health": "10",
       "save": "3+",
@@ -2963,7 +2954,7 @@
       ]
     },
     {
-      "name": "VANGUARD- HUNTERS",
+      "name": "Vanguard- Hunters",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -3044,7 +3035,7 @@
       ]
     },
     {
-      "name": "VANGUARD- PALLADORS WITH STARSTRIKE JAVELINS",
+      "name": "Vanguard- Palladors with Starstrike Javelins",
       "move": "14",
       "health": "5",
       "save": "3+",
@@ -3129,7 +3120,7 @@
       ]
     },
     {
-      "name": "VANGUARD- PALLADORS WITH SHOCK HANDAXES",
+      "name": "Vanguard- Palladors with Shock Handaxes",
       "move": "14",
       "health": "5",
       "save": "3+",
@@ -3210,7 +3201,7 @@
       ]
     },
     {
-      "name": "VANGUARD- RAPTORS WITH HURRICANE CROSSBOWS",
+      "name": "Vanguard- Raptors with Hurricane Crossbows",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -3281,7 +3272,7 @@
       ]
     },
     {
-      "name": "VANGUARD- RAPTORS WITH LONGSTRIKE CROSSBOWS",
+      "name": "Vanguard- Raptors with Longstrike Crossbows",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -3345,7 +3336,7 @@
       ]
     },
     {
-      "name": "VIGILORS",
+      "name": "Vigilors",
       "move": "6",
       "health": "2",
       "save": "3+",
@@ -3401,7 +3392,7 @@
       ]
     },
     {
-      "name": "QUESTOR SOULSWORN",
+      "name": "Questor Soulsworn",
       "move": "5",
       "health": "3",
       "save": "3+",
@@ -3467,7 +3458,7 @@
       ]
     },
     {
-      "name": "CELESTIAN VORTEX",
+      "name": "Celestian Vortex",
       "move": "8",
       "health": "7",
       "save": "6+",
@@ -3512,7 +3503,7 @@
       ]
     },
     {
-      "name": "DAIS ARCANUM",
+      "name": "Dais Arcanum",
       "move": "8",
       "health": "",
       "save": "",
@@ -3544,7 +3535,7 @@
       ]
     },
     {
-      "name": "EVERBLAZE COMET",
+      "name": "Everblaze Comet",
       "move": "-",
       "health": "5",
       "save": "4+",
@@ -3585,7 +3576,7 @@
       ]
     },
     {
-      "name": "LORD-VIGILANT ON GRYPH-STALKER",
+      "name": "Lord-Vigilant on Gryph-Stalker",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -3641,7 +3632,7 @@
       ]
     },
     {
-      "name": "LORD-TERMINOS",
+      "name": "Lord-Terminos",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -3693,7 +3684,7 @@
       ]
     },
     {
-      "name": "RECLUSIANS",
+      "name": "Reclusians",
       "move": "5",
       "health": "3",
       "save": "3+",
@@ -3745,7 +3736,7 @@
       ]
     },
     {
-      "name": "IONUS CRYPTBORN WARDEN OF LOST SOULS",
+      "name": "Ionus Cryptborn Warden of Lost Souls",
       "move": "12",
       "health": "16",
       "save": "3+",

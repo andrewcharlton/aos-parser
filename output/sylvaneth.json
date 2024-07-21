@@ -167,8 +167,7 @@
         "effect": "If there are fewer than 3 friendly Awakened Wyldwoods on the battlefield, you can set up an Awakened Wyldwood wholly within 18\" of the caster and more than 3\" from all enemy units, objectives and other terrain features. If there are already 3 friendly Awakened Wyldwoods on the battlefield, Heal (3) each friendly Awakened Wyldwood.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "6"
+          "Unlimited"
         ]
       },
       {
@@ -180,9 +179,7 @@
         "declare": "Pick a friendly Sylvaneth Wizard to cast this spell, pick a friendly Awakened Wyldwood wholly within 18\" of the caster to be the target, then make a casting roll of 2D6.",
         "effect": "Until the start of your next turn, add 1 to the Rend characteristic of melee weapons used by friendly Sylvaneth units while they are wholly within 6\" of the target.",
         "keywords": [
-          "Spell",
-          "6",
-          "7"
+          "Spell"
         ],
         "casting_value": 6
       },
@@ -252,7 +249,7 @@
   },
   "warscrolls": [
     {
-      "name": "ALARIELLE THE EVERQUEEN",
+      "name": "Alarielle the Everqueen",
       "move": "14",
       "health": "16",
       "save": "3+",
@@ -363,7 +360,7 @@
       ]
     },
     {
-      "name": "THE LADY OF VINES",
+      "name": "The Lady of Vines",
       "move": "8",
       "health": "8",
       "save": "3+",
@@ -447,7 +444,7 @@
       ]
     },
     {
-      "name": "DRYCHA HAMADRETH",
+      "name": "Drycha Hamadreth",
       "move": "9",
       "health": "10",
       "save": "3+",
@@ -506,8 +503,7 @@
           "declare": "Pick an enemy unit in combat with this unit to be the target.",
           "effect": "Roll a dice. On a 2+, halve the target's control score (rounding up) for the rest of the turn.",
           "keywords": [
-            "Rampage",
-            "6"
+            "Rampage"
           ]
         },
         {
@@ -534,7 +530,7 @@
       ]
     },
     {
-      "name": "BELTHANOS FIRST THORN OF KURNOTH",
+      "name": "Belthanos First Thorn of Kurnoth",
       "move": "12",
       "health": "14",
       "save": "3+",
@@ -620,7 +616,7 @@
       ]
     },
     {
-      "name": "WARSONG REVENANT",
+      "name": "Warsong Revenant",
       "move": "6",
       "health": "7",
       "save": "5+",
@@ -694,7 +690,7 @@
       ]
     },
     {
-      "name": "ARCH-REVENANT",
+      "name": "Arch-Revenant",
       "move": "12",
       "health": "6",
       "save": "4+",
@@ -746,7 +742,7 @@
       ]
     },
     {
-      "name": "SPIRIT OF DURTHU",
+      "name": "Spirit of Durthu",
       "move": "5",
       "health": "14",
       "save": "3+",
@@ -837,7 +833,7 @@
       ]
     },
     {
-      "name": "TREELORD",
+      "name": "Treelord",
       "move": "5",
       "health": "14",
       "save": "3+",
@@ -922,7 +918,7 @@
       ]
     },
     {
-      "name": "TREELORD ANCIENT",
+      "name": "Treelord Ancient",
       "move": "5",
       "health": "14",
       "save": "3+",
@@ -1009,7 +1005,7 @@
       ]
     },
     {
-      "name": "BRANCHWYCH",
+      "name": "Branchwych",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1060,7 +1056,7 @@
       ]
     },
     {
-      "name": "GOSSAMID ARCHERS",
+      "name": "Gossamid Archers",
       "move": "12",
       "health": "2",
       "save": "5+",
@@ -1125,7 +1121,7 @@
       ]
     },
     {
-      "name": "THE TWISTWEALD",
+      "name": "The Twistweald",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -1202,7 +1198,7 @@
       ]
     },
     {
-      "name": "SPITERIDER LANCERS",
+      "name": "Spiterider Lancers",
       "move": "12",
       "health": "5",
       "save": "4+",
@@ -1273,7 +1269,7 @@
       ]
     },
     {
-      "name": "REVENANT SEEKERS",
+      "name": "Revenant Seekers",
       "move": "12",
       "health": "5",
       "save": "4+",
@@ -1351,7 +1347,7 @@
       ]
     },
     {
-      "name": "KURNOTH HUNTERS WITH KURNOTH GREATSWORDS",
+      "name": "Kurnoth Hunters with Kurnoth Greatswords",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1404,7 +1400,7 @@
       ]
     },
     {
-      "name": "KURNOTH HUNTERS WITH KURNOTH SCYTHES",
+      "name": "Kurnoth Hunters with Kurnoth Scythes",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1457,7 +1453,7 @@
       ]
     },
     {
-      "name": "KURNOTH HUNTERS WITH KURNOTH GREATBOWS",
+      "name": "Kurnoth Hunters with Kurnoth Greatbows",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1521,7 +1517,7 @@
       ]
     },
     {
-      "name": "DRYADS",
+      "name": "Dryads",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -1564,7 +1560,7 @@
       ]
     },
     {
-      "name": "TREE-REVENANTS",
+      "name": "Tree-Revenants",
       "move": "6",
       "health": "2",
       "save": "5+",
@@ -1606,7 +1602,7 @@
       ]
     },
     {
-      "name": "SPITE-REVENANTS",
+      "name": "Spite-Revenants",
       "move": "5",
       "health": "2",
       "save": "5+",
@@ -1643,7 +1639,7 @@
       ]
     },
     {
-      "name": "GLADEWYRM",
+      "name": "Gladewyrm",
       "move": "8",
       "health": "7",
       "save": "4+",
@@ -1692,7 +1688,7 @@
       ]
     },
     {
-      "name": "VENGEFUL SKULLROOT",
+      "name": "Vengeful Skullroot",
       "move": "8",
       "health": "8",
       "save": "4+",
@@ -1731,7 +1727,7 @@
       ]
     },
     {
-      "name": "SPITESWARM HIVE",
+      "name": "Spiteswarm Hive",
       "move": "-",
       "health": "7",
       "save": "6+",
@@ -1757,7 +1753,7 @@
       ]
     },
     {
-      "name": "AWAKENED WYLDWOOD",
+      "name": "Awakened Wyldwood",
       "move": "-",
       "health": "8",
       "save": "4+",

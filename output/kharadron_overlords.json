@@ -159,7 +159,7 @@
   ],
   "warscrolls": [
     {
-      "name": "BROKK GRUNGSSON LORD-MAGNATE OF BARAK-NAR",
+      "name": "Brokk Grungsson Lord-Magnate of Barak-Nar",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -242,7 +242,7 @@
       ]
     },
     {
-      "name": "ENDRINMASTER WITH DIRIGIBLE SUIT",
+      "name": "Endrinmaster with Dirigible Suit",
       "move": "12",
       "health": "8",
       "save": "3+",
@@ -319,7 +319,7 @@
       ]
     },
     {
-      "name": "ARKANAUT ADMIRAL",
+      "name": "Arkanaut Admiral",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -390,7 +390,7 @@
       ]
     },
     {
-      "name": "AETHERIC NAVIGATOR",
+      "name": "Aetheric Navigator",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -460,7 +460,7 @@
       ]
     },
     {
-      "name": "DREKKI FLYNT",
+      "name": "Drekki Flynt",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -536,7 +536,7 @@
       ]
     },
     {
-      "name": "ENDRINMASTER WITH ENDRINHARNESS",
+      "name": "Endrinmaster with Endrinharness",
       "move": "4",
       "health": "6",
       "save": "3+",
@@ -585,7 +585,7 @@
       ]
     },
     {
-      "name": "CODEWRIGHT",
+      "name": "Codewright",
       "move": "4",
       "health": "5",
       "save": "3+",
@@ -637,7 +637,7 @@
       ]
     },
     {
-      "name": "AETHER-KHEMIST",
+      "name": "Aether-Khemist",
       "move": "4",
       "health": "5",
       "save": "4+",
@@ -698,7 +698,7 @@
       ]
     },
     {
-      "name": "ARKANAUT COMPANY",
+      "name": "Arkanaut Company",
       "move": "4",
       "health": "1",
       "save": "4+",
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "name": "ENDRINRIGGERS",
+      "name": "Endrinriggers",
       "move": "12",
       "health": "2",
       "save": "4+",
@@ -892,7 +892,7 @@
       ]
     },
     {
-      "name": "SKYWARDENS",
+      "name": "Skywardens",
       "move": "12",
       "health": "2",
       "save": "4+",
@@ -994,7 +994,7 @@
       ]
     },
     {
-      "name": "GRUNDSTOK THUNDERERS",
+      "name": "Grundstok Thunderers",
       "move": "4",
       "health": "2",
       "save": "3+",
@@ -1065,7 +1065,7 @@
       ]
     },
     {
-      "name": "ARKANAUT IRONCLAD",
+      "name": "Arkanaut Ironclad",
       "move": "10",
       "health": "20",
       "save": "3+",
@@ -1192,7 +1192,7 @@
       ]
     },
     {
-      "name": "ARKANAUT FRIGATE",
+      "name": "Arkanaut Frigate",
       "move": "12",
       "health": "15",
       "save": "3+",
@@ -1312,7 +1312,7 @@
       ]
     },
     {
-      "name": "GRUNDSTOK GUNHAULER",
+      "name": "Grundstok Gunhauler",
       "move": "12",
       "health": "10",
       "save": "3+",

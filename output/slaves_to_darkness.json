@@ -148,8 +148,7 @@
         "effect": "Inflict 3 mortal damage on the target.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -161,9 +160,7 @@
         "declare": "Pick a friendly Slaves to Darkness Wizard to cast this spell, pick a visible enemy unit within 12\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "The target has Strike-last until the start of your next turn.",
         "keywords": [
-          "Spell",
-          "5",
-          "7"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -233,7 +230,7 @@
   },
   "warscrolls": [
     {
-      "name": "ARCHAON THE EVERCHOSEN",
+      "name": "Archaon the Everchosen",
       "move": "14",
       "health": "25",
       "save": "3+",
@@ -344,7 +341,7 @@
       ]
     },
     {
-      "name": "DAEMON PRINCE",
+      "name": "Daemon Prince",
       "move": "8",
       "health": "10",
       "save": "3+",
@@ -413,7 +410,7 @@
       ]
     },
     {
-      "name": "VARANGUARD",
+      "name": "Varanguard",
       "move": "10",
       "health": "5",
       "save": "3+",
@@ -459,7 +456,7 @@
       ]
     },
     {
-      "name": "BE'LAKOR THE DARK MASTER",
+      "name": "Be'Lakor the Dark Master",
       "move": "14",
       "health": "14",
       "save": "4+",
@@ -568,7 +565,7 @@
       ]
     },
     {
-      "name": "ETERNUS BLADE OF THE FIRST PRINCE",
+      "name": "Eternus Blade of the First Prince",
       "move": "9",
       "health": "9",
       "save": "3+",
@@ -621,7 +618,7 @@
       ]
     },
     {
-      "name": "CHAOS LORD ON DAEMONIC MOUNT",
+      "name": "Chaos Lord on Daemonic Mount",
       "move": "10",
       "health": "8",
       "save": "3+",
@@ -670,7 +667,7 @@
       ]
     },
     {
-      "name": "GAUNT SUMMONER ON DISC OF TZEENTCH",
+      "name": "Gaunt Summoner on Disc of Tzeentch",
       "move": "14",
       "health": "6",
       "save": "4+",
@@ -758,7 +755,7 @@
       ]
     },
     {
-      "name": "GAUNT SUMMONER",
+      "name": "Gaunt Summoner",
       "move": "5",
       "health": "5",
       "save": "6+",
@@ -836,7 +833,7 @@
       ]
     },
     {
-      "name": "OGROID THERIDONS",
+      "name": "Ogroid Theridons",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -875,7 +872,7 @@
       ]
     },
     {
-      "name": "CHAOS SORCERER LORD ON MANTICORE",
+      "name": "Chaos Sorcerer Lord on Manticore",
       "move": "12",
       "health": "12",
       "save": "4+",
@@ -938,7 +935,7 @@
       ]
     },
     {
-      "name": "CHAOS LORD ON MANTICORE",
+      "name": "Chaos Lord on Manticore",
       "move": "12",
       "health": "12",
       "save": "4+",
@@ -1005,7 +1002,7 @@
       ]
     },
     {
-      "name": "CHAOS LORD",
+      "name": "Chaos Lord",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1039,7 +1036,7 @@
       ]
     },
     {
-      "name": "CHAOS LORD ON KARKADRAK",
+      "name": "Chaos Lord on Karkadrak",
       "move": "9",
       "health": "10",
       "save": "3+",
@@ -1096,7 +1093,7 @@
       ]
     },
     {
-      "name": "CHAOS SORCERER LORD",
+      "name": "Chaos Sorcerer Lord",
       "move": "5",
       "health": "5",
       "save": "4+",
@@ -1136,7 +1133,7 @@
       ]
     },
     {
-      "name": "EXALTED HERO OF CHAOS",
+      "name": "Exalted Hero of Chaos",
       "move": "5",
       "health": "6",
       "save": "3+",
@@ -1180,7 +1177,7 @@
       ]
     },
     {
-      "name": "OGROID MYRMIDON",
+      "name": "Ogroid Myrmidon",
       "move": "6",
       "health": "8",
       "save": "4+",
@@ -1235,7 +1232,7 @@
       ]
     },
     {
-      "name": "CHAOS WARSHRINE",
+      "name": "Chaos Warshrine",
       "move": "8",
       "health": "14",
       "save": "4+",
@@ -1316,7 +1313,7 @@
       ]
     },
     {
-      "name": "SOUL GRINDER",
+      "name": "Soul Grinder",
       "move": "10",
       "health": "16",
       "save": "4+",
@@ -1418,7 +1415,7 @@
       ]
     },
     {
-      "name": "CHAOS CHARIOT",
+      "name": "Chaos Chariot",
       "move": "10",
       "health": "7",
       "save": "4+",
@@ -1482,7 +1479,7 @@
       ]
     },
     {
-      "name": "GOREBEAST CHARIOT",
+      "name": "Gorebeast Chariot",
       "move": "9",
       "health": "8",
       "save": "4+",
@@ -1552,7 +1549,7 @@
       ]
     },
     {
-      "name": "DARKOATH CHIEFTAIN",
+      "name": "Darkoath Chieftain",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -1591,7 +1588,7 @@
       ]
     },
     {
-      "name": "DARKOATH WARQUEEN",
+      "name": "Darkoath Warqueen",
       "move": "5",
       "health": "5",
       "save": "5+",
@@ -1641,7 +1638,7 @@
       ]
     },
     {
-      "name": "CHAOS CHOSEN",
+      "name": "Chaos Chosen",
       "move": "5",
       "health": "3",
       "save": "3+",
@@ -1681,7 +1678,7 @@
       ]
     },
     {
-      "name": "CHAOS WARRIORS",
+      "name": "Chaos Warriors",
       "move": "5",
       "health": "2",
       "save": "3+",
@@ -1727,7 +1724,7 @@
       ]
     },
     {
-      "name": "CHAOS SPAWN",
+      "name": "Chaos Spawn",
       "move": "2D6",
       "health": "5",
       "save": "5+",
@@ -1783,7 +1780,7 @@
       ]
     },
     {
-      "name": "CHAOS KNIGHTS",
+      "name": "Chaos Knights",
       "move": "10",
       "health": "4",
       "save": "3+",
@@ -1838,7 +1835,7 @@
       ]
     },
     {
-      "name": "MUTALITH VORTEX BEAST",
+      "name": "Mutalith Vortex Beast",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1911,7 +1908,7 @@
       ]
     },
     {
-      "name": "SLAUGHTERBRUTE",
+      "name": "Slaughterbrute",
       "move": "10",
       "health": "14",
       "save": "4+",
@@ -1985,7 +1982,7 @@
       ]
     },
     {
-      "name": "CENTAURION MARSHAL",
+      "name": "Centaurion Marshal",
       "move": "8",
       "health": "10",
       "save": "4+",
@@ -2025,7 +2022,7 @@
       ]
     },
     {
-      "name": "CHAOS LEGIONNAIRES",
+      "name": "Chaos Legionnaires",
       "move": "5",
       "health": "1",
       "save": "4+",
@@ -2064,7 +2061,7 @@
       ]
     },
     {
-      "name": "RAPTORYX",
+      "name": "Raptoryx",
       "move": "10",
       "health": "2",
       "save": "6+",
@@ -2121,7 +2118,7 @@
       ]
     },
     {
-      "name": "CHAOS FURIES",
+      "name": "Chaos Furies",
       "move": "12",
       "health": "1",
       "save": "6+",
@@ -2160,7 +2157,7 @@
       ]
     },
     {
-      "name": "MINDSTEALER SPHIRANX",
+      "name": "Mindstealer Sphiranx",
       "move": "10",
       "health": "10",
       "save": "5+",
@@ -2201,7 +2198,7 @@
       ]
     },
     {
-      "name": "FOMOROID CRUSHER",
+      "name": "Fomoroid Crusher",
       "move": "6",
       "health": "8",
       "save": "5+",
@@ -2254,7 +2251,7 @@
       ]
     },
     {
-      "name": "REALMSCOURGE RUPTURE",
+      "name": "Realmscourge Rupture",
       "move": "9",
       "health": "6",
       "save": "5+",
@@ -2293,7 +2290,7 @@
       ]
     },
     {
-      "name": "EIGHTFOLD DOOM-SIGIL",
+      "name": "Eightfold Doom-Sigil",
       "move": "-",
       "health": "6",
       "save": "5+",
@@ -2325,7 +2322,7 @@
       ]
     },
     {
-      "name": "DARKFIRE DAEMONRIFT",
+      "name": "Darkfire Daemonrift",
       "move": "9",
       "health": "6",
       "save": "6+",
@@ -2382,7 +2379,7 @@
       ]
     },
     {
-      "name": "NEXUS CHAOTICA",
+      "name": "Nexus Chaotica",
       "move": "-",
       "health": "12",
       "save": "4+",
@@ -2423,7 +2420,7 @@
       ]
     },
     {
-      "name": "DARKOATH WILDERFIEND",
+      "name": "Darkoath Wilderfiend",
       "move": "8",
       "health": "9",
       "save": "5+",
@@ -2499,7 +2496,7 @@
       ]
     },
     {
-      "name": "DARKOATH CHIEFTAIN ON WARSTEED",
+      "name": "Darkoath Chieftain on Warsteed",
       "move": "12",
       "health": "7",
       "save": "4+",
@@ -2562,7 +2559,7 @@
       ]
     },
     {
-      "name": "DARKOATH MARAUDERS",
+      "name": "Darkoath Marauders",
       "move": "5",
       "health": "1",
       "save": "5+",
@@ -2618,7 +2615,7 @@
       ]
     },
     {
-      "name": "DARKOATH SAVAGERS",
+      "name": "Darkoath Savagers",
       "move": "MOVE5",
       "health": "1",
       "save": "5+",
@@ -2657,7 +2654,7 @@
       ]
     },
     {
-      "name": "DARKOATH FELLRIDERS",
+      "name": "Darkoath Fellriders",
       "move": "12",
       "health": "3",
       "save": "5+",
@@ -2743,7 +2740,7 @@
       ]
     },
     {
-      "name": "ABRAXIA SPEAR OF THE EVERCHOSEN",
+      "name": "Abraxia Spear of the Everchosen",
       "move": "10",
       "health": "14",
       "save": "3+",
@@ -2830,7 +2827,7 @@
       ]
     },
     {
-      "name": "GUNNAR BRAND",
+      "name": "Gunnar Brand",
       "move": "5",
       "health": "6",
       "save": "5+",
@@ -2881,7 +2878,7 @@
       ]
     },
     {
-      "name": "SINGRI BRAND",
+      "name": "Singri Brand",
       "move": "12",
       "health": "4",
       "save": "5+",
@@ -2964,7 +2961,7 @@
       ]
     },
     {
-      "name": "THE OATHSWORN KIN",
+      "name": "The Oathsworn Kin",
       "move": "5",
       "health": "3",
       "save": "5+",

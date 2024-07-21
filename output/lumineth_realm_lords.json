@@ -217,8 +217,7 @@
         "effect": "Add 4\" to the target's Move characteristic until the start of your next turn.",
         "keywords": [
           "Spell",
-          "Unlimited",
-          "7"
+          "Unlimited"
         ]
       },
       {
@@ -230,9 +229,7 @@
         "declare": "Pick a friendly Lumineth Realm-lords Wizard to cast this spell, pick a visible enemy unit within 18\" of them to be the target, then make a casting roll of 2D6.",
         "effect": "Halve the target's Move characteristic until the start of your next turn, then roll a dice. If the roll equals or exceeds the target's Save characteristic, inflict D3 mortal damage on it.",
         "keywords": [
-          "Spell",
-          "5",
-          "8"
+          "Spell"
         ],
         "casting_value": 7
       },
@@ -263,8 +260,7 @@
         "effect": "Set up a Sanctum of Amyntok within the target's combat range, visible to the caster and not in combat. A Sanctum of Amyntok has 3 parts that must be set up touching each other so that they form a ring with the target inside.",
         "keywords": [
           "Spell",
-          "Summon",
-          "5"
+          "Summon"
         ],
         "casting_value": 4,
         "summons": "Sanctum Of Amyntok"
@@ -279,8 +275,7 @@
         "effect": "Set up a Hyshian Twinstones endless spell wholly within 6\" of the caster.",
         "keywords": [
           "Spell",
-          "Summon",
-          "7"
+          "Summon"
         ],
         "summons": "Hyshian Twinstones"
       },
@@ -302,7 +297,7 @@
   },
   "warscrolls": [
     {
-      "name": "ARCHMAGE TECLIS AND CELENNAR, SPIRIT OF HYSH",
+      "name": "Archmage Teclis and Celennar, Spirit of Hysh",
       "move": "10",
       "health": "16",
       "save": "5+",
@@ -427,7 +422,7 @@
       ]
     },
     {
-      "name": "THE LIGHT OF ELTHARION",
+      "name": "The Light of Eltharion",
       "move": "6",
       "health": "6",
       "save": "3+",
@@ -509,7 +504,7 @@
       ]
     },
     {
-      "name": "LYRIOR UTHRALLE WARDEN OF YMETRICA",
+      "name": "Lyrior Uthralle Warden of Ymetrica",
       "move": "14",
       "health": "7",
       "save": "3+",
@@ -584,7 +579,7 @@
       ]
     },
     {
-      "name": "VANARI LORD REGENT",
+      "name": "Vanari Lord Regent",
       "move": "14",
       "health": "7",
       "save": "3+",
@@ -643,7 +638,7 @@
       ]
     },
     {
-      "name": "VANARI AURALAN SENTINELS",
+      "name": "Vanari Auralan Sentinels",
       "move": "6",
       "health": "1",
       "save": "5+",
@@ -693,7 +688,7 @@
       ]
     },
     {
-      "name": "VANARI BANNERBLADE",
+      "name": "Vanari Bannerblade",
       "move": "6",
       "health": "5",
       "save": "3+",
@@ -738,7 +733,7 @@
       ]
     },
     {
-      "name": "VANARI AURALAN WARDENS",
+      "name": "Vanari Auralan Wardens",
       "move": "6",
       "health": "1",
       "save": "4+",
@@ -776,7 +771,7 @@
       ]
     },
     {
-      "name": "VANARI DAWNRIDERS",
+      "name": "Vanari Dawnriders",
       "move": "14",
       "health": "3",
       "save": "3+",
@@ -825,7 +820,7 @@
       ]
     },
     {
-      "name": "SCINARI CATHALLAR",
+      "name": "Scinari Cathallar",
       "move": "6",
       "health": "5",
       "save": "6+",
@@ -880,7 +875,7 @@
       ]
     },
     {
-      "name": "VANARI STARSHARD BALLISTA",
+      "name": "Vanari Starshard Ballista",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -937,7 +932,7 @@
       ]
     },
     {
-      "name": "SCINARI ENLIGHTENER",
+      "name": "Scinari Enlightener",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1001,7 +996,7 @@
       ]
     },
     {
-      "name": "SCINARI CALLIGRAVE",
+      "name": "Scinari Calligrave",
       "move": "6",
       "health": "5",
       "save": "5+",
@@ -1040,7 +1035,7 @@
       ]
     },
     {
-      "name": "SCINARI LORESEEKER",
+      "name": "Scinari Loreseeker",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1109,7 +1104,7 @@
       ]
     },
     {
-      "name": "VANARI BLADELORDS",
+      "name": "Vanari Bladelords",
       "move": "6",
       "health": "2",
       "save": "4+",
@@ -1169,7 +1164,7 @@
       ]
     },
     {
-      "name": "ELLANIA AND ELLATHOR ECLIPSIAN WARSAGES",
+      "name": "Ellania and Ellathor Eclipsian Warsages",
       "move": "6",
       "health": "8",
       "save": "4+",
@@ -1254,7 +1249,7 @@
       ]
     },
     {
-      "name": "ALARITH STONEMAGE",
+      "name": "Alarith Stonemage",
       "move": "6",
       "health": "5",
       "save": "4+",
@@ -1307,7 +1302,7 @@
       ]
     },
     {
-      "name": "ALARITH STONEGUARD",
+      "name": "Alarith Stoneguard",
       "move": "4",
       "health": "2",
       "save": "4+",
@@ -1353,7 +1348,7 @@
       ]
     },
     {
-      "name": "AVALENOR THE STONEHEART KING",
+      "name": "Avalenor the Stoneheart King",
       "move": "6",
       "health": "16",
       "save": "3+",
@@ -1458,7 +1453,7 @@
       ]
     },
     {
-      "name": "ALARITH SPIRIT OF THE MOUNTAIN",
+      "name": "Alarith Spirit of the Mountain",
       "move": "6",
       "health": "14",
       "save": "3+",
@@ -1550,7 +1545,7 @@
       ]
     },
     {
-      "name": "HURAKAN WINDMAGE",
+      "name": "Hurakan Windmage",
       "move": "12",
       "health": "5",
       "save": "5+",
@@ -1616,7 +1611,7 @@
       ]
     },
     {
-      "name": "SEVIRETH LORD OF THE SEVENTH WIND",
+      "name": "Sevireth Lord of the Seventh Wind",
       "move": "18",
       "health": "10",
       "save": "4+",
@@ -1704,7 +1699,7 @@
       ]
     },
     {
-      "name": "HURAKAN WINDCHARGERS",
+      "name": "Hurakan Windchargers",
       "move": "14",
       "health": "3",
       "save": "4+",
@@ -1771,7 +1766,7 @@
       ]
     },
     {
-      "name": "HURAKAN SPIRIT OF THE WIND",
+      "name": "Hurakan Spirit of the Wind",
       "move": "18",
       "health": "8",
       "save": "4+",
@@ -1856,7 +1851,7 @@
       ]
     },
     {
-      "name": "YDRILAN RIVERBLADES",
+      "name": "Ydrilan Riverblades",
       "move": "7",
       "health": "1",
       "save": "5+",
@@ -1917,7 +1912,7 @@
       ]
     },
     {
-      "name": "HYSHIAN TWINSTONES",
+      "name": "Hyshian Twinstones",
       "move": "-",
       "health": "5",
       "save": "4+",
@@ -1949,7 +1944,7 @@
       ]
     },
     {
-      "name": "RUNE OF PETRIFICATION",
+      "name": "Rune of Petrification",
       "move": "-",
       "health": "6",
       "save": "4+",
@@ -1975,7 +1970,7 @@
       ]
     },
     {
-      "name": "SANCTUM OF AMYNTOK",
+      "name": "Sanctum of Amyntok",
       "move": "-",
       "health": "",
       "save": "",
@@ -2006,7 +2001,7 @@
       ]
     },
     {
-      "name": "SHRINE LUMINOR",
+      "name": "Shrine Luminor",
       "move": "-",
       "health": "12",
       "save": "3+",
